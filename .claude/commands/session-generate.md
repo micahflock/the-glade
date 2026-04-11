@@ -12,7 +12,7 @@ Steps:
    - Combat encounter notes if applicable
    - Branching outcomes for major player decisions
 4. Write the output to sessions/sXX_draft.md, where XX is the current session. 
-5. Tell the user the file is ready and summarize the major beats you included
+5. Tell the user the file is ready and provide full markdown formatted text in chat for the user to easily copy. 
 
 The transcript may be rough, rambling, or incomplete - that's ok, this is only a draft. Do not use campaign memory to fill gaps intelligently, but note any gaps you notice with a [MORE DETAIL] marker. Flag anything you had to invent or assume with a [SLOP CHECK] marker.
 
