@@ -18,7 +18,7 @@ Before doing any session work, read these files:
 - memory/Open_Questions.md — unresolved threads and decisions
 
 ## Active Session
-Read state/campaign_state.md for current session number, active draft 
+Read memory/campaign_state.md for current session number, active draft 
 file, and where the party is right now.
 
 ## Campaign tone and setting
