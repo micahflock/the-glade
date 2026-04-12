@@ -92,8 +92,6 @@ This is all just flavorwashing standard D&D 5e weapons
 
 ---
 
-nal whistle
-
 **Survival:** Backpack, bedroll, blanket, mess kit, waterskin, rations (1 day), iron pot
 
 **Storage:** Sack, pouch, chest, vial/glass bottle
