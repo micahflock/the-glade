@@ -8,7 +8,7 @@ Steps:
    - Session structure and key beats in rough chronological order
    - Any Flavor text from the transcript for key moments and locations. Include any flavor text verbatim, as close as to what's in the transcript as possible. It's ok if it's not final, yet, it doesn't need to flow.
    - NPC dialogue and key information to convey. Similar to flavor text, don't generate your own, just pull what you can and note that it needs to be expadned. 
-   - DC values for skill checks, with what success/failure reveals. Feel free to propose good points for skill checks and what those DCs should be. 
+   - DC values for skill checks, with what success/failure reveals. Feel free to propose good moments for skill checks and what those DCs should be. 
    - Combat encounter notes if applicable
    - Branching outcomes for major player decisions
 4. Write the output to sessions/sXX_draft.md, where XX is the current session. 
