@@ -9,8 +9,8 @@ Close out a completed session and update all campaign memory.
 ## Phase 1 — Reconcile and Surface (do this first, then stop and wait)
 
 1. Read sessions/sXX_draft.md if it exists, where XX is the current session
-2. Read memory/NPC_Registry.md, memory/Party_Sheet.md, 
-   memory/Open_Questions.md, memory/campaign_state.md
+2. Read memory/NPC_Registry.yaml, memory/Party_Sheet.md, 
+   memory/Open_Questions.md, memory/campaign_state.yaml
 3. Compare the final session notes against all other inputs
 4. Identify any direct contradictions between the session notes and 
    the DM/player notes (not additions — only things that contradict)
@@ -27,7 +27,7 @@ NO CHANGES (session notes preserved):
 - [list major beats confirmed or uncontradicted]
 
 PROPOSED MEMORY UPDATES:
-- NPC_Registry.md: [list changes — status, disposition, new NPCs]
+- NPC_Registry.yaml: [list changes — status, disposition, new NPCs]
 - Party_Sheet.md: [list changes — inventory, quest state, levels]
 - Open_Questions.md: [list resolved items, new questions raised]
 - campaign_state.md: [current location, active threads, next session setup]
@@ -42,7 +42,7 @@ Does this look right? Say "commit" to write everything, or tell me what to chang
 
 1. Write the reconciled session notes to sessions/final/s0X_final.md
 2. Write DM/player notes summary to sessions/notes/s0X_notes.md
-3. Update memory/NPC_Registry.md
+3. Update memory/NPC_Registry.yaml
 4. Update memory/Party_Sheet.md  
 5. Update memory/Open_Questions.md
 6. Update memory/campaign_state.md

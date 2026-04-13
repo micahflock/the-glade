@@ -3,7 +3,7 @@ opportunities. Read-only — produce a report only, write nothing.
 
 ## What to Read
 Read every file in: .claude/commands/, memory/, sessions/final/,
-and CLAUDE.md. Also read memory/campaign_state.md for the current session number.
+and CLAUDE.md. Also read memory/campaign_state.yaml for the current session number.
 
 ## Hard Checks (report all findings, even if none)
 
@@ -13,7 +13,7 @@ and CLAUDE.md. Also read memory/campaign_state.md for the current session number
 - For each command file, identify any other commands it references 
   that don't exist
 - Check CLAUDE.md for references to files that don't exist
-- Check memory/campaign_state.md for expected fields missing 
+- Check memory/campaign_state.yaml for expected fields missing 
   (current_session, active_location, etc.)
 
 **Session continuity:**
@@ -29,7 +29,7 @@ and CLAUDE.md. Also read memory/campaign_state.md for the current session number
 
 **Memory file health:**
 - Flag any memory file over ~300 lines as a candidate for splitting
-- Flag any field in memory/campaign_state.md unchanged across the last 
+- Flag any field in memory/campaign_state.yaml unchanged across the last 
   3 final session notes
 
 **Command overlap:**

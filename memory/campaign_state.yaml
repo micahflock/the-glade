@@ -62,7 +62,7 @@ active_threads:
 memory_files:
   world_lore:      memory/World_Codex.md
   npcs:            memory/NPC_Registry.yaml
-  party:           memory/Party_Sheet.md
+  party:           memory/Party_Sheet.yaml
   rules:           memory/Homebrew_Rules.md
   open_questions:  memory/Open_Questions.md
   session_log:     sessions/session_log.md
