@@ -1,0 +1,327 @@
+# NPC_Registry.yaml
+# The Glade — NPC Registry
+# Source of truth for all named NPCs. Update via /scribe or /session-over only.
+
+npcs:
+
+  # ── ACTIVE / DEVELOPED ──────────────────────────────────────────────────────
+
+  - name: Francesca Booloticia IV
+    callsign: Boodle
+    species: Jewel beetle
+    role: Merchant guild representative
+    affiliation: Merchant guilds
+    status: Alive
+    location: Chitinholm
+    disposition: Positive
+    first_met: Session 0
+    last_seen: Session 1
+
+    appearance: Shell polished to a shimmer. Antennae wiggle when excited.
+    voice: Practiced warmth that can't quite cover the anxious undercurrent.
+    motivation: Tipped off by lost goods shipments from Mimbleburg and Trontsburry — including a rich shipment of pitch from a distillery that never arrived. Pragmatic and action-oriented. Quietly funding the investigation.
+    personality: Warm and direct to the point of shocking her colleagues. Anxious underneath the polish.
+
+    party_history:
+      - "Session 0: Delivered the opening pitch with directness that startled T'wigfingers and Sven"
+      - "Session 1: Left at the start — 'Well, I must be leaving, I have people to see, places to be'"
+      - Not seen since Session 1
+
+    hooks: []
+
+
+  - name: Dr. T'wigfingers
+    callsign: TF
+    species: Stickbug
+    role: Scientist, RJS branch lead
+    affiliation: Royal Jelly Society
+    status: Alive
+    location: Chitinholm
+    disposition: Positive
+    first_met: Session 0
+    last_seen: Session 1
+
+    appearance: Nervous energy, academic precision.
+    voice: Takes moments to compose himself before speaking about serious topics.
+    motivation: Believes the worst about the Bloom. Cross-referenced refugee arrival data, lost-contact records, and messenger timing to identify the epicenter as directional. Motivated by science.
+    personality: Genuinely fond of Bessie. Navigates the RJS labyrinth with ease.
+
+    key_items:
+      - Handed the party an ornate sealed tube containing his timetable, data points, map, and estimated direction. Advised leaving it sealed until Antennington.
+
+    party_history:
+      - "Session 0: Explained the triangulation plan and the Bloom's suspected epicenter"
+      - "Session 1: Showed party the stockroom, introduced them to Bessie, escorted them to the gates"
+      - "Session 1 farewell: 'He looked briefly at each of you, before giving a quick nod, and retreating back into the safety of the RJS'"
+
+    hooks: []
+
+
+  - name: Sven
+    callsign: "7834 (official designation)"
+    species: Obsidian black ant drone
+    role: Agricultural data specialist
+    affiliation: Royal Jelly Society — Sub-Committee on Impeding Winter Doom
+    status: Alive
+    location: Chitinholm
+    disposition: Neutral-positive
+    first_met: Session 0
+    last_seen: Session 0
+
+    appearance: The most eloquent drone you've ever encountered.
+    voice: Says very little but what he says lands. Session 0 — cocked his head and said simply "A source."
+    motivation: Agricultural data specialist. Mostly an observer. Yields dropping. Lost communication with other colonies. Before contact was lost, heard about raiding parties.
+    personality: Furtive and quietly excited about the investigation. Led the party to the meeting room "dodging the disapproving looks of other scholars." Startled by Boodle's directness.
+
+    party_history:
+      - "Session 0: Guided party through the RJS to the meeting room. Present but spoke minimally."
+
+    hooks: []
+
+
+  - name: Garett
+    species: Green weevil
+    role: Magic researcher, RJS Antennington branch
+    affiliation: Royal Jelly Society (Antennington branch)
+    status: Alive
+    location: Antennington Amber Mine — Level 2
+    disposition: Positive
+    first_met: Session 2
+    last_seen: Session 2
+
+    appearance: Fussily hunched over his table.
+    voice: "Surprised by non-Ricko visitors: 'Oh! You aren't Ricko! Now this is a surprise. Who could you be, what do you want?'"
+    motivation: Researches magic. Instruments detected a magical shockwave alongside the cold. Instruments needed mine isolation for best measurements — now destroyed. Can collect data but not process it geometrically — "it's not really within my wheelhouse." Coined the term "The Bloom."
+    personality: Not leaving the mine. Not joining the party. More interested in the magical element than field work. Lovers with Ricko.
+
+    key_info_given_to_party:
+      - Rolled-up parchment with triangulation data
+      - Named the event "The Bloom"
+      - Described the magical shockwave component
+      - Gave the party Ahganmin (glowing magic amber rock)
+
+    party_history:
+      - "Session 2: Met at the mine. Was at Antennington RJS when ants attacked — fled to the mine."
+      - "'I have never seen an aggressive ant before, and I can't say I want to meet one.'"
+      - Left the note in the RJS lab pinned with a hand-pickaxe
+
+    hooks:
+      - His destroyed instruments — does he rebuild? Does he have more data?
+      - Relationship with Ricko is a soft vulnerability if the party ever needs leverage
+
+
+  - name: Ricko
+    species: Ox beetle
+    role: Mine surface operator
+    affiliation: Antennington Amber Mine
+    status: Alive
+    location: Antennington Amber Mine — surface building
+    disposition: Positive
+    first_met: Session 2
+    last_seen: Session 2
+
+    appearance: Massive. Deep voice.
+    voice: "'Hello? The door is open, come on in.' Working on a piece of amber when the party arrived."
+    motivation: Mans the mine surface building and the hoist. Doesn't fully understand Garett's work — "I can't say I understood all the words he used." Lovers with Garett.
+    personality: Unexpectedly warm and hospitable. "Must say, I was not expecting ANYONE to come through here anytime soon."
+
+    party_history:
+      - "Session 2: Welcomed the party, operated the lift to send them down to Garett"
+      - Did not see the ant attack on Antennington — was in the mines
+
+    hooks:
+      - Sole above-ground presence at the mine — vulnerable if ants return
+
+
+  - name: Bert
+    species: Young cicada
+    role: Cart driver
+    affiliation: Independent (well paid)
+    status: Alive
+    location: Chitinholm (fled back)
+    disposition: Neutral
+    first_met: Session 1
+    last_seen: Session 1
+
+    motivation: Was hauling supplies to Chitinholm. Got knocked off the road by earwig bandits, ran straight back to Chitinholm with one of his packs.
+
+    party_history:
+      - "Session 1: Party intervened in the bandit attack on his cart"
+      - Ran past the group and kept going to Chitinholm after the fight
+      - Cart left behind — party repaired it and sent it back with Bessie and Drix's note
+
+    hooks:
+      - Fled to Chitinholm — will he report what happened? To whom?
+
+
+  - name: Lars
+    species: Earwig
+    role: Former bandit, sole survivor of the burnt village
+    affiliation: None (formerly one of the Session 1 road bandits)
+    status: Alive — traumatized
+    location: Burnt village (last known)
+    disposition: Traumatized / unknown
+    first_met: Session 2
+    last_seen: Session 2
+
+    appearance: Crouched against what's left of a wall. Not looking at anything.
+    voice: |
+      Words come out in pieces: "The raiders came. We should have been there. They're all dead."
+      Then quieter: "The ants. The ants. They took them all."
+    motivation: Survival. Grief. His village was the burnt village.
+    backstory: Was one of the Session 1 road bandits. Arrived at his village just as ants were dragging the last villagers away. Left behind.
+
+    key_info_given_to_party:
+      - Two types of ants — black and red
+      - Bodies dragged northeastish (party marked on map)
+
+    party_history:
+      - "Session 2: Party coaxed his story out with creative engagement, then left him behind with supplies"
+
+    hooks:
+      - Dangling thread — do not force
+      - Options — stalks the party / realizes they're fighting ants and joins / joins and betrays / joins and stays loyal / harbors a grudge
+
+
+  # ── PARTY ANIMALS ───────────────────────────────────────────────────────────
+
+  - name: Bessie
+    species: Speckled sowbug
+    role: Draft animal (RJS stables)
+    affiliation: Royal Jelly Society
+    status: Alive
+    location: En route to Chitinholm (attached to repaired cart)
+    disposition: Neutral
+    first_met: Session 1
+    last_seen: Session 1
+
+    notes: >
+      T'wigfingers — "She's all yours! If you do get lost, just set her free,
+      I imagine she will make her way back here eventually."
+      Party swapped Bessie for Bestie after the bandit fight. Bessie is now
+      attached to the repaired cart with Drix's note, heading back to Chitinholm.
+
+    hooks: []
+
+
+  - name: Bestie
+    species: Pillbug
+    role: Party pack animal
+    affiliation: Party (formerly pulling Bert's cart)
+    status: Alive
+    location: Traveling with the party
+    disposition: Warming to the party
+    first_met: Session 1
+    last_seen: Session 2
+
+    hp: 20
+    animal_handling_dc: 14
+
+    notes: >
+      Still hitched to the wagon after the fight — didn't bolt. "Just watches you,
+      with the particular patience of something that has learned not to expect much."
+      Drix performed on the walnut shell lute and won Bestie over.
+      Night watch beat (Session 2): settled closer to camp than at dusk —
+      "Not close enough to mean anything, probably. Just closer."
+      Will wander home (not toward Chitinholm) if left unattended.
+
+    hooks: []
+
+
+  # ── MINOR / GROUP NPCS ──────────────────────────────────────────────────────
+
+  - name: Earwig Bandits
+    species: Earwigs
+    role: Road bandits (encountered Session 1)
+    status: Leader dead. One put to sleep. Remainder fled.
+    location: Scattered into the forest
+    first_met: Session 1
+
+    notes: >
+      4 bandits + 1 leader. Farmers whose village was destroyed by red ants,
+      forced into raiding. Clothes lovingly patched — stitched and restitched
+      until original fabric is more memory than material.
+      Weapons: sawed-off scythe, hoe on both ends.
+      Would talk before attacking if not provoked.
+      Negotiation DCs: Persuade 15, Intimidate 18 (DC 12 after one dead).
+
+    hooks:
+      - Scattered bandits could reappear — they know the party's faces
+
+
+  - name: Shield Bug Family
+    species: Shield bugs
+    role: Refugees (road encounter)
+    status: Fled toward Chitinholm
+    location: Chitinholm (presumed)
+    first_met: Session 1
+
+    notes: >
+      Were traveling with the cart but fled when it was attacked.
+      Clattering around the corner, moving as fast as their luggage let them.
+      Eyed the party uncertainly.
+
+    hooks: []
+
+
+  # ── NOT YET MET ─────────────────────────────────────────────────────────────
+
+  - name: Rhonda
+    species: Goliath beetle
+    role: Bugsmith
+    affiliation: Chitinholm market
+    status: Alive
+    location: Chitinholm market
+    disposition: Not yet met
+    first_met: null
+
+    hooks: []
+
+
+  - name: Hickum
+    species: Carpenter bee
+    role: Baker
+    affiliation: Chitinholm market
+    status: Alive
+    location: Chitinholm market
+    disposition: Not yet met
+    first_met: null
+
+    notes: Sells nectar cakes, pollen loaves, honey buns.
+    hooks: []
+
+
+  - name: Bigsby
+    species: Unknown
+    role: Trinket seller — "Bigsby's Buys!"
+    affiliation: Chitinholm market
+    status: Alive
+    location: Chitinholm market
+    disposition: Not yet met
+    first_met: null
+
+    hooks: []
+
+
+  - name: Julien
+    species: Unknown
+    role: Gate guard
+    affiliation: Chitinholm gates
+    status: Alive
+    location: Chitinholm gates
+    disposition: Not yet met
+    first_met: null
+
+    hooks: []
+
+
+  - name: Micah
+    species: Unknown
+    role: Gate guard
+    affiliation: Chitinholm gates
+    status: Alive
+    location: Chitinholm gates
+    disposition: Not yet met
+    first_met: null
+
+    hooks: []
