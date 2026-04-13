@@ -1,0 +1,68 @@
+# campaign_state.yaml
+# The Glade — Live Campaign State
+# Updated by /session-over and /scribe only. Single source of truth for current status.
+
+# ── SESSION TRACKING ────────────────────────────────────────────────────────
+
+current_session: 3
+working_draft: sessions/s03_draft.md
+draft_status: in_progress  # options: not_started / in_progress / ready_to_play
+
+last_played_session: 2
+last_played_summary: "Antennington — triangulated the Bloom's heading. See sessions/session_log.md."
+
+
+# ── PARTY STATUS ─────────────────────────────────────────────────────────────
+
+party:
+  level: 3
+  location: Road east of Antennington, heading toward the spring zone
+  pack_animal: Bestie (pillbug, traveling with party)
+  details: memory/Party_Sheet.md
+
+
+# ── ACTIVE THREADS ───────────────────────────────────────────────────────────
+
+# High-priority items are marked priority: high
+# Full list lives in memory/Open_Questions.md
+
+active_threads:
+
+  - thread: Triangulated heading toward the Bloom's source
+    priority: high
+    notes: Party has combined T'wigfingers data, Garett's parchment, and Lars's directional intel
+
+  - thread: First ant encounter on the road
+    priority: high
+    notes: Planned for Session 3 — cart with bodies, leafcutter workers, fire ant commanders
+
+  - thread: Fungal farm hook
+    priority: high
+    notes: Leafcutters expected to offer to take party to the farm after fire ants are dealt with
+
+  - thread: Lars — left behind in burnt village
+    priority: medium
+    notes: Supplied but alone. Dangling thread — do not force resolution
+
+  - thread: Ahganmin properties unknown
+    priority: medium
+    notes: Glowing magic amber rock given by Garett. Properties TBD
+
+  - thread: Bessie and cart heading back to Chitinholm
+    priority: low
+    notes: Will find her way home. Bert also fled to Chitinholm — may report to someone
+
+  - thread: Nancy's evil wizard
+    priority: low
+    notes: Player responded well to the hook. Optional future appearance
+
+
+# ── REFERENCES ───────────────────────────────────────────────────────────────
+
+memory_files:
+  world_lore:      memory/World_Codex.md
+  npcs:            memory/NPC_Registry.yaml
+  party:           memory/Party_Sheet.md
+  rules:           memory/Homebrew_Rules.md
+  open_questions:  memory/Open_Questions.md
+  session_log:     sessions/session_log.md
