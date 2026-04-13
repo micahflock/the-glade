@@ -7,7 +7,7 @@ npcs:
   # ── ACTIVE / DEVELOPED ──────────────────────────────────────────────────────
 
   - name: Francesca Booloticia IV
-    callsign: Boodle
+    informal name: Boodle
     species: Jewel beetle
     role: Merchant guild representative
     affiliation: Merchant guilds
@@ -98,7 +98,7 @@ npcs:
       - Rolled-up parchment with triangulation data
       - Named the event "The Bloom"
       - Described the magical shockwave component
-      - Gave the party Ahganmin (glowing magic amber rock)
+      - Gave the party their first magic item: an chunk of amber that glows and reacts to increased levels of magic.
 
     party_history:
       - "Session 2: Met at the mine. Was at Antennington RJS when ants attacked — fled to the mine."
@@ -164,11 +164,11 @@ npcs:
     first_met: Session 2
     last_seen: Session 2
 
-    appearance: Crouched against what's left of a wall. Not looking at anything.
+    appearance: Humble earwig farmer, with patched and worn clothes. 
     voice: |
       Words come out in pieces: "The raiders came. We should have been there. They're all dead."
       Then quieter: "The ants. The ants. They took them all."
-    motivation: Survival. Grief. His village was the burnt village.
+    motivation: Survival. Grief. His village was the burnt village. Revenge against the party?
     backstory: Was one of the Session 1 road bandits. Arrived at his village just as ants were dragging the last villagers away. Left behind.
 
     key_info_given_to_party:
@@ -233,7 +233,7 @@ npcs:
   - name: Earwig Bandits
     species: Earwigs
     role: Road bandits (encountered Session 1)
-    status: Leader dead. One put to sleep. Remainder fled.
+    status: All dead except for Lars, by the party's hand
     location: Scattered into the forest
     first_met: Session 1
 
@@ -297,30 +297,6 @@ npcs:
     affiliation: Chitinholm market
     status: Alive
     location: Chitinholm market
-    disposition: Not yet met
-    first_met: null
-
-    hooks: []
-
-
-  - name: Julien
-    species: Unknown
-    role: Gate guard
-    affiliation: Chitinholm gates
-    status: Alive
-    location: Chitinholm gates
-    disposition: Not yet met
-    first_met: null
-
-    hooks: []
-
-
-  - name: Micah
-    species: Unknown
-    role: Gate guard
-    affiliation: Chitinholm gates
-    status: Alive
-    location: Chitinholm gates
     disposition: Not yet met
     first_met: null
 
