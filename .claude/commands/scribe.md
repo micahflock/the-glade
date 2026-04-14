@@ -11,11 +11,15 @@ Implement a deliberate DM decision as a clean edit across all campaign files.
 
 Read the DM's instruction, then launch all three agents below in a single
 message (run_in_background: true for each). Do not proceed until all
-three have returned.
+three have returned. Phase 1 is strictly read-only — no files are written
+until the DM confirms the Scribe Report in Phase 2.
 
 ---
 
 **Agent 1 — Memory Targets**
+IMPORTANT: This is a read-only research task. Do NOT edit or write any
+files. Do NOT apply any changes. Only read and report.
+
 The DM's instruction is: [restate the instruction here]
 Read these files: memory/NPC_Registry.yaml, memory/Party_Sheet.yaml,
 memory/campaign_state.yaml, memory/Homebrew_Rules.md, memory/World_Codex.md.
@@ -28,6 +32,9 @@ Label your response: MEMORY TARGETS
 ---
 
 **Agent 2 — Open Questions**
+IMPORTANT: This is a read-only research task. Do NOT edit or write any
+files. Do NOT apply any changes. Only read and report.
+
 The DM's instruction is: [restate the instruction here]
 Read memory/Open_Questions.md.
 Find every item related to the subject — including items that would be
@@ -38,7 +45,10 @@ Label your response: OPEN QUESTIONS
 
 ---
 
-**Agent 3 — Session History and Commands (read-only)**
+**Agent 3 — Session History and Commands**
+IMPORTANT: This is a read-only research task. Do NOT edit or write any
+files. Do NOT apply any changes. Only read and report.
+
 The DM's instruction is: [restate the instruction here]
 Read every file in sessions/final/, sessions/session_log.md,
 and .claude/commands/.
