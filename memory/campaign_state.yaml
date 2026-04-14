@@ -19,7 +19,7 @@ party:
   level: 3
   location: Road east of Antennington, heading toward the spring zone
   pack_animal: Bestie (pillbug, traveling with party)
-  details: memory/Party_Sheet.yaml
+  details: party/  # individual YAML per PC — see party/*.yaml
 
 
 # ── ACTIVE THREADS ───────────────────────────────────────────────────────────
@@ -63,7 +63,7 @@ active_threads:
 memory_files:
   world_lore:      memory/World_Codex.md
   npcs:            memory/NPC_Registry.yaml
-  party:           memory/Party_Sheet.yaml
+  party:           party/  # individual YAML per PC
   rules:           memory/Homebrew_Rules.md
   open_questions:  memory/Open_Questions.md
   session_log:     sessions/session_log.md

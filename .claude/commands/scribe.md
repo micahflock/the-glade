@@ -21,7 +21,7 @@ IMPORTANT: This is a read-only research task. Do NOT edit or write any
 files. Do NOT apply any changes. Only read and report.
 
 The DM's instruction is: [restate the instruction here]
-Read these files: memory/NPC_Registry.yaml, memory/Party_Sheet.yaml,
+Read these files: memory/NPC_Registry.yaml, every file in party/,
 memory/campaign_state.yaml, memory/Homebrew_Rules.md, memory/World_Codex.md.
 Find every reference to the subject — direct or indirect (alternate names,
 pronouns referring back, mechanical systems derived from it, etc.).

@@ -9,7 +9,7 @@ Close out a completed session and update all campaign memory.
 ## Phase 1 — Reconcile and Surface (do this first, then stop and wait)
 
 1. Read sessions/sXX_draft.md if it exists, where XX is the current session
-2. Read memory/NPC_Registry.yaml, memory/Party_Sheet.yaml, 
+2. Read memory/NPC_Registry.yaml, every file in party/,
    memory/Open_Questions.md, memory/campaign_state.yaml
 3. Compare the final session notes against all other inputs
 4. Identify any direct contradictions between the session notes and 
@@ -28,7 +28,7 @@ NO CHANGES (session notes preserved):
 
 PROPOSED MEMORY UPDATES:
 - NPC_Registry.yaml: [list changes — status, disposition, new NPCs]
-- Party_Sheet.yaml: [list changes — inventory, quest state, levels]
+- party/[character].yaml: [list changes per PC — inventory, quest state, levels]
 - Open_Questions.md: [list resolved items, new questions raised]
 - campaign_state.yaml: [current location, active threads, next session setup]
 
@@ -43,7 +43,7 @@ Does this look right? Say "commit" to write everything, or tell me what to chang
 1. Write the reconciled session notes to sessions/final/s0X_final.md
 2. Write DM/player notes summary to sessions/notes/s0X_notes.md
 3. Update memory/NPC_Registry.yaml
-4. Update memory/Party_Sheet.yaml
+4. Update relevant party/*.yaml files (one per affected PC)
 5. Update memory/Open_Questions.md
 6. Update memory/campaign_state.yaml
 7. Append a one-paragraph summary to sessions/session_log.md

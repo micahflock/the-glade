@@ -20,7 +20,7 @@ for tone, lore, and context.
 
 Before doing any session work, read these files:
 - memory/NPC_Registry.yaml — all named NPCs, their status, disposition
-- memory/Party_Sheet.yaml — player characters, current inventory, quest state
+- party/*.yaml — individual character sheets, one file per PC (inventory, stats, quest state)
 - memory/campaign_state.yaml — current session number, active draft file, party location
 - memory/World_Codex.md — world lore, zones, factions, locations
 - memory/Homebrew_Rules.md — mechanical rules that differ from vanilla 5e
