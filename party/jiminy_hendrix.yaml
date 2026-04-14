@@ -1,5 +1,6 @@
 # party/jiminy_hendrix.yaml
 # Imported from handwritten character sheet (2 pages) — 2026-04-14
+# 2026-04-14 — INT corrected from 7 to 10 per DM
 # Corrections noted inline where sheet values differed.
 
 character:
@@ -28,7 +29,7 @@ ability_scores:
   strength:     { score: 6,  modifier: -2 }  # corrected: sheet had modifier -3, DM confirms score 6 (mod -2)
   dexterity:    { score: 16, modifier: +3 }
   constitution: { score: 13, modifier: +1 }
-  intelligence: { score: 7,  modifier: -2 }
+  intelligence: { score: 10, modifier: +0 }
   wisdom:       { score: 10, modifier: +0 }
   charisma:     { score: 18, modifier: +4 }
 
@@ -36,7 +37,7 @@ saving_throws:
   strength:     { bonus: -2, proficient: false }   # corrected from -3 (STR mod now -2)
   dexterity:    { bonus: +5, proficient: true }
   constitution: { bonus: +1, proficient: false }
-  intelligence: { bonus: -2, proficient: false }    # corrected from 0 on sheet
+  intelligence: { bonus: +0, proficient: false }
   wisdom:       { bonus: +0, proficient: false }
   charisma:     { bonus: +6, proficient: true }
 
@@ -44,19 +45,19 @@ skills:
   # Non-proficient bonuses include +1 from Jack of All Trades.
   acrobatics:      { bonus: +5, proficient: true,  ability: dexterity }
   animal_handling: { bonus: +1, proficient: false, ability: wisdom }
-  arcana:          { bonus: -1, proficient: false, ability: intelligence }
+  arcana:          { bonus: +1, proficient: false, ability: intelligence }
   athletics:       { bonus: -1, proficient: false, ability: strength }  # corrected from -2 (STR mod now -2, +1 JoAT = -1)
   deception:       { bonus: +6, proficient: true,  ability: charisma }
-  history:         { bonus: -1, proficient: false, ability: intelligence }
+  history:         { bonus: +1, proficient: false, ability: intelligence }
   insight:         { bonus: +1, proficient: false, ability: wisdom }
   intimidation:    { bonus: +6, proficient: true,  ability: charisma }
-  investigation:   { bonus: -1, proficient: false, ability: intelligence }
+  investigation:   { bonus: +1, proficient: false, ability: intelligence }
   medicine:        { bonus: +1, proficient: false, ability: wisdom }
-  nature:          { bonus: -1, proficient: false, ability: intelligence }
+  nature:          { bonus: +1, proficient: false, ability: intelligence }
   perception:      { bonus: +2, proficient: true,  ability: wisdom }
   performance:     { bonus: +8, proficient: true,  ability: charisma }  # Expertise. Corrected from +10 on sheet.
   persuasion:      { bonus: +8, proficient: true,  ability: charisma }  # Expertise.
-  religion:        { bonus: -1, proficient: false, ability: intelligence }
+  religion:        { bonus: +1, proficient: false, ability: intelligence }
   sleight_of_hand: { bonus: +5, proficient: true,  ability: dexterity }
   stealth:         { bonus: +4, proficient: false, ability: dexterity }
   survival:        { bonus: +1, proficient: false, ability: wisdom }
