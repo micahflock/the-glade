@@ -1,0 +1,167 @@
+# party/tabatha_starr.yaml
+# Imported from handwritten character sheet (2 pages) — 2026-04-14
+# Corrections noted inline where sheet values differed.
+
+character:
+  name: Tabatha Starr
+  callsign: null  # not on sheet
+  player: Heather
+  species: Lone Star Tick
+  class: Ranger
+  subclass: Gloomstalker
+  background: Outlander
+  level: 3
+  xp: null  # sheet note "XP = 14,000" ignored per DM instruction
+
+core:
+  proficiency_bonus: +2
+  inspiration: false
+  ac: 14            # corrected: leather armor (11) + DEX (+3). Sheet said 12.
+  initiative: +5    # corrected: DEX (+3) + WIS (+2) via Dread Ambusher. Sheet said +4.
+  speed: 30
+  hp_max: 31
+  hp_current: 31
+  hit_dice: d10
+  hit_dice_remaining: 3d10  # corrected from 1d10 on sheet
+
+ability_scores:
+  strength:     { score: 14, modifier: +2 }
+  dexterity:    { score: 16, modifier: +3 }
+  constitution: { score: 12, modifier: +1 }
+  intelligence: { score: 10, modifier: +0 }
+  wisdom:       { score: 14, modifier: +2 }
+  charisma:     { score: 10, modifier: +0 }
+
+saving_throws:
+  strength:     { bonus: +4, proficient: true }   # corrected from +2 (was missing prof bonus)
+  dexterity:    { bonus: +5, proficient: true }    # corrected from +3 (was missing prof bonus)
+  constitution: { bonus: +1, proficient: false }
+  intelligence: { bonus: +0, proficient: false }
+  wisdom:       { bonus: +2, proficient: false }
+  charisma:     { bonus: +0, proficient: false }
+
+skills:
+  acrobatics:      { bonus: +3, proficient: false, ability: dexterity }
+  animal_handling: { bonus: +2, proficient: false, ability: wisdom }
+  arcana:          { bonus: +0, proficient: false, ability: intelligence }
+  athletics:       { bonus: +4, proficient: true,  ability: strength }
+  deception:       { bonus: +0, proficient: false, ability: charisma }
+  history:         { bonus: +0, proficient: false, ability: intelligence }
+  insight:         { bonus: +4, proficient: true,  ability: wisdom }
+  intimidation:    { bonus: +0, proficient: false, ability: charisma }
+  investigation:   { bonus: +2, proficient: true,  ability: intelligence }
+  medicine:        { bonus: +2, proficient: false, ability: wisdom }
+  nature:          { bonus: +2, proficient: true,  ability: intelligence }
+  perception:      { bonus: +4, proficient: true,  ability: wisdom }
+  performance:     { bonus: +0, proficient: false, ability: charisma }
+  persuasion:      { bonus: +0, proficient: false, ability: charisma }
+  religion:        { bonus: +0, proficient: false, ability: intelligence }
+  sleight_of_hand: { bonus: +3, proficient: false, ability: dexterity }
+  stealth:         { bonus: +5, proficient: true,  ability: dexterity }
+  survival:        { bonus: +4, proficient: true,  ability: wisdom }
+
+passive_perception: 14  # corrected from 13 on sheet
+
+attacks:
+  - name: Dagger (melee)
+    attack_bonus: +5    # DEX (+3) + prof (+2), finesse
+    damage: 1d4+3       # sheet said 1d4+2 (was using STR); corrected to DEX per finesse ruling
+    damage_type: piercing
+    notes: "Finesse, light. Owns 2."
+
+  - name: Dagger (thrown)
+    attack_bonus: +7    # DEX (+3) + prof (+2) + Archery (+2), per DM ruling
+    damage: 1d4+3       # corrected from 1d4+4 on sheet
+    damage_type: piercing
+    range: 20/60
+    notes: "Finesse, thrown. Archery applies per DM ruling."
+
+  - name: Longbow
+    attack_bonus: +7    # DEX (+3) + prof (+2) + Archery (+2)
+    damage: 1d8+3       # corrected from 1d8+4 on sheet
+    damage_type: piercing
+    range: 150/600
+
+spell_slots:
+  1st: { max: 3, current: 3 }
+
+proficiencies:
+  armor: [light armor, medium armor, shields]
+  weapons: [simple weapons, martial weapons]
+  tools: [lute]
+  languages: []  # not listed on sheet
+
+equipment:
+  - Leather armor
+  - Dagger (x2)
+  - Explorer's pack
+  - Longbow
+  - Quiver of 20 arrows
+  - Staff
+  - Hunting trap
+  - A trophy from an animal I killed
+  - Traveler's clothes
+
+features_and_traits:
+  - name: "Favored Enemy: Monstrosities"
+    source: Ranger 1
+    description: >
+      Advantage on Wisdom checks to track. Advantage on Intelligence
+      checks to recall info about.
+
+  - name: "Favored Terrain: Forest"
+    source: Ranger 1
+    description: >
+      Difficult terrain doesn't slow group's travel. Group can't become
+      lost except by magical means. Remain alert to danger. If moving
+      alone, can move stealthily at normal pace. While tracking, can
+      learn creatures' exact number, sizes, and how long ago they
+      passed through.
+
+  - name: "Fighting Style: Archery"
+    source: Ranger 2
+    description: >
+      +2 bonus to attack rolls with ranged weapons.
+
+  - name: Primeval Awareness
+    source: Ranger 2
+    description: >
+      Use an action + 1 spell slot to focus awareness. For 1 minute per
+      level of spell slot, you can sense whether the following creatures
+      are within 1 mile (6 miles in forest): aberrations, celestials,
+      dragons, elementals, fey, fiends, undead.
+
+  - name: Dread Ambusher
+    source: Gloomstalker 3
+    description: >
+      Add Wisdom modifier to initiative rolls. At start of your first
+      turn of each combat, walking speed increases by 10ft. If you
+      attack during first turn, can make an additional attack as part
+      of action. If that attack hits, target takes an extra 1d8 damage.
+
+  - name: Umbral Sight
+    source: Gloomstalker 3
+    description: >
+      60ft darkvision. Adept at evading creatures with darkvision. In
+      darkness, invisible to creatures with darkvision.
+
+  - name: Sharpshooter
+    source: Bonus feat (homebrew)
+    description: >
+      Attacking at long range doesn't impose disadvantage on ranged
+      weapon attack rolls. Ranged weapon attacks ignore half cover and
+      3/4 cover. Before you make an attack with a ranged weapon you can
+      choose to take a -5 penalty to the attack roll. If the attack
+      hits, you add +10 to the attack's damage.
+
+  - name: Wanderer
+    source: Outlander background
+    description: >
+      Have an excellent memory for maps and geography. Can always recall
+      the general layout of terrain, settlements, and other features
+      around you. Can find food and fresh water for myself and up to 5
+      people.
+
+notes:
+  - "Spells known not listed on provided pages — ask player for spell list."
+  - "Languages not listed — ask player."
