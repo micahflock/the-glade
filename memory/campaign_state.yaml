@@ -5,8 +5,9 @@
 # ── SESSION TRACKING ────────────────────────────────────────────────────────
 
 current_session: 3
-working_draft: sessions/s03_draft.md
+active_draft: sessions/s03_draft.md
 draft_status: in_progress  # options: not_started / in_progress / ready_to_play
+active_location: Road east of Antennington, heading toward the spring zone
 
 last_played_session: 2
 last_played_summary: "Antennington — triangulated the Bloom's heading. See sessions/session_log.md."
