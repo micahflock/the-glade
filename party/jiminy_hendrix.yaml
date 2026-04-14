@@ -1,0 +1,164 @@
+# party/jiminy_hendrix.yaml
+# Imported from handwritten character sheet (2 pages) — 2026-04-14
+# Corrections noted inline where sheet values differed.
+
+character:
+  name: Jiminy Hendrix
+  callsign: Drix
+  player: Katie
+  species: Cricket
+  class: Bard
+  subclass: College of Lore
+  background: Entertainer
+  level: 3
+  xp: null
+
+core:
+  proficiency_bonus: +2
+  inspiration: false
+  ac: 15            # studded leather (12) + DEX (+3)
+  initiative: +4    # corrected: DEX (+3) + JoAT (+1). Sheet said +3.
+  speed: 30
+  hp_max: 21
+  hp_current: 21
+  hit_dice: d8
+  hit_dice_remaining: 3d8
+
+ability_scores:
+  strength:     { score: 6,  modifier: -2 }  # corrected: sheet had modifier -3, DM confirms score 6 (mod -2)
+  dexterity:    { score: 16, modifier: +3 }
+  constitution: { score: 13, modifier: +1 }
+  intelligence: { score: 7,  modifier: -2 }
+  wisdom:       { score: 10, modifier: +0 }
+  charisma:     { score: 18, modifier: +4 }
+
+saving_throws:
+  strength:     { bonus: -2, proficient: false }   # corrected from -3 (STR mod now -2)
+  dexterity:    { bonus: +5, proficient: true }
+  constitution: { bonus: +1, proficient: false }
+  intelligence: { bonus: -2, proficient: false }    # corrected from 0 on sheet
+  wisdom:       { bonus: +0, proficient: false }
+  charisma:     { bonus: +6, proficient: true }
+
+skills:
+  # Non-proficient bonuses include +1 from Jack of All Trades.
+  acrobatics:      { bonus: +5, proficient: true,  ability: dexterity }
+  animal_handling: { bonus: +1, proficient: false, ability: wisdom }
+  arcana:          { bonus: -1, proficient: false, ability: intelligence }
+  athletics:       { bonus: -1, proficient: false, ability: strength }  # corrected from -2 (STR mod now -2, +1 JoAT = -1)
+  deception:       { bonus: +6, proficient: true,  ability: charisma }
+  history:         { bonus: -1, proficient: false, ability: intelligence }
+  insight:         { bonus: +1, proficient: false, ability: wisdom }
+  intimidation:    { bonus: +6, proficient: true,  ability: charisma }
+  investigation:   { bonus: -1, proficient: false, ability: intelligence }
+  medicine:        { bonus: +1, proficient: false, ability: wisdom }
+  nature:          { bonus: -1, proficient: false, ability: intelligence }
+  perception:      { bonus: +2, proficient: true,  ability: wisdom }
+  performance:     { bonus: +8, proficient: true,  ability: charisma }  # Expertise. Corrected from +10 on sheet.
+  persuasion:      { bonus: +8, proficient: true,  ability: charisma }  # Expertise.
+  religion:        { bonus: -1, proficient: false, ability: intelligence }
+  sleight_of_hand: { bonus: +5, proficient: true,  ability: dexterity }
+  stealth:         { bonus: +4, proficient: false, ability: dexterity }
+  survival:        { bonus: +1, proficient: false, ability: wisdom }
+
+passive_perception: 12
+
+attacks:
+  - name: Rapier
+    attack_bonus: +5    # DEX (+3) + prof (+2)
+    damage: 1d8+3       # corrected: sheet listed "1d8" without DEX mod
+    damage_type: piercing
+
+  - name: Shortsword
+    attack_bonus: +5    # DEX (+3) + prof (+2)
+    damage: 1d6+3
+    damage_type: piercing
+
+spellcasting:
+  ability: charisma
+  spell_attack: +6     # CHA (+4) + prof (+2)
+  spell_save_dc: 14    # 8 + CHA (+4) + prof (+2)
+  bardic_inspiration:
+    die: d6
+    uses: 4             # = CHA modifier
+
+spell_slots:
+  1st: { max: 4, current: 4 }
+  2nd: { max: 2, current: 2 }
+
+spells_known:
+  cantrips:
+    - Vicious Mockery
+    - Prestidigitation
+  1st_level:
+    - Healing Word
+    - Disguise Self
+    - Silvery Barbs
+    - Dissonant Whispers
+  2nd_level:
+    - Hold Person
+    - Locate Animals or Plants
+
+proficiencies:
+  armor: [light armor]
+  weapons: [simple weapons, hand crossbows, longswords, rapiers, shortswords]
+  tools: []             # musical instruments not specified on sheet
+  languages: []         # not listed on sheet
+
+equipment:
+  - Studded leather armor     # added: needed for AC 15
+  - Rapier                    # added: in attacks but missing from equipment
+  - Shortsword
+  - Dagger                    # added: standard Bard starting gear
+  - Disguise kit
+  - Favor from an admirer
+  - Costume
+  - Musical instrument        # added: type not specified on sheet
+  - Entertainer's pack        # added: standard Entertainer starting gear
+  - 16 gp
+
+features_and_traits:
+  - name: Bardic Inspiration
+    source: Bard 1
+    description: >
+      D6 x 4 uses. Bonus action to grant one creature within 60 feet
+      an inspiration die.
+
+  - name: Jack of All Trades
+    source: Bard 2
+    description: >
+      Add half your proficiency bonus, rounded down, to any ability
+      check you make that doesn't already include your proficiency bonus.
+
+  - name: Song of Rest
+    source: Bard 2
+    description: >
+      Extra D6 to everyone during short rest.
+
+  - name: Expertise
+    source: Bard 3
+    description: >
+      Double proficiency bonus for Performance and Persuasion.
+
+  - name: Bonus Proficiencies
+    source: College of Lore 3
+    description: >
+      Three additional skill proficiencies from College of Lore.
+
+  - name: Cutting Words
+    source: College of Lore 3
+    description: >
+      Use Bardic Inspiration die to subtract from an enemy's attack
+      roll, ability check, or damage roll.
+
+  - name: Song Distraction
+    source: Homebrew
+    description: >
+      Can distract with song. Performance check vs Insight. If succeed,
+      grab attention so it makes Perception and Investigation with
+      disadvantage until you stop performing.
+
+notes:
+  - "Musical instrument type not specified — ask player."
+  - "Languages not listed — ask player."
+  - "Tool proficiencies (3 musical instruments for Bard) not specified — ask player."
