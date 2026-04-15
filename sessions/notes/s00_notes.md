@@ -14,14 +14,8 @@ loose bullet points. The flavor text is canon; the structural notes are DM-facin
   passed a selection process before this session — session 0 was the final
   registration and meet-and-greet.
 - Character creation happened mid-session before the council briefing.
-- The council briefed them on triangulation. Next step: travel to the lost RJS
-  branch (name TBD at time of play — noted as "XXXX branch"), retrieve their
-  records, combine with Chitinholm data for a directional heading.
-- The RJS room's weapons, curiosities, and items were available for the party
-  to take. The party took a compass, a mouse pelt cape, and various adventuring supplies. They are mostly listed in PC inventories. 
+- Session ended before the council briefed them on triangulation. 
 - Sven's informal shorthand in notes: "Sev / 7834". Established in play as "Sven."
-- Session ended at Chitinholm market square. Rhonda (bugsmith), Hickum (baker),
-  and Bigsby (trinket seller) were available but party did not interact with them. 
 
 ---
 
