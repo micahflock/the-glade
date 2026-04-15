@@ -2,19 +2,19 @@
 
 ## World & Lore
 
-- [ ] **Big bad origin:** Was the ant queen attacked by the spider unprovoked, or did she bring it on herself (evil research)? Current lean: attacked. Other DM suggested an animal attacker over a spider. Current lean: large cordyceps-infected spider.
-- [ ] **Does the Bloom affect all magic users or just ant queens?** If all magic users: explains termite madness in summer zone, PC rapid leveling, more interesting monsters ("what is X bug but MORE?"). If just ant queens: keeps it more contained. Both DMs seem to like the "all magic users" idea.
+- [x] **Big bad origin:** Was the ant queen attacked by the spider unprovoked, or did she bring it on herself (evil research)? Current lean: attacked. Other DM suggested an animal attacker over a spider. Current lean: large cordyceps-infected spider. — Decision: The central ant queen was attacked unprovoked by a large cordyceps-infected spider. Evidence: World_Codex.md line 31.
+- [x] **Does the Bloom affect all magic users or just ant queens?** If all magic users: explains termite madness in summer zone, PC rapid leveling, more interesting monsters ("what is X bug but MORE?"). If just ant queens: keeps it more contained. Both DMs seem to like the "all magic users" idea. — Decision: All magic users. Evidence: World_Codex.md line 44; Homebrew_Rules.md lines 62–66.
 - [ ] **Is the ant coven known?** Do people in-world know about the ant queen coven and their shared magic?
 - [ ] **Annular ring widths:** Same or variable? Needs to be settled before building the map. They need to feel like distinct biomes but remain crossable in reasonable time.
 - [ ] **The Rise (zone barriers):** What is traversal actually like? One concept: winter/spring barrier is 20 ft of gelatinous cube with sharp delineation. Physics weird? Too much of a red herring?
 - [ ] **Non-rotting organic material:** Stuff removed from the spring zone doesn't rot — the magic travels with it. Needs a more legible in-world signal for players. One idea: ant raiders adorned with things that should be fragile or rotting (fresh flowers, soft organic matter) but aren't. The leafcutter eavesdrop scene may be a natural moment for this.
 - [ ] **Gods & religion:** Egyptian-style gods with forest animal heads on bugmanoid bodies. Are ant queens minor gods? Very underdeveloped.
 - [ ] **Post-human world?** Briefly mentioned. Not explored.
-- [ ] **Bug-scale conversion:** 5 ft = 1 inch in human terms? Not confirmed.
+- [x] **Bug-scale conversion:** 5 ft = 1 inch in human terms? Not confirmed. — Decision: Operationally confirmed through narrative use throughout World_Codex.md. Not locked as a precise ratio but treated as canon for descriptive purposes. Evidence: World_Codex.md lines 9–11, 72–74.
 
 ## Factions & NPCs
 
-- [ ] **Red queen / black queen power dynamic:** Subjugation or alliance-turned-domination? Current lean: started as an alliance and progressively became domination as the fire queen consolidated power. The leafcutter queen could be a more sympathetic figure. Needs to be decided before it becomes player-facing.
+- [x] **Red queen / black queen power dynamic:** Subjugation or alliance-turned-domination? Current lean: started as an alliance and progressively became domination as the fire queen consolidated power. The leafcutter queen could be a more sympathetic figure. Needs to be decided before it becomes player-facing. — Decision: Fire ant queen is the aggressor; leafcutter queen was coerced. Leafcutter queen can be played sympathetically. Evidence: World_Codex.md lines 96–109.
 - [ ] **Awakened ants mechanism:** Is there a rogue character (queen? slug with magic slime?) producing magical ichor to "awaken" select ants? Is there a nascent ant resistance? Underdeveloped.
 - [ ] **Lars:** Left behind in the burnt village. How does he come back? Options: stalks the party, realizes they're fighting ants and joins, joins and betrays, joins and stays loyal, harbors a grudge. Don't force it — leave open. Worth weaving back in.
 - [ ] **Nancy's evil wizard:** Player responded well to the hook (wizard he stole from, 14 months imprisoned). Optional but flagged for possible future appearance.
@@ -31,7 +31,7 @@
 - [ ] **Ant combat philosophy:** More ants but squishy with scary offense (leafcutter jaws), or fewer ants but individually threatening (on par with earwig bandits)? Current lean: fewer, more threatening (party has limited crowd control, no multi-attack).
 - [ ] **First ant encounter composition:** Should it include fire ants or not? Consider one fire ant commander in an otherwise all-leafcutter group as a hint. Or the reverse: black ants using red ants as foot soldiers after a recent alliance.
 - [ ] **Ant farm entry / disguise mechanic:** Pheromones or scavenged ant materials (armor fragments, non-rotting wildflower petals) to allow the party to disguise and enter. Underdeveloped — needs a cleaner mechanical hook.
-- [ ] **Flying rules detail:** One reference says ascending provokes opportunity attacks. Is this confirmed?
+- [x] **Flying rules detail:** One reference says ascending provokes opportunity attacks. Is this confirmed? — Decision: Confirmed. Ascending provokes opportunity attacks. Evidence: Homebrew_Rules.md line 35.
 - [ ] **Heated Body trait for fire ants:** Contact damage? Not yet implemented.
 
 ## Items & Loot
