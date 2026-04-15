@@ -1,6 +1,7 @@
 # party/tabatha_starr.yaml
 # Imported from handwritten character sheet (2 pages) — 2026-04-14
 # Corrections noted inline where sheet values differed.
+# 2026-04-15 — Session 1 stockroom items added from DM notes
 
 character:
   name: Tabatha Starr
@@ -101,6 +102,9 @@ equipment:
   - Hunting trap
   - A trophy from an animal I killed
   - Traveler's clothes
+  - Compass                         # session 1: RJS stockroom
+  - Mess pot                        # session 1: RJS stockroom
+  - Larval grease                   # session 1: RJS stockroom
 
 features_and_traits:
   - name: "Favored Enemy: Monstrosities"

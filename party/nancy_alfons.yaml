@@ -5,6 +5,7 @@
 # NOTE: Rogue Expertise (2 skills, double proficiency) not reflected in any
 # sheet skill values — all proficient skills show normal prof bonus, not doubled.
 # Expertise skill selections need to be confirmed with player.
+# 2026-04-15 — Session 1 stockroom items added from DM notes
 
 character:
   name: Nancy Alfons
@@ -121,12 +122,18 @@ equipment:
   - Wooden Flute
   - Studded leather armor
   - Map Tube with calculations and measurements
-  - Honing Steel
+  - Honing Steel                    # likely = whetstone from session 1 stockroom
   - Pearl/Amber worth 1 [UNCLEAR: value unit]
-  - Pens, paper, ink
+  - Pens, paper, ink                # likely = thistle pens and paper from session 1 stockroom
   - Bag of sand
   - Miners Evaluation Toolkit (reagent, pick, mortar)
   - 10 GP
+  - Flint and tinder                # session 1: RJS stockroom
+  - Rope                            # session 1: RJS stockroom
+  - Pitons                          # session 1: RJS stockroom
+  - Rations                         # session 1: RJS stockroom
+  - Arrows                          # session 1: RJS stockroom
+  - Document tube (empty)           # session 1: RJS stockroom
 
 features_and_traits:
   - name: Mobile
