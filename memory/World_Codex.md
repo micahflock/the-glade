@@ -38,17 +38,6 @@ The central ant queen (fall zone) was attacked by a large cordyceps-infected spi
 
 **Cordyceps control.** The queen herself remains partially infected and can now control anything infected with "her" strain of cordyceps. 
 
-### Open Questions
-
-- Was the queen attacked unprovoked, or did she bring it on herself (evil research)? Current lean: attacked by the spider.
-- Does the Bloom affect all magic users, or just ant queens? If all magic users: termite madness in summer zone, explanation for PC rapid leveling, more interesting monsters. Both DMs lean toward all magic users.
-- The spider will have to be dealt with to unfreeze everything.
-- The ant queen is a cordyceps lich now, but may be convinced to undo her magic — which will cause her to turn on the party at some point.
-
-### Earlier Concept Notes
-
-Original concept: a force (evil spirit, enchanted item) that freezes time, with the caster unwilling or unable to undo it because the original disaster would then occur. Alternative framings explored: a pupa that doesn't want to grow up; a mad wizard protecting an infant from a falling bookcase; a vain artificer dropping a fancy creation. All led to the current "desperate queen freezing infection" version.
-
 ---
 
 ## Zone Structure
@@ -58,11 +47,11 @@ The world radiates outward from the epicenter in concentric seasonal rings. It h
 | Zone    | Climate                          | Main Threats                              | Travel Width  |
 |---------|----------------------------------|-------------------------------------------|---------------|
 | Winter  | Permanent frost, no decay, no scent | Earwig bandits, desperation, red ant raids | Current party location |
-| Spring  | Boundless growth, nothing rots   | Fire ant + leafcutter alliance, flash floods, big raindrops | ~3 days |
-| Summer  | Blasted heat, dryness, fire      | Tentatively termites, cordyceps zombies   | ~2 days       |
-| Fall    | Rot, slime, mushroom, wet decay  | Cordyceps ant queen, zombie bugs          | ~1+ day to center |
+| Spring "the overgrowth" | Boundless growth, nothing rots   | Fire ant + leafcutter alliance, flash floods, big raindrops | ~3 days |
+| Summer (Name TBD) | Blasted heat, dryness, fire      | Tentatively termites, cordyceps zombies   | ~2 days       |
+| Fall  (The Fall)   | Rot, slime, mushroom, wet decay  | Cordyceps ant queen, zombie bugs          | ~1+ day to center |
 
-**The Rise.** The wavefront/barrier between seasonal zones. Challenging to traverse. One concept: the winter/spring barrier is 20 feet of gelatinous cube with a very sharp delineation — the other side is clearly spring. Physics may be otherwise weird. Underdeveloped.
+**The Rise.** The wavefront/barrier between seasonal zones. Challenging to traverse?
 
 ### Winter Zone (Current Party Location)
 
@@ -95,7 +84,7 @@ Rot, slime, mushroom, fungus, moss, wet decay. High-level endgame environment. T
 
 ### Fire Ants
 
-Organized, aggressive, operating with apparent purpose. Associated with fire magic — heated bodies, fire spitting. The leafcutters note that ever since the Bloom, the fire ants have become more magical: whatever small magic makes bugs work normally has been amplified. They do not kill on raids — they take. Bodies are dragged northeast. The fire ant queen is the aggressor in the alliance.
+Organized, aggressive, operating with apparent purpose. Associated with fire magic — heated bodies, fire spitting. The leafcutters note that ever since the Bloom, the fire ants have become more magical: whatever small magic makes bugs work normally has been amplified. They do not just kill on raids — they take. Bodies are dragged northeast to the Winter Farm. 
 
 ### Leafcutter Ants
 
@@ -108,7 +97,7 @@ Historically peaceful fungus farmers. The Bloom destroyed their food cycle: noth
 3. **Subsequent raids (burnt village, others).** Fire ants joined. Fire magic used. Villages burned. Bodies taken.
 4. **Current state.** Fire ants command; leafcutter ants carry out grunt work under duress. When fire ant commanders are killed, leafcutters stand down and want to talk.
 
-### The Fungal Farms
+### The Fungal Farms/The Winter Farm
 
 Underground chambers at the spring zone border where ants decompose organic material — including bodies — to grow fungus and feed the colony. May also function as a prison: surviving villagers may still be alive inside as labor or organic resource. Hook: the leafcutter ants who surrender after combat can offer to take the party to the farms.
 
@@ -116,7 +105,7 @@ Underground chambers at the spring zone border where ants decompose organic mate
 
 Individual ant minions lean toward pretty dumb — consistent with Sven being an unusually eloquent drone. Smarter ants (commanders, queens, specialists) exist as exceptions.
 
-Open idea: the Bloom's magical shockwave may have "awakened" some individual ants, making them smarter and more self-aware. Possible mechanism: a rogue character producing magical ichor and feeding it to select ants. The awakened leafcutter ants the party meets could be part of a nascent resistance. Big swing: if PCs consume this ichor, they gain a level.
+Open idea: the Bloom's magical shockwave may have "awakened" some individual ants, making them smarter and more self-aware. 
 
 ### Queen Structure
 
