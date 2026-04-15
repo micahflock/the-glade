@@ -105,6 +105,7 @@ equipment:
   - Compass                         # session 1: RJS stockroom
   - Mess pot                        # session 1: RJS stockroom
   - Larval grease                   # session 1: RJS stockroom
+  - Party map                       # session 2: working map begun by Tabby and Nancy, incorporating T'wigfingers' data, Lars's northeast heading, and Garett's triangulation parchment. Tabby is keeper.
 
 features_and_traits:
   - name: "Favored Enemy: Monstrosities"
