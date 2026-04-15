@@ -45,7 +45,7 @@ Armor and weapons can be either:
 
 Bug body parts can be sharpened and enchanted (armor, slicy arms).
 
-This is all just flavorwashing standard D&D 5e weapons
+This is all just flavorwashing standard D&D 5e weapons, enchantments, and magic items. 
 
 ### Currency: Life Pitch (LP)
 - 1 LP = 1 HP
@@ -92,15 +92,8 @@ This is all just flavorwashing standard D&D 5e weapons
 
 ---
 
-**Survival:** Backpack, bedroll, blanket, mess kit, waterskin, rations (1 day), iron pot
 
-**Storage:** Sack, pouch, chest, vial/glass bottle
-
-**Navigation:** Compass, chalk (1 piece), ink (1 oz bottle), ink pen, parchment (1 sheet), paper (1 sheet)
-
----
-
-## Inventory Design Notes
+## Item Design Notes
 
 - Party was given gold for a shopping spree (they skipped the market)
 - Given a pack animal and sled/cart to carry provisions (may need to leave it at some point)
