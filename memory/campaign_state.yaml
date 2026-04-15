@@ -4,20 +4,20 @@
 
 # ── SESSION TRACKING ────────────────────────────────────────────────────────
 
-current_session: 3
-active_draft: sessions/s03_draft.md
-draft_status: in_progress  # options: not_started / in_progress / ready_to_play
-active_location: Road east of Antennington, heading toward the spring zone
+current_session: 4
+active_draft: sessions/s04_draft.md
+draft_status: not_started
+active_location: Road encounter site east of Antennington, near the Winter Farm
 
-last_played_session: 2
-last_played_summary: "Antennington — triangulated the Bloom's heading. See sessions/session_log.md."
+last_played_session: 3
+last_played_summary: "First ant encounter — body cart, fire ant commanders killed, leafcutter rebel alliance forming. See sessions/session_log.md."
 
 
 # ── PARTY STATUS ─────────────────────────────────────────────────────────────
 
 party:
   level: 3
-  location: Road east of Antennington, heading toward the spring zone
+  location: Road encounter site east of Antennington, near the Winter Farm
   pack_animal: Bestie (pillbug, traveling with party)
   details: party/  # individual YAML per PC — see party/*.yaml
 
@@ -29,17 +29,21 @@ party:
 
 active_threads:
 
+  - thread: Winter Farm infiltration
+    priority: high
+    notes: Party plans to play dead in the body cart while Drix uses Disguise Self as a fire ant. Session 4 cold open.
+
+  - thread: Loyalist liability
+    priority: high
+    notes: Leafcutter loyalist is cowed but planning to betray party at earliest opportunity. Must be dealt with before or during farm entry.
+
+  - thread: Leafcutter rebel alliance
+    priority: high
+    notes: Rebel leafcutter impressed by party's quest. Has a contact in the resistance inside the Winter Farm. Grainmother Vell leads the rebel cell.
+
   - thread: Triangulated heading toward the Bloom's source
-    priority: high
-    notes: Party has combined T'wigfingers data, Garett's parchment, and Lars's directional intel
-
-  - thread: First ant encounter on the road
-    priority: high
-    notes: Planned for Session 3 — cart with bodies, leafcutter workers, fire ant commanders
-
-  - thread: Fungal farm hook
-    priority: high
-    notes: Leafcutters expected to offer to take party to the farm after fire ants are dealt with
+    priority: medium
+    notes: Party has the heading. Winter Farm is on the path — rebels can provide passage through.
 
   - thread: Lars — left behind in burnt village
     priority: medium
@@ -47,7 +51,7 @@ active_threads:
 
   - thread: Ahganmin properties unknown
     priority: medium
-    notes: Glowing magic amber rock given by Garett. Properties TBD
+    notes: Glowing magic amber rock given by Garett, now in detection box. Properties TBD beyond glow response to magic.
 
   - thread: Bessie and cart heading back to Chitinholm
     priority: low

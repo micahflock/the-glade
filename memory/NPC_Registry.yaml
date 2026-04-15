@@ -87,7 +87,7 @@ npcs:
     location: Antennington Amber Mine — Level 2
     disposition: Positive
     first_met: Session 2
-    last_seen: Session 2
+    last_seen: Session 3
 
     appearance: Fussily hunched over his table.
     voice: "Surprised by non-Ricko visitors: 'Oh! You aren't Ricko! Now this is a surprise. Who could you be, what do you want?'"
@@ -104,6 +104,7 @@ npcs:
       - "Session 2: Met at the mine. Was at Antennington RJS when ants attacked — fled to the mine."
       - "'I have never seen an aggressive ant before, and I can't say I want to meet one.'"
       - Left the note in the RJS lab pinned with a hand-pickaxe
+      - "Session 3: Nancy stayed overnight picking his brain about the Bloom. Built a detection box for the Ahganmin before the party departed."
 
     hooks:
       - His destroyed instruments — does he rebuild? Does he have more data?
@@ -118,7 +119,7 @@ npcs:
     location: Antennington Amber Mine — surface building
     disposition: Positive
     first_met: Session 2
-    last_seen: Session 2
+    last_seen: Session 3
 
     appearance: Massive. Deep voice.
     voice: "'Hello? The door is open, come on in.' Working on a piece of amber when the party arrived."
@@ -212,7 +213,7 @@ npcs:
     location: Traveling with the party
     disposition: Warming to the party
     first_met: Session 1
-    last_seen: Session 2
+    last_seen: Session 3
 
     hp: 20
     animal_handling_dc: 14
@@ -262,6 +263,54 @@ npcs:
       Eyed the party uncertainly.
 
     hooks: []
+
+
+  - name: Leafcutter Rebel
+    species: Leafcutter ant
+    role: Body cart worker, rebel sympathizer
+    status: Alive
+    location: With the party (road encounter site, heading to Winter Farm)
+    disposition: Allied
+    first_met: Session 3
+    last_seen: Session 3
+
+    voice: Flat and sure. "Good. They're better dead."
+    motivation: Disgusted by the corpse farming. Has a contact in the resistance inside the Winter Farm. Doesn't have a plan — has conviction.
+    personality: Steady, direct. Willing to threaten the Loyalist if necessary.
+
+    key_info_given_to_party:
+      - Leafcutters farm fungus on decomposing bodies
+      - The leafcutter queen was coerced by the red ant queen
+      - A resistance movement exists inside the farm
+      - The leafcutters tried raiding alone before the alliance (the Antennington raid) and it went badly
+
+    party_history:
+      - "Session 3: Survived the road encounter. Impressed by party's quest to understand the Bloom. Offered to guide party to the Winter Farm."
+
+    hooks:
+      - Connection to the rebel cell inside the Winter Farm — leads to Grainmother Vell
+      - Potential long-term ally if the party earns trust
+
+
+  - name: Leafcutter Loyalist
+    species: Leafcutter ant
+    role: Body cart worker, alliance loyalist
+    status: Alive
+    location: With the party (road encounter site, heading to Winter Farm)
+    disposition: Hostile (covert)
+    first_met: Session 3
+    last_seen: Session 3
+
+    voice: Panicked, urgent. Mandibles clicking fast.
+    motivation: Survival. Believes the alliance is the only rational path. Terrified of consequences now that fire ants are dead and he's implicated.
+    personality: Not evil — practical. His framework is follow the queen, do what you're told, survive. Now that framework has collapsed.
+
+    party_history:
+      - "Session 3: Cowed by Nancy ('might makes right doesn't sit with me') but not won over. Planning to betray the party at earliest opportunity."
+
+    hooks:
+      - Ticking liability — will sprint to alert red ant discipline guards if unwatched near the farm entrance
+      - Could be turned with sufficient evidence that the Bloom can be undone (removing his 'but how do we eat?' objection)
 
 
   # ── NOT YET MET ─────────────────────────────────────────────────────────────

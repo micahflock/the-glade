@@ -136,7 +136,7 @@ equipment:
   - Arrows                          # session 1: RJS stockroom
   - Document tube (empty)           # session 1: RJS stockroom
   - Tune Hammer of Amber            # session 2: found in RJS lab, Antennington. Ball-peen hammer; strikes amber to produce a note that varies by amber age.
-  - Ahganmin                        # session 2: given by Garett at the Antennington Amber Mine. Chunk of amber that glows and reacts to elevated magical energy.
+  - Ahganmin (in Garett's detection box)  # session 2: glowing magic amber, reacts to elevated magical energy. Session 3: Garett built a box housing that makes glow changes easier to observe.
 
 features_and_traits:
   - name: Mobile
@@ -167,3 +167,4 @@ notes:
     only Disguise Self qualifies. One of the Divination picks may be the Fey
     Touched 1st-level bonus spell rather than an Arcane Trickster selection —
     confirm with player ROWYN if it matters mechanically.
+  - "Session 3: Scared but interested in learning new magical knowledge. Spent the night with Garett studying the Bloom."

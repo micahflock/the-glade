@@ -16,6 +16,7 @@
 
 - [x] **Red queen / black queen power dynamic:** Subjugation or alliance-turned-domination? Current lean: started as an alliance and progressively became domination as the fire queen consolidated power. The leafcutter queen could be a more sympathetic figure. Needs to be decided before it becomes player-facing. — Decision: Fire ant queen is the aggressor; leafcutter queen was coerced. Leafcutter queen can be played sympathetically. Evidence: World_Codex.md lines 96–109.
 - [ ] **Awakened ants mechanism:** Is there a rogue character (queen? slug with magic slime?) producing magical ichor to "awaken" select ants? Is there a nascent ant resistance? Underdeveloped.
+- [ ] **Loyalist liability:** Leafcutter loyalist from the body cart encounter is alive and planning betrayal. Must be dealt with before or during Winter Farm entry in Session 4. Options: restrain, convince, kill, or let him run and deal with consequences.
 - [ ] **Lars:** Left behind in the burnt village. How does he come back? Options: stalks the party, realizes they're fighting ants and joins, joins and betrays, joins and stays loyal, harbors a grudge. Don't force it — leave open. Worth weaving back in.
 - [ ] **Nancy's evil wizard:** Player responded well to the hook (wizard he stole from, 14 months imprisoned). Optional but flagged for possible future appearance.
 - [ ] **Thoraxville:** Nancy mentioned it. Needs to be developed.
@@ -29,7 +30,8 @@
 - [ ] **Leveling justification:** Is rapid leveling tied to the Bloom amplifying all magic? Does the ichor idea work? Is it diegetic or just meta?
 - [ ] **Level 20 by endgame:** Is this realistic given ~10 sessions? Verify.
 - [ ] **Ant combat philosophy:** More ants but squishy with scary offense (leafcutter jaws), or fewer ants but individually threatening (on par with earwig bandits)? Current lean: fewer, more threatening (party has limited crowd control, no multi-attack).
-- [ ] **First ant encounter composition:** Should it include fire ants or not? Consider one fire ant commander in an otherwise all-leafcutter group as a hint. Or the reverse: black ants using red ants as foot soldiers after a recent alliance.
+- [ ] **Leafcutter combat behavior:** In Session 3, leafcutters fought against the party halfheartedly and some switched sides mid-fight. Is this the standard leafcutter behavior (won't commit against non-ant opponents), or was it specific to this encounter?
+- [x] **First ant encounter composition:** Should it include fire ants or not? Consider one fire ant commander in an otherwise all-leafcutter group as a hint. Or the reverse: black ants using red ants as foot soldiers after a recent alliance. — Decision: Two fire ant commanders + four leafcutter workers with a body cart. Leafcutters fought halfheartedly, some switched sides mid-combat. Evidence: Session 3 play.
 - [ ] **Ant farm entry / disguise mechanic:** Pheromones or scavenged ant materials (armor fragments, non-rotting wildflower petals) to allow the party to disguise and enter. Underdeveloped — needs a cleaner mechanical hook.
 - [x] **Flying rules detail:** One reference says ascending provokes opportunity attacks. Is this confirmed? — Decision: Confirmed. Ascending provokes opportunity attacks. Evidence: Homebrew_Rules.md line 35.
 - [ ] **Heated Body trait for fire ants:** Contact damage? Not yet implemented.
@@ -47,7 +49,7 @@
 - [ ] **The map:** Promised but not yet produced. Antennington is roughly SE of Chitinholm; the nexus is further inward/east.
 - [ ] **Summer zone content:** Tentatively termites + cordyceps zombies + blasted heat. Needs a major challenge or set piece. Both DMs like the termite idea. Largely unplanned.
 - [ ] **Fall zone content:** Rot, slime, mushroom, fungus, wet decay. Cordyceps ant queen. High-level endgame. The spider must be dealt with. Needs development.
-- [ ] **Session 3 endpoint:** End at (a) conclusion of the road encounter with the ant caravan, or (b) the party getting their first look at the farm entrance from a safe distance. Don't push into the farm interior this session.
+- [x] **Session 3 endpoint:** End at (a) conclusion of the road encounter with the ant caravan, or (b) the party getting their first look at the farm entrance from a safe distance. Don't push into the farm interior this session. — Decision: Ended at (a), after loyalist/rebel dialogue. Winter Farm approach and interior moved to Session 4. Evidence: Session 3 play.
 - [ ] **Fungal farm interior:** If the party enters, there should be a meaningful reward inside. Maybe something that gives them a level (ichor?). The farm could function as a prison — surviving villagers may still be alive. Rescue objective if needed. Design not started.
 - [ ] **Antennington retcon logic:** The first village was burned (fire ants). Antennington was only ransacked (leafcutters only, first raid, before the alliance). This wasn't deliberate — it's how it played out at the table. Proposed retcon: the alliance formed after Antennington was raided. Maybe too many bugs escaped Antennington? Confirm this is the logic to lock in. Antennington was hit approximately 1 week and 3 days before the party arrived (Session 2).
 
