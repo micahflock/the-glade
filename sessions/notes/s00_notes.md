@@ -18,11 +18,10 @@ loose bullet points. The flavor text is canon; the structural notes are DM-facin
   branch (name TBD at time of play — noted as "XXXX branch"), retrieve their
   records, combine with Chitinholm data for a directional heading.
 - The RJS room's weapons, curiosities, and items were available for the party
-  to take. What (if anything) was taken was not recorded. [DM CHECK]
+  to take. The party took a compass, a mouse pelt cape, and various adventuring supplies. They are mostly listed in PC inventories. 
 - Sven's informal shorthand in notes: "Sev / 7834". Established in play as "Sven."
 - Session ended at Chitinholm market square. Rhonda (bugsmith), Hickum (baker),
-  and Bigsby (trinket seller) were available but whether the party interacted
-  with them is unrecorded. [DM CHECK]
+  and Bigsby (trinket seller) were available but party did not interact with them. 
 
 ---
 
