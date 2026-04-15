@@ -49,7 +49,7 @@
 - [ ] **Fall zone content:** Rot, slime, mushroom, fungus, wet decay. Cordyceps ant queen. High-level endgame. The spider must be dealt with. Needs development.
 - [ ] **Session 3 endpoint:** End at (a) conclusion of the road encounter with the ant caravan, or (b) the party getting their first look at the farm entrance from a safe distance. Don't push into the farm interior this session.
 - [ ] **Fungal farm interior:** If the party enters, there should be a meaningful reward inside. Maybe something that gives them a level (ichor?). The farm could function as a prison — surviving villagers may still be alive. Rescue objective if needed. Design not started.
-- [ ] **Antennington retcon logic:** The first village was burned (fire ants). Antennington was only ransacked (leafcutters only, first raid, before the alliance). This wasn't deliberate — it's how it played out at the table. Proposed retcon: the alliance formed after Antennington was raided. Maybe too many bugs escaped Antennington? Confirm this is the logic to lock in.
+- [ ] **Antennington retcon logic:** The first village was burned (fire ants). Antennington was only ransacked (leafcutters only, first raid, before the alliance). This wasn't deliberate — it's how it played out at the table. Proposed retcon: the alliance formed after Antennington was raided. Maybe too many bugs escaped Antennington? Confirm this is the logic to lock in. Antennington was hit approximately 1 week and 3 days before the party arrived (Session 2).
 
 ## Misc / Not Categorized
 
