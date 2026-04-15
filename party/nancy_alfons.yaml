@@ -6,6 +6,7 @@
 # sheet skill values — all proficient skills show normal prof bonus, not doubled.
 # Expertise skill selections need to be confirmed with player.
 # 2026-04-15 — Session 1 stockroom items added from DM notes
+# 2026-04-15 — Expertise confirmed: Sleight of Hand and Investigation (bonuses corrected to +7)
 
 character:
   name: Nancy Alfons
@@ -54,14 +55,14 @@ skills:
   history:         { bonus: +3, proficient: false, ability: intelligence }
   insight:         { bonus: +3, proficient: true,  ability: wisdom }
   intimidation:    { bonus: +1, proficient: false, ability: charisma }
-  investigation:   { bonus: +5, proficient: true,  ability: intelligence }
+  investigation:   { bonus: +7, proficient: true, expertise: true, ability: intelligence }  # Sheet showed +5 — corrected; Expertise confirmed 2026-04-15
   medicine:        { bonus: +1, proficient: false, ability: wisdom }
   nature:          { bonus: +3, proficient: false, ability: intelligence }  # sheet showed +2; corrected
   perception:      { bonus: +1, proficient: false, ability: wisdom }
   performance:     { bonus: +1, proficient: false, ability: charisma }
   persuasion:      { bonus: +1, proficient: false, ability: charisma }
   religion:        { bonus: +5, proficient: true,  ability: intelligence }
-  sleight_of_hand: { bonus: +5, proficient: true,  ability: dexterity }
+  sleight_of_hand: { bonus: +7, proficient: true, expertise: true, ability: dexterity }   # Sheet showed +5 — corrected; Expertise confirmed 2026-04-15
   stealth:         { bonus: +5, proficient: true,  ability: dexterity }
   survival:        { bonus: +1, proficient: false, ability: wisdom }
 
@@ -158,9 +159,8 @@ backstory:
     flagged for development.
 
 notes:
-  - Rogue Expertise (2 skills at level 1, double proficiency bonus) has no
-    visible selection on the sheet. All proficient skills show normal +2 prof,
-    not doubled. Confirm expertise skill choices with player ROWYN.
+  - Rogue Expertise confirmed 2026-04-15: Sleight of Hand and Investigation.
+    Both updated from +5 to +7 (double prof +4 + ability mod).
   - Spells added from physical spell cards (2026-04-15): Mage Hand, Message,
     Minor Illusion (cantrips); Disguise Self, Detect Magic, Identify (1st level).
     Note: Arcane Trickster requires at least 2 Enchantment/Illusion spells known;
