@@ -1,0 +1,152 @@
+# party/nancy_alfons.yaml
+# Imported from handwritten character sheet — 2026-04-15
+# Sheet had class spelled "Rouge"; corrected to Rogue.
+# Nature skill corrected from sheet value +2 to +3 (INT mod, not proficient).
+# NOTE: Rogue Expertise (2 skills, double proficiency) not reflected in any
+# sheet skill values — all proficient skills show normal prof bonus, not doubled.
+# Expertise skill selections need to be confirmed with player.
+
+character:
+  name: Nancy Alfons
+  callsign: null
+  player: ROWYN
+  species: Jumping Spider
+  class: Rogue
+  subclass: Arcane Trickster
+  background: null
+  level: 3
+  xp: null
+
+core:
+  proficiency_bonus: 2
+  inspiration: false
+  ac: 15
+  initiative: +3
+  speed: 40
+  hp_max: 22
+  hp_current: 22       # set to hp_max on fresh import
+  hit_dice: 3d8
+  hit_dice_remaining: 3
+
+ability_scores:
+  strength:     { score: 6,  modifier: -2 }
+  dexterity:    { score: 16, modifier: +3 }
+  constitution: { score: 12, modifier: +1 }
+  intelligence: { score: 16, modifier: +3 }
+  wisdom:       { score: 12, modifier: +1 }
+  charisma:     { score: 12, modifier: +1 }
+
+saving_throws:
+  strength:     { bonus: -2, proficient: false }
+  dexterity:    { bonus: +5, proficient: true }
+  constitution: { bonus: +1, proficient: false }
+  intelligence: { bonus: +5, proficient: true }
+  wisdom:       { bonus: +1, proficient: false }
+  charisma:     { bonus: +1, proficient: false }
+
+skills:
+  acrobatics:      { bonus: +3, proficient: false, ability: dexterity }
+  animal_handling: { bonus: +1, proficient: false, ability: wisdom }
+  arcana:          { bonus: +3, proficient: false, ability: intelligence }
+  athletics:       { bonus: -2, proficient: false, ability: strength }
+  deception:       { bonus: +3, proficient: true,  ability: charisma }
+  history:         { bonus: +3, proficient: false, ability: intelligence }
+  insight:         { bonus: +3, proficient: true,  ability: wisdom }
+  intimidation:    { bonus: +1, proficient: false, ability: charisma }
+  investigation:   { bonus: +5, proficient: true,  ability: intelligence }
+  medicine:        { bonus: +1, proficient: false, ability: wisdom }
+  nature:          { bonus: +3, proficient: false, ability: intelligence }  # sheet showed +2; corrected
+  perception:      { bonus: +1, proficient: false, ability: wisdom }
+  performance:     { bonus: +1, proficient: false, ability: charisma }
+  persuasion:      { bonus: +1, proficient: false, ability: charisma }
+  religion:        { bonus: +5, proficient: true,  ability: intelligence }
+  sleight_of_hand: { bonus: +5, proficient: true,  ability: dexterity }
+  stealth:         { bonus: +5, proficient: true,  ability: dexterity }
+  survival:        { bonus: +1, proficient: false, ability: wisdom }
+
+passive_perception: 11
+
+attacks:
+  - name: Rapier
+    attack_bonus: +5
+    damage: 1d8
+    damage_type: piercing
+  - name: Shortbow
+    attack_bonus: +5
+    damage: 1d6
+    damage_type: piercing
+    range: 80/320
+
+spellcasting:
+  ability: intelligence
+  spell_save_dc: 13        # 8 + prof 2 + INT mod 3
+  spell_attack_bonus: +5   # prof 2 + INT mod 3
+  cantrips:
+    - name: Mage Hand      # mandatory Arcane Trickster cantrip
+      school: conjuration
+    - name: Message
+      school: transmutation
+    - name: Minor Illusion
+      school: illusion
+  known_spells:
+    - name: Disguise Self
+      level: 1
+      school: illusion
+    - name: Detect Magic
+      level: 1
+      school: divination
+      ritual: true
+    - name: Identify
+      level: 1
+      school: divination
+      ritual: true
+
+spell_slots:
+  1st: { max: 2, current: 2 }
+
+proficiencies:
+  armor:
+    - light armor
+  weapons:
+    - simple weapons
+    - hand crossbows
+    - longswords
+    - rapiers
+    - shortswords
+  tools:
+    - thieves' tools
+  languages: []        # not on sheet
+
+equipment:
+  - Wooden Flute
+  - Studded leather armor
+  - Map Tube with calculations and measurements
+  - Honing Steel
+  - Pearl/Amber worth 1 [UNCLEAR: value unit]
+  - Pens, paper, ink
+  - Bag of sand
+  - Miners Evaluation Toolkit (reagent, pick, mortar)
+  - 10 GP
+
+features_and_traits:
+  - name: Mobile
+    source: Feat
+    description: >
+      +10 speed. If you Dash, you ignore difficult terrain for the rest of the
+      turn. When you make a melee attack against a creature, that creature
+      cannot make opportunity attacks against you for the rest of the turn.
+  - name: Fey Touched
+    source: Feat
+    description: >
+      [UNCLEAR: full description not legible on sheet — spell portion deferred]
+
+notes:
+  - Rogue Expertise (2 skills at level 1, double proficiency bonus) has no
+    visible selection on the sheet. All proficient skills show normal +2 prof,
+    not doubled. Confirm expertise skill choices with player ROWYN.
+  - Spells added from physical spell cards (2026-04-15): Mage Hand, Message,
+    Minor Illusion (cantrips); Disguise Self, Detect Magic, Identify (1st level).
+    Note: Arcane Trickster requires at least 2 Enchantment/Illusion spells known;
+    only Disguise Self qualifies. One of the Divination picks may be the Fey
+    Touched 1st-level bonus spell rather than an Arcane Trickster selection —
+    confirm with player ROWYN if it matters mechanically.
