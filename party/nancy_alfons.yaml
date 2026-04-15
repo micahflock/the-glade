@@ -77,7 +77,31 @@ attacks:
     damage_type: piercing
     range: 80/320
 
-spell_slots:           # Arcane Trickster 1/3 progression; not on sheet page
+spellcasting:
+  ability: intelligence
+  spell_save_dc: 13        # 8 + prof 2 + INT mod 3
+  spell_attack_bonus: +5   # prof 2 + INT mod 3
+  cantrips:
+    - name: Mage Hand      # mandatory Arcane Trickster cantrip
+      school: conjuration
+    - name: Message
+      school: transmutation
+    - name: Minor Illusion
+      school: illusion
+  known_spells:
+    - name: Disguise Self
+      level: 1
+      school: illusion
+    - name: Detect Magic
+      level: 1
+      school: divination
+      ritual: true
+    - name: Identify
+      level: 1
+      school: divination
+      ritual: true
+
+spell_slots:
   1st: { max: 2, current: 2 }
 
 proficiencies:
@@ -120,4 +144,9 @@ notes:
   - Rogue Expertise (2 skills at level 1, double proficiency bonus) has no
     visible selection on the sheet. All proficient skills show normal +2 prof,
     not doubled. Confirm expertise skill choices with player ROWYN.
-  - Spellcasting page not provided — cantrips and known spells not recorded.
+  - Spells added from physical spell cards (2026-04-15): Mage Hand, Message,
+    Minor Illusion (cantrips); Disguise Self, Detect Magic, Identify (1st level).
+    Note: Arcane Trickster requires at least 2 Enchantment/Illusion spells known;
+    only Disguise Self qualifies. One of the Divination picks may be the Fey
+    Touched 1st-level bonus spell rather than an Arcane Trickster selection —
+    confirm with player ROWYN if it matters mechanically.
