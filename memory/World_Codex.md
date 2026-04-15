@@ -28,7 +28,7 @@ Spring has not come. Weeks late at this point.
 
 ## The Big Bad — Origin Event (DM Only)
 
-The central ant queen (fall zone) was attacked by a large cordyceps-infected spider. Bitten by the spider and desperate to save her colony, she used forbidden ant coven magic to trap the spider and slow her own infection in a stasis bubble.
+The central ant queen (fall zone) was attacked by a large cordyceps-infected spider. Bitten by the spider and desperate to save her colony, she used forbidden ant coven magic to trap the spider in a stasis bubble and slow her own infection.
 
 ### Side Effects
 
@@ -36,7 +36,7 @@ The central ant queen (fall zone) was attacked by a large cordyceps-infected spi
 
 **Coven corruption.** Breaking the coven's pact against this dark magic branch has left all ant queens in the region more powerful and slightly more corrupted. This is why they've gone mad and are raiding (also survival). Ant coven magic binds the ant queens together.
 
-**Cordyceps control.** The queen herself remains partially infected and can now control anything infected with "her" strain of cordyceps. She has spread the cordyceps to a dragonfly she now partially controls as her weapon and agent in the world.
+**Cordyceps control.** The queen herself remains partially infected and can now control anything infected with "her" strain of cordyceps. 
 
 ### Open Questions
 
