@@ -2,6 +2,7 @@
 # Imported from handwritten character sheet (2 pages) — 2026-04-14
 # 2026-04-14 — INT corrected from 7 to 10 per DM
 # Corrections noted inline where sheet values differed.
+# 2026-04-15 — Initiative corrected: JoAT does not apply, reverted to DEX (+3)
 
 character:
   name: Jiminy Hendrix
@@ -18,7 +19,7 @@ core:
   proficiency_bonus: +2
   inspiration: false
   ac: 15            # studded leather (12) + DEX (+3)
-  initiative: +4    # corrected: DEX (+3) + JoAT (+1). Sheet said +3.
+  initiative: +3    # DEX (+3). Sheet was correct — prior JoAT correction reversed.
   speed: 30
   hp_max: 21
   hp_current: 21
