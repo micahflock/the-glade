@@ -65,3 +65,98 @@
 - Packs of goods from the cart are on the ground
 
 ---
+
+## Session 2: The Glade
+
+- Battle just ended... all is quiet
+- Cart lies still
+- Wagon is a little broken, pillbug looks tired
+  - Wheel axle is broken, bearing is also broken
+  - Nancy fixes the axle, we make it a tricycle cart
+  - Drix leaves a note for the Royal Jelly Society letting them know what happened
+  - We hook up Bessy to the cart + send her on her way
+- Earwigs look like farmers, relatively poor
+  - Nothing in their pockets
+- We attach our saddle bags to the new pill bug — Besty!
+- We set off towards Antennington
+  - Uneventful trip
+  - Found tracks for 1 earwig running away
+- Darkness is falling, three sites for us to camp in
+  - We choose to make camp under a tree
+  - Nancy + I look around
+    - I don't see or hear anybody
+    - Nancy doesn't either
+  - Drix spruces up camp + begins playing soft music
+  - Set up a little lean-to to camp in
+- We talk about the fight, + have conflicting feelings
+- Nancy opens the mysterious tube + find:
+  - A complicated data table
+  - Top down map of Kitenhome w/ lines + notations + data written on it
+  - Nancy re-seals the tube perfectly
+- We start making a reference map w/ where we've been ✓ Kitenhome
+- We go to sleep
+  - 1st watch → Drix
+  - 2nd watch → Nancy
+  - 3rd watch → Me
+- 1st watch → uneventful
+- 2nd watch → uneventful
+- 3rd watch → uneventful, but saw a faint glow to the East right before sunrise
+  - Make a note of that on the map
+- We continue on to Antennington
+  - Smell of acrid smoke in the air
+  - Tang of magical energy
+- We pass a building that had its door wrenched off
+- Continue to the town
+  - Town looks burnt + blasted
+  - No bodies + nobody around
+  - Looks like it was *recently* burned... like this morning
+    - Maybe the glow I saw
+  - No food, but everything else was left
+- We head towards the South side of the town
+  - Hear chittering
+    - It's the earwig that ran
+    - Says it's raiders → the ants
+    - The ants dragged the bodies away
+      - Black ants w/ red ants leading
+      - Went northeast-ish
+        - ~ We want to avoid this direction
+- We continue East towards Antennington
+- Antennington:
+  - Very small town
+  - Amber mine
+  - A few homes, buildings, + small Royal Jelly Society building
+  - Very quiet... nobody here
+  - Homes are busted open + windows broken
+- RJS building
+  - Ransacked
+  - 3 small rooms off a hallway
+  - Nobody here
+  - *Trail of 2 Forests → by Ape Caves*
+  - 1st room = meeting room
+    - Documents re: Amber mine
+  - 2nd room = Lab
+    - Just a mess...
+    - Pinned to the wall a note says, "All RJS members meet in the mine for a meeting" — signed G
+    - Find an ornate box full of miner's stuff
+  - 3rd room = Breakroom / staff room
+    - Fully ransacked + picked/sorted through
+    - We find the name Garett on some paper
+- We head to the Amber Mine
+  - Knock
+  - Deep voice says "Come on in!"
+    - Massive ox beetle working over a piece of amber
+      - ~ Ricko — not w/ the RJS, just works here
+    - Says Garett is also working in another room (level 2) w/ sensitive instruments
+- Ricko takes us over to the lift gate + takes us to level 2 to see Garett
+- Garett is a green weaver
+  - Asks who we are + what we want
+  - He tells us there is a slight fluctuation in the magical fluctuation that he's picked up on
+  - Gives us his data/figures + we spread them out to look at them
+    - We notice that the triangulation of our maps + the direction the ants went are in the same direction
+  - Draws a line on our map showing the direction of the "Magical Wave"
+    - Says it must be a constant source
+    - All different types of magic — or a new type?
+      - We may be at the edges of its effect
+    - Gives us a beautiful piece of amber that glows when magic is nearby
+
+---
