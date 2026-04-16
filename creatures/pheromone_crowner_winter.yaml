@@ -1,0 +1,80 @@
+creature:
+  name: Pheromone Crowner (Winter)
+  size: Medium
+  type: Monstrosity (ant)
+  alignment: Lawful Evil
+  source: magic-bug-generator (Winter tier) — Solenopsis invicta major worker
+
+combat:
+  ac:
+    value: 14
+    type: natural armor
+  hp:
+    value: 91
+    hit_dice: 14d8+28
+  speed:
+    - 30 ft.
+    - climb 30 ft.
+  cr:
+    rating: 2
+    xp: 450
+    proficiency_bonus: 2
+
+ability_scores:
+  strength:     { score: 12, modifier: 1 }
+  dexterity:    { score: 14, modifier: 2 }
+  constitution: { score: 14, modifier: 2 }
+  intelligence: { score: 8,  modifier: -1 }
+  wisdom:       { score: 14, modifier: 2 }
+  charisma:     { score: 14, modifier: 2 }
+
+senses:
+  - darkvision 60 ft.
+  - tremorsense 30 ft.
+passive_perception: 12
+languages:
+  - Ant-cant (chemical)
+
+skills:
+  - Perception +4
+  - Insight +4
+
+traits:
+  - name: Heated Body
+    description: >
+      A creature that touches the Crowner or hits her with a melee attack while
+      within 5 ft. of her takes 1d4 fire damage. She sheds dim light out to 5 ft.
+  - name: Pheromone Sense
+    description: >
+      The Crowner is aware of the location of every fire ant within 120 ft. and
+      their rough emotional state. She knows immediately if one is killed.
+
+actions:
+  - name: Multiattack
+    description: >
+      The Crowner makes two Bite attacks.
+  - name: Bite
+    description: >
+      Melee Weapon Attack: +4 to hit, reach 5 ft., one target.
+      Hit: 6 (1d8+2) piercing damage plus 2 (1d4) fire damage.
+
+bonus_actions:
+  - name: Crown-Scent (1/turn)
+    description: >
+      The Crowner releases a burst of command pheromone. One ally she can see
+      within 30 ft. either gains advantage on its next attack roll made before
+      the end of its next turn, OR may immediately move up to half its speed
+      without provoking opportunity attacks.
+
+roleplaying:
+  personality: >
+    Composed. Does not shout — the pheromone does the shouting for her. Regards
+    her workers as extensions of herself; regards prisoners as raw material.
+  motivation: >
+    Maintain throughput at the worksite. The queen measures overseers by the
+    tonnage brought to the fungal chambers; sentiment is a cost she cannot afford.
+  tactics: >
+    Stays at the rear or flanks. Opens by Crown-Scenting a heavy-hitter ally
+    into position; maintains pheromone buffs while backline-biting anyone who
+    closes. If her Heated Body draws melee attackers she does not retreat —
+    she trades HP for her allies' action economy.

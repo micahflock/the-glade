@@ -1,0 +1,96 @@
+creature:
+  name: Skull-Cracker (Spring)
+  size: Large
+  type: Monstrosity (ant)
+  alignment: Lawful Evil
+  source: magic-bug-generator (Spring tier) — Solenopsis geminata major worker
+
+combat:
+  ac:
+    value: 16
+    type: natural armor
+  hp:
+    value: 152
+    hit_dice: 16d10+64
+  speed:
+    - 30 ft.
+    - climb 20 ft.
+  cr:
+    rating: 6
+    xp: 2300
+    proficiency_bonus: 3
+
+ability_scores:
+  strength:     { score: 20, modifier: 5 }
+  dexterity:    { score: 10, modifier: 0 }
+  constitution: { score: 18, modifier: 4 }
+  intelligence: { score: 6,  modifier: -2 }
+  wisdom:       { score: 12, modifier: 1 }
+  charisma:     { score: 10, modifier: 0 }
+
+senses:
+  - darkvision 60 ft.
+  - tremorsense 30 ft.
+passive_perception: 11
+languages:
+  - Ant-cant (chemical, simple)
+
+skills:
+  - Athletics +8
+
+traits:
+  - name: Heated Body
+    description: >
+      A creature that touches the Skull-Cracker or hits him with a melee attack
+      while within 5 ft. of him takes 2d6 fire damage. Mandibles glow forge-hot;
+      he sheds dim light out to 10 ft.
+  - name: Head-Heavy
+    description: >
+      The Skull-Cracker has disadvantage on Dexterity saving throws against
+      effects that would knock him prone, but advantage on Strength saving
+      throws and checks to resist being moved, grappled, or shoved.
+  - name: Forge-Mandibles
+    description: >
+      The Skull-Cracker's bite ignores resistance to piercing damage. Non-magical
+      armor broken by his Crusher's Bite is charred beyond field repair — it
+      requires a proper forge to restore.
+
+actions:
+  - name: Multiattack
+    description: >
+      The Skull-Cracker makes two Crusher's Bite attacks, or one Crusher's Bite
+      and one Mandible Slam. He may replace one Crusher's Bite with Sear-Snap
+      if it is available.
+  - name: Crusher's Bite
+    description: >
+      Melee Weapon Attack: +8 to hit, reach 10 ft., one target.
+      Hit: 14 (2d8+5) piercing damage plus 7 (2d6) fire damage.
+      On a hit, if the target is wearing non-magical armor, the armor cracks:
+      its AC is reduced by 1 until repaired. This stacks to a maximum of −3
+      AC per creature.
+  - name: Mandible Slam
+    description: >
+      Melee Weapon Attack: +8 to hit, reach 10 ft., one target.
+      Hit: 12 (2d6+5) bludgeoning damage, and the target must succeed on a
+      DC 15 Strength saving throw or be grappled (escape DC 15). The
+      Skull-Cracker can have only one target grappled this way at a time.
+  - name: Sear-Snap (Recharge 5–6)
+    description: >
+      Melee Weapon Attack: +8 to hit, reach 10 ft., one target.
+      Hit: 16 (3d8+3) piercing damage plus 7 (2d6) fire damage. If the target
+      is prone or grappled, the fire damage is doubled (to 14 / 4d6) and the
+      wound smolders: the target takes 3 (1d6) fire damage at the start of
+      each of its turns until it succeeds on a DC 13 Constitution saving
+      throw at the end of its turn to end the effect.
+
+roleplaying:
+  personality: >
+    Still quiet. Still slow. But now large enough to cast a shadow over a
+    worker. The Bloom has amplified the one thing he was good at.
+  motivation: >
+    Unchanged from the Winter version. He has not been awakened by the Bloom —
+    he has been inflated by it.
+  tactics: >
+    Opens with Mandible Slam to grapple the nearest heavy-armor target, then
+    bites the grappled target. Holds Sear-Snap for the turn after a successful
+    grapple. Will drop a grapple only if a more dangerous target closes.

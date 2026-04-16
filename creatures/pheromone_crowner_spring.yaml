@@ -1,0 +1,102 @@
+creature:
+  name: Pheromone Crowner (Spring)
+  size: Medium
+  type: Monstrosity (ant)
+  alignment: Lawful Evil
+  source: magic-bug-generator (Spring tier) — Solenopsis invicta major worker
+
+combat:
+  ac:
+    value: 15
+    type: natural armor
+  hp:
+    value: 138
+    hit_dice: 17d8+51
+  speed:
+    - 30 ft.
+    - climb 30 ft.
+  cr:
+    rating: 5
+    xp: 1800
+    proficiency_bonus: 3
+
+ability_scores:
+  strength:     { score: 14, modifier: 2 }
+  dexterity:    { score: 14, modifier: 2 }
+  constitution: { score: 16, modifier: 3 }
+  intelligence: { score: 10, modifier: 0 }
+  wisdom:       { score: 16, modifier: 3 }
+  charisma:     { score: 16, modifier: 3 }
+
+senses:
+  - darkvision 60 ft.
+  - tremorsense 30 ft.
+passive_perception: 13
+languages:
+  - Ant-cant (chemical)
+  - Common (comprehends, speaks haltingly — Bloom-awakened)
+
+skills:
+  - Perception +6
+  - Insight +6
+
+traits:
+  - name: Heated Body
+    description: >
+      A creature that touches the Crowner or hits her with a melee attack while
+      within 5 ft. of her takes 2d6 fire damage. She sheds bright light 5 ft.
+      and dim light an additional 5 ft.
+  - name: Pheromone Sense
+    description: >
+      The Crowner is aware of the location of every fire ant within 120 ft. and
+      their emotional state. She also senses the emotional states of non-ants
+      within 60 ft. (advantage on Insight checks against them).
+  - name: Visible Scent-Trails
+    description: >
+      Her pheromone commands are visible as faintly glowing lines in the air
+      for 1 round after she releases them. Purely narrative — no mechanical
+      effect except as specified in Scorch-Trail.
+
+actions:
+  - name: Multiattack
+    description: >
+      The Crowner makes two Bite attacks.
+  - name: Bite
+    description: >
+      Melee Weapon Attack: +6 to hit, reach 5 ft., one target.
+      Hit: 11 (2d8+2) piercing damage plus 3 (1d6) fire damage.
+  - name: Scorch-Trail (Recharge 5–6)
+    description: >
+      The Crowner draws a 30-ft. line of glowing pheromone, 5 ft. wide, originating
+      from her. Each creature in the line or that enters or crosses it before the
+      start of her next turn must make a DC 13 Constitution saving throw,
+      taking 7 (2d6) fire damage on a failed save, or half as much on a success.
+      A creature that fails the save is also marked: the next attack roll against
+      it before the end of the Crowner's next turn has advantage.
+      Allied ants that move along any part of the line gain +10 ft. speed for
+      that movement and deal an extra 1d6 fire damage on their next melee
+      attack made before the end of their turn.
+
+bonus_actions:
+  - name: Crown-Scent (1/turn)
+    description: >
+      The Crowner releases a burst of command pheromone. One ally she can see
+      within 30 ft. either gains advantage on its next attack roll made before
+      the end of its next turn, OR may immediately move up to half its speed
+      without provoking opportunity attacks.
+
+roleplaying:
+  personality: >
+    Unnervingly articulate for an ant. The Bloom has begun to wake her into
+    something like an individual, and she is still adjusting to having opinions.
+    Chooses words as if laying pheromone trails — each deliberate, each meant
+    to be followed.
+  motivation: >
+    Upholds the alliance because it is her queen's command, but a second
+    motivation has begun to grow alongside obedience: curiosity. She has
+    started to wonder why.
+  tactics: >
+    Opens with Scorch-Trail to carve up the battlefield and set up allies.
+    Uses Crown-Scent every round. Will position so her Heated Body aura
+    catches flankers. Retreats to rally a second wave if reduced below
+    half HP — she is worth more alive than any three workers.
