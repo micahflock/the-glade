@@ -1,0 +1,81 @@
+creature:
+  name: Skull-Cracker (Winter)
+  size: Medium
+  type: Monstrosity (ant)
+  alignment: Lawful Evil
+  source: magic-bug-generator (Winter tier) — Solenopsis geminata major worker
+
+combat:
+  ac:
+    value: 15
+    type: natural armor
+  hp:
+    value: 104
+    hit_dice: 11d10+44
+  speed:
+    - 30 ft.
+    - climb 20 ft.
+  cr:
+    rating: 3
+    xp: 700
+    proficiency_bonus: 2
+
+ability_scores:
+  strength:     { score: 18, modifier: 4 }
+  dexterity:    { score: 10, modifier: 0 }
+  constitution: { score: 18, modifier: 4 }
+  intelligence: { score: 6,  modifier: -2 }
+  wisdom:       { score: 12, modifier: 1 }
+  charisma:     { score: 10, modifier: 0 }
+
+senses:
+  - darkvision 60 ft.
+  - tremorsense 30 ft.
+passive_perception: 11
+languages:
+  - Ant-cant (chemical, simple)
+
+skills:
+  - Athletics +6
+
+traits:
+  - name: Heated Body
+    description: >
+      A creature that touches the Skull-Cracker or hits him with a melee attack
+      while within 5 ft. of him takes 1d4 fire damage. Mandibles visibly glow
+      a dull cherry-red from within.
+  - name: Head-Heavy
+    description: >
+      The Skull-Cracker's disproportionately massive head shifts his balance.
+      He has disadvantage on Dexterity saving throws against effects that would
+      knock him prone, but advantage on Strength saving throws and checks made
+      to resist being moved, grappled, or shoved.
+
+actions:
+  - name: Multiattack
+    description: >
+      The Skull-Cracker makes one Crusher's Bite attack and one Mandible Slam.
+  - name: Crusher's Bite
+    description: >
+      Melee Weapon Attack: +6 to hit, reach 5 ft., one target.
+      Hit: 13 (2d8+4) piercing damage plus 2 (1d4) fire damage.
+      On a hit, if the target is wearing non-magical armor, the armor cracks:
+      its AC is reduced by 1 until repaired. This stacks to a maximum of −2 AC
+      per creature.
+  - name: Mandible Slam
+    description: >
+      Melee Weapon Attack: +6 to hit, reach 5 ft., one target.
+      Hit: 7 (1d6+4) bludgeoning damage, and the target must succeed on a
+      DC 14 Strength saving throw or be knocked prone.
+
+roleplaying:
+  personality: >
+    Quiet. Slow to speak even in chemical speech. Was bred and grown for
+    one purpose — the cracking of hard things — and has never needed
+    another one.
+  motivation: >
+    The next thing to crack.
+  tactics: >
+    Wades into the front line. Opens with Mandible Slam to knock a target
+    prone, then bites the prone target to crack armor. Ignores ranged
+    attackers until a closer threat is dealt with. Does not retreat.
