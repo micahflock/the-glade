@@ -127,7 +127,7 @@ A prosperous city built around the base of a massive fir tree. Proud of its weal
 
 **Market square.** Built around an ornately fuming chimney powering the baker and the bugsmith's forge. Packed — Chitinholm has doubled its population. Small stalls hawk anything and everything. The comforting aroma of fresh nectar cakes mingles with the sweet scent of heated iron. Notable vendors: Rhonda (Goliath beetle, bugsmith), Hickum (carpenter bee, baker — nectar cakes, pollen loaves, honey buns), Bigsby (trinket seller, "Bigsby's Buys!").
 
-**The gates.** Large branches arranged in a beautiful cathedral arch, with spider silk expertly spun between the supports. On dewy mornings the dew it catches reflects the sun like hundreds of little windows. Guards: Julien and Micah (named but undeveloped).
+**The gates.** Large branches arranged in a beautiful cathedral arch, with spider silk expertly spun between the supports. On dewy mornings the dew it catches reflects the sun like hundreds of little windows.
 
 **The road out.** Packed with throngs of displaced bugs from every stratum of society. Weevils with polished carapaces rub abdomens with sawflies. Sowbugs, wood louses, and pillbugs pull carts, some in teams, all heavily laden. You descend the root flare of the massive fir. Glancing back, the jagged spire of the RJS is just visible over the crowd. At the forest floor: the convergence of several wide roads cut through the frozen leaf litter.
 

@@ -315,6 +315,38 @@ npcs:
 
   # ── NOT YET MET ─────────────────────────────────────────────────────────────
 
+  - name: Grainmother Vell
+    species: Leafcutter ant
+    role: Rebel cell leader, senior fungal tender
+    affiliation: Winter Farm — rebel cell
+    status: Alive
+    location: Winter Farm — deep complex, behind a deliberate collapse
+    disposition: Not yet met
+    first_met: null
+    last_seen: null
+
+    appearance: Old enough that her generation remembers life before the Bloom. A matriarch — something above Worker but below Queen. A senior tender.
+    voice: Measured, deliberate. Every word placed carefully — she's still getting used to the idea that words can change things if you arrange them right.
+    motivation: Personal, not political. She can't tend her leaf fungus gardens anymore. The old ways are gone. That's what drives her — not ideology, but the loss of the thing she was born to do and did beautifully.
+    personality: Fiery underneath steely composure. Maternal in the way of someone who raised an entire fungus garden for decades and watched it taken away. Leafcutters have always just done what their queen wants — rebellion is a totally new concept. Vell is discovering what leadership means in real time.
+
+    key_dialogue:
+      - "'I've been growing things my whole life. I know what fungus needs. I know what soil needs. I know what happens when you take the rot out of the world and leave everything perfect and green and completely, utterly useless.'"
+      - "'The red queen took our queen. Took our purpose. Turned us into gravediggers. And my people just… did it. Because that's what we do. We're told, and we do.'"
+      - "'I don't think it's supposed to work like this.'"
+      - "If the party reveals their quest: 'If what you're doing works — if things can rot again — we don't need the red ants. The alliance falls apart on its own.'"
+
+    cell_members:
+      - A true believer — younger, possibly born post-Bloom. Furious on principle. Aggressive, maybe reckless.
+      - A nervous doubter — older, remembers the old ways. Terrified of what happens if the rebellion fails.
+      - A quiet competent — handles logistics. Knows tunnel layouts, guard rotations, supply schedules. The one Vell relies on.
+
+    hooks:
+      - If party reveals their quest, she fast-tracks them: safe passage, zone barrier crossing, rebel contacts deeper in the Overgrowth
+      - Core dilemma she voices: "Even if we overthrow them… how do we eat?"
+      - The rebellion is inept — leafcutters have never organized laterally before. Vell is learning leadership in real time.
+
+
   - name: Rhonda
     species: Goliath beetle
     role: Bugsmith

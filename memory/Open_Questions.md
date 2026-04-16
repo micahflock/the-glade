@@ -26,7 +26,7 @@
 
 - [ ] **Party survival vs. ants:** Party is level 3, but ants destroy villages. What's the actual mechanic or narrative solution for navigating ant territory that isn't just "kill the whole colony"? Pure avoidance feels unsatisfying too.
 - [ ] **The spring zone ant colony:** Should be the least powerful the party encounters. Need a winnable path through it at low levels that still feels consequential. It's a two-queen operation (red + black) — how do PCs "conquer" this without a straight fight?
-- [ ] **Leveling before Session 3:** Should we give them a level? They've seen some shit. Both DMs agree on milestone chunks, but timing is open.
+- [x] **Leveling before Session 3:** Should we give them a level? They've seen some shit. Both DMs agree on milestone chunks, but timing is open. — Decision: Stale. Session 3 has been played without a level-up. Party remains level 3. Evidence: Session 3 play.
 - [ ] **Leveling justification:** Is rapid leveling tied to the Bloom amplifying all magic? Does the ichor idea work? Is it diegetic or just meta?
 - [ ] **Level 20 by endgame:** Is this realistic given ~10 sessions? Verify.
 - [ ] **Ant combat philosophy:** More ants but squishy with scary offense (leafcutter jaws), or fewer ants but individually threatening (on par with earwig bandits)? Current lean: fewer, more threatening (party has limited crowd control, no multi-attack).
@@ -51,7 +51,7 @@
 - [ ] **Fall zone content:** Rot, slime, mushroom, fungus, wet decay. Cordyceps ant queen. High-level endgame. The spider must be dealt with. Needs development.
 - [x] **Session 3 endpoint:** End at (a) conclusion of the road encounter with the ant caravan, or (b) the party getting their first look at the farm entrance from a safe distance. Don't push into the farm interior this session. — Decision: Ended at (a), after loyalist/rebel dialogue. Winter Farm approach and interior moved to Session 4. Evidence: Session 3 play.
 - [ ] **Fungal farm interior:** If the party enters, there should be a meaningful reward inside. Maybe something that gives them a level (ichor?). The farm could function as a prison — surviving villagers may still be alive. Rescue objective if needed. Design not started.
-- [ ] **Antennington retcon logic:** The first village was burned (fire ants). Antennington was only ransacked (leafcutters only, first raid, before the alliance). This wasn't deliberate — it's how it played out at the table. Proposed retcon: the alliance formed after Antennington was raided. Maybe too many bugs escaped Antennington? Confirm this is the logic to lock in. Antennington was hit approximately 1 week and 3 days before the party arrived (Session 2).
+- [x] **Antennington retcon logic:** The first village was burned (fire ants). Antennington was only ransacked (leafcutters only, first raid, before the alliance). This wasn't deliberate — it's how it played out at the table. Proposed retcon: the alliance formed after Antennington was raided. Maybe too many bugs escaped Antennington? Confirm this is the logic to lock in. Antennington was hit approximately 1 week and 3 days before the party arrived (Session 2). — Decision: Confirmed. Leafcutters raided Antennington alone, before the fire ant alliance formed. The alliance came after. Evidence: Session 3 — the Rebel's dialogue explicitly confirms this sequence.
 
 ## Misc / Not Categorized
 

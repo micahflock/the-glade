@@ -26,8 +26,8 @@ Report back:
 - Any file over ~300 lines (candidate for splitting)
 - Any memory file not referenced by CLAUDE.md or any command file
 - Any expected field missing from campaign_state.yaml
-  (required: current_session, active_draft, active_location,
-  party block, active_threads, memory_files)
+  (required: current_session, active_draft, party block
+  including location, active_threads, memory_files)
 - Any field in campaign_state.yaml that looks stale or placeholder
 Label your response: MEMORY AUDIT
 
