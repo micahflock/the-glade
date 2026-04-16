@@ -28,10 +28,6 @@ Before doing any session work, read these files:
 - memory/Homebrew_Rules.md — mechanical rules that differ from vanilla 5e
 - memory/Open_Questions.md — unresolved threads and decisions
 
-## Active Session
-Read memory/campaign_state.yaml for current session number, active draft 
-file, and where the party is right now.
-
 ## Campaign Tone and Setting
 Players and NPCs are "bugs" - insects, arthropods, worms - a wide variety of species. 
 Miyazaki whimsy to Del Toro horror. Grounded but not dreary. Influenced by Hollow Knight, A Bug's Life, as well as traditional D&D campaign settings. Nobody is simply evil. Horror announces itself in absences.
