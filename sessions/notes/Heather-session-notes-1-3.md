@@ -160,3 +160,45 @@
     - Gives us a beautiful piece of amber that glows when magic is nearby
 
 ---
+
+## Session 3: The Glade — 4/9/2026
+
+- We wake up in the mines, well slept + well fed
+- We have a detailed map w/ lay lines etc.
+- Nancy makes a dark room hood to measure the relative brightness of the magical amber piece
+- I wake up first + start making breakfast stuff
+  - Everyone else wakes up too
+- We leave the mine + find Bestie + set out on the path out of town towards what we think is the epicenter
+  - Travel for the better part of a day
+- We come across a mud puddle
+  - Can see tracks — wagons + bugs
+  - Very fresh tracks → w/in the day
+    - Part of the raid
+  - In the direction we're headed
+  - 6 sets of ant tracks
+  - We skirt around the mud so we don't leave tracks
+  - Drix does a ritual to determine where the closest ant is
+    - An ant, not 10 minutes down the road
+- We advance down the path sneakily + hear a group of bugs conversing loudly
+  - We hide behind a small stick + hear ants discussing the need to fix a broken wheel + to hide bodies
+  - Wagon is filled w/ the burnt + charred remains of bugs
+  - Fire ants bossing around leaf cutter ants
+- One of the leaf cutter ants notices me + battle ensues!
+  - We kill the 2 fire ants + 0 of the leaf cutters
+  - Battle ends
+- Leaf cutters are distraught... worried they will be blamed for the death of of the fire ants + doesn't know what to do after going against direct orders from their Queen
+  - They normally grow fungus but nothing rots anymore...
+  - They now grow fungus on dead bodies for food
+  - The leaf cutter Queen told the leaf cutter ants to follow the Fire Ants' direction
+  - Fire Ants offer leaf ants protection
+  - They speak of "The Barrier" where nothing rots on one side + nothing grows on another
+    - I get them to point out where The Barrier is + mark it on the map
+  - They said they can take us to the Winter Farm
+- Nancy attempts to appeal to the Leaf Cutter Ants to persuade them to let us come back to their home so that we can further understand what is going on
+  - Says we will help protect them
+- The Plan:
+  - Drix will Disguise Self to be a Fire Ant to escort the wagon
+  - Me + Nancy will use Drix's Disguise Kit to look + pretend to be corpses
+  - Infiltrate the Winter Farm
+
+---
