@@ -1,0 +1,204 @@
+# Heather's Player Notes — Sessions 1–3
+
+*Transcribed from handwritten notes. Spellings preserved as written (e.g., "Kitenhome", "Bessy").*
+
+---
+
+## Session 1: The Glade
+
+*Header note: 1 GP = 1 HP ⇒ SAP*
+
+- Endless Winter → problem
+- Royal Jelly Society → who we were assembled by
+- Kitenhome → location
+- Dr. Twig Fingers, Bootle, Sven, Francesca
+  - Bootle — jewel beetle merchant
+  - Briefed us + greeted us, stick bug
+- Jiminy Hendrix — aka Drix → cricket
+- Nancy Alfons → jumping spider
+- Dr. TF believes science & math is the way
+  - Estimated time + direction Winter has come from
+  - Royal Society branch Antennaton → where we should go to gather more data
+  - Time table, directions inside a tube, told not to open it until we get to Antennaton
+- Traveling time 3–5 days through the Glade
+  - Forest floor, winter, not too many travelers expected or seen lately
+- We go to the stock room
+  - There's a LOT here!
+  - Offers us a saddle bug to help us carry stuff
+  - Items available:
+    - compass
+    - flint & tinder
+    - camp stuff, bedrolls etc
+    - rope
+    - larval grease
+    - dung beetle sculpture carved from acorn flesh w/ secret compartment
+    - honing steel
+    - grease
+    - emergency rations
+    - arrows
+    - torches
+    - parchment paper, ink, & thistle pens
+    - second weatherproof tube
+    - rations & water skins
+    - pitons
+    - bag of sand (Nancy)
+- Dr. TF leads us out to the back w/ a small stable
+  - Small speckled saddle bug; if we get lost we can set her free
+  - Saddle Bug = Bessy
+- We load up Bessy + head out
+- We head through a residential area of Kitenhome + into a central market → busy here
+- Drix + Nancy play music + receive 1 sap
+- Rumors about a field not producing, villages turning on other villages
+- We leave the market square + head towards the city gates
+- We head out of Kitenhome — everyone else is heading into Kitenhome
+- We head East into the forest
+  - I don't smell anything at all... which is notable
+  - Big frozen leaves in our path
+  - I'm out front, other two + Bessy follow
+- Group of 7–8 shield bugs appear ahead of us, hurrying
+  - They say there are bandits ahead
+- A covered wagon appears in front of us being driven by an anxious driver + tired pillbug pulling it, seemingly chased by earwigs
+  - Earwigs start harassing the cart + driver
+  - 5 earwigs
+- Roll initiative!
+  - We win.
+- Packs of goods from the cart are on the ground
+
+---
+
+## Session 2: The Glade
+
+- Battle just ended... all is quiet
+- Cart lies still
+- Wagon is a little broken, pillbug looks tired
+  - Wheel axle is broken, bearing is also broken
+  - Nancy fixes the axle, we make it a tricycle cart
+  - Drix leaves a note for the Royal Jelly Society letting them know what happened
+  - We hook up Bessy to the cart + send her on her way
+- Earwigs look like farmers, relatively poor
+  - Nothing in their pockets
+- We attach our saddle bags to the new pill bug — Besty!
+- We set off towards Antennington
+  - Uneventful trip
+  - Found tracks for 1 earwig running away
+- Darkness is falling, three sites for us to camp in
+  - We choose to make camp under a tree
+  - Nancy + I look around
+    - I don't see or hear anybody
+    - Nancy doesn't either
+  - Drix spruces up camp + begins playing soft music
+  - Set up a little lean-to to camp in
+- We talk about the fight, + have conflicting feelings
+- Nancy opens the mysterious tube + find:
+  - A complicated data table
+  - Top down map of Kitenhome w/ lines + notations + data written on it
+  - Nancy re-seals the tube perfectly
+- We start making a reference map w/ where we've been ✓ Kitenhome
+- We go to sleep
+  - 1st watch → Drix
+  - 2nd watch → Nancy
+  - 3rd watch → Me
+- 1st watch → uneventful
+- 2nd watch → uneventful
+- 3rd watch → uneventful, but saw a faint glow to the East right before sunrise
+  - Make a note of that on the map
+- We continue on to Antennington
+  - Smell of acrid smoke in the air
+  - Tang of magical energy
+- We pass a building that had its door wrenched off
+- Continue to the town
+  - Town looks burnt + blasted
+  - No bodies + nobody around
+  - Looks like it was *recently* burned... like this morning
+    - Maybe the glow I saw
+  - No food, but everything else was left
+- We head towards the South side of the town
+  - Hear chittering
+    - It's the earwig that ran
+    - Says it's raiders → the ants
+    - The ants dragged the bodies away
+      - Black ants w/ red ants leading
+      - Went northeast-ish
+        - ~ We want to avoid this direction
+- We continue East towards Antennington
+- Antennington:
+  - Very small town
+  - Amber mine
+  - A few homes, buildings, + small Royal Jelly Society building
+  - Very quiet... nobody here
+  - Homes are busted open + windows broken
+- RJS building
+  - Ransacked
+  - 3 small rooms off a hallway
+  - Nobody here
+  - *Trail of 2 Forests → by Ape Caves*
+  - 1st room = meeting room
+    - Documents re: Amber mine
+  - 2nd room = Lab
+    - Just a mess...
+    - Pinned to the wall a note says, "All RJS members meet in the mine for a meeting" — signed G
+    - Find an ornate box full of miner's stuff
+  - 3rd room = Breakroom / staff room
+    - Fully ransacked + picked/sorted through
+    - We find the name Garett on some paper
+- We head to the Amber Mine
+  - Knock
+  - Deep voice says "Come on in!"
+    - Massive ox beetle working over a piece of amber
+      - ~ Ricko — not w/ the RJS, just works here
+    - Says Garett is also working in another room (level 2) w/ sensitive instruments
+- Ricko takes us over to the lift gate + takes us to level 2 to see Garett
+- Garett is a green weaver
+  - Asks who we are + what we want
+  - He tells us there is a slight fluctuation in the magical fluctuation that he's picked up on
+  - Gives us his data/figures + we spread them out to look at them
+    - We notice that the triangulation of our maps + the direction the ants went are in the same direction
+  - Draws a line on our map showing the direction of the "Magical Wave"
+    - Says it must be a constant source
+    - All different types of magic — or a new type?
+      - We may be at the edges of its effect
+    - Gives us a beautiful piece of amber that glows when magic is nearby
+
+---
+
+## Session 3: The Glade — 4/9/2026
+
+- We wake up in the mines, well slept + well fed
+- We have a detailed map w/ lay lines etc.
+- Nancy makes a dark room hood to measure the relative brightness of the magical amber piece
+- I wake up first + start making breakfast stuff
+  - Everyone else wakes up too
+- We leave the mine + find Bestie + set out on the path out of town towards what we think is the epicenter
+  - Travel for the better part of a day
+- We come across a mud puddle
+  - Can see tracks — wagons + bugs
+  - Very fresh tracks → w/in the day
+    - Part of the raid
+  - In the direction we're headed
+  - 6 sets of ant tracks
+  - We skirt around the mud so we don't leave tracks
+  - Drix does a ritual to determine where the closest ant is
+    - An ant, not 10 minutes down the road
+- We advance down the path sneakily + hear a group of bugs conversing loudly
+  - We hide behind a small stick + hear ants discussing the need to fix a broken wheel + to hide bodies
+  - Wagon is filled w/ the burnt + charred remains of bugs
+  - Fire ants bossing around leaf cutter ants
+- One of the leaf cutter ants notices me + battle ensues!
+  - We kill the 2 fire ants + 0 of the leaf cutters
+  - Battle ends
+- Leaf cutters are distraught... worried they will be blamed for the death of of the fire ants + doesn't know what to do after going against direct orders from their Queen
+  - They normally grow fungus but nothing rots anymore...
+  - They now grow fungus on dead bodies for food
+  - The leaf cutter Queen told the leaf cutter ants to follow the Fire Ants' direction
+  - Fire Ants offer leaf ants protection
+  - They speak of "The Barrier" where nothing rots on one side + nothing grows on another
+    - I get them to point out where The Barrier is + mark it on the map
+  - They said they can take us to the Winter Farm
+- Nancy attempts to appeal to the Leaf Cutter Ants to persuade them to let us come back to their home so that we can further understand what is going on
+  - Says we will help protect them
+- The Plan:
+  - Drix will Disguise Self to be a Fire Ant to escort the wagon
+  - Me + Nancy will use Drix's Disguise Kit to look + pretend to be corpses
+  - Infiltrate the Winter Farm
+
+---
