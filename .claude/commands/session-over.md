@@ -9,12 +9,10 @@ Close out a completed session and update all campaign memory.
 ## Phase 1 — Reconcile and Surface (do this first, then stop and wait)
 
 1. Read sessions/sXX_draft.md if it exists, where XX is the current session
-2. Read memory/NPC_Registry.yaml, every file in party/,
-   memory/Open_Questions.md, memory/campaign_state.yaml
-3. Compare the final session notes against all other inputs
-4. Identify any direct contradictions between the session notes and 
+2. Compare the final session notes against all other inputs
+3. Identify any direct contradictions between the session notes and 
    the DM/player notes (not additions — only things that contradict)
-5. Present a summary in this format:
+4. Present a summary in this format:
 
 ---
 RECONCILIATION REPORT — Session [X]
