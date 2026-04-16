@@ -8,9 +8,7 @@
 ## Step 1 — Read Campaign Context
 
 Before generating, read these files for tone, balance, and current state:
-- memory/World_Codex.md — zone structure, tone, environmental hazards
 - memory/Homebrew_Rules.md — base rules, leveling, LP = HP
-- memory/Open_Questions.md — unresolved decisions that might affect design
 - memory/campaign_state.yaml — where the party is, what session we're in
 - sessions/session_log.md — what's coming up, recent events
 
