@@ -207,13 +207,13 @@ npcs:
 
   - name: Bestie
     species: Pillbug
-    role: Party pack animal
+    role: Party pack animal (currently unattended)
     affiliation: Party (formerly pulling Bert's cart)
-    status: Alive
-    location: Traveling with the party
+    status: Alive — tied up and left above the Winter Farm
+    location: Ridge above the Winter Farm, tied with a snack and a blanket
     disposition: Warming to the party
     first_met: Session 1
-    last_seen: Session 3
+    last_seen: Session 4
 
     hp: 20
     animal_handling_dc: 14
@@ -224,9 +224,12 @@ npcs:
       Drix performed on the walnut shell lute and won Bestie over.
       Night watch beat (Session 2): settled closer to camp than at dusk —
       "Not close enough to mean anything, probably. Just closer."
-      Will wander home (not toward Chitinholm) if left unattended.
+      Session 4: Party tied her up with a snack and a blanket near the ridge
+      above the Winter Farm rather than release her or bring her in. She was
+      left there when the party infiltrated the farm. Fate open.
 
-    hooks: []
+    hooks:
+      - "Tied up near the Winter Farm ridge — does she escape, get found, or become a beat later?"
 
 
   # ── MINOR / GROUP NPCS ──────────────────────────────────────────────────────
@@ -265,18 +268,18 @@ npcs:
     hooks: []
 
 
-  - name: Leafcutter Rebel
+  - name: Allen
     species: Leafcutter ant
-    role: Body cart worker, rebel sympathizer
+    role: Body cart worker, rebel sympathizer, party guide
     status: Alive
-    location: With the party (road encounter site, heading to Winter Farm)
+    location: Winter Farm interior (last seen leaving the party at the fungal curtain chamber)
     disposition: Allied
     first_met: Session 3
-    last_seen: Session 3
+    last_seen: Session 4
 
     voice: Flat and sure. "Good. They're better dead."
     motivation: Disgusted by the corpse farming. Has a contact in the resistance inside the Winter Farm. Doesn't have a plan — has conviction.
-    personality: Steady, direct. Willing to threaten the Loyalist if necessary.
+    personality: Steady, direct. Willing to threaten the Loyalist if necessary. Guided the party without hesitation once it was clear they were aligned with the Sporemother.
 
     key_info_given_to_party:
       - Leafcutters farm fungus on decomposing bodies
@@ -286,20 +289,21 @@ npcs:
 
     party_history:
       - "Session 3: Survived the road encounter. Impressed by party's quest to understand the Bloom. Offered to guide party to the Winter Farm."
+      - "Session 4: Guided the party through the farm once they were past the entrance. Confirmed 'the Sporemother does not like the fire ants' after Drix dropped disguise. Led them through twisting leafcutter-only tunnels to the fungal curtain chamber, then walked away — he did not know how to proceed further. Party sentiment at end of session: 'Allen rules.'"
 
     hooks:
-      - Connection to the rebel cell inside the Winter Farm — leads to Grainmother Vell
       - Potential long-term ally if the party earns trust
+      - Still inside the Winter Farm; could aid or be endangered by future events
 
 
-  - name: Leafcutter Loyalist
+  - name: Greg
     species: Leafcutter ant
-    role: Body cart worker, alliance loyalist
-    status: Alive
-    location: With the party (road encounter site, heading to Winter Farm)
-    disposition: Hostile (covert)
+    role: Body cart worker, alliance loyalist (discredited)
+    status: Alive — at large inside the Winter Farm, credibility destroyed
+    location: Winter Farm interior (disappeared among the workers)
+    disposition: Hostile (covert), but discredited
     first_met: Session 3
-    last_seen: Session 3
+    last_seen: Session 4
 
     voice: Panicked, urgent. Mandibles clicking fast.
     motivation: Survival. Believes the alliance is the only rational path. Terrified of consequences now that fire ants are dead and he's implicated.
@@ -307,23 +311,22 @@ npcs:
 
     party_history:
       - "Session 3: Cowed by Nancy ('might makes right doesn't sit with me') but not won over. Planning to betray the party at earliest opportunity."
+      - "Session 4: Nancy sent him a Message — 'I'm watching you and I will kill you if you act out.' He rolled a 6 on his save and held his nerve only until the descent. As the party approached the farm entrance, Greg broke and bolted across the frozen river toward the farm. Drix — in fire-ant disguise — pre-emptively yelled that Greg was 'acting crazy and has a fungus in his brain.' Greg's credibility collapsed before he arrived; he disappeared into the leafcutter workers. Party sentiment: 'Greg sucks.'"
 
     hooks:
-      - Ticking liability — will sprint to alert red ant discipline guards if unwatched near the farm entrance
-      - Could be turned with sufficient evidence that the Bloom can be undone (removing his 'but how do we eat?' objection)
+      - At large inside the farm; could resurface as a ragged, discredited antagonist later
+      - Ran into cover with a story that nobody believed — lives in shame among his own
 
 
-  # ── NOT YET MET ─────────────────────────────────────────────────────────────
-
-  - name: Grainmother Vell
+  - name: Sporemother Vell
     species: Leafcutter ant
     role: Rebel cell leader, senior fungal tender
     affiliation: Winter Farm — rebel cell
     status: Alive
-    location: Winter Farm — deep complex, behind a deliberate collapse
-    disposition: Not yet met
-    first_met: null
-    last_seen: null
+    location: Winter Farm — rebel cell chamber, behind the fungal curtain
+    disposition: Allied
+    first_met: Session 4
+    last_seen: Session 4
 
     appearance: Old enough that her generation remembers life before the Bloom. A matriarch — something above Worker but below Queen. A senior tender.
     voice: Measured, deliberate. Every word placed carefully — she's still getting used to the idea that words can change things if you arrange them right.
@@ -336,16 +339,66 @@ npcs:
       - "'I don't think it's supposed to work like this.'"
       - "If the party reveals their quest: 'If what you're doing works — if things can rot again — we don't need the red ants. The alliance falls apart on its own.'"
 
+    party_history:
+      - "Session 4: Met by the party in the rebel cell chamber after they solved the fungal curtain. Parleyed with Nancy. Confirmed the source of the Bloom. Mentioned that her home is the Overgrowth. Alluded to other powers given to other species beyond fire ants. Described the red queen as subject to moodiness. Gave the party the mandate to bring news of the Bloom's source to the leafcutter queen — not to free her, but to tell her there is an alternative so she can choose to break the alliance on her own terms. Arranged escort (Antshley) through the tunnel into the Overgrowth."
+
     cell_members:
-      - A true believer — younger, possibly born post-Bloom. Furious on principle. Aggressive, maybe reckless.
-      - A nervous doubter — older, remembers the old ways. Terrified of what happens if the rebellion fails.
-      - A quiet competent — handles logistics. Knows tunnel layouts, guard rotations, supply schedules. The one Vell relies on.
+      - "Older assistant / nervous doubter — carved the Runes of Fungal Protection onto each party member. Believes in the old superstitions. [name not yet established]"
+      - "One or two other leafcutters at the table, quieter, unnamed."
 
     hooks:
-      - If party reveals their quest, she fast-tracks them: safe passage, zone barrier crossing, rebel contacts deeper in the Overgrowth
       - Core dilemma she voices: "Even if we overthrow them… how do we eat?"
       - The rebellion is inept — leafcutters have never organized laterally before. Vell is learning leadership in real time.
+      - Her home is the Overgrowth — displaced from it by the alliance.
 
+
+  - name: Antshley
+    species: Leafcutter ant
+    role: Rebel escort — guiding the party to the leafcutter queen
+    affiliation: Winter Farm — rebel cell (Sporemother Vell's cell)
+    status: Alive
+    location: Overgrowth tunnel / en route to the leafcutter queen with the party
+    disposition: Allied (player affection — Heather flagged with a heart)
+    first_met: Session 4
+    last_seen: Session 4
+
+    party_history:
+      - "Session 4: Volunteered at the rebel cell meeting to escort the party to the leafcutter queen. Led them back through the Winter Farm tunnels, under the unseen barrier, and into the Overgrowth. Traveling with the party as of end of session."
+
+    hooks:
+      - Heather has attached to this character — treat as developed recurring NPC, not disposable
+      - Her presence at the queen audience — does she speak for Vell? Has she been to the queen before?
+
+
+  - name: The Old Assistant
+    species: Leafcutter ant
+    role: Rebel cell member, rune-carver, nervous doubter
+    affiliation: Winter Farm — Sporemother Vell's cell
+    status: Alive
+    location: Winter Farm — rebel cell chamber
+    disposition: Allied (anxious)
+    first_met: Session 4
+    last_seen: Session 4
+
+    voice: Anxious, theatrical worry. "Some call it superstition, but us old-timers still believe in it."
+    motivation: Remembers the old ways too well. Terrified of what happens if the rebellion fails.
+    personality: The nervous doubter role from the draft — voices the counter-argument of "but if we stop, we starve." Old enough to carry the old superstitions and the old rites.
+
+    key_items_given_to_party:
+      - Rune of Fungal Protection carved onto each party member's carapace. Protects against fungal infection. [Mechanical effect TBD.]
+      - "Nancy: top of the right pauldron / shoulder"
+      - "Drix: lower back ('tramp stamp')"
+      - "Tabby: back of the left shoulder"
+
+    party_history:
+      - "Session 4: Carved the Runes of Fungal Protection onto all three PCs. Delivered exposition about magic escalation — the red queen 'wreathed in fire,' the leafcutter queen's unnatural fungal obsession."
+
+    hooks:
+      - Name not yet established at the table. [DM CHECK]
+      - The rune's mechanical effect is deferred. Specify before the cordyceps payoff arrives.
+
+
+  # ── NOT YET MET ─────────────────────────────────────────────────────────────
 
   - name: Rhonda
     species: Goliath beetle

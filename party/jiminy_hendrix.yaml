@@ -13,7 +13,7 @@ character:
   class: Bard
   subclass: College of Lore
   background: Entertainer
-  level: 3
+  level: 6   # Session 4: crossed into the Overgrowth, +3 levels. Combat stats below still reflect level 3 until player re-derives.
   xp: null
 
 core:
@@ -169,3 +169,6 @@ notes:
   - "Tool proficiencies (3 musical instruments for Bard) not specified — ask player."
   - "Session 3: Plans to use Disguise Self as a fire ant for Winter Farm infiltration."
   - "Session 3 player attitude: 'Hell yeah, I'm in the story, I will have shit to sing about.'"
+  - "Session 4 level-up to 6: crossed the unseen barrier into the Overgrowth with the party. [DM CHECK] All derived stats below (HP, hit dice, spell slots, skills, proficiency bonus, features) still reflect level 3 — needs player update before Session 5."
+  - "Session 4 roleplay beats: executed the Disguise Self as a red ant for the entire infiltration; improvised the 'Greg has a fungus in his brain' cover story that saved the party from a guard response; played a melodic lullaby to the fungal curtain (it relaxed; Drix cried); cast Healing Word on the wounded fungal curtain (it stopped keening)."
+  - "Session 4 rune placement: Rune of Fungal Protection carved on the lower back (tramp stamp). Mechanical effect TBD."

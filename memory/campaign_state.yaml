@@ -4,20 +4,20 @@
 
 # ── SESSION TRACKING ────────────────────────────────────────────────────────
 
-current_session: 4
-active_draft: sessions/s04_draft.md
-draft_status: in_progress
+current_session: 5
+active_draft: null
+draft_status: none
 
-last_played_session: 3
-last_played_summary: "First ant encounter — body cart, fire ant commanders killed, leafcutter rebel alliance forming. See sessions/session_log.md."
+last_played_session: 4
+last_played_summary: "The Winter Farm — infiltrated via Drix's red ant disguise and Nancy/Tabby playing dead; Greg bolted but was discredited by Drix's improvised cover story; solved the fungal curtain puzzle; met Sporemother Vell and her rebel cell; received the mandate to carry news of the Bloom's source to the leafcutter queen; got Runes of Fungal Protection; escorted by Antshley through a tunnel under the barrier into the Overgrowth; gained 3 levels. See sessions/session_log.md."
 
 
 # ── PARTY STATUS ─────────────────────────────────────────────────────────────
 
 party:
-  level: 3
-  location: Road encounter site east of Antennington, near the Winter Farm
-  pack_animal: Bestie (pillbug, traveling with party)
+  level: 6
+  location: Overgrowth (spring zone), just past the rebel tunnel beneath the barrier; escorted by Antshley toward the leafcutter queen
+  pack_animal: null  # Bestie was tied up and left above the Winter Farm with a snack and a blanket
   details: party/  # individual YAML per PC — see party/*.yaml
 
 
@@ -28,37 +28,45 @@ party:
 
 active_threads:
 
-  - thread: Winter Farm infiltration
+  - thread: Vell's mandate — reach the leafcutter queen
     priority: high
-    notes: Party plans to play dead in the body cart while Drix uses Disguise Self as a fire ant. Session 4 cold open.
+    notes: Sporemother Vell tasked the party with bringing news of the Bloom's source to the leafcutter queen. Not to free her — to tell her she has an alternative, so she can choose to break from the fire ant alliance on her own terms. Antshley is escorting.
 
-  - thread: Loyalist liability
+  - thread: Antshley as escort and potential ally
     priority: high
-    notes: Leafcutter loyalist is cowed but planning to betray party at earliest opportunity. Must be dealt with before or during farm entry.
+    notes: Leafcutter rebel traveling with the party. Heather has attached. She is the player-facing face of the rebellion in the Overgrowth. Give her a real role at the queen audience.
 
-  - thread: Leafcutter rebel alliance
+  - thread: The Bloom's source — Overgrowth leg of the journey
     priority: high
-    notes: Rebel leafcutter impressed by party's quest. Has a contact in the resistance inside the Winter Farm. Grainmother Vell leads the rebel cell.
+    notes: Party is now through the barrier and physically in the magic-amplified zone. The Ahganmin glows more strongly here. The source is still the ultimate destination.
 
-  - thread: Triangulated heading toward the Bloom's source
+  - thread: Greg at large inside the Winter Farm
     priority: medium
-    notes: Party has the heading. Winter Farm is on the path — rebels can provide passage through.
+    notes: Discredited but alive, hiding among the workers. Could reappear later as a ragged antagonist, an informant who nobody believes, or a desperate defector.
+
+  - thread: Rune of Fungal Protection
+    priority: medium
+    notes: Carved into all three PCs. Mechanical effect TBD. Intended payoff is a cordyceps moment later in the campaign — decide the mechanic before the payoff.
+
+  - thread: Bestie — tied up above the Winter Farm
+    priority: low
+    notes: Left with a snack and a blanket near the ridge. Alive. Does she wander, get found, or quietly drop out of the narrative?
+
+  - thread: Ahganmin properties
+    priority: low
+    notes: Confirmed sensitivity to ambient magic level (Session 4). Other properties still TBD.
 
   - thread: Lars — left behind in burnt village
-    priority: medium
-    notes: Supplied but alone. Dangling thread — do not force resolution
-
-  - thread: Ahganmin properties unknown
-    priority: medium
-    notes: Glowing magic amber rock given by Garett, now in detection box. Properties TBD beyond glow response to magic.
-
-  - thread: Bessie and cart heading back to Chitinholm
     priority: low
-    notes: Will find her way home. Bert also fled to Chitinholm — may report to someone
+    notes: Supplied but alone. Dangling thread — do not force resolution.
 
   - thread: Nancy's evil wizard
     priority: low
-    notes: Player responded well to the hook. Optional future appearance
+    notes: Player responded well to the hook. Optional future appearance.
+
+  - thread: Nancy's Winter Farm fungus sample
+    priority: low
+    notes: Kept a piece from the corpse-fungus chamber. Available for later study — Garett? Detect Magic? Nature check?
 
 
 # ── REFERENCES ───────────────────────────────────────────────────────────────
