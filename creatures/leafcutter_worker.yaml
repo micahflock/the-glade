@@ -10,14 +10,14 @@ combat:
     value: 13
     type: natural armor
   hp:
-    value: 78
-    hit_dice: 12d8+24
+    value: 58
+    hit_dice: 9d8+18
   speed:
     - 30 ft.
     - climb 30 ft.
   cr:
-    rating: 1
-    xp: 200
+    rating: "1/2"
+    xp: 100
     proficiency_bonus: 2
 
 ability_scores:
@@ -60,7 +60,7 @@ actions:
   - name: Mandible Snip
     description: >
       Melee Weapon Attack: +4 to hit, reach 5 ft., one target.
-      Hit: 9 (2d6+2) slashing damage.
+      Hit: 6 (1d8+2) slashing damage.
 
 roleplaying:
   personality: >
