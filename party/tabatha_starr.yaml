@@ -11,7 +11,7 @@ character:
   class: Ranger
   subclass: Gloomstalker
   background: Outlander
-  level: 3
+  level: 6   # Session 4: crossed into the Overgrowth, +3 levels. Combat stats below still reflect level 3 until player re-derives.
   xp: null  # sheet note "XP = 14,000" ignored per DM instruction
 
 core:
@@ -171,3 +171,6 @@ notes:
   - "Spells known not listed on provided pages — ask player for spell list."
   - "Languages not listed — ask player."
   - "Session 3 player attitude: Overwhelmed by the triangulation math, enjoys the group dynamic."
+  - "Session 4 level-up to 6: crossed the unseen barrier into the Overgrowth with the party. [DM CHECK] All derived stats below (HP, hit dice, spell slots, skills, proficiency bonus, features) still reflect level 3 — needs player update before Session 5."
+  - "Session 4 roleplay beats: cold-open observation that red ants shouldn't be able to throw fire; rode into the farm playing dead in the cart and was carried by workers into the fungus chamber; asked the sympathetic leafcutter how the last person passed through the fungal curtain, getting the 'soft, then stomp, then hush' pattern that solved the puzzle."
+  - "Session 4 rune placement: Rune of Fungal Protection carved on the back of the left shoulder. Mechanical effect TBD."
