@@ -1,4 +1,4 @@
-# Primary uses use Claude Code app, so these symlinks should be kept local-only
+# Primary users use Claude Code app, so these symlinks should be kept local-only
 AGENTS.md
 .agents/
 .agents
