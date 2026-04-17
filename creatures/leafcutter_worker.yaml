@@ -1,0 +1,80 @@
+creature:
+  name: Leafcutter Worker
+  size: Medium
+  type: Monstrosity (ant)
+  alignment: Neutral
+  source: original — conscripted labor caste under the ant alliance
+
+combat:
+  ac:
+    value: 13
+    type: natural armor
+  hp:
+    value: 58
+    hit_dice: 9d8+18
+  speed:
+    - 30 ft.
+    - climb 30 ft.
+  cr:
+    rating: "1/2"
+    xp: 100
+    proficiency_bonus: 2
+
+ability_scores:
+  strength:     { score: 14, modifier: 2 }
+  dexterity:    { score: 12, modifier: 1 }
+  constitution: { score: 14, modifier: 2 }
+  intelligence: { score: 6,  modifier: -2 }
+  wisdom:       { score: 10, modifier: 0 }
+  charisma:     { score: 8,  modifier: -1 }
+
+senses:
+  - darkvision 60 ft.
+  - tremorsense 30 ft.
+passive_perception: 10
+languages:
+  - Ant-cant (chemical)
+
+traits:
+  - name: Beast of Burden
+    description: >
+      The worker's carrying capacity is calculated as if it were one size
+      larger, and it can drag or haul up to 5x its normal carrying capacity
+      without penalty. Leafcutters routinely carry pieces of leaf — or
+      corpse — many times their own body weight.
+  - name: Leaf-Slicer Mandibles
+    description: >
+      Outside of combat, the worker's mandibles can cleanly cut through
+      leaves, cloth, paper, and thin wood as if using a sharp knife. A
+      worker can strip a leaf of its structure in seconds.
+  - name: Reluctant Soldier
+    description: >
+      When every fire ant commander or overseer in the encounter has been
+      killed or has fled, at the start of its next turn the worker must
+      make a DC 10 Wisdom saving throw. On a failure, it stands down —
+      ceasing hostilities and either fleeing, surrendering, or attempting
+      to parlay. On a success, it continues to fight but has disadvantage
+      on attack rolls until a new commander arrives or combat ends.
+
+actions:
+  - name: Mandible Snip
+    description: >
+      Melee Weapon Attack: +4 to hit, reach 5 ft., one target.
+      Hit: 6 (1d8+2) slashing damage.
+
+roleplaying:
+  personality: >
+    A worker, not a warrior. Speaks reluctantly if at all — chemical speech
+    kept short and functional. Follows orders because leafcutters have
+    always followed orders. The ones who've started to notice how wrong
+    this all feels do not say so where a fire ant might smell it.
+  motivation: >
+    Survive the day's work. Some remember leaf-farming and ache for it.
+    Others were born post-Bloom and have never known anything but corpse
+    duty. A few have quietly thrown in with the rebel cell.
+  tactics: >
+    Fights where directed. Targets whatever the nearest commander's
+    pheromones point at. Without direction, tends to hesitate — will
+    attack the most obvious threat rather than the most dangerous one.
+    Does not pursue fleeing foes. Will not cross a battle line its
+    commander did not draw.
