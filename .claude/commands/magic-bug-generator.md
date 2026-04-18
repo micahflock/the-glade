@@ -79,6 +79,7 @@ If the user specifies a zone or level range, show only the relevant tier(s).
 If the user specifies an archetype, use it. Otherwise, infer the best fit
 from the creature's real biology.
 
+
 ## Step 5 — Campaign Connections
 
 After presenting all options, briefly note how any of these creatures could
@@ -88,8 +89,7 @@ connect to:
 - Open questions from memory/Open_Questions.md
 - Existing NPCs or factions
 
-End with: "Run /stat-block with any of these to generate a full YAML
-stat block."
+Offer to append any of the generated bugs to creatures/magical-bugs.md
 
 ## Key Rules
 
