@@ -1,96 +1,63 @@
-Generate a first-draft session notes document for the session currently 
-being planned.
+Generate a first-draft session notes document from a planning transcript.
 
-Steps:
-1. Read the voice transcript the user has pasted into this conversation
-2. Generate complete session notes in the established format outlined in the FORMAT section, below, covering:
-   - Session structure and key beats in rough chronological order
-   - Any Flavor text from the transcript for key moments and locations. Include any flavor text verbatim, as close as to what's in the transcript as possible. It's ok if it's not final, yet, it doesn't need to flow.
-   - NPC dialogue and key information to convey. Similar to flavor text, don't generate your own, just pull what you can and note that it needs to be expadned. 
-   - DC values for skill checks, with what success/failure reveals. Feel free to propose good moments for skill checks and what those DCs should be. 
-   - Combat encounter notes if applicable
-   - Branching outcomes for major player decisions
-3. Write the output to sessions/sXX_draft.md, where XX is the current session. 
+## Core rule — no invention
 
-The transcript may be rough, rambling, or incomplete - that's ok, this is only a draft. Do not use campaign memory to fill gaps intelligently, but note any gaps you notice with a [MORE DETAIL] marker. Flag anything you had to invent or assume with a [SLOP CHECK] marker.
+This command turns a transcript into structured notes. It does not generate content.
 
-FORMAT
+- Flavor text, read-aloud, NPC dialogue: copy from the transcript verbatim (or as close as possible). Do not polish, expand, or rewrite.
+- Skill checks, DCs, combat stats, branching outcomes, item effects: include only what the transcript specifies.
+- Do not pull from campaign memory to fill gaps.
+- Where a category is structurally called for but the transcript is silent, insert a marker (see below) instead of writing content.
 
-# **The Winter Farm — Flavor Text & Session Notes**
+Creative elaboration is a separate step. If the DMs want flavor text drafted, dialogue written, DCs proposed, or branches fleshed out, they will ask for it explicitly.
 
----
+## Markers
 
-## **1\. Post-Fight Leafcutter Dialogue: The Loyalist and the Rebel**
+Use these inline, where the missing content would have gone:
 
-**Setup:** The red ants from the body wagon are dead. Among the surviving leafcutter ants, two are members of the rebel cell, one is a Loyalist sympathetic to the alliance, and the rest are unaligned — some lean one way, some the other. Mark during the fight which ones survive from each faction.
+- `[MORE DETAIL: what's missing]` — a gap the DM needs to fill in before running.
+- `[SLOP CHECK: what was assumed]` — a structural placeholder (e.g. a best-guess section title) that needs DM review.
 
-**If the players kill both cell members by accident:** They still get inside the Winter Farm, but are spotted by a cell member who pulls them aside — "What the fuck are you doing here? Maybe you can help us."
+## Steps
 
-**If the Loyalist survives and is not watched near the entrance later:** He will sprint into the nest and alert the red ant discipline guard station. They'll start searching for the party, but the place is a labyrinth and the rebels have informants everywhere — the party won't necessarily be found.
+1. Read the voice transcript the user has pasted into this conversation.
+2. Read `memory/campaign_state.yaml` to get the current session number (XX).
+3. Extract the session's structure: the major beats, in rough chronological order as the transcript presents them.
+4. For each beat, pull from the transcript only:
+   - Setup / framing
+   - Flavor text and read-aloud — verbatim
+   - NPC dialogue and information to convey — verbatim
+   - Skill checks the DM called for, with DCs if given
+   - Combat encounter notes
+   - Branching outcomes for player decisions
+5. Where the transcript is silent on any of the above for a beat that needs it, insert a `[MORE DETAIL: ...]` marker in that slot.
+6. Write the output to `sessions/sXX_draft.md`.
 
----
+## Output skeleton
 
-### **The Loyalist's Reaction (Immediate)**
-
-The moment the last red ant drops, one of the leafcutters physically recoils. He backs away from the bodies, mandibles clicking fast.
-
-"They're dead. Oh — oh no. They're dead. They're going to think *we* did this. Do you understand? They're going to come looking, and they're going to think we killed them, and then — what are we going to do?"
-
-He's not angry at the party. He's terrified. This is a leafcutter whose entire framework is: *follow the queen, do what you're told, survive.*
-
-Let the players respond. They may try to calm him, threaten him, or ignore him. Whatever they do, the Rebel cuts in.
+Use this shape. Only include subsections the transcript supports; omit others rather than inventing filler.
 
 ---
 
-### **The Rebel's Response**
+# [Session title — from transcript, or `[MORE DETAIL: session title]`]
 
-One of the other leafcutters hasn't moved. She's been looking at the dead red ants. When she speaks, her voice is flat and sure.
+## 1. [Beat name]
 
-"Good. They're better dead."
+**Setup:** [from transcript, or `[MORE DETAIL: ...]`]
 
-The Loyalist spins: *"Are you insane?"*
+**Read-aloud:** [verbatim from transcript, or `[MORE DETAIL: flavor text for this moment]`]
 
-"Listen to yourself. You know what we're doing. Hauling bodies. Growing fungus on *corpses*. This is a corruption. This is sickening."
+**NPC — [name]:** [dialogue and info verbatim, or `[MORE DETAIL: ...]`]
 
-The Loyalist, urgent:
+**Skill check:** [check + DC from transcript; if DC not given, write the check and append `[MORE DETAIL: DC]`]
 
-"They *protect* us. Remember what happened when we raided alone? Remember how many of us died? The red ants get us food. They get us protection. It's the only way to survive."
-
-The Rebel:
-
-"The red ant queen *dominates* our queen. She changed us. She's corrupted the old ways. I'd choose death over this."
-
-A beat. Then, quieter, steadier:
-
-"No — not death. I choose *hope*. That this isn't permanent. That something can be done."
-
-**The Loyalist's argument is, in many ways, correct:** If there's no solution, if the Bloom can't be undone, then the alliance *is* the rational survival strategy. He's not evil — he's practical.
-
-**The Rebel doesn't have a plan.** She has conviction and disgust and the beginnings of something, but no roadmap. She's upset. Everyone's upset. What she has is a contact in the resistance and the sense that things shouldn't be this way.
-
-**Note:** The Rebel is willing to threaten to kill the Loyalist if it comes to that. Don't force it — resolve through roleplay at the table. If the Loyalist is kept alive, he becomes a ticking liability near the farm entrance.
+**Branches:** [from transcript, or `[MORE DETAIL: ...]`]
 
 ---
 
-### **Information Revealed Through the Argument**
-
-The party should learn the following naturally through the dialogue, not as a lore dump:
-
-* The leafcutters are farming fungus on decomposing bodies (the Rebel will say this explicitly; the Loyalist keeps it vague — "we do what we have to")  
-* The red ants provide raiding power and protection; the leafcutters provide farming ability — neither side can function alone  
-* The leafcutter queen was coerced or dominated by the red ant queen  
-* There is a group organizing resistance inside the farm — the Rebel has a contact there  
-* The leafcutters tried raiding alone before the alliance and it went badly — many died (this is the Antennington raid)  
-* The Loyalist won't volunteer details about what they're farming. The Rebel will.
+## 2. [Next beat]
+...
 
 ---
 
-### **What the Leafcutters Know About the The Overgrowth**
-
-This is the party's first introduction to the The Overgrowth's existence. The workers don't fully understand the mechanics — they know leaves don't rot there. Keep it confused, not encyclopedic:
-
-"The leaves we cut in the green — they don't break down. We stack them. We wait. Nothing. They just stay fresh. Perfect. Forever."
-
-If asked why they use bodies: the Rebel, bluntly — *"Because bodies still rot. Leaves don't. So we use what works."*
-
-They don't know *why* decomposition stopped. They just know it did.
+The transcript may be rough, rambling, or incomplete — that's fine. The draft should be skeletal. A short, accurate scaffold is the goal; a polished-looking document built on invented content is the failure mode.

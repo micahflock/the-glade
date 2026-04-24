@@ -1,21 +1,34 @@
-Refine the existing session draft based on new planning discussion.
+Refine an existing session draft based on a new planning transcript.
 
-Steps:
-1. Read the edited session draft that the user has pasted into this conversation
-2. Read the new voice transcript the user has pasted into this conversation
-3. Update the draft to reflect new decisions, changed beats, added content,
-   or removed content discussed in the transcript, including:
-   - Session structure and key beats in rough chronological order
-   - Any Flavor text from the transcript for key moments and locations. Include any flavor text verbatim, as close as to what's in the       transcript as possible. It's ok if it's not final, yet, it doesn't need to flow.
-   - NPC dialogue and key information to convey. Similar to flavor text, don't generate your own, just pull what you can and note that it    needs to be expadned.
-   - DC values for skill checks, with what success/failure reveals. Feel free to propose good moments for skill checks and what those DCs    should be.
-   - Combat encounter notes if applicable
-   - Branching outcomes for major player decisions
-4. Be surgical! Preserve what the transcript doesn't touch
-5. Write the updated draft to sessions/sXX_draft.md, where XX is the current session. It's ok to overwrite an older version of a file.
-6. Tell the user the file is ready and provide full markdown formatted text in chat for the user to easily copy.
+## Core rule — no invention
 
-Mark any unresolved decisions discussed in the transcript but not concluded 
-with [OPEN: description].
+Same rule as /session-generate: copy from the transcript verbatim, flag gaps with markers, do not elaborate. Creative content happens only on explicit ask.
 
-The result may be rough, rambling, or incomplete - that's ok, this is only a draft. Do not use campaign memory to fill gaps intelligently, but note any gaps you notice with a [MORE DETAIL] marker. Flag anything you had to invent or assume with a [SLOP CHECK] marker.
+Be surgical. Preserve everything the transcript doesn't touch. This is an edit, not a rewrite.
+
+- Flavor text, read-aloud, NPC dialogue: copy from the transcript verbatim (or as close as possible). Do not polish, expand, or rewrite.
+- Skill checks, DCs, combat stats, branching outcomes, item effects: add or change only what the transcript specifies.
+- Do not pull from campaign memory to fill gaps.
+
+## Markers
+
+- `[MORE DETAIL: what's missing]` — a gap the DM needs to fill in before running.
+- `[SLOP CHECK: what was assumed]` — a structural placeholder that needs DM review.
+- `[OPEN: description]` — a decision discussed in the transcript but not concluded.
+
+## Steps
+
+1. Read the existing session draft the user has pasted into this conversation.
+2. Read the new voice transcript the user has pasted into this conversation.
+3. Read `memory/campaign_state.yaml` to confirm the current session number (XX).
+4. Update the draft to reflect the transcript:
+   - Apply changed decisions, added beats, removed beats, updated dialogue.
+   - Copy new flavor text, read-aloud, and dialogue verbatim from the transcript.
+   - Add skill checks, DCs, or branches only if the transcript specifies them; otherwise leave existing slots alone or mark with `[MORE DETAIL: ...]`.
+   - Clear an existing `[MORE DETAIL]` or `[OPEN]` marker only if the transcript resolves it.
+   - Add `[OPEN: ...]` for decisions the transcript raises but doesn't conclude.
+5. Leave everything the transcript doesn't touch exactly as it was.
+6. Write the updated draft to `sessions/sXX_draft.md`, overwriting the previous version.
+7. Tell the user the file is ready and print the full updated markdown in chat for easy copy.
+
+The output should follow the same structure as the existing draft. A short, accurate edit is the goal; silently rewriting untouched sections is the failure mode.
