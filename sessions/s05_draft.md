@@ -14,243 +14,406 @@
 
 ## 1. First Steps in the Overgrowth
 
-### Read-Aloud — Emerging From the Tunnel
+### Tunnel → Mat → Surface (the gradient transition)
 
-The first impression should be the inverse of the Winter Farm. Warmth, humidity, noise, life. Lean on the contrast.
+This is a *gradient*, not a cut. Pick up from the end of Session 4: they've just crossed the threshold, winter has left their lungs, they feel the surge of levelling up. Then they keep walking. Antshley is still leading them down the tunnel.
 
-> The tunnel mouth opens onto a tangle of green you don't have a word for. The air is thick and sweet — not sweet like a flower, sweet like an overfull pantry. Somewhere above you, something big hums past and keeps humming. Vines as thick as your torso twist overhead, woven so tight the light that reaches the floor is green, then gold, then green again. Underfoot: not dirt. Not exactly. A springy mat of living stems, layered on older stems, layered on older stems still, all of it wet and breathing.
->
-> Nothing here is dying. That is the strangest part. In the winter you got used to the stillness of things that had stopped. Here, everything is doing the opposite of stopping.
+Key beats to run, in order:
 
-**Perception DC 12:** The Ahganmin in Nancy's pack is glowing noticeably brighter than it ever did in the Winter Farm. Not alarming. Just *on*.
+1. **Still underground, still dark.** The tunnel walls are still dirt. They might not even notice they've left the Winter zone yet — the bottom of the Overgrowth is so dense with plant matter above them that it's nearly as dark down here as it was in the rebel tunnel.
+2. **Perception check (DC 12 suggested):** a single god ray pierces the tunnel ceiling ahead of them. Then another. Then more.
+3. **The walls change.** They realize the tunnel has gone from being cut through *dirt* to being cut through *a massive mat of packed vegetation*. The walls are plant — layers on layers on layers of stems and leaves, all wet, all living.
+4. **The gradient.** The black of the underground becomes an emerald gradient as they walk out. They're no longer below ground; they're tunneling through a dense green mat that *is* the new ground level of the Overgrowth.
+5. **Side tunnels branch off.** Many directions. Antshley leads confidently upward and onward.
+6. **Surface.** They reach what is now effectively "ground level" — the top of the vegetation mat. A well-trodden ant road runs across it. [MORE DETAIL: specific flavor of the road — matted-down leaves? cleared path? leafcutter-trimmed?]
 
-**Passive Nature 13 / Survival 13:** The "ground" is not ground. It is a thick mat of overgrown vegetation that has grown up on top of itself. There is no soil here anymore — just more plant, all the way down. [SLOP CHECK: this is extrapolated from the transcript description of the overgrowth as "a mat of vegetation almost that is just growing and growing" grown up to the city in the tree. Confirm this is the intended geology before it's player-facing.]
+### The Pheromone Fungus — Antshley's Gift
 
-### Antshley's Briefing
+Antshley hands the party a small piece of fungus before she leaves them. When swept at a crossroads, it glows in the direction of the nearest major settlement (currently: Canopia). This is not a secret rebel tool — it's just *how bugs navigate the Overgrowth now*, because the mat makes normal landmarks useless. Every leafcutter carries one. [SLOP CHECK: mechanic straight from transcript 1. Decide if it has a limited number of uses or is indefinite.]
+
+### The Road To Canopia
+
+The party will travel some hours above the mat before reaching the city. Atmosphere beats to deploy on the road:
+
+- **Other travelers pass them.** Bugs on foot, on the ant road, going both directions. Nobody's alarmed. Nobody cares. [SLOP CHECK: confirmed from transcript — "they should pass a couple bugs on the road, sure, yeah."]
+- **Flying bugs overhead.** Through gaps in the foliage canopy above, butterflies and bees move back and forth in the daylight. As evening falls, moths take over.
+- **Timing.** They entered the Fungal Farm midday last session. Moving through the transition tunnels puts them arriving at Canopia **around midnight**. [OPEN: if the players want to sleep en route, let them — there's nothing that requires nighttime arrival. But the glow of the city through the trees at night is a strong image.]
+- **A distant glow.** Off through the leaves: multicolored light. A city that is very much still awake.
+
+### Antshley's Briefing and Handoff at the Weevilville Outskirts
 
 **DM Roleplay Assignment:** [OPEN: Antshley was assigned at the table last session — confirm which DM plays her.]
 
-Antshley is visibly more relaxed the moment she's on Overgrowth soil. This is her homeland. She knows where she's going.
+Antshley walks with them all the way to the outskirts of the *shanty town* that has grown up at the base of Canopia (see Section 2 — it's called the Weevilville). She stops there. She cannot be seen deeper in — a leafcutter with three outsiders draws eyes, and she doesn't even know who the next rebel contact is. She only knows *how to contact them*.
 
-Suggested beats she should cover, in her own voice — [MORE DETAIL: write her actual dialogue; the transcript doesn't give it to us]:
+Beats she should cover, in her own voice — [MORE DETAIL: write her actual dialogue; only rough intent from transcript]:
 
-- The party cannot travel openly with a leafcutter rebel the whole way. Leafcutters are everywhere in the Overgrowth — infrastructure crew, street sweepers, guides — and most of them are not rebels. If Antshley is seen with strangers too long, someone reports it upward, and the party's cover (and her life) is burned.
-- There is a city up ahead where the party needs to stop. It's the natural next waypoint on the way to the queen, and the rebel cell has a contact there.
-- Antshley is going to peel off before the city gates. She'll give them the signal for the dead drop and then take a different route in — or wait outside. [OPEN: does she re-join them after the city, or does a new escort take over from there? Her handoff shape needs to be decided.]
+- She is going no further. This is as far as she can go.
+- She doesn't know who the contact is. That's the point. Cells keep themselves small — if one falls, the others survive. She only knows *the method* for pinging them.
+- **The method.** (Pass this to the players verbatim so they can write it down.) Once they're up in Canopia, they need to find a tavern called the **Dewdrop Inn**. They are to walk up to the bar and order a **ginger honeycap, over hard**. When the bartender brings it, take a sip, wince, say **"it's a hot batch,"** drop a specific piece of fungus she gives them into the drink, and hand it back. The bartender will apologize and tell them where to wait. Someone will come to them.
+- **The sigils Vell carved into them last session** will be what the contact reads to confirm they're real.
+- **The pheromone fungus** (above) will guide them to Canopia and, separately, they can use it in Canopia to find the Dewdrop Inn. [OPEN: is this one piece of fungus that does both, or two pieces? Transcript suggests it's flexible/general-purpose.]
 
-> "From here it'll be easier if you three walk in on your own. I'm — well. You'll see. A leafcutter with three outsiders. People talk. The contact knows what to do. You just need to know how to find them."
+Suggested flavor line:
 
-[SLOP CHECK: the transcripts said "it's unsafe for us to travel with you, go to this city" but didn't clarify whether *Antshley* specifically peels off or whether this was about the rebel cell in general. I have her peel off here because she needs a reason not to do the queen audience introductions for us. Flag for both DMs.]
+> "I go no further than here. I don't know who your next friend is — that's how we stay alive. But you know how to call them. Say the words. Drop the fungus. Wait. They'll find you." *She looks up at the lights of Canopia, bright against the dark trees.* "It's a beautiful city. Try to enjoy it a little. You earned that much."
 
----
+[SLOP CHECK: flavor line is invented — keep or replace. The specific handoff location and the method are from transcripts; the farewell mood is not.]
 
-## 2. Approach to the City
-
-**The city does not have a name yet.** [MORE DETAIL: name the city before the session.]
-
-### What This Place Is
-
-A few anchor points from the transcripts — keep all of these straight when running the scene:
-
-- **Built into a tree, originally up high.** A pollinator city. Home base of bees, butterflies, flying things. Bugs that can fly. The architecture is keyed to flight — balconies, perches, canopy-level entrances, not ground-floor streets.
-- **The Overgrowth has climbed to meet it.** The mat of vegetation has grown up the trunk and fused into the lower stories. What used to be the approach to the city from below is now a living jungle grown flush against the bark.
-- **Under-bugs have moved in.** Ground-dwelling bugs whose cities below have been overgrown have been forced up. They live in apartments *cut into the overgrowth itself* — rooms hacked out of the vegetal mat by leafcutters working for hire.
-- **Leafcutters are the infrastructure crew.** Street sweepers, path clearers, storefront maintenance. You pay a leafcutter to keep your shop door from being eaten by the growth. If you don't, the growth eats your shop door. This is a completely normal civic service here.
-- **Pollinators are thriving and slightly unwell.** Nectar is everywhere, constantly. The flying population is booming, drunk on 24/7 access to flowers, and the magic gradient is amplifying their natural tendencies. Territorial. Rowdy. Getting into fights that used to not happen.
-- **The Winter Farm is not public knowledge.** Overgrowth residents see the leafcutter/fire-ant alliance as *infrastructure and security*. The roads are clear, the city is safe, and the magic-imbued predators out in the growth are kept at bay by fire ant patrols. The alliance polls well here. [SLOP CHECK: transcript confirms this framing — the alliance's soft power comes from keeping bugs happy and commerce moving. Players will meet their first civilians who genuinely like the fire ants.]
-
-### Read-Aloud — First Sight of the City
-
-> You come up a slope of green that used to be a path and stop because there is no more "forward" the way you understood it. The ground ends — or keeps going, you can't tell which. A trunk the size of a mountain rises out of the mat in front of you. Its lower bark is invisible, smothered under a living scaffold of stems and vines grown right up into it, grown *through* it in places, as if the Overgrowth is slowly eating the tree and the tree has stopped minding.
->
-> Fifty feet up — higher — there are windows. Lanterns. Woven walkways of braided leaf fiber, slung between balconies carved out of the bark. Something small and bright buzzes out of one opening, loops twice, and disappears into another.
->
-> Closer to you, at your level, there are doors. Squat, cut straight into the green mat itself, edges still wet from a recent trim. Lines of leafcutter ants march along the walkway in front of one of them, hauling cuttings away in a neat, practiced rhythm.
->
-> Someone up on a balcony is singing. Badly. Three other voices are telling them to shut up.
-
-[MORE DETAIL: decide how the party physically enters. A ramp? A lift? A leafcutter checkpoint? I don't have this from transcripts. A gate-style check is the easiest way to gently filter / inform them.]
+[OPEN: does Antshley re-appear later in the arc (e.g., at the queen audience) or exit the story here? Transcript doesn't resolve this. Heather is attached; consider giving her an exit that can be rejoined.]
 
 ---
 
-## 3. The Tavern — Levity Beat
+## 2. Approach to the City — Canopia and the Weevilville
+
+**City name: Canopia.** Locked in (transcript 1).
+
+There are effectively *two* cities stacked here:
+
+- **Canopia** — the original, up in the tree. Pollinators. Lights. Wealth. Feasting.
+- **The Weevilville** — the shanty town that has grown up around the base of the tree, now flush with Canopia's lower levels because the Overgrowth has raised ground level that high. Named for the weevils running humanitarian aid here. Ground-dwelling bugs (especially detritivores) displaced from below.
+
+### The Weevilville — What the Players Arrive In First
+
+**The setup.** The Overgrowth mat has risen so high that the long spiraling ramp that used to wind around the base of Canopia's tree is now mostly buried. Only about a loop and a half of ramp is still exposed, bursting up out of the green. Where the old base of the ramp used to be is now the Weevilville.
+
+**Who lives here.** Detritivores and other ground bugs whose lower cities were overgrown and who can no longer find decaying plant matter to eat. Pillbugs, termites, maggots, millipedes, earthworms, various beetles, cockroaches. (The transcripts landed on cockroaches being detritivores in this world by defensive worldbuilding fiat — no hostess cakes in the Glade.) They're not starving anymore — but only because of the humanitarian relief.
+
+**How they're fed.** The leafcutter/fire-ant alliance sends fungus carts. Leafcutters unload. A red ant supervisor sits on the cart, visibly twitchy and ready to set things on fire (transcript: "roided out"). A **weevil** does the actual coordination of distributing the aid to the displaced bugs in line. This is the first visual the players get of the alliance's public face.
+
+**Weevils.** Kind. Earnest. Broadly humanitarian. They organized the aid effort when the die-off started. They may or may not know where the fungus actually comes from. [OPEN: do the weevils-in-general know the Winter Farm's truth? The rebel weevil contact obviously does. For the ones on the cart, play them as *suspecting but not confirming* — keeps the dread subtle.]
+
+### Read-Aloud — Arriving at the Weevilville (night)
+
+> The ant road widens into what was once the base of an enormous spiraling ramp. Most of it is gone — buried under the mat — but a loop and a half of old stonework is still exposed, bursting up out of the green and winding into the dark sky above you. Above that, far above you: a city full of lights.
+>
+> Below the ramp: a shanty town. Small homes cut into the vegetation itself, their edges still raw where the leafcutters trimmed them. Bug children scuttle around and climb on young shoots. A common square sits in the middle, ringed with humble shops — a bakery, a bug-smith's stall, a fiber-weaver's awning. It's clearly hard up. But it's surviving.
+>
+> In the square tonight, a wooden cart is being unloaded. Leafcutters in neat ranks lift bundles of pale fungus and stack them in the cleared space. A red ant sits at the cart's head, watching the crowd, fidgety and twitchy the way fire ants are — like they're one wrong word away from setting the whole square on fire. And moving through it all, clipboard-equivalent in hand, is a weevil in a neat apron, calling families up by name, handing out portions to a long, patient line.
+>
+> Somewhere behind you, out of the dark, Antshley quietly says: "This is my stop."
+
+[SLOP CHECK: read-aloud invented but every element is drawn from the transcripts. Replace freely.]
+
+### Looking Up — Read-Aloud as They Head Toward Canopia
+
+*Use this as the transition beat when the players decide to head up. Close to verbatim DM dictation from transcript 2 — lightly cleaned.*
+
+> Standing in the central square of the Weevilville, looking up, the lights of Canopia glimmer above you — some shining bright and free, others diffused in the papery delicate construct made by wasps, or reflecting off the crisp wax of geometric comb. A ramp in front of you, spiraling around the tree, bursts from the overgrowth and travels upward to a glowing gate on the underside of the city above.
+
+As they climb the ramp and rise above the mat:
+
+> The green mat stretches beneath you, having consumed a third of all the trees in the Glade from the ground up. Far below, the Weevilville looks like a cluster of pinpricks of light against a dark green sea. Above you, the gate grows brighter.
+
+### Canopia — What This Place Is
+
+Anchor points, keep these straight:
+
+- **Originally a pollinator city, built high in a single huge tree.** Bees, wasps, butterflies, moths. Flying bugs. The architecture is keyed to flight — balconies, perches, canopy-level entrances, not ground-floor streets.
+- **Architecture.** A collaboration of bees and wasps, built in the crook of two branches and dripping down organically. A mix of **geometric bee honeycomb** with **paper-wasp protuberances** — crisp wax against papery construction. At night: lit up with multicolored lights. Dionysus's party in the middle of Mount Olympus (Hades II reference, per transcript).
+- **The Overgrowth has risen to meet it.** Lower levels of the city are now flush with the top of the mat.
+- **Canopia is thriving.** The nectar supply is endless. Gardens are perfect. Streets are swept clean. Leafcutters keep every door, balcony, and storefront from being reclaimed by the growth — businesses pay them on retainer. The population has hired a lot of inexpensive labor from the Weevilville to plant flowers, sweep, and maintain. It is, genuinely, **nicer than it's ever been.**
+- **Pollinators are drunk and territorial year-round.** Constant nectar + the magic gradient amplifying their natural tendencies. Fights start for no reason. Bees clonk into windows. Nobody holds a grudge because nobody remembers.
+- **The Winter Farm is not public knowledge here.** The alliance is seen as *infrastructure and security*. Roads clear, predators at bay, commerce flowing. At least one civilian should casually compliment the fire ants, out loud, without irony, in front of the party.
+
+### Read-Aloud — Stepping Into Canopia At Night
+
+*Close to verbatim DM dictation from transcript 2.*
+
+> Light and sound, even late at night. A constant thrum of both conversation and wings as you walk into the city — past elaborate apartments, beautifully planted gardens, flowers tucked into every corner, the streets swept perfectly clean. Bees thrum by overhead, a few of them stumbling nectar-drunk down the streets.
+
+### Finding the Dewdrop Inn
+
+The party doesn't know where the Dewdrop Inn is, and they don't know anyone in the city. Options:
+
+- **Drix's Performance / History** — Drix is a performer. Per transcript 2, let Drix make up that they've been here before. Performance DC 12 or History DC 12 to "remember" the Dewdrop Inn's approximate location and tone.
+- **Stop and ask a local.** This is where the street-fight luck check lives.
+- **The pheromone fungus Antshley gave them.** Should also work to locate the tavern — it's a known rebel ping point. [OPEN: is the fungus general-purpose for "nearest friendly rebel node," or does it only point to Canopia? DMs pick.]
+
+### The Street-Fight Luck Check
+
+Any time the party stops a stranger in Canopia at night to ask directions, roll a d20. On a low result (DM's call — suggest **1-5 on a d20**), the stranger is a nectar-drunk pollinator looking for an excuse. They pick a fight. [SLOP CHECK: mechanic from transcript, threshold invented.]
+
+- **Non-lethal brawl.** A rowdy bumblebee shoves a PC, demands to know "whose tree" they're from. Defused with Persuasion DC 10, Intimidation DC 12, or Deception DC 10. Escalates into a brief slap-fight on any failure. No stakes. Comedy.
+- **If the party goes lethal:** the moment the drunk takes real damage, they wince, spit a slur, and **fly off in a very non-linear pattern**, clonking into apartment windows as they go. No pursuit. No city guard. Nobody cares enough to follow up. (Transcript intent: keep this light, don't let a murder follow them around.)
+
+Alternative: the stranger is friendly. Suggested dialogue (lightly cleaned from transcript 2, close to verbatim):
+
+> "Oh — visitors from the Weevilville, huh? With money to spend. Well, welcome, welcome. It's a beautiful city, isn't it? Oh, the Dewdrop Inn? Yeah, it's a humble establishment. Just keep following the main road until it loses a bit of its gaiety. Take your first left. You'll see it — tucked up against the trunk."
+
+**[OPEN — from transcript:]** if they try to find a **constable** instead, go for it. Canopia's "constables" are almost certainly nectar-drunk beneficiaries of the alliance, and will wave them toward the tavern with great friendliness.
+
+---
+
+## 3. The Dewdrop Inn — Levity Beat
 
 The DMs flagged this explicitly: the last few sessions have been dour. This scene is the levity. Let it breathe. Don't rush it.
 
-### The Setup
+**DM voice assignment (from transcript 2):** one DM does the **Weevil contact** voice, the other does the **Bartender** voice. Divide before the session.
 
-The rebel dead drop is in the tavern (see Section 4). The party will end up here one way or another. Railroad gently — Antshley's directions, a helpful NPC, or a leafcutter pointing them toward "the one with the carved sign" — but get them here.
+### Read-Aloud — Entering the Dewdrop Inn
 
-### Read-Aloud — Entering the Tavern
+*Close to verbatim DM dictation from transcript 2. Lightly cleaned.*
 
-> The door is propped open because the door cannot close — something green and tendril-ish is growing out of the frame and has been trimmed back this morning but not yesterday. Inside: warmth, noise, the smell of fermented nectar so strong it's its own weather system.
->
-> Pollinators pack the place. Bees on the bar. A pair of butterflies draped over a bench, wings drooped, one of them giggling at nothing. A fat bumblebee with a tankard the size of his face is arguing — extremely loudly and with great physical conviction — with another fat bumblebee about something that happened three drinks ago. Nobody can hear them. Nobody is trying.
->
-> In the rafters, moths hang upside down from the beams and occasionally drop a peanut shell on someone below, to great hilarity.
->
-> A leafcutter in a leather apron is methodically trimming a creeper out from behind the bar with the patience of someone who has done this every morning for a year.
+> As you enter the Dewdrop Inn, you're greeted by the familiar hustle and bustle of a populated place of drink and eating. The large stained-leaf window above the entrance sheds beautiful multicolored shadows on the floor in front of you as you enter. To your right, a beautiful long wooden slab bar top sits before you. To your left: six or seven tables with various patrons sitting at them — each table made from the leaf of a different kind of tree.
 
-### Running the Tavern
+### The Vibe
 
-**The vibe:** Drunken, territorial, loud. Everyone is a little magic-imbued and very much overfed. Fights start for no reason and end for no reason. Nobody holds a grudge because nobody remembers.
+Drunken, territorial, loud. Everyone is a little magic-imbued and very much overfed. Fights start for no reason and end for no reason. Nobody holds a grudge because nobody remembers.
+
+**The bartender.** Wears the bug equivalent of a mustache (transcript). Professional. Unflappable. Fully aware of the rebel dead drop he's running and entirely practiced at pretending he isn't. [OPEN: name the bartender. Starts with whatever you like.]
 
 **Atmosphere beats to deploy as needed:**
 
 - A bar brawl erupts at a nearby table over whose flower is better. It ends in under a minute when one participant falls asleep.
 - A butterfly staggers up to a PC, tells them they have beautiful eyes, and wanders off mid-compliment.
 - A honeybee buys the party a round unprompted, announces they've done a good thing, and leaves. [MORE DETAIL: what's in the drink? Homebrew a nectar cocktail with a minor mechanical effect? Advantage on next Cha check for an hour? Or keep it pure flavor?]
-- The singing from the balcony outside is still happening. It is still bad.
+- **The singing bee is here.** A drunk bee moves table to table, singing loudly and terribly about the monster in her old field and the 17 sisters she lost. This is the hook for the side quest — see Section 5. She should sing at the party at some point. If Drix doesn't engage her, she'll wander over anyway and serenade them at the back table after the dead drop is placed.
 
-**[OPEN: Does the party get targeted by the bar's territoriality?]** A drunk pollinator might pick a fight with a PC specifically because they're strangers/grounded/not drunk enough. Possibilities:
+**[OPEN: Does the party get targeted by the bar's territoriality?]** A drunk pollinator might pick a fight with a PC specifically because they're strangers/grounded/not drunk enough.
 
-- **Non-lethal brawl option.** A rowdy bumblebee shoves Drix or Nancy, demands to know "whose tree" they're from. Easily defused with Persuasion DC 10, Intimidation DC 12, or Deception DC 10. Escalates into a bar-wide non-lethal slap-fight on any failure. No stakes — just comedy.
-- **Skip it entirely** if the party is focused. Not every visit to the tavern needs to turn into a fight.
+- **Non-lethal brawl option.** Same DCs as the street-fight: Persuasion DC 10, Intimidation DC 12, or Deception DC 10 to defuse. No stakes — just comedy.
+- **Skip it entirely** if the party is focused. Not every visit needs to turn into a fight.
 
-[SLOP CHECK: the transcripts explicitly wanted tavern brawls as a setpiece ("the tavern is essentially constantly having brawls because everyone's slightly drunk"). The shape above is my interpretation — confirm tone before running. The transcripts are clear that this should be comic, not dangerous.]
+[SLOP CHECK: the transcripts explicitly wanted tavern brawls as a setpiece. The shape above is interpretation — confirm tone before running. Keep it comic, not dangerous.]
 
 ---
 
-## 4. The Dead Drop
+## 4. The Dead Drop — Drink, Sip, Fungus, Sit
 
-This is the mechanical center of the city stop: the rebels have a method of cell-to-cell signaling, and the party was given the method before entering. They leave a signal; a contact shows up to meet them.
+This is the mechanical center of the city stop. Antshley gave the party the method; they execute it at the Dewdrop Inn; a contact responds.
 
-### The Signal
+### The Method
 
-**The transcripts floated two options:** leave a rock in a pot (classic dead drop) or a quilt-based signal. Both DMs said "maybe it could be quilts" three times in a row, which reads as landing on quilts. Going with that.
+Step by step, what the party does (confirmed verbatim-ish from transcript 2):
 
-[SLOP CHECK: "quilts" keeps getting said but it's unclear *how* quilts signal. My best read: there is a wall of patchwork hanging in the tavern — decorations, bounties, notices, travelers' keepsakes — and the signal is a specific quilt square hung in a specific spot, or a specific pattern turned face-out. Confirm or replace before running.]
+1. **Approach the bar.** Order a **"ginger honeycap, over hard."**
+2. **Take a sip. Wince.** Say, in a voice other patrons can almost hear: **"It's a hot batch."**
+3. **Drop the piece of fungus Antshley gave them into the drink.**
+4. **Hand the drink back to the bartender.**
 
-**Proposed signal mechanic:**
+The bartender will profusely apologize and offer to remake it. Mid-apology he'll slip in something like "a special guest — yes, of course, so sorry — why don't you take the back corner table, and I'll bring a replacement over." The back corner table is where the meet happens.
 
-There is a community quilt wall by the tavern hearth. Visitors pin patches. Locals do too. Most of it is sentimental — a cousin's wing, a child's first pollen haul, a map of a favorite meadow. A handful of squares are rebel cell signals, woven in with the rest. Antshley taught the party one sequence:
+[SLOP CHECK: the drink name "ginger honeycap over hard" is invented in the spirit of the transcript's bar-passphrase vibe — keep or replace with whatever you like. The rest is from transcripts.]
 
-- The signal is to turn a specific patch — a pale leaf-cutter silhouette stitched on green — so that its corner points down instead of up.
-- Within a few hours, a contact appears and strikes up casual conversation.
+### Skill Checks Around the Drop
 
-**Skill checks for the drop itself:**
+- **Performance / Deception DC 10** to pull off the "it's a hot batch" line without looking like you rehearsed it in the mirror. Failure is not catastrophic — the bartender will still run the move — but a fail plus a nosy patron at the bar could draw a question.
+- **Passive Perception 12** when the bartender returns with the replacement: they clock a nod exchanged with someone across the room. Not suspicious — just the signal that the contact has been paged.
+- **Insight DC 13** when the "hooded figure" arrives (see below): the party notices it isn't *graceful enough* to be trying very hard at subterfuge. The "sneaking" is kind of terrible. Something about this person is *built different*.
 
-- **Sleight of Hand DC 10** to flip the patch without the bartender or patrons noticing. Failure is not catastrophic — nobody in this tavern cares what anyone does — but a failure can drop a minor complication (see below).
-- **Perception DC 13** before placing the signal: the party notices two *other* patches that have clearly been turned recently. Someone else is using this drop, and has been using it a lot. [MORE DETAIL: decide whether this is a seed for a future revelation — a parallel rebel cell? a fire ant counter-intelligence op? — or flavor only.]
+### The Hooded-Figure Beat
 
-### The Contact
+While the party is sitting at the back corner table, waiting on the replacement drink and enjoying the ambient chaos of the Dewdrop Inn:
 
-**DM Roleplay Assignment:** [OPEN — assign before session.]
-
-**Species:** [OPEN — transcript doesn't specify. Recommend a flying bug, because a leafcutter overtly meeting three outsiders in a pollinator tavern is the exact thing Antshley said was risky. A bee or a moth fits the city's native population; they'd draw no attention. Alternatively, a very normal-seeming worker leafcutter ordering a drink at shift change.]
-
-**Role:** Cell contact in this city. Knows Vell's cell exists but is not part of it — they're in a different cell, linked by the quilt method and by trust. They know the party is coming because Vell got word ahead.
-
-**What they know and can provide:**
-
-- The way to the leafcutter queen — or at least the next leg of it. This is the *lead to get into the anthill* the transcripts referenced. [MORE DETAIL: specifics of the route need to be generated — is it an entrance, a guide, a token, a map?]
-- Why the party cannot just walk up to the anthill: [MORE DETAIL — generate a reason. Possible: the combined nest has pheromone locks, which connects to the deferred pheromone-lock puzzle flagged in the Session 4 draft.]
-- A useful piece of local information about the Overgrowth — see below.
-
-**What they will not provide:**
-
-- Direct escort. Same reason as Antshley. They will point, not walk.
-- A guarantee. Their information is current as of a few days ago; the anthill is a living target.
+1. Bartender brings the replacement drink. Sets it down. Nods. Leaves.
+2. A figure in a long hooded robe enters the tavern, **stumbling awkwardly**, bumping into a chair, tripping a little over the hem of their robe, bonking against the party's table on the way past — and keeps walking.
+3. **Perception DC 12** to notice they dropped a **small wooden room key** on the party's table as they "bumped" it. [OPEN: is the key for a specific floor? Confirm: the transcript said it's the room *at the top of the inn, the most isolated one*. Ceilings a little low in the corners, but quiet.]
+4. The party finishes (or doesn't finish) their drinks, heads upstairs.
 
 ### The Meet — Suggested Read-Aloud
 
-If the contact is a moth:
+When they open the door at the top of the inn:
 
-> Maybe a quarter of an hour later — long enough that you've half-forgotten about it and started in on a drink — a small greyish moth sets a tray down on your table that none of you ordered. There are four drinks on it. She sits down, uninvited, and picks up the fourth.
+> The room is small and tucked right under the eaves — the ceilings sag a little in the corners, a single window above a low table, a fire just catching in a small grate. The only other occupant is seated with their back to the door, facing the fire. A long brown robe. A hood still up.
 >
-> "Don't look at the wall," she says pleasantly. "The patches sort themselves. So. You've come a long way."
+> The figure stands, turns, pulls the hood back.
 
-If the contact is a leafcutter worker at shift change:
+*Show the players the weevil picture at this moment (transcript: Julian uploaded it to Discord, has it on hand).*
 
-> A leafcutter with sap on her apron and pollen on her mandibles sits down at your table without a word, takes a drink, sighs deeply, and says, "Don't look at the wall. The patches sort themselves. So. You've come a long way."
+> It is an extremely earnest-looking weevil. Beady eyes. Long, expressive snout. Absolutely no talent for subterfuge. He beams at you.
 
-[SLOP CHECK: opening line is invented. Keep or replace — the transcripts didn't give one.]
+**Opening line (transcript-suggested, verbatim, joke-aware — keep or cut, DM's call):**
+
+> "I'm glad you could make it."
+
+### The Contact — The Weevil
+
+**Species:** Weevil. (Locked in, transcript 1 + 2.)
+
+**Name:** [OPEN — transcript 2 specified the name should start with a **G**. Suggestions: Gribble, Gareth, Gustave, Gorp, Grubb, Gwen.]
+
+**DM Roleplay Assignment:** assigned at the table (per transcript 2, the DM not playing the bartender).
+
+**Role.** Cell contact in Canopia. Part of a separate rebel cell from Vell's, linked by method and trust. Knows the party is coming because Vell's cell got word ahead. Earnest, humanitarian, personally invested. Awkward. Kind.
+
+**What he verifies first.** The sigils Vell carved into the party last session. Once he sees them, he relaxes — maybe even sheds the robe — and shifts into real conversation.
 
 ### Information to Convey (Not a Lore Dump)
 
 Work these in through conversation, reacting to what the party asks:
 
-- **Confirmation that Vell's cell sent word ahead.** The rebel network is bigger than Vell's single cell. Quietly.
-- **The city is not safe the way it feels safe.** The cheerful tone at the tavern is the alliance's soft power in action. Leafcutters clearing roads, fire ants patrolling the paths through the growth, predators that would eat you kept at bay — all of it real. All of it run by the same system burning villages back in the winter zone.
-- **The leafcutter queen knows something is wrong.** [SLOP CHECK: this is directly from Transcript 2.] She is having to adapt in ways she doesn't like. She is not an enemy — she is a queen who made a bad deal and is looking for a way out.
-- **Most bugs in the Overgrowth are happy.** This is important and uncomfortable. Bees feast. Butterflies feast. Honey is boundless. Life is good *for them*. The rebel movement cannot easily recruit because most of the population does not see a problem. [SLOP CHECK: directly from Transcript 2.]
-- **The next lead.** [MORE DETAIL — specify.] Something like: "Two days east, past the hollow. There's a place where the old leafcutter road meets the combined nest's outer tunnels. A worker named [NAME] checks carts there. Use this phrase. She'll get you further in."
+- **Confirmation.** Vell's cell sent word ahead. The rebel network is bigger than Vell's single cell. Quietly.
+- **The city is not safe the way it feels safe.** The cheerful tone at the tavern is the alliance's soft power in action. Leafcutters clearing roads, fire ants patrolling the paths through the growth, predators kept at bay — all run by the same system that burned villages in the winter zone.
+- **The leafcutter queen knows something is wrong.** She's adapting in ways she doesn't like. Not an enemy — a queen who made a bad deal and is looking for a way out.
+- **Most bugs in the Overgrowth are happy.** Important and uncomfortable. Bees feast. Butterflies feast. Honey is boundless. The rebel movement cannot easily recruit because most of the population doesn't see a problem.
+- **The plan for getting them to the queen.** (This is the load-bearing handoff.) The weevil's cell can get them into the **Joint Hive / combined ant nest**, where another rebel cell operates *inside*. From there, the in-hive rebels will move them to the Leafcutter Queen for an audience. [MORE DETAIL: specifics of *how* they get into the combined nest — an entrance, a cart, a shift change, a bribe? Needs to exist before the session. The transcripts flagged the pheromone-lock puzzle from Session 4 as probably relevant.]
+- **A warning.** The in-hive cell has been preparing for "something bigger" for a long time. They're not just information-runners. If the party shows up with this news, they may set things in motion. [SLOP CHECK: this is setup for the transcript 2 pitch — next session might open with the rebel cell being ambushed by fire ants and the Leafcutter Queen arriving to stabilize the situation. Keep this vague this session so it can go either way.]
+
+### What He Does Not Provide
+
+- Direct escort. Same reason as Antshley.
+- A guarantee. Intel is current as of a few days ago; the hive is a living target.
+- Immediate departure. He tells them to **rest the night in Canopia** — the handoff to the in-hive cell happens tomorrow, at a specific time. This naturally leaves the rest of the evening and the morning for exploration / the side quest.
 
 ### Branching — If the Party Blows the Meet
 
-- **Missed the signal / never placed it:** The contact doesn't come. The party either figures it out from another NPC (the leafcutter in the leather apron behind the bar will, with Persuasion DC 14, tell them "try the quilt wall"), or they leave without the lead and have to find their way another way — costing time.
-- **Got spotted placing the signal:** A curious patron comes over and asks what they were doing with the patches. Deception DC 13 to play it off. On a fail, the contact doesn't show — the patron was a fire ant informant [MORE DETAIL: how often do fire ants have informants here? Decide before running, because this is a world-building beat.] — and the party has to find another way to the lead.
-- **Attacked the contact / blew cover:** The contact is unarmed, quiet, and not expecting a fight. If the party acts hostile, she leaves, quickly. No lead. [OPEN: does this cascade into the city becoming unsafe for them, or is the tavern anonymous enough that it doesn't follow them out? Probably the latter — this is a levity scene.]
+- **Botched the bar move.** The bartender subtly coaches them through it ("Let me try that again for you, sir — it's a *hot* batch, you said?"). The drop still happens. Bartender is a pro.
+- **Attacked the weevil.** He is visibly unarmed, extremely awkward, and not expecting a fight. He panics, apologizes, tries to leave. If they let him leave, no lead. If they hurt him — [OPEN: decide if this closes the route to the combined nest entirely, or if another contact eventually finds them. Recommend: they lose time but get another shot, because the plot has to move.]
+- **Blew cover loudly in the tavern.** The bartender pretends not to know them. The weevil never arrives. The party has to find another route. Tavern patrons don't care; nobody remembers.
 
 ---
 
-## 5. The Side Quest — A Favor For a Few Baubles
+## 5. The Side Quest — The Bee, Her Field, and What's In It
 
-**Transcript intent (verbatim-ish):** *"rather than going to a shop like doing something for someone and getting the choice of a few magic items … we don't have to worry about like economy."* And: orthogonal items that aren't straight combat upgrades — "perpetual pudding," "immovable rod" vibes. Stuff that only helps in combat if the players are clever about it.
+**When this happens.** Transcript 2 landed on this: the Dewdrop Inn dead drop is late at night. The weevil tells the party to rest in Canopia and meet again in the morning for the handoff to the in-hive cell. **The side quest is for the next morning** (or earlier, if Drix engages the singing bee during the tavern scene — very likely). This also gives the party a free day in Canopia to wander.
 
-So: the party is offered a small job somewhere in the city. Reward is a choice among a few curios.
+### The Hook — The Bee at the Tavern
 
-### The Hook
+During the dead drop scene (or right after), the **singing bee** the party has been hearing all night goes table to table, crying through a rough karaoke about losing her field and her sisters:
 
-[MORE DETAIL: the transcript never specified *what* the side quest is — only its shape. Both DMs flagged they hadn't landed on it yet. Below is a slate of options to pick from before the session.]
+> "My old fields got monsters — chink, chink, chink —
+> I lost seventeen sisters there — chink, chink, chink —"
 
-**Option A — The Bugsmith's Infestation [SLOP CHECK].** A bugsmith (or a bug-like-a-bugsmith — a jeweler? a patch-artisan? the tavern's leafcutter trimmer?) has something living in their back room. Something the leafcutters on retainer can't cut out because it bites. Small delve. 1-2 encounter budget.
+She stops at the party's table. She will spill the story with almost no prompting:
 
-**Option B — The Drunk on the Balcony [SLOP CHECK].** The bad singer on the balcony is a bee whose flower-field has been taken over by something weird since the Bloom. She's drinking about it. She'll hand over some keepsakes if they go clear the field. Gives an excuse to see the Overgrowth's wildlife up close and deploy a "wild magic predator" as a minor encounter.
+- She's a worker bee from a hive just outside Canopia. Their field has been overtaken by *something*. Sisters who went in didn't come back. She lost seventeen of them.
+- The hive has written the field off. No one will help her.
+- If someone would clear the field, she'd give them keepsakes. Not money. Things she kept.
 
-**Option C — A Quilter Needs Thread [SLOP CHECK].** Literalizing the quilt motif: an old weaver needs something found only out past the city walls. A nothing errand with charm — and the reward is the old weaver's personal stash of curios, one of which is accidentally magic. Good if the DMs want zero combat this session.
+[MORE DETAIL: name the bee. [OPEN]. Also decide her hive affiliation — a specific Canopia-adjacent hive, or generic? Affects whether she's connected to the Royal Jelly Society branch in Canopia.]
 
-**Pick one before the session. Don't generate more than one at the table.**
+[SLOP CHECK: verse above is lightly extrapolated from the transcript line "My old fields got monsters, chink, chink, chink. I lost 17 sisters there. Chink, chink, chink." Keep the number 17 — it was specific.]
 
-### Reward — The Choice of Curios
+### The Field
 
-The party is offered *one item* from a small collection. They choose together. No money changes hands — it's a favor for a favor.
+**Location.** A short walk from Canopia — past the outer gardens and into a pocket of flower-field that used to be one of the richest pollen sources in the area. [MORE DETAIL: specific direction and distance.]
 
-**[SLOP CHECK — all items below are invented. The transcripts only gave us the *shape*: orthogonal, combat-useful-if-clever, joke-adjacent, in the spirit of the perpetual pudding and the immovable rod. Both DMs should cut/keep/replace freely.]**
+**Terrain.** Constrained and vertical. Very few flat spaces to stand. Fighting happens *between flower heads* — PCs jumping from bloom to bloom, stems bending and swaying, vines dangling. None of the party can fly (crickets can *sort of* glide, comically). This should be a battlefield where positioning matters a lot.
 
-**1. The Immovable Pebble.** A pebble the size of a thumbnail. On command word, it becomes fixed in space until the command word is spoken again. Not strong enough to hold a fighting bug, but enough to anchor a rope, hold a door, serve as a climbing hold on a blank surface, or wedge a door shut. *Inspired by the Immovable Rod discussion in the transcripts — scaled to bug size.*
+**The enemy.** Options the transcripts floated, all good:
 
-**2. The Perpetual Pudding.** [Direct callback to the in-campaign joke.] A small waxed bowl that, at dawn each day, refills with a single serving of mild nectar pudding. Edible. Keeps you from starving. Tastes fine. Does not help in combat unless you throw it. *The DMs asked for this kind of item by name — worth including explicitly as an offering even if they don't take it.*
+- **Orchid mantis with active camo** (transcript's favorite, "super rad"). Hides perfectly on a flower. Strikes once the party commits to a position. Can shift blooms. Best option for the "wild magic predator" vibe the DMs wanted.
+- **Crab spider** (real bee predator, per transcript). Flower-mimic. Lower threat than the mantis, more numerous.
+- **Robber fly** (transcript: "metal as fuck," "ambush predator that catches prey in flight"). Saved for later — note taken in transcript. Don't use here.
 
-**3. The Traveler's Pot.** A lidded vessel that silently and completely composts whatever organic waste is placed inside it, in about an hour, with no smell. In the Overgrowth, where nothing else rots, this is absurd. [MORE DETAIL: decide what it does inside the Winter zone, where rot is already impossible to prevent. Flavor-only? Or does it interact mechanically with the non-rotting Overgrowth material the party may be carrying?] *This is the "travel potty" from the transcripts — in a form that has surprising clever uses.*
+**Recommendation:** go with **one orchid mantis** as the boss, plus maybe **one or two crab spider minions** for terrain coverage and movement targets. Magic-amplified. The party is level 6; make it feel dangerous.
 
-**4. A Tune-Shifted String.** A short length of gut string that, when played on any stringed instrument, causes the instrument to produce not its own sound but the sound of whatever Drix last heard. One use per long rest. *Drix-flavored. Comedic, occasionally combat-useful — imitate the barked cadence of fire ants to confuse a patrol, or reproduce the fungal curtain's rhythm if they ever meet another one.*
+[MORE DETAIL: build the encounter — stat block, HP, initiative positions, the flower-head terrain grid. Hand off to `/encounter-worksheet`.]
 
-**5. A Jar of Still Air.** A small sealed jar. Opening it releases a palm-sized bubble of perfectly still air that lasts about a minute and floats gently upward. One use. *Good for: extinguishing flame, creating a brief dead zone in a windy or spore-filled environment, or signaling. Surprising combat use if the party is clever.*
+[SLOP CHECK: all encounter specifics are invented — the transcript only approved the creature types and the terrain *vibe*. Confirm encounter shape before running.]
 
-[OPEN: pick which of these five to actually offer at the table. Four is probably too many for a quick choice beat. Recommend offering three — whichever three best fit the side quest's flavor.]
+### The Reward — The Choice of Curios
+
+The bee hands over a small bundle of keepsakes. The party picks *one*. No money.
+
+**[Final list — transcript 2 explicitly cut items 3 and 5 from the previous draft as "don't really make sense." Keeping the three the DMs laughed at / liked.]**
+
+**1. The Immovable Pebble.** A pebble the size of a thumbnail. On command word, it becomes fixed in space until the command word is spoken again. Not strong enough to hold a fighting bug, but enough to anchor a rope, hold a door, serve as a climbing hold on a blank surface, or wedge a door shut.
+
+**2. The Perpetual Pudding.** A small waxed bowl that, at dawn each day, refills with a single serving of mild nectar pudding. Edible. Keeps you from starving. Tastes fine. Does not help in combat unless you throw it. *Direct callback to the in-campaign joke.*
+
+**3. A Tune-Shifted String.** A short length of gut string that, when played on any stringed instrument, causes the instrument to produce not its own sound but the sound of whatever Drix last heard. One use per long rest. *Drix-flavored. Comedic, occasionally combat-useful.*
+
+[OPEN — from transcript 2 banter:] If the DMs want a comic throwaway, offer **the Traveler's Pot** (the "travel potty" / Eva's potty joke) as a fourth option the bee is plainly trying to fob off on them. It silently composts organic waste with no smell — useful for *getting rid of a corpse*, per transcript. Mostly a joke item.
 
 ### Running the Choice
 
-Play the curio-owner's voice for each item — they have stories, not stat blocks. Drix's Performance is relevant; so is Nancy's or Tabby's read of which item is being undersold. Let the players haggle in character if they want to. No Insight check to "detect the best one" — every item is good in its own way.
+Play the bee's voice for each item — she has stories, not stat blocks. Drix's Performance is relevant; so is Nancy's or Tabby's read of which item is being undersold. No Insight check to "detect the best one" — every item is good in its own way.
+
+### If the Party Skips the Side Quest
+
+Completely fine. Transcript 2: "if the players linger in the tavern — and they probably will, because it's funny — cut the side quest." The bee is also happy to just wail her song at them for free; she gets a full scene whether or not they help her.
 
 ---
 
-## 6. The Lead Out — Onward to the Anthill
+## 5.5 Canopia — Other Places the Party Might Wander
 
-Once the dead drop is paid off and the side quest (if any) is resolved, the party has what they came for: a way into the combined ant nest.
+They have the rest of the evening and the morning free. Per transcript 2, these are live locations the DMs explicitly wanted on the map. Ad-lib flavor is fine — these are "wander around, bump into things" destinations.
 
-### What the Contact Gave Them
+### The Mayflyer
 
-[MORE DETAIL: specify this before session.] A working version of this, to be replaced:
+An **upscale bar** they pass on the main road before reaching the Dewdrop Inn. Crisp wax architecture. Well-dressed bees and butterflies. The kind of place Drix would want to perform for tips. [MORE DETAIL: if Drix performs, run a quick Performance check; reward in coin or in a connection. No prep needed beyond the vibe.]
 
-- **A route.** Two days east along the old leafcutter road, past a hollow in the growth.
-- **A rendezvous.** A worker checkpoint where carts are screened. A specific leafcutter name, a specific phrase, and the timing of shift change.
-- **A warning.** The road is clear of predators because the fire ants *keep* it clear of predators. They'll see the party coming. Whatever their cover story is, it should be a cover story a fire ant patrol will buy.
+### A Corner
 
-### Possible Session-Ending Moment
+A smaller, more intimate wood-paneled establishment they pass on the same stretch. Jazz singer vibes. [OPEN: unclear from transcript what, if anything, happens here. Flavor location.]
 
-**Recommended endpoint:** the party leaves the city. The last image of the session is their first real step into the wild Overgrowth on the road toward the queen — the tavern noise fading behind them, the green closing in ahead.
+### Queen's Casino
 
-Suggested read-aloud:
+The city's casino. [MORE DETAIL: name is DM-provisional, transcript floated "Queen's Casino," "Queen's Tables," "where everyone feels like a queen."] Nectar-drunk gambling. Wings, feelers, and dice. A place for the party to lose or win a tiny fortune in flower petals if they want.
 
-> The city's noise stays with you for a while as you walk. You can still hear the bad singing when the wind shifts, fainter each time, until one gust comes through and it's gone. What's left is the Overgrowth: humming, humming, humming. Everything doing the opposite of stopping. And somewhere two days east of you, a queen who made a bad deal is waiting to be told she doesn't have to keep it.
+### The Royal Jelly Society — Canopia Branch
 
-[SLOP CHECK: read-aloud invented. Replace freely.]
+**Direct from transcript 2: this branch exists and is very, very unhelpful.**
 
-**Alternative endpoint (if the session is running short):** end on the contact's last line at the tavern table, holding on Nancy or Drix reacting to the scale of what they've just been told. Cut to black there.
+**What it is.** A local chapter. Ornate. Airy. A bunch of bees who really, really love pressed flowers and are absolutely thrilled with the current state of the world.
 
-**Alternative endpoint (if the session is running long and they want a cliffhanger):** push them to the worker checkpoint at the edge of the anthill's territory and end on the phrase being spoken — leaving the check-through, and whatever is on the other side of it, for next session.
+**Arriving at the door.** They're greeted by a staff bee holding water for them to wash their hands. Another offers a tray of candies. The sitting rooms are beautiful. Everything is delicate. Everything is wonderful. Everyone is so, so happy.
+
+**If the party tries to deliver important news:**
+
+> "Oh! You've found a new flower? Some petals for us? Oh, beautiful. Yes, isn't it wonderful — the magic has made everything so gorgeous and delicate…"
+
+They do not give a shit. They cannot be made to give a shit. The Overgrowth has been the best thing to ever happen to this branch. [SLOP CHECK: this entire vibe is straight from transcript 2 — keep tonal intent exact. The players should walk out feeling a specific flavor of civilization-ending dread.]
+
+**What they actually know:** Background only. Stuff the party already knows. "It started roughly X years ago. Plants are not dying. Isn't that just marvelous?" No leads. No action. [MORE DETAIL: if the DMs want, flesh out one or two named member NPCs here. Otherwise keep it as a single oppressive vibe.]
+
+**DM note.** This is the second payoff of the session's central thesis (first payoff: civilians in Canopia saying nice things about fire ants). Dissonance. Complicity by cheerful ignorance.
+
+---
+
+## 6. The Lead Out — Pacing Options and Session End
+
+Transcript 2 explicitly flagged this session as **probably shorter than usual** — levelups will eat an hour at the top — and landed on "a short session is fine." The default end point is **the weevil's meeting in the top-floor room**. Everything after is bonus.
+
+### What the Weevil Hands Off
+
+By the end of the meeting, the party should know:
+
+- **The plan.** Tomorrow, the weevil's cell is going to get them into the **Joint Hive** (combined ant nest). Mechanism TBD [MORE DETAIL].
+- **Inside the Joint Hive is another rebel cell**, who will take them to the Leafcutter Queen.
+- **A warning (general).** Things in the Joint Hive are tense. The in-hive cell has been preparing for a long time. The party's arrival with news from Vell may be the push that starts something.
+- **A rendezvous time and place in the morning.** [MORE DETAIL: specify before session — a gate? a cart? a sympathetic worker?]
+
+### Default Session Endpoints (pick based on table energy)
+
+**Endpoint A — End at the Weevil Meeting (default, recommended).**
+The weevil finishes the briefing. They agree to meet in the morning. The party is left in the top-floor room at the Dewdrop Inn, with a view of Canopia glowing outside the low window. **Cut to black on the weevil saying something grave like:**
+
+> "Get some sleep. Tomorrow, we start something we can't stop."
+
+[SLOP CHECK: line invented. Replace.]
+
+**Endpoint B — End after the Royal Jelly Society or the side quest.**
+If the table has energy, play a few of the Canopia wander beats — the RJS branch is especially strong as a tonal closer (dissonance) — and end the morning before the handoff to the in-hive cell.
+
+**Endpoint C — Push into the handoff itself.**
+Only if the table is *really* rolling. Get them to the Joint Hive's outer gate, have them be waved through by a sympathetic worker, and **cut to black the moment they step inside**. Leaves next session opening on the in-hive cell.
+
+### What Happens Next Session (DM-only, do not foreshadow too heavily)
+
+Per transcript 2 — a working shape for **Session 6**, not to be finalized yet:
+
+1. Party is delivered to the in-hive rebel cell.
+2. They share the news from Vell's cell.
+3. Mid-conversation, **fire ants raid the rebel cell**. Combat encounter. [OPEN: scale of the encounter depends on how much the party pushes agency.]
+4. The **Leafcutter Queen herself** arrives — possibly because the rebel cell sent for her, possibly because she's been watching. She stabilizes the situation and tells the party to leave. ("We'll hold down the fort from here.")
+5. Before they go, she gives them their **first real lore drop about the cause** of the Bloom/calamity.
+
+**Queen dialogue seed (close to verbatim, transcript 2):**
+
+> "I was aware the moment it happened — a pact was broken. Something was corrupted. Our queen magic is a deep bond between us, between all of us. And I feel a sick silence coming from the center of all this. I find it hard to focus on anything but my fungus these days."
+
+She should move between **lucid and fixated** within a single conversation. Flashes of clarity, then she drifts back to the fungus. There is a madness here, an infection. [SLOP CHECK: interpretation from transcript 2 — confirm DM intent.]
+
+### A Note on Giving Player Agency (transcript 2, important)
+
+Both DMs explicitly flagged worry about this session being too railroaded. Mitigations already baked in:
+- Side quest (optional, player-chosen).
+- Canopia wander (RJS, casino, Mayflyer — player-chosen).
+- Weevil gives the *plan*, not the *details*; they can still improvise within it.
+- Transcript advice for future sessions: **set up decision points near the end of sessions**, then write the next session's opening around whatever the players chose. This session doesn't have a big one, but see Endpoint C — pushing to the Joint Hive gate is a natural place to bake in a "do we go in tonight or in the morning?" choice.
 
 ---
 
@@ -260,11 +423,12 @@ A compressed map of the decisions that matter this session and what each choice 
 
 | Decision | Outcome A | Outcome B | Outcome C |
 |---|---|---|---|
-| How to find the contact | Place the quilt signal cleanly → contact shows up in the tavern | Miss / skip the signal → have to cold-pitch a local for the lead (Persuasion DC 14 with the leafcutter bartender) | Blow cover placing it → lose the quilt drop as a future tool [MORE DETAIL: does this follow them?] |
-| Whether to engage the brawl | Ignore it → no cost | Defuse verbally → no cost, possibly a drunken friend | Participate → possible minor rep change at the tavern [OPEN: does the tavern remember them?] |
-| Take the side quest | Get a curio | Skip it → save ~30-60 min of session runtime, no reward | Botch it → no reward, maybe a complication [SLOP CHECK] |
-| How to treat Overgrowth civilians | Play along with the "everything's fine" framing → gather info, keep cover | Tell someone the truth about the Winter Farm → uncomfortable scene, civilian doesn't believe them, maybe reported [OPEN: is this a real risk or just a social beat?] | Leave without speaking to anyone → session runs shorter, lose color |
-| End of session | Leave the city toward the anthill | Stay overnight → long rest, but [MORE DETAIL: any downside? Fire ant patrol inside the city overnight?] | Do a second side quest → probably don't allow this; cuts into future pacing |
+| How to execute the dead drop | Order, sip, drop fungus, hand back — contact arrives cleanly | Botch the passphrase → bartender coaches them through; drop still happens | Attack the weevil / blow cover loudly → no lead tonight, plot loses time [OPEN: how they recover] |
+| Whether to engage the street-fight / brawl | Ignore it → no cost | Defuse verbally → no cost, possibly a drunken friend | Go lethal → drunk flies off non-linearly; no pursuit, no guard |
+| Take the side quest (bee's field) | Fight the orchid mantis → get a curio | Skip it → save ~30-60 min of session runtime, no reward | Try to negotiate with a mantis → probably dies anyway, but comic Drix beat possible |
+| How to treat the Royal Jelly Society branch | Play along, leave with a lesson in dissonance | Try to warn them → they don't listen, don't care | Skip it → lose a key thematic beat |
+| How to treat Canopia civilians broadly | Play along with the "everything's fine" framing → gather info, keep cover | Tell someone the truth about the Winter Farm → civilian doesn't believe them; no real blowback this session but [OPEN] may get reported later | Leave without speaking to anyone → session runs shorter, lose color |
+| End of session | Sleep in the Dewdrop Inn room after the weevil meeting (default) | Wander Canopia into the morning and end before the Joint Hive handoff | Push to the Joint Hive gate and cut to black on entry (Endpoint C) |
 
 ---
 
@@ -272,22 +436,48 @@ A compressed map of the decisions that matter this session and what each choice 
 
 Keep these straight. Once they're player-facing, they're canon.
 
-**From Transcript 1 — the city:**
+**The geography (new, from transcripts):**
 
-- Pollinator city, built in a tree, originally up high.
-- Overgrowth mat has grown up and met the tree. Lower apartments are cut *into the overgrowth itself* by leafcutters-for-hire.
-- Ground-dwelling bugs have migrated up because their lower cities have been overgrown.
-- Businesses hire leafcutters to keep storefronts clear. Otherwise the growth reclaims them in days.
-- Pollinators are drunk and territorial year-round due to constant nectar access + the magic gradient amplifying their nature.
-- No Royal Jelly Society outpost here. [SLOP CHECK: transcripts said "feel like it's no, no longer" — suggesting it could be an abandoned one, but the DMs moved on. Recommend: no RJS presence currently, but an abandoned office that's been overgrown would be a strong later beat if they want it.]
+- The **Overgrowth mat** is a thick layer of living vegetation that has grown up from the forest floor. In most places, it *is* the new ground level. Apartments, roads, tunnels are cut *into* the mat by leafcutters-for-hire.
+- Ground-dwelling bugs (detritivores especially) have been displaced upward because their lower cities were overgrown *and* because the lack of decay has removed their food supply.
+- Above the mat: clear sky in most places, but the tree canopies above are still dense enough that the Overgrowth's "ground level" light is filtered and green.
+- The mat has consumed a third of all the trees in the Glade from the ground up.
 
-**From Transcript 2 — the Overgrowth itself:**
+**Canopia (new, locked in):**
 
-- Life in the Overgrowth is broadly *good* for most residents. Not a dystopia. Nectar-eaters and pollen-feeders are thriving.
-- Leafcutters are seen as essential civic infrastructure — they keep paths clear through growth so dense that unclearedness would be functionally impassable.
-- The fire ant / leafcutter alliance exerts soft power *via* the leafcutters: control the road-clearers, you control commerce and movement.
-- The leafcutter queen knows something is deeply wrong and is adapting in ways that disturb her. The general population does not know. The rebel movement cannot easily recruit because most bugs don't see a problem.
-- This is the central narrative tension of the Overgrowth zone: the oppression is invisible because the oppressed minority is outside the city, and the city is thriving.
+- Pollinator city, originally built high in a single huge tree. Collaboration of bee and wasp architecture — geometric honeycomb plus paper-wasp protuberances. Multicolored lights at night.
+- Overgrowth has risen to meet Canopia's lower levels. Only a loop and a half of the spiraling trunk-ramp is still exposed.
+- The city is thriving. Endless nectar. Clean streets. Happy pollinators. A Royal Jelly Society branch that is the city's emotional state made architectural.
+- Bugs are drunk and territorial year-round.
+
+**The Weevilville (new, locked in):**
+
+- Shanty town at the base of Canopia's tree, where the displaced ground bugs live.
+- Named for the **weevils** running humanitarian aid coordination.
+- The alliance sends fungus carts here for distribution. Red ants supervise. Leafcutters unload. Weevils run the line.
+
+**The alliance's soft power (new, locked in):**
+
+- Leafcutters are seen as essential civic infrastructure.
+- Fire ants clear predators from the roads through the growth.
+- Control of road-clearing + predator control = control of commerce and movement.
+- **Most residents actually like the alliance.** This is the central tension of the Overgrowth arc.
+
+**The leafcutter queen (seeded, payoff next session):**
+
+- Knows something is deeply wrong.
+- Is adapting in ways that disturb her.
+- Moves between lucid and fixated — madness/corruption symptom.
+- Not an enemy. A queen who made a bad deal.
+
+**Detritivores (new):**
+
+- Pillbugs, termites, maggots, millipedes, earthworms, various beetles, **cockroaches** (defensive worldbuilding: yes, cockroaches in the Glade are detritivores, no hostess cakes exist here).
+- Large die-off when decay stopped. Survivors live in the Weevilville on fungus rations.
+
+**Pheromone fungus as navigation tool (new):**
+
+- Overgrowth bugs use a piece of reactive fungus at crossroads — sweep it, it glows toward the nearest major settlement. Not a rebel tool; just how navigation works now.
 
 ---
 
@@ -295,29 +485,49 @@ Keep these straight. Once they're player-facing, they're canon.
 
 Pulled from `memory/Open_Questions.md` and from this draft. Resolve or defer before running.
 
-- **City name.** Not established.
-- **Antshley's handoff.** Does she wait outside, come back into the queen audience, or exit the story here?
-- **The contact's species and name.** Leaning flying bug (moth / bee) to avoid the "leafcutter with outsiders" problem Antshley flagged.
-- **The specific lead to the anthill.** Route + rendezvous + cover story need to exist before the contact can hand them over.
-- **Pheromone lock at the combined nest.** The Session 4 draft explicitly reserved the pheromone-lock puzzle for "the combined ant nest deeper in the Overgrowth." That's probably where this is going. Decide whether the contact foreshadows it.
-- **Rune of Fungal Protection — mechanical effect.** Still unspecified. Not triggered this session, but the cordyceps payoff is in the queue.
-- **Red queen's moodiness — flavor or mechanic?** Carried over from Session 4 open questions.
-- **Other species' amplified powers.** Vell foreshadowed this. The drunk/territorial pollinators are a gentle first taste. [OPEN: do we want a more overt "holy shit this butterfly just did *what*" beat in the city, or save it for later?]
-- **Overgrowth wildlife encounter.** Transcripts and Session 4 DM notes both want a wild-magic predator beat in the Overgrowth. Side quest Option B is one home for it, but a road encounter on the way out of the city would also work.
-- **The Caterpillar.** Flagged as an Overgrowth boss in the Session 4 DM notes. Not for this session, but mark it as on the horizon.
-- **Bestie's fate.** Still tied up above the Winter Farm. Not resolved this session unless the DMs want to cut away for a beat.
-- **Greg.** Still loose in the Winter Farm. Not resolved this session.
-- **Lars.** Still dangling. Not resolved this session.
+**Resolved by the transcripts:**
+
+- ~~City name~~ → **Canopia**.
+- ~~Contact species~~ → **Weevil** (name TBD, starts with **G**).
+- ~~Signal mechanic~~ → **Ginger honeycap, "it's a hot batch," drop fungus, hand back.** No more quilt wall.
+- ~~Side quest shape~~ → **Option B** (bee, field, mantis/spider encounter).
+- ~~Curio list~~ → **Immovable Pebble, Perpetual Pudding, Tune-Shifted String** (+ optional joke Travel Potty).
+- ~~Weevilville~~ → Locked in. Named. Populated with detritivores. Weevils run aid.
+- ~~Antshley handoff location~~ → **Outskirts of the Weevilville.** Handoff method: she gives them the pheromone fungus and the bar passphrase.
+
+**Still open:**
+
+- **Antshley's re-entry.** Does she come back later in the arc, or exit fully? Heather-attached.
+- **Weevil's name.** Starts with G.
+- **Bartender's name.**
+- **Singing bee's name.**
+- **Name of the field / hive the bee is from.** Affects whether she's tied to the RJS branch or not.
+- **The mechanism for entering the Joint Hive next session.** Cart, pheromone lock, shift change, bribe — weevil needs to hand this to the party with specifics.
+- **Pheromone lock at the combined nest.** Session 4's reserved puzzle. Does the weevil foreshadow it, or does it just land next session?
+- **Rune of Fungal Protection — mechanical effect.** Still unspecified. Cordyceps payoff still in the queue.
+- **Red queen's moodiness — flavor or mechanic?** Seeded for Session 6 via the Leafcutter Queen dialogue; pays off lucid-vs-fixated flavor either way.
+- **Other species' amplified powers.** Drunk pollinators are the gentle first taste. [OPEN: any overt "holy shit this butterfly just did *what*" beat in Canopia, or hold for later?]
+- **The Caterpillar.** Flagged as an Overgrowth boss in Session 4 notes. Not this session. On the horizon.
+- **Bestie's fate.** Still tied up above the Winter Farm.
+- **Greg.** Still loose in the Winter Farm.
+- **Lars.** Still dangling.
+- **Whether the fire-ant raid on the in-hive cell happens.** Floated in transcript 2 for Session 6.
+- **Is the Traveler's Pot a real curio option or a throwaway joke?**
 
 ---
 
 ## 10. Pacing Notes For Both DMs
 
-- The session is structurally two big beats (city + depart) with one optional middle beat (side quest). If the players linger in the tavern — and they probably will, because it's funny — cut the side quest. Don't cut the dead drop.
-- The dead drop is the load-bearing mechanical scene. Everything else is color and reward. Make sure it happens.
-- Levity is the tonal goal. The last three sessions have been heavy. Give them the bar fight. Give them the bad singer. Let Drix have a moment. Let Tabby be confused by butterflies.
-- The reveal that **the alliance is popular here** is the most important worldbuilding beat of the session. Make sure at least one civilian casually says something nice about the fire ants out loud, in front of the party, without irony. The dissonance lands harder coming from a random drunk than from the contact.
-- Antshley should feel like a real person before she hands off, even briefly. Heather is attached.
+- **Expect an hour of levelups at the top.** Players level 3→6 last session. Transcript 2 flagged this explicitly — plan around a shorter in-game runtime.
+- **Load-bearing scene:** the weevil meeting. Everything else is color, optional, or setup for Session 6. Do not cut the weevil meeting.
+- **Structure:** tunnel → Weevilville → Canopia → Dewdrop Inn dead drop → back-room weevil meeting → (optional) side quest + Canopia wander → rest. A short session ending at the weevil meeting is fine.
+- **Levity is the tonal goal.** The last three sessions have been heavy. Give them the bar fight. Give them the singing bee. Let Drix have a moment. Let Tabby be confused by butterflies. Let Nancy be unimpressed.
+- **The reveal that the alliance is popular here** is the most important worldbuilding beat of the session. Make sure at least one civilian casually says something nice about the fire ants out loud, in front of the party, without irony. The dissonance lands harder coming from a random drunk than from the weevil.
+- **The Royal Jelly Society branch is the second-most-important tonal beat.** Cheerful complicity. Their indifference should feel *worse* than the fire ants.
+- **Voice assignments:** one DM plays the weevil, the other plays the bartender. Divide before the session.
+- **Antshley should feel like a real person before she hands off**, even briefly. Heather is attached. Give her a beat at the edge of the Weevilville.
+- **Show, don't dump.** The weevil is an information node, but he's also an anxious kind soul. Let the roleplay breathe. Queen-lore goes to Session 6, not this one.
+- **When in doubt, cut toward comedy.** Weevils are inherently funny. Let them be funny.
 
 ---
 
