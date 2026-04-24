@@ -29,6 +29,5 @@ Be surgical. Preserve everything the transcript doesn't touch. This is an edit, 
    - Add `[OPEN: ...]` for decisions the transcript raises but doesn't conclude.
 5. Leave everything the transcript doesn't touch exactly as it was.
 6. Write the updated draft to `sessions/sXX_draft.md`, overwriting the previous version.
-7. Tell the user the file is ready and print the full updated markdown in chat for easy copy.
 
 The output should follow the same structure as the existing draft. A short, accurate edit is the goal; silently rewriting untouched sections is the failure mode.
