@@ -4,6 +4,7 @@
 # Corrections noted inline where sheet values differed.
 # 2026-04-15 — Initiative corrected: JoAT does not apply, reverted to DEX (+3)
 # 2026-04-15 — Instrument confirmed as walnut shell lute (DM notes, session 1); stockroom items added
+# 2026-04-28 — Level 3 → 6 update from updated handwritten sheet: prof bonus +3; CHA 18→20 (Bard 4 ASI); HP 21→39; Bardic Insp d6→d8, 4→5 uses; spell slots 4/2 → 4/3/3; added Dancing Lights, Unseen Servant, Hypnotic Pattern, Phantom Steed, Counterspell + Leomund's Tiny Hut (Magical Secrets); Investigation now proficient; new features Font of Inspiration (Bard 5), Magical Secrets (College of Lore 6), ASI (Bard 4).
 
 character:
   name: Jiminy Hendrix
@@ -13,19 +14,19 @@ character:
   class: Bard
   subclass: College of Lore
   background: Entertainer
-  level: 6   # Session 4: crossed into the Overgrowth, +3 levels. Combat stats below still reflect level 3 until player re-derives.
+  level: 6
   xp: null
 
 core:
-  proficiency_bonus: +2
+  proficiency_bonus: +3
   inspiration: false
   ac: 15            # studded leather (12) + DEX (+3)
   initiative: +3    # DEX (+3). Sheet was correct — prior JoAT correction reversed.
   speed: 30
-  hp_max: 21
-  hp_current: 21
+  hp_max: 39        # 21 + 18 (avg d8+CON ×3 levels) for level 4-6
+  hp_current: 39
   hit_dice: d8
-  hit_dice_remaining: 3d8
+  hit_dice_remaining: 6d8
 
 ability_scores:
   strength:     { score: 6,  modifier: -2 }  # corrected: sheet had modifier -3, DM confirms score 6 (mod -2)
@@ -33,74 +34,83 @@ ability_scores:
   constitution: { score: 13, modifier: +1 }
   intelligence: { score: 10, modifier: +0 }
   wisdom:       { score: 10, modifier: +0 }
-  charisma:     { score: 18, modifier: +4 }
+  charisma:     { score: 20, modifier: +5 }   # Bard 4 ASI: +2 CHA
 
 saving_throws:
-  strength:     { bonus: -2, proficient: false }   # corrected from -3 (STR mod now -2)
-  dexterity:    { bonus: +5, proficient: true }
+  strength:     { bonus: -2, proficient: false }
+  dexterity:    { bonus: +6, proficient: true }    # DEX +3 + prof +3
   constitution: { bonus: +1, proficient: false }
   intelligence: { bonus: +0, proficient: false }
   wisdom:       { bonus: +0, proficient: false }
-  charisma:     { bonus: +6, proficient: true }
+  charisma:     { bonus: +8, proficient: true }    # CHA +5 + prof +3
 
 skills:
-  # Non-proficient bonuses include +1 from Jack of All Trades.
-  acrobatics:      { bonus: +5, proficient: true,  ability: dexterity }
-  animal_handling: { bonus: +1, proficient: false, ability: wisdom }
-  arcana:          { bonus: +1, proficient: false, ability: intelligence }
-  athletics:       { bonus: -1, proficient: false, ability: strength }  # corrected from -2 (STR mod now -2, +1 JoAT = -1)
-  deception:       { bonus: +6, proficient: true,  ability: charisma }
-  history:         { bonus: +1, proficient: false, ability: intelligence }
-  insight:         { bonus: +1, proficient: false, ability: wisdom }
-  intimidation:    { bonus: +6, proficient: true,  ability: charisma }
-  investigation:   { bonus: +1, proficient: false, ability: intelligence }
-  medicine:        { bonus: +1, proficient: false, ability: wisdom }
-  nature:          { bonus: +1, proficient: false, ability: intelligence }
-  perception:      { bonus: +2, proficient: true,  ability: wisdom }
-  performance:     { bonus: +8, proficient: true,  ability: charisma }  # Expertise. Corrected from +10 on sheet.
-  persuasion:      { bonus: +8, proficient: true,  ability: charisma }  # Expertise.
-  religion:        { bonus: +1, proficient: false, ability: intelligence }
-  sleight_of_hand: { bonus: +5, proficient: true,  ability: dexterity }
-  stealth:         { bonus: +4, proficient: false, ability: dexterity }
-  survival:        { bonus: +1, proficient: false, ability: wisdom }
+  # Non-proficient bonuses include +1 from Jack of All Trades (half of +3 prof = +1).
+  acrobatics:      { bonus: +6,  proficient: true,  ability: dexterity }
+  animal_handling: { bonus: +1,  proficient: false, ability: wisdom }
+  arcana:          { bonus: +1,  proficient: false, ability: intelligence }
+  athletics:       { bonus: -1,  proficient: false, ability: strength }
+  deception:       { bonus: +11, proficient: true,  ability: charisma }       # Expertise: CHA +5 + prof +3 ×2
+  history:         { bonus: +1,  proficient: false, ability: intelligence }
+  insight:         { bonus: +1,  proficient: false, ability: wisdom }
+  intimidation:    { bonus: +8,  proficient: true,  ability: charisma }       # CHA +5 + prof +3
+  investigation:   { bonus: +3,  proficient: true,  ability: intelligence }   # Now proficient (College of Lore bonus prof, confirmed by DM 2026-04-28)
+  medicine:        { bonus: +1,  proficient: false, ability: wisdom }
+  nature:          { bonus: +1,  proficient: false, ability: intelligence }
+  perception:      { bonus: +3,  proficient: true,  ability: wisdom }
+  performance:     { bonus: +11, proficient: true,  ability: charisma }       # Expertise
+  persuasion:      { bonus: +11, proficient: true,  ability: charisma }       # Expertise
+  religion:        { bonus: +1,  proficient: false, ability: intelligence }
+  sleight_of_hand: { bonus: +6,  proficient: true,  ability: dexterity }
+  stealth:         { bonus: +4,  proficient: false, ability: dexterity }      # DEX +3 + JoAT +1
+  survival:        { bonus: +1,  proficient: false, ability: wisdom }
 
-passive_perception: 12
+passive_perception: 13
 
 attacks:
   - name: Rapier
-    attack_bonus: +5    # DEX (+3) + prof (+2)
+    attack_bonus: +6    # DEX (+3) + prof (+3)
     damage: 1d8+3       # corrected: sheet listed "1d8" without DEX mod
     damage_type: piercing
 
   - name: Shortsword
-    attack_bonus: +5    # DEX (+3) + prof (+2)
+    attack_bonus: +6    # DEX (+3) + prof (+3)
     damage: 1d6+3
     damage_type: piercing
 
 spellcasting:
   ability: charisma
-  spell_attack: +6     # CHA (+4) + prof (+2)
-  spell_save_dc: 14    # 8 + CHA (+4) + prof (+2)
+  spell_attack: +8     # CHA (+5) + prof (+3)
+  spell_save_dc: 16    # 8 + CHA (+5) + prof (+3)
   bardic_inspiration:
-    die: d6
-    uses: 4             # = CHA modifier
+    die: d8             # Bard 5: Font of Inspiration die upgrade
+    uses: 5             # = CHA modifier
+    recovers_on: short_rest   # Bard 5: Font of Inspiration
 
 spell_slots:
   1st: { max: 4, current: 4 }
-  2nd: { max: 2, current: 2 }
+  2nd: { max: 3, current: 3 }
+  3rd: { max: 3, current: 3 }
 
 spells_known:
   cantrips:
     - Vicious Mockery
     - Prestidigitation
+    - Dancing Lights
   1st_level:
     - Healing Word
     - Disguise Self
     - Silvery Barbs
     - Dissonant Whispers
+    - Unseen Servant
   2nd_level:
     - Hold Person
     - Locate Animals or Plants
+  3rd_level:
+    - Hypnotic Pattern
+    - Phantom Steed
+    - Counterspell           # Magical Secret (College of Lore 6) — Wizard/Sorcerer list
+    - Leomund's Tiny Hut     # Magical Secret (College of Lore 6) — Wizard list
 
 proficiencies:
   armor: [light armor]
@@ -126,8 +136,8 @@ features_and_traits:
   - name: Bardic Inspiration
     source: Bard 1
     description: >
-      D6 x 4 uses. Bonus action to grant one creature within 60 feet
-      an inspiration die.
+      D8 x 5 uses (die upgraded at Bard 5). Bonus action to grant
+      one creature within 60 feet an inspiration die.
 
   - name: Jack of All Trades
     source: Bard 2
@@ -149,12 +159,31 @@ features_and_traits:
     source: College of Lore 3
     description: >
       Three additional skill proficiencies from College of Lore.
+      Investigation confirmed as one of these (DM 2026-04-28); other
+      two not yet enumerated — ask player.
 
   - name: Cutting Words
     source: College of Lore 3
     description: >
       Use Bardic Inspiration die to subtract from an enemy's attack
       roll, ability check, or damage roll.
+
+  - name: Ability Score Improvement
+    source: Bard 4
+    description: >
+      +2 Charisma (18 → 20).
+
+  - name: Font of Inspiration
+    source: Bard 5
+    description: >
+      Bardic Inspiration die becomes d8 and recovers on a short or
+      long rest (no longer just long rest).
+
+  - name: Magical Secrets
+    source: College of Lore 6
+    description: >
+      Two spells learned from any class, counted as bard spells.
+      Selected: Counterspell (3rd) and Leomund's Tiny Hut (3rd).
 
   - name: Song Distraction
     source: Homebrew
@@ -169,6 +198,6 @@ notes:
   - "Tool proficiencies (3 musical instruments for Bard) not specified — ask player."
   - "Session 3: Plans to use Disguise Self as a fire ant for Winter Farm infiltration."
   - "Session 3 player attitude: 'Hell yeah, I'm in the story, I will have shit to sing about.'"
-  - "Session 4 level-up to 6: crossed the unseen barrier into the Overgrowth with the party. [DM CHECK] All derived stats below (HP, hit dice, spell slots, skills, proficiency bonus, features) still reflect level 3 — needs player update before Session 5."
+  - "Session 4 level-up to 6: crossed the unseen barrier into the Overgrowth with the party. Re-derived from updated handwritten sheet 2026-04-28. Two of three College of Lore bonus skill proficiencies (level 3) still unspecified — Investigation confirmed, other two TBD."
   - "Session 4 roleplay beats: executed the Disguise Self as a red ant for the entire infiltration; improvised the 'Greg has a fungus in his brain' cover story that saved the party from a guard response; played a melodic lullaby to the fungal curtain (it relaxed; Drix cried); cast Healing Word on the wounded fungal curtain (it stopped keening)."
   - "Session 4 rune placement: Rune of Fungal Protection carved on the lower back (tramp stamp). Mechanical effect TBD."
