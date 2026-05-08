@@ -354,20 +354,21 @@ npcs:
 
   - name: Antshley
     species: Leafcutter ant
-    role: Rebel escort — guiding the party to the leafcutter queen
+    role: Rebel escort — handed the party off at the Overgrowth tunnel mouth
     affiliation: Winter Farm — rebel cell (Sporemother Vell's cell)
     status: Alive
-    location: Overgrowth tunnel / en route to the leafcutter queen with the party
+    location: Returned via the rebel tunnel toward the Winter Farm
     disposition: Allied (player affection — Heather flagged with a heart)
     first_met: Session 4
-    last_seen: Session 4
+    last_seen: Session 5
 
     party_history:
       - "Session 4: Volunteered at the rebel cell meeting to escort the party to the leafcutter queen. Led them back through the Winter Farm tunnels, under the unseen barrier, and into the Overgrowth. Traveling with the party as of end of session."
+      - "Session 5: Walked the party through the gradient tunnel where dirt walls become living vegetation. Stopped before the daylight mouth — too risky for her to be topside, can't expose her cell. Handed Tabby the navi-gus (a smooth translucent ball of fungus keyed to Canopia, responsive to leafcutter pheromone trails). Briefed them on the dead drop method at the Dewdrop Inn. Said her goodbyes ('You've given us hope — hope that we don't struggle just to be met with starvation') and turned back."
 
     hooks:
       - Heather has attached to this character — treat as developed recurring NPC, not disposable
-      - Her presence at the queen audience — does she speak for Vell? Has she been to the queen before?
+      - Re-entry vector — does she rejoin the party at the queen audience, or stay in her cell?
 
 
   - name: The Old Assistant
@@ -396,6 +397,87 @@ npcs:
     hooks:
       - Name not yet established at the table. [DM CHECK]
       - The rune's mechanical effect is deferred. Specify before the cordyceps payoff arrives.
+
+
+  - name: Twyla
+    species: Weevil
+    role: Weevilville aid coordinator — runs fungus distribution
+    affiliation: Weevil aid network (the team the Weevilville is named after)
+    status: Alive
+    location: Weevilville (base of Canopia's tree)
+    disposition: Allied (warm, civic, knows-everyone-by-name)
+    first_met: Session 5
+    last_seen: Session 5
+
+    appearance: Diminutive weevil in a clean apron, bark-board tally clipboard in tiny claws.
+    voice: Warm, busy, professional. Calls families up by name. Has a kind word for each pack of fungus handed out.
+    motivation: Feeds her people. Believes in the aid effort. Doesn't appear to know — or doesn't say — that the fungus comes from the Winter Farm corpse operation; assumes "they have a farm on the outside" and that it's made from leaves.
+    personality: Kind. Earnest. Knows every detritivore family by name. Personally fond of gambling at the Queen's Crown.
+
+    info_shared_with_party:
+      - "The fungus comes from a farm on the outside; she assumes it's made from leaves."
+      - "Fire ants protect the leafcutters from predation, which has gotten worse."
+      - "Leafcutters are the backbone of the new normal — feeding detritivores, keeping the roads open."
+      - "Nectar-eaters and fresh-veggie-eaters are doing great. Things that eat them are doing great too."
+      - "Many displaced detritivores have found work in Canopia keeping the city running."
+      - "Directions to the Dewdrop Inn; passing mention of the Mayflyer."
+
+    party_history:
+      - "Session 5: Let Nancy and Tabby help hand out fungus rations at the cart in the Weevilville square. Friendly. Gave directions to the Dewdrop Inn."
+
+    hooks:
+      - Gambling habit puts her at the Queen's Crown — natural re-entry vector if the party returns to attempt a heist.
+      - Does she actually know where the fungus comes from? Tonal: play her as suspecting but not confirming.
+
+
+  - name: Gleam
+    species: Weevil
+    role: Rebel cell contact in Canopia — handoff toward the Leafcutter Queen
+    affiliation: Rebel network (separate cell, linked to Sporemother Vell's)
+    status: Alive
+    location: Upstairs room, Dewdrop Inn, Canopia
+    disposition: Allied (party verdict at the table — "THE CUTEST")
+    first_met: Session 5
+    last_seen: Session 5
+
+    appearance: Beady eyes. Long, expressive snout. Extremely earnest. Long brown robe and a hood up when sneaking, which he is bad at.
+    voice: Earnest, kind, warm. No talent for subterfuge — opens with "I'm glad you could make it" while still beaming.
+    motivation: Personally invested in the rebellion. Humanitarian. Believes the alliance's cheerful soft power is the danger.
+    personality: Awkward. Kind. Sincere. Verifies the runes Vell carved onto the party before fully relaxing.
+
+    info_shared_with_party:
+      - "Vell's cell sent word ahead. The rebel network is bigger than Vell's single cell."
+      - "The Leafcutter Queen knows something is wrong. She made a bad deal and is constrained — not an enemy."
+      - "He can get the party into the hive (the joint ant nest) through his contacts. Another rebel cell operates inside; they will move the party to the queen for an audience."
+
+    party_history:
+      - "Session 5: Made contact in the upstairs room of the Dewdrop Inn after the party ran the dead drop cleanly. Session ended partway through the conversation — concrete handoff plan still owed."
+
+    hooks:
+      - "[CARRY-FORWARD] Specific mechanism for entering the hive — cart, bribe, shift change, pheromone-lock — must be written before Session 6 opens."
+      - The in-hive cell has reportedly been preparing for "something bigger." Gleam has not foreshadowed this directly to the party yet.
+
+
+  - name: Dewdrop Inn Bartender
+    species: Unspecified (bug equivalent of a mustache)
+    role: Bartender — runs the rebel dead drop at the Dewdrop Inn
+    affiliation: Rebel network (Canopia cell, with Gleam)
+    status: Alive
+    location: Dewdrop Inn, Canopia
+    disposition: Allied (operational; pretends not to be)
+    first_met: Session 5
+    last_seen: Session 5
+
+    appearance: Bug equivalent of a mustache. Professional bearing.
+    voice: Unflappable. Practiced apology. Slips operational instructions into a remake-the-drink monologue without breaking stride.
+    personality: Pro. Aware of every angle of the dead drop he is running and entirely practiced at not appearing to be running it.
+
+    party_history:
+      - "Session 5: Ran the ginger honeycap / 'it's a hot batch' / back-booth handoff cleanly. Did not need to deploy any of the failure-recovery branches."
+
+    hooks:
+      - "[OPEN] Name. Not established at the table."
+      - Probably a recurring point of contact in Canopia for as long as the party uses the Dewdrop Inn as a node.
 
 
   # ── NOT YET MET ─────────────────────────────────────────────────────────────

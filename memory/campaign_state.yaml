@@ -4,19 +4,19 @@
 
 # ── SESSION TRACKING ────────────────────────────────────────────────────────
 
-current_session: 5
+current_session: 6
 active_draft: null
 draft_status: none
 
-last_played_session: 4
-last_played_summary: "The Winter Farm — infiltrated via Drix's red ant disguise and Nancy/Tabby playing dead; Greg bolted but was discredited by Drix's improvised cover story; solved the fungal curtain puzzle; met Sporemother Vell and her rebel cell; received the mandate to carry news of the Bloom's source to the leafcutter queen; got Runes of Fungal Protection; escorted by Antshley through a tunnel under the barrier into the Overgrowth; gained 3 levels. See sessions/session_log.md."
+last_played_session: 5
+last_played_summary: "The City in the Overgrowth — Antshley walked the party through the gradient tunnel, handed Tabby the navi-gus, and parted at the daylight mouth. They followed the pheromone road past leafcutter crews and shimmering fire-ant escorts to the Weevilville, helped Twyla hand out fungus rations, and climbed the ramp into Canopia. They detoured into the Queen's Crown, announced a heist, flubbed a rumor about ants growing fungus on dead bodies to a table of disinterested wasps, and got walked out (Nancy lifted 2 sap and 1 cig on the way). They walked past the Royal Jelly Society's Canopia branch without entering, and ran the dead drop at the Dewdrop Inn cleanly — ginger honeycap, 'it's a hot batch,' a back booth, a clumsy hooded figure with a key. Upstairs, they met Gleam, an earnest weevil rebel contact (table verdict: 'THE CUTEST'). Session ended mid-conversation, before Gleam gave them a concrete plan to reach the Leafcutter Queen. See sessions/session_log.md."
 
 
 # ── PARTY STATUS ─────────────────────────────────────────────────────────────
 
 party:
   level: 6
-  location: Overgrowth (spring zone), just past the rebel tunnel beneath the barrier; escorted by Antshley toward the leafcutter queen
+  location: Upstairs room of the Dewdrop Inn, Canopia — mid-conversation with Gleam, the rebel weevil contact
   pack_animal: null  # Bestie was tied up and left above the Winter Farm with a snack and a blanket
   details: party/  # individual YAML per PC — see party/*.yaml
 
@@ -28,17 +28,29 @@ party:
 
 active_threads:
 
+  - thread: Gleam's handoff — concrete route to the Leafcutter Queen
+    priority: high
+    notes: Session ended mid-conversation; Gleam offered to get the party into the hive through his contacts but the specific mechanism (cart, bribe, shift change, pheromone-lock) was not given. Must be written before Session 6 opens. The in-hive cell has reportedly been preparing for "something bigger."
+
   - thread: Vell's mandate — reach the leafcutter queen
     priority: high
-    notes: Sporemother Vell tasked the party with bringing news of the Bloom's source to the leafcutter queen. Not to free her — to tell her she has an alternative, so she can choose to break from the fire ant alliance on her own terms. Antshley is escorting.
+    notes: Sporemother Vell tasked the party with bringing news of the Bloom's source to the leafcutter queen. Not to free her — to tell her she has an alternative, so she can choose to break from the fire ant alliance on her own terms. Gleam is the next link in the chain.
 
   - thread: Antshley as escort and potential ally
-    priority: high
-    notes: Leafcutter rebel traveling with the party. Heather has attached. She is the player-facing face of the rebellion in the Overgrowth. Give her a real role at the queen audience.
+    priority: medium
+    notes: Handed off cleanly at the Overgrowth tunnel mouth in Session 5, returned via the rebel tunnel. Heather has attached. Available to re-enter at the queen audience or as a return contact in the Winter Farm cell.
 
   - thread: The Bloom's source — Overgrowth leg of the journey
     priority: high
-    notes: Party is now through the barrier and physically in the magic-amplified zone. The Ahganmin glows more strongly here. The source is still the ultimate destination.
+    notes: Party is in the magic-amplified zone. The Ahganmin glows brighter here (now visibly worn in Nancy's turban as the gem). The source is still the ultimate destination.
+
+  - thread: Queen's Crown heist (player-initiated)
+    priority: medium
+    notes: The party announced a heist, fumbled a rumor-spreading attempt, and explicitly liked the bit. Door is open for a real heist on a return to Canopia.
+
+  - thread: Mantises in the Overgrowth (foreshadowed)
+    priority: medium
+    notes: Dropped as a hint this session; the party registered them as big scary enemies. Beeatrix's bee-field encounter is the planted payoff.
 
   - thread: Greg at large inside the Winter Farm
     priority: medium
@@ -48,13 +60,21 @@ active_threads:
     priority: medium
     notes: Carved into all three PCs. Mechanical effect TBD. Intended payoff is a cordyceps moment later in the campaign — decide the mechanic before the payoff.
 
+  - thread: Beeatrix and the bee-field side quest (unspent)
+    priority: low
+    notes: Singing bee was not engaged at the Dewdrop this session. Field encounter (orchid mantis + crab spiders) and the curio reward (Immovable Pebble / Perpetual Pudding / Tune-Shifted String) remain available.
+
+  - thread: Royal Jelly Society — Canopia branch (unvisited)
+    priority: low
+    notes: The dissonance/cheerful-complicity scene was prepped and skipped. Available on a return.
+
   - thread: Bestie — tied up above the Winter Farm
     priority: low
     notes: Left with a snack and a blanket near the ridge. Alive. Does she wander, get found, or quietly drop out of the narrative?
 
   - thread: Ahganmin properties
     priority: low
-    notes: Confirmed sensitivity to ambient magic level (Session 4). Other properties still TBD.
+    notes: Confirmed sensitivity to ambient magic level (Sessions 4 and 5). Other properties still TBD. Now visibly worn in Nancy's turban as the gem.
 
   - thread: Lars — left behind in burnt village
     priority: low

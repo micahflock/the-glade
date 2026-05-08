@@ -53,6 +53,18 @@
 - [x] **Fungal farm interior:** If the party enters, there should be a meaningful reward inside. Maybe something that gives them a level (ichor?). The farm could function as a prison — surviving villagers may still be alive. Rescue objective if needed. Design not started. — Decision: Resolved in Session 4. The reward was the rebel alliance (Sporemother Vell), a mandate to carry information to the leafcutter queen, a Rune of Fungal Protection, a leafcutter escort (Antshley), safe passage into the Overgrowth, and a +3 level jump on crossing the barrier. No surviving villagers found; the corpse farm was production-only. Evidence: sessions/final/s04_final.md.
 - [x] **Antennington retcon logic:** The first village was burned (fire ants). Antennington was only ransacked (leafcutters only, first raid, before the alliance). This wasn't deliberate — it's how it played out at the table. Proposed retcon: the alliance formed after Antennington was raided. Maybe too many bugs escaped Antennington? Confirm this is the logic to lock in. Antennington was hit approximately 1 week and 3 days before the party arrived (Session 2). — Decision: Confirmed. Leafcutters raided Antennington alone, before the fire ant alliance formed. The alliance came after. Evidence: Session 3 — the Rebel's dialogue explicitly confirms this sequence.
 
+## Opened in Session 5
+
+- [ ] **Gleam's concrete plan to the Leafcutter Queen.** Gleam offered to get the party into the hive through his contacts — but the table ran out of prepped material before the specifics were given. Mechanism (cart, bribe, shift change, pheromone-lock, etc.) must be specified before Session 6 opens.
+- [ ] **Queen's Crown heist (player-initiated).** The party announced a heist intent, fumbled the rumor-spreading attempt, got walked out, and explicitly said they liked the bit and wanted to come back. Decide whether/when a real heist sequence runs.
+- [ ] **Mantises in the Overgrowth.** Foreshadowed as predators of the Overgrowth; the party registered them as scary. Beeatrix's field encounter is the planted payoff and remains unspent.
+- [ ] **Beeatrix and the bee-field side quest.** Skipped this session — the party did not engage the singing bee at the Dewdrop. Available on a return visit to Canopia.
+- [ ] **Royal Jelly Society — Canopia branch.** Walked past, not entered. The dissonance/cheerful-complicity scene is unspent. Decide whether to surface it on a return or to retire it.
+- [ ] **The Dewdrop Inn bartender's name.** Established as a recurring rebel asset; not named at the table.
+- [ ] **What is Nancy clutching at under his clothes during the level-up?** DM-flagged in the play notes; significance unclear. [DM CHECK with player]
+- [ ] **"Ashonte says Drix"** — DM note from session 5 with no clear context. [DM CHECK]
+- [ ] **Twyla's recurrence.** Her gambling habit puts her at the Queen's Crown. If the party comes back to that scene, she's a natural re-entry contact.
+
 ## Opened in Session 4
 
 - [ ] **Greg at large:** The discredited loyalist is alive and hiding inside the Winter Farm. Does he resurface — as a pathetic antagonist, an informant for the fire ants, or a desperate defector trying to clear his name? Nobody believed his story, which is its own kind of problem for him.
@@ -64,7 +76,7 @@
 - [ ] **Other species' amplified powers:** Vell alluded to "other powers given to other species" beyond fire ants spitting fire. This is foreshadowing territory — what else has the magic gradient touched? (Fits the "all magic users" decision in World & Lore.)
 - [ ] **The corpse-fungus sample:** Nancy kept a piece of Winter Farm fungus. If he studies it later (Garett? Nature check? Detect Magic?) what does he learn?
 - [ ] **The red queen's moodiness:** Vell described the fire ant queen as "subject to moodiness." Is this a combat/negotiation mechanic — a d6 table of queen-moods — or just flavor? If mechanical, design before the queen is on-screen.
-- [ ] **Overgrowth arrival — first impression:** The party is now past the barrier with Antshley. Session 5 needs a strong opening for the Overgrowth — humidity, warm-hued fungus, idyllic-seeming but corrupted life. Lean on the contrast with the winter zone.
+- [x] **Overgrowth arrival — first impression:** The party is now past the barrier with Antshley. Session 5 needs a strong opening for the Overgrowth — humidity, warm-hued fungus, idyllic-seeming but corrupted life. Lean on the contrast with the winter zone. — Decision: Resolved in Session 5 via the gradient tunnel transition (dirt walls becoming wet living vegetation, emerald glow, sharp fresh air, god-rays through latticed ceiling) into the Overgrowth surface road. Evidence: sessions/final/s05_final.md.
 
 ## Misc / Not Categorized
 

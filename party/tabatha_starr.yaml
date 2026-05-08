@@ -130,6 +130,7 @@ equipment:
   - Mess pot                        # session 1: RJS stockroom — preserved per DM
   - Larval grease                   # session 1: RJS stockroom — preserved per DM
   - Party map                       # session 2: working map begun by Tabby and Nancy, incorporating T'wigfingers' data, Lars's northeast heading, and Garett's triangulation parchment. Tabby is keeper. Preserved per DM.
+  - Navi-gus                        # session 5: gift from Antshley at the Overgrowth tunnel mouth. Smooth translucent ball of fungus. Twitches/throbs when exposed to leafcutter pheromone trails. Currently keyed to Canopia. Re-keyable. The pheromone trails are constantly being re-cut, so the device is current with whatever the leafcutters have laid down most recently.
 
 features_and_traits:
   - name: "Favored Enemy: Mammals, Plants"
@@ -198,3 +199,5 @@ notes:
   - "Session 4 roleplay beats: cold-open observation that red ants shouldn't be able to throw fire; rode into the farm playing dead in the cart and was carried by workers into the fungus chamber; asked the sympathetic leafcutter how the last person passed through the fungal curtain, getting the 'soft, then stomp, then hush' pattern that solved the puzzle."
   - "Session 4 rune placement: Rune of Fungal Protection carved on the back of the left shoulder. Mechanical effect TBD."
   - "Note on sheet arithmetic: handwritten sheet used proficiency bonus +2 throughout; corrected to +3 (RAW for level 6) per DM. Sheet's DEX skills (Acrobatics +3, Sleight of Hand +3, Stealth +5) were not updated for the new DEX 18 — re-derived here."
+  - "Session 5 location: upstairs room of the Dewdrop Inn in Canopia, mid-conversation with Gleam (weevil rebel contact)."
+  - "Session 5 roleplay beats: received the navi-gus directly from Antshley (Tabby is the keeper); described as moving and feeling 'more at ease and feline' post-level; tried to draw the magic vibes off the Ahganmin; helped Twyla hand out fungus rations in the Weevilville."
