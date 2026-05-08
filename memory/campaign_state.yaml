@@ -5,8 +5,8 @@
 # ── SESSION TRACKING ────────────────────────────────────────────────────────
 
 current_session: 6
-active_draft: null
-draft_status: none
+active_draft: sessions/s06_draft.md
+draft_status: first_draft
 
 last_played_session: 5
 last_played_summary: "The City in the Overgrowth — Antshley walked the party through the gradient tunnel, handed Tabby the navi-gus, and parted at the daylight mouth. They followed the pheromone road past leafcutter crews and shimmering fire-ant escorts to the Weevilville, helped Twyla hand out fungus rations, and climbed the ramp into Canopia. They detoured into the Queen's Crown, announced a heist, flubbed a rumor about ants growing fungus on dead bodies to a table of disinterested wasps, and got walked out (Nancy lifted 2 sap and 1 cig on the way). They walked past the Royal Jelly Society's Canopia branch without entering, and ran the dead drop at the Dewdrop Inn cleanly — ginger honeycap, 'it's a hot batch,' a back booth, a clumsy hooded figure with a key. Upstairs, they met Gleam, an earnest weevil rebel contact (table verdict: 'THE CUTEST'). Session ended mid-conversation, before Gleam gave them a concrete plan to reach the Leafcutter Queen. See sessions/session_log.md."
