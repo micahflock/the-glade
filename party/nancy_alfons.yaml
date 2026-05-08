@@ -7,94 +7,114 @@
 # Expertise skill selections need to be confirmed with player.
 # 2026-04-15 — Session 1 stockroom items added from DM notes
 # 2026-04-15 — Expertise confirmed: Sleight of Hand and Investigation (bonuses corrected to +7)
+# 2026-04-27 — Level 3 → 6 import: Rogue 4 (Arcane Trickster) / Wizard 2 (Bladesinger). Multiclass restructure.
 
 character:
   name: Nancy Alfons
   callsign: Nancy
   player: Rowyn
   species: Jumping Spider
-  class: Rogue
-  subclass: Arcane Trickster
+  classes:
+    - class: Rogue
+      subclass: Arcane Trickster
+      level: 4
+    - class: Wizard
+      subclass: Bladesinger
+      level: 2
   background: null
-  level: 6   # Session 4: crossed into the Overgrowth, +3 levels. Combat stats below still reflect level 3 until player re-derives.
+  alignment: NG
+  level: 6
   xp: null
 
 core:
-  proficiency_bonus: 2
+  proficiency_bonus: 3
   inspiration: false
-  ac: 15
-  initiative: +3
+  ac: 16                  # Studded leather (12) + DEX +4. Bladesong adds +INT (+3) when active.
+  initiative: +4
   speed: 40
-  hp_max: 22
-  hp_current: 22       # set to hp_max on fresh import
-  hit_dice: 3d8
-  hit_dice_remaining: 3
+  hp_max: 37
+  hp_current: 37          # set to hp_max on level-up import
+  hit_dice: 4d8 + 2d6
+  hit_dice_remaining: 6   # 4d8 + 2d6 available
 
 ability_scores:
   strength:     { score: 6,  modifier: -2 }
-  dexterity:    { score: 16, modifier: +3 }
+  dexterity:    { score: 18, modifier: +4 }   # +2 from Rogue 4 ASI (16 → 18)
   constitution: { score: 12, modifier: +1 }
   intelligence: { score: 16, modifier: +3 }
-  wisdom:       { score: 12, modifier: +1 }
+  wisdom:       { score: 12, modifier: +1 }   # Sheet WIS box read "+3"; saves and skills consistent with +1 — using +1.
   charisma:     { score: 12, modifier: +1 }
 
 saving_throws:
   strength:     { bonus: -2, proficient: false }
-  dexterity:    { bonus: +5, proficient: true }
+  dexterity:    { bonus: +7, proficient: true }
   constitution: { bonus: +1, proficient: false }
-  intelligence: { bonus: +5, proficient: true }
+  intelligence: { bonus: +6, proficient: true }
   wisdom:       { bonus: +1, proficient: false }
   charisma:     { bonus: +1, proficient: false }
 
 skills:
-  acrobatics:      { bonus: +3, proficient: false, ability: dexterity }
+  acrobatics:      { bonus: +4, proficient: false, ability: dexterity }
   animal_handling: { bonus: +1, proficient: false, ability: wisdom }
   arcana:          { bonus: +3, proficient: false, ability: intelligence }
   athletics:       { bonus: -2, proficient: false, ability: strength }
-  deception:       { bonus: +3, proficient: true,  ability: charisma }
+  deception:       { bonus: +4, proficient: true,  ability: charisma }
   history:         { bonus: +3, proficient: false, ability: intelligence }
-  insight:         { bonus: +3, proficient: true,  ability: wisdom }
+  insight:         { bonus: +4, proficient: true,  ability: wisdom }
   intimidation:    { bonus: +1, proficient: false, ability: charisma }
-  investigation:   { bonus: +7, proficient: true, expertise: true, ability: intelligence }  # Sheet showed +5 — corrected; Expertise confirmed 2026-04-15
+  investigation:   { bonus: +9, proficient: true, expertise: true, ability: intelligence }
   medicine:        { bonus: +1, proficient: false, ability: wisdom }
-  nature:          { bonus: +3, proficient: false, ability: intelligence }  # sheet showed +2; corrected
+  nature:          { bonus: +3, proficient: false, ability: intelligence }
   perception:      { bonus: +1, proficient: false, ability: wisdom }
-  performance:     { bonus: +1, proficient: false, ability: charisma }
+  performance:     { bonus: +4, proficient: true,  ability: charisma }   # Bladesinger 2: Training in War and Song. Sheet showed +1 — corrected.
   persuasion:      { bonus: +1, proficient: false, ability: charisma }
-  religion:        { bonus: +5, proficient: true,  ability: intelligence }
-  sleight_of_hand: { bonus: +7, proficient: true, expertise: true, ability: dexterity }   # Sheet showed +5 — corrected; Expertise confirmed 2026-04-15
-  stealth:         { bonus: +5, proficient: true,  ability: dexterity }
+  religion:        { bonus: +3, proficient: false, ability: intelligence }   # Was prof +5 at level 3; sheet now shows +3 (no prof) — accepted as-is per DM.
+  sleight_of_hand: { bonus: +10, proficient: true, expertise: true, ability: dexterity }
+  stealth:         { bonus: +7, proficient: true,  ability: dexterity }
   survival:        { bonus: +1, proficient: false, ability: wisdom }
 
 passive_perception: 11
 
 attacks:
   - name: Rapier
-    attack_bonus: +5
-    damage: 1d8
+    attack_bonus: +7        # Sheet showed +5 — corrected (DEX +4 + prof +3)
+    damage: 1d8+4
     damage_type: piercing
   - name: Shortbow
-    attack_bonus: +5
-    damage: 1d6
+    attack_bonus: +7        # Sheet showed +5 — corrected (DEX +4 + prof +3)
+    damage: 1d6+4
     damage_type: piercing
     range: 80/320
 
 spellcasting:
-  ability: intelligence
-  spell_save_dc: 13        # 8 + prof 2 + INT mod 3
-  spell_attack_bonus: +5   # prof 2 + INT mod 3
+  ability: intelligence       # Both AT and Bladesinger use INT
+  spell_save_dc: 14           # 8 + prof 3 + INT 3
+  spell_attack_bonus: +6      # prof 3 + INT 3
   cantrips:
-    - name: Mage Hand      # mandatory Arcane Trickster cantrip
+    - name: Mage Hand          # mandatory Arcane Trickster cantrip
       school: conjuration
     - name: Message
       school: transmutation
     - name: Minor Illusion
       school: illusion
+    - name: Green-Flame Blade  # added 2026-04-27 (Wizard 1)
+      school: evocation
+    - name: Mending            # added 2026-04-27 (Wizard 1)
+      school: transmutation
+    - name: Sword Burst        # added 2026-04-27 (Wizard 1)
+      school: conjuration
   known_spells:
+    # Flat list — exact partition between AT spells known (4), Wizard
+    # spellbook (up to 8), and Fey Touched bonus spells is not strictly
+    # tracked here. Best fit:
+    #   AT 4 known (3 enchantment/illusion + 1 free):
+    #     Disguise Self, Sleep, Tasha's Hideous Laughter, + 1 free
+    #   Wizard spellbook: the remaining 1st-level spells
+    #   Fey Touched bonus (1/long rest each, no slot): Misty Step + Detect Magic
     - name: Disguise Self
       level: 1
       school: illusion
-    - name: Detect Magic
+    - name: Detect Magic       # likely Fey Touched bonus (1st-level divination)
       level: 1
       school: divination
       ritual: true
@@ -102,9 +122,26 @@ spellcasting:
       level: 1
       school: divination
       ritual: true
+    - name: Sleep              # added 2026-04-27
+      level: 1
+      school: enchantment
+    - name: Tasha's Hideous Laughter   # added 2026-04-27
+      level: 1
+      school: enchantment
+    - name: Shield             # added 2026-04-27
+      level: 1
+      school: abjuration
+    - name: Tenser's Floating Disk     # added 2026-04-27
+      level: 1
+      school: conjuration
+      ritual: true
+    - name: Misty Step         # Fey Touched bonus — 1/long rest without slot
+      level: 2
+      school: conjuration
 
 spell_slots:
-  1st: { max: 2, current: 2 }
+  1st: { max: 4, current: 4 }   # multiclass caster level 3 (Wizard 2 + AT floor(4/3)=1)
+  2nd: { max: 2, current: 2 }
 
 proficiencies:
   armor:
@@ -124,8 +161,9 @@ equipment:
   - Studded leather armor
   - Map Tube with calculations and measurements
   - Honing Steel                    # likely = whetstone from session 1 stockroom
-  - Pearl/Amber worth 1 [UNCLEAR: value unit]
+  - Pearl/Amber worth 100 gp        # legibility resolved 2026-04-27
   - Pens, paper, ink                # likely = thistle pens and paper from session 1 stockroom
+  - Map Tube                        # second map tube — listed on sheet alongside the calculations one
   - Bag of sand
   - Miners Evaluation Toolkit (reagent, pick, mortar)
   - 10 GP
@@ -149,7 +187,36 @@ features_and_traits:
   - name: Fey Touched
     source: Feat
     description: >
-      [UNCLEAR: full description not legible on sheet — spell portion deferred]
+      INT/WIS/CHA +1. Learn Misty Step (2nd-level conjuration) and one 1st-level
+      divination or enchantment spell (Nancy: Detect Magic). Cast each once per
+      long rest without a spell slot; can also cast using spell slots normally.
+  - name: Mage Hand Legerdemain
+    source: Rogue (Arcane Trickster) 3
+    description: >
+      The spectral hand from Mage Hand is invisible, can perform Sleight of Hand
+      (stow/pick pocket), pick locks, disarm traps, or pour out vials at range,
+      using your action.
+  - name: Arcane Recovery
+    source: Wizard 1
+    description: >
+      Once per day on a short rest, recover spell slots whose combined level
+      equals up to half your wizard level (rounded up); only 1st-level slots
+      at Wizard 2.
+  - name: Bladesong
+    source: Wizard (Bladesinger) 2
+    description: >
+      Bonus action; lasts 1 minute. Requires one free hand and no medium/heavy
+      armor or shield. While active: +INT mod (+3) to AC; walking speed +10;
+      advantage on Dexterity (Acrobatics) checks; +INT mod (+3) to concentration
+      saves; once per turn add INT mod to one weapon damage roll. Usable a
+      number of times equal to proficiency bonus per long rest, recovered on a
+      short or long rest. Ends if incapacitated, in medium/heavy armor or
+      shield, or when ended as no action.
+  - name: Training in War and Song
+    source: Wizard (Bladesinger) 2
+    description: >
+      Proficiency with light armor, one one-handed melee weapon of choice, and
+      Performance.
 
 backstory:
   - Nancy was hired to steal something from a wizard. Instead of stabbing the
@@ -161,14 +228,13 @@ backstory:
 
 notes:
   - Rogue Expertise confirmed 2026-04-15: Sleight of Hand and Investigation.
-    Both updated from +5 to +7 (double prof +4 + ability mod).
+    Both updated from +5 to +7 (double prof +4 + ability mod) at level 3,
+    now +10 and +9 respectively at level 6.
   - Spells added from physical spell cards (2026-04-15): Mage Hand, Message,
     Minor Illusion (cantrips); Disguise Self, Detect Magic, Identify (1st level).
-    Note: Arcane Trickster requires at least 2 Enchantment/Illusion spells known;
-    only Disguise Self qualifies. One of the Divination picks may be the Fey
-    Touched 1st-level bonus spell rather than an Arcane Trickster selection —
-    confirm with player ROWYN if it matters mechanically.
   - "Session 3: Scared but interested in learning new magical knowledge. Spent the night with Garett studying the Bloom."
-  - "Session 4 level-up to 6: crossed the unseen barrier into the Overgrowth with the party. [DM CHECK] All derived stats below (HP, hit dice, spell slots, skills, proficiency bonus, features) still reflect level 3 — needs player update before Session 5."
+  - "Session 4 level-up to 6: crossed the unseen barrier into the Overgrowth with the party. [DM CHECK] Resolved 2026-04-27 — re-derived stats imported from updated sheet (Rogue 4 / Wizard 2 Bladesinger)."
   - "Session 4 roleplay beats: sent the Loyalist (Greg) the Message 'I'm watching you and I will kill you if you act out' at the ridge; commune'd with the Winter Farm fungus and sensed magic; noted the Ahganmin glowed more strongly in the farm; used Mage Hand to investigate the fungal curtain; cut a piece of the curtain to study it (it keened)."
   - "Session 4 rune placement: Rune of Fungal Protection carved on the top of the right pauldron / shoulder. Mechanical effect TBD."
+  - "2026-04-27 level-up: Rogue 4 ASI taken as +2 DEX (16 → 18). Wizard 1 + Bladesinger 2 added. New cantrips Green-Flame Blade, Mending, Sword Burst. New spells Sleep, Tasha's Hideous Laughter, Shield, Tenser's Floating Disk. Misty Step confirmed as Fey Touched bonus (2nd level). AT vs Wizard spell partition not strictly tracked — see known_spells comment."
+  - "2026-04-27 sheet anomalies: Rapier/Shortbow attack bonuses written as +5 — corrected to +7. Religion proficiency present at level 3 was absent on the new sheet — DM accepted as-is (dropped). Performance proficiency from Bladesinger Training in War and Song missing on sheet — added per RAW. Wisdom modifier box on sheet read +3 but saves/skills consistent with +1 — used +1."
