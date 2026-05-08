@@ -174,8 +174,10 @@ equipment:
   - Arrows                          # session 1: RJS stockroom
   - Document tube (empty)           # session 1: RJS stockroom
   - Tune Hammer of Amber            # session 2: found in RJS lab, Antennington. Ball-peen hammer; strikes amber to produce a note that varies by amber age.
-  - Ahganmin (in Garett's detection box)  # session 2: glowing magic amber, reacts to elevated magical energy. Session 3: Garett built a box housing that makes glow changes easier to observe. Session 4: glowed more strongly inside the Winter Farm — confirmed sensitivity to ambient magic level.
+  - Ahganmin (worn as the gem in Nancy's turban)  # session 2: glowing magic amber, reacts to elevated magical energy. Session 3: Garett built a box housing that makes glow changes easier to observe. Session 4: glowed more strongly inside the Winter Farm — confirmed sensitivity to ambient magic level. Session 5: glowing brighter in the Overgrowth; Nancy fashioned a turban and set the Ahganmin into it as the gem. (Detection box presumably still exists.)
   - Winter Farm fungus sample       # session 4: tore off and ate a piece of corpse-farm fungus (no effect); kept a piece for later study.
+  - 2 sap                           # session 5: pickpocketed on the way out of the Queen's Crown casino in Canopia.
+  - 1 cig                           # session 5: pickpocketed on the way out of the Queen's Crown casino in Canopia.
 
 features_and_traits:
   - name: Mobile
@@ -238,3 +240,5 @@ notes:
   - "Session 4 rune placement: Rune of Fungal Protection carved on the top of the right pauldron / shoulder. Mechanical effect TBD."
   - "2026-04-27 level-up: Rogue 4 ASI taken as +2 DEX (16 → 18). Wizard 1 + Bladesinger 2 added. New cantrips Green-Flame Blade, Mending, Sword Burst. New spells Sleep, Tasha's Hideous Laughter, Shield, Tenser's Floating Disk. Misty Step confirmed as Fey Touched bonus (2nd level). AT vs Wizard spell partition not strictly tracked — see known_spells comment."
   - "2026-04-27 sheet anomalies: Rapier/Shortbow attack bonuses written as +5 — corrected to +7. Religion proficiency present at level 3 was absent on the new sheet — DM accepted as-is (dropped). Performance proficiency from Bladesinger Training in War and Song missing on sheet — added per RAW. Wisdom modifier box on sheet read +3 but saves/skills consistent with +1 — used +1."
+  - "Session 5 location: upstairs room of the Dewdrop Inn in Canopia, mid-conversation with Gleam (weevil rebel contact)."
+  - "Session 5 roleplay beats: clutched at something under his clothes during the level-up [DM CHECK]; had a happy freakout in response to Drix's level-up song; fashioned a turban with the Ahganmin set as the gem; kept pointing with his sword; bought roses for the whole party in Canopia; helped Twyla hand out fungus rations in the Weevilville; pivoted the Queen's Crown plan from pickpocketing to rumor-spreading and lifted 2 sap + 1 cig on the way out after security walked them."
