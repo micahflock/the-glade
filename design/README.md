@@ -19,4 +19,4 @@ Resources for setting up the Claude Design system for The Glade campaign.
 
 ## Theme summary
 
-Dark fantasy at insect scale. Miyazaki whimsy on one end, Del Toro horror on the other. Default sits dead center, leaning slightly gothic. Bugs are real bugs, not anthropomorphized. Color encodes seasonal zones (amber, frost, pitch, cordyceps, pollen, lichen). Screen-first, dark-default. One accent per page.
+Dark fantasy at insect scale. Miyazaki whimsy on one end, Del Toro horror on the other. Default sits dead center, leaning slightly gothic. Bugs are real bugs, not anthropomorphized. Six accents (amber, frost, pitch, cordyceps, pollen, lichen) form a mood palette — pick one per page by feel, not by region or faction. Screen-first, dark-default.

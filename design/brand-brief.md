@@ -93,12 +93,12 @@ Claude Design works best with real examples and clear instruction on *what* to t
 These are the rules a designer (or Claude) should be able to apply without re-reading anything else:
 
 1. **Negative space is part of the horror.** A near-empty card with one centered creature reads more unsettling than a busy one. Trust the void.
-2. **Color encodes the world's seasons and threats.** See `design-system.md` palette — frost cyan = the Bloom, amber = warmth and value, pitch crimson = blood and currency, cordyceps violet = corruption, pollen = whimsy.
+2. **Color sets mood, not meaning.** See `design-system.md` palette. Pick one accent per page based on the page's emotional weight — never assign accents to factions, regions, or threats.
 3. **Texture should suggest a surface, not decorate one.** Bark grain, chitin sheen, frost lacework, spider silk — used sparingly as borders, watermarks, or under content.
 4. **Bugs are real bugs.** When illustrating, reference real species. No generic fantasy bugs. A leafcutter has a leafcutter's mandibles and gait.
 5. **Ornament is structural, not applied.** A spider-silk divider holds two sections apart; a fiddlehead curls at a section break because the page needs to breathe there. Ornament without a job gets cut.
 6. **Type carries the gothic. Layout carries the whimsy.** A serious old-world serif over a generous, almost storybook layout is the sweet spot — reverse it and you get either a textbook or a Halloween flyer.
-7. **One accent at a time.** A given page picks one of the four zone-accents (frost / amber / pitch / cordyceps / pollen) as its dominant. Never the full rainbow.
+7. **One accent at a time.** A given page picks one accent (frost / amber / pitch / cordyceps / pollen / lichen) as its dominant, chosen by mood. Never the full rainbow.
 
 ---
 

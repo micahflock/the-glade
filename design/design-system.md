@@ -8,7 +8,7 @@ Primary medium: **screen** (laptop and tablet at the table). Default theme: **da
 
 ## 1. Color palette
 
-The palette has three layers: **grounds** (backgrounds and surfaces), **inks** (text and line), and **zone accents** (one chosen per page to encode mood and meaning). Each accent maps to a region or threat in the campaign world — color is functional, not just pretty.
+The palette has three layers: **grounds** (backgrounds and surfaces), **inks** (text and line), and **accents** (one chosen per page to set mood). Accents are a mood palette — pick whichever color best fits the page's emotional weight; don't pre-assign them to factions, regions, or threats.
 
 ### Grounds (dark default)
 
@@ -37,20 +37,20 @@ The palette has three layers: **grounds** (backgrounds and surfaces), **inks** (
 | `chitin-mute` | `#6E6856` | Tertiary text, footnotes, watermarks.                 |
 | `loam-ink`    | `#1A1F18` | Primary text on light/parchment grounds.              |
 
-### Zone accents — pick one per page
+### Accents — pick one per page by mood
 
-Each accent has both a "core" (use for ornament, rules, key callouts) and a "wash" (use for backgrounds, fills, large areas at low opacity). Color is keyed to the campaign's seasonal rings and major threats.
+Each accent has both a "core" (use for ornament, rules, key callouts) and a "wash" (use for backgrounds, fills, large areas at low opacity). Accents are a mood palette: pick by *feel*, not by region or faction.
 
-| Accent        | Core hex   | Wash hex   | Means                                                       | Use on                                  |
-|---------------|------------|------------|-------------------------------------------------------------|-----------------------------------------|
-| `amber`       | `#C77B2E`  | `#3B2415`  | Warmth, value, magic, the Antennington mine, civilization. | Default brand accent. Wordmark. NPC cards for friendly faces. Treasure. |
-| `frost`       | `#9CC9C5`  | `#1F2E2E`  | The Bloom. Winter zone. Stillness, absence, the unnatural cold. | Anything in the winter zone. The Bloom itself. Encounters with eerie quiet. |
-| `pitch`       | `#8B2A1F`  | `#2A1411`  | Blood, danger, Life Pitch currency, combat.                | Encounter sheets in active combat. HP indicators. Damage callouts. |
-| `cordyceps`   | `#6B4A8C`  | `#1F1830`  | Corruption, fungal control, the fall zone, the big bad.    | Cordyceps-infected creatures. The fall zone. Spell-corruption effects. |
-| `pollen`      | `#D9B84A`  | `#33280F`  | Whimsy, joy, the spring zone (where it's still safe), pollen drifts. | Friendly NPC cards. Spring-zone material. Comic-relief moments. |
-| `lichen`      | `#7A8C5A`  | `#1E261A`  | Neutral midtone. Lore, history, the world before the Bloom. | Codex pages. Background lore. Default if no zone applies. |
+| Accent        | Core hex   | Wash hex   | Mood                                                              |
+|---------------|------------|------------|-------------------------------------------------------------------|
+| `amber`       | `#C77B2E`  | `#3B2415`  | Warmth, candlelight, value. The default. Reads as civilization and welcome. |
+| `frost`       | `#9CC9C5`  | `#1F2E2E`  | Stillness, absence, unnatural quiet. Reads cold and uncanny.      |
+| `pitch`       | `#8B2A1F`  | `#2A1411`  | Heat, blood, urgency. Reads as danger and viscera.                |
+| `cordyceps`   | `#6B4A8C`  | `#1F1830`  | Strange, fungal, corrupted. Reads dreamlike and wrong.            |
+| `pollen`      | `#D9B84A`  | `#33280F`  | Bright, drifting, whimsical. Reads as joy and small comfort.      |
+| `lichen`      | `#7A8C5A`  | `#1E261A`  | Neutral midtone. Quiet, scholarly, old. Reads as lore and history. |
 
-**Pairing rule:** one accent per page, period. If a creature is cordyceps-infected *and* in the winter zone, the page picks one based on which fact is more important to the encounter. Never two accents at equal weight.
+**Pairing rule:** one accent per page, period. Never two accents at equal weight.
 
 ### Semantic tokens (UI roles)
 
@@ -192,7 +192,7 @@ The two primary components — designed to be the smoke test for the system.
 
 **Frame:** `moss-deep` card on `loam` page. 1px `--accent` border. Honeycomb cell as a watermark in the bottom-right corner at 6% opacity.
 
-**Default accent:** `pitch` (combat). Override with `cordyceps` for infected creatures, `frost` for Bloom-touched, `amber` for hireable bugs.
+**Accent choice:** pick the accent that matches the encounter's mood. Combat-forward sheets often want `pitch`; eerie/quiet creatures often want `frost`; strange/fungal often want `cordyceps`. Decide per encounter, not by rule.
 
 ### 5.2 NPC / creature card
 
@@ -212,7 +212,7 @@ The two primary components — designed to be the smoke test for the system.
 - **Hooks** (3 short bullets): Inter labels (WANT / FEAR / HOOK), Lora bodies. Tight.
 - **Notes:** a small free-form Lora paragraph at the bottom for DM-only context.
 
-**Frame:** `moss-deep` card on `loam`. Pollen drift watermark in upper-left corner if disposition is friendly; frost lacework if wary; mushroom-gill if cordyceps-touched; nothing if neutral.
+**Frame:** `moss-deep` card on `loam`. Optional motif watermark in the upper-left corner — chosen by the card's mood (pollen drift for warm cards, frost lacework for cold ones, mushroom-gill for unsettling ones). Leave blank if no motif fits.
 
 ---
 
