@@ -1,10 +1,13 @@
 # /encounter-worksheet
 
-# Generate a D&D 5e combat encounter worksheet as an .xlsx spreadsheet
-# ready to upload to Google Sheets. Reads NPC stat blocks from creatures/
-# and PC sheets from party/, rolls initiative and HP, and builds a
-# formatted single-tab worksheet with initiative tracker, stat references,
-# and encounter notes.
+# Generate a D&D 5e combat encounter worksheet as a self-contained
+# interactive .html file, designed for offline use on iPad during a
+# session. Reads NPC stat blocks from creatures/ and PC sheets from
+# party/, rolls initiative and HP, and produces a single HTML file
+# with an initiative tracker (HP +/- controls, condition pills,
+# editable PC initiative, turn/round counter) plus collapsible
+# stat-block reference and encounter notes. State persists in the
+# browser's localStorage keyed by encounter slug.
 
 ## Input Handling
 
@@ -100,85 +103,115 @@ Parameters per NPC type:
 The script numbers creatures automatically (Ant 1, Ant 2, etc.) and
 tags grouped creatures with a letter (Ant 1 [A], Ant 7 [B], etc.).
 
-### Step 2: Build the .xlsx
+### Step 2: Build the encounter spec JSON
 
-Write and execute a Python script using openpyxl that creates a single-tab
-worksheet. Follow the formatting spec exactly.
+Write a JSON file to encounters/[slug].json with the encounter data.
+This is the single input to the HTML build script. The shape:
 
-**Section 1: INITIATIVE TRACKER** (starts row 1)
+```json
+{
+  "name": "Winter Farm Encounter",
+  "slug": "winter_farm_encounter",
+  "combatants": [
+    {
+      "id": "skull_cracker",
+      "kind": "npc",
+      "name": "Skull-Cracker",
+      "ac": 16,
+      "hp_max": 162,
+      "hp_current": 162,
+      "speed": "30 ft., climb 20 ft.",
+      "initiative": 4,
+      "group": null,
+      "notes": ""
+    },
+    {
+      "id": "tabby",
+      "kind": "pc",
+      "name": "Tabatha Starr (Heather)",
+      "ac": 14,
+      "hp_max": 31,
+      "hp_current": 31,
+      "speed": "30 ft.",
+      "initiative": null,
+      "init_mod": "+5",
+      "notes": "Dread Ambusher rd 1: +10 spd, bonus attack +1d8"
+    }
+  ],
+  "npc_blocks": [
+    {
+      "title": "Skull-Cracker — Large Monstrosity (ant), Lawful Evil",
+      "stats": "AC 16 (natural armor) | HP 162 (16d10+64) | Speed 30 ft., climb 20 ft. | STR 20 (+5) DEX 10 (+0) CON 18 (+4) INT 6 (-2) WIS 12 (+1) CHA 10 (+0)",
+      "defenses": "Skills: Athletics +8 | Senses: ... | CR 6 (2300 XP) | PB +3",
+      "sections": [
+        { "label": "TRAITS",  "entries": [{"name": "Heated Body", "text": "..."}] },
+        { "label": "ACTIONS", "entries": [
+          {"name": "Multiattack", "text": "..."},
+          {"name": "Crusher's Bite", "text": "..."}
+        ]}
+      ]
+    }
+  ],
+  "pc_blocks": [
+    {
+      "header": "Tabatha Starr (Heather) — Ranger 3 (Gloomstalker) | ...",
+      "abilities": "STR 14 (+2) DEX 16 (+3) ...",
+      "saves": "STR +4 (prof), DEX +5 (prof). Others use ability mod.",
+      "attacks": "Longbow +7, 1d8+3 piercing (150/600) [Archery] | ...",
+      "spells": "...",
+      "features": "Favored Enemy: Monstrosities ..."
+    }
+  ],
+  "notes": [
+    {"label": "Setup", "text": "..."},
+    {"label": "Difficulty note", "text": "..."}
+  ]
+}
+```
 
-Header row (bold, background #D6E4F0):
-  Init | Name | AC | HP Max | HP Current | Speed | Status/Conditions | Notes
+Field rules:
 
-- One row per combatant
-- NPCs: fill rolled initiative, rolled HP as both Max and Current
-- PCs: leave Initiative and HP Current blank (DM fills during play),
-  fill HP Max from sheet
-- Sort all rows by initiative descending; PCs without init go at bottom
-- Grouped creatures sort together by their shared initiative, with
-  group members listed consecutively (Ant 1 [A], Ant 2 [A], ... then
-  Ant 7 [B], Ant 8 [B], ...)
-- Alternating row shading: white / #F2F2F2
-- Thin borders around the entire tracker
-- FREEZE PANES on the row after the last tracker entry — the tracker
-  stays pinned at the top while scrolling through reference material
+- **combatants** — one entry per individual (use the rolled output from
+  roll_dice.py: each grouped creature still gets its own row, sharing
+  initiative). NPCs get rolled `initiative` and rolled `hp_current = hp_max`.
+  PCs get `initiative: null` (DM enters at the table) and `init_mod` as a
+  display reminder ("+5"). Use `kind: "npc"` or `kind: "pc"`. Include
+  `group: "A"` etc. only when the creature shares an initiative group.
 
-**Section 2: NPC STAT BLOCK REFERENCE** (after 2-row gap)
+- **npc_blocks** — one block per unique creature TYPE, not per individual.
+  `title` is a one-line header. `stats` is the AC/HP/Speed/abilities line.
+  `defenses` covers saves/resistances/immunities/senses/languages/CR/PB
+  (omit if none apply). `sections` is the list of rule blocks — TRAITS,
+  ACTIONS, BONUS ACTIONS, REACTIONS, LEGENDARY ACTIONS — each with a
+  label and an entries array of `{name, text}` pairs. Be COMPLETE: every
+  trait, action, and ability the DM might need at the table.
 
-Section header: "NPC REFERENCE" — bold white text, #4472C4 background,
-merged across columns A–H.
+- **pc_blocks** — one block per PC. `header` is a one-line summary
+  (name/class/species/AC/HP/speed/passive). Other fields are short text
+  blocks. Omit `spells` for non-casters.
 
-For each unique NPC type (not each numbered instance):
-- Labels in column B (bold), content merged across C–H (wrap text)
-- Row: Name → "[Name] — [size] [type], [alignment]"
-- Row: Stats → "AC [X] ([type]) | HP [X] ([dice]) | Speed [X] |
-  STR [X](+[X]) DEX [X](+[X]) CON [X](+[X]) INT [X](+[X])
-  WIS [X](+[X]) CHA [X](+[X])"
-- Row: Defenses → saves, resistances, immunities, senses, languages, PB
-  (omit row if none apply)
-- Row(s): Each trait, action, bonus action, reaction — name in B (bold),
-  full text in C–H (merged, wrapped). Include section labels
-  ("ACTIONS", "REACTIONS", etc.) as sub-headers when switching categories.
-- Blank row between NPC types
+- **notes** — encounter notes pinned to the bottom of the worksheet.
+  Use labels like Setup, Difficulty, Tactics, Recharge tracking, Triggers,
+  NPC Registry cross-ref, etc.
 
-**Section 3: PC COMBAT REFERENCE** (after 2-row gap)
+### Step 3: Build the HTML
 
-Section header: "PC REFERENCE" — same style as NPC header.
+    python3 scripts/build_encounter.py encounters/[slug].json
 
-For each PC:
-- Row: Name → "[Name] — [Class] [Level] | [Species] | AC [X] | HP [X] |
-  Speed [X] | Passive Perception [X]"
-- Row: Abilities → all six scores with mods on one line
-- Row: Saves → proficient saves with values
-- Row: Attacks → weapon name, to-hit, damage; spell attack/DC if caster
-- Row: Spells → spell list by level (only if caster)
-- Row: Features → notable combat features
-- Blank row between PCs
+This writes encounters/[slug].html — a single self-contained file (no CDN,
+no deps). The build script handles the layout, styling, and interactive
+behavior; you only need to provide the JSON.
 
-**Section 4: ENCOUNTER DETAILS** (after 2-row gap, bottom of sheet)
+### Step 4: Save and present
 
-Section header: "ENCOUNTER DETAILS" — same style.
-
-- Encounter name (bold, 14pt)
-- Terrain/setting notes, tactical reminders, DM notes (merged, wrapped)
-- At the bottom so it doesn't waste screen real estate during combat
-
-### Formatting spec
-
-- Font: Arial 10pt for data, 12pt bold for section headers,
-  14pt bold for encounter title
-- Column widths: A/Init (8), B/Name (28), C/AC (6), D/HP Max (9),
-  E/HP Current (11), F/Speed (8), G/Status (22), H/Notes (28)
-- Colors: #D6E4F0 (tracker header), #4472C4 + white text (section
-  headers), alternating white / #F2F2F2 (data rows)
-- Wrap text on all description/content cells
-- Row heights: 15px for data rows, 30-50px for wrapped description rows
-- Avoid Excel-only features — the file must work in Google Sheets
-
-### Step 3: Save and present
-
-Save to encounters/[encounter_name_slug].xlsx
-Tell the DM the file path and that it's ready to upload to Google Sheets.
+Tell the DM the file path. Note that:
+- The .html file is portable — drop it in iCloud/Files and open in Safari
+  on iPad (or any browser) to use offline.
+- State (HP, conditions, current turn, round) auto-saves to the browser's
+  localStorage keyed by the encounter slug. Reset button at the top
+  clears it.
+- The .json spec stays alongside as the source of truth — re-running
+  build_encounter.py rebuilds the HTML if you tweak the spec.
 
 ## Key Rules
 
@@ -195,7 +228,10 @@ Tell the DM the file path and that it's ready to upload to Google Sheets.
   stat block values.
 - Cross-reference memory/NPC_Registry.yaml — if any NPCs in the encounter
   are tracked there, note relevant party_history or disposition in the
-  Encounter Details section.
+  notes section.
 - If the user provides creature names that don't match any creatures/*.yaml
   file, accept direct input and flag with [SLOP CHECK] any values you
   had to invent.
+- Keep the .json spec file alongside the .html. If the DM asks for a
+  tweak (extra creature, terrain note, etc.), edit the .json and rerun
+  the build script — don't hand-edit the .html.
