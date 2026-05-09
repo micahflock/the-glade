@@ -205,8 +205,12 @@ behavior; you only need to provide the JSON.
 ### Step 4: Save and present
 
 Tell the DM the file path. Note that:
-- The .html file is portable — drop it in iCloud/Files and open in Safari
-  on iPad (or any browser) to use offline.
+- The .html file is portable — drop it in iCloud/Files and open in
+  **Safari** on iPhone/iPad (or any browser) to use offline.
+- On iPhone/iPad: opening from the Files app uses Quick Look preview,
+  which won't run JavaScript and the page will appear empty. Instead,
+  tap the share icon in Files → "Open in Safari", or open Safari first
+  and use the address bar.
 - State (HP, conditions, current turn, round) auto-saves to the browser's
   localStorage keyed by the encounter slug. Reset button at the top
   clears it.

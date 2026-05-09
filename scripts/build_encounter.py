@@ -92,6 +92,16 @@ __CSS__
   </div>
 </header>
 
+<noscript>
+  <div style="padding:16px;background:#ffe0e0;color:#7a0000;border:1px solid #c62828;margin:12px;border-radius:8px;font-family:sans-serif;">
+    <strong>JavaScript is disabled or this preview isn't running scripts.</strong><br>
+    On iPhone/iPad, open this file in <em>Safari</em> (not the Files app's Quick Look preview).
+    From the Files app: tap the share icon &rarr; "Open in Safari". On a Mac/PC, just double-click to open in your browser.
+  </div>
+</noscript>
+
+<div id="boot-error" style="display:none;padding:16px;background:#ffe0e0;color:#7a0000;border:1px solid #c62828;margin:12px;border-radius:8px;font-family:sans-serif;"></div>
+
 <main>
   <section class="tracker">
     <div class="tracker-header">
@@ -117,8 +127,14 @@ __CSS__
   </section>
 </main>
 
-<script type="application/json" id="encounter-data">__DATA__</script>
 <script>
+window.addEventListener("error", function (e) {
+  var box = document.getElementById("boot-error");
+  if (!box) return;
+  box.style.display = "block";
+  box.textContent = "Encounter worksheet failed to load: " + (e && e.message ? e.message : "unknown error");
+});
+var ENCOUNTER = __DATA__;
 __JS__
 </script>
 </body>
@@ -422,7 +438,6 @@ main { padding: 0; max-width: 1200px; margin: 0 auto; }
 
 JS = r"""
 (function() {
-  const ENCOUNTER = JSON.parse(document.getElementById("encounter-data").textContent);
   const slug = (ENCOUNTER.slug || ENCOUNTER.name || "encounter")
     .replace(/[^a-z0-9]+/gi, "_").toLowerCase();
   const STORAGE_KEY = "encounter:" + slug;
@@ -759,9 +774,16 @@ def html_escape(s):
 
 def build_html(spec):
     name = spec.get("name", "Encounter")
-    # Embed JSON inside <script type="application/json">. Only `</` is dangerous;
-    # replace it with `<\/` so a value containing `</script>` can't break out.
-    data_json = json.dumps(spec, ensure_ascii=False).replace("</", "<\\/")
+    # Embed JSON directly as a JS literal (JSON is a subset of JS object syntax).
+    # Escape `</` so a value containing `</script>` can't break out of the
+    # surrounding <script> tag, and escape U+2028/U+2029 which are valid in JSON
+    # strings but were illegal as raw chars in JS string literals before ES2019.
+    data_json = (
+        json.dumps(spec, ensure_ascii=False)
+        .replace("</", "<\\/")
+        .replace(" ", "\\u2028")
+        .replace(" ", "\\u2029")
+    )
     return (
         HTML_TEMPLATE
         .replace("__NAME__", html_escape(name))
