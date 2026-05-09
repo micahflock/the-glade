@@ -249,16 +249,25 @@ main { padding: 0; max-width: 1200px; margin: 0 auto; }
 .row.dead { opacity: 0.5; background: var(--shade); }
 .row.dead .name { text-decoration: line-through; }
 
-.row .init {
+.row input.init {
+  font-family: inherit;
   font-size: 22px; font-weight: 700; text-align: center;
+  color: var(--ink);
   background: var(--accent-light);
+  border: 0;
   border-radius: 6px;
   padding: 8px 0;
-  min-width: 56px; min-height: 44px;
-  cursor: pointer;
-  user-select: none;
+  width: 56px; min-height: 44px;
+  -webkit-appearance: none;
+  appearance: none;
+  outline: none;
 }
-.row .init.empty { background: var(--shade); color: var(--muted); }
+.row input.init.empty { background: var(--shade); color: var(--muted); }
+.row input.init:focus {
+  background: white;
+  box-shadow: 0 0 0 2px var(--accent);
+}
+.row input.init::placeholder { color: var(--muted); opacity: 1; }
 
 .row .info { min-width: 0; }
 .row .name {
@@ -506,6 +515,26 @@ JS = r"""
     return list;
   }
 
+  function commitInit(c, inputEl) {
+    const t = inputEl.value.trim();
+    let newVal;
+    if (t === "") {
+      newVal = null;
+    } else {
+      const n = parseInt(t, 10);
+      if (Number.isNaN(n)) {
+        // revert to last good value
+        inputEl.value = c.initiative === null ? "" : String(c.initiative);
+        return;
+      }
+      newVal = n;
+    }
+    if (newVal === c.initiative) return;
+    c.initiative = newVal;
+    saveState();
+    renderTracker();
+  }
+
   function hpClass(hpCur, hpMax) {
     if (hpCur <= 0) return "bloodied";
     if (hpCur <= hpMax * 0.5) return "bloodied";
@@ -526,26 +555,24 @@ JS = r"""
       if (c.id === state.activeId) row.classList.add("active");
       if (c.hp_current <= 0) row.classList.add("dead");
 
-      // Init
-      const init = document.createElement("div");
+      // Init (always-editable input; tapping it brings up the numeric keypad on iOS)
+      const init = document.createElement("input");
+      init.type = "text";
+      init.inputMode = "numeric";
+      init.pattern = "-?[0-9]*";
+      init.maxLength = 3;
       init.className = "init" + (c.initiative === null ? " empty" : "");
-      init.textContent = c.initiative === null ? "—" : c.initiative;
-      init.title = "Tap to edit initiative";
-      init.addEventListener("click", (ev) => {
-        ev.stopPropagation();
-        const cur = c.initiative === null ? "" : String(c.initiative);
-        const label = "Initiative for " + c.name + (c.init_mod ? "  (mod " + c.init_mod + ")" : "");
-        const v = window.prompt(label + ":", cur);
-        if (v === null) return;
-        const t = v.trim();
-        if (t === "") {
-          c.initiative = null;
-        } else {
-          const n = parseInt(t, 10);
-          if (Number.isNaN(n)) return;
-          c.initiative = n;
-        }
-        saveState(); renderTracker();
+      init.value = c.initiative === null ? "" : String(c.initiative);
+      init.placeholder = "—";
+      init.setAttribute("aria-label", "Initiative for " + c.name);
+      // Don't let taps on the input toggle the row's active state.
+      ["click", "touchstart", "mousedown"].forEach(ev => {
+        init.addEventListener(ev, e => e.stopPropagation());
+      });
+      init.addEventListener("focus", () => init.select());
+      init.addEventListener("blur", () => commitInit(c, init));
+      init.addEventListener("keydown", (e) => {
+        if (e.key === "Enter") { e.preventDefault(); init.blur(); }
       });
       row.appendChild(init);
 
