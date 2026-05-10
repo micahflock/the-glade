@@ -21,10 +21,10 @@ woodland whimsy ◄────────────────────�
 
 - **Default position:** dead center, leaning slightly gothic. Grounded but not dreary.
 - **Lean whimsical** for: friendly NPC cards, market scenes, spring-zone material, player-facing handouts where joy is the point.
-- **Lean gothic** for: combat encounters, corruption/cordyceps content, the Bloom, fall-zone material, anything in the burnt village or beyond.
+- **Lean gothic** for: combat encounters, corruption/cordyceps content, fall-zone material.
 - **Never:** cartoon-cute. Never: grimdark-edgelord. The Glade is sad and warm at the same time.
 
-The horror in The Glade is **quiet**. It announces itself in absences — a scentless forest, a wrenched-off door, a farm frozen mid-harvest. Design should mirror this: empty space matters as much as detail. Don't crowd the page.
+The horror in The Glade is **quiet**. It announces itself in absences — a scentless forest, a wrenched-off door, a farm frozen mid-harvest.
 
 ---
 
@@ -63,7 +63,7 @@ The voice on the page should match the voice at the table.
 Claude Design works best with real examples and clear instruction on *what* to take from each. Treat these as anchors, not templates.
 
 ### Hollow Knight (primary visual anchor)
-**Take:** silhouette-forward bug character design, painterly muted backgrounds, deep teal and bone-white accents, hand-drawn UI ornament, restraint with detail.
+**Take:** silhouette-forward bug character design, painterly muted backgrounds, hand-drawn UI ornament, restraint with detail.
 **Don't take:** the specific glowing-blue palette wholesale, or the platformer-game UI layout.
 
 ### Princess Mononoke / Nausicaä (Miyazaki)
@@ -83,7 +83,7 @@ Claude Design works best with real examples and clear instruction on *what* to t
 **Don't take:** Mörk Borg's screaming yellow. Our gothic is warmer, more amber.
 
 ### Old natural history plates (Maria Sibylla Merian, Ernst Haeckel)
-**Take:** the engraved, slightly faded line-work for creature illustrations; latinate labels; specimen-pin layouts; the implicit reverence for the subject.
+**Take:** the engraved, line-work for creature illustrations; latinate labels; specimen-pin layouts; the implicit reverence for the subject.
 **Don't take:** the literal scientific frame — we want the *feel* of an old field guide haunted by something.
 
 ---
@@ -92,13 +92,12 @@ Claude Design works best with real examples and clear instruction on *what* to t
 
 These are the rules a designer (or Claude) should be able to apply without re-reading anything else:
 
-1. **Negative space is part of the horror.** A near-empty card with one centered creature reads more unsettling than a busy one. Trust the void.
-2. **Color sets mood, not meaning.** See `design-system.md` palette. Pick one accent per page based on the page's emotional weight — never assign accents to factions, regions, or threats.
-3. **Texture should suggest a surface, not decorate one.** Bark grain, chitin sheen, frost lacework, spider silk — used sparingly as borders, watermarks, or under content.
-4. **Bugs are real bugs.** When illustrating, reference real species. No generic fantasy bugs. A leafcutter has a leafcutter's mandibles and gait.
-5. **Ornament is structural, not applied.** A spider-silk divider holds two sections apart; a fiddlehead curls at a section break because the page needs to breathe there. Ornament without a job gets cut.
-6. **Type carries the gothic. Layout carries the whimsy.** A serious old-world serif over a generous, almost storybook layout is the sweet spot — reverse it and you get either a textbook or a Halloween flyer.
-7. **One accent at a time.** A given page picks one accent (frost / amber / pitch / cordyceps / pollen / lichen) as its dominant, chosen by mood. Never the full rainbow.
+1. **Color sets mood, not meaning.** See `design-system.md` palette. Pick one accent per page based on the page's emotional weight — never assign accents to factions, regions, or threats.
+2. **Texture should suggest a surface, not decorate one.** Bark grain, chitin sheen, frost lacework, spider silk — used sparingly as borders, watermarks, or under content.
+3. **Bugs are real bugs.** When illustrating, reference real species. No generic fantasy bugs. A leafcutter has a leafcutter's mandibles and gait.
+4. **Ornament is structural, not applied.** A spider-silk divider holds two sections apart; a fiddlehead curls at a section break because the page needs to breathe there. Ornament without a job gets cut.
+5. **Type carries the gothic. Layout carries the whimsy.** A serious old-world serif over a generous, almost storybook layout is the sweet spot — reverse it and you get either a textbook or a Halloween flyer.
+6. **One or two accents at a time.** A given page picks one or two accents (frost / amber / pitch / cordyceps / pollen / lichen) as its dominant, chosen by mood. Never the full rainbow.
 
 ---
 
