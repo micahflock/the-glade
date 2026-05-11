@@ -4,10 +4,17 @@
 # interactive .html file, designed for offline use on iPad during a
 # session. Reads NPC stat blocks from creatures/ and PC sheets from
 # party/, rolls initiative and HP, and produces a single HTML file
-# with an initiative tracker (HP +/- controls, condition pills,
-# editable PC initiative, turn/round counter) plus collapsible
-# stat-block reference and encounter notes. State persists in the
-# browser's localStorage keyed by encounter slug.
+# with:
+#   - An initiative tracker with editable PC initiative, HP +/- controls,
+#     a per-row HP bar gauge, and condition pill toggles
+#   - A sticky "active reference" panel pinned above the tracker that
+#     shows the stat block for the current turn (or for a row the DM
+#     has tapped to pin)
+#   - Turn/round counter with Next/Prev buttons (clears any pinned row)
+#   - Collapsible full NPC/PC reference and encounter notes below the
+#     tracker for browsing
+# State (HP, conditions, current turn, round, pinned row) persists in
+# the browser's localStorage keyed by encounter slug.
 
 ## Input Handling
 
@@ -193,6 +200,37 @@ Field rules:
 - **notes** — encounter notes pinned to the bottom of the worksheet.
   Use labels like Setup, Difficulty, Tactics, Recharge tracking, Triggers,
   NPC Registry cross-ref, etc.
+
+#### Reference matching (active-reference panel)
+
+The pinned reference panel looks up each combatant's stat block by
+**name prefix**. The lookup strips instance and player suffixes from
+the combatant `name` and matches it against the base of a block's
+`title` (NPCs) or `header` (PCs). Examples:
+
+| Combatant `name`             | Strips to            | Must match prefix of            |
+|------------------------------|----------------------|---------------------------------|
+| `Skull-Cracker`              | `Skull-Cracker`      | npc_block `title`               |
+| `Leafcutter Worker 3 [A]`    | `Leafcutter Worker`  | npc_block `title`               |
+| `Tabatha Starr (Heather)`    | `Tabatha Starr`      | pc_block `header`               |
+
+To make matching work cleanly:
+
+- NPC `title` should lead with the creature's bare name, then a separator
+  (em-dash, en-dash, hyphen, or open-paren). Good:
+  `"Skull-Cracker — Large Monstrosity (ant), Lawful Evil"` or
+  `"Pheromone Crowner (Spring) — Medium Monstrosity (ant), Lawful Evil"`.
+- PC `header` should lead with the character's name, then a separator
+  (em-dash works best). Good:
+  `"Tabatha Starr — Ranger 3 (Gloomstalker) | ..."`.
+- Combatant names for grouped/numbered NPCs follow `"Name N [LETTER]"`
+  (what roll_dice.py emits) — the lookup handles the suffix stripping.
+- Combatant names for PCs may include the player name in parens
+  (e.g. `"Tabatha Starr (Heather)"`) — the parens are stripped.
+
+If a combatant can't be matched, the active-reference panel shows
+"No reference block matched for …" — that's the signal to fix the
+combatant name or the block title.
 
 ### Step 3: Build the HTML
 
