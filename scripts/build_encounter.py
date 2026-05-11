@@ -103,10 +103,18 @@ __CSS__
 <div id="boot-error" style="display:none;padding:16px;background:#ffe0e0;color:#7a0000;border:1px solid #c62828;margin:12px;border-radius:8px;font-family:sans-serif;"></div>
 
 <main>
+  <section id="active-ref">
+    <div class="active-ref-bar">
+      <div class="active-ref-label" id="active-ref-label">No active combatant</div>
+      <div class="active-ref-status" id="active-ref-status"></div>
+    </div>
+    <div class="active-ref-content" id="active-ref-content"></div>
+  </section>
+
   <section class="tracker">
     <div class="tracker-header">
       <h2>Initiative</h2>
-      <span class="hint">Tap init to edit. Tap a row to make it the active turn.</span>
+      <span class="hint">Tap a row to pin its reference above. Next/Prev advances the turn.</span>
     </div>
     <div id="tracker-rows"></div>
   </section>
@@ -208,16 +216,53 @@ h1, h2, h3 { margin: 0; }
 
 main { padding: 0; max-width: 1400px; margin: 0 auto; }
 
+/* Active reference (pinned panel showing the current/focused combatant) */
+#active-ref {
+  position: sticky;
+  top: 48px;
+  z-index: 45;
+  background: var(--panel);
+  border-bottom: 1px solid var(--border);
+  height: 24vh;
+  min-height: 140px;
+  display: flex;
+  flex-direction: column;
+}
+.active-ref-bar {
+  display: flex; justify-content: space-between; align-items: center;
+  padding: 4px 10px;
+  background: var(--accent-light);
+  border-bottom: 1px solid var(--border);
+  flex-shrink: 0;
+}
+.active-ref-label {
+  font-size: 13px; font-weight: 700;
+  color: var(--ink);
+  text-transform: uppercase; letter-spacing: 0.06em;
+  white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
+}
+.active-ref-status {
+  font-size: 11px; color: var(--muted);
+  white-space: nowrap;
+}
+.active-ref-status.pinned { color: var(--warn); font-weight: 600; }
+.active-ref-content {
+  flex: 1;
+  overflow-y: auto;
+  padding: 6px 10px;
+}
+.active-ref-content .empty {
+  color: var(--muted); font-style: italic; padding: 8px 0;
+}
+/* The pinned panel uses the same npc/pc block styles, with a tweaked container. */
+.active-ref-content .npc-title,
+.active-ref-content .pc-row .label { color: var(--ink); }
+
 /* Tracker */
 .tracker {
   background: var(--bg);
   padding: 6px 8px 4px;
   border-bottom: 1px solid var(--border);
-  position: sticky;
-  top: 48px;
-  z-index: 40;
-  max-height: 70vh;
-  overflow-y: auto;
 }
 .tracker-header {
   display: flex; justify-content: space-between; align-items: baseline;
@@ -235,8 +280,8 @@ main { padding: 0; max-width: 1400px; margin: 0 auto; }
 
 .row {
   display: grid;
-  grid-template-columns: 48px 1fr auto;
-  gap: 8px;
+  grid-template-columns: 48px minmax(200px, max-content) 1fr auto;
+  gap: 10px;
   padding: 4px 6px;
   background: var(--panel);
   border: 1px solid var(--border);
@@ -249,6 +294,9 @@ main { padding: 0; max-width: 1400px; margin: 0 auto; }
   background: var(--active);
   border-color: var(--active-border);
   box-shadow: 0 0 0 1px var(--active-border);
+}
+.row.focused:not(.active) {
+  box-shadow: 0 0 0 2px var(--accent);
 }
 .row.dead { opacity: 0.45; background: var(--shade); }
 .row.dead .name { text-decoration: line-through; }
@@ -304,6 +352,31 @@ main { padding: 0; max-width: 1400px; margin: 0 auto; }
   border: 1px solid rgba(229,115,115,0.40);
   border-radius: 10px; padding: 0 7px; font-size: 11px;
   font-weight: 600; line-height: 1.4;
+}
+
+.row .hp-bar {
+  position: relative;
+  height: 18px;
+  background: var(--shade);
+  border: 1px solid var(--border);
+  border-radius: 9px;
+  overflow: hidden;
+  min-width: 80px;
+}
+.row .hp-bar-fill {
+  position: absolute; inset: 0 auto 0 0;
+  background: var(--good);
+  transition: width 0.2s, background 0.2s;
+}
+.row .hp-bar-fill.low { background: var(--warn); }
+.row .hp-bar-fill.bloodied { background: var(--bad); }
+.row .hp-bar-label {
+  position: absolute; inset: 0;
+  display: flex; align-items: center; justify-content: center;
+  font-size: 11px; font-weight: 700;
+  color: var(--ink);
+  text-shadow: 0 0 3px rgba(0,0,0,0.7);
+  letter-spacing: 0.04em;
 }
 
 .row .hp {
@@ -440,17 +513,21 @@ main { padding: 0; max-width: 1400px; margin: 0 auto; }
   display: block; margin-bottom: 1px;
 }
 
-/* Narrow / portrait iPad */
-@media (max-width: 820px) {
-  .row { grid-template-columns: 48px 1fr; }
-  .row .hp { grid-column: 1 / -1; justify-content: flex-end; }
-  .tracker { max-height: 60vh; }
+/* Narrow / portrait iPad: drop the info column to the minimum and let bar flex */
+@media (max-width: 900px) {
+  .row { grid-template-columns: 44px minmax(140px, 1.5fr) 1fr auto; gap: 6px; }
+  .row .hp-bar { min-width: 50px; }
+  #active-ref { height: 22vh; }
 }
 
+/* Phone: collapse the HP bar (color cue on the number suffices) */
 @media (max-width: 540px) {
+  .row { grid-template-columns: 40px 1fr auto; }
+  .row .hp-bar { display: none; }
   .topbar h1 { font-size: 14px; }
   .topbar .round-pill { font-size: 11px; }
   .topbar button { padding: 0 6px; font-size: 12px; min-width: 32px; }
+  #active-ref { height: 28vh; }
 }
 """
 
@@ -475,6 +552,7 @@ JS = r"""
     return {
       round: 1,
       activeId: null,
+      focusOverride: null,
       combatants: ENCOUNTER.combatants.map((c, i) => ({
         id: combatantId(c, i),
         kind: c.kind || "npc",
@@ -552,6 +630,99 @@ JS = r"""
     return "";
   }
 
+  // ── Reference block lookup + HTML builders ───────────────────────────────
+  function npcBaseName(name) {
+    // "Leafcutter Worker 3 [A]" -> "Leafcutter Worker"
+    return String(name || "")
+      .replace(/\s*\[[A-Za-z0-9]+\]\s*$/, "")
+      .replace(/\s+\d+\s*$/, "")
+      .trim();
+  }
+  function pcBaseName(name) {
+    // "Tabatha Starr (Heather)" -> "Tabatha Starr"
+    return String(name || "").replace(/\s*\([^)]*\)\s*$/, "").trim();
+  }
+  function blockBaseName(s) {
+    // Strip everything starting at em-dash or hyphen-dash separators.
+    return String(s || "").split(/\s+[—–-]\s+/)[0].split(/\s*\(/)[0].trim();
+  }
+  function findReferenceFor(combatant) {
+    if (!combatant) return null;
+    if (combatant.kind === "pc") {
+      const base = pcBaseName(combatant.name);
+      const blocks = ENCOUNTER.pc_blocks || [];
+      return blocks.find(p => {
+        const bn = blockBaseName(p.header || p.name || "");
+        return bn === base || base.startsWith(bn) || bn.startsWith(base);
+      }) || null;
+    }
+    const base = npcBaseName(combatant.name);
+    const blocks = ENCOUNTER.npc_blocks || [];
+    return blocks.find(b => {
+      const bn = blockBaseName(b.title || b.name || "");
+      return bn === base || base.startsWith(bn) || bn.startsWith(base);
+    }) || null;
+  }
+  function npcBlockHtml(b) {
+    let html = '<div class="npc-title">' + escapeHtml(b.title || b.name || '') + '</div>';
+    if (b.stats)    html += '<div class="npc-stats">' + escapeHtml(b.stats) + '</div>';
+    if (b.defenses) html += '<div class="npc-defenses">' + escapeHtml(b.defenses) + '</div>';
+    (b.sections || []).forEach(s => {
+      if (s.label) html += '<div class="npc-section-label">' + escapeHtml(s.label) + '</div>';
+      (s.entries || []).forEach(e => {
+        html += '<div class="npc-entry"><span class="entry-name">' +
+          escapeHtml(e.name) + '</span>' + escapeHtml(e.text) + '</div>';
+      });
+    });
+    return html;
+  }
+  function pcBlockHtml(p) {
+    const fields = [
+      ["Name", p.header], ["Abilities", p.abilities], ["Saves", p.saves],
+      ["Attacks", p.attacks], ["Spells", p.spells], ["Features", p.features]
+    ];
+    return fields
+      .filter(([_, v]) => v)
+      .map(([label, val]) => '<div class="pc-row"><span class="label">' +
+        label + ':</span>' + escapeHtml(val) + '</div>')
+      .join('');
+  }
+
+  // ── Active reference (pinned panel) ──────────────────────────────────────
+  function renderActiveRef() {
+    const labelEl   = document.getElementById("active-ref-label");
+    const statusEl  = document.getElementById("active-ref-status");
+    const contentEl = document.getElementById("active-ref-content");
+
+    const focusedId = state.focusOverride || state.activeId;
+    if (!focusedId) {
+      labelEl.textContent = "No active combatant";
+      statusEl.textContent = "";
+      statusEl.className = "active-ref-status";
+      contentEl.innerHTML = '<div class="empty">Press Next to begin combat, or tap a row to pin its reference here.</div>';
+      return;
+    }
+    const c = state.combatants.find(x => x.id === focusedId);
+    if (!c) { contentEl.innerHTML = ''; return; }
+
+    labelEl.textContent = c.name + (c.group ? '  [Group ' + c.group + ']' : '');
+    if (state.focusOverride && state.focusOverride !== state.activeId) {
+      statusEl.textContent = "Pinned (tap row again or press Next to clear)";
+      statusEl.className = "active-ref-status pinned";
+    } else {
+      statusEl.textContent = "Current turn";
+      statusEl.className = "active-ref-status";
+    }
+
+    const block = findReferenceFor(c);
+    if (!block) {
+      contentEl.innerHTML = '<div class="empty">No reference block matched for &ldquo;' + escapeHtml(c.name) + '&rdquo;.</div>';
+      return;
+    }
+    contentEl.innerHTML = (c.kind === "pc") ? pcBlockHtml(block) : npcBlockHtml(block);
+    contentEl.scrollTop = 0;
+  }
+
   // ── Tracker render ───────────────────────────────────────────────────────
   function renderTracker() {
     const root = document.getElementById("tracker-rows");
@@ -563,6 +734,7 @@ JS = r"""
       row.className = "row " + (c.kind || "npc");
       row.dataset.id = c.id;
       if (c.id === state.activeId) row.classList.add("active");
+      if (c.id === state.focusOverride && c.id !== state.activeId) row.classList.add("focused");
       if (c.hp_current <= 0) row.classList.add("dead");
 
       // Init (always-editable input; tapping it brings up the numeric keypad on iOS)
@@ -607,15 +779,33 @@ JS = r"""
         '</div>' +
         conditionsHtml;
       info.addEventListener("click", () => {
-        state.activeId = (state.activeId === c.id) ? null : c.id;
-        saveState(); renderTracker();
+        // Tap a row to pin its reference in the panel above.
+        // Tapping the already-pinned row, or the row that's the current turn,
+        // clears the override and reverts the panel to following the active turn.
+        if (state.focusOverride === c.id || c.id === state.activeId) {
+          state.focusOverride = null;
+        } else {
+          state.focusOverride = c.id;
+        }
+        saveState();
+        renderActiveRef();
+        renderTracker();
       });
       row.appendChild(info);
 
-      // HP (horizontal: display + amt input + −/+ + conditions button on one line)
+      // HP bar (horizontal gauge in the middle)
+      const bar = document.createElement("div");
+      bar.className = "hp-bar";
+      const cls = hpClass(c.hp_current, c.hp_max);
+      const pct = Math.max(0, Math.min(100, (c.hp_current / Math.max(1, c.hp_max)) * 100));
+      bar.innerHTML =
+        '<div class="hp-bar-fill ' + cls + '" style="width: ' + pct + '%"></div>' +
+        '<div class="hp-bar-label">' + Math.round(pct) + '%</div>';
+      row.appendChild(bar);
+
+      // HP (display + amt input + −/+ + conditions button on one line)
       const hp = document.createElement("div");
       hp.className = "hp";
-      const cls = hpClass(c.hp_current, c.hp_max);
       hp.innerHTML =
         '<div class="hp-display ' + cls + '">' +
           escapeHtml(c.hp_current) + '<span class="sep">/</span>' + escapeHtml(c.hp_max) +
@@ -684,24 +874,14 @@ JS = r"""
     document.getElementById("round-num").textContent = state.round;
   }
 
-  // ── Reference render ─────────────────────────────────────────────────────
+  // ── Reference render (full sections at the bottom) ───────────────────────
   function renderReference() {
     const npcRoot = document.getElementById("npc-blocks");
     npcRoot.innerHTML = "";
     (ENCOUNTER.npc_blocks || []).forEach(b => {
       const div = document.createElement("div");
       div.className = "npc-block";
-      let html = '<div class="npc-title">' + escapeHtml(b.title || b.name || '') + '</div>';
-      if (b.stats)    html += '<div class="npc-stats">' + escapeHtml(b.stats) + '</div>';
-      if (b.defenses) html += '<div class="npc-defenses">' + escapeHtml(b.defenses) + '</div>';
-      (b.sections || []).forEach(s => {
-        if (s.label) html += '<div class="npc-section-label">' + escapeHtml(s.label) + '</div>';
-        (s.entries || []).forEach(e => {
-          html += '<div class="npc-entry"><span class="entry-name">' +
-            escapeHtml(e.name) + '</span>' + escapeHtml(e.text) + '</div>';
-        });
-      });
-      div.innerHTML = html;
+      div.innerHTML = npcBlockHtml(b);
       npcRoot.appendChild(div);
     });
 
@@ -710,16 +890,7 @@ JS = r"""
     (ENCOUNTER.pc_blocks || []).forEach(p => {
       const div = document.createElement("div");
       div.className = "pc-block";
-      const rows = [];
-      const fields = [
-        ["Name", p.header], ["Abilities", p.abilities], ["Saves", p.saves],
-        ["Attacks", p.attacks], ["Spells", p.spells], ["Features", p.features]
-      ];
-      fields.forEach(([label, val]) => {
-        if (val) rows.push('<div class="pc-row"><span class="label">' +
-          label + ':</span>' + escapeHtml(val) + '</div>');
-      });
-      div.innerHTML = rows.join('');
+      div.innerHTML = pcBlockHtml(p);
       pcRoot.appendChild(div);
     });
 
@@ -749,7 +920,8 @@ JS = r"""
         state.activeId = list[idx + 1].id;
       }
     }
-    saveState(); renderTracker();
+    state.focusOverride = null;
+    saveState(); renderTracker(); renderActiveRef();
     scrollActiveIntoView();
   }
   function prevTurn() {
@@ -766,7 +938,8 @@ JS = r"""
         state.activeId = list[idx - 1].id;
       }
     }
-    saveState(); renderTracker();
+    state.focusOverride = null;
+    saveState(); renderTracker(); renderActiveRef();
     scrollActiveIntoView();
   }
   function scrollActiveIntoView() {
@@ -779,7 +952,7 @@ JS = r"""
     if (!window.confirm("Reset encounter? This clears HP, conditions, round, and active turn.")) return;
     state = defaultState();
     saveState();
-    renderTracker();
+    renderTracker(); renderActiveRef();
   }
 
   // ── Wire up ──────────────────────────────────────────────────────────────
@@ -791,6 +964,7 @@ JS = r"""
 
   renderReference();
   renderTracker();
+  renderActiveRef();
 })();
 """
 
