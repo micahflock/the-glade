@@ -145,6 +145,13 @@ main { padding: 0; max-width: 1400px; margin: 0 auto; }
   border: 1px solid var(--border);
   border-radius: 6px;
   align-items: center;
+  touch-action: manipulation;
+}
+.row .info { cursor: pointer; }
+.row .info, .topbar button, .row input.init,
+.row .hp-controls button, .row .controls button,
+.row .conditions-panel .pill-toggle {
+  touch-action: manipulation;
 }
 .row.npc { border-left: 3px solid var(--accent); }
 .row.pc  { border-left: 3px solid var(--good); }
@@ -700,19 +707,6 @@ var ENCOUNTER = {"name": "Winter Farm Encounter", "slug": "winter_farm_encounter
           (initModBadge ? ' ' + initModBadge : '') +
         '</div>' +
         conditionsHtml;
-      info.addEventListener("click", () => {
-        // Tap a row to pin its reference in the panel above.
-        // Tapping the already-pinned row, or the row that's the current turn,
-        // clears the override and reverts the panel to following the active turn.
-        if (state.focusOverride === c.id || c.id === state.activeId) {
-          state.focusOverride = null;
-        } else {
-          state.focusOverride = c.id;
-        }
-        saveState();
-        renderActiveRef();
-        renderTracker();
-      });
       row.appendChild(info);
 
       // HP bar (horizontal gauge in the middle)
@@ -877,12 +871,34 @@ var ENCOUNTER = {"name": "Winter Farm Encounter", "slug": "winter_farm_encounter
     renderTracker(); renderActiveRef();
   }
 
+  // Delegated row tap → pin/unpin reference panel. ONE listener on the
+  // container, not per-row — survives re-renders, and avoids race conditions
+  // on iOS where rapid taps can fall through between unbind and rebind.
+  function handleRowClick(ev) {
+    // Ignore taps on interactive controls inside the row.
+    if (ev.target.closest("input, button, .conditions-panel, .hp-bar")) return;
+    const rowEl = ev.target.closest(".row");
+    if (!rowEl) return;
+    const id = rowEl.dataset.id;
+    const c = state.combatants.find(x => x.id === id);
+    if (!c) return;
+    if (state.focusOverride === c.id || c.id === state.activeId) {
+      state.focusOverride = null;
+    } else {
+      state.focusOverride = c.id;
+    }
+    saveState();
+    renderActiveRef();
+    renderTracker();
+  }
+
   // ── Wire up ──────────────────────────────────────────────────────────────
   document.getElementById("encounter-name").textContent = ENCOUNTER.name || "Encounter";
   document.title = "Encounter - " + (ENCOUNTER.name || "Worksheet");
   document.getElementById("next-btn").addEventListener("click", nextTurn);
   document.getElementById("prev-btn").addEventListener("click", prevTurn);
   document.getElementById("reset-btn").addEventListener("click", reset);
+  document.getElementById("tracker-rows").addEventListener("click", handleRowClick);
 
   renderReference();
   renderTracker();
