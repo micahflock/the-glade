@@ -1,0 +1,186 @@
+creature:
+  name: Orchid Mantis, Mama (Spring)
+  size: Large
+  type: Monstrosity (mantis)
+  alignment: Unaligned
+  source: magic-bug-generator (Spring tier) — Hymenopus coronatus, gravid female
+
+combat:
+  ac:
+    value: 16
+    type: natural armor
+  hp:
+    value: 152
+    hit_dice: 16d10+64
+  speed:
+    - 30 ft.
+    - climb 30 ft.
+  cr:
+    rating: 7
+    xp: 2900
+    proficiency_bonus: 3
+
+ability_scores:
+  strength:     { score: 18, modifier: 4 }
+  dexterity:    { score: 18, modifier: 4 }
+  constitution: { score: 18, modifier: 4 }
+  intelligence: { score: 6,  modifier: -2 }
+  wisdom:       { score: 14, modifier: 2 }
+  charisma:     { score: 8,  modifier: -1 }
+
+saving_throws:
+  - Dex +7
+  - Con +7
+
+senses:
+  - darkvision 60 ft.
+  - blindsight 10 ft.
+passive_perception: 15
+languages: []
+
+skills:
+  - Stealth +10
+  - Perception +5
+  - Athletics +7
+
+damage_resistances:
+  - bludgeoning, piercing, and slashing from nonmagical attacks while on or
+    within 5 ft. of a flower (Floral Resilience)
+
+traits:
+  - name: Floral Mimicry
+    description: >
+      While Mama is positioned on a flower of Large size or larger, she can
+      take the Hide action with advantage. While so hidden she is treated as
+      Invisible to creatures more than 5 ft. from the flower's center. She
+      cannot be targeted by ranged attacks unless the attacker is on her
+      flower, and abilities that require sight to target her fail unless
+      the originator is on the flower.
+
+      A creature can FORCE HER VISIBLE in two ways:
+        1. Move onto her flower (within 5 ft. of its center) AND succeed on
+           a DC 16 Wisdom (Perception) check as part of that movement; or
+        2. Make a melee attack against the flower at disadvantage; on a hit,
+           she is revealed and the camouflage ends.
+
+      Re-hiding requires the Hide action.
+  - name: Bound (Bonus Action)
+    description: >
+      Mama leaps to an adjacent flower within 30 ft. without provoking
+      opportunity attacks. If she was using Floral Mimicry, the camouflage
+      ends — observers see the leap and know which flower she landed on,
+      but not where on it (the flower is treated as a 20-ft. square).
+      A creature may make a DC 14 Wisdom (Perception) check at the start
+      of its next turn to narrow her position to a single 5-ft. quadrant
+      of the flower.
+  - name: Reactive Scythe
+    description: >
+      When a creature Mama can see moves within 10 ft. of her or attacks her
+      while she is camouflaged on a flower, she may use her reaction to make
+      one Raptorial Scythe attack against that creature. If she was using
+      Floral Mimicry, the camouflage ends after the reaction resolves.
+  - name: Standing Leap
+    description: >
+      Mama's long jump is up to 30 ft. and her high jump up to 15 ft., with
+      or without a running start.
+
+actions:
+  - name: Multiattack
+    description: >
+      Mama makes two Raptorial Scythe attacks, or one Raptorial Scythe and
+      one Snap-Bite. If both scythes are free and Pin-and-Hold has recharged,
+      she may replace BOTH scythe attacks with one Pin-and-Hold attempt.
+      While she is grappling a creature with Pin-and-Hold, her Multiattack
+      is reduced to one Raptorial Scythe OR one Snap-Bite (one scythe is
+      occupied).
+  - name: Raptorial Scythe
+    description: >
+      Melee Weapon Attack: +7 to hit, reach 10 ft., one target.
+      Hit: 13 (2d8+4) slashing damage. On a critical hit, the target also
+      bleeds: 4 (1d8) slashing damage at the start of its next turn unless
+      it or an ally uses an action to staunch the wound (no check required).
+  - name: Snap-Bite
+    description: >
+      Melee Weapon Attack: +7 to hit, reach 5 ft., one target.
+      Hit: 11 (2d6+4) piercing damage. If the target is grappled by Mama,
+      the bite scores a critical hit on a roll of 18–20.
+  - name: Pin-and-Hold (Recharge 5–6)
+    description: >
+      Mama strikes with both scythes, attempting to lock a target between
+      them. Melee Weapon Attack: +7 to hit, reach 10 ft., one Medium or
+      smaller target.
+      Hit: 13 (2d8+4) slashing damage, and the target must succeed on a
+      DC 15 Strength saving throw or be GRAPPLED (escape DC 15) and
+      RESTRAINED. Mama can grapple only one creature this way at a time.
+
+      EVISCERATING SQUEEZE — At the start of Mama's turn, a creature she is
+      grappling with Pin-and-Hold takes:
+        • Round 1 of grapple: 13 (2d8+4) piercing damage.
+        • Round 2 of grapple (or any round thereafter): 26 (4d10+4) piercing
+          damage, and the target must succeed on a DC 15 Constitution saving
+          throw or be reduced to 0 hit points if the damage drops it below
+          one-quarter of its hit point maximum. (On save, drops to 1 HP
+          instead of 0.)
+
+      The grapple ends — and Pin-and-Hold's recharge timer begins — if any
+      of the following occur (collectively: "interrupt"):
+        • The grappled creature succeeds on an escape check (action, DC 15
+          Strength [Athletics] or Dexterity [Acrobatics]).
+        • An adjacent ally uses an action to attempt a DC 15 Strength
+          (Athletics) check to pry Mama's scythes loose; on success the
+          target is freed.
+        • Mama takes 30 or more damage from a single source while grappling;
+          she must succeed on a Constitution saving throw (DC = half the
+          damage taken, minimum 10) or release.
+        • Mama is knocked prone, blinded, frightened, stunned, paralyzed,
+          or shoved more than 5 ft.
+
+bonus_actions:
+  - name: Bound
+    description: See traits.
+
+reactions:
+  - name: Reactive Scythe
+    description: See traits.
+
+roleplaying:
+  personality: >
+    Patient. Beautiful. Wrong. Mama does not chase — she waits, petal-still,
+    on the brightest bloom, and lets the world come to her flower. She has
+    no language and no thought beyond the next bite and the eggs at her back.
+    The Bloom has not made her cruel; it has made her efficient.
+  motivation: >
+    Feed. Defend the ootheca. The eggs are the future of the patch and the
+    only thing she will leave a kill for. If both oothecae are destroyed,
+    she enters a frenzy: advantage on Pin-and-Hold attack rolls until the
+    end of the encounter.
+  tactics: >
+    Opens hidden on the largest, brightest flower in the patch. Lets the
+    party commit to a position, then opens with Pin-and-Hold on the most
+    isolated melee target — preferring lightly-armored targets she can
+    eviscerate quickly. Bounds away the round after a successful kill or
+    a failed Squeeze, re-hiding on a fresh flower. Only abandons the
+    grapple if she takes 30+ damage in one hit or if both oothecae come
+    under direct threat. Reactive Scythe punishes the first ranged attacker
+    who climbs her flower without thinking.
+
+encounter_notes:
+  party_calibration: >
+    Designed for a 3-PC level-6 party with the supporting babies (2 nymphs)
+    and oothecae (2, 3-round hatch timer). Solo CR 7 against three level-6
+    PCs is just under the standard "Hard" budget — the babies and eggs make
+    up the rest. Mama alone should NOT TPK; she should TERRIFY one PC at a
+    time and force the party to coordinate a rescue.
+  the_two-turn_threat: >
+    Math check — a level-6 PC with ~45 HP grappled and not rescued takes
+    ~13 on round 1 of grapple, ~26 on round 2 = ~39 damage over two of
+    Mama's turns, plus a CON save against the drop-to-0 clause. Survivable
+    with healing or rescue; lethal if ignored. Exactly the "scary if it
+    can get its arms on one of them for a full two turns" the brief asked
+    for.
+  flower_map_notes: >
+    Designed assuming a whiteboard map with 4–6 flowers at 30 ft. spacing,
+    each treated as a 20-ft. square. Mama can Bound to any adjacent flower
+    as a bonus action; the party can track her flower-to-flower but never
+    pinpoint her on a fresh flower without Perception or a melee
+    commitment.
