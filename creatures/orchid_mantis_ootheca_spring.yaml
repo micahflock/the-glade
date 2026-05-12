@@ -1,0 +1,92 @@
+creature:
+  name: Orchid Mantis Ootheca (Spring)
+  size: Small
+  type: Object (egg case)
+  alignment: Unaligned
+  source: magic-bug-generator (Spring tier) — Hymenopus coronatus, foam ootheca
+
+combat:
+  ac:
+    value: 12
+    type: foam shell
+  hp:
+    value: 15
+    hit_dice: null
+  speed:
+    - 0 ft. (affixed to a flower or stem)
+  cr:
+    rating: 1/8
+    xp: 25
+    proficiency_bonus: 2
+
+ability_scores:
+  strength:     { score: 1,  modifier: -5 }
+  dexterity:    { score: 1,  modifier: -5 }
+  constitution: { score: 12, modifier: 1 }
+  intelligence: { score: 0,  modifier: -5 }
+  wisdom:       { score: 0,  modifier: -5 }
+  charisma:     { score: 0,  modifier: -5 }
+
+defenses:
+  damage_vulnerabilities:
+    - fire
+  damage_immunities:
+    - poison
+    - psychic
+  condition_immunities:
+    - blinded
+    - charmed
+    - deafened
+    - exhaustion
+    - frightened
+    - paralyzed
+    - petrified
+    - poisoned
+    - prone
+    - stunned
+    - unconscious
+
+passive_perception: 0
+
+traits:
+  - name: Object
+    description: >
+      The ootheca is an inanimate object. It can be attacked normally;
+      attacks against it hit automatically at melee range, and ranged
+      attacks against it have advantage. A creature can also destroy
+      an ootheca by spending an action to crush or pry it apart with a
+      DC 12 Strength (Athletics) check.
+  - name: Hatch Timer
+    description: >
+      The eggs hatch on initiative count 20 of the third round after
+      combat begins (i.e., after three full rounds of grace). On hatch,
+      each surviving ootheca produces one Orchid Mantis Nymph (Spring)
+      in its space; the new nymph rolls initiative and acts on its own
+      count from the following round.
+
+      A destroyed ootheca produces nothing.
+  - name: Pheromone Tether
+    description: >
+      While at least one ootheca is intact, Mama will not flee the patch
+      even if reduced below half HP. If all oothecae are destroyed and
+      she is below half HP, she may attempt to disengage and retreat
+      (DM discretion).
+
+roleplaying:
+  tactics: >
+    The oothecae do nothing. They are pressure objects on the
+    battlefield — a ticking clock the party must decide whether to spend
+    actions on. Place them visibly: one near Mama's starting flower,
+    one on a flower adjacent to it. Both within 30 ft. of the patch
+    center so they are reachable but not free.
+
+encounter_notes:
+  recommended_count: >
+    2 oothecae. Each one ignored adds 1 nymph on round 3+. A party that
+    spends two actions destroying both eggs has effectively traded those
+    actions for not fighting two extra nymphs — a fair trade that
+    rewards target prioritization.
+  destroying_options: >
+    - Fire damage doubles (vulnerability), so a single Firebolt or torch
+      strike will usually do it.
+    - DC 12 Athletics check as an action to crush by hand.
