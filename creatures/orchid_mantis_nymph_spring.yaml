@@ -1,0 +1,81 @@
+creature:
+  name: Orchid Mantis Nymph (Spring)
+  size: Small
+  type: Monstrosity (mantis)
+  alignment: Unaligned
+  source: magic-bug-generator (Spring tier) — Hymenopus coronatus, first-instar nymph
+
+combat:
+  ac:
+    value: 13
+    type: natural armor
+  hp:
+    value: 22
+    hit_dice: 4d6+8
+  speed:
+    - 25 ft.
+    - climb 25 ft.
+  cr:
+    rating: 1/2
+    xp: 100
+    proficiency_bonus: 2
+
+ability_scores:
+  strength:     { score: 12, modifier: 1 }
+  dexterity:    { score: 16, modifier: 3 }
+  constitution: { score: 14, modifier: 2 }
+  intelligence: { score: 4,  modifier: -3 }
+  wisdom:       { score: 12, modifier: 1 }
+  charisma:     { score: 6,  modifier: -2 }
+
+senses:
+  - darkvision 30 ft.
+passive_perception: 11
+languages: []
+
+skills:
+  - Stealth +5
+
+traits:
+  - name: Petal-Crouch
+    description: >
+      While on a flower of Medium size or larger, the nymph has advantage
+      on Dexterity (Stealth) checks. This does NOT grant invisibility — it
+      only helps the nymph hide in the normal sense. Players who succeed
+      on a Perception check against the nymph's Stealth can target it
+      normally.
+  - name: Pack Striker
+    description: >
+      The nymph has advantage on attack rolls against a creature if at
+      least one of its allies (Mama or another nymph) is within 5 ft. of
+      the target and not incapacitated.
+  - name: Springing Leap
+    description: >
+      The nymph's long jump is up to 15 ft. and its high jump up to 10 ft.,
+      with or without a running start. It can use this as part of its
+      movement.
+
+actions:
+  - name: Nymph-Scythe
+    description: >
+      Melee Weapon Attack: +5 to hit, reach 5 ft., one target.
+      Hit: 5 (1d6+3) slashing damage.
+
+roleplaying:
+  personality: >
+    Newly hatched and starving. No camouflage instinct yet, but the pack
+    drive is hardwired — they swarm whatever Mama strikes first.
+  motivation: >
+    Eat. Stay near Mama. If Mama is killed, half flee, half frenzy
+    (DM's call per individual).
+  tactics: >
+    Hop toward whichever PC Mama has grappled, taking advantage from
+    Pack Striker. If Mama is incapacitated, they target the nearest
+    bleeding or prone PC. They do not coordinate beyond instinct — they
+    will all swarm the same target if given the chance.
+
+encounter_notes:
+  recommended_count: >
+    2 nymphs in the opening wave. Up to 2 more if the oothecae are
+    allowed to hatch. Cap the total live nymphs at 4 — beyond that the
+    encounter becomes a slog rather than a threat.
