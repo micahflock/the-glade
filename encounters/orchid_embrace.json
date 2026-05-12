@@ -1,0 +1,118 @@
+{
+  "name": "Orchid Embrace",
+  "slug": "orchid_embrace",
+  "combatants": [
+    { "id": "mama",    "kind": "npc", "name": "Mama Mantis",      "ac": 16, "hp_max": 139, "hp_current": 139, "speed": "30 ft., climb 30 ft., jump 30 ft.", "initiative": 14, "group": null, "notes": "Recharge: Pin-and-Hold (5–6). Resistance to nonmagical B/P/S while on/within 5 ft. of a flower." },
+    { "id": "nymph1",  "kind": "npc", "name": "Mantis Nymph 1",   "ac": 13, "hp_max": 19,  "hp_current": 19,  "speed": "25 ft., climb 25 ft., jump 15 ft.", "initiative": 10, "group": null, "notes": "Pack Striker: adv vs target adjacent to an ally." },
+    { "id": "nymph2",  "kind": "npc", "name": "Mantis Nymph 2",   "ac": 13, "hp_max": 24,  "hp_current": 24,  "speed": "25 ft., climb 25 ft., jump 15 ft.", "initiative": 18, "group": null, "notes": "Pack Striker: adv vs target adjacent to an ally." },
+    { "id": "egg1",    "kind": "npc", "name": "Mantis Ootheca 1", "ac": 12, "hp_max": 15,  "hp_current": 15,  "speed": "0 ft. (affixed)",                   "initiative": null, "group": null, "notes": "Object. Does not take turns. HATCHES initiative 20 of round 3. Fire vulnerability. DC 12 Athletics to crush by hand." },
+    { "id": "egg2",    "kind": "npc", "name": "Mantis Ootheca 2", "ac": 12, "hp_max": 15,  "hp_current": 15,  "speed": "0 ft. (affixed)",                   "initiative": null, "group": null, "notes": "Object. Does not take turns. HATCHES initiative 20 of round 3. Fire vulnerability. DC 12 Athletics to crush by hand." },
+    { "id": "tabby",   "kind": "pc",  "name": "Tabatha Starr (Heather)",     "ac": 15, "hp_max": 42, "hp_current": 42, "speed": "30 ft.", "initiative": null, "init_mod": "+6", "notes": "Dread Ambusher rd 1: +10 spd, +1 bonus attack (+1d8 on hit). Hunter's Mark (1st-level slot)." },
+    { "id": "nancy",   "kind": "pc",  "name": "Nancy Alfons (Rowyn)",        "ac": 16, "hp_max": 37, "hp_current": 37, "speed": "40 ft.", "initiative": null, "init_mod": "+4", "notes": "Bladesong (bonus, 6/long rest): +3 AC (→19), +10 spd, adv DEX(Acro), +3 concentration saves. Shield reaction (+5 AC). Misty Step 1/long rest free." },
+    { "id": "drix",    "kind": "pc",  "name": "Jiminy 'Drix' Hendrix (Katie)", "ac": 15, "hp_max": 39, "hp_current": 39, "speed": "30 ft.", "initiative": null, "init_mod": "+3", "notes": "Bardic Inspiration d8, 5 uses, short-rest recovery. Cutting Words (reaction). Counterspell available (3rd-level slot)." }
+  ],
+  "npc_blocks": [
+    {
+      "title": "Mama Mantis (Orchid Mantis, Spring) — Large Monstrosity (mantis), Unaligned",
+      "stats": "AC 16 (natural armor) | HP 152 (16d10+64) | Speed 30 ft., climb 30 ft. | STR 18 (+4) DEX 18 (+4) CON 18 (+4) INT 6 (-2) WIS 14 (+2) CHA 8 (-1)",
+      "defenses": "Saves: DEX +7, CON +7 | Resistances: nonmagical B/P/S while on/within 5 ft. of a flower (Floral Resilience) | Skills: Stealth +10, Perception +5, Athletics +7 | Senses: darkvision 60 ft., blindsight 10 ft., passive Perception 15 | CR 7 (2900 XP) | PB +3",
+      "sections": [
+        { "label": "TRAITS", "entries": [
+          { "name": "Floral Mimicry", "text": "While on a flower of Large size or larger, Mama can Hide as an action with advantage. While hidden she is INVISIBLE to creatures more than 5 ft. from the flower's center. Cannot be targeted by ranged attacks unless the attacker is on her flower; sight-targeted spells fail unless originator is on the flower.\n\nFORCE VISIBLE: (a) move onto her flower AND succeed DC 16 Wisdom (Perception) as part of that movement; OR (b) make a melee attack against the flower at disadvantage — on a hit she is revealed and the camouflage ends.\n\nRe-hiding requires the Hide action." },
+          { "name": "Standing Leap", "text": "Long jump up to 30 ft., high jump up to 15 ft., with or without a running start." }
+        ]},
+        { "label": "ACTIONS", "entries": [
+          { "name": "Multiattack", "text": "Two Raptorial Scythe attacks, OR one Scythe + one Snap-Bite, OR (both scythes free + Pin-and-Hold recharged) one Pin-and-Hold attempt replacing both scythe attacks. While grappling a creature with Pin-and-Hold, Multiattack reduces to ONE Raptorial Scythe OR ONE Snap-Bite." },
+          { "name": "Raptorial Scythe", "text": "Melee Weapon Attack: +7 to hit, reach 10 ft., one target. Hit: 13 (2d8+4) slashing. On a crit: target also bleeds 4 (1d8) slashing at start of its next turn unless it or an ally uses an action to staunch (no check)." },
+          { "name": "Snap-Bite", "text": "Melee Weapon Attack: +7 to hit, reach 5 ft., one target. Hit: 11 (2d6+4) piercing. Crits on 18–20 if target is grappled by Mama." },
+          { "name": "Pin-and-Hold (Recharge 5–6)", "text": "Melee Weapon Attack: +7 to hit, reach 10 ft., one Medium-or-smaller target. Hit: 13 (2d8+4) slashing + DC 15 STR save or GRAPPLED (escape DC 15) and RESTRAINED. Only one creature can be grappled this way at a time.\n\nEVISCERATING SQUEEZE — At the start of Mama's turn, the grappled target takes:\n  • Round 1 of grapple: 13 (2d8+4) piercing.\n  • Round 2+ of grapple: 26 (4d10+4) piercing AND DC 15 CON save or STUNNED until start of its next turn (free 18–20 crit Snap-Bite next round).\n\nGRAPPLE ENDS / INTERRUPT (any of):\n  • Target makes escape check (action, DC 15 STR Athletics or DEX Acrobatics).\n  • Adjacent ally uses an action: DC 15 STR (Athletics) to pry her loose.\n  • Mama takes 30+ damage from a single source while grappling: CON save (DC = half damage taken, min 10) or release.\n  • Mama knocked prone, blinded, frightened, stunned, paralyzed, or shoved more than 5 ft." }
+        ]},
+        { "label": "BONUS ACTIONS", "entries": [
+          { "name": "Bound", "text": "Leap to an adjacent flower within 30 ft.; no opportunity attacks. If using Floral Mimicry, camo ends — observers see the leap and know which flower she landed on, but not where on it (20-ft. square). At start of a creature's next turn it may make DC 14 WIS (Perception) to narrow her position to a 5-ft. quadrant." }
+        ]},
+        { "label": "REACTIONS", "entries": [
+          { "name": "Reactive Scythe", "text": "When a creature Mama can see moves within 10 ft. of her or attacks her while she is camouflaged on a flower, she may make one Raptorial Scythe attack against that creature. If using Floral Mimicry, the camouflage ends after the reaction resolves." }
+        ]},
+        { "label": "TACTICS", "entries": [
+          { "name": "Opening", "text": "Hidden on the largest/brightest flower in the patch. Lets the party commit, then opens Pin-and-Hold on the most isolated melee target — preferring lightly-armored PCs she can eviscerate quickly." },
+          { "name": "Mid-fight", "text": "Bounds away the round after a successful kill or failed Squeeze, re-hiding on a fresh flower. Only abandons the grapple if she takes 30+ damage in one hit or if both oothecae come under direct threat." },
+          { "name": "Reactive Scythe baiting", "text": "Punishes the first ranged attacker who climbs her flower without thinking. Use the reaction the FIRST time a PC enters her flower; subsequent visitors should be punished by Pin-and-Hold instead." },
+          { "name": "Frenzy clause (homebrew)", "text": "If BOTH oothecae are destroyed: Mama gains advantage on Pin-and-Hold attack rolls for the rest of the encounter." }
+        ]}
+      ]
+    },
+    {
+      "title": "Mantis Nymph (Orchid Mantis, Spring) — Small Monstrosity (mantis), Unaligned",
+      "stats": "AC 13 (natural armor) | HP 22 (4d6+8) | Speed 25 ft., climb 25 ft. | STR 12 (+1) DEX 16 (+3) CON 14 (+2) INT 4 (-3) WIS 12 (+1) CHA 6 (-2)",
+      "defenses": "Skills: Stealth +5 | Senses: darkvision 30 ft., passive Perception 11 | CR 1/2 (100 XP) | PB +2",
+      "sections": [
+        { "label": "TRAITS", "entries": [
+          { "name": "Petal-Crouch", "text": "While on a flower of Medium size or larger, advantage on Stealth checks. NOT invisibility — players can target normally if they spot the nymph." },
+          { "name": "Pack Striker", "text": "Advantage on attack rolls against a creature if at least one ally (Mama or another nymph) is within 5 ft. of the target and not incapacitated." },
+          { "name": "Springing Leap", "text": "Long jump up to 15 ft., high jump up to 10 ft., as part of movement." }
+        ]},
+        { "label": "ACTIONS", "entries": [
+          { "name": "Nymph-Scythe", "text": "Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 5 (1d6+3) slashing." }
+        ]},
+        { "label": "TACTICS", "entries": [
+          { "name": "Behavior", "text": "Hop toward whichever PC Mama has grappled, taking advantage from Pack Striker. If Mama is incapacitated, target the nearest bleeding or prone PC. They do not coordinate beyond instinct — all swarm the same target if given the chance." },
+          { "name": "Morale (DM call)", "text": "If Mama is killed: nymphs may flee, frenzy, or fight on per DM discretion." }
+        ]}
+      ]
+    },
+    {
+      "title": "Mantis Ootheca (Orchid Mantis, Spring) — Small Object",
+      "stats": "AC 12 (foam shell) | HP 15 (flat) | Speed 0 ft. | All abilities 1 / 0 (treat as inanimate)",
+      "defenses": "Vulnerable: fire | Immune (damage): poison, psychic | Immune (conditions): blinded, charmed, deafened, exhaustion, frightened, paralyzed, petrified, poisoned, prone, stunned, unconscious | CR 1/8 (25 XP) | PB +2",
+      "sections": [
+        { "label": "TRAITS", "entries": [
+          { "name": "Object", "text": "Inanimate. Melee attacks against it hit automatically; ranged attacks have advantage. A creature can crush an ootheca as an action with a DC 12 Strength (Athletics) check." },
+          { "name": "Hatch Timer", "text": "Hatches on initiative count 20 of ROUND 3 (three full rounds of grace). Each surviving ootheca produces one Mantis Nymph in its space; the new nymph rolls initiative and acts on its own count from the following round. A destroyed ootheca produces nothing." },
+          { "name": "Pheromone Tether", "text": "While at least one ootheca is intact, Mama will not flee the patch even below half HP. If all oothecae are destroyed AND she is below half HP, she may disengage and retreat (DM discretion)." }
+        ]},
+        { "label": "TARGETING SHORTCUTS", "entries": [
+          { "name": "Quick destruction", "text": "Fire damage doubles (vulnerability) — a single Fire Bolt or torch swing usually one-shots it. Any ranged attack hitting for 15+ destroys an ootheca outright. DC 12 Athletics as an action also works." }
+        ]}
+      ]
+    }
+  ],
+  "pc_blocks": [
+    {
+      "header": "Tabatha Starr (Heather) — Ranger 6 (Gloomstalker) | Lone Star Tick | AC 15 | HP 42 | Speed 30 | Passive Perception 15 | Init +6",
+      "abilities": "STR 14 (+2) DEX 18 (+4) CON 12 (+1) INT 10 (+0) WIS 14 (+2) CHA 10 (+0)",
+      "saves": "STR +5 (prof), DEX +7 (prof). Others use ability mod.",
+      "attacks": "Longbow +9, 1d8+4 piercing (150/600) [Archery]  |  Dagger (thrown) +9, 1d4+4 piercing (20/60) [Archery per DM ruling]  |  Dagger (melee) +7, 1d4+4 piercing.  |  EXTRA ATTACK (Ranger 5): attack twice on Attack action.  |  Spell save DC 13, spell attack +5. 1st-level slots: 3. 2nd-level slots: 2.",
+      "spells": "1st: Disguise Self, Hunter's Mark (bonus, concentration), Speak with Animals, Jump. 2nd: Rope Trick, Pass without Trace.",
+      "features": "Favored Enemy: Mammals, Plants. Favored Terrain: Forest, Arctic. Archery Fighting Style (+2 to ranged attack rolls). Dread Ambusher (rd 1): +10 spd; bonus attack as part of Attack action; +1d8 on hit. Umbral Sight: darkvision 60 ft.; invisible to darkvision creatures in darkness. Sharpshooter (homebrew): no long-range disadv, ignore half/three-quarters cover, -5 to hit for +10 damage. Wanderer: excellent map memory."
+    },
+    {
+      "header": "Nancy Alfons (Rowyn) — Rogue 4 (Arcane Trickster) / Wizard 2 (Bladesinger) | Jumping Spider | AC 16 (19 w/ Bladesong) | HP 37 | Speed 40 (50 w/ Bladesong) | Passive Perception 11 | Init +4",
+      "abilities": "STR 6 (-2) DEX 18 (+4) CON 12 (+1) INT 16 (+3) WIS 12 (+1) CHA 12 (+1)",
+      "saves": "DEX +7 (prof), INT +6 (prof). Others use ability mod.",
+      "attacks": "Rapier +7, 1d8+4 piercing  |  Shortbow +7, 1d6+4 piercing (80/320)  |  Spell attack +6, Spell save DC 14.  |  Sneak Attack 2d6 (once per turn, conditions apply).  |  Green-Flame Blade cantrip (melee attack, +1d8 fire on a second target within 5 ft. at higher levels — no scaling at 5th level yet).",
+      "spells": "Cantrips: Mage Hand (Legerdemain), Message, Minor Illusion, Green-Flame Blade, Mending, Sword Burst (5-ft. burst, DEX save DC 14, 1d6 force; scales). 1st (4 slots): Disguise Self, Detect Magic (ritual), Identify (ritual), Sleep, Tasha's Hideous Laughter, Shield (reaction +5 AC), Tenser's Floating Disk (ritual). 2nd (2 slots): Misty Step (Fey Touched: 1/long rest free, else slot).",
+      "features": "Mobile feat: +10 spd; Dash ignores difficult terrain; melee target can't OA you rest of turn. Fey Touched feat: Misty Step + Detect Magic 1/long rest each free. Cunning Action (bonus): Dash/Disengage/Hide. Expertise: Sleight of Hand +10, Investigation +9. Mage Hand Legerdemain: invisible hand, can pick pockets / lockpick / disarm at range. Bladesong (bonus, 6/long rest, 1-min): +3 AC, +10 spd, adv DEX (Acro), +3 concentration saves, +3 dmg once/turn on a weapon hit. Ends if incapacitated / medium-or-heavier armor / shield."
+    },
+    {
+      "header": "Jiminy 'Drix' Hendrix (Katie) — Bard 6 (College of Lore) | Cricket | AC 15 | HP 39 | Speed 30 | Passive Perception 13 | Init +3",
+      "abilities": "STR 6 (-2) DEX 16 (+3) CON 13 (+1) INT 10 (+0) WIS 10 (+0) CHA 20 (+5)",
+      "saves": "DEX +6 (prof), CHA +8 (prof). Others use ability mod.",
+      "attacks": "Rapier +6, 1d8+3 piercing  |  Shortsword +6, 1d6+3 piercing  |  Spell attack +8, Spell save DC 16.",
+      "spells": "Cantrips: Vicious Mockery, Prestidigitation, Dancing Lights. 1st (4 slots): Healing Word (bonus), Disguise Self, Silvery Barbs (reaction), Dissonant Whispers, Unseen Servant (ritual). 2nd (3 slots): Hold Person (concentration), Locate Animals or Plants (ritual). 3rd (3 slots): Hypnotic Pattern (concentration), Phantom Steed (ritual), Counterspell (reaction), Leomund's Tiny Hut (ritual).",
+      "features": "Bardic Inspiration: d8, 5 uses, bonus action 60 ft.; SHORT-rest recovery (Font of Inspiration). Jack of All Trades: +1 to non-prof checks. Cutting Words (reaction): spend Inspiration die to subtract from enemy attack/check/damage. Expertise: Performance +11, Persuasion +11, Deception +11. Magical Secrets (Lore 6): Counterspell + Leomund's Tiny Hut. Song Distraction (homebrew): Performance vs Insight grants disadv on target's Perception/Investigation while you perform."
+    }
+  ],
+  "notes": [
+    { "label": "Setup", "text": "Beeatrix has sent the party into the flower patch to deal with the mantis preying on her field. Map on the whiteboard: 4–6 flowers (each treated as a 20-ft. square) at ~30 ft. spacing, connected by vines/plateaus. Mama hidden on the brightest flower at the start. Oothecae visible: one near Mama's starting flower, one on an adjacent flower. The party should be able to SEE the oothecae from the start of the encounter (a quick Survival or Nature ping makes them obvious if not)." },
+    { "label": "Difficulty note", "text": "Opening XP budget: Mama 2900 + 2× Nymph 200 + 2× Ootheca 50 = 3150 XP. Three level-6 PCs Hard threshold ≈ 2250 XP; Deadly ≈ 3400. Sits between Hard and Deadly — appropriate for a planned headline boss with rescue mechanics. If both oothecae hatch (party ignored them), encounter inflates by 200 XP plus tempo cost. Should NOT TPK; should TERRIFY one PC at a time and force coordination." },
+    { "label": "Recharge tracking", "text": "Mama: Pin-and-Hold (5–6). Roll at start of each of her turns." },
+    { "label": "Hatch Timer", "text": "Oothecae hatch on initiative count 20 of ROUND 3 (three full rounds of grace). Each surviving ootheca produces 1 nymph; new nymphs roll initiative and act on their own count starting the following round. Mark each round-end on the whiteboard so the players feel the clock." },
+    { "label": "The two-turn threat (math check)", "text": "A level-6 PC with ~40 HP grappled and not rescued takes ~13 on Mama's round-1 squeeze, ~26 on round-2 squeeze = ~39 damage over two of Mama's turns. Round-2 CON save (DC 15) failure adds STUNNED for 1 round, which gives Mama a free auto-crit Snap-Bite next turn. SURVIVABLE with healing or rescue; LETHAL if ignored. Drix's Healing Word (bonus, 60 ft.) and Nancy's Shield reaction are the obvious rescue tools." },
+    { "label": "Force-visible reminder", "text": "While Mama is camouflaged on a flower, ranged attacks against her FAIL unless the attacker is on the flower. To engage at range, a PC must (a) move onto her flower AND DC 16 Wisdom (Perception) to pinpoint, OR (b) melee-attack the flower at disadvantage. Reactive Scythe punishes the first PC who climbs her flower." },
+    { "label": "Floral Resilience (homebrew)", "text": "Mama has resistance to nonmagical B/P/S while on or within 5 ft. of a flower. Tabby's longbow (mundane) is halved; magical weapons / spells / fire / cold / etc. are not. This is the leash that makes leaving the flower a real cost for her." },
+    { "label": "Frenzy clause (homebrew)", "text": "If BOTH oothecae are destroyed: Mama gains advantage on Pin-and-Hold attack rolls for the rest of the encounter. Stat-block rider — confirm at table." },
+    { "label": "Pheromone Tether (homebrew, [SLOP] flagged)", "text": "While ≥1 ootheca survives, Mama will not flee even below half HP. Pure flavor lever — ignore if you don't want it." },
+    { "label": "Rewards (per s06 draft)", "text": "Mantible — invisibility-capable short sword (1d8 finesse, kukri shape) salvaged from one of Mama's mandibles. Mantis-spine dagger (cosmetic flavor or DM-call). Bee gives a little gold; the real reward is from the mantis." },
+    { "label": "Campaign cross-ref", "text": "This is the planted payoff for the 'Mantises in the Overgrowth' thread foreshadowed in Sessions 4–5. Bee field side quest, Beeatrix as questgiver (offscreen in this fight per DM call). Located in the Overgrowth, magic-amplified zone." }
+  ]
+}

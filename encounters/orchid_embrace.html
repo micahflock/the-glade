@@ -1,0 +1,910 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="theme-color" content="#4472c4">
+<title>Encounter - Orchid Embrace</title>
+<style>
+
+* { box-sizing: border-box; }
+:root {
+  --bg: #1f1a16;             /* dark warm brown */
+  --panel: #2b2520;          /* slightly lighter brown */
+  --panel-2: #342d27;        /* hover/contrast brown */
+  --ink: #f0e8d8;            /* warm off-white */
+  --muted: #a89e8c;          /* dim cream */
+  --accent: #6b8fd8;          /* brighter blue for dark bg */
+  --accent-light: #2c3a55;   /* dark blue for badges */
+  --shade: #1a1612;           /* darker brown for nested cards */
+  --border: #4a3f35;          /* warm brown border */
+  --good: #7cc47c;            /* green */
+  --bad: #e57373;             /* light red */
+  --warn: #ffb74d;            /* amber */
+  --active: #4a3a1f;          /* dark amber for active row */
+  --active-border: #ffb74d;
+}
+html, body {
+  margin: 0; padding: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", system-ui, sans-serif;
+  background: var(--bg); color: var(--ink);
+  font-size: 16px;
+  -webkit-text-size-adjust: 100%;
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
+}
+button { font: inherit; cursor: pointer; }
+h1, h2, h3 { margin: 0; }
+
+/* Topbar */
+.topbar {
+  position: sticky; top: 0; z-index: 50;
+  background: var(--accent-light); color: var(--ink);
+  display: flex; align-items: center; justify-content: space-between;
+  padding: 6px 12px;
+  gap: 10px;
+  border-bottom: 1px solid var(--border);
+  box-shadow: 0 2px 6px rgba(0,0,0,0.4);
+}
+.topbar-left { display: flex; align-items: baseline; gap: 10px; min-width: 0; }
+.topbar h1 {
+  font-size: 16px; font-weight: 600;
+  white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
+}
+.topbar .round-pill {
+  background: rgba(255,255,255,0.10); padding: 3px 9px;
+  border-radius: 10px; font-size: 13px; white-space: nowrap;
+}
+.topbar-right { display: flex; gap: 5px; align-items: center; }
+.topbar button {
+  min-height: 36px; min-width: 36px;
+  padding: 0 10px;
+  border: 1px solid rgba(255,255,255,0.20);
+  background: rgba(255,255,255,0.06);
+  color: var(--ink); border-radius: 6px;
+  font-weight: 600;
+  font-size: 14px;
+}
+.topbar button.primary {
+  background: var(--accent); color: white; border-color: var(--accent);
+}
+.topbar button.danger { background: rgba(0,0,0,0.25); }
+.topbar button:active { opacity: 0.6; }
+
+main { padding: 0; max-width: 1400px; margin: 0 auto; }
+
+/* Active reference (pinned panel showing the current/focused combatant) */
+#active-ref {
+  position: sticky;
+  top: 48px;
+  z-index: 45;
+  background: var(--panel);
+  border-bottom: 1px solid var(--border);
+  height: 24vh;
+  min-height: 140px;
+  display: flex;
+  flex-direction: column;
+}
+.active-ref-bar {
+  display: flex; justify-content: space-between; align-items: center;
+  padding: 4px 10px;
+  background: var(--accent-light);
+  border-bottom: 1px solid var(--border);
+  flex-shrink: 0;
+}
+.active-ref-label {
+  font-size: 13px; font-weight: 700;
+  color: var(--ink);
+  text-transform: uppercase; letter-spacing: 0.06em;
+  white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
+}
+.active-ref-status {
+  font-size: 11px; color: var(--muted);
+  white-space: nowrap;
+}
+.active-ref-status.pinned { color: var(--warn); font-weight: 600; }
+.active-ref-content {
+  flex: 1;
+  overflow-y: auto;
+  padding: 6px 10px;
+}
+.active-ref-content .empty {
+  color: var(--muted); font-style: italic; padding: 8px 0;
+}
+/* The pinned panel uses the same npc/pc block styles, with a tweaked container. */
+.active-ref-content .npc-title,
+.active-ref-content .pc-row .label { color: var(--ink); }
+
+/* Tracker */
+.tracker {
+  background: var(--bg);
+  padding: 6px 8px 4px;
+  border-bottom: 1px solid var(--border);
+}
+.tracker-header {
+  display: flex; justify-content: space-between; align-items: baseline;
+  margin-bottom: 4px;
+  gap: 10px;
+  padding: 0 2px;
+}
+.tracker h2 {
+  font-size: 11px; color: var(--muted);
+  text-transform: uppercase; letter-spacing: 0.08em;
+}
+.tracker .hint { font-size: 11px; color: var(--muted); }
+
+#tracker-rows { display: grid; gap: 3px; }
+
+.row {
+  display: grid;
+  grid-template-columns: 48px minmax(200px, max-content) 1fr auto;
+  gap: 10px;
+  padding: 4px 6px;
+  background: var(--panel);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  align-items: center;
+  touch-action: manipulation;
+}
+.row .info { cursor: pointer; }
+.row .info, .topbar button, .row input.init,
+.row .hp-controls button, .row .controls button,
+.row .conditions-panel .pill-toggle {
+  touch-action: manipulation;
+}
+.row.npc { border-left: 3px solid var(--accent); }
+.row.pc  { border-left: 3px solid var(--good); }
+.row.active {
+  background: var(--active);
+  border-color: var(--active-border);
+  box-shadow: 0 0 0 1px var(--active-border);
+}
+.row.focused:not(.active) {
+  box-shadow: 0 0 0 2px var(--accent);
+}
+.row.dead { opacity: 0.45; background: var(--shade); }
+.row.dead .name { text-decoration: line-through; }
+
+.row input.init {
+  font-family: inherit;
+  font-size: 20px; font-weight: 700; text-align: center;
+  color: var(--ink);
+  background: var(--accent-light);
+  border: 0;
+  border-radius: 5px;
+  padding: 4px 0;
+  width: 48px; height: 40px;
+  -webkit-appearance: none;
+  appearance: none;
+  outline: none;
+}
+.row input.init.empty { background: var(--shade); color: var(--muted); }
+.row input.init:focus {
+  background: var(--panel-2);
+  box-shadow: 0 0 0 2px var(--accent);
+}
+.row input.init::placeholder { color: var(--muted); opacity: 1; }
+
+.row .info { min-width: 0; }
+.row .name {
+  font-weight: 600; font-size: 15px; line-height: 1.2;
+  word-wrap: break-word;
+}
+.row .name .group-tag {
+  color: var(--muted); font-weight: 500; font-size: 12px;
+  margin-left: 4px;
+}
+.row .meta {
+  color: var(--muted); font-size: 12px; margin-top: 1px;
+  line-height: 1.3;
+}
+.row .meta .ac { font-weight: 600; color: var(--ink); }
+.row .meta .pc-init-mod {
+  display: inline-block;
+  background: var(--accent-light);
+  color: var(--ink);
+  font-weight: 600;
+  padding: 0 6px; border-radius: 3px;
+  margin-left: 4px;
+  font-size: 11px;
+}
+.row .conditions-pills {
+  display: flex; gap: 3px; flex-wrap: wrap; margin-top: 2px;
+}
+.row .conditions-pills .pill {
+  background: rgba(229,115,115,0.20); color: var(--bad);
+  border: 1px solid rgba(229,115,115,0.40);
+  border-radius: 10px; padding: 0 7px; font-size: 11px;
+  font-weight: 600; line-height: 1.4;
+}
+
+.row .hp-bar {
+  position: relative;
+  height: 18px;
+  background: var(--shade);
+  border: 1px solid var(--border);
+  border-radius: 9px;
+  overflow: hidden;
+  min-width: 80px;
+}
+.row .hp-bar-fill {
+  position: absolute; inset: 0 auto 0 0;
+  background: var(--good);
+  transition: width 0.2s, background 0.2s;
+}
+.row .hp-bar-fill.low { background: var(--warn); }
+.row .hp-bar-fill.bloodied { background: var(--bad); }
+.row .hp-bar-label {
+  position: absolute; inset: 0;
+  display: flex; align-items: center; justify-content: center;
+  font-size: 11px; font-weight: 700;
+  color: var(--ink);
+  text-shadow: 0 0 3px rgba(0,0,0,0.7);
+  letter-spacing: 0.04em;
+}
+
+.row .hp {
+  display: flex; flex-direction: row; align-items: center;
+  gap: 4px;
+}
+.row .hp-display {
+  font-size: 17px; font-weight: 700;
+  min-width: 70px; text-align: right;
+  padding-right: 4px;
+}
+.row .hp-display .sep { color: var(--muted); font-weight: 400; }
+.row .hp-display.low { color: var(--warn); }
+.row .hp-display.bloodied { color: var(--bad); }
+
+.row .hp-controls { display: flex; gap: 3px; align-items: center; }
+.row .hp-controls input {
+  width: 52px; height: 34px;
+  font-size: 14px; text-align: center;
+  background: var(--bg); color: var(--ink);
+  border: 1px solid var(--border); border-radius: 5px;
+  font-family: inherit;
+}
+.row .hp-controls button {
+  min-height: 34px; min-width: 34px;
+  padding: 0 9px;
+  border: 1px solid var(--border); border-radius: 5px;
+  background: var(--shade); color: var(--ink);
+  font-weight: 700;
+  font-size: 16px;
+}
+.row .hp-controls .dmg {
+  background: rgba(229,115,115,0.18); color: var(--bad);
+  border-color: rgba(229,115,115,0.45);
+}
+.row .hp-controls .heal {
+  background: rgba(124,196,124,0.18); color: var(--good);
+  border-color: rgba(124,196,124,0.45);
+}
+
+.row .controls {
+  display: flex; gap: 3px; align-items: center;
+  margin-left: 4px;
+}
+.row .controls button {
+  min-height: 34px;
+  padding: 0 10px;
+  border: 1px solid var(--border); border-radius: 5px;
+  background: var(--shade); color: var(--ink);
+  font-size: 12px; font-weight: 600;
+}
+.row .controls button.active {
+  background: var(--accent); color: white; border-color: var(--accent);
+}
+
+.row .conditions-panel {
+  grid-column: 1 / -1;
+  margin-top: 4px; padding: 6px;
+  background: var(--shade); border-radius: 5px;
+  display: none;
+}
+.row .conditions-panel.open { display: block; }
+.row .conditions-panel .pills {
+  display: flex; flex-wrap: wrap; gap: 4px;
+}
+.row .conditions-panel .pill-toggle {
+  min-height: 32px; padding: 0 10px;
+  background: var(--panel-2); color: var(--ink);
+  border: 1px solid var(--border); border-radius: 16px;
+  font-size: 12px; font-weight: 500;
+}
+.row .conditions-panel .pill-toggle.active {
+  background: var(--bad); color: white; border-color: var(--bad);
+}
+.row .conditions-panel .pill-toggle:active { opacity: 0.7; }
+
+/* Reference */
+.reference { padding: 8px; }
+.reference details {
+  background: var(--panel);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  margin-bottom: 6px;
+  overflow: hidden;
+}
+.reference summary {
+  padding: 6px 12px;
+  background: var(--accent-light); color: var(--ink);
+  cursor: pointer;
+  list-style: none;
+  user-select: none;
+  display: flex; align-items: center; justify-content: space-between;
+}
+.reference summary::-webkit-details-marker { display: none; }
+.reference summary .section-title {
+  font-size: 13px; font-weight: 700;
+  text-transform: uppercase; letter-spacing: 0.06em;
+}
+.reference summary::after { content: "\25be"; font-size: 12px; color: var(--muted); }
+.reference details[open] summary::after { content: "\25b4"; }
+.reference details > div { padding: 6px 10px; }
+
+.npc-block, .pc-block {
+  margin-bottom: 6px; padding: 8px 10px;
+  border: 1px solid var(--border); border-radius: 6px;
+  background: var(--shade);
+}
+.npc-block:last-child, .pc-block:last-child { margin-bottom: 0; }
+.npc-title { font-size: 14px; font-weight: 700; margin-bottom: 4px; line-height: 1.25; color: var(--ink); }
+.npc-stats, .npc-defenses {
+  font-size: 12px; color: var(--ink);
+  margin-bottom: 4px; line-height: 1.4;
+}
+.npc-section-label {
+  font-size: 11px; font-weight: 700; color: var(--accent);
+  text-transform: uppercase; letter-spacing: 0.08em;
+  margin: 6px 0 3px;
+  padding-bottom: 2px;
+  border-bottom: 1px solid var(--border);
+}
+.npc-entry { margin-bottom: 4px; line-height: 1.4; font-size: 12px; }
+.npc-entry .entry-name { font-weight: 700; color: var(--ink); }
+.npc-entry .entry-name::after { content: ". "; }
+
+.pc-row { margin-bottom: 3px; line-height: 1.4; font-size: 12px; }
+.pc-row .label {
+  font-weight: 700; color: var(--accent);
+  margin-right: 4px;
+}
+
+.notes-row { margin-bottom: 6px; line-height: 1.45; font-size: 12px; }
+.notes-row .label {
+  font-weight: 700; color: var(--accent);
+  display: block; margin-bottom: 1px;
+}
+
+/* Narrow / portrait iPad: drop the info column to the minimum and let bar flex */
+@media (max-width: 900px) {
+  .row { grid-template-columns: 44px minmax(140px, 1.5fr) 1fr auto; gap: 6px; }
+  .row .hp-bar { min-width: 50px; }
+  #active-ref { height: 22vh; }
+}
+
+/* Phone: collapse the HP bar (color cue on the number suffices) */
+@media (max-width: 540px) {
+  .row { grid-template-columns: 40px 1fr auto; }
+  .row .hp-bar { display: none; }
+  .topbar h1 { font-size: 14px; }
+  .topbar .round-pill { font-size: 11px; }
+  .topbar button { padding: 0 6px; font-size: 12px; min-width: 32px; }
+  #active-ref { height: 28vh; }
+}
+
+</style>
+</head>
+<body>
+<header class="topbar">
+  <div class="topbar-left">
+    <h1 id="encounter-name">Orchid Embrace</h1>
+    <span class="round-pill">Round <strong id="round-num">1</strong></span>
+  </div>
+  <div class="topbar-right">
+    <button id="prev-btn" title="Previous turn">&#9664;</button>
+    <button id="next-btn" class="primary" title="Next turn">Next &#9654;</button>
+    <button id="reset-btn" class="danger" title="Reset to starting state">&#x21bb;</button>
+  </div>
+</header>
+
+<noscript>
+  <div style="padding:16px;background:#ffe0e0;color:#7a0000;border:1px solid #c62828;margin:12px;border-radius:8px;font-family:sans-serif;">
+    <strong>JavaScript is disabled or this preview isn't running scripts.</strong><br>
+    On iPhone/iPad, open this file in <em>Safari</em> (not the Files app's Quick Look preview).
+    From the Files app: tap the share icon &rarr; "Open in Safari". On a Mac/PC, just double-click to open in your browser.
+  </div>
+</noscript>
+
+<div id="boot-error" style="display:none;padding:16px;background:#ffe0e0;color:#7a0000;border:1px solid #c62828;margin:12px;border-radius:8px;font-family:sans-serif;"></div>
+
+<main>
+  <section id="active-ref">
+    <div class="active-ref-bar">
+      <div class="active-ref-label" id="active-ref-label">No active combatant</div>
+      <div class="active-ref-status" id="active-ref-status"></div>
+    </div>
+    <div class="active-ref-content" id="active-ref-content"></div>
+  </section>
+
+  <section class="tracker">
+    <div class="tracker-header">
+      <h2>Initiative</h2>
+      <span class="hint">Tap a row to pin its reference above. Next/Prev advances the turn.</span>
+    </div>
+    <div id="tracker-rows"></div>
+  </section>
+
+  <section class="reference">
+    <details open id="npc-section">
+      <summary><span class="section-title">NPC Reference</span></summary>
+      <div id="npc-blocks"></div>
+    </details>
+    <details open id="pc-section">
+      <summary><span class="section-title">Party Reference</span></summary>
+      <div id="pc-blocks"></div>
+    </details>
+    <details open id="notes-section-wrap">
+      <summary><span class="section-title">Encounter Details</span></summary>
+      <div id="notes-section"></div>
+    </details>
+  </section>
+</main>
+
+<script>
+window.addEventListener("error", function (e) {
+  var box = document.getElementById("boot-error");
+  if (!box) return;
+  box.style.display = "block";
+  box.textContent = "Encounter worksheet failed to load: " + (e && e.message ? e.message : "unknown error");
+});
+var ENCOUNTER = {"name": "Orchid Embrace", "slug": "orchid_embrace", "combatants": [{"id": "mama", "kind": "npc", "name": "Mama Mantis", "ac": 16, "hp_max": 139, "hp_current": 139, "speed": "30 ft., climb 30 ft., jump 30 ft.", "initiative": 14, "group": null, "notes": "Recharge: Pin-and-Hold (5–6). Resistance to nonmagical B/P/S while on/within 5 ft. of a flower."}, {"id": "nymph1", "kind": "npc", "name": "Mantis Nymph 1", "ac": 13, "hp_max": 19, "hp_current": 19, "speed": "25 ft., climb 25 ft., jump 15 ft.", "initiative": 10, "group": null, "notes": "Pack Striker: adv vs target adjacent to an ally."}, {"id": "nymph2", "kind": "npc", "name": "Mantis Nymph 2", "ac": 13, "hp_max": 24, "hp_current": 24, "speed": "25 ft., climb 25 ft., jump 15 ft.", "initiative": 18, "group": null, "notes": "Pack Striker: adv vs target adjacent to an ally."}, {"id": "egg1", "kind": "npc", "name": "Mantis Ootheca 1", "ac": 12, "hp_max": 15, "hp_current": 15, "speed": "0 ft. (affixed)", "initiative": null, "group": null, "notes": "Object. Does not take turns. HATCHES initiative 20 of round 3. Fire vulnerability. DC 12 Athletics to crush by hand."}, {"id": "egg2", "kind": "npc", "name": "Mantis Ootheca 2", "ac": 12, "hp_max": 15, "hp_current": 15, "speed": "0 ft. (affixed)", "initiative": null, "group": null, "notes": "Object. Does not take turns. HATCHES initiative 20 of round 3. Fire vulnerability. DC 12 Athletics to crush by hand."}, {"id": "tabby", "kind": "pc", "name": "Tabatha Starr (Heather)", "ac": 15, "hp_max": 42, "hp_current": 42, "speed": "30 ft.", "initiative": null, "init_mod": "+6", "notes": "Dread Ambusher rd 1: +10 spd, +1 bonus attack (+1d8 on hit). Hunter's Mark (1st-level slot)."}, {"id": "nancy", "kind": "pc", "name": "Nancy Alfons (Rowyn)", "ac": 16, "hp_max": 37, "hp_current": 37, "speed": "40 ft.", "initiative": null, "init_mod": "+4", "notes": "Bladesong (bonus, 6/long rest): +3 AC (→19), +10 spd, adv DEX(Acro), +3 concentration saves. Shield reaction (+5 AC). Misty Step 1/long rest free."}, {"id": "drix", "kind": "pc", "name": "Jiminy 'Drix' Hendrix (Katie)", "ac": 15, "hp_max": 39, "hp_current": 39, "speed": "30 ft.", "initiative": null, "init_mod": "+3", "notes": "Bardic Inspiration d8, 5 uses, short-rest recovery. Cutting Words (reaction). Counterspell available (3rd-level slot)."}], "npc_blocks": [{"title": "Mama Mantis (Orchid Mantis, Spring) — Large Monstrosity (mantis), Unaligned", "stats": "AC 16 (natural armor) | HP 152 (16d10+64) | Speed 30 ft., climb 30 ft. | STR 18 (+4) DEX 18 (+4) CON 18 (+4) INT 6 (-2) WIS 14 (+2) CHA 8 (-1)", "defenses": "Saves: DEX +7, CON +7 | Resistances: nonmagical B/P/S while on/within 5 ft. of a flower (Floral Resilience) | Skills: Stealth +10, Perception +5, Athletics +7 | Senses: darkvision 60 ft., blindsight 10 ft., passive Perception 15 | CR 7 (2900 XP) | PB +3", "sections": [{"label": "TRAITS", "entries": [{"name": "Floral Mimicry", "text": "While on a flower of Large size or larger, Mama can Hide as an action with advantage. While hidden she is INVISIBLE to creatures more than 5 ft. from the flower's center. Cannot be targeted by ranged attacks unless the attacker is on her flower; sight-targeted spells fail unless originator is on the flower.\n\nFORCE VISIBLE: (a) move onto her flower AND succeed DC 16 Wisdom (Perception) as part of that movement; OR (b) make a melee attack against the flower at disadvantage — on a hit she is revealed and the camouflage ends.\n\nRe-hiding requires the Hide action."}, {"name": "Standing Leap", "text": "Long jump up to 30 ft., high jump up to 15 ft., with or without a running start."}]}, {"label": "ACTIONS", "entries": [{"name": "Multiattack", "text": "Two Raptorial Scythe attacks, OR one Scythe + one Snap-Bite, OR (both scythes free + Pin-and-Hold recharged) one Pin-and-Hold attempt replacing both scythe attacks. While grappling a creature with Pin-and-Hold, Multiattack reduces to ONE Raptorial Scythe OR ONE Snap-Bite."}, {"name": "Raptorial Scythe", "text": "Melee Weapon Attack: +7 to hit, reach 10 ft., one target. Hit: 13 (2d8+4) slashing. On a crit: target also bleeds 4 (1d8) slashing at start of its next turn unless it or an ally uses an action to staunch (no check)."}, {"name": "Snap-Bite", "text": "Melee Weapon Attack: +7 to hit, reach 5 ft., one target. Hit: 11 (2d6+4) piercing. Crits on 18–20 if target is grappled by Mama."}, {"name": "Pin-and-Hold (Recharge 5–6)", "text": "Melee Weapon Attack: +7 to hit, reach 10 ft., one Medium-or-smaller target. Hit: 13 (2d8+4) slashing + DC 15 STR save or GRAPPLED (escape DC 15) and RESTRAINED. Only one creature can be grappled this way at a time.\n\nEVISCERATING SQUEEZE — At the start of Mama's turn, the grappled target takes:\n  • Round 1 of grapple: 13 (2d8+4) piercing.\n  • Round 2+ of grapple: 26 (4d10+4) piercing AND DC 15 CON save or STUNNED until start of its next turn (free 18–20 crit Snap-Bite next round).\n\nGRAPPLE ENDS / INTERRUPT (any of):\n  • Target makes escape check (action, DC 15 STR Athletics or DEX Acrobatics).\n  • Adjacent ally uses an action: DC 15 STR (Athletics) to pry her loose.\n  • Mama takes 30+ damage from a single source while grappling: CON save (DC = half damage taken, min 10) or release.\n  • Mama knocked prone, blinded, frightened, stunned, paralyzed, or shoved more than 5 ft."}]}, {"label": "BONUS ACTIONS", "entries": [{"name": "Bound", "text": "Leap to an adjacent flower within 30 ft.; no opportunity attacks. If using Floral Mimicry, camo ends — observers see the leap and know which flower she landed on, but not where on it (20-ft. square). At start of a creature's next turn it may make DC 14 WIS (Perception) to narrow her position to a 5-ft. quadrant."}]}, {"label": "REACTIONS", "entries": [{"name": "Reactive Scythe", "text": "When a creature Mama can see moves within 10 ft. of her or attacks her while she is camouflaged on a flower, she may make one Raptorial Scythe attack against that creature. If using Floral Mimicry, the camouflage ends after the reaction resolves."}]}, {"label": "TACTICS", "entries": [{"name": "Opening", "text": "Hidden on the largest/brightest flower in the patch. Lets the party commit, then opens Pin-and-Hold on the most isolated melee target — preferring lightly-armored PCs she can eviscerate quickly."}, {"name": "Mid-fight", "text": "Bounds away the round after a successful kill or failed Squeeze, re-hiding on a fresh flower. Only abandons the grapple if she takes 30+ damage in one hit or if both oothecae come under direct threat."}, {"name": "Reactive Scythe baiting", "text": "Punishes the first ranged attacker who climbs her flower without thinking. Use the reaction the FIRST time a PC enters her flower; subsequent visitors should be punished by Pin-and-Hold instead."}, {"name": "Frenzy clause (homebrew)", "text": "If BOTH oothecae are destroyed: Mama gains advantage on Pin-and-Hold attack rolls for the rest of the encounter."}]}]}, {"title": "Mantis Nymph (Orchid Mantis, Spring) — Small Monstrosity (mantis), Unaligned", "stats": "AC 13 (natural armor) | HP 22 (4d6+8) | Speed 25 ft., climb 25 ft. | STR 12 (+1) DEX 16 (+3) CON 14 (+2) INT 4 (-3) WIS 12 (+1) CHA 6 (-2)", "defenses": "Skills: Stealth +5 | Senses: darkvision 30 ft., passive Perception 11 | CR 1/2 (100 XP) | PB +2", "sections": [{"label": "TRAITS", "entries": [{"name": "Petal-Crouch", "text": "While on a flower of Medium size or larger, advantage on Stealth checks. NOT invisibility — players can target normally if they spot the nymph."}, {"name": "Pack Striker", "text": "Advantage on attack rolls against a creature if at least one ally (Mama or another nymph) is within 5 ft. of the target and not incapacitated."}, {"name": "Springing Leap", "text": "Long jump up to 15 ft., high jump up to 10 ft., as part of movement."}]}, {"label": "ACTIONS", "entries": [{"name": "Nymph-Scythe", "text": "Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 5 (1d6+3) slashing."}]}, {"label": "TACTICS", "entries": [{"name": "Behavior", "text": "Hop toward whichever PC Mama has grappled, taking advantage from Pack Striker. If Mama is incapacitated, target the nearest bleeding or prone PC. They do not coordinate beyond instinct — all swarm the same target if given the chance."}, {"name": "Morale (DM call)", "text": "If Mama is killed: nymphs may flee, frenzy, or fight on per DM discretion."}]}]}, {"title": "Mantis Ootheca (Orchid Mantis, Spring) — Small Object", "stats": "AC 12 (foam shell) | HP 15 (flat) | Speed 0 ft. | All abilities 1 / 0 (treat as inanimate)", "defenses": "Vulnerable: fire | Immune (damage): poison, psychic | Immune (conditions): blinded, charmed, deafened, exhaustion, frightened, paralyzed, petrified, poisoned, prone, stunned, unconscious | CR 1/8 (25 XP) | PB +2", "sections": [{"label": "TRAITS", "entries": [{"name": "Object", "text": "Inanimate. Melee attacks against it hit automatically; ranged attacks have advantage. A creature can crush an ootheca as an action with a DC 12 Strength (Athletics) check."}, {"name": "Hatch Timer", "text": "Hatches on initiative count 20 of ROUND 3 (three full rounds of grace). Each surviving ootheca produces one Mantis Nymph in its space; the new nymph rolls initiative and acts on its own count from the following round. A destroyed ootheca produces nothing."}, {"name": "Pheromone Tether", "text": "While at least one ootheca is intact, Mama will not flee the patch even below half HP. If all oothecae are destroyed AND she is below half HP, she may disengage and retreat (DM discretion)."}]}, {"label": "TARGETING SHORTCUTS", "entries": [{"name": "Quick destruction", "text": "Fire damage doubles (vulnerability) — a single Fire Bolt or torch swing usually one-shots it. Any ranged attack hitting for 15+ destroys an ootheca outright. DC 12 Athletics as an action also works."}]}]}], "pc_blocks": [{"header": "Tabatha Starr (Heather) — Ranger 6 (Gloomstalker) | Lone Star Tick | AC 15 | HP 42 | Speed 30 | Passive Perception 15 | Init +6", "abilities": "STR 14 (+2) DEX 18 (+4) CON 12 (+1) INT 10 (+0) WIS 14 (+2) CHA 10 (+0)", "saves": "STR +5 (prof), DEX +7 (prof). Others use ability mod.", "attacks": "Longbow +9, 1d8+4 piercing (150/600) [Archery]  |  Dagger (thrown) +9, 1d4+4 piercing (20/60) [Archery per DM ruling]  |  Dagger (melee) +7, 1d4+4 piercing.  |  EXTRA ATTACK (Ranger 5): attack twice on Attack action.  |  Spell save DC 13, spell attack +5. 1st-level slots: 3. 2nd-level slots: 2.", "spells": "1st: Disguise Self, Hunter's Mark (bonus, concentration), Speak with Animals, Jump. 2nd: Rope Trick, Pass without Trace.", "features": "Favored Enemy: Mammals, Plants. Favored Terrain: Forest, Arctic. Archery Fighting Style (+2 to ranged attack rolls). Dread Ambusher (rd 1): +10 spd; bonus attack as part of Attack action; +1d8 on hit. Umbral Sight: darkvision 60 ft.; invisible to darkvision creatures in darkness. Sharpshooter (homebrew): no long-range disadv, ignore half/three-quarters cover, -5 to hit for +10 damage. Wanderer: excellent map memory."}, {"header": "Nancy Alfons (Rowyn) — Rogue 4 (Arcane Trickster) / Wizard 2 (Bladesinger) | Jumping Spider | AC 16 (19 w/ Bladesong) | HP 37 | Speed 40 (50 w/ Bladesong) | Passive Perception 11 | Init +4", "abilities": "STR 6 (-2) DEX 18 (+4) CON 12 (+1) INT 16 (+3) WIS 12 (+1) CHA 12 (+1)", "saves": "DEX +7 (prof), INT +6 (prof). Others use ability mod.", "attacks": "Rapier +7, 1d8+4 piercing  |  Shortbow +7, 1d6+4 piercing (80/320)  |  Spell attack +6, Spell save DC 14.  |  Sneak Attack 2d6 (once per turn, conditions apply).  |  Green-Flame Blade cantrip (melee attack, +1d8 fire on a second target within 5 ft. at higher levels — no scaling at 5th level yet).", "spells": "Cantrips: Mage Hand (Legerdemain), Message, Minor Illusion, Green-Flame Blade, Mending, Sword Burst (5-ft. burst, DEX save DC 14, 1d6 force; scales). 1st (4 slots): Disguise Self, Detect Magic (ritual), Identify (ritual), Sleep, Tasha's Hideous Laughter, Shield (reaction +5 AC), Tenser's Floating Disk (ritual). 2nd (2 slots): Misty Step (Fey Touched: 1/long rest free, else slot).", "features": "Mobile feat: +10 spd; Dash ignores difficult terrain; melee target can't OA you rest of turn. Fey Touched feat: Misty Step + Detect Magic 1/long rest each free. Cunning Action (bonus): Dash/Disengage/Hide. Expertise: Sleight of Hand +10, Investigation +9. Mage Hand Legerdemain: invisible hand, can pick pockets / lockpick / disarm at range. Bladesong (bonus, 6/long rest, 1-min): +3 AC, +10 spd, adv DEX (Acro), +3 concentration saves, +3 dmg once/turn on a weapon hit. Ends if incapacitated / medium-or-heavier armor / shield."}, {"header": "Jiminy 'Drix' Hendrix (Katie) — Bard 6 (College of Lore) | Cricket | AC 15 | HP 39 | Speed 30 | Passive Perception 13 | Init +3", "abilities": "STR 6 (-2) DEX 16 (+3) CON 13 (+1) INT 10 (+0) WIS 10 (+0) CHA 20 (+5)", "saves": "DEX +6 (prof), CHA +8 (prof). Others use ability mod.", "attacks": "Rapier +6, 1d8+3 piercing  |  Shortsword +6, 1d6+3 piercing  |  Spell attack +8, Spell save DC 16.", "spells": "Cantrips: Vicious Mockery, Prestidigitation, Dancing Lights. 1st (4 slots): Healing Word (bonus), Disguise Self, Silvery Barbs (reaction), Dissonant Whispers, Unseen Servant (ritual). 2nd (3 slots): Hold Person (concentration), Locate Animals or Plants (ritual). 3rd (3 slots): Hypnotic Pattern (concentration), Phantom Steed (ritual), Counterspell (reaction), Leomund's Tiny Hut (ritual).", "features": "Bardic Inspiration: d8, 5 uses, bonus action 60 ft.; SHORT-rest recovery (Font of Inspiration). Jack of All Trades: +1 to non-prof checks. Cutting Words (reaction): spend Inspiration die to subtract from enemy attack/check/damage. Expertise: Performance +11, Persuasion +11, Deception +11. Magical Secrets (Lore 6): Counterspell + Leomund's Tiny Hut. Song Distraction (homebrew): Performance vs Insight grants disadv on target's Perception/Investigation while you perform."}], "notes": [{"label": "Setup", "text": "Beeatrix has sent the party into the flower patch to deal with the mantis preying on her field. Map on the whiteboard: 4–6 flowers (each treated as a 20-ft. square) at ~30 ft. spacing, connected by vines/plateaus. Mama hidden on the brightest flower at the start. Oothecae visible: one near Mama's starting flower, one on an adjacent flower. The party should be able to SEE the oothecae from the start of the encounter (a quick Survival or Nature ping makes them obvious if not)."}, {"label": "Difficulty note", "text": "Opening XP budget: Mama 2900 + 2× Nymph 200 + 2× Ootheca 50 = 3150 XP. Three level-6 PCs Hard threshold ≈ 2250 XP; Deadly ≈ 3400. Sits between Hard and Deadly — appropriate for a planned headline boss with rescue mechanics. If both oothecae hatch (party ignored them), encounter inflates by 200 XP plus tempo cost. Should NOT TPK; should TERRIFY one PC at a time and force coordination."}, {"label": "Recharge tracking", "text": "Mama: Pin-and-Hold (5–6). Roll at start of each of her turns."}, {"label": "Hatch Timer", "text": "Oothecae hatch on initiative count 20 of ROUND 3 (three full rounds of grace). Each surviving ootheca produces 1 nymph; new nymphs roll initiative and act on their own count starting the following round. Mark each round-end on the whiteboard so the players feel the clock."}, {"label": "The two-turn threat (math check)", "text": "A level-6 PC with ~40 HP grappled and not rescued takes ~13 on Mama's round-1 squeeze, ~26 on round-2 squeeze = ~39 damage over two of Mama's turns. Round-2 CON save (DC 15) failure adds STUNNED for 1 round, which gives Mama a free auto-crit Snap-Bite next turn. SURVIVABLE with healing or rescue; LETHAL if ignored. Drix's Healing Word (bonus, 60 ft.) and Nancy's Shield reaction are the obvious rescue tools."}, {"label": "Force-visible reminder", "text": "While Mama is camouflaged on a flower, ranged attacks against her FAIL unless the attacker is on the flower. To engage at range, a PC must (a) move onto her flower AND DC 16 Wisdom (Perception) to pinpoint, OR (b) melee-attack the flower at disadvantage. Reactive Scythe punishes the first PC who climbs her flower."}, {"label": "Floral Resilience (homebrew)", "text": "Mama has resistance to nonmagical B/P/S while on or within 5 ft. of a flower. Tabby's longbow (mundane) is halved; magical weapons / spells / fire / cold / etc. are not. This is the leash that makes leaving the flower a real cost for her."}, {"label": "Frenzy clause (homebrew)", "text": "If BOTH oothecae are destroyed: Mama gains advantage on Pin-and-Hold attack rolls for the rest of the encounter. Stat-block rider — confirm at table."}, {"label": "Pheromone Tether (homebrew, [SLOP] flagged)", "text": "While ≥1 ootheca survives, Mama will not flee even below half HP. Pure flavor lever — ignore if you don't want it."}, {"label": "Rewards (per s06 draft)", "text": "Mantible — invisibility-capable short sword (1d8 finesse, kukri shape) salvaged from one of Mama's mandibles. Mantis-spine dagger (cosmetic flavor or DM-call). Bee gives a little gold; the real reward is from the mantis."}, {"label": "Campaign cross-ref", "text": "This is the planted payoff for the 'Mantises in the Overgrowth' thread foreshadowed in Sessions 4–5. Bee field side quest, Beeatrix as questgiver (offscreen in this fight per DM call). Located in the Overgrowth, magic-amplified zone."}]};
+
+(function() {
+  const slug = (ENCOUNTER.slug || ENCOUNTER.name || "encounter")
+    .replace(/[^a-z0-9]+/gi, "_").toLowerCase();
+  const STORAGE_KEY = "encounter:" + slug;
+
+  const CONDITIONS = [
+    "Blinded", "Charmed", "Concentration", "Deafened", "Frightened",
+    "Grappled", "Incapacitated", "Invisible", "Paralyzed", "Petrified",
+    "Poisoned", "Prone", "Restrained", "Stunned", "Unconscious"
+  ];
+
+  function combatantId(c, i) {
+    return c.id || (c.name || "c").replace(/[^a-z0-9]+/gi, "_").toLowerCase() + "_" + i;
+  }
+
+  function defaultState() {
+    return {
+      round: 1,
+      activeId: null,
+      focusOverride: null,
+      combatants: ENCOUNTER.combatants.map((c, i) => ({
+        id: combatantId(c, i),
+        kind: c.kind || "npc",
+        name: c.name,
+        ac: c.ac,
+        hp_max: c.hp_max,
+        hp_current: (c.hp_current === null || c.hp_current === undefined) ? c.hp_max : c.hp_current,
+        speed: c.speed || "",
+        initiative: (c.initiative === undefined ? null : c.initiative),
+        init_mod: c.init_mod || "",
+        group: c.group || null,
+        notes: c.notes || "",
+        conditions: Array.isArray(c.conditions) ? c.conditions.slice() : []
+      }))
+    };
+  }
+
+  function loadState() {
+    try {
+      const raw = localStorage.getItem(STORAGE_KEY);
+      if (!raw) return null;
+      const parsed = JSON.parse(raw);
+      if (!parsed || !Array.isArray(parsed.combatants)) return null;
+      return parsed;
+    } catch (e) { return null; }
+  }
+  function saveState() {
+    try { localStorage.setItem(STORAGE_KEY, JSON.stringify(state)); } catch (e) {}
+  }
+
+  let state = loadState() || defaultState();
+
+  // ── Helpers ──────────────────────────────────────────────────────────────
+  function escapeHtml(s) {
+    return String(s == null ? "" : s).replace(/[&<>"']/g, m =>
+      ({"&":"&amp;","<":"&lt;",">":"&gt;","\"":"&quot;","'":"&#39;"}[m]));
+  }
+
+  function sortedCombatants() {
+    const list = state.combatants.slice();
+    const origIndex = new Map(state.combatants.map((c, i) => [c.id, i]));
+    list.sort((a, b) => {
+      const ai = (a.initiative === null || a.initiative === undefined) ? -Infinity : a.initiative;
+      const bi = (b.initiative === null || b.initiative === undefined) ? -Infinity : b.initiative;
+      if (bi !== ai) return bi - ai;
+      return origIndex.get(a.id) - origIndex.get(b.id);
+    });
+    return list;
+  }
+
+  function commitInit(c, inputEl) {
+    const t = inputEl.value.trim();
+    let newVal;
+    if (t === "") {
+      newVal = null;
+    } else {
+      const n = parseInt(t, 10);
+      if (Number.isNaN(n)) {
+        // revert to last good value
+        inputEl.value = c.initiative === null ? "" : String(c.initiative);
+        return;
+      }
+      newVal = n;
+    }
+    if (newVal === c.initiative) return;
+    c.initiative = newVal;
+    saveState();
+    renderTracker();
+  }
+
+  function hpClass(hpCur, hpMax) {
+    if (hpCur <= 0) return "bloodied";
+    if (hpCur <= hpMax * 0.5) return "bloodied";
+    if (hpCur <= hpMax * 0.75) return "low";
+    return "";
+  }
+
+  // ── Reference block lookup + HTML builders ───────────────────────────────
+  function npcBaseName(name) {
+    // "Leafcutter Worker 3 [A]" -> "Leafcutter Worker"
+    return String(name || "")
+      .replace(/\s*\[[A-Za-z0-9]+\]\s*$/, "")
+      .replace(/\s+\d+\s*$/, "")
+      .trim();
+  }
+  function pcBaseName(name) {
+    // "Tabatha Starr (Heather)" -> "Tabatha Starr"
+    return String(name || "").replace(/\s*\([^)]*\)\s*$/, "").trim();
+  }
+  function blockBaseName(s) {
+    // Strip everything starting at em-dash or hyphen-dash separators.
+    return String(s || "").split(/\s+[—–-]\s+/)[0].split(/\s*\(/)[0].trim();
+  }
+  function findReferenceFor(combatant) {
+    if (!combatant) return null;
+    if (combatant.kind === "pc") {
+      const base = pcBaseName(combatant.name);
+      const blocks = ENCOUNTER.pc_blocks || [];
+      return blocks.find(p => {
+        const bn = blockBaseName(p.header || p.name || "");
+        return bn === base || base.startsWith(bn) || bn.startsWith(base);
+      }) || null;
+    }
+    const base = npcBaseName(combatant.name);
+    const blocks = ENCOUNTER.npc_blocks || [];
+    return blocks.find(b => {
+      const bn = blockBaseName(b.title || b.name || "");
+      return bn === base || base.startsWith(bn) || bn.startsWith(base);
+    }) || null;
+  }
+  function npcBlockHtml(b) {
+    let html = '<div class="npc-title">' + escapeHtml(b.title || b.name || '') + '</div>';
+    if (b.stats)    html += '<div class="npc-stats">' + escapeHtml(b.stats) + '</div>';
+    if (b.defenses) html += '<div class="npc-defenses">' + escapeHtml(b.defenses) + '</div>';
+    (b.sections || []).forEach(s => {
+      if (s.label) html += '<div class="npc-section-label">' + escapeHtml(s.label) + '</div>';
+      (s.entries || []).forEach(e => {
+        html += '<div class="npc-entry"><span class="entry-name">' +
+          escapeHtml(e.name) + '</span>' + escapeHtml(e.text) + '</div>';
+      });
+    });
+    return html;
+  }
+  function pcBlockHtml(p) {
+    const fields = [
+      ["Name", p.header], ["Abilities", p.abilities], ["Saves", p.saves],
+      ["Attacks", p.attacks], ["Spells", p.spells], ["Features", p.features]
+    ];
+    return fields
+      .filter(([_, v]) => v)
+      .map(([label, val]) => '<div class="pc-row"><span class="label">' +
+        label + ':</span>' + escapeHtml(val) + '</div>')
+      .join('');
+  }
+
+  // ── Active reference (pinned panel) ──────────────────────────────────────
+  function renderActiveRef() {
+    const labelEl   = document.getElementById("active-ref-label");
+    const statusEl  = document.getElementById("active-ref-status");
+    const contentEl = document.getElementById("active-ref-content");
+
+    const focusedId = state.focusOverride || state.activeId;
+    if (!focusedId) {
+      labelEl.textContent = "No active combatant";
+      statusEl.textContent = "";
+      statusEl.className = "active-ref-status";
+      contentEl.innerHTML = '<div class="empty">Press Next to begin combat, or tap a row to pin its reference here.</div>';
+      return;
+    }
+    const c = state.combatants.find(x => x.id === focusedId);
+    if (!c) { contentEl.innerHTML = ''; return; }
+
+    labelEl.textContent = c.name + (c.group ? '  [Group ' + c.group + ']' : '');
+    if (state.focusOverride && state.focusOverride !== state.activeId) {
+      statusEl.textContent = "Pinned (tap row again or press Next to clear)";
+      statusEl.className = "active-ref-status pinned";
+    } else {
+      statusEl.textContent = "Current turn";
+      statusEl.className = "active-ref-status";
+    }
+
+    const block = findReferenceFor(c);
+    if (!block) {
+      contentEl.innerHTML = '<div class="empty">No reference block matched for &ldquo;' + escapeHtml(c.name) + '&rdquo;.</div>';
+      return;
+    }
+    contentEl.innerHTML = (c.kind === "pc") ? pcBlockHtml(block) : npcBlockHtml(block);
+    contentEl.scrollTop = 0;
+  }
+
+  // ── Tracker render ───────────────────────────────────────────────────────
+  function renderTracker() {
+    const root = document.getElementById("tracker-rows");
+    root.innerHTML = "";
+    const list = sortedCombatants();
+
+    list.forEach(c => {
+      const row = document.createElement("div");
+      row.className = "row " + (c.kind || "npc");
+      row.dataset.id = c.id;
+      if (c.id === state.activeId) row.classList.add("active");
+      if (c.id === state.focusOverride && c.id !== state.activeId) row.classList.add("focused");
+      if (c.hp_current <= 0) row.classList.add("dead");
+
+      // Init (always-editable input; tapping it brings up the numeric keypad on iOS)
+      const init = document.createElement("input");
+      init.type = "text";
+      init.inputMode = "numeric";
+      init.pattern = "-?[0-9]*";
+      init.maxLength = 3;
+      init.className = "init" + (c.initiative === null ? " empty" : "");
+      init.value = c.initiative === null ? "" : String(c.initiative);
+      init.placeholder = "—";
+      init.setAttribute("aria-label", "Initiative for " + c.name);
+      // Don't let taps on the input toggle the row's active state.
+      ["click", "touchstart", "mousedown"].forEach(ev => {
+        init.addEventListener(ev, e => e.stopPropagation());
+      });
+      init.addEventListener("focus", () => init.select());
+      init.addEventListener("blur", () => commitInit(c, init));
+      init.addEventListener("keydown", (e) => {
+        if (e.key === "Enter") { e.preventDefault(); init.blur(); }
+      });
+      row.appendChild(init);
+
+      // Info
+      const info = document.createElement("div");
+      info.className = "info";
+      const groupTag = c.group ? ' <span class="group-tag">[Group ' + escapeHtml(c.group) + ']</span>' : '';
+      const initModBadge = (c.kind === "pc" && c.init_mod)
+        ? '<span class="pc-init-mod">Init ' + escapeHtml(c.init_mod) + '</span>' : '';
+      const speedBit = c.speed ? ' &middot; ' + escapeHtml(c.speed) : '';
+      const conditionsHtml = c.conditions.length
+        ? '<div class="conditions-pills">' +
+            c.conditions.map(cn => '<span class="pill">' + escapeHtml(cn) + '</span>').join('') +
+          '</div>'
+        : '';
+      info.innerHTML =
+        '<div class="name">' + escapeHtml(c.name) + groupTag + '</div>' +
+        '<div class="meta">' +
+          '<span class="ac">AC ' + escapeHtml(c.ac) + '</span>' +
+          speedBit +
+          (initModBadge ? ' ' + initModBadge : '') +
+        '</div>' +
+        conditionsHtml;
+      row.appendChild(info);
+
+      // HP bar (horizontal gauge in the middle)
+      const bar = document.createElement("div");
+      bar.className = "hp-bar";
+      const cls = hpClass(c.hp_current, c.hp_max);
+      const pct = Math.max(0, Math.min(100, (c.hp_current / Math.max(1, c.hp_max)) * 100));
+      bar.innerHTML =
+        '<div class="hp-bar-fill ' + cls + '" style="width: ' + pct + '%"></div>' +
+        '<div class="hp-bar-label">' + Math.round(pct) + '%</div>';
+      row.appendChild(bar);
+
+      // HP (display + amt input + −/+ + conditions button on one line)
+      const hp = document.createElement("div");
+      hp.className = "hp";
+      hp.innerHTML =
+        '<div class="hp-display ' + cls + '">' +
+          escapeHtml(c.hp_current) + '<span class="sep">/</span>' + escapeHtml(c.hp_max) +
+        '</div>' +
+        '<div class="hp-controls">' +
+          '<input type="number" inputmode="numeric" placeholder="amt" min="0">' +
+          '<button class="dmg" title="Apply damage">&minus;</button>' +
+          '<button class="heal" title="Apply healing">+</button>' +
+        '</div>' +
+        '<div class="controls">' +
+          '<button class="cond-btn" title="Toggle conditions">Cond' +
+            (c.conditions.length ? ' (' + c.conditions.length + ')' : '') +
+          '</button>' +
+        '</div>';
+      const amt = hp.querySelector("input");
+      hp.querySelector(".dmg").addEventListener("click", (ev) => {
+        ev.stopPropagation();
+        const n = parseInt(amt.value, 10);
+        if (Number.isNaN(n) || n < 0) return;
+        c.hp_current = Math.max(0, c.hp_current - n);
+        amt.value = "";
+        saveState(); renderTracker();
+      });
+      hp.querySelector(".heal").addEventListener("click", (ev) => {
+        ev.stopPropagation();
+        const n = parseInt(amt.value, 10);
+        if (Number.isNaN(n) || n < 0) return;
+        c.hp_current = Math.min(c.hp_max, c.hp_current + n);
+        amt.value = "";
+        saveState(); renderTracker();
+      });
+      const condBtn = hp.querySelector(".cond-btn");
+      // Stop click propagation on the input/buttons so tapping them doesn't toggle active row.
+      ["click", "touchstart"].forEach(ev => {
+        amt.addEventListener(ev, e => e.stopPropagation());
+      });
+      row.appendChild(hp);
+
+      // Conditions panel
+      const condPanel = document.createElement("div");
+      condPanel.className = "conditions-panel";
+      condPanel.innerHTML = '<div class="pills">' +
+        CONDITIONS.map(cn => {
+          const on = c.conditions.indexOf(cn) >= 0;
+          return '<button class="pill-toggle ' + (on ? 'active' : '') + '" data-c="' + cn + '">' + cn + '</button>';
+        }).join('') + '</div>';
+      condPanel.addEventListener("click", e => e.stopPropagation());
+      condPanel.querySelectorAll(".pill-toggle").forEach(btn => {
+        btn.addEventListener("click", () => {
+          const cn = btn.dataset.c;
+          const idx = c.conditions.indexOf(cn);
+          if (idx >= 0) c.conditions.splice(idx, 1); else c.conditions.push(cn);
+          saveState(); renderTracker();
+        });
+      });
+      condBtn.addEventListener("click", (ev) => {
+        ev.stopPropagation();
+        condPanel.classList.toggle("open");
+        condBtn.classList.toggle("active", condPanel.classList.contains("open"));
+      });
+      row.appendChild(condPanel);
+
+      root.appendChild(row);
+    });
+
+    document.getElementById("round-num").textContent = state.round;
+  }
+
+  // ── Reference render (full sections at the bottom) ───────────────────────
+  function renderReference() {
+    const npcRoot = document.getElementById("npc-blocks");
+    npcRoot.innerHTML = "";
+    (ENCOUNTER.npc_blocks || []).forEach(b => {
+      const div = document.createElement("div");
+      div.className = "npc-block";
+      div.innerHTML = npcBlockHtml(b);
+      npcRoot.appendChild(div);
+    });
+
+    const pcRoot = document.getElementById("pc-blocks");
+    pcRoot.innerHTML = "";
+    (ENCOUNTER.pc_blocks || []).forEach(p => {
+      const div = document.createElement("div");
+      div.className = "pc-block";
+      div.innerHTML = pcBlockHtml(p);
+      pcRoot.appendChild(div);
+    });
+
+    const notesRoot = document.getElementById("notes-section");
+    notesRoot.innerHTML = "";
+    (ENCOUNTER.notes || []).forEach(n => {
+      const div = document.createElement("div");
+      div.className = "notes-row";
+      div.innerHTML = '<span class="label">' + escapeHtml(n.label || '') + '</span>' +
+        escapeHtml(n.text || '');
+      notesRoot.appendChild(div);
+    });
+  }
+
+  // ── Turn order ───────────────────────────────────────────────────────────
+  function nextTurn() {
+    const list = sortedCombatants().filter(c => c.initiative !== null && c.initiative !== undefined);
+    if (list.length === 0) return;
+    if (!state.activeId) {
+      state.activeId = list[0].id;
+    } else {
+      const idx = list.findIndex(c => c.id === state.activeId);
+      if (idx === -1 || idx === list.length - 1) {
+        state.activeId = list[0].id;
+        state.round += 1;
+      } else {
+        state.activeId = list[idx + 1].id;
+      }
+    }
+    state.focusOverride = null;
+    saveState(); renderTracker(); renderActiveRef();
+    scrollActiveIntoView();
+  }
+  function prevTurn() {
+    const list = sortedCombatants().filter(c => c.initiative !== null && c.initiative !== undefined);
+    if (list.length === 0) return;
+    if (!state.activeId) {
+      state.activeId = list[list.length - 1].id;
+    } else {
+      const idx = list.findIndex(c => c.id === state.activeId);
+      if (idx <= 0) {
+        state.activeId = list[list.length - 1].id;
+        state.round = Math.max(1, state.round - 1);
+      } else {
+        state.activeId = list[idx - 1].id;
+      }
+    }
+    state.focusOverride = null;
+    saveState(); renderTracker(); renderActiveRef();
+    scrollActiveIntoView();
+  }
+  function scrollActiveIntoView() {
+    if (!state.activeId) return;
+    const el = document.querySelector('.row[data-id="' + state.activeId + '"]');
+    if (el && el.scrollIntoView) el.scrollIntoView({block: "nearest", behavior: "smooth"});
+  }
+
+  function reset() {
+    if (!window.confirm("Reset encounter? This clears HP, conditions, round, and active turn.")) return;
+    state = defaultState();
+    saveState();
+    renderTracker(); renderActiveRef();
+  }
+
+  // Delegated row tap → pin/unpin reference panel. ONE listener on the
+  // container, not per-row — survives re-renders, and avoids race conditions
+  // on iOS where rapid taps can fall through between unbind and rebind.
+  function handleRowClick(ev) {
+    // Ignore taps on interactive controls inside the row.
+    if (ev.target.closest("input, button, .conditions-panel, .hp-bar")) return;
+    const rowEl = ev.target.closest(".row");
+    if (!rowEl) return;
+    const id = rowEl.dataset.id;
+    const c = state.combatants.find(x => x.id === id);
+    if (!c) return;
+    if (state.focusOverride === c.id || c.id === state.activeId) {
+      state.focusOverride = null;
+    } else {
+      state.focusOverride = c.id;
+    }
+    saveState();
+    renderActiveRef();
+    renderTracker();
+  }
+
+  // ── Wire up ──────────────────────────────────────────────────────────────
+  document.getElementById("encounter-name").textContent = ENCOUNTER.name || "Encounter";
+  document.title = "Encounter - " + (ENCOUNTER.name || "Worksheet");
+  document.getElementById("next-btn").addEventListener("click", nextTurn);
+  document.getElementById("prev-btn").addEventListener("click", prevTurn);
+  document.getElementById("reset-btn").addEventListener("click", reset);
+  document.getElementById("tracker-rows").addEventListener("click", handleRowClick);
+
+  renderReference();
+  renderTracker();
+  renderActiveRef();
+})();
+
+</script>
+</body>
+</html>
