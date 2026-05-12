@@ -31,7 +31,6 @@ ability_scores:
 senses:
   - darkvision 30 ft.
 passive_perception: 11
-languages: []
 
 skills:
   - Stealth +5

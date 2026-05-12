@@ -27,27 +27,26 @@ ability_scores:
   wisdom:       { score: 0,  modifier: -5 }
   charisma:     { score: 0,  modifier: -5 }
 
-senses: []
-passive_perception: 0
-languages: []
+defenses:
+  damage_vulnerabilities:
+    - fire
+  damage_immunities:
+    - poison
+    - psychic
+  condition_immunities:
+    - blinded
+    - charmed
+    - deafened
+    - exhaustion
+    - frightened
+    - paralyzed
+    - petrified
+    - poisoned
+    - prone
+    - stunned
+    - unconscious
 
-damage_vulnerabilities:
-  - fire
-damage_immunities:
-  - poison
-  - psychic
-condition_immunities:
-  - blinded
-  - charmed
-  - deafened
-  - exhaustion
-  - frightened
-  - paralyzed
-  - petrified
-  - poisoned
-  - prone
-  - stunned
-  - unconscious
+passive_perception: 0
 
 traits:
   - name: Object
@@ -73,11 +72,7 @@ traits:
       she is below half HP, she may attempt to disengage and retreat
       (DM discretion).
 
-actions: []
-
 roleplaying:
-  personality: null
-  motivation: null
   tactics: >
     The oothecae do nothing. They are pressure objects on the
     battlefield — a ticking clock the party must decide whether to spend
@@ -92,8 +87,6 @@ encounter_notes:
     actions for not fighting two extra nymphs — a fair trade that
     rewards target prioritization.
   destroying_options: >
-    - Any single melee or ranged attack that hits and deals 15+ damage
-      destroys an ootheca outright.
     - Fire damage doubles (vulnerability), so a single Firebolt or torch
       strike will usually do it.
     - DC 12 Athletics check as an action to crush by hand.

@@ -28,24 +28,23 @@ ability_scores:
   wisdom:       { score: 14, modifier: 2 }
   charisma:     { score: 8,  modifier: -1 }
 
-saving_throws:
-  - Dex +7
-  - Con +7
+defenses:
+  saving_throws:
+    - Dex +7
+    - Con +7
+  damage_resistances:
+    - bludgeoning, piercing, and slashing from nonmagical attacks while on or
+      within 5 ft. of a flower (Floral Resilience)
 
 senses:
   - darkvision 60 ft.
   - blindsight 10 ft.
 passive_perception: 15
-languages: []
 
 skills:
   - Stealth +10
   - Perception +5
   - Athletics +7
-
-damage_resistances:
-  - bludgeoning, piercing, and slashing from nonmagical attacks while on or
-    within 5 ft. of a flower (Floral Resilience)
 
 traits:
   - name: Floral Mimicry
@@ -64,21 +63,6 @@ traits:
            she is revealed and the camouflage ends.
 
       Re-hiding requires the Hide action.
-  - name: Bound (Bonus Action)
-    description: >
-      Mama leaps to an adjacent flower within 30 ft. without provoking
-      opportunity attacks. If she was using Floral Mimicry, the camouflage
-      ends — observers see the leap and know which flower she landed on,
-      but not where on it (the flower is treated as a 20-ft. square).
-      A creature may make a DC 14 Wisdom (Perception) check at the start
-      of its next turn to narrow her position to a single 5-ft. quadrant
-      of the flower.
-  - name: Reactive Scythe
-    description: >
-      When a creature Mama can see moves within 10 ft. of her or attacks her
-      while she is camouflaged on a flower, she may use her reaction to make
-      one Raptorial Scythe attack against that creature. If she was using
-      Floral Mimicry, the camouflage ends after the reaction resolves.
   - name: Standing Leap
     description: >
       Mama's long jump is up to 30 ft. and her high jump up to 15 ft., with
@@ -118,9 +102,7 @@ actions:
         • Round 1 of grapple: 13 (2d8+4) piercing damage.
         • Round 2 of grapple (or any round thereafter): 26 (4d10+4) piercing
           damage, and the target must succeed on a DC 15 Constitution saving
-          throw or be reduced to 0 hit points if the damage drops it below
-          one-quarter of its hit point maximum. (On save, drops to 1 HP
-          instead of 0.)
+          throw or be STUNNED until the start of its next turn.
 
       The grapple ends — and Pin-and-Hold's recharge timer begins — if any
       of the following occur (collectively: "interrupt"):
@@ -137,11 +119,22 @@ actions:
 
 bonus_actions:
   - name: Bound
-    description: See traits.
+    description: >
+      Mama leaps to an adjacent flower within 30 ft. without provoking
+      opportunity attacks. If she was using Floral Mimicry, the camouflage
+      ends — observers see the leap and know which flower she landed on,
+      but not where on it (the flower is treated as a 20-ft. square).
+      A creature may make a DC 14 Wisdom (Perception) check at the start
+      of its next turn to narrow her position to a single 5-ft. quadrant
+      of the flower.
 
 reactions:
   - name: Reactive Scythe
-    description: See traits.
+    description: >
+      When a creature Mama can see moves within 10 ft. of her or attacks her
+      while she is camouflaged on a flower, she may use her reaction to make
+      one Raptorial Scythe attack against that creature. If she was using
+      Floral Mimicry, the camouflage ends after the reaction resolves.
 
 roleplaying:
   personality: >
@@ -174,10 +167,9 @@ encounter_notes:
   the_two-turn_threat: >
     Math check — a level-6 PC with ~45 HP grappled and not rescued takes
     ~13 on round 1 of grapple, ~26 on round 2 = ~39 damage over two of
-    Mama's turns, plus a CON save against the drop-to-0 clause. Survivable
-    with healing or rescue; lethal if ignored. Exactly the "scary if it
-    can get its arms on one of them for a full two turns" the brief asked
-    for.
+    Mama's turns, plus a CON save against being stunned (which gives Mama
+    a free auto-crit Snap-Bite the following round if it fails). Survivable
+    with healing or rescue; lethal if ignored.
   flower_map_notes: >
     Designed assuming a whiteboard map with 4–6 flowers at 30 ft. spacing,
     each treated as a 20-ft. square. Mama can Bound to any adjacent flower
