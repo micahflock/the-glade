@@ -236,9 +236,10 @@ combatant name or the block title.
 
     python3 scripts/build_encounter.py encounters/[slug].json
 
-This writes encounters/[slug].html — a single self-contained file (no CDN,
-no deps). The build script handles the layout, styling, and interactive
-behavior; you only need to provide the JSON.
+This writes encounters/[slug].html — a single self-contained file. Fonts
+load from Google Fonts (the page degrades to system serifs offline), but
+all layout, styling, and interactive behavior is inline. You only need
+to provide the JSON.
 
 ### Step 4: Save and present
 
