@@ -55,15 +55,28 @@
 
 ## Opened in Session 5
 
-- [ ] **Gleam's concrete plan to the Leafcutter Queen.** Gleam offered to get the party into the hive through his contacts — but the table ran out of prepped material before the specifics were given. Mechanism (cart, bribe, shift change, pheromone-lock, etc.) must be specified before Session 6 opens.
+- [x] **Gleam's concrete plan to the Leafcutter Queen.** Gleam offered to get the party into the hive through his contacts — but the table ran out of prepped material before the specifics were given. Mechanism (cart, bribe, shift change, pheromone-lock, etc.) must be specified before Session 6 opens. — Decision: Resolved in Session 6. Plan is the Red Ant Queen's fete: party enters as invited dignitaries via the weevil channel, gets a band slot (Drix's reputation), Leafcutter Queen will be paraded then escorted back to her chambers — that's when the party slips off to make contact. Six specialist contacts already placed inside; 3 can be reached by dead drop before the event. Evidence: sessions/final/s06_final.md section 0.
 - [ ] **Queen's Crown heist (player-initiated).** The party announced a heist intent, fumbled the rumor-spreading attempt, got walked out, and explicitly said they liked the bit and wanted to come back. Decide whether/when a real heist sequence runs.
-- [ ] **Mantises in the Overgrowth.** Foreshadowed as predators of the Overgrowth; the party registered them as scary. Beeatrix's field encounter is the planted payoff and remains unspent.
-- [ ] **Beeatrix and the bee-field side quest.** Skipped this session — the party did not engage the singing bee at the Dewdrop. Available on a return visit to Canopia.
+- [ ] **Mantises in the Overgrowth.** Foreshadowed as predators of the Overgrowth; the party registered them as scary. Beeatrix's field encounter is the planted payoff — *now active*, fight in progress as of end of Session 6.
+- [x] **Beeatrix and the bee-field side quest.** Skipped this session — the party did not engage the singing bee at the Dewdrop. Available on a return visit to Canopia. — Decision: Engaged in Session 6. Party met Beeatrix at the Dewdrop, took the meadow side quest, flew east, and entered combat with the orchid mantis. Nancy also recruited Beeatrix to front the band at the Red Ant Queen's fete. Evidence: sessions/final/s06_final.md.
 - [ ] **Royal Jelly Society — Canopia branch.** Walked past, not entered. The dissonance/cheerful-complicity scene is unspent. Decide whether to surface it on a return or to retire it.
-- [ ] **The Dewdrop Inn bartender's name.** Established as a recurring rebel asset; not named at the table.
+- [x] **The Dewdrop Inn bartender's name.** Established as a recurring rebel asset; not named at the table. — Decision: Resolved in Session 6. Bartender's name is **Dale**. Evidence: sessions/final/s06_final.md section 1.
 - [ ] **What is Nancy clutching at under his clothes during the level-up?** DM-flagged in the play notes; significance unclear. [DM CHECK with player]
 - [ ] **"Ashonte says Drix"** — DM note from session 5 with no clear context. [DM CHECK]
 - [ ] **Twyla's recurrence.** Her gambling habit puts her at the Queen's Crown. If the party comes back to that scene, she's a natural re-entry contact.
+
+## Opened in Session 6
+
+- [ ] **Orchid mantis fight — mid-combat state.** Session ended halfway through. Reconstruct from the DM's encounter notes before Session 7: mama mantis HP and position, remaining nymph count and HP, egg sack(s) status (hatch timer + HP), round number, active conditions, who-acts-next initiative order. Tabby's Hunter's Mark is active. One nymph already dead.
+- [ ] **Barbra's evening pickup.** Barbra promised to come back to the meadow at evening. What happens if the fight runs long and the party misses the pickup window? Does she wait? Leave? Look for them?
+- [ ] **Beeatrix at the fete.** Nancy recruited her to front the band. Does she actually show up sober? Is she still drunk/grieving? Does she become a heist asset (cover, distraction) or a liability (blackout, breakdown, exposes the party)?
+- [ ] **Specialist dead-drop picks.** Gleam offered six specialists (Tudd, Demicous, Vikko, Diedre, Dax, Zalle); only 3 can be reached by dead drop before the fete. The party did not commit picks at the table. When/how does Gleam need the answer? Note: this is the *six-specialist / pick-three* version that emerged at the table — the prep had pitched a *four-specialist / pick-two* version (s06_draft.md section E). The played version supersedes.
+- [ ] **Mantis rewards mechanics.** The Mantible (invisible 1d8 finesse short sword) — invisibility activation rules (at-will? action? command word?) still TBD. Mantis-spine dagger — any mechanical effect or cosmetic only?
+- [ ] **Beeatrix's reward.** Amount of gold and any non-monetary token — prep flagged this as TBD. Pick a number before the fight ends.
+- [ ] **Barbra's "felt stronger since the Bloom."** Foreshadowing for the "all magic users amplified" thread. What is she actually stronger at? Worth weaving back in.
+- [ ] **Nancy's Alarm cast [DM CHECK].** Player notes say Nancy cast Alarm after the long rest, but Alarm isn't in his known-spells list. Either ritual from Wizard spellbook (legal — Alarm is a Wizard 1st-level ritual), or the player meant the sock-on-doorknob improvised alarm. Confirm with Rowyn.
+- [ ] **Drix's mantis-misses-the-grab moment [DM CHECK].** Player notes say Drix "strummed his guitar and the mantis missed." Was this Vicious Mockery, Cutting Words on the attack roll, just narrative, or something else? Confirm with Katie.
+- [ ] **Day Two in Canopia and Departure (Sections 4–5 of the prep) — deferred.** The Royal Jelly Society return, the Queen's Crown ad-lib heist, the Mayflyer, the road-out waylay — all still on the shelf. Fold into Session 7 or skip directly to fete-prep?
 
 ## Opened in Session 4
 
