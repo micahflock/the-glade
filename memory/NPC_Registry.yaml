@@ -458,26 +458,236 @@ npcs:
       - The in-hive cell has reportedly been preparing for "something bigger." Gleam has not foreshadowed this directly to the party yet.
 
 
-  - name: Dewdrop Inn Bartender
+  - name: Dale
+    role: Bartender — Dewdrop Inn; runs the rebel dead drop
     species: Unspecified (bug equivalent of a mustache)
-    role: Bartender — runs the rebel dead drop at the Dewdrop Inn
     affiliation: Rebel network (Canopia cell, with Gleam)
     status: Alive
     location: Dewdrop Inn, Canopia
     disposition: Allied (operational; pretends not to be)
     first_met: Session 5
-    last_seen: Session 5
+    last_seen: Session 6
 
     appearance: Bug equivalent of a mustache. Professional bearing.
-    voice: Unflappable. Practiced apology. Slips operational instructions into a remake-the-drink monologue without breaking stride.
-    personality: Pro. Aware of every angle of the dead drop he is running and entirely practiced at not appearing to be running it.
+    voice: Unflappable. Practiced apology. Slips operational instructions into a remake-the-drink monologue without breaking stride. Warm by daylight — friendly nod, antennae twitch.
+    personality: Pro. Aware of every angle of the dead drop he is running and entirely practiced at not appearing to be running it. Has a soft spot for Beeatrix — wishes someone would help her, partly out of compassion and partly to stop the yelling.
 
     party_history:
       - "Session 5: Ran the ginger honeycap / 'it's a hot batch' / back-booth handoff cleanly. Did not need to deploy any of the failure-recovery branches."
+      - "Session 6: Name confirmed as Dale. Served the party breakfast (greenery cakes, mite meat, BBV beverages) in the empty morning bar. Half-mumbled the wish-someone-would-help-her line about Beeatrix, then went over and patted her back. Told the party they could book or find flight travel to the east."
 
     hooks:
-      - "[OPEN] Name. Not established at the table."
       - Probably a recurring point of contact in Canopia for as long as the party uses the Dewdrop Inn as a node.
+
+
+  - name: Beeatrix
+    species: Mining bee
+    role: Grieving / hungover singer at the Dewdrop Inn; quest-giver for the mantis hunt; *recruited to front the band at the Red Ant Queen's fete*
+    affiliation: None (solitary bee, displaced)
+    status: Alive — grieving, drunk-leaning, traumatized
+    location: Dewdrop Inn, Canopia (last seen)
+    disposition: Allied (quest-giver, hired the party)
+    first_met: Session 6
+    last_seen: Session 6
+
+    appearance: Rough-looking. Slumped at the bar, snoring quietly. The singer the party heard wailing the night before about ancestral flower fields and fantastical monsters.
+    voice: Inebriated. Squawks. "MY OLE HOME IS HAUNTED BY A MONSTER, WON'T ANYONE *HIC* DO ANYTHING?" Dale says she used to sing the classics.
+    motivation: Get someone — anyone — to kill the monster in her ancestral flower meadow. Possibly also get her old life back.
+    personality: Loud, grief-soaked, willing to pay what little she has left.
+
+    info_shared_with_party:
+      - "Her ancestral flower meadow east of Canopia is overgrown and unsafe."
+      - "Her solitary bee friends and family are dead or presumed dead — 5 bugs disappeared in one night before she fled."
+      - "She fled at the beginning of the Bloom; the meadow should now be full of asters, daisies, and marigolds."
+      - "It must be a monster. Will pay what little money she has left."
+
+    party_history:
+      - "Session 5: Foreshadowed at the Dewdrop (singing loudly in the background). Not engaged."
+      - "Session 6: Met properly at breakfast. Pitched the meadow side quest. Nancy invited her to front the band at the Red Ant Queen's fete — Beeatrix used to sing the classics. Recruitment accepted at the table; follow-through TBD."
+
+    hooks:
+      - Does she actually show up sober at the fete? Or drunk? Or grieving?
+      - The monster turned out to be an orchid mantis family — does she have any reaction when she learns the truth?
+      - Gold reward amount + any non-monetary token still TBD (per s06_draft.md section 3f).
+
+
+  - name: Barbra
+    species: Eastern Comma butterfly
+    role: For-hire transport
+    affiliation: Independent
+    status: Alive
+    location: Western Canopia → meadow east of Canopia → returning for evening pickup
+    disposition: Neutral-positive (transactional)
+    first_met: Session 6
+    last_seen: Session 6
+
+    appearance: Eastern Comma butterfly. Found nursing a hot water in a corner, hungover.
+    voice: Tired, transactional, hungover-honest.
+    motivation: Lost all her money at the casino the night before; needs work.
+    personality: Frank about danger. Will not land in a place she considers unsafe.
+
+    info_shared_with_party:
+      - "The Red Ant Queen's palace is visible from western Canopia."
+      - "The flower meadow east of Canopia is very dangerous — she knew somebody who was 'swallowed by a flower in an instant.'"
+      - "She has felt stronger since the Bloom." (Foreshadowing — flag for the 'all magic users amplified' thread.)
+
+    party_history:
+      - "Session 6: Hired by the party for 2 sap. Flew Nancy and Tabby in harnesses (woven by Nancy); Drix flew alongside. Would not land in the meadow — dropped them on a nearby Iris leaf. Agreed to come back at evening for pickup. Party told her about their invitations to the fete."
+
+    hooks:
+      - Evening pickup is on the clock — what happens if the fight runs long and the party misses it?
+      - "Eastern Comma vs. 'Eastern Common' — DM notes wrote 'Common,' player notes wrote 'Comma.' Going with Comma (a real species). [DM CHECK]"
+      - Knows the party are invited dignitaries to the fete — discretion / threat vector if she gossips.
+      - Her own Bloom-amplification is a future hook: what is she stronger at?
+
+
+  # ── REBEL HEIST SPECIALISTS (offered by Gleam, Session 6 — party has not picked yet) ────────
+
+  - name: Tudd
+    species: Leafcutter Major
+    role: Heist specialist offered by Gleam — directed violence, demolition, construction
+    affiliation: Rebel network — placed inside the Red Ant Queen's palace
+    status: Alive (presumed)
+    location: Red Ant Queen's palace
+    disposition: Allied (off-screen support)
+    first_met: null  # offered to the party in conversation, not yet met
+    last_seen: null
+
+    notes: >
+      One of the surviving leafcutter soldiers. Tough. The hammer option.
+      Available as a dead-drop contact before the fete, if picked.
+
+    hooks:
+      - Flashback lever — the party can burn a dead drop to retroactively have Tudd plant explosives, breach a wall, or have been waiting at a chokepoint.
+
+
+  - name: Demicous
+    species: Leafcutter Minim
+    role: Heist specialist offered by Gleam — infiltration / can go anywhere unsuspected
+    affiliation: Rebel network — placed inside the Red Ant Queen's palace
+    status: Alive (presumed)
+    location: Red Ant Queen's palace (caretaker of leafcutter babies)
+    disposition: Allied (off-screen support)
+    first_met: null
+    last_seen: null
+
+    notes: >
+      Caretaker of leafcutter babies. Outwardly meek. Can get pretty much
+      anywhere in the palace without arousing suspicion. Not who you'd want
+      beside you in a fight.
+
+    hooks:
+      - Flashback lever — Demicous can retroactively have left a door unlocked, planted a small item, or scouted a hallway.
+
+
+  - name: Vikko
+    species: Jewel beetle
+    role: Heist specialist offered by Gleam — bartender for the event
+    affiliation: Rebel network — placed inside the Red Ant Queen's palace
+    status: Alive (presumed)
+    location: Red Ant Queen's palace (one of the bars)
+    disposition: Allied (off-screen support)
+    first_met: null
+    last_seen: null
+
+    notes: >
+      Suave. Good at gathering intel, poisoning drinks, sneaking supplies in.
+
+    hooks:
+      - Flashback lever — Vikko can retroactively have poisoned a guard's drink, smuggled in a weapon, or relayed a rumor.
+
+
+  - name: Diedre
+    species: Lacewing
+    role: Heist specialist offered by Gleam — performer on one of the stages
+    affiliation: Rebel network — placed inside the Red Ant Queen's palace
+    status: Alive (presumed)
+    location: Red Ant Queen's palace (one of the stages)
+    disposition: Allied (off-screen support)
+    first_met: null
+    last_seen: null
+
+    notes: >
+      Great at making a distraction or providing cover for those moving in
+      her retinue.
+
+    hooks:
+      - Flashback lever — Diedre can retroactively have started a flashy number that drew eyes, or smuggled the party in as members of her retinue.
+
+
+  - name: Dax
+    species: Cockroach
+    role: Heist specialist offered by Gleam — first aid for the Mixed Mandible Arts cage
+    affiliation: Rebel network — placed inside the Red Ant Queen's palace
+    status: Alive (presumed)
+    location: Red Ant Queen's palace (MMA cage area)
+    disposition: Allied (off-screen support)
+    first_met: null
+    last_seen: null
+
+    notes: >
+      Could lend a hand with medical assistance or contact with a fighter
+      in the cage.
+
+    hooks:
+      - Flashback lever — Dax can retroactively have stabilized a PC, slipped a message to a fighter, or rigged the betting.
+
+
+  - name: Zalle
+    species: Sawfly larva
+    role: Heist specialist offered by Gleam — pheromone-lounge mixologist
+    affiliation: Rebel network — placed inside the Red Ant Queen's palace
+    status: Alive (presumed)
+    location: Red Ant Queen's palace (pheromone lounge)
+    disposition: Allied (off-screen support)
+    first_met: null
+    last_seen: null
+
+    notes: >
+      Can influence moods or apply mild status to guests via the pheromone
+      mixology.
+
+    hooks:
+      - Flashback lever — Zalle can retroactively have dosed a guard, mellowed a hostile crowd, or seduced an informant into talking.
+
+
+  # ── ORCHID MANTIS FIGHT (in progress, end of Session 6) ─────────────────────
+
+  - name: Mama Orchid Mantis
+    species: Orchid mantis
+    role: Headline combat encounter — paused mid-fight at end of Session 6
+    status: Alive — combat in progress
+    location: Flower meadow east of Canopia
+    disposition: Hostile
+    first_met: Session 6
+    last_seen: Session 6
+
+    notes: >
+      Boss-tier orchid mantis built for the level-6 party. Camouflage-on-flower
+      mechanic, adjacent-only flower hops, grapple-and-crush nasty move.
+      Combat state at end of Session 6: party is engaged; one nymph dead;
+      mama's HP / round / position must be reconstructed from DM encounter
+      notes before Session 7. See sessions/s06_draft.md sections 3a–3d for
+      the live rules.
+
+    hooks:
+      - "[CARRY-FORWARD] Resume mid-combat at start of Session 7."
+      - Reward on defeat — The Mantible (invisible 1d8 finesse short sword) and a mantis-spine dagger. Mechanical details of the dagger TBD.
+
+
+  - name: Orchid Mantis Nymphs
+    species: Orchid mantis (juveniles)
+    role: Supporting hostiles in the mantis encounter
+    status: One dead (Tabby + Nancy); remaining count TBD
+    location: Flower meadow east of Canopia
+    disposition: Hostile
+    first_met: Session 6
+    last_seen: Session 6
+
+    notes: >
+      "A couple" per the prep. One confirmed dead at end of Session 6. Egg
+      sacks present on leaf undersides — if not destroyed, hatch into more
+      nymphs (timer / HP not yet specified — see s06_draft.md section 3b).
 
 
   # ── NOT YET MET ─────────────────────────────────────────────────────────────

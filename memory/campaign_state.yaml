@@ -4,19 +4,19 @@
 
 # ── SESSION TRACKING ────────────────────────────────────────────────────────
 
-current_session: 6
-active_draft: sessions/s06_draft.md
-draft_status: first_draft
+current_session: 7
+active_draft: null     # Session 7 draft not yet generated. s06_draft.md retained as arc-decision scaffolding.
+draft_status: not_started
 
-last_played_session: 5
-last_played_summary: "The City in the Overgrowth — Antshley walked the party through the gradient tunnel, handed Tabby the navi-gus, and parted at the daylight mouth. They followed the pheromone road past leafcutter crews and shimmering fire-ant escorts to the Weevilville, helped Twyla hand out fungus rations, and climbed the ramp into Canopia. They detoured into the Queen's Crown, announced a heist, flubbed a rumor about ants growing fungus on dead bodies to a table of disinterested wasps, and got walked out (Nancy lifted 2 sap and 1 cig on the way). They walked past the Royal Jelly Society's Canopia branch without entering, and ran the dead drop at the Dewdrop Inn cleanly — ginger honeycap, 'it's a hot batch,' a back booth, a clumsy hooded figure with a key. Upstairs, they met Gleam, an earnest weevil rebel contact (table verdict: 'THE CUTEST'). Session ended mid-conversation, before Gleam gave them a concrete plan to reach the Leafcutter Queen. See sessions/session_log.md."
+last_played_session: 6
+last_played_summary: "Orchid Assassin — Gleam delivered the full handoff (fete invitation via the weevil channel, band slot via Drix's reputation, six specialist contacts placed inside the palace with a 3-of-6 dead-drop budget, and a 'first dark on the night of the event' pickup at the Dewdrop). Party took the room, long-rested, and rigged a sock-on-doorknob alarm. In the morning at the Dewdrop, Dale the bartender served breakfast and Beeatrix — the grieving, hungover mining bee — pitched her ancestral flower meadow being haunted by a monster. Nancy made the table-altering pivot of recruiting Beeatrix (who used to 'sing the classics') to front the band at the fete. Party headed to western Canopia, hired Barbra (Eastern Comma butterfly, hungover after losing all her money at the casino) for 2 sap to fly them east. Nancy wove flight harnesses; Drix flew alongside; Barbra dropped them on an Iris leaf at the meadow's edge and agreed to come back at evening. They sneaked toward an egg sack on a leaf underside, recognized it as orchid mantis, and were ambushed — Drix was the first target, strummed his guitar, the mantis missed. Battle ensued. Tabby and Nancy killed one nymph before the session ended, roughly halfway through the encounter. See sessions/session_log.md."
 
 
 # ── PARTY STATUS ─────────────────────────────────────────────────────────────
 
 party:
   level: 6
-  location: Upstairs room of the Dewdrop Inn, Canopia — mid-conversation with Gleam, the rebel weevil contact
+  location: Mid-combat in the orchid mantis flower meadow east of Canopia. Dropped in by butterfly transport (Barbra); evening pickup pending at the meadow's edge. One nymph already down.
   pack_animal: null  # Bestie was tied up and left above the Winter Farm with a snack and a blanket
   details: party/  # individual YAML per PC — see party/*.yaml
 
@@ -28,53 +28,57 @@ party:
 
 active_threads:
 
-  - thread: Gleam's handoff — concrete route to the Leafcutter Queen
+  - thread: Orchid mantis fight in progress
     priority: high
-    notes: Session ended mid-conversation; Gleam offered to get the party into the hive through his contacts but the specific mechanism (cart, bribe, shift change, pheromone-lock) was not given. Must be written before Session 6 opens. The in-hive cell has reportedly been preparing for "something bigger."
+    notes: Session 6 ended mid-combat. Reconstruct mama mantis HP, remaining nymph count, egg sack(s) status, round number, and initiative order from the DM's encounter notes before Session 7. Tabby's Hunter's Mark is active. One nymph dead.
+
+  - thread: The fete clock
+    priority: high
+    notes: Gleam said the Red Ant Queen's fete is "in a few days." Party owes him their 3 dead-drop specialist picks (from Tudd, Demicous, Vikko, Diedre, Dax, Zalle) before the event. Pickup at the Dewdrop at first dark on the night of the event.
 
   - thread: Vell's mandate — reach the leafcutter queen
     priority: high
-    notes: Sporemother Vell tasked the party with bringing news of the Bloom's source to the leafcutter queen. Not to free her — to tell her she has an alternative, so she can choose to break from the fire ant alliance on her own terms. Gleam is the next link in the chain.
-
-  - thread: Antshley as escort and potential ally
-    priority: medium
-    notes: Handed off cleanly at the Overgrowth tunnel mouth in Session 5, returned via the rebel tunnel. Heather has attached. Available to re-enter at the queen audience or as a return contact in the Winter Farm cell.
+    notes: Sporemother Vell tasked the party with bringing news of the Bloom's source to the leafcutter queen. The route is now concrete (via Gleam's fete plan).
 
   - thread: The Bloom's source — Overgrowth leg of the journey
     priority: high
-    notes: Party is in the magic-amplified zone. The Ahganmin glows brighter here (now visibly worn in Nancy's turban as the gem). The source is still the ultimate destination.
+    notes: Party is in the magic-amplified zone. The Ahganmin glows brighter here (now visibly worn in Nancy's turban as the gem). Source is still the ultimate destination.
+
+  - thread: Beeatrix as band frontwoman
+    priority: medium
+    notes: Nancy recruited the grieving mining bee to front the band at the fete. Payoff at the event. Does she show up sober? Is she an asset or a liability?
+
+  - thread: Barbra evening pickup
+    priority: medium
+    notes: Barbra promised to come back to the meadow at evening to fly the party home. What happens if the fight runs long? Will she wait, leave, search?
+
+  - thread: Antshley as escort and potential ally
+    priority: medium
+    notes: Handed off cleanly at the Overgrowth tunnel mouth in Session 5. Heather has attached. Available to re-enter at the queen audience or as a return contact in the Winter Farm cell.
 
   - thread: Queen's Crown heist (player-initiated)
     priority: medium
-    notes: The party announced a heist, fumbled a rumor-spreading attempt, and explicitly liked the bit. Door is open for a real heist on a return to Canopia.
-
-  - thread: Mantises in the Overgrowth (foreshadowed)
-    priority: medium
-    notes: Dropped as a hint this session; the party registered them as big scary enemies. Beeatrix's bee-field encounter is the planted payoff.
+    notes: The party announced a heist, fumbled a rumor-spreading attempt, and explicitly liked the bit. Door is still open for a real heist on a return to Canopia.
 
   - thread: Greg at large inside the Winter Farm
     priority: medium
-    notes: Discredited but alive, hiding among the workers. Could reappear later as a ragged antagonist, an informant who nobody believes, or a desperate defector.
+    notes: Discredited but alive, hiding among the workers. Could reappear later.
 
   - thread: Rune of Fungal Protection
     priority: medium
-    notes: Carved into all three PCs. Mechanical effect TBD. Intended payoff is a cordyceps moment later in the campaign — decide the mechanic before the payoff.
-
-  - thread: Beeatrix and the bee-field side quest (unspent)
-    priority: low
-    notes: Singing bee was not engaged at the Dewdrop this session. Field encounter (orchid mantis + crab spiders) and the curio reward (Immovable Pebble / Perpetual Pudding / Tune-Shifted String) remain available.
+    notes: Carved into all three PCs. Mechanical effect TBD. Intended payoff is a cordyceps moment later in the campaign.
 
   - thread: Royal Jelly Society — Canopia branch (unvisited)
     priority: low
-    notes: The dissonance/cheerful-complicity scene was prepped and skipped. Available on a return.
+    notes: Walked past in Session 5, not entered. Available on a return.
 
   - thread: Bestie — tied up above the Winter Farm
     priority: low
-    notes: Left with a snack and a blanket near the ridge. Alive. Does she wander, get found, or quietly drop out of the narrative?
+    notes: Left with a snack and a blanket near the ridge. Alive. Fate open.
 
   - thread: Ahganmin properties
     priority: low
-    notes: Confirmed sensitivity to ambient magic level (Sessions 4 and 5). Other properties still TBD. Now visibly worn in Nancy's turban as the gem.
+    notes: Confirmed sensitivity to ambient magic level (Sessions 4–5). Other properties still TBD. Now visibly worn in Nancy's turban as the gem.
 
   - thread: Lars — left behind in burnt village
     priority: low
@@ -86,7 +90,11 @@ active_threads:
 
   - thread: Nancy's Winter Farm fungus sample
     priority: low
-    notes: Kept a piece from the corpse-fungus chamber. Available for later study — Garett? Detect Magic? Nature check?
+    notes: Available for later study — Garett? Detect Magic? Nature check?
+
+  - thread: Barbra's "felt stronger since the Bloom"
+    priority: low
+    notes: Foreshadowing for the 'all magic users amplified' thread. What is she stronger at?
 
 
 # ── REFERENCES ───────────────────────────────────────────────────────────────
