@@ -5,8 +5,8 @@
 # ── SESSION TRACKING ────────────────────────────────────────────────────────
 
 current_session: 7
-active_draft: null     # Session 7 draft not yet generated. s06_draft.md retained as arc-decision scaffolding.
-draft_status: not_started
+active_draft: sessions/s07_draft.md   # Generated; covers post-mantis Canopia → departure → fete infiltration.
+draft_status: drafted
 
 last_played_session: 6.5
 last_played_summary: "The Mantis Felled — a short continuation session finishing the orchid mantis combat that had paused mid-fight at the end of Session 6. The party won: mama orchid mantis and all nymphs dead, the flower meadow east of Canopia cleared. Each PC claimed a trophy — Drix and Nancy each took a mandible (The Mantible, an invisible 1d8 finesse short sword); Tabby took mantis spines to craft into daggers. Barbra the Eastern Comma butterfly returned at evening as promised and flew the party back to Canopia. Beeatrix's reward for clearing the meadow remains uncollected. See sessions/final/s065_final.md and sessions/session_log.md."
@@ -48,9 +48,6 @@ active_threads:
     priority: medium
     notes: Party cleared the orchid mantis from her ancestral meadow (Session 6.5) but has not yet collected the reward. Gold amount + any non-monetary token still TBD. Pay out when they next meet her in Canopia.
 
-  - thread: Mantis loot mechanics
-    priority: low
-    notes: Drix and Nancy each carry a Mantible (invisible 1d8 finesse short sword); Tabby has mantis spines to craft into daggers. Specify The Mantible's invisibility activation rules and the mantis-spine daggers' effect before they matter at the table.
 
   - thread: Antshley as escort and potential ally
     priority: medium

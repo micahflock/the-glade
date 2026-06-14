@@ -84,6 +84,12 @@ attacks:
     damage_type: piercing
     range: 150/600
 
+  - name: Mantis-spine dagger
+    attack_bonus: +7    # DEX (+4) + prof (+3), finesse
+    damage: 1d8+4
+    damage_type: slashing
+    notes: "Crafted from orchid mantis spines (Session 6.5). Same effect as The Mantible — can turn invisible 1x per short rest."
+
   - name: Extra Attack
     source: Ranger 5
     description: >
@@ -130,7 +136,7 @@ equipment:
   - Mess pot                        # session 1: RJS stockroom — preserved per DM
   - Larval grease                   # session 1: RJS stockroom — preserved per DM
   - Party map                       # session 2: working map begun by Tabby and Nancy, incorporating T'wigfingers' data, Lars's northeast heading, and Garett's triangulation parchment. Tabby is keeper. Preserved per DM.
-  - Mantis spines                   # session 6.5: harvested from the orchid mantis kill; Tabby intends to craft them into daggers (mantis-spine daggers). Mechanical effect TBD.
+  - Mantis-spine dagger(s)          # session 6.5: harvested from the orchid mantis kill and crafted into daggers. Same effect as The Mantible — 1d8 finesse; can turn invisible 1x per short rest.
   - Navi-gus                        # session 5: gift from Antshley at the Overgrowth tunnel mouth. Smooth translucent ball of fungus. Twitches/throbs when exposed to leafcutter pheromone trails. Currently keyed to Canopia. Re-keyable. The pheromone trails are constantly being re-cut, so the device is current with whatever the leafcutters have laid down most recently.
 
 features_and_traits:

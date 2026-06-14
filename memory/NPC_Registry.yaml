@@ -671,13 +671,11 @@ npcs:
       sessions/final/s065_final.md.
 
     loot_taken:
-      - "Drix took a mandible — The Mantible (invisible 1d8 finesse short sword)."
-      - "Nancy took a mandible — The Mantible (invisible 1d8 finesse short sword)."
-      - "Tabby took mantis spines to craft into daggers (mantis-spine daggers)."
+      - "Drix took a mandible — The Mantible (1d8 finesse short sword; turns invisible 1x per short rest)."
+      - "Nancy took a mandible — The Mantible (1d8 finesse short sword; turns invisible 1x per short rest)."
+      - "Tabby took mantis spines crafted into daggers — same effect as The Mantible (1d8 finesse; invisible 1x per short rest)."
 
-    hooks:
-      - The Mantible's invisibility activation rules (at-will? action? command word?) still TBD.
-      - Tabby's mantis-spine daggers — mechanical effect or cosmetic still TBD.
+    hooks: []
 
 
   - name: Orchid Mantis Nymphs
