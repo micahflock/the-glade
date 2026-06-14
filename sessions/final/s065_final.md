@@ -32,9 +32,8 @@ Each party member claimed a piece of the kill:
 > dagger. The played result is two mandibles (Drix + Nancy) and a set of
 > spines Tabby will work into daggers. The played version supersedes.
 
-**Still TBD (carried forward):**
-- The Mantible's invisibility activation rules (at-will? action? command word?).
-- The mantis-spine daggers' mechanical effect (or cosmetic only).
+**Mechanics (DM ruling, 2026-06-14):** All three blades share the same effect —
+a 1d8 finesse weapon that can **turn invisible once per short rest**.
 
 ---
 
