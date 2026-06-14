@@ -504,11 +504,12 @@ npcs:
     party_history:
       - "Session 5: Foreshadowed at the Dewdrop (singing loudly in the background). Not engaged."
       - "Session 6: Met properly at breakfast. Pitched the meadow side quest. Nancy invited her to front the band at the Red Ant Queen's fete — Beeatrix used to sing the classics. Recruitment accepted at the table; follow-through TBD."
+      - "Session 6.5: The party cleared the monster (orchid mantis family) from her meadow and returned to Canopia. Her reward has NOT yet been collected."
 
     hooks:
+      - "[CARRY-FORWARD] Beeatrix owes the party a reward for clearing the meadow — gold amount + any non-monetary token still TBD. Not yet paid out."
       - Does she actually show up sober at the fete? Or drunk? Or grieving?
       - The monster turned out to be an orchid mantis family — does she have any reaction when she learns the truth?
-      - Gold reward amount + any non-monetary token still TBD (per s06_draft.md section 3f).
 
 
   - name: Barbra
@@ -516,10 +517,10 @@ npcs:
     role: For-hire transport
     affiliation: Independent
     status: Alive
-    location: Western Canopia → meadow east of Canopia → returning for evening pickup
+    location: Canopia (flew the party home from the meadow)
     disposition: Neutral-positive (transactional)
     first_met: Session 6
-    last_seen: Session 6
+    last_seen: Session 6.5
 
     appearance: Eastern Comma butterfly. Found nursing a hot water in a corner, hungover.
     voice: Tired, transactional, hungover-honest.
@@ -533,9 +534,9 @@ npcs:
 
     party_history:
       - "Session 6: Hired by the party for 2 sap. Flew Nancy and Tabby in harnesses (woven by Nancy); Drix flew alongside. Would not land in the meadow — dropped them on a nearby Iris leaf. Agreed to come back at evening for pickup. Party told her about their invitations to the fete."
+      - "Session 6.5: Returned at evening as promised and flew the party back to Canopia after they cleared the meadow."
 
     hooks:
-      - Evening pickup is on the clock — what happens if the fight runs long and the party misses it?
       - "Eastern Comma vs. 'Eastern Common' — DM notes wrote 'Common,' player notes wrote 'Comma.' Going with Comma (a real species). [DM CHECK]"
       - Knows the party are invited dignitaries to the fete — discretion / threat vector if she gossips.
       - Her own Bloom-amplification is a future hook: what is she stronger at?
@@ -655,39 +656,43 @@ npcs:
 
   - name: Mama Orchid Mantis
     species: Orchid mantis
-    role: Headline combat encounter — paused mid-fight at end of Session 6
-    status: Alive — combat in progress
-    location: Flower meadow east of Canopia
+    role: Headline combat encounter — defeated Session 6.5
+    status: Dead — killed by the party
+    location: Flower meadow east of Canopia (corpse)
     disposition: Hostile
     first_met: Session 6
-    last_seen: Session 6
+    last_seen: Session 6.5
 
     notes: >
       Boss-tier orchid mantis built for the level-6 party. Camouflage-on-flower
       mechanic, adjacent-only flower hops, grapple-and-crush nasty move.
-      Combat state at end of Session 6: party is engaged; one nymph dead;
-      mama's HP / round / position must be reconstructed from DM encounter
-      notes before Session 7. See sessions/s06_draft.md sections 3a–3d for
-      the live rules.
+      Combat began Session 6, paused mid-fight, and concluded Session 6.5 with
+      a party victory. Mama and all nymphs dead; the meadow is cleared. See
+      sessions/final/s065_final.md.
+
+    loot_taken:
+      - "Drix took a mandible — The Mantible (invisible 1d8 finesse short sword)."
+      - "Nancy took a mandible — The Mantible (invisible 1d8 finesse short sword)."
+      - "Tabby took mantis spines to craft into daggers (mantis-spine daggers)."
 
     hooks:
-      - "[CARRY-FORWARD] Resume mid-combat at start of Session 7."
-      - Reward on defeat — The Mantible (invisible 1d8 finesse short sword) and a mantis-spine dagger. Mechanical details of the dagger TBD.
+      - The Mantible's invisibility activation rules (at-will? action? command word?) still TBD.
+      - Tabby's mantis-spine daggers — mechanical effect or cosmetic still TBD.
 
 
   - name: Orchid Mantis Nymphs
     species: Orchid mantis (juveniles)
     role: Supporting hostiles in the mantis encounter
-    status: One dead (Tabby + Nancy); remaining count TBD
+    status: All dead — killed by the party
     location: Flower meadow east of Canopia
     disposition: Hostile
     first_met: Session 6
-    last_seen: Session 6
+    last_seen: Session 6.5
 
     notes: >
-      "A couple" per the prep. One confirmed dead at end of Session 6. Egg
-      sacks present on leaf undersides — if not destroyed, hatch into more
-      nymphs (timer / HP not yet specified — see s06_draft.md section 3b).
+      "A couple" per the prep. One killed at end of Session 6 (Tabby + Nancy);
+      the rest finished off in Session 6.5 when the encounter concluded. All
+      nymphs dead; the meadow is cleared.
 
 
   # ── NOT YET MET ─────────────────────────────────────────────────────────────
