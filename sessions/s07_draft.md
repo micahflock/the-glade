@@ -77,7 +77,7 @@ There's already an MMA scene in Canopia — *"broadly in the world"* — and the
 
 \[MORE DETAIL: the bars are only *"vaguely concepted"* — give at least one a name + one-line pitch.\]
 
-\[CLAUDE TASK — deferred per skill rules: *"We're going to have to describe a couple of Mixed Mandible Arts combatants… there's going to be a roster."* Build a roster of MMA combatants the party can meet in town / at the gym. Surface as a follow-up ask; do not generate in this draft.\]
+**MMA roster — drafted.** See `sessions/notes/s07_mma_roster.md`: six fighters + a gym ("The Molt"), spanning the whimsy-to-horror range, each with a meet-the-party hook and heist-prep intel value (Old Pell gives real cage-zone layout; Krull blabs casually; Fitz is a recruitable pre-placed asset; The Cantor is the Del Toro horror beat). Ties Dax (cage medic) in early.
 
 ### 1f. Framing & Honesty Beat
 
@@ -260,7 +260,7 @@ Not session beats themselves. Captured here so the DMs have the context decided 
 
 Deferred Claude tasks the DMs flagged (do not generate inside this draft; surface before run):
 
-- Roster of Mixed Mandible Arts combatants.  
+- ~~Roster of Mixed Mandible Arts combatants.~~ **Done** → `sessions/notes/s07_mma_roster.md`.  
 - Trope suggestions for the megalomaniacal-king feast.  
 - Flavorful event suggestions for the season's event ("Quinceañera for ant princess?" was the example).  
 - Three fungus-awakening weapon effects (one per PC, orthogonal to each PC's strengths).  
