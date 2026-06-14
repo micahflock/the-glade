@@ -85,6 +85,11 @@ attacks:
     damage: 1d6+4
     damage_type: piercing
     range: 80/320
+  - name: The Mantible
+    attack_bonus: +7        # DEX +4 + prof +3, finesse
+    damage: 1d8+4
+    damage_type: slashing
+    notes: "Invisible finesse short sword (orchid mantis mandible, Session 6.5). Invisibility activation rules TBD."
 
 spellcasting:
   ability: intelligence       # Both AT and Bladesinger use INT
@@ -177,6 +182,7 @@ equipment:
   - Ahganmin (worn as the gem in Nancy's turban)  # session 2: glowing magic amber, reacts to elevated magical energy. Session 3: Garett built a box housing that makes glow changes easier to observe. Session 4: glowed more strongly inside the Winter Farm — confirmed sensitivity to ambient magic level. Session 5: glowing brighter in the Overgrowth; Nancy fashioned a turban and set the Ahganmin into it as the gem. (Detection box presumably still exists.)
   - Winter Farm fungus sample       # session 4: tore off and ate a piece of corpse-farm fungus (no effect); kept a piece for later study.
   - 1 cig                           # session 5: pickpocketed on the way out of the Queen's Crown casino in Canopia. (2 sap from S5 spent in S6 on Barbra's flight.)
+  - The Mantible                    # session 6.5: orchid mantis mandible — invisible 1d8 finesse short sword. Invisibility activation rules TBD.
 
 features_and_traits:
   - name: Mobile
@@ -243,4 +249,5 @@ notes:
   - "Session 5 roleplay beats: clutched at something under his clothes during the level-up [DM CHECK]; had a happy freakout in response to Drix's level-up song; fashioned a turban with the Ahganmin set as the gem; kept pointing with his sword; bought roses for the whole party in Canopia; helped Twyla hand out fungus rations in the Weevilville; pivoted the Queen's Crown plan from pickpocketing to rumor-spreading and lifted 2 sap + 1 cig on the way out after security walked them."
   - "Session 6 location: combat in progress, orchid mantis flower meadow east of Canopia. Dropped in by butterfly transport; evening pickup pending."
   - "Session 6 roleplay beats: recruited Beeatrix (mining bee, used to 'sing the classics') to front the band at the Red Ant Queen's fete; paid Barbra 2 sap for the flight east; wove flight harnesses to suspend Nancy and Tabby from Barbra for the ride; combat-killed/co-killed an orchid mantis nymph alongside Tabby ('Nancy the dancy + Tabby the stabby')."
+  - "Session 6.5: party defeated the orchid mantis family. Nancy took a mandible as his trophy — The Mantible (invisible 1d8 finesse short sword); flew back to Canopia on Barbra. Beeatrix's reward not yet collected."
   - "Session 6 spell flag [DM CHECK]: player notes say 'Nancy casts Alarm' after long rest. Alarm is not in Nancy's known-spells list. Either (a) ritual cast from Wizard spellbook (Alarm is a Wizard 1st-level ritual), or (b) the player meant the improvised sock-on-doorknob alarm the party rigged. Confirm with Rowyn."

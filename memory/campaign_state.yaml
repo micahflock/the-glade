@@ -8,15 +8,15 @@ current_session: 7
 active_draft: null     # Session 7 draft not yet generated. s06_draft.md retained as arc-decision scaffolding.
 draft_status: not_started
 
-last_played_session: 6
-last_played_summary: "Orchid Assassin — Gleam delivered the full handoff (fete invitation via the weevil channel, band slot via Drix's reputation, six specialist contacts placed inside the palace with a 3-of-6 dead-drop budget, and a 'first dark on the night of the event' pickup at the Dewdrop). Party took the room, long-rested, and rigged a sock-on-doorknob alarm. In the morning at the Dewdrop, Dale the bartender served breakfast and Beeatrix — the grieving, hungover mining bee — pitched her ancestral flower meadow being haunted by a monster. Nancy made the table-altering pivot of recruiting Beeatrix (who used to 'sing the classics') to front the band at the fete. Party headed to western Canopia, hired Barbra (Eastern Comma butterfly, hungover after losing all her money at the casino) for 2 sap to fly them east. Nancy wove flight harnesses; Drix flew alongside; Barbra dropped them on an Iris leaf at the meadow's edge and agreed to come back at evening. They sneaked toward an egg sack on a leaf underside, recognized it as orchid mantis, and were ambushed — Drix was the first target, strummed his guitar, the mantis missed. Battle ensued. Tabby and Nancy killed one nymph before the session ended, roughly halfway through the encounter. See sessions/session_log.md."
+last_played_session: 6.5
+last_played_summary: "The Mantis Felled — a short continuation session finishing the orchid mantis combat that had paused mid-fight at the end of Session 6. The party won: mama orchid mantis and all nymphs dead, the flower meadow east of Canopia cleared. Each PC claimed a trophy — Drix and Nancy each took a mandible (The Mantible, an invisible 1d8 finesse short sword); Tabby took mantis spines to craft into daggers. Barbra the Eastern Comma butterfly returned at evening as promised and flew the party back to Canopia. Beeatrix's reward for clearing the meadow remains uncollected. See sessions/final/s065_final.md and sessions/session_log.md."
 
 
 # ── PARTY STATUS ─────────────────────────────────────────────────────────────
 
 party:
   level: 6
-  location: Mid-combat in the orchid mantis flower meadow east of Canopia. Dropped in by butterfly transport (Barbra); evening pickup pending at the meadow's edge. One nymph already down.
+  location: Back in Canopia after clearing the orchid mantis meadow — flown home by Barbra. Presumed at the reserved Dewdrop Inn room ahead of the fete.
   pack_animal: null  # Bestie was tied up and left above the Winter Farm with a snack and a blanket
   details: party/  # individual YAML per PC — see party/*.yaml
 
@@ -27,10 +27,6 @@ party:
 # Full list lives in memory/Open_Questions.md
 
 active_threads:
-
-  - thread: Orchid mantis fight in progress
-    priority: high
-    notes: Session 6 ended mid-combat. Reconstruct mama mantis HP, remaining nymph count, egg sack(s) status, round number, and initiative order from the DM's encounter notes before Session 7. Tabby's Hunter's Mark is active. One nymph dead.
 
   - thread: The fete clock
     priority: high
@@ -48,9 +44,13 @@ active_threads:
     priority: medium
     notes: Nancy recruited the grieving mining bee to front the band at the fete. Payoff at the event. Does she show up sober? Is she an asset or a liability?
 
-  - thread: Barbra evening pickup
+  - thread: Beeatrix's reward (uncollected)
     priority: medium
-    notes: Barbra promised to come back to the meadow at evening to fly the party home. What happens if the fight runs long? Will she wait, leave, search?
+    notes: Party cleared the orchid mantis from her ancestral meadow (Session 6.5) but has not yet collected the reward. Gold amount + any non-monetary token still TBD. Pay out when they next meet her in Canopia.
+
+  - thread: Mantis loot mechanics
+    priority: low
+    notes: Drix and Nancy each carry a Mantible (invisible 1d8 finesse short sword); Tabby has mantis spines to craft into daggers. Specify The Mantible's invisibility activation rules and the mantis-spine daggers' effect before they matter at the table.
 
   - thread: Antshley as escort and potential ally
     priority: medium

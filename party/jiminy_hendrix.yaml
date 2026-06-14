@@ -78,6 +78,12 @@ attacks:
     damage: 1d6+3
     damage_type: piercing
 
+  - name: The Mantible
+    attack_bonus: +6    # DEX (+3) + prof (+3), finesse
+    damage: 1d8+3
+    damage_type: slashing
+    notes: "Invisible finesse short sword (orchid mantis mandible, Session 6.5). Invisibility activation rules TBD."
+
 spellcasting:
   ability: charisma
   spell_attack: +8     # CHA (+5) + prof (+3)
@@ -130,6 +136,7 @@ equipment:
   - Mite fur cloak            # session 1: RJS stockroom
   - Dung beetle statue        # session 1: RJS stockroom
   - Entertainer's pack        # added: standard Entertainer starting gear
+  - The Mantible              # session 6.5: orchid mantis mandible — invisible 1d8 finesse short sword. Invisibility activation rules TBD.
   - 16 gp
 
 features_and_traits:
@@ -205,3 +212,4 @@ notes:
   - "Session 5 roleplay beats: played a song on the walnut shell lute upon leveling up — described in player notes as a 'counter charm' — that landed on Nancy hard enough to trigger a happy freakout; ran the dead drop cleanly at the bar (ginger honeycap, sip-wince, 'it's a hot batch')."
   - "Session 6 location: combat in progress, orchid mantis flower meadow east of Canopia. Dropped in by butterfly transport; evening pickup pending."
   - "Session 6 roleplay beats: flew alongside Barbra (rather than in a harness) on the way to the meadow; was the target of the mantis's surprise grab at combat start — strummed his guitar/lute and the mantis missed [DM CHECK on the mechanic: Vicious Mockery? Cutting Words? Just narrative?]."
+  - "Session 6.5: party defeated the orchid mantis family. Drix took a mandible as his trophy — The Mantible (invisible 1d8 finesse short sword); flew back to Canopia on Barbra."
