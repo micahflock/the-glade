@@ -1,6 +1,10 @@
 # Session 7 Draft — \[MORE DETAIL: session title\]
 
-**Scope.** Session 7 picks up *after* the mantis fight resolves (session 6.5 closes that combat off-tracker). Coverage: the remaining day(s) in Canopia → departure → road to the Red Ant / Leafcutter palace → initial infiltration of the fete, as far as the table gets. The arc-decision material previously parked at the bottom of `s06_draft.md` (palace setting bible, heist plan, specialists, fungus-weapon rewards, Leafcutter Queen lore) now feeds the fete beats of *this* session and is folded in inline rather than as appendix scaffolding.
+**Scope.** Session 7 picks up *after* the mantis fight resolves (session 6.5 closes that combat off-tracker). **Reframed by the latest planning transcript:** this is now a **heist-prep / intelligence-gathering session set entirely in Canopia**, not the infiltration. The party comes back, goes around Canopia, collects their rewards, and is pushed toward gathering intel and setting up advantages for the upcoming heist. The fête infiltration itself is now a **separate, later session** — the heist proper "kicks off" the last week of July after a planned hiatus, with this session ("on the 17th") padded out into the preparation session. Framing intent from the notes: *"tuck little things into Canopia that give them pieces of information or advantages about the heist if they discover them — frame it a little more explicitly as heist prep."* The DMs will also *"be honest with them about the scheduling stuff."*
+
+The departure, palace, and infiltration material below (sections 2–4 and the Background) is **retained as the prep target and forward reference** — it is what the party is gathering intel *about* — not as session-7 beats. The palace setting bible (§3a) is heavily updated from this transcript.
+
+\[OPEN: scheduling — tentatively, hiatus until the last week of July, with this prep session on the 17th; heist begins after the hiatus, ideally before Katie leaves on sabbatical in September. Lock dates via a when2meet. Meta, not table content, but it shapes what this session is.\]
 
 ---
 
@@ -8,7 +12,9 @@
 
 **Setup:** Session 6.5 closes the mantis combat. Session 7 opens immediately after — the mantis is down, the egg sack situation has resolved one way or the other, the party is in the flower meadow east of Canopia at roughly evening (Barbra was promised an evening pickup). \[MORE DETAIL: post-fight state — HP, expended resources, any PC down/up, whether eggs were destroyed or some nymphs escaped. Carries over from session 6.5, not specified in these notes.\]
 
-**Beeatrix's reward:** *"The bee could just give them a little bit of gold, and the real reward could be from the mantis."* \[MORE DETAIL: amount of gold; any non-monetary token of thanks. Carried from session 6 prep; not re-specified in these notes.\]
+**Beeatrix's reward:** *"They'll get a minor reward from the bee."* The bee gives a little gold; the real reward is from the mantis. \[MORE DETAIL: amount of gold; any non-monetary token of thanks. Carried from session 6 prep; not re-specified in these notes.\]
+
+**Beeatrix joining the band — resolved:** *"They really want to convince the bee to be part of their band. Do we want the bee to be part of their band? Yeah, absolutely — they don't have a vocalist."* Direction confirmed: the bee joins the band as their vocalist/frontwoman. Payoff at the fête. \[MORE DETAIL: does she show up sober? Asset or liability? Still open per campaign\_state thread.\]
 
 **Mantis salvage:**
 
@@ -19,13 +25,15 @@
 
 ---
 
-## 1\. Return to Canopia — Day Two
+## 1\. Return to Canopia — Heist Prep
 
-### 1a. Available Activities
+This is now the heart of the session: *"next session is them coming back, going around Canopia, getting their reward… they're going to go to the Royal Jelly Society. Is there anywhere else we want them to go?"* The DMs want to *"push them toward doing intel gathering."* Each location below is a node where the party can learn pieces of the palace layout, or set up an advantage they can spend during the heist. Frame it explicitly as heist prep — this is in *addition* to the flashback specialists: *"this would give them a chance to actually set things up ahead of time for the infiltration."*
+
+### 1a. The Royal Jelly Society — Canopia Branch (now a heist-intel node)
 
 #### [The Royal Jelly Society — Canopia Branch](?tab=t.lsninopmb3i6)
 
-**this branch exists and is very, very unhelpful.**
+**this branch exists and is very, very unhelpful — about the calamity.** (See below: it is *extremely* helpful, unwittingly, about the heist.)
 
 **What it is.** A local chapter. Ornate. Airy. A bunch of bees who really, really love pressed flowers and are absolutely thrilled with the current state of the world.
 
@@ -35,23 +43,52 @@
 
 "Oh\! You've found a new flower? Some petals for us? Oh, beautiful. Yes, isn't it wonderful — the magic has made everything so gorgeous and delicate…"
 
-They do not give a shit. They cannot be made to give a shit. The Overgrowth has been the best thing to ever happen to this branch. \[SLOP CHECK: this entire vibe is straight from transcript 2 — keep tonal intent exact. The players should walk out feeling a specific flavor of civilization-ending dread.\]
+They do not give a shit about the Bloom. They cannot be made to give a shit. The Overgrowth has been the best thing to ever happen to this branch. \[SLOP CHECK: this entire vibe is straight from transcript 2 — keep tonal intent exact. The players should walk out feeling a specific flavor of civilization-ending dread.\]
 
-**What they actually know:** Background only. Stuff the party already knows. "It started roughly X years ago. Plants are not dying. Isn't that just marvelous?" No leads. No action.
+**What they actually know about the calamity:** Background only. Stuff the party already knows. "It started roughly X years ago. Plants are not dying. Isn't that just marvelous?" No leads. No action.
 
-**DM note.** This is the second payoff of the session's central thesis (first payoff: civilians in Canopia saying nice things about fire ants). Dissonance. Complicity by cheerful ignorance.
+**What they DO know — heist intel (new from this transcript):** The RJS were pollinators, and *"they could have helped with the construction"* of the petal palace. They are a rich, oblivious source of heist intel precisely because they don't care about anything but flowers. Possible payoffs if the party works this angle:
 
-### Other locations
+- **A rough map.** *"They could talk to someone that worked on building it and get a rough map."* The party has no map right now, and *"having a map of where you're infiltrating is hella useful"* — especially combined with the bore-through-petals plan (see §3a).  
+- **An "in" with someone at the fête.** They'll be invited to the big fête, and could get an introduction, have someone *carry an item in* for them, or *"poison someone so they vomit spectacularly the next night, causing a diversion."*  
+- **The Leafcutter Queen ↔ lab link.** The party doesn't know the Leafcutter Queen has a lab. Hook: *"she could have requested lab equipment from them, which they were more than happy to give because they don't need it anymore. They're way into flowers now. 'More room for flowers. Need more flower.'"* A thread that points at the lab.
 
-**Mayflyer, "a corner," other partially-developed Canopia locations** — mentioned but not developed in these notes. \[MORE DETAIL: which other Canopia locations to make available, with at least a one-line pitch for each.\]
+**DM note.** The dissonance is now double-edged: the same cheerful complicity that makes them useless about the apocalypse makes them a goldmine for the heist. Civilization-ending dread *and* a free map.
 
-### 1b. Other beats for Day Two
+### 1b. The View from the City's Edge
 
-\[MORE DETAIL: any specific NPC re-encounters, scenes, or hooks for the second day in Canopia. Notes are light here — the focus was on the mantis fight, the arc plan, and the palace material, not on the day-two slate.\]
+Set up at the end of the last session: *"remember at the end of the session, Rowan wanted to go to the side of the city where they could see the castle. So they'll be able to see it, and then they can get a map."*
+
+The public-facing rooms are visible from outside and people know what's going on, so this is **easy intel on the public layout**. A bystander can point: *"those are the ballrooms, the throne room is there, that's where they land, there's gambling halls over there."* The grandiose public-facing rooms are visible and common knowledge. *"That should be really easy to ascertain."*
+
+### 1c. Science / Alchemy Suppliers
+
+Canopia's a big city: *"if they look for science suppliers there — they could learn about regular shipments of exotic chemicals and alchemical ingredients going to the palace."* Not necessarily artificial stuff — examples from the notes: *"the nectar from this flower has been acting really weird recently and she wanted a lot of it,"* or *"the goo from aphids has changed and she wants a lot."* Mushrooms, ground-up seeds, anything like that. Points toward the lab (which they don't yet know exists).
+
+### 1d. The Queen Bee Casino
+
+A place to talk to someone who has been to one of the Red Ant Queen's fêtes before — *"as a patron or as a card dealer."* She's done this before; this is just the biggest one.
+
+There's also a business angle: the fête is a night the party's casino makes less money *"unless they're sending games and dealers and actually running games at the fête."* The Red Ant Queen isn't going to have a casino running for no one, so the party could be **providing support** — which is itself a way in. \[MORE DETAIL: do the DMs want to run the "party provides casino support at the fête" as an actual entry vector? Raised, not concluded.\]
+
+### 1e. Bars + the Mixed Mandible Arts Gym
+
+There's already an MMA scene in Canopia — *"broadly in the world"* — and the Red Ant Queen recruits top fighters for the fête. Mixed Mandible Arts is *"like UFC"*; the fête is a high-profile sporting event, so there are **more fighters than normal in town**. The party could run into some of them at a bar, or go to the local **Mixed Mandible Arts gym**.
+
+\[MORE DETAIL: the bars are only *"vaguely concepted"* — give at least one a name + one-line pitch.\]
+
+\[CLAUDE TASK — deferred per skill rules: *"We're going to have to describe a couple of Mixed Mandible Arts combatants… there's going to be a roster."* Build a roster of MMA combatants the party can meet in town / at the gym. Surface as a follow-up ask; do not generate in this draft.\]
+
+### 1f. Framing & Honesty Beat
+
+- **Be honest with players about scheduling.** The DMs intend to *"be honest with them about the scheduling stuff"* (hiatus, resume for the heist).  
+- **Frame everything above as heist prep.** Intel + advantages the party can set up *ahead of time*, on top of the flashback specialists.
 
 ---
 
-## 2\. Departure from Canopia
+## 2\. Departure from Canopia — (now the NEXT session: the heist proper)
+
+**Reframed:** per the latest transcript, the party most likely does **not** leave Canopia this session. Departure and the heist begin the **following** session (after the planned hiatus, last week of July). Material retained below as forward reference.
 
 **Setup:** End of the Canopia chapter — the party leaves for the Red Ant / Leafcutter palace.
 
@@ -59,40 +96,64 @@ They do not give a shit. They cannot be made to give a shit. The Overgrowth has 
 
 **Waylay decision:** \[MORE DETAIL: a specific waylaying encounter or hook on the road, or explicit decision to skip and arrive directly. Notes do not commit either way: *"Decide whether the party is waylaid on the road out of Canopia at end of session, or arrives at the palace cleanly."*\]
 
-**End-of-session beat (if session ends here):** \[MORE DETAIL: closing image if the table doesn't reach the palace. Not specified in these notes.\]
+**End-of-session beat (if this prep session ends in Canopia):** \[MORE DETAIL: closing image for the prep session — likely the party set with map/intel/advantages, looking toward the heist. Not specified in these notes.\]
 
 ---
 
-## 3\. Arrival at the Red Ant Queen's Palace
+## 3\. The Red Ant Queen's Palace — Setting Bible & Heist Target
 
-Per the session-7 scope, this beat fires only if the table gets here. The palace setting bible and heist plan below are pulled from arc decisions made in session-6 planning; they have not been broken into per-beat scene structure yet.
+This is the **target of the intel-gathering** in §1 and the **setting for the future heist session**, not a session-7 beat. The setting bible below is substantially updated from the latest transcript. *"We should probably nail down a little bit what the castle is going to look like."*
 
 ### 3a. The Palace — Setting Bible
 
+**Established premise (unchanged):**
+
 - The Red Ant hive is **above ground**, a **palace built of ever-living, never-rotting flower petals** (built for the Red Ant Queen by the leafcutters using flowers that don't decay because of the Bloom).  
 - The Red Ant Queen is a megalomaniac running the zone. She throws constant **big-ass fancy balls**: bards from everywhere, pit fights with betting, debauchery. Non-ant guests are normal — bees, wasps, butterflies, moths.  
-- The hive contains **on-site bee facilities** (bees making honey inside one of the wings/arms of the palace) — *"That would be a really cool area to cut through."*  
-- Standard megalomaniacal-king-feast tropes are explicitly invited.  
 - The party is invited to **a specific event**, larger than the everyday debauchery — *"It's also the season's event."* The everyday debauchery is going on regardless; this one is bigger and brings in dignitaries.
 
-**Spaces in the palace (from notes):**
+**Overall shape (new):** *"Imagine a Christmas tree, but the decorations don't wrap all the way around. The decorations are like paper lanterns festooned with petals."* Each room is an **orb-like structure** — not necessarily a sphere — and the rooms are **connected by walkways and promenades**. The rooms are **not all immediately adjacent**; some are, some are reached by a promenade. This makes it easy to theater-of-the-mind DM: *"all you have is rooms with inputs and outputs."* A **list of what's connected to what** is the important artifact. \[Picture the second DM drew last time was shared on Discord — pull it onto the whiteboard.\]
 
-- Multiple big ballrooms each with a band/performer and a few bars  
-- Backstage areas for bands/performers  
-- Pheromone lounge  
-- Mixed Mandible Arts cage/betting area  
-- Backstage area for MMA zone  
-- Throne/feasting room  
-- Kitchens  
-- Brewery  
-- Bee hive  
-- Leafcutter Queen's chambers
+**Materials & the bore-through-petals model (new — this is the core heist mechanic):**
 
-\[MORE DETAIL: whiteboard map of the palace at zone-resolution — dance floor / fighting pit / honey wing / hallway connections / high-security wing. Flagged in the notes: *"we should drop a map on the big whiteboard."*\]
+- Certain **outward-facing areas are made of flower petals** — the party can **bore holes and get in and out silently** (*"although not invisibly"*).  
+- Areas the DMs **don't** want the party boring into are **covered with tougher material — bark or layers of leaves** — where they'll **make noise and attract attention** if they try to bore in (e.g. *"right at the entrance to the Ant Queen zone"*).  
+- The **armored core** where the **Leafcutter Ant Queen** is, is made of a **different material** entirely — it is **not** flower petals, and must be **entered through a specific entry point**.  
+- A **map makes the bore-through plan powerful**: *"If they have a map, that becomes really powerful."* (Ties directly to the §1a RJS map.)
 
-\[CLAUDE TASK — deferred per skill rules: *"Suggest some additional tropes to include here."* The notes explicitly ask for trope suggestions for the megalomaniacal-king feast; do not generate in this draft, surface as a follow-up ask.\]
+**Room list (consolidated / de-duplicated per the notes):**
 
-\[CLAUDE TASK — deferred per skill rules: notes explicitly ask *"Provide some interesting flavorful events here. Quinceañera for ant princess?"* Do not generate; surface as a follow-up ask.\]
+- **At least two ballrooms** — each with a band/performer and a few bars.  
+- **A throne and reception room** — a grand audience room, lots of people, pass-around refreshments.  
+- **Mini distillery / mini hive** (bees making honey on-site).  
+- **Feasting room** — a Great Hall-style dedicated eating zone.  
+- **Landing zones (plural)** — each ballroom has a landing zone; *"you can't land directly outside the throne room."*  
+- **Entry for ground bugs.**  
+- **Fighting pit** (Mixed Mandible Arts), linked to the casino/gambling zone; under the pit is a **support room where the fighters go and the medic is.**  
+- **ONE pheromone lounge** — *"one pheromone lounge attached to both ballrooms"* (de-duplicated from "plural").  
+- **ONE gambling room** — connects to **all ballrooms, the fighting pits, and the pheromone lounge** (de-duplicated to one).  
+- **Servant corridors / support rooms** — *"every room should have a support room under it, those link to the main kitchen. Servants go behind the bar, downstairs to the support room, and that links back to the kitchen."* Modeled on **Disney World's underground system** — human-sized vents you can move through undetected.  
+- **Queen's secure area** — lab + chambers, higher security, **behind the grand front rooms, up higher in the tree, in the shadows** (detailed below).
+
+**Connection examples (from the notes):** kitchens immediately adjacent to support rooms underneath, **ballroom on top**; a **promenade ballroom → casino**; a **promenade casino → fighting pits**; under the fighting pits, the fighters' support room + medic. Up high, an **armored tunnel from the main ballroom to the living quarters** (where the labs are). The DMs want **a second route to the living quarters** so the party isn't forced through the main ballroom — *"we can use this to really limit ingress points."*
+
+**The secure area where the queens live (new detail):** behind the grandiose front entry rooms, up higher in the tree and in the shadows. The lab is here. Servants need to reach it too, so there are routes in:
+
+- **Known route #1 — the ceremonial path** from the throne room (primary).  
+- **Known route #2 — the warrens route from the kitchen** (the servant passage; *"the passage from the kitchens for servants to the queen area is known."*).  
+- **Secret route — pheromone lounge → Red Ant Queen's chambers.** *"Not well known at all. It's a secret that she indulges — she doesn't want other people to know about or have access to it. Stuff is brought to her; she doesn't go herself."* This is a **fun player entry point into the secure area** — it drops them in the **Red Ant Queen's chambers**, which is *"not exactly where they want to be"* (and *"maybe even more secure"*), and they **still have to exfiltrate and get to where they actually want to be** (the Leafcutter Queen).
+
+**The Leafcutter Queen's lab/cell (new):** *"another room we forgot: the Leafcutter Queen's lab."* Decision: the lab **is also her cell** — *"a single set of chambers — maybe a door between them — but single, confined chambers."*
+
+**Guards (new — replaces the vaguer fail-state in §4):**
+
+- **~12 specialized bodyguards** live near the queens — big, beefy. The Red Queen's **ceremonial guard and actual badass bodyguards.**  
+- **Alarm behavior in the secure area:** triggering an alarm there brings **4 of them quickly**; if the party **dispatches them fast enough, the alarm resets to not-discovered.**  
+- **Another ~8 in the main ballroom area**, plus **a number of basic foot soldiers.**
+
+\[MORE DETAIL: whiteboard map of the palace at zone-resolution — the orb rooms + their inputs/outputs, landing zones, honey/distillery wing, the bore-able petal faces vs. the bark/leaf faces, and the secure wing with its three routes in. Flagged in the notes: *"we should probably nail down… what the castle is going to look like"* and *"drop a map on the big whiteboard."*\]
+
+\[CLAUDE TASK — deferred per skill rules: *"Suggest some additional tropes to include here"* (megalomaniacal-king feast) and *"Provide some interesting flavorful events here. Quinceañera for ant princess?"* Surface as follow-up asks; do not generate in this draft.\]
 
 ### 3b. Arrival / Entry Read-Aloud
 
@@ -104,18 +165,20 @@ Per the session-7 scope, this beat fires only if the table gets here. The palace
 
 ---
 
-## 4\. Initial Infiltration — Public Phase
+## 4\. Initial Infiltration — Public Phase (future heist session)
 
-**Framing intent (from the notes):** *"Party is invited as dignitaries via the weevil channel (Gleam). They can move freely as guests in public areas for some period of time."* This is the get-the-lay-of-the-land beat.
+**Reframed:** this is the **heist session**, not session 7. Retained as forward reference.
 
-**Approach options the party has on the table (from the notes):**
+**Framing intent (from earlier notes):** *"Party is invited as dignitaries via the weevil channel (Gleam). They can move freely as guests in public areas for some period of time."* This is the get-the-lay-of-the-land beat.
+
+**Approach options the party has on the table (from earlier notes):**
 
 - Full sneak.  
 - **Drix as a traveling bard** to enter publicly.  
 - **Nancy dancing** ("Nancy dance-y").  
 - **Tabby** sneaking in from the outside.
 
-**Fail-state model (from the notes):** *"Fail states are escalating, not binary: no alarm switch — discovery summons investigators. Party can quietly dispatch the first 1–2 and melt back into shadows. If that fails, escalation forces them to run."*
+**Fail-state model:** escalating, not binary — discovery summons investigators rather than flipping a binary alarm. In the **secure area specifically**, the latest transcript pins this down: a triggered alarm brings 4 bodyguards fast, and **dispatching them quickly enough resets the alarm to not-discovered** (see §3a guards). If escalation outpaces the party, it forces them to run.
 
 ### 4a. The Leafcutter Queen Parade
 
@@ -139,9 +202,9 @@ Per the session-7 scope, this beat fires only if the table gets here. The palace
 
 ---
 
-# Background — Arc Material the Notes Pre-Loaded for This Session
+# Background — Arc Material the Notes Pre-Loaded
 
-Not session beats themselves. Captured here so the DM running session 7 has the context that was decided in session-6 planning. Inline citations from the notes provided.
+Not session beats themselves. Captured here so the DMs have the context decided in planning. Inline citations from the notes provided.
 
 ## A. Leafcutter Queen — Story / Lore (in case the party reaches her)
 
@@ -171,6 +234,7 @@ Not session beats themselves. Captured here so the DM running session 7 has the 
 - Gleam presents **four specialist NPCs**; party picks **two** to take on the heist as off-screen support.  
 - Each specialist has a **theme** (e.g. "fighter who can hide" — Rocky; "good at making disturbances" — Sassy; "good at putting things to sleep" — Sleepy). Specifically *not* a fixed list of abilities.  
 - During the heist, when something goes wrong, the players invoke a flashback: *"Earlier, \[specialist\] did X to set this up."* Players invent the flavor; DM either accepts or gently nudges toward a creative answer that fits the specialist's theme.  
+- The latest transcript reinforces this — *"we have them set up with these operatives and they can pull flashbacks in session"* — but adds that the **Canopia prep session lets them also set things up ahead of time for real** (e.g. the RJS map, an item carried in, a diversion), not only via flashback.  
 - DMs are **not** playing these NPCs at the table. They are flashback levers.  
 - \[MORE DETAIL: write the four actual specialists' names \+ themes. Notes name Rocky, Sassy, Sleepy as illustrative but do not commit to a final roster of four.\]  
 - \[SLOP CHECK: this mechanic was discussed and broadly endorsed *"we both like the direction this is headed"* but the second DM was still pushing back. Confirm before deploying at the table. Note also that session 6 *as actually run* gave the party six contacts and three dead-drop picks — reconcile.\]
@@ -183,21 +247,20 @@ Not session beats themselves. Captured here so the DM running session 7 has the 
 
 ---
 
-# DM Pre-Session Checklist for Session 7
+# DM Pre-Session Checklist for Session 7 (Canopia heist-prep session)
 
-Carryover items from the s06 prep list that remain unresolved and are now session-7 prep:
-
-1. **Beeatrix's gold reward amount** \+ any non-monetary token (mantis fight closes in session 6.5).  
+1. **Beeatrix's gold reward amount** \+ any non-monetary token; confirm it reads as the *minor* reward (mantis salvage is the real one).  
 2. **Mantible activation rules** — invisibility at-will / action / once-per-rest?  
-3. **Specialist roster reconciliation** — does session 7 honor the "four specialists, pick two, flashbacks" model from these planning notes, or the "six contacts, three dead-drop picks" model Gleam actually delivered in session 6? Pick one before the table.  
-4. **Decide whether the party is waylaid on the road out of Canopia, or arrives cleanly.**  
-5. **Whiteboard map of the Red Ant palace** at zone-resolution — dance floor / fighting pit / honey wing / hallway connections / high-security wing.  
-6. **Pick at least 1–2 specific public-phase scene beats** (a band, an MMA bout, an NPC encounter) so the public phase isn't a vibes-only montage.  
-7. **Stage the Leafcutter Queen parade** — read-aloud, route, escort detail.  
-8. **Day Two slate in Canopia** — which non-palace beats are actually live? (Royal Jelly Society yes/no, anyone the party should re-encounter, any new hooks.)
+3. **Decide which intel nodes are live** and what each yields: RJS (map / in / item-carry / diversion / lab link), city-edge view (public layout), science suppliers (lab shipments), Queen Bee Casino (fête veteran + the "provide casino support" entry vector), bars + MMA gym (fighters in town).  
+4. **Prep the RJS rough-map handout** — what does the construction map actually show vs. omit (omits the secure wing's secret pheromone route, etc.)?  
+5. **Whiteboard map of the palace** at zone-resolution — orb rooms + inputs/outputs, landing zones, bore-able petal faces vs. bark/leaf faces, the three routes into the secure wing. Pull the Discord drawing onto the whiteboard.  
+6. **Specialist roster reconciliation** — four-present-pick-two-flashbacks model vs. the six-contacts / three-dead-drop-picks model Gleam actually delivered in session 6. Pick one.  
+7. **MMA roster** — at least a couple of named Mixed Mandible Arts combatants the party can meet at the gym / a bar.  
+8. **Be honest with the players about scheduling** (hiatus, resume for the heist).
 
-Deferred Claude tasks the DMs flagged in these notes (do not generate inside this draft; surface before run):
+Deferred Claude tasks the DMs flagged (do not generate inside this draft; surface before run):
 
+- Roster of Mixed Mandible Arts combatants.  
 - Trope suggestions for the megalomaniacal-king feast.  
 - Flavorful event suggestions for the season's event ("Quinceañera for ant princess?" was the example).  
 - Three fungus-awakening weapon effects (one per PC, orthogonal to each PC's strengths).  
