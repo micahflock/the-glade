@@ -274,3 +274,114 @@ What he reveals:
 - **Update Tabby's YAML** after the choice.
 - **Thoralex's crown as a heist vector** — does delivering/escorting the finished crown become the party's way through the throne room on coronation day?
 - **Is Thoralex a usable contact?** He's been *inside.* Does he sketch a layout if befriended/paid/leveraged — or is that too convenient, and he only ever lets the throne-room detail slip by accident?
+
+---
+---
+
+# 1c · CANOPIA — Vikki's Volatiles (Science / Alchemy Supplier)
+
+**When:** Daytime only — ⏰ **not open at night** (matters if the party tries to come back to break in)
+**Where:** Tucked among jewelers and scented-candle shops, an older building of cut pebble
+**Who:** Vikki, proprietor · a frazzled house-centipede assistant
+**Purpose:** Intel that *points toward the lab the party doesn't know exists* · the Queen's appetite for "changed" reagents · optional after-hours break-in
+
+> **How they get here:** Canopia's a big city — they only find this if they go **looking for science / alchemy suppliers.** Most likely they're **directed here by the Royal Jelly Society** (if at all). Don't hand it to them; make it a thread they pull.
+
+---
+
+## 1 · The Storefront (read-aloud)
+
+> Wedged between a shop hawking delicate jewelry and another thick with the smell of scented candles, there's an older building — squat, built of cut pebbles, out of step with its pretty neighbors. Above a few of the upper windows, the stone wears **fresh scorch marks.** Suspiciously fresh.
+
+> **DM note:** The scorch marks are a planted detail — something upstairs goes *boom* now and again. Pays off in §3.
+
+## 2 · Inside (read-aloud)
+
+> A counter runs across the front, and behind it: rows and rows of neat shelving, marching back into the dim. The visible stock is a wild range — **tarantula hairs** in one stoppered jar, **poppy seeds** in the next, a hundred things besides. Everything has its place.
+>
+> The proprietor is an elderly **bombardier beetle** — Vikki — gruff, businesslike, and, you can't help but notice, **down one arm**, the stump fairly recent.
+
+**Vikki:** Brusque, no time for browsers. But get her going on the right subject and she'll *rant.* (The bombardier beetle is deliberate — she spits boiling caustic spray. That's why the scorch marks, that's why the missing arm, that's what she'll throw at burglars. See §4.)
+
+---
+
+## 3 · What Vikki Shares
+
+Hit these if the party engages her, especially if they prompt the rant:
+
+- **"Reagents have gotten powerful of late."** A recent **mishap upstairs** — *"Cost me an arm, that did! And at my age…"* (Ties straight to the Bloom-amplifies-magic thread.)
+- **The Queen buys *everything*.** She can't think of a single thing she *hasn't* sold to that new Red Queen. Every time a new item comes in, *"those unsettlingly be-petal'd ants of hers"* are banging down her door for it. It's all she can do to keep stock for her other customers.
+- **The dawning suspicion:** *"I thought it was all for her personal pheromone lounge… but it's almost like she's got some kind of **laboratory** up there."*
+
+> 🔑 **DM note — the real payload:** This is the breadcrumb toward **the Queen's lab**, which the party does not yet know exists. Keep the kinds of orders *organic and strange*, not artificial — the point is that natural ingredients are **changing**, and she wants them in bulk:
+> - *"The nectar from this one flower's been acting really weird lately — she wanted a LOT of it."*
+> - *"The goo off the aphids has changed somehow. She wanted barrels."*
+> - Mushrooms, ground-up seeds, anything like that.
+>
+> The throughline: *something is altering the Glade's organic magic, and the Queen is collecting the evidence by the crate.*
+
+---
+
+## 4 · The Frazzled Assistant (read-aloud)
+
+> A shape skitters between the shelves — a **house centipede**, every one of its many legs in motion, its hairs in a frazzle as it rushes to pull an order together.
+
+**If asked:** It's an **urgent pack of reagents for the upcoming fête.** (Confirms the Queen's fête prep is touching even the chemical supply — and gives the party a thread: what's *in* that pack?)
+
+---
+
+## 5 · ⚠️ After-Hours Break-In (optional)
+
+If the party decides to come back and **break in at night** (the shop is closed — see the hours):
+
+- 🔍 **What they find:** Order records / crates showing **tons and tons** of material going to the Red Ant Queen — far past any "pheromone lounge" cover story. Hard confirmation of the lab-scale operation.
+- 💥 **If they botch it:** **Bad rolls = Vikki throws grenades.** She lives above the shop, she's armed, she's a *bombardier beetle*, and she does not miss twice. Watch out. (This is where the scorch marks and the missing arm cash in — her caustic spray is genuinely dangerous.)
+
+> **DM note:** Decide whether Vikki is a **kill-on-sight defender** or someone the party could *talk down / recruit* once she realizes they're also suspicious of the Queen. She has grievances (her arm, her hijacked stock) — there's an alliance here if they don't blow her door off first.
+
+---
+
+### Loose ends / decisions surfaced
+- **What's actually in the fête reagent pack?** Name a few items; let it foreshadow the lab.
+- **Is Vikki a potential ally or just an obstacle?** Decide her break-in disposition before the party tries it.
+- **Confirm the lab exists / where it is** in your own notes, so the breadcrumbs here actually lead somewhere when the party follows them.
+- **RJS as the pointer:** if they never visit RJS, do they find Vikki at all? Decide whether there's a second route in.
+
+---
+---
+
+# 1d · CANOPIA — The Queen Bee Casino
+
+**When:** Evening (Canopia stays open late)
+**Where:** A casino in the city — noticeably hollowed out right now
+**Who:** A bartender and/or pit boss who's **worked a Red Ant Queen fête before** — *"as a patron or as a card dealer."* She's done this dance; this is just the biggest one yet.
+**Purpose:** Eyewitness intel on how a fête casino floor is laid out — and the **support rooms beneath the big rooms**
+
+---
+
+## 1 · The Floor (read-aloud)
+
+> The Queen Bee is busier than it looks and emptier than it should be — a strange mix. Half the floor stands bare: you can see the clean rectangles in the carpet where **card tables and roulette wheels** used to sit. The tables that remain are **mobbed**, players stacked three deep, as if the whole city's gambling has been funneled into what's left.
+
+> **DM note — why it's gutted:** The missing tables (and the dealers who run them) have been **rented out by the Red Ant Queen for the fête.** That's the hook: the people who'll be *working the Queen's casino floor* are right here, between gigs.
+
+---
+
+## 2 · Working the Room
+
+The party can **schmooze a bartender or a pit boss** for details — someone who's staffed or attended a Queen's fête before. Social checks, drinks bought, chips tipped; play it as bar talk, not an interrogation.
+
+### Info to glean
+- ✅ **Confirmation there's a full casino setup** at the fête — and **where it connects:** it opens onto **both ballrooms.** (Cross-references the promenade intel: *two ballrooms.*)
+- 🗣️ **Rumor of the pheromone lounge** — she's heard of it, maybe been near it; she can place it on the map even if she's hazy on what goes on inside.
+- 🔑 **The real prize — support rooms.** Every big room (ballrooms, casino, banquet hall) has **support spaces underneath it** — staging, storage, staff passages, the back-of-house plumbing of a party that size. A way to move **under** the public floor instead of across it.
+
+> 🔑 **DM note — the under-floor layer:** This is the heist gold of the scene. The promenade gave them the *public rooms*; the honeybun vendor gave them the *kitchen→quarters* route; **now they learn there's a whole service understory.** Three independent intel sources are converging on the same truth: *the way through the palace is underneath and behind it, not through the ballrooms.* Let players who've gathered all three feel smart.
+
+---
+
+### Loose ends / decisions surfaced
+- **Name the contact** (bartender vs. pit boss) and pin down whether she's *staffing* the fête — if so, she's a potential inside asset, not just a rumor.
+- **How connected are the support rooms?** Decide whether they form a continuous understory (a true infiltration route) or isolated pockets.
+- **Pheromone lounge** — keep deciding what it actually *is*; it's been name-dropped in three scenes now and still undefined.
+- **Reward consistent intel:** if the party has hit the promenade + casino + (later) the kitchen route, consider letting them assemble a rough **palace map** as a tangible payoff.
