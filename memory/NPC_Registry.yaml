@@ -466,7 +466,7 @@ npcs:
     location: Dewdrop Inn, Canopia
     disposition: Allied (operational; pretends not to be)
     first_met: Session 5
-    last_seen: Session 6
+    last_seen: Session 7
 
     appearance: Bug equivalent of a mustache. Professional bearing.
     voice: Unflappable. Practiced apology. Slips operational instructions into a remake-the-drink monologue without breaking stride. Warm by daylight — friendly nod, antennae twitch.
@@ -475,6 +475,7 @@ npcs:
     party_history:
       - "Session 5: Ran the ginger honeycap / 'it's a hot batch' / back-booth handoff cleanly. Did not need to deploy any of the failure-recovery branches."
       - "Session 6: Name confirmed as Dale. Served the party breakfast (greenery cakes, mite meat, BBV beverages) in the empty morning bar. Half-mumbled the wish-someone-would-help-her line about Beeatrix, then went over and patted her back. Told the party they could book or find flight travel to the east."
+      - "Session 7: Tending bar during the Beeatrix reunion (thin evening crowd). Got the wish he'd half-mumbled — someone helped her."
 
     hooks:
       - Probably a recurring point of contact in Canopia for as long as the party uses the Dewdrop Inn as a node.
@@ -484,11 +485,11 @@ npcs:
     species: Mining bee
     role: Grieving / hungover singer at the Dewdrop Inn; quest-giver for the mantis hunt; *recruited to front the band at the Red Ant Queen's fete*
     affiliation: None (solitary bee, displaced)
-    status: Alive — grieving, drunk-leaning, traumatized
-    location: Dewdrop Inn, Canopia (last seen)
-    disposition: Allied (quest-giver, hired the party)
+    status: Alive — recovering; sent home sober ahead of the fete
+    location: Sent home (Canopia) — declined the casino at the party's urging
+    disposition: Allied (grateful; the party's singer)
     first_met: Session 6
-    last_seen: Session 6
+    last_seen: Session 7
 
     appearance: Rough-looking. Slumped at the bar, snoring quietly. The singer the party heard wailing the night before about ancestral flower fields and fantastical monsters.
     voice: Inebriated. Squawks. "MY OLE HOME IS HAUNTED BY A MONSTER, WON'T ANYONE *HIC* DO ANYTHING?" Dale says she used to sing the classics.
@@ -504,11 +505,15 @@ npcs:
     party_history:
       - "Session 5: Foreshadowed at the Dewdrop (singing loudly in the background). Not engaged."
       - "Session 6: Met properly at breakfast. Pitched the meadow side quest. Nancy invited her to front the band at the Red Ant Queen's fete — Beeatrix used to sing the classics. Recruitment accepted at the table; follow-through TBD."
-      - "Session 6.5: The party cleared the monster (orchid mantis family) from her meadow and returned to Canopia. Her reward has NOT yet been collected."
+      - "Session 6.5: The party cleared the monster (orchid mantis family) from her meadow and returned to Canopia. Her reward not yet collected."
+      - "Session 7: Reunion at the Dewdrop. Found her on stage singing a guilt-soaked lament about sending the party to die; Drix joined on lute, Nancy answered with an interpretive dance, and the mood turned warm. Overjoyed they survived. Confirmed as the band's singer (she plays a lyre). Gave Drix the last of her late mother's Stick-All Honey as thanks. Busked the promenade with the band and got into it. The party then talked her into going home rather than the casino, to keep her sober before the fete."
+
+    reward_given:
+      - "Stick-All Honey (heirloom; the last of her mother's) — given to Drix. Sticks one thing to one thing, permanently. Single use."
+      - "Gold reward: WAIVED (Session 7 DM decision). The honey stands as the reward; the mantis salvage was always the real payout."
 
     hooks:
-      - "[CARRY-FORWARD] Beeatrix owes the party a reward for clearing the meadow — gold amount + any non-monetary token still TBD. Not yet paid out."
-      - Does she actually show up sober at the fete? Or drunk? Or grieving?
+      - Does she hold sober at the fete, or crash out? Asset (cover, distraction) vs. liability. The party is actively managing her — sent her home sober this session.
       - The monster turned out to be an orchid mantis family — does she have any reaction when she learns the truth?
 
 
@@ -530,7 +535,7 @@ npcs:
     info_shared_with_party:
       - "The Red Ant Queen's palace is visible from western Canopia."
       - "The flower meadow east of Canopia is very dangerous — she knew somebody who was 'swallowed by a flower in an instant.'"
-      - "She has felt stronger since the Bloom." (Foreshadowing — flag for the 'all magic users amplified' thread.)
+      - "She has felt stronger since the Bloom. (Foreshadowing — flag for the 'all magic users amplified' thread.)"
 
     party_history:
       - "Session 6: Hired by the party for 2 sap. Flew Nancy and Tabby in harnesses (woven by Nancy); Drix flew alongside. Would not land in the meadow — dropped them on a nearby Iris leaf. Agreed to come back at evening for pickup. Party told her about their invitations to the fete."
@@ -540,6 +545,95 @@ npcs:
       - "Eastern Comma vs. 'Eastern Common' — DM notes wrote 'Common,' player notes wrote 'Comma.' Going with Comma (a real species). [DM CHECK]"
       - Knows the party are invited dignitaries to the fete — discretion / threat vector if she gossips.
       - Her own Bloom-amplification is a future hook: what is she stronger at?
+
+
+  # ── CANOPIA HEIST-PREP CONTACTS (Session 7) ─────────────────────────────────
+
+  - name: Honeybun Vendor
+    species: Tussock-moth caterpillar
+    role: Promenade treat vendor — heist-intel source
+    affiliation: Independent (Canopia promenade)
+    status: Alive
+    location: The Canopia promenade (west side), honeybun stand
+    disposition: Friendly (chatty)
+    first_met: Session 7
+    last_seen: Session 7
+
+    appearance: Soft, fuzzy caterpillar with too many oven-mitted feet. Sells hot spiced honeybuns.
+    voice: Warm, gossipy, easily drawn into talking about her family and the food.
+    motivation: Sell honeybuns; happy to chat.
+
+    info_shared_with_party:
+      - "Her brother Johnathy works the palace kitchens and is working the fete (has a 'special honeybun recipe')."
+      - "The servants' quarters have access running under the ballrooms — a servants'-tunnel understory."
+
+    party_history:
+      - "Session 7: The party bought treats on the promenade and drew her out. She named her brother Johnathy (palace kitchens, working the fete) and let slip the servants'-quarters-under-the-ballrooms route — the session's richest layout intel."
+
+    hooks:
+      - Sibling thread — through her, the party can reach Johnathy inside the palace kitchens.
+
+
+  - name: Johnathy
+    species: Tussock-moth caterpillar (presumed; the vendor's brother)
+    role: Palace kitchen worker — working the fete
+    affiliation: Red Ant Queen's palace (kitchen staff)
+    status: Alive (presumed)
+    location: Red Ant Queen's palace — kitchens
+    disposition: Unknown (not yet met)
+    first_met: null   # named by his sister, not yet encountered
+    last_seen: null
+
+    notes: >
+      Brother of the promenade honeybun vendor. Works the palace kitchens and is
+      staffing the fete; has a "special honeybun recipe." The natural inside contact
+      for the kitchen -> servants'-quarters route (the party learned the servants'
+      quarters have access under the ballrooms).
+
+    hooks:
+      - Potential inside man for the servants'-understory infiltration route. Does he help, or is he a liability if leaned on?
+
+
+  - name: Thoralex
+    species: Stick insect
+    role: Jeweler — proprietor of The Ruby Thorax (formerly The Iron Sting)
+    affiliation: Independent; currently doing decorative work for the Red Ant Queen
+    status: Alive
+    location: The Ruby Thorax, west-side Canopia
+    disposition: Unknown (not yet met)
+    first_met: null   # PREP — party only learned of the shop; it was closed/unvisited
+    last_seen: null
+
+    notes: >
+      [PREP, NOT MET — known-of only.] Refined, apolitical stick-insect jeweler who
+      "goes where the work is," and right now the work is the Queen's. Making the
+      Red Ant Queen's coronation crown. His shop, The Ruby Thorax, was formerly
+      "The Iron Sting" (a bladesmith) — repainted when the new Queen took power
+      ("she doesn't have much use for blades"). In Session 7 the party got directions
+      to the shop (west side, "probably not open") from a cockroach passerby but did
+      not go in. He has, per prep, seen the Queen's private collection — led in through
+      the throne room while fitting the crown.
+
+    hooks:
+      - "[DEFERRED] The Ruby Thorax scene — finishing Tabby's mantis-spine blades (edge vs. keep-invisible decision) and the throne-room -> private-collection intel — is unspent. Available on a return."
+      - The coronation crown as a possible heist vector (delivery/escort into the throne room).
+
+
+  - name: Trader Twizzlers
+    species: Unknown
+    role: Outfitter — fete outfits
+    affiliation: Independent (Canopia, south side)
+    status: Alive (presumed)
+    location: South-side Canopia, down the street from The Ruby Thorax
+    disposition: Not yet met
+    first_met: null   # learned of, not visited
+
+    notes: >
+      Named to the party as the place to get "a beautiful outfit" for the fete.
+      Learned of in Session 7, not visited.
+
+    hooks:
+      - Fete-outfit stop if the party wants to dress the part for the infiltration.
 
 
   # ── REBEL HEIST SPECIALISTS (offered by Gleam, Session 6 — party has not picked yet) ────────

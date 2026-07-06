@@ -4,19 +4,19 @@
 
 # ── SESSION TRACKING ────────────────────────────────────────────────────────
 
-current_session: 7
-active_draft: sessions/s07_draft.md   # Generated; covers post-mantis Canopia → departure → fete infiltration.
-draft_status: drafted
+current_session: 8
+active_draft: null   # Session 7 played; Session 8 (the fete infiltration) not yet drafted. S07 draft sections 2-4 (departure/palace/infiltration) remain the forward reference for the heist.
+draft_status: none
 
-last_played_session: 6.5
-last_played_summary: "The Mantis Felled — a short continuation session finishing the orchid mantis combat that had paused mid-fight at the end of Session 6. The party won: mama orchid mantis and all nymphs dead, the flower meadow east of Canopia cleared. Each PC claimed a trophy — Drix and Nancy each took a mandible (The Mantible, an invisible 1d8 finesse short sword); Tabby took mantis spines to craft into daggers. Barbra the Eastern Comma butterfly returned at evening as promised and flew the party back to Canopia. Beeatrix's reward for clearing the meadow remains uncollected. See sessions/final/s065_final.md and sessions/session_log.md."
+last_played_session: 7
+last_played_summary: "Heist Prep in Canopia — the party spent the day gathering intel and setting up advantages ahead of the Red Ant Queen's fete, which they learned is TOMORROW NIGHT. Reunited with Beeatrix at the Dewdrop (Drix joined her stage lament on lute, Nancy answered with an interpretive dance); confirmed her as the band's singer (she plays a lyre) and received the last of her mother's Stick-All Honey (gold reward waived). Busked the promenade (west side) where the palace comes into view, harvesting public-layout intel (two ballrooms, fighting pit, banquet hall, balcony-less throne room) and learning from a honeybun vendor that her brother Johnathy works the palace kitchens and that the servants' quarters run under the ballrooms. Tabby seeded a rumor (reinforced by Drix) that the fete is open to all at 8:30pm. They sent Beeatrix home sober rather than to the casino, then scoped the palace's grand level: guards every 30 ft, a fortified servants' gate with a watchtower, kitchen->quarters walkways, and carts of strange spell components (juniper berries, scorpion stingers, glowing goop) pointing at a hidden lab. Session ended mid-recon, heading back to the Dewdrop to draw blueprints. The prepped Ruby Thorax/Thoralex, Vikki's Volatiles, and Queen Bee Casino scenes did not run. See sessions/final/s07_final.md and sessions/session_log.md."
 
 
 # ── PARTY STATUS ─────────────────────────────────────────────────────────────
 
 party:
   level: 6
-  location: Back in Canopia after clearing the orchid mantis meadow — flown home by Barbra. Presumed at the reserved Dewdrop Inn room ahead of the fete.
+  location: Canopia, mid-recon at the Red Ant Queen's palace grand/ground level (security scouting), heading back to the Dewdrop Inn to compile their gathered intel into blueprints. The fete is TOMORROW NIGHT.
   pack_animal: null  # Bestie was tied up and left above the Winter Farm with a snack and a blanket
   details: party/  # individual YAML per PC — see party/*.yaml
 
@@ -28,9 +28,13 @@ party:
 
 active_threads:
 
-  - thread: The fete clock
+  - thread: The fete clock — TOMORROW NIGHT
     priority: high
-    notes: Gleam said the Red Ant Queen's fete is "in a few days." Party owes him their 3 dead-drop specialist picks (from Tudd, Demicous, Vikko, Diedre, Dax, Zalle) before the event. Pickup at the Dewdrop at first dark on the night of the event.
+    notes: As of Session 7 the fete is TOMORROW NIGHT. Party STILL owes Gleam their 3 dead-drop specialist picks (from Tudd, Demicous, Vikko, Diedre, Dax, Zalle) and has not committed them — the dead-drop window is nearly closed. Pickup at the Dewdrop at first dark on the night of the event.
+
+  - thread: Palace intel & blueprints
+    priority: high
+    notes: Party gathered public layout (two ballrooms w/ balconies, fighting pit, banquet/great hall, balcony-less throne room), the servants'-quarters understory running under the ballrooms (via Johnathy, the honeybun vendor's kitchen-working brother), and grand-level security (guards every 30 ft, fortified servants' gate w/ watchtower, kitchen->quarters walkways). Heading back to the Dewdrop to compile blueprints. Does the intel become a tangible map reward?
 
   - thread: Vell's mandate — reach the leafcutter queen
     priority: high
@@ -42,11 +46,19 @@ active_threads:
 
   - thread: Beeatrix as band frontwoman
     priority: medium
-    notes: Nancy recruited the grieving mining bee to front the band at the fete. Payoff at the event. Does she show up sober? Is she an asset or a liability?
+    notes: Confirmed in Session 7 as the band's singer (she plays a lyre). The party is actively managing her sobriety — sent her home rather than to the casino this session. Payoff/risk at the fete tomorrow night — asset (cover, distraction) vs. liability (crash-out). Reward now settled (Stick-All Honey to Drix; gold waived).
 
-  - thread: Beeatrix's reward (uncollected)
+  - thread: The strange reagent shipments — the Queen's lab
     priority: medium
-    notes: Party cleared the orchid mantis from her ancestral meadow (Session 6.5) but has not yet collected the reward. Gold amount + any non-monetary token still TBD. Pay out when they next meet her in Canopia.
+    notes: At the palace approach the party saw carts of juniper berries, scorpion stingers, and glowing goop — spell components that "don't do similar things," reading as someone experimenting. Breadcrumb toward the Queen's hidden lab (the intel Vikki's Volatiles was meant to give). What's being built?
+
+  - thread: The 8:30pm open-invite rumor
+    priority: low
+    notes: Tabby (backed by Drix) seeded a rumor on the promenade that the fete is open to everyone at 8:30pm. Did not convince the jewel-beetle nectar vendor. Does an uninvited crowd show up and create cover/chaos at the fete?
+
+  - thread: Ruby Thorax / Thoralex (deferred)
+    priority: low
+    notes: The prepped scene did not run (shop closed/unvisited). Thoralex is making the Red Queen's coronation crown and has seen her private collection (entered via the throne room). Deferred — Tabby's mantis-blade upgrade (edge vs. keep-invisible) and the coronation-crown heist vector are both available on a return.
 
 
   - thread: Antshley as escort and potential ally

@@ -183,6 +183,7 @@ equipment:
   - Winter Farm fungus sample       # session 4: tore off and ate a piece of corpse-farm fungus (no effect); kept a piece for later study.
   - 1 cig                           # session 5: pickpocketed on the way out of the Queen's Crown casino in Canopia. (2 sap from S5 spent in S6 on Barbra's flight.)
   - The Mantible                    # session 6.5: orchid mantis mandible — 1d8 finesse short sword; can turn invisible 1x per short rest.
+  - Tap shoes + little bells         # session 7: percussion kit for the band (Beeatrix on lyre, Drix on lute).
 
 features_and_traits:
   - name: Mobile
@@ -234,11 +235,11 @@ backstory:
     flagged for development.
 
 notes:
-  - Rogue Expertise confirmed 2026-04-15: Sleight of Hand and Investigation.
+  - "Rogue Expertise confirmed 2026-04-15: Sleight of Hand and Investigation.
     Both updated from +5 to +7 (double prof +4 + ability mod) at level 3,
-    now +10 and +9 respectively at level 6.
-  - Spells added from physical spell cards (2026-04-15): Mage Hand, Message,
-    Minor Illusion (cantrips); Disguise Self, Detect Magic, Identify (1st level).
+    now +10 and +9 respectively at level 6."
+  - "Spells added from physical spell cards (2026-04-15): Mage Hand, Message,
+    Minor Illusion (cantrips); Disguise Self, Detect Magic, Identify (1st level)."
   - "Session 3: Scared but interested in learning new magical knowledge. Spent the night with Garett studying the Bloom."
   - "Session 4 level-up to 6: crossed the unseen barrier into the Overgrowth with the party. [DM CHECK] Resolved 2026-04-27 — re-derived stats imported from updated sheet (Rogue 4 / Wizard 2 Bladesinger)."
   - "Session 4 roleplay beats: sent the Loyalist (Greg) the Message 'I'm watching you and I will kill you if you act out' at the ridge; commune'd with the Winter Farm fungus and sensed magic; noted the Ahganmin glowed more strongly in the farm; used Mage Hand to investigate the fungal curtain; cut a piece of the curtain to study it (it keened)."
@@ -250,4 +251,6 @@ notes:
   - "Session 6 location: combat in progress, orchid mantis flower meadow east of Canopia. Dropped in by butterfly transport; evening pickup pending."
   - "Session 6 roleplay beats: recruited Beeatrix (mining bee, used to 'sing the classics') to front the band at the Red Ant Queen's fete; paid Barbra 2 sap for the flight east; wove flight harnesses to suspend Nancy and Tabby from Barbra for the ride; combat-killed/co-killed an orchid mantis nymph alongside Tabby ('Nancy the dancy + Tabby the stabby')."
   - "Session 6.5: party defeated the orchid mantis family. Nancy took a mandible as his trophy — The Mantible (invisible 1d8 finesse short sword); flew back to Canopia on Barbra. Beeatrix's reward not yet collected."
+  - "Session 7 location: Canopia heist-prep day; ends mid-recon at the palace grand level. Fete is tomorrow night."
+  - "Session 7 roleplay beats: asked a cockroach passerby for a smithy and got directions to the Ruby Thorax (west side) plus a tip about '2 entrances'; answered Beeatrix's stage lament with an interpretive dance; performs percussion in the band with tap shoes + little bells."
   - "Session 6 spell flag [DM CHECK]: player notes say 'Nancy casts Alarm' after long rest. Alarm is not in Nancy's known-spells list. Either (a) ritual cast from Wizard spellbook (Alarm is a Wizard 1st-level ritual), or (b) the player meant the improvised sock-on-doorknob alarm the party rigged. Confirm with Rowyn."
