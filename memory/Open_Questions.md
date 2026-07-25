@@ -21,6 +21,7 @@
 - [ ] **Nancy's evil wizard:** Player responded well to the hook (wizard he stole from, 14 months imprisoned). Optional but flagged for possible future appearance.
 - [ ] **Thoraxville:** Nancy mentioned it. Needs to be developed.
 - [ ] **Spring zone settlement:** At least one town in the spring zone to resupply and buy armor. Not yet created.
+- [ ] **NPC template fields incomplete:** Francesca Booloticia IV (Boodle), Dr. T'wigfingers, and Sven are each missing `secret`, `flaw`, and `party_knowledge` in NPC_Registry.yaml. `voice` is filled on all three. Fill the rest before any of them re-enter play.
 
 ## Mechanics & Balance
 
@@ -100,10 +101,4 @@
 - [ ] **The strange reagent shipments.** At the palace approach the party saw carts of **juniper berries, scorpion stingers, and glowing goop** — spell components that "don't do similar things," reading as someone trying to figure something out. This is the breadcrumb toward the Queen's lab (the intel Vikki's Volatiles was meant to deliver, surfaced by observation instead). What's being built? Confirm the lab and where it points.
 - [ ] **Ruby Thorax / Thoralex — deferred.** The prepped scene (Thoralex finishing/upgrading Tabby's mantis-spine blades — edge vs. keep-invisible — and the throne-room -> private-collection intel) did not run; the shop was closed/unvisited. Available on a return, but the fete is tomorrow night and shop hours are a factor. Also live: the coronation crown as a possible heist vector.
 - [ ] **Vikki's Volatiles & the Queen Bee Casino — unspent.** Neither prepped scene ran in Session 7. Fold into a future Canopia window or retire? (Vikki's core "changed reagents -> lab" intel partly surfaced elsewhere; the Casino's under-floor-support-rooms intel is still unspent.)
-- [ ] **Trader Twizzlers.** Fete-outfit shop the party learned of (south side, past the Ruby Thorax) but did not visit. Do they dress for the infiltration?
-
-## Misc / Not Categorized
-
-- [ ] **MORP:** Referenced presentation link. Not explored in notes.
-- [ ] **3 DM advice thread:** Referenced Claude conversation link with campaign structure advice. Key takeaway: one-paragraph premise, session-by-session bullet points, 3–5 named NPCs, home base location. 3–4 major story beats mapped to sessions 3, 5, 7, 9.
-- [ ] **NPC template fields incomplete:** Boodle, T'wigfingers, and Sven have partially filled NPC templates in the original doc (voice style, secret/flaw, party knowledge fields are blank). Fill in when ready.
+- [ ] **Trader Twizzlers.** Fete-outfit shop the party learned of (west side, down the street from the Ruby Thorax) but did not visit. Do they dress for the infiltration?
