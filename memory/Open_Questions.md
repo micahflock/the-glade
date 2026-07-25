@@ -24,8 +24,8 @@
 
 ## Mechanics & Balance
 
-- [ ] **Party survival vs. ants:** Party is level 3, but ants destroy villages. What's the actual mechanic or narrative solution for navigating ant territory that isn't just "kill the whole colony"? Pure avoidance feels unsatisfying too.
-- [ ] **The spring zone ant colony:** Should be the least powerful the party encounters. Need a winnable path through it at low levels that still feels consequential. It's a two-queen operation (red + black) — how do PCs "conquer" this without a straight fight?
+- [ ] **Party survival vs. overwhelming factions:** The ants established the shape — infiltration by disguise, find the faction's internal fracture, and split it rather than fight it (rebel cell → the two queens). Does that same shape work for the summer termites and the Fall, or does it get repetitive? Needs a second pattern before the next zone. (The ant-specific version of this question is resolved below.)
+- [x] **The spring zone ant colony:** Should be the least powerful the party encounters. Need a winnable path through it at low levels that still feels consequential. It's a two-queen operation (red + black) — how do PCs "conquer" this without a straight fight? — Decision: Resolved in play across Sessions 3–5. The path was infiltration by disguise (Drix's Disguise Self, the others playing dead in the body cart), alliance with Sporemother Vell's rebel cell, and Vell's mandate to *inform* the leafcutter queen rather than free or overthrow her — splitting the alliance diplomatically instead of conquering it. Gleam's fete plan extends the same route into the hive. Evidence: sessions/final/s03_final.md, s04_final.md, s05_final.md.
 - [x] **Leveling before Session 3:** Should we give them a level? They've seen some shit. Both DMs agree on milestone chunks, but timing is open. — Decision: Stale. Session 3 has been played without a level-up. Party remains level 3. Evidence: sessions/final/s03_final.md.
 - [ ] **Leveling justification:** Is rapid leveling tied to the Bloom amplifying all magic? Does the ichor idea work? Is it diegetic or just meta?
 - [ ] **Level 20 by endgame:** Is this realistic given ~10 sessions? Verify.
