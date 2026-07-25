@@ -213,7 +213,7 @@ Not session beats themselves. Captured here so the DMs have the context decided 
 - She knows **a coven member broke the pact** and caused this. \[MORE DETAIL: more details about what the pact was, what breaking it did. Notes flag this as a TBD.\]  
 - She knows the **Red Ant Queen did NOT** break the pact — *"The Red Ant Queen isn't even smart enough to have broken the pact."* The Red Queen was just always on the edge; this made her insane and powerful.  
 - She knows / strongly suspects **the Black Ant Queen** (working name) broke the pact. She has no idea what has happened to the Black Ant Queen.  
-- \[MORE DETAIL: confirm "Black Ant Queen" vs "ebony black ant" / "sugar ant" — notes explicitly leave the species open. Hook: Sven (the ebony black ant from Chitenholm) may have been in connection with his queen and gone solo when the pact broke. Optional thread.\]  
+- \[MORE DETAIL: confirm "Black Ant Queen" vs "ebony black ant" / "sugar ant" — notes explicitly leave the species open. Hook: Sven (the ebony black ant from Chitinholm) may have been in connection with his queen and gone solo when the pact broke. Optional thread.\]  
 - The **gimmick for the broken-pact Queen:** she is now *part-lich* — the **cordyceps queen.**  
 - **Story outcome of the heist:** Leafcutter Queen gets *hope* — that someone is out there trying to change things — and the party gets *information* about the broken pact and the cordyceps queen.
 

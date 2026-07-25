@@ -318,6 +318,9 @@ npcs:
       - Ran into cover with a story that nobody believed — lives in shame among his own
 
 
+  # NOTE: Bessie and Bestie are two different animals — see their entries.
+  # Both spellings are correct where they appear; do not "normalize" them.
+
   - name: Sporemother Vell
     aka: >
       Appears as "Grainmother Vell" in sessions/final/s03_final.md — a

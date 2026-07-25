@@ -1,6 +1,6 @@
-# Session 8 Draft — The Red Ant Queen's Fete / Coronation Heist [SLOP CHECK: title assembled from transcript terms ("the fete," "the heist," "the red ant queen's coronation") — confirm or rename]
+# Session 8 Draft — The Red Ant Queen's Fête / Coronation Heist [SLOP CHECK: title assembled from transcript terms ("the fête," "the heist," "the red ant queen's coronation") — confirm or rename]
 
-**Scope.** This is the fete infiltration itself — the payoff of the Session 7 heist-prep. **Framing intent from the transcript:** the DMs intend the fete to *"take several sessions to resolve,"* and they *"don't know what the players will do first, so we need to map everything out now."* So this draft is a **sandbox**, not a linear beat sheet: a palace map, a "happy path" of what a normal performer does, a menu of exits, room events, and the narrative payoff — assembled so the DMs can run whatever order the party chooses.
+**Scope.** This is the fête infiltration itself — the payoff of the Session 7 heist-prep. **Framing intent from the transcript:** the DMs intend the fête to *"take several sessions to resolve,"* and they *"don't know what the players will do first, so we need to map everything out now."* So this draft is a **sandbox**, not a linear beat sheet: a palace map, a "happy path" of what a normal performer does, a menu of exits, room events, and the narrative payoff — assembled so the DMs can run whatever order the party chooses.
 
 **Parent setting bible.** The palace's overall shape, materials (bore-through-petals vs. bark/leaf faces), and the armored/secure "core" were established in `sessions/s07_draft.md §3a`. This draft **refines the room-level connections** the DMs worked out in the prior transcript and does not restate the s07 bible.
 
@@ -183,7 +183,7 @@ Additional improvised outs raised: set a fire / create a big distraction / blow 
 
 ## 5. Room Events / Disruptions
 
-The DMs decided the fete is **a normal party** — *"the players can cause all the disruption they want, otherwise it's just a nice party."* Events are **not predetermined / not a Deathloop-style clockwork** (*"that's a level of effort that goes above and beyond"*).
+The DMs decided the fête is **a normal party** — *"the players can cause all the disruption they want, otherwise it's just a nice party."* Events are **not predetermined / not a Deathloop-style clockwork** (*"that's a level of effort that goes above and beyond"*).
 
 - Each room *"needs to have a few things that happen over the course of the night,"* and things *"maybe shouldn't go smoothly"* in them.
 - **Player-triggerable dynamic** the DMs liked: *"a fight could start in the casino"* → that *"might pull guards from a nearby room for a moment"* → **opening** for the party to slip down another path. Disruption as a tool that cuts both ways (harder room, or an opening).
@@ -268,7 +268,7 @@ The **room descriptions are now filled from the room-texture transcript**; the N
 
 Per the DM request accompanying the prior transcript: *"The PCs may also want to go to some unvisited locations in Canopia that are mentioned in session 7."* Not discussed in these planning transcripts.
 
-[MORE DETAIL: pull the specific unvisited Canopia locations from `sessions/final/s07_final.md` / the S07 threads (e.g. Royal Jelly Society Canopia branch, Ruby Thorax/Thoralex, Queen Bee Casino — all flagged deferred/unvisited in campaign_state) and decide which are live as a pre-fete detour. These transcripts do not specify them.]
+[MORE DETAIL: pull the specific unvisited Canopia locations from `sessions/final/s07_final.md` / the S07 threads (e.g. Royal Jelly Society Canopia branch, Ruby Thorax/Thoralex, Queen Bee Casino — all flagged deferred/unvisited in campaign_state) and decide which are live as a pre-fête detour. These transcripts do not specify them.]
 
 ---
 
@@ -287,7 +287,7 @@ Seeded via the Leafcutter Queen's hints and the desert reward. All from the prio
 
 ## B. Combat design note — next fight (meta)
 
-Not fete content; the DMs parked it here. **Nancy is very hard to pin down** — bonus-action disengage, high move speed, high AC — and *"will fuck up the game in an arena"* (a plain big-dude-in-an-arena fight). For the next combat: think about **interesting terrain** and **secondary objectives beyond "kill the thing"** (callback to earlier player feedback about wanting other goals in combat). Applies to the scorpion fight and to any fete combat.
+Not fête content; the DMs parked it here. **Nancy is very hard to pin down** — bonus-action disengage, high move speed, high AC — and *"will fuck up the game in an arena"* (a plain big-dude-in-an-arena fight). For the next combat: think about **interesting terrain** and **secondary objectives beyond "kill the thing"** (callback to earlier player feedback about wanting other goals in combat). Applies to the scorpion fight and to any fête combat.
 
 ## C. Scheduling (meta — not table content)
 

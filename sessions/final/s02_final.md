@@ -5,7 +5,7 @@
 
 ## The Battlefield — Damage and Supplies
 
-As Bert's scuttling progress towards Chitenholm abruptly fades, silence descends over the battlefield. The earwigs lie where they fell, as motionless as the frost-locked world around them. Nothing stirs.
+As Bert's scuttling progress towards Chitinholm abruptly fades, silence descends over the battlefield. The earwigs lie where they fell, as motionless as the frost-locked world around them. Nothing stirs.
 
 **If the players investigate the dead:**
 Up close, they look more like farmers than bandits. Their clothes are well worn — lovingly patched at the knees and elbows, stitched and restitched until the original fabric is more memory than material. The most valuable things they have on them are their improvised weapons: a sawed-off scythe, a hoe on both ends.

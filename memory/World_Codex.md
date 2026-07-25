@@ -105,6 +105,8 @@ Historically peaceful fungus farmers. The Bloom destroyed their food cycle: noth
 3. **Subsequent raids (burnt village, others).** Fire ants joined. Fire magic used. Villages burned. Bodies taken.
 4. **Current state.** Fire ants command; leafcutter ants carry out grunt work under duress. When fire ant commanders are killed, leafcutters stand down and want to talk.
 
+**Escort headcount — reconciliation.** `s03_final.md` enumerates four leafcutters at the cart tableau (two working the wheel, two at the head) and confirms none were hurt; `s04_final.md` then sets off with "six leafcutters in total." Read the s03 figure as what the party could see of the caravan, not a full roster — the escort is six. No retcon needed.
+
 ### The Fungal Farms/The Winter Farm
 
 Underground chambers at the spring zone border where ants decompose organic material — including bodies — to grow fungus and feed the colony. Production-only: no prisoners are held here. Hook: the leafcutter ants who surrender after combat can offer to take the party to the farms.
