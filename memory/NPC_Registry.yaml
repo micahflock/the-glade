@@ -319,6 +319,9 @@ npcs:
 
 
   - name: Sporemother Vell
+    aka: >
+      Appears as "Grainmother Vell" in sessions/final/s03_final.md — a
+      forward-reference written before the title settled. Sporemother is canon.
     species: Leafcutter ant
     role: Rebel cell leader, senior fungal tender
     affiliation: Winter Farm — rebel cell
@@ -749,7 +752,7 @@ npcs:
       - Flashback lever — Zalle can retroactively have dosed a guard, mellowed a hostile crowd, or seduced an informant into talking.
 
 
-  # ── ORCHID MANTIS FIGHT (in progress, end of Session 6) ─────────────────────
+  # ── ORCHID MANTIS FIGHT (resolved, Session 6.5) ─────────────────────────────
 
   - name: Mama Orchid Mantis
     species: Orchid mantis

@@ -274,7 +274,9 @@ Tell the DM the file path. Note that:
   notes section.
 - If the user provides creature names that don't match any creatures/*.yaml
   file, accept direct input and flag with [SLOP CHECK] any values you
-  had to invent.
+  had to invent. Then offer to run /stat-block on those creatures so they
+  persist to creatures/ — otherwise the work is stranded in this one
+  worksheet and the next encounter re-invents it.
 - Keep the .json spec file alongside the .html. If the DM asks for a
   tweak (extra creature, terrain note, etc.), edit the .json and rerun
   the build script — don't hand-edit the .html.

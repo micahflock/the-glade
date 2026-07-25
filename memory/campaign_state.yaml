@@ -17,7 +17,7 @@ last_played_summary: "Heist Prep in Canopia — the party spent the day gatherin
 party:
   level: 6
   location: Canopia, mid-recon at the Red Ant Queen's palace grand/ground level (security scouting), heading back to the Dewdrop Inn to compile their gathered intel into blueprints. The fete is TOMORROW NIGHT.
-  pack_animal: null  # Bestie was tied up and left above the Winter Farm with a snack and a blanket
+  pack_animal: none  # deliberately empty — Bestie is alive but tied up above the Winter Farm with a snack and a blanket
   details: party/  # individual YAML per PC — see party/*.yaml
 
 
@@ -52,15 +52,6 @@ active_threads:
     priority: medium
     notes: At the palace approach the party saw carts of juniper berries, scorpion stingers, and glowing goop — spell components that "don't do similar things," reading as someone experimenting. Breadcrumb toward the Queen's hidden lab (the intel Vikki's Volatiles was meant to give). What's being built?
 
-  - thread: The 8:30pm open-invite rumor
-    priority: low
-    notes: Tabby (backed by Drix) seeded a rumor on the promenade that the fete is open to everyone at 8:30pm. Did not convince the jewel-beetle nectar vendor. Does an uninvited crowd show up and create cover/chaos at the fete?
-
-  - thread: Ruby Thorax / Thoralex (deferred)
-    priority: low
-    notes: The prepped scene did not run (shop closed/unvisited). Thoralex is making the Red Queen's coronation crown and has seen her private collection (entered via the throne room). Deferred — Tabby's mantis-blade upgrade (edge vs. keep-invisible) and the coronation-crown heist vector are both available on a return.
-
-
   - thread: Antshley as escort and potential ally
     priority: medium
     notes: Handed off cleanly at the Overgrowth tunnel mouth in Session 5. Heather has attached. Available to re-enter at the queen audience or as a return contact in the Winter Farm cell.
@@ -76,6 +67,14 @@ active_threads:
   - thread: Rune of Fungal Protection
     priority: medium
     notes: Carved into all three PCs. Mechanical effect TBD. Intended payoff is a cordyceps moment later in the campaign.
+
+  - thread: The 8:30pm open-invite rumor
+    priority: low
+    notes: Tabby (backed by Drix) seeded a rumor on the promenade that the fete is open to everyone at 8:30pm. Did not convince the jewel-beetle nectar vendor. Does an uninvited crowd show up and create cover/chaos at the fete?
+
+  - thread: Ruby Thorax / Thoralex (deferred)
+    priority: low
+    notes: The prepped scene did not run (shop closed/unvisited). Thoralex is making the Red Queen's coronation crown and has seen her private collection (entered via the throne room). Deferred — Tabby's mantis-blade upgrade (edge vs. keep-invisible) and the coronation-crown heist vector are both available on a return.
 
   - thread: Royal Jelly Society — Canopia branch (unvisited)
     priority: low

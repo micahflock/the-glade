@@ -38,8 +38,12 @@ Does this look right? Say "commit" to write everything, or tell me what to chang
 
 ## Phase 2 — Commit (only after user confirms)
 
-1. Write the reconciled session notes to sessions/final/s0X_final.md
-2. Write DM/player notes summary to sessions/notes/s0X_notes.md
+1. Write the reconciled session notes to sessions/final/sXX_final.md
+2. Write DM/player notes summary to sessions/notes/sXX_notes.md
+
+   XX matches the draft's numbering — zero-padded to two digits (s07), and
+   half-sessions drop the decimal point (Session 6.5 → s065). Sessions past 9
+   use their own width (s10, s11).
 3. Update memory/NPC_Registry.yaml
 4. Update relevant party/*.yaml files (one per affected PC)
 5. Update memory/Open_Questions.md

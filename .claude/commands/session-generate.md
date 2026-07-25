@@ -17,6 +17,7 @@ Use these inline, where the missing content would have gone:
 
 - `[MORE DETAIL: what's missing]` — a gap the DM needs to fill in before running.
 - `[SLOP CHECK: what was assumed]` — a structural placeholder (e.g. a best-guess section title) that needs DM review.
+- `[OPEN: description]` — a decision the transcript raises but does not conclude.
 
 ## Steps
 
@@ -30,8 +31,15 @@ Use these inline, where the missing content would have gone:
    - Skill checks the DM called for, with DCs if given
    - Combat encounter notes
    - Branching outcomes for player decisions
-5. Where the transcript is silent on any of the above for a beat that needs it, insert a `[MORE DETAIL: ...]` marker in that slot.
+5. Where the transcript is silent on any of the above for a beat that needs it, insert a `[MORE DETAIL: ...]` marker in that slot. Where the transcript raises a decision without settling it, mark it `[OPEN: ...]` rather than picking a side.
 6. Write the output to `sessions/sXX_draft.md`.
+
+   **Guard — do not clobber a refined draft.** Before writing, check whether
+   `sessions/sXX_draft.md` already exists. If it does, stop and tell the user
+   what is already there (and what `campaign_state.yaml` says `draft_status` is).
+   A draft that has been through `/session-refine` represents work this command
+   cannot reconstruct from the transcript alone. Overwrite only on explicit
+   confirmation; otherwise the user probably wants `/session-refine`.
 
 ## Output skeleton
 

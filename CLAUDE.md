@@ -13,6 +13,18 @@ You will also use custom slash commands to:
 * Audit the campaign project for broken references and stale data (/janitor)
 * Implement a deliberate DM decision as a clean edit across all campaign files (/scribe)
 
+## Command vs. Skill Conflicts
+User-level skills named `encounter-worksheet` and `magic-bug-generator` exist on the
+account and may shadow the project commands of the same name. They are older, divergent
+versions that reference no project files — they ignore `creatures/`, `party/`, and
+`memory/` entirely, and the encounter one emits an .xlsx for Google Sheets rather than
+the offline .html this project uses.
+
+They auto-trigger on plain language ("I have a fight coming up", "give me bugs for X"),
+so **always invoke this project's versions by explicit slash command**. Deleting them
+locally does not stick — they re-sync from the account. Remove them in claude.ai skill
+settings if you want them gone for good.
+
 ## Campaign Memory Files
 Structured registry files use YAML (.yaml) — query these for specific fields, 
 status, and relationships. Narrative files use Markdown (.md) — read these 
@@ -25,6 +37,17 @@ Before doing any session work, read these files:
 - memory/World_Codex.md — world lore, zones, factions, locations
 - memory/Homebrew_Rules.md — mechanical rules that differ from vanilla 5e
 - memory/Open_Questions.md — unresolved threads and decisions
+
+## Project Layout
+- `memory/` — campaign memory files (see above)
+- `party/*.yaml` — one character sheet per PC
+- `creatures/*.yaml` — creature stat blocks, written by /stat-block and read by
+  /encounter-worksheet. `creatures/magical-bugs.md` is the catalog of generated
+  magic creatures.
+- `encounters/` — built worksheets; a `.json` spec plus the rendered `.html` per encounter
+- `scripts/` — `build_encounter.py` (renders a worksheet from a JSON spec using
+  `encounter_template.html`) and `roll_dice.py` (initiative and HP rolls)
+- `sessions/` — `sXX_draft.md` working drafts, plus `final/`, `notes/`, and `transcripts/`
 
 ## Campaign Tone and Setting
 Players and NPCs are "bugs" - insects, arthropods, worms - a wide variety of species. 
