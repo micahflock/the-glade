@@ -5,8 +5,8 @@
 # ── SESSION TRACKING ────────────────────────────────────────────────────────
 
 current_session: 8
-active_draft: null   # Session 7 played; Session 8 (the fete infiltration) not yet drafted. S07 draft sections 2-4 (departure/palace/infiltration) remain the forward reference for the heist.
-draft_status: none
+active_draft: sessions/s08_draft.md
+draft_status: refined
 
 last_played_session: 7
 last_played_summary: "Heist Prep in Canopia — the party spent the day gathering intel and setting up advantages ahead of the Red Ant Queen's fete, which they learned is TOMORROW NIGHT. Reunited with Beeatrix at the Dewdrop (Drix joined her stage lament on lute, Nancy answered with an interpretive dance); confirmed her as the band's singer (she plays a lyre) and received the last of her mother's Stick-All Honey (gold reward waived). Busked the promenade (west side) where the palace comes into view, harvesting public-layout intel (two ballrooms, fighting pit, banquet hall, balcony-less throne room) and learning from a honeybun vendor that her brother Johnathy works the palace kitchens and that the servants' quarters run under the ballrooms. Tabby seeded a rumor (reinforced by Drix) that the fete is open to all at 8:30pm. They sent Beeatrix home sober rather than to the casino, then scoped the palace's grand level: guards every 30 ft, a fortified servants' gate with a watchtower, kitchen->quarters walkways, and carts of strange spell components (juniper berries, scorpion stingers, glowing goop) pointing at a hidden lab. Session ended mid-recon, heading back to the Dewdrop to draw blueprints. The prepped Ruby Thorax/Thoralex, Vikki's Volatiles, and Queen Bee Casino scenes did not run. See sessions/final/s07_final.md and sessions/session_log.md."

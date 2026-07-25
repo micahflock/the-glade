@@ -32,7 +32,7 @@ Basically a boosted jump. Not true flight.
 - Cannot end turn in flight
 - Follows normal movement rules otherwise
 - Costs movement
-- Provokes opportunity attacks when ascending (noted in one reference — confirm if this is locked in)
+- Provokes opportunity attacks when ascending
 
 ### Climbing
 - Roll to climb per 5e but slightly easier

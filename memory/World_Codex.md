@@ -61,6 +61,14 @@ Permanent frost, no decay, no scent. Villages burnt or ransacked. Farms frozen m
 
 Nothing rots, things only grow. Thick and fresh — no dirt, just paths through soggy smashed young stalks. Twisting layers of green growth. Bee hives overflowing with honey. Stuff grown here magically cannot break down or rot, and this property travels with objects removed from the zone. At least one town to resupply and buy armor. Hazards: flash floods, big raindrops, the ant alliance. Some bugs have adapted and fiercely defend it.
 
+**The Overgrowth mat.** Growth has piled so deep that the mat itself is now the ground level — the old floor of the forest is buried somewhere beneath it. Tunnels and roads are cut through living vegetation rather than earth.
+
+**Navigation — navi-gus.** Travellers carry a piece of reactive fungus that responds to leafcutter pheromone trails. The alliance's road network doubles as the zone's only reliable wayfinding system, which makes wandering off it genuinely dangerous.
+
+**Fire ants throw visible heat shimmer.** Confirmed in daylight on the road — a fire ant is identifiable at distance by the air bending above it.
+
+**Predation has worsened.** Twyla's account: fire ants protect the leafcutters from predators, and predation across the Overgrowth has gotten worse along with everything else. Nectar-eaters and fresh-veggie-eaters are thriving — and so are the things that eat them.
+
 ### Summer Zone
 
 Tentatively a blasted wasteland of heat, dryness, and fire. Termites as primary faction and obstacle. Cordyceps zombies start appearing. Content largely unplanned — needs a major challenge or set piece.
@@ -99,7 +107,7 @@ Historically peaceful fungus farmers. The Bloom destroyed their food cycle: noth
 
 ### The Fungal Farms/The Winter Farm
 
-Underground chambers at the spring zone border where ants decompose organic material — including bodies — to grow fungus and feed the colony. May also function as a prison: surviving villagers may still be alive inside as labor or organic resource. Hook: the leafcutter ants who surrender after combat can offer to take the party to the farms.
+Underground chambers at the spring zone border where ants decompose organic material — including bodies — to grow fungus and feed the colony. Production-only: no prisoners are held here. Hook: the leafcutter ants who surrender after combat can offer to take the party to the farms.
 
 ### Ant Intelligence
 
@@ -184,6 +192,69 @@ The mine has two known occupants and has not been touched by the ants. Mining on
 ### Thoraxville
 
 Mentioned by Nancy as a place he's been. Not yet developed.
+
+---
+
+### Canopia (Spring Zone / The Overgrowth)
+
+A pollinator city built in the crook of a single huge tree — bees and wasps, crisp wax comb and flowing paper-wasp spires protruding both up and down from between two massive branches. Fat cocoons and chrysalises hang from the underside of it all under hundreds of multicolored lanterns. A ramp winds the trunk and rises past the highest growth to the gate.
+
+Streets swept clean, gardens perfect, flowers in every corner, a constant thrum of conversation and wings. Pollinators are drunk and territorial year-round — bees too nectar-drunk to fly stumble down the green leaf streets. The city is alight and abuzz even late at night.
+
+**Politically, the alliance is popular here.** Canopia experiences the fire ant / leafcutter arrangement as civic infrastructure that works, not as an occupation. This is the city's defining dissonance.
+
+The Red Ant Queen's palace is visible from the **west** side.
+
+#### The Weevilville
+
+The shanty town at the base of Canopia's tree, where displaced detritivores live. Named for the weevils running humanitarian aid. Fungus is rationed in by the alliance — leafcutters unload, a fire-ant supervisor watches, a weevil runs the line. Many displaced detritivores have found work up in Canopia keeping the city running.
+
+- **Twyla** runs aid distribution. **Gleam** is the Canopia-side rebel cell contact.
+- **The Weevilville Board of Groupees** — the Weevilville's civic body, and prestigious enough to receive an invitation to the Red Ant Queen's fête. Gleam is a member, and it is through the Board's allotment that he secured the party's invitations. Not a rebel organ; the Board's respectability is exactly what makes it useful cover.
+
+#### Canopia Venues
+
+- **The Dewdrop Inn** — rowdy, rough, fun. A large stained-leaf window above the entrance sheds multicolored shadows on the floor; a long wooden slab bar to the right, six or seven tables made from the leaves of different trees to the left. Runs a rebel dead drop. Bartender: **Dale**, unflappable and mustachioed. The party's base of operations in the city.
+- **The Queen's Crown** — the city's casino. Very lively; high-rolling wasps who do not care about groundling problems. Security escorted the party out after a fumbled rumor attempt in Session 5. *(Appears as "Queen Bee Casino" in Session 7 prep notes; that scene never ran. Queen's Crown is the canon name.)*
+- **The Ruby Thorax** — jeweller's shop, west side, currently doing decorative work for the Red Ant Queen. Proprietor **Thoralex** is making her coronation crown. Known of but never visited — it was closed when the party came by.
+- **Trader Twizzlers** — outfitter, west side, down the street from the Ruby Thorax. The place to get a proper fête outfit. Learned of, not yet visited.
+- **Vikki's Volatiles** — reagent shop. Never visited; carries forward. Was the intended source of intel about the Queen's appetite for "changed" reagents, which the party ended up gathering by direct observation at the palace instead.
+- **The Mayflyer** — upscale bar on the main road. Passed, not entered.
+- **A Corner** — smaller jazz spot. Passed, not entered.
+- **The Royal Jelly Society, Canopia branch** — on the route between the Queen's Crown and the Dewdrop. Passed, not entered; the dissonance / cheerful-complicity scene is unspent.
+
+---
+
+### The Red Ant Queen's Palace
+
+Also called **the Nest** (Gleam's usage). Seat of the Red Ant Queen, in Canopia. Site of the coronation fête.
+
+**Public layout** (gathered from the west-side promenade, where the palace comes into view):
+
+- Two ballrooms
+- A fighting pit — the **Mixed Mandible Arts** cage
+- A banquet hall
+- A throne room, **with no balcony**
+- Servants' quarters running **under the ballrooms**
+
+**Security** (grand / ground level recon, Session 7):
+
+- Guards posted every ~30 feet
+- A well-fortified servants' gate with a guard tower — "the nicest servants' entrance ever, for grand dwellers"
+- Enclosed walkways from the kitchen to the servants' quarters
+- Two entrances mentioned by a passing cockroach [DM CHECK — which two she meant]
+
+**The reagent carts.** Goods and materiel stream toward the palace for the fête, including carts of strange spell components — juniper berries, scorpion stingers, glowing goop, other oddments. They do not obviously combine into anything; it reads as someone trying to figure something out. Points at a hidden lab.
+
+**Contacts inside.** **Johnathy** works the palace kitchens (brother of a honeybun vendor on the promenade). Six rebel specialists are already placed in the Nest — see NPC_Registry.yaml; only three can be reached by dead drop before the event.
+
+---
+
+### The Mantis Meadow (east of Canopia)
+
+A flower meadow in the Overgrowth, reachable by flight from Canopia — **Barbra**, an Eastern Comma butterfly, ferries passengers close but will not land in it. Locally understood as *very* dangerous: bugs are swallowed by flowers in an instant. The party staged from a nearby Iris leaf at the meadow's edge.
+
+Cleared of orchid mantises in Session 6.5 — mama and all nymphs dead. Mantis salvage from the meadow armed the party (see Open_Questions.md, mantis rewards).
 
 ---
 

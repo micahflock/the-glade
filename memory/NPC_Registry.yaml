@@ -433,12 +433,15 @@ npcs:
   - name: Gleam
     species: Weevil
     role: Rebel cell contact in Canopia — handoff toward the Leafcutter Queen
-    affiliation: Rebel network (separate cell, linked to Sporemother Vell's)
+    affiliation: >
+      Rebel network (separate cell, linked to Sporemother Vell's).
+      Publicly, a member of the Weevilville Board of Groupees — the respectable
+      civic body whose fête invitation allotment he used to get the party in.
     status: Alive
     location: Upstairs room, Dewdrop Inn, Canopia
     disposition: Allied (party verdict at the table — "THE CUTEST")
     first_met: Session 5
-    last_seen: Session 5
+    last_seen: Session 6
 
     appearance: Beady eyes. Long, expressive snout. Extremely earnest. Long brown robe and a hood up when sneaking, which he is bad at.
     voice: Earnest, kind, warm. No talent for subterfuge — opens with "I'm glad you could make it" while still beaming.
@@ -622,9 +625,9 @@ npcs:
   - name: Trader Twizzlers
     species: Unknown
     role: Outfitter — fete outfits
-    affiliation: Independent (Canopia, south side)
+    affiliation: Independent (Canopia, west side)
     status: Alive (presumed)
-    location: South-side Canopia, down the street from The Ruby Thorax
+    location: West-side Canopia, down the street from The Ruby Thorax
     disposition: Not yet met
     first_met: null   # learned of, not visited
 
