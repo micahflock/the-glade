@@ -2,7 +2,7 @@
 
 ## World & Lore
 
-- [x] **Big bad origin:** Was the ant queen attacked by the spider unprovoked, or did she bring it on herself (evil research)? Current lean: attacked. Other DM suggested an animal attacker over a spider. Current lean: large cordyceps-infected spider. — Decision: The central ant queen was attacked unprovoked by a large cordyceps-infected spider. Evidence: World_Codex.md line 31.
+- [x] **Big bad origin:** Was the ant queen attacked by the spider unprovoked, or did she bring it on herself (evil research)? Current lean: attacked. Other DM suggested an animal attacker over a spider. Current lean: large cordyceps-infected spider. — Decision: The central ant queen was attacked unprovoked by a large cordyceps-infected spider. Evidence: World_Codex.md § The Big Bad — Origin Event.
 - [x] **Does the Bloom affect all magic users or just ant queens?** If all magic users: explains termite madness in summer zone, PC rapid leveling, more interesting monsters ("what is X bug but MORE?"). If just ant queens: keeps it more contained. Both DMs seem to like the "all magic users" idea. — Decision: All magic users. Evidence: World_Codex.md § Fire Ants; Homebrew_Rules.md § Leveling.
 - [ ] **Is the ant coven known?** Do people in-world know about the ant queen coven and their shared magic?
 - [ ] **Annular ring widths:** Same or variable? Needs to be settled before building the map. They need to feel like distinct biomes but remain crossable in reasonable time.
@@ -34,7 +34,7 @@
 - [ ] **Leafcutter combat behavior:** In Session 3, leafcutters fought against the party halfheartedly and some switched sides mid-fight. Is this the standard leafcutter behavior (won't commit against non-ant opponents), or was it specific to this encounter?
 - [x] **First ant encounter composition:** Should it include fire ants or not? Consider one fire ant commander in an otherwise all-leafcutter group as a hint. Or the reverse: black ants using red ants as foot soldiers after a recent alliance. — Decision: Two fire ant commanders + four leafcutter workers with a body cart. Leafcutters fought halfheartedly, some switched sides mid-combat. Evidence: sessions/final/s03_final.md.
 - [x] **Ant farm entry / disguise mechanic:** Pheromones or scavenged ant materials (armor fragments, non-rotting wildflower petals) to allow the party to disguise and enter. Underdeveloped — needs a cleaner mechanical hook. — Decision: Resolved in Session 4 for this specific farm via Drix's Disguise Self (fire ant) plus Nancy and Tabby in the disguise kit playing dead in the cart. The pheromone-lock mechanic is still reserved for a deeper ant nest later (per draft DM note). Evidence: sessions/final/s04_final.md.
-- [x] **Flying rules detail:** One reference says ascending provokes opportunity attacks. Is this confirmed? — Decision: Confirmed. Ascending provokes opportunity attacks. Evidence: DM ruling 2026-07-25; Homebrew_Rules.md line 35.
+- [x] **Flying rules detail:** One reference says ascending provokes opportunity attacks. Is this confirmed? — Decision: Confirmed. Ascending provokes opportunity attacks. Evidence: DM ruling 2026-07-25; Homebrew_Rules.md § Flying.
 - [ ] **Heated Body trait for fire ants:** Contact damage? Not yet implemented.
 - [ ] **Fire Ant Worker stat block:** Referenced but not yet built. Nothing in `creatures/` yet.
 - [ ] **Fire Ant Queen stat block:** Referenced but not yet built. Nothing in `creatures/` yet.
