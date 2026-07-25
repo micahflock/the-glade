@@ -25,6 +25,19 @@ so **always invoke this project's versions by explicit slash command**. Deleting
 locally does not stick — they re-sync from the account. Remove them in claude.ai skill
 settings if you want them gone for good.
 
+## By Design (not drift)
+These look like overlap to an audit but are deliberate. Do not "fix" them.
+
+- `/import-character` creates a character YAML from scratch and owns the canonical
+  schema. `/update-character` patches an *existing* file in place — it diffs against
+  what's there and applies confirmed changes only, so the existing file is its own
+  schema. It does not need to mirror `/import-character`.
+- `/session-over` and `/scribe` deliberately share a write surface
+  (`memory/NPC_Registry.yaml`, `party/*.yaml`, `memory/Open_Questions.md`,
+  `memory/campaign_state.yaml`). Both are explicitly user-invoked, two-phase, and
+  never concurrent — precedence is simply recency. `/janitor` is read-only and
+  writes nothing.
+
 ## Campaign Memory Files
 Structured registry files use YAML (.yaml) — query these for specific fields, 
 status, and relationships. Narrative files use Markdown (.md) — read these 
