@@ -1,0 +1,752 @@
+# Session 7.5 Draft — The Last Day in Canopia
+
+**Scope.** A bridge session between S7 (heist prep) and S8 (the fête infiltration). The party
+spends the **day of the fête** visiting the Canopia locations they never got to. This session
+is the direct execution of the plan the DMs already committed to in `sessions/s08_draft.md §7`:
+
+> *"I really want the party to spend the morning of the fête going to the places they haven't
+> gone to yet in Canopia that we've written."* — **DECIDED: actively push the party here, and
+> open the session with it.**
+
+Everything in this document is **co-located from existing prep** unless tagged 🆕. Sources are
+cited inline so nothing here has to be taken on faith.
+
+**Sources drawn on:** `notes/canopia_return_scenes.md` (the polished DM scene chunks — Ruby
+Thorax, Vikki's, the Casino), `sessions/s07_draft.md §1a–1e`, `sessions/s05_draft.md §5.5`,
+`sessions/final/s05_final.md`, `s06_final.md`, `s07_final.md`, `s065_final.md`,
+`memory/World_Codex.md`, `memory/NPC_Registry.yaml`, `memory/Open_Questions.md`,
+`sessions/notes/s07_mma_roster.md`.
+
+---
+
+## ⚠️ Read This First — Four Things That Will Bite At The Table
+
+**1. The casino is called The Queen's Crown, not the Queen Bee Casino.**
+`memory/World_Codex.md:220` settles this explicitly: *"Appears as 'Queen Bee Casino' in Session 7
+prep notes; that scene never ran. Queen's Crown is the canon name."* More importantly — **the
+party was thrown out of this casino in Session 5** (`s05_final.md:83–85`). Security escorted
+them out after the fumbled rumor bit, and Nancy pickpocketed 2 sap + 1 cig on the way. A
+"return to the casino" is a return to a place that bounced them. That's the scene, and it's
+better than the prepped one. See §2E.
+
+**2. The MMA roster was declared non-canon by the DMs.**
+`sessions/s08_draft.md §6b` carries a standing DM note: the S07 `s07_mma_roster.md` is
+*"slop… not something we told the players"* — **disregard it as canon.** Krull, Old Pell,
+Mireille, Fitz, The Cantor, and the Twins are **not** established. If you want the gym tonight
+you are building it fresh. See §2F for a stripped-down version that doesn't reinstate the
+discarded roster.
+
+**3. The party is broke.** Combined liquid wealth across all three sheets:
+
+| PC | Money on sheet |
+| :--- | :--- |
+| Nancy | 10 gp · 1 cig · a **Pearl/Amber worth 100 gp** |
+| Drix | 16 gp |
+| Tabby | *nothing listed* |
+
+That's **26 gp and a gem** against a session whose premise is *four shops*. See §4 for three
+ways to handle it that don't require anyone to say "you can't afford that."
+
+**4. The dead drop is due TONIGHT and is still unanswered.** This is the hard deadline the
+session hangs on, and it has now slipped through two entire sessions
+(`memory/Open_Questions.md:87` — *"NOW URGENT"*). See §1B.
+
+---
+
+## 0 · Where We Are
+
+**Time:** Morning, the day of the fête. Pickup is at the Dewdrop at **first dark**.
+**Place:** The Dewdrop Inn, Canopia. The party's room is held until the night after the event
+(Gleam, S6).
+**State:** They ended S7 mid-recon at the palace's grand level and were heading back to the
+Dewdrop to compile their intel into **blueprints**. Assume they got back and slept.
+
+**What they already have** (do not re-deliver — it's banked):
+
+- Public palace layout: two ballrooms w/ balconies · a fighting pit · a great banquet hall ·
+  a **throne room with no balcony** (`s07_final.md §2`)
+- The servants'-quarters understory running **under the ballrooms**, via **Johnathy**, the
+  honeybun vendor's brother, who works the palace kitchens and is working the fête
+- Grand-level security: guards every ~30 ft · a fortified servants' gate with a watchtower ·
+  enclosed kitchen→quarters walkways
+- The reagent carts: juniper berries, scorpion stingers, glowing goop — *"they don't do similar
+  things"* (`s07_final.md §3`)
+- Beeatrix confirmed as the band's singer (lyre). Sent home sober last night.
+- A rumor loose in the city that the fête is **open to everyone at 8:30pm**.
+
+**The open blueprint question.** `Open_Questions.md:97` asks whether consistent intel-gathering
+earns them a **tangible palace map**. Tonight is the natural moment to answer it: they have four
+more intel nodes available. 🆕 **Suggestion:** make it a threshold — if they hit **three or more**
+of tonight's nodes, they get a real handout map at the end of the session. That converts "we
+went shopping" into a mechanical payoff and gives the DM a clean reason to push them out the
+door. *(Ties to the RJS construction-map thread, `s07_draft.md §1a`.)*
+
+---
+
+## 1 · Opening at the Dewdrop
+
+### 1A. The Push Out The Door
+
+`s08_draft.md §7` prescribes the opening beat directly: *"At the beginning of next session…
+remind them: hey, there's a lot of spots that you might want to check out before you go."*
+The DMs' own pitch list, verbatim:
+
+- *"y'all don't have new clothes yet"* / *"plus, we gotta get outfits"*
+- *"you've got some intel on a weaponsmith"* — this is where gear upgrades come from
+- **Vikki's Volatiles** — *"where they can learn about the lab"*
+- **The Royal Jelly Society** — *"where they can get some intel and another item"*
+
+**Pacing permission, from the DMs:** *"now I don't care about fucking around."* This session is
+allowed to be a slow, funny shopping day. That's the point of it.
+
+🆕 **Suggested delivery — Dale.** He's behind the bar, he's a rebel asset who knows exactly what
+tonight is, and he's the established source of practical Canopia advice (he's the one who told
+them how to book flight travel in S6). Have him look at the three of them, look at what they're
+wearing, and say some version of: *you're going to a queen's coronation dressed like that?*
+That's the whole push, in character, from someone with no reason to be coy.
+
+### 1B. ⚠️ The Dead Drop — The Hard Deadline
+
+**This is the spine of the session.** Gleam offered six specialists in S6 and needs **three
+picks**; only three can be reached before the event without arousing suspicion. The party has
+never committed. The window closes tonight.
+
+The six (handout exists: `handouts/heist_dead_drop_contacts.html` — *"Six Friends Inside"*):
+
+| Specialist | Species | Specialty |
+| :--- | :--- | :--- |
+| **Tudd** | Leafcutter major | Directed violence, demolition, construction |
+| **Demicous** | Leafcutter minim | Goes anywhere unsuspected; useless in a fight |
+| **Vikko** | Jewel beetle | Bartending the event — intel, poisoned drinks, smuggling |
+| **Diedre** | Lacewing | Performer — distractions, cover for a retinue |
+| **Dax** | Cockroach | First aid for the MMA cage — medical, fighter contact |
+| **Zalle** | Sawfly larva | Pheromone-lounge mixologist — moods, mild status effects |
+
+> **DM note — this is not neutral.** S8 prep has already placed all six in specific rooms, and
+> **Zalle holds the pheromone key to the secret door into the core** (`s08_draft.md §1 Route 3`).
+> If the party never picks Zalle, the storeroom→chambers route becomes much harder to find. That
+> doesn't mean steer them — but know what each pick costs before they choose.
+
+**Mechanically:** how does Gleam need the answer? Written note left at the Dewdrop drop? Told to
+Dale? Handed to the runner at first dark? `Open_Questions.md:87` flags this as unspecified.
+[MORE DETAIL: pick the delivery method before the table asks.]
+
+🆕 **Suggested:** Dale slides them a blank strip of leaf-paper with breakfast and says the drop
+goes out mid-morning, not at first dark — *"if you want three friends in there, I need the names
+before lunch."* This front-loads the decision instead of letting it slide to the end of the
+night again, and it costs them the ability to decide after seeing the shops. If you'd rather they
+choose *informed*, keep the deadline at first dark and let the day's intel shape the picks.
+
+---
+
+## 2 · The Locations
+
+Six nodes. **Not all of them need to run.** §3 has a suggested route and a triage order.
+
+---
+
+### 2A · The Ruby Thorax — Thoralex 💎
+
+*Full prep exists and has never been spent. Source: `notes/canopia_return_scenes.md` — reproduced
+here so you don't have to hold two documents.*
+
+**Where:** West side. Jeweler's shop on a well-kept street.
+**Hours:** ⏰ The cockroach said *"probably not open right now"* at ~7pm in S7. **Open in the
+daytime.** Go in the morning.
+**Who:** **Thoralex**, stick insect. Refined, genuinely passionate, a little wistful. Apolitical
+— goes where the work is, and right now the work is the Queen's.
+**Purpose:** Tabby's blade decision (a real mechanical choice) · the throne-room → private
+collection intel.
+
+#### Read-aloud — the storefront
+
+> The shop announces itself before you read the sign: flashy, but tasteful with it. Intricate
+> silverwork frames the windows, gemstones set into the trim catching the light, the whole face
+> of the place freshly repainted. The sign reads **THE RUBY THORAX** — though if you look close,
+> you can see the ghost of older letters under the new paint.
+>
+> Not a single weapon on display.
+
+> **DM note:** The painted-over sign is the hook — let an observant PC catch it. The old name was
+> **The Iron Sting.**
+
+#### Read-aloud — inside
+
+> The interior is all soft light and velvet trays — rings sized for a dozen kinds of leg,
+> brooches, carapace-inlay work. But behind the counter, half-forgotten on a **dusty shelf**,
+> sits a row of blades. Expertly worked. Old craft. Clearly nobody's asked for one in a long
+> while.
+>
+> Behind the counter, a tall, elegant **stick insect** — limbs like polished green twigs, rings
+> on more of them than you can count — bends over a workbench. He's working a brilliant green
+> stone into an elaborate **crown**, already heavy with bright-set gems. He doesn't look up right
+> away.
+
+#### In conversation
+
+- **The crown** is for the **Red Queen's coronation.** Most of his business now is decorative
+  work for her and her cohort — *"a new and interesting challenge,"* and he means it.
+- **The name change:** it was **The Iron Sting.** He repainted when the new Queen took power —
+  *"She doesn't have much use for blades."* Said lightly. Let the implication sit.
+- **The material:** he is **surprised and delighted** by orchid-mantis stock. A rare medium. His
+  whole demeanor lifts — most fun he's had in months.
+
+#### 🔑 The intel — he has *seen* the collection
+
+Get him reminiscing and it spills out:
+
+> *"Oh, she's amassed quite a collection. I got to see it once — fitting this very piece, in fact."*
+
+- The Queen's **private collection** sits **deep in the canopy**, past the **flower-petal
+  ballrooms** and the **hanging walkways**.
+- He was led in **through the throne room**.
+
+> **Why this matters — it closes a loop the party opened themselves.** On the promenade they
+> banked the detail that *the throne room is the one major room with no balcony.* Now they learn
+> **why**: it's the gateway to her vault. It's locked down because it's the way in. Let them make
+> that connection out loud; don't make it for them.
+>
+> 🎭 **The coronation is the opening.** With the ceremony processing *through* that throne room
+> (`s08_draft.md §3a`), delivering or escorting Thoralex's finished crown is a live front-door
+> vector.
+
+#### The decision — finishing Tabby's blades
+
+Thoralex can do extraordinary work on the mantis material. **But the better the edge, the more it
+disrupts the strange property the stuff already has** — sharpen it and it loses the invisibility.
+
+| Option | What he does | Effect | Invisibility |
+| :--- | :--- | :--- | :--- |
+| **A — Master's edge** | Hones it to a razor's first-cut | **+4 first attack, +1 thereafter** ⚠️ | ❌ Lost |
+| **B — Balanced edge** | A keen, durable working edge | **+2** | ❌ Lost |
+| **C — Carved handle only** | Leaves the blade raw, dresses the grip | No attack bonus | ✅ **Kept** (1×/short rest) |
+
+> ⚠️ **LOCK THIS BEFORE THE TABLE GETS HERE.** "+4 first attack, +1 thereafter" reads two ways:
+> **(a)** +4 opening strike then a permanent +1 for the blade's life, or **(b)** +4 first hit,
+> +1 on the next, then nothing. Prep tabled it as **(a)**. Pick one now.
+>
+> 💡 **The real tension:** invisible blade = heist tool; sharp blade = combat tool. With the fête
+> *tonight*, C is probably the play — make sure Tabby weighs that. **Recommend letting her split
+> the pair** (one sharpened, one invisible); she owns multiples and it's a satisfying compromise.
+>
+> 📝 Update `party/tabatha_starr.yaml` afterward via `/update-character`.
+
+> 🆕 **Drix and Nancy each carry a Mantible too** (`s065_final.md §2`) — same 1d8 finesse,
+> same invisibility. The same offer applies to them. Three PCs × this choice could eat the whole
+> session; consider offering the full menu to Tabby (whose blades are the prepped hook) and a
+> yes/no cosmetic-finish version to the other two.
+
+**Loose ends:** Does Thoralex sketch a layout if befriended or paid — or does he only ever let the
+throne-room detail slip by accident? (Prep flags "too convenient" as the risk.) Is the crown
+delivery a vector the party can arrange *tonight*?
+
+---
+
+### 2B · Trader Twizzlers — Outfits 👗 🆕
+
+> **⚠️ No prep exists for this location.** It has a name, a street, and one line of description
+> in the registry — nothing else. **Everything in this section is new tonight** and should be
+> treated as a proposal, not canon.
+
+**What's canon:** Named to the party on the promenade as the place to get *"a beautiful outfit"*
+for the fête (`s07_final.md §0`, `s07_notes.md`).
+
+**⚠️ Location conflict.** Play notes say **south side, down the street from the Ruby Thorax**
+(`s07_final.md`, `s07_notes.md` — both DM and player notes agree). `memory/World_Codex.md:222`
+and `NPC_Registry.yaml` both say **west side**. The Ruby Thorax is west side, so "down the street
+from the Ruby Thorax" and "south side" are in tension. **Play said south** — recommend going with
+south and correcting the codex via `/scribe`. [DM CHECK]
+
+#### 🆕 Proposed: the shop
+
+> **Trader Twizzlers** is not a boutique. It's a *warehouse* of a place — three floors of a
+> hollowed seed-pod, every wall racked to the ceiling with garments on sliding poles, and a
+> counterweighted basket system for hauling things up and down that someone is always shouting
+> about. The smell is cedar and pressed petal. There is no fitting room; there are curtains.
+
+🆕 **Twizzlers** — proprietor. Suggested species: **a leaf-footed bug** (those flared hind legs
+read as naturally, absurdly well-dressed) or **a bagworm moth** (an insect that *literally builds
+its own outfit from found material* — thematically perfect, and funnier). Either way:
+
+- Talks *fast*, in sales patter, and never stops moving.
+- Has been slammed for a week — **every bug in Canopia needs a coronation outfit tonight.**
+  Stock is picked over. This is the pressure that makes the scene fun.
+- Genuinely, sincerely good at their job. Sizes a customer by eye and is never wrong.
+
+#### 🆕 Why the party should care (beyond looking nice)
+
+Make the outfit **mechanically relevant** so this isn't twenty minutes of shopping:
+
+1. **The cover.** They're entering as the fourth band. Turning up under-dressed is a Deception
+   penalty at the door; turning up *correct* is advantage on blending into the public rooms.
+   Suggest **advantage on one Deception/Performance check at the fête** for a proper outfit.
+2. **Concealment.** The real question the players will ask: *can I hide a sword in this?*
+   Twizzlers can absolutely do that, for extra, and will not ask why. A dress with a blade
+   channel; a coat lined for a lute case that isn't a lute case.
+3. **The intel.** Twizzlers is dressing *half the guest list*. They know who's attending, what
+   the dignitaries look like, and what the palace staff wear — **including the servants' livery.**
+   🔑 That last one is the payload: a servant's uniform is the kitchen→understory route made
+   wearable. Sell it, rent it, or have it "accidentally" go out in a delivery.
+
+> 🆕 **DM note:** #3 is the reason to run this scene. Everything else is dress-up. If the party
+> doesn't think to ask, have Twizzlers complain about the palace livery order as a throwaway
+> gripe — *"forty aprons, no notice, and they want them in brown"* — and let them catch it.
+
+#### 🆕 Suggested prices
+
+Given the party's actual wallet (§4), keep these low and let the pressure be *availability*, not
+cost:
+
+| Item | Price |
+| :--- | :--- |
+| Off-the-rack fête outfit, picked-over stock | **5 gp** each |
+| Properly fitted, actually impressive | **15 gp** each |
+| Concealment tailoring (blade channel, false lining) | **+5 gp** |
+| Servants' livery (if they think to ask) | **10 gp** — or a favor |
+
+**Loose ends:** Does Twizzlers become a contact, or a one-off? Does anyone recognize the party
+later *because* of the outfit (the 8:30 rumor crowd, the jewel-beetle vendor who wasn't
+convinced)?
+
+---
+
+### 2C · Vikki's Volatiles — The Lab Breadcrumb 🧪
+
+*Full prep exists. Source: `notes/canopia_return_scenes.md §1c`.*
+
+**Where:** Tucked among jewelers and scented-candle shops — i.e. **the same district as the Ruby
+Thorax.** An older building of cut pebble.
+**Hours:** ⏰ **Daytime only.** Explicitly not open at night (matters if they try to come back and
+break in).
+**Who:** **Vikki**, elderly bombardier beetle · a frazzled house-centipede assistant.
+**How they find it:** Prep says *"don't hand it to them"* — they find it by looking for science
+or alchemy suppliers, most likely pointed there by the Royal Jelly Society. 🆕 **Second route,
+since the RJS visit isn't guaranteed:** it's two doors from the Ruby Thorax. If they go to
+Thoralex, they walk past scorch marks. That's enough.
+
+#### Read-aloud — the storefront
+
+> Wedged between a shop hawking delicate jewelry and another thick with the smell of scented
+> candles, there's an older building — squat, built of cut pebbles, out of step with its pretty
+> neighbors. Above a few of the upper windows, the stone wears **fresh scorch marks.**
+> Suspiciously fresh.
+
+#### Read-aloud — inside
+
+> A counter runs across the front, and behind it: rows and rows of neat shelving, marching back
+> into the dim. The visible stock is a wild range — **tarantula hairs** in one stoppered jar,
+> **poppy seeds** in the next, a hundred things besides. Everything has its place.
+>
+> The proprietor is an elderly **bombardier beetle** — Vikki — gruff, businesslike, and, you
+> can't help but notice, **down one arm**, the stump fairly recent.
+
+> **DM note:** The bombardier beetle is deliberate — she spits boiling caustic spray. That's the
+> scorch marks, that's the arm, and that's what she throws at burglars.
+
+#### What Vikki shares
+
+- **"Reagents have gotten powerful of late."** A recent mishap upstairs — *"Cost me an arm, that
+  did! And at my age…"* (Straight into the Bloom-amplifies-magic thread.)
+- **The Queen buys *everything*.** She can't think of a single thing she *hasn't* sold to that new
+  Red Queen. Every time new stock arrives, *"those unsettlingly be-petal'd ants of hers"* are
+  banging down her door. It's all she can do to keep stock for other customers.
+- 🔑 **The dawning suspicion:** *"I thought it was all for her personal pheromone lounge… but it's
+  almost like she's got some kind of **laboratory** up there."*
+
+> ⚠️ **Escalate, don't repeat.** The party **already saw the reagent carts** at the palace in S7
+> (juniper berries, scorpion stingers, glowing goop) and already clocked them as *"someone trying
+> to figure something out."* Vikki's prepped payload was supposed to be *first* contact with that
+> idea. It isn't anymore. **Play her as confirmation plus a name:** they saw the carts; she can
+> tell them *what was in them, where they came from, and that the word for it is "laboratory."*
+>
+> 🆕 If they describe the specific carts to her, she can identify them and be alarmed — she didn't
+> sell the Queen scorpion stingers. **Somebody else is supplying her**, or she's getting them from
+> outside Canopia. That's a new thread out of an old scene.
+
+**Keep the orders organic and strange, not artificial** — the point is that *natural ingredients
+are changing*:
+- *"The nectar from this one flower's been acting really weird lately — she wanted a LOT of it."*
+- *"The goo off the aphids has changed somehow. She wanted barrels."*
+- Mushrooms, ground-up seeds, anything like that.
+
+#### The frazzled assistant
+
+> A shape skitters between the shelves — a **house centipede**, every one of its many legs in
+> motion, its hairs in a frazzle as it rushes to pull an order together.
+
+**If asked:** it's an **urgent pack of reagents for tonight's fête.** [MORE DETAIL: name 2–3
+things in the pack. `s08_draft.md §1` has a live open question about whether the strange lab goods
+turn up in the pheromone-lounge storeroom as a **red herring** — what's in this pack should agree
+with whichever way you call that.]
+
+#### ⚠️ Optional: the after-hours break-in
+
+If they come back at night (shop is closed):
+- 🔍 **What they find:** order records and crates showing **tons** of material going to the Red
+  Ant Queen — far past any "pheromone lounge" cover. Hard confirmation of a lab-scale operation.
+- 💥 **If they botch it:** Vikki lives above the shop, she's armed, she's a bombardier beetle, and
+  **she throws grenades.** She does not miss twice.
+
+> **Decide before they try it:** is Vikki a kill-on-sight defender, or someone the party could
+> talk down and *recruit*? She has grievances — her arm, her hijacked stock. There's an alliance
+> here if they don't blow her door off first. 🆕 Given the fête is tonight, a break-in is
+> probably a bad use of the party's remaining hours; consider having her offer the records
+> willingly if they're straight with her about suspecting the Queen.
+
+---
+
+### 2D · The Royal Jelly Society, Canopia Branch 🌸
+
+*Prep exists in two places: `s05_draft.md §5.5` (the tonal scene) and `s07_draft.md §1a` (the
+heist-intel upgrade). Merged here.*
+
+**Where:** On the route between the Queen's Crown and the Dewdrop (`World_Codex.md:226`) — so
+it's on the way, and they've **already walked past it once** in S5 without going in.
+**Purpose:** The campaign's cheerful-complicity beat · **and**, per S7 prep, a goldmine of heist
+intel.
+
+#### What it is
+
+A local chapter. Ornate. Airy. A bunch of bees who really, really love pressed flowers and are
+absolutely thrilled with the current state of the world.
+
+**Arriving at the door.** They're greeted by a staff bee holding water for them to wash their
+hands. Another offers a tray of candies. The sitting rooms are beautiful. Everything is delicate.
+Everything is wonderful. Everyone is so, so happy.
+
+**If the party tries to deliver important news:**
+
+> "Oh! You've found a new flower? Some petals for us? Oh, beautiful. Yes, isn't it wonderful —
+> the magic has made everything so gorgeous and delicate…"
+
+They do not give a shit about the Bloom. They cannot be made to give a shit. The Overgrowth has
+been the best thing to ever happen to this branch.
+
+> **SLOP CHECK carried from prep:** this vibe is verbatim from the original transcript — keep the
+> tonal intent exact. **The players should walk out feeling a specific flavor of
+> civilization-ending dread.**
+
+**What they know about the calamity:** background only, all of it stuff the party already knows.
+*"It started roughly X years ago. Plants are not dying. Isn't that just marvelous?"* No leads.
+No action.
+
+#### 🔑 What they DO know — heist intel
+
+The RJS were **pollinators**, and they *"could have helped with the construction"* of the petal
+palace. They are a rich, oblivious source precisely because they don't care about anything but
+flowers. Three payoffs available if the party works the angle:
+
+1. **A rough map.** *"They could talk to someone that worked on building it and get a rough map."*
+   The party has no map, and *"having a map of where you're infiltrating is hella useful"* —
+   especially combined with the bore-through-petals plan (`s07_draft.md §3a`).
+   [MORE DETAIL: what the construction map **shows vs. omits**. Prep's own suggestion: it omits
+   the secure wing's secret pheromone route. 🆕 Recommend it shows the *outward-facing* rooms and
+   their walkways accurately and simply stops at the core — because that's where the leafcutters,
+   not the pollinators, did the work.]
+2. **An "in" at the fête.** They're invited. They could provide an introduction, **carry an item
+   in** for the party, or — *"poison someone so they vomit spectacularly the next night, causing
+   a diversion."* (Delivered cheerfully. That's the joke.)
+3. **The lab link.** The Leafcutter Queen *"could have requested lab equipment from them, which
+   they were more than happy to give because they don't need it anymore. They're way into flowers
+   now. 'More room for flowers. Need more flower.'"* — a thread pointing at a lab the party
+   doesn't know exists.
+
+> **DM note.** The dissonance is double-edged now: the same cheerful complicity that makes them
+> useless about the apocalypse makes them a goldmine for the heist. **Civilization-ending dread
+> *and* a free map.**
+
+#### 🆕 Named NPCs
+
+Prep flagged this gap (`s05_draft.md:360` — *"if the DMs want, flesh out one or two named member
+NPCs"*). There are **no named Canopia-branch bees in the registry**. Two suggestions, both new:
+
+- 🆕 **Honoria Pell-Mell** — branch secretary, a plump carpenter bee, radiantly happy, speaks
+  entirely in enthusiasms. She is the wall the party's news breaks against. *"Isn't it just the
+  most wonderful time to be alive?"*
+- 🆕 **Old Bombus** — an ancient, half-deaf bumblebee in a corner chair who **actually worked
+  the palace construction** as a pollinator-liaison. He'll draw the map on the back of a pressed-
+  flower mounting card if anyone asks him about the old days. Nobody at the branch has asked him
+  anything in years. 🆕 The quiet horror: he's the only one there who remembers what the
+  world was like before, and everyone treats him as senile.
+
+> 🆕 **DM note:** Old Bombus is the mechanism. He makes the map feel *earned* (someone paid
+> attention to the boring old man) rather than handed over. He also gives the branch's cheer a
+> single crack in it, which is more unsettling than uniform bliss.
+
+**Note the party's history with the RJS.** They're not strangers — the RJS is the organization
+that sent them out in the first place (Dr. T'wigfingers, Chitinholm, Session 0; Garett in
+Antennington). Nancy's equipment is *full* of Chitinholm RJS stockroom gear. Their name should
+open the door here. That the Canopia branch doesn't care what the Chitinholm branch found is the
+whole point.
+
+---
+
+### 2E · The Queen's Crown — Return to the Casino 🎲
+
+*Prep exists as "the Queen Bee Casino" in `notes/canopia_return_scenes.md §1d`. **The canon name
+is The Queen's Crown** (`World_Codex.md:220`). Reconciled here.*
+
+**Where:** The city's casino. Very lively; high-rolling wasps who do not care about groundling
+problems.
+**⚠️ History:** **They were escorted out of here in Session 5.** They announced a heist to each
+other, tried to spread a rumor that the fire ants grow fungus on dead bodies, flopped it flat at
+a table of wasps, and got walked out by security. Nancy lifted 2 sap and 1 cig on the way. The
+party **explicitly said they liked the bit and wanted to come back** (`s05_final.md:83–86`,
+`Open_Questions.md:73`).
+
+> 🆕 **Run the return, not the prepped cold open.** The prepped scene assumes a first visit. It
+> isn't one. Open on whether security remembers them — 🆕 suggest a doorbug who does, and a
+> Persuasion/Deception/Performance check to get back in at all. Drix's reputation is a legitimate
+> lever; so is "we're playing the Queen's coronation tonight," which is *true*.
+
+#### Read-aloud — the floor
+
+> The Queen's Crown is busier than it looks and emptier than it should be — a strange mix. Half
+> the floor stands bare: you can see the clean rectangles in the carpet where **card tables and
+> roulette wheels** used to sit. The tables that remain are **mobbed**, players stacked three
+> deep, as if the whole city's gambling has been funneled into what's left.
+
+> **DM note — why it's gutted:** the missing tables *and the dealers who run them* have been
+> **rented out by the Red Ant Queen for the fête.** That's the hook: the bugs who will be working
+> the Queen's casino floor tonight are standing right here, between gigs.
+
+#### Working the room
+
+Schmooze a bartender or pit boss — someone who's staffed or attended a Queen's fête before. Play
+it as bar talk, not an interrogation. Drinks bought, chips tipped.
+
+**Info to glean:**
+- ✅ **Confirmation of a full casino setup** at the fête, and **where it connects**: it opens onto
+  **both ballrooms.** (Cross-references their promenade intel: two ballrooms.)
+- 🗣️ **The pheromone lounge** — she's heard of it, can place it on the map, hazy on what actually
+  happens inside.
+- 🔑 **The real prize — support rooms.** Every big room (ballrooms, casino, banquet hall) has
+  **support spaces underneath**: staging, storage, staff passages. A way to move **under** the
+  public floor instead of across it.
+
+> 🔑 **DM note — the converging picture.** The promenade gave them the *public rooms*. The
+> honeybun vendor gave them the *kitchen→quarters* route. This gives them the *service understory*.
+> **Three independent sources, same truth: the way through the palace is underneath and behind
+> it, not across the ballrooms.** Let players who've gathered all three feel smart — and see the
+> blueprint threshold in §0.
+
+#### 🆕 Two extra hooks live here
+
+- 🆕 **Twyla.** The Weevilville aid coordinator *"personally likes to gamble at the Queen's
+  Crown"* (`NPC_Registry.yaml:421,435`; `Open_Questions.md:80` flags her as a natural re-entry
+  contact). She's a known, warm face — and a rebel-adjacent one. Free scene if you want it.
+- **The party's own heist-of-the-casino bit** is still officially open (`Open_Questions.md:73`).
+  🆕 **Recommend against running it tonight** — it competes with the fête for the same energy on
+  the same day. Let them plan it out loud and promise it a real session later.
+
+**Loose ends:** Name the contact (bartender vs. pit boss) and decide whether she's actually
+**staffing the fête** — if so she's an inside asset, not just a rumor. How connected are the
+support rooms: a continuous understory, or isolated pockets? *(S8 has since answered this — see
+`s08_draft.md §1`, service tunnels link Casino↔Kitchen. Keep her answer consistent with that.)*
+
+---
+
+### 2F · Mixed Mandible Arts — The Gym 🥊
+
+> ⚠️ **The existing roster is non-canon by DM ruling.** `s08_draft.md §6b` carries a standing
+> note that `sessions/notes/s07_mma_roster.md` is *"slop… not something we told the players"* —
+> **disregard it as canon.** Krull, Old Pell, Mireille, Fitz, The Cantor, and the Twins are not
+> established and nothing player-facing depends on them. **Everything below is a fresh, minimal
+> build** that doesn't reinstate them.
+>
+> If you'd rather not spend a location slot here, this is the one to cut. See §3.
+
+#### What *is* canon
+
+- **Mixed Mandible Arts exists** and the palace has a **fighting pit** for it (`World_Codex.md:237`).
+- **Dax**, a cockroach, is the rebel medic placed in the palace cage's **under-pit support room**
+  — he's one of the six dead-drop specialists.
+- Because the fête is the season's event, the Red Ant Queen recruits top fighters — so there are
+  **more fighters in Canopia than normal** right now (`s07_draft.md §1e`).
+- The palace pit sits **inside the Casino**, sunken, reached *"behind the bar and down some steps"*
+  off the servants' hallway (`s08_draft.md §6b`). Fighters are led in through side gates.
+
+#### 🆕 Proposed: the gym, stripped down
+
+> A ring of packed dirt under a petal canopy. Sweat, resin-chalk, and the smell of old shed
+> cuticle. Sparring rings, a weight pit, a wall of fight posters — and today, too many bugs in
+> here, because half the circuit is in town for tonight's card.
+
+🆕 **One NPC is enough.** Rather than a roster, give the party a single **retired fighter who has
+worked the palace cage** and now wraps hands for the young ones. Gruff, fair, sees through
+bullshit instantly, tired of watching kids get chewed up by the Queen's circuit.
+
+- **If the party is straight with him** about wanting to help against the queens, he'll quietly
+  sketch **the part of the pit the crowd never sees**: the under-pit support room, the backstage
+  route, and which guards work the cage.
+- 🔑 **He mentions the medic** — a cockroach, good hands, been down there for years. **This puts
+  Dax on the party's radar before they have to commit their dead-drop picks**, which is the
+  single most useful thing this location can do tonight.
+
+[MORE DETAIL: name him. The old roster's "Old Pell" is available if you like the name and want to
+keep it while discarding the rest of that document — 🆕 but he was never spoken aloud at the
+table, so it's a free choice.]
+
+#### 🆕 What this location is *for*
+
+Honestly: **the Dax tie-in and one good scene.** If you're short on time, this intel can be
+delivered by the Queen's Crown contact instead (a pit boss would absolutely know the fighters).
+That collapses two locations into one and costs nothing.
+
+**If they pick a fight:** don't. It's the day of the heist and a real bout would eat an hour.
+🆕 If a player pushes, run it as a **single friendly sparring exchange** — one contested check,
+a bruise, and respect earned — not initiative.
+
+---
+
+## 3 · Running The Day — Route, Time, and Triage
+
+### 🆕 Suggested route
+
+Geography as established: **Ruby Thorax = west side. Vikki's = among jewelers and candle shops
+(same district). Twizzlers = south, down the street from the Ruby Thorax. RJS = between the
+Queen's Crown and the Dewdrop. The palace is visible from the west.**
+
+| # | Stop | Why here |
+| :-- | :--- | :--- |
+| 1 | **Dewdrop** — breakfast, blueprints, the push, ⚠️ **the dead-drop names** | Deadline set |
+| 2 | **Royal Jelly Society** | It's literally on the way out; morning is right for it |
+| 3 | **Queen's Crown** | Adjacent to RJS; daytime casino is a good look at a gutted floor |
+| 4 | **The Ruby Thorax** | West side. Daytime hours. The blade decision is the big beat |
+| 5 | **Vikki's Volatiles** | Two doors away. Daytime only — don't let this one slip past dark |
+| 6 | **Trader Twizzlers** | South, down the street. Late-day: they know what they need by now |
+| 7 | **The Molt (MMA gym)** | Optional. Cut first if time is tight |
+| 8 | **Back to the Dewdrop by first dark** | Gleam's runner. Session ends here |
+
+### 🆕 Triage — if you only get three
+
+The DMs' own priority list (`s08_draft.md §7`) is **outfits · weaponsmith · Vikki's · RJS.** If
+the table moves slowly:
+
+1. **The Ruby Thorax** — a real mechanical decision + the throne-room reveal. Highest value.
+2. **The Royal Jelly Society** — the tonal beat *and* the map. Highest value.
+3. **Trader Twizzlers** — cheap, funny, and the servants'-livery thread pays off inside.
+4. Vikki's · the Queen's Crown · the gym — all good, all cuttable, all deliver intel the party
+   can get elsewhere.
+
+### 🆕 What each node yields — one-page cheat sheet
+
+| Location | Intel | Item / mechanical | NPC |
+| :--- | :--- | :--- | :--- |
+| Ruby Thorax | Throne room → private collection; *why* it has no balcony | Blade finish decision (A/B/C) | **Thoralex** |
+| Trader Twizzlers 🆕 | Guest list; **servants' livery** | Outfits (cover bonus); concealment tailoring | **Twizzlers** 🆕 |
+| Vikki's Volatiles | The **laboratory** — named out loud; who supplies the Queen | Reagents for sale; break-in records | **Vikki** |
+| Royal Jelly Society | Construction **map**; lab-equipment link | An "in" at the fête; item carried in; a diversion | **Honoria** 🆕 · **Old Bombus** 🆕 |
+| Queen's Crown | Casino connects to **both ballrooms**; **the support-room understory** | Gambling; a possible staffing contact | Pit boss 🆕 · **Twyla** |
+| The Molt 🆕 | Under-pit room; cage backstage; **Dax** exists | — | Retired fighter 🆕 |
+
+---
+
+## 4 · ⚠️ The Money Problem
+
+**26 gp and a 100 gp gem, across three PCs, on a day built around four shops.** Handle this
+deliberately or it will stall the session.
+
+**Also — the currency homebrew has never actually been tested.** `memory/Homebrew_Rules.md:50–54`
+establishes **Life Pitch (LP): 1 LP = 1 HP. Money is literally health potion. Spending money costs
+potential healing** — and notes *"Unclear how balanced this is, still hasn't come up."* Meanwhile
+every party sheet is denominated in plain **gp**, plus stray **sap** and **cig**.
+
+> ⚠️ **Tonight is the first session where this rule bites**, and it bites on the day of a heist —
+> meaning every purchase is literally spending hit points before a dangerous night. That's either
+> a fantastic tension or an accident. **Decide which before the first shop.** If you don't want to
+> resolve the LP system tonight, just run gp and settle LP later with `/scribe`.
+
+🆕 **Three ways to keep the day moving:**
+
+1. **Thoralex pays in work, not coin.** He is *"surprised and delighted"* by orchid-mantis stock —
+   a rare medium. **Let the leftover mantis material be the currency.** He does the blades for
+   free, or nearly, for the privilege of working the stuff and keeping the offcuts. This is the
+   cleanest fix and it's already implied by the prep.
+2. **Gleam's expense account.** The rebels are sending them into a palace as *dignitaries* and a
+   *band*. Costumes are operational expense. Gleam funding the outfits is in character and turns
+   a shopping trip into a mission briefing. 🆕 Suggest he's left a purse with Dale.
+3. **The pearl.** Nancy is carrying a 100 gp Pearl/Amber. **Thoralex is a jeweler.** If the party
+   needs real money today, that's the transaction, and it costs them something they might want
+   later — which is a better scene than "you can't afford it."
+
+---
+
+## 5 · Loose Ends & Threads Live Tonight
+
+Available for the party to trip over; none require prep:
+
+- **Johnathy**, the honeybun vendor's brother, works the palace kitchens and is working tonight.
+  Do they seek him out? Do they go back to the sister on the promenade?
+  (`Open_Questions.md:100` — inside man or liability?)
+- **The 8:30pm open-invite rumor** Tabby seeded. Is it spreading? Do they hear it repeated back to
+  them by a stranger today? (`Open_Questions.md:98`)
+- **The "2 entrances"** the cockroach mentioned. Still unpinned. [DM CHECK — which two?]
+  (`Open_Questions.md:99`)
+- **Beeatrix.** Sent home sober. Do they check on her? Does she stay sober? 
+  ⚠️ `s08_draft.md §2b` has already settled her fête behavior: **active liability throughout, no
+  stat block, can die, screams and runs.** Anything warm they do today is setup for that.
+- **Barbra the butterfly** — she flew them east and back, has *"felt stronger since the Bloom,"*
+  and is a known flyer. 🆕 A pre-arranged ride is a live **exfiltration** option
+  (`s08_draft.md §4b` explicitly wants a standby butterfly). **Booking Barbra today is the single
+  best piece of forward planning available tonight** and costs the party nothing but a
+  conversation.
+- **The Mayflyer** (upscale bar) and **A Corner** (small jazz spot) — both passed, never entered.
+  Free ad-lib color if the party wanders. (`World_Codex.md:224–225`)
+
+---
+
+## 6 · Ending The Session
+
+**End at first dark, at the Dewdrop, with Gleam's runner arriving.** That is the natural cut and
+it hands straight to `s08_draft.md`.
+
+🆕 **Closing image suggestion:** the party assembled in the Dewdrop's front room in their new
+clothes, blueprints on the table, blades finished, Beeatrix tuning her lyre — and a knock at the
+door. Cut there.
+
+**Before you cut, make sure these are settled:**
+
+- [ ] **Three dead-drop names given.** (If not, decide the consequence — do they go in with zero
+      contacts? `s08_draft.md §6a` assumes all six are placed and Zalle holds the core-door key.)
+- [ ] **Tabby's blade decision made** and `party/tabatha_starr.yaml` updated.
+- [ ] **Outfits acquired** (or a deliberate choice not to).
+- [ ] **Blueprint threshold** — did they hit three nodes? Do they get the map handout?
+- [ ] **Exfil plan** — did anyone book a flyer?
+
+---
+
+## DM Pre-Session Checklist
+
+**Decide before you sit down:**
+
+1. ⚠️ **Lock the "+4 / +1" reading** on Thoralex's Master's Edge (§2A). Also: can Tabby split the
+   pair? *(Recommend yes.)*
+2. ⚠️ **Decide the currency question** (§4) — run plain gp tonight, or actually implement Life
+   Pitch? And pick which of the three money fixes you're using.
+3. ⚠️ **Confirm the dead-drop delivery method and deadline** (§1B) — before lunch, or first dark?
+4. **Trader Twizzlers is unwritten** (§2B) — approve or replace the proprietor, the prices, and
+   the servants'-livery hook. This is the largest block of new material in this draft.
+5. **Decide whether the MMA gym runs at all** (§2F), given the old roster is non-canon. If yes,
+   name the retired fighter.
+6. **Approve or replace Honoria Pell-Mell and Old Bombus** (§2D) — and decide what the RJS
+   construction map shows vs. omits.
+7. **Set the blueprint threshold** (§0) — is there a tangible map handout, and what earns it?
+8. **Vikki:** kill-on-sight defender, or recruitable ally? (§2C)
+9. **Queen's Crown:** does security remember them, and what gets them back in? (§2E)
+10. [DM CHECK] **Trader Twizzlers — south side or west side?** Play said south; the codex says
+    west (§2B).
+
+**Housekeeping this draft does not do:**
+
+- `memory/campaign_state.yaml` still reads `current_session: 8`, `active_draft: sessions/s08_draft.md`.
+  Inserting 7.5 means that needs updating — but that file is **written by `/session-over` and
+  `/scribe` only**, so it's deliberately untouched here. Run `/scribe` if you want it changed
+  before tonight.
+- The **Queen Bee Casino → Queen's Crown** name fix and the **Twizzlers location** correction both
+  want a `/scribe` pass to land in `World_Codex.md` and `NPC_Registry.yaml`.
+
+**Deferred creative asks (not generated here):**
+
+- Full stat block for anyone the party actually fights (`/stat-block`) — unlikely tonight.
+- The RJS construction-map **handout** itself, if you want a physical prop.
