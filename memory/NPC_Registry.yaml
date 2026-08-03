@@ -628,21 +628,63 @@ npcs:
       - The coronation crown as a possible heist vector (delivery/escort into the throne room).
 
 
-  - name: Trader Twizzlers
-    species: Unknown
-    role: Outfitter — fete outfits
-    affiliation: Independent (Canopia, west side)
+  - name: Twizzlers
+    species: Bagworm moth
+    role: Outfitter — proprietor of Trader Twizzlers
+    affiliation: Independent (Canopia)
     status: Alive (presumed)
-    location: West-side Canopia, down the street from The Ruby Thorax
+    location: >
+      Trader Twizzlers, down the street from The Ruby Thorax.
+      [DM CHECK — south side per Session 7 play notes (both DM and player);
+      west side per World_Codex.md. The Ruby Thorax is west, so the two are in
+      tension. Session 7.5 prep recommends south.]
     disposition: Not yet met
-    first_met: null   # learned of, not visited
+    first_met: null   # PREP — learned of in Session 7, shop not visited
+    last_seen: null
+
+    appearance: >
+      Elderly and soft, built into a case of woven silk and cut leaf added to over
+      a lifetime — thread over thread over thread, a garment that is also a house.
+      Two thin arms come out of the front of it and never stop working.
+    voice: >
+      Fast, certain, no small talk, warm underneath. Ahead of you rather than rude.
+      Sizes a customer by ear and scent without looking up, and is never wrong —
+      "Three of you. A bard, a dancer, and one who doesn't want to be measured."
+    motivation: >
+      Pride in the work. Business has never been better: since the Bloom her petals
+      don't wilt, so a garment that used to last one night now lasts forever.
+    personality: >
+      Apolitical craftsbug — the same type as Thoralex, and deliberately his sister
+      act. Not a villain in any degree. The calamity has been good for her and she
+      is a genuinely lovely person, which is the point.
+
+    secret: >
+      Flightless, as adult female bagworm moths are. She has not left the building
+      in decades and dresses all of Canopia for parties she will never attend. She
+      is not sad about this, which is what makes it land.
+    flaw: >
+      Constitutionally incurious about anything outside her craft. She will notice
+      that the palace backed rose petal with bark and be professionally offended by
+      the vulgarity of it, without once wondering why anyone would reinforce a wall.
 
     notes: >
-      Named to the party as the place to get "a beautiful outfit" for the fete.
-      Learned of in Session 7, not visited.
+      [PREP, NOT MET — known-of only.] Named to the party on the promenade in
+      Session 7 as the place to get "a beautiful outfit" for the fete; they did not
+      go. Full scene written up in sessions/s075_draft.md section 2B — storefront,
+      goods and prices, the pay-in-a-performance trade, and the intel. Everything
+      about her beyond the shop name and street is prep, not table canon.
+
+    party_knowledge: >
+      Only that the shop exists, sells fete outfits, and is down the street from
+      The Ruby Thorax. Learned secondhand from the honeybun vendor on the promenade.
+      They have never met her and do not know her species or name.
 
     hooks:
-      - Fete-outfit stop if the party wants to dress the part for the infiltration.
+      - "🔑 Petal-seam intel — she works petal daily and knows panels are strong across the face and weak along the seam. Feeds the bore-through-petals heist mechanic (s07_draft.md section 3a) with a *method* rather than a map, which keeps bore-able vs. reinforced faces an in-session call per s08_draft.md section 1."
+      - "🔑 The palace livery order (\"forty aprons, no notice, and they want them in brown\") — a servant's uniform is the kitchen->understory route made wearable."
+      - Will dress the whole party free in exchange for the band playing her shop floor — she has never heard a band. Cheap, warm, and a sober rehearsal for Beeatrix before the fete.
+      - Natural recurring Canopia contact — she never moves and she knows everyone.
+      - "Optional quiet beat: a rack of finished, paid-for garments nobody collected, tickets still pinned. Some are from Mimbleburg and Trontsburry (lost contact). She finds it unremarkable."
 
 
   # ── REBEL HEIST SPECIALISTS (offered by Gleam, Session 6) ───────────────────

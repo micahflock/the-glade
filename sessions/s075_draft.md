@@ -255,69 +255,224 @@ delivery a vector the party can arrange *tonight*?
 
 ### 2B · Trader Twizzlers — Outfits 👗 🆕
 
-> **⚠️ No prep exists for this location.** It has a name, a street, and one line of description
-> in the registry — nothing else. **Everything in this section is new tonight** and should be
-> treated as a proposal, not canon.
+> **⚠️ Everything in this section is new.** Canon gave this location a name, a street, and one
+> line: the place to get *"a beautiful outfit"* for the fête (`s07_final.md §0`, `s07_notes.md`).
+> The registry entry lists `species: Unknown`. The write-up below is built to the same standard
+> as the Ruby Thorax and Vikki's scenes in `notes/canopia_return_scenes.md` — **approve or
+> replace it, but it's ready to run as written.**
 
-**What's canon:** Named to the party on the promenade as the place to get *"a beautiful outfit"*
-for the fête (`s07_final.md §0`, `s07_notes.md`).
+**When:** Daytime. ⏰ Open, and *slammed* — coronation day is her Christmas.
+**Where:** South side, down the street from the Ruby Thorax. ⚠️ See the location conflict below.
+**Who:** **Twizzlers**, bagworm moth, proprietor · a floor of harried assistants
+**Purpose:** Outfits that matter mechanically · 🔑 **petal-seam intel that feeds the bore-through
+heist plan** · the servants' livery · one quiet, optional gut-punch
 
 **⚠️ Location conflict.** Play notes say **south side, down the street from the Ruby Thorax**
-(`s07_final.md`, `s07_notes.md` — both DM and player notes agree). `memory/World_Codex.md:222`
-and `NPC_Registry.yaml` both say **west side**. The Ruby Thorax is west side, so "down the street
-from the Ruby Thorax" and "south side" are in tension. **Play said south** — recommend going with
-south and correcting the codex via `/scribe`. [DM CHECK]
+(`s07_final.md`, `s07_notes.md` — DM and player notes agree). `World_Codex.md:222` and
+`NPC_Registry.yaml` say **west side**. The Ruby Thorax is west, so "south side" and "down the
+street from the Ruby Thorax" are in tension. **Play said south.** Recommend: south, and correct
+the codex via `/scribe`. [DM CHECK]
 
-#### 🆕 Proposed: the shop
+---
 
-> **Trader Twizzlers** is not a boutique. It's a *warehouse* of a place — three floors of a
-> hollowed seed-pod, every wall racked to the ceiling with garments on sliding poles, and a
-> counterweighted basket system for hauling things up and down that someone is always shouting
-> about. The smell is cedar and pressed petal. There is no fitting room; there are curtains.
+#### 1 · The Storefront (read-aloud)
 
-🆕 **Twizzlers** — proprietor. Suggested species: **a leaf-footed bug** (those flared hind legs
-read as naturally, absurdly well-dressed) or **a bagworm moth** (an insect that *literally builds
-its own outfit from found material* — thematically perfect, and funnier). Either way:
+> The street south of the Ruby Thorax narrows, and then you can't walk down it, because the line
+> is in the way. Forty bugs deep and cheerful about it, fanning themselves with their invitation
+> cards. At the head of it stands a seed-pod three storeys tall with every window thrown open,
+> and out of every window comes the same sound — the fast, dry *snip* of shears, dozens of them,
+> slightly out of time with each other.
+>
+> The sign is enormous, hand-lettered, and a little too pleased with itself:
+>
+> **TRADER TWIZZLERS · OUTFITTERS TO THE DISCERNING THORAX**
+> *No appointment. No refunds. No exceptions.*
 
-- Talks *fast*, in sales patter, and never stops moving.
-- Has been slammed for a week — **every bug in Canopia needs a coronation outfit tonight.**
-  Stock is picked over. This is the pressure that makes the scene fun.
-- Genuinely, sincerely good at their job. Sizes a customer by eye and is never wrong.
+**Getting past the line.** Don't make them queue for an hour of table time, but make them *spend*
+something:
 
-#### 🆕 Why the party should care (beyond looking nice)
-
-Make the outfit **mechanically relevant** so this isn't twenty minutes of shopping:
-
-1. **The cover.** They're entering as the fourth band. Turning up under-dressed is a Deception
-   penalty at the door; turning up *correct* is advantage on blending into the public rooms.
-   Suggest **advantage on one Deception/Performance check at the fête** for a proper outfit.
-2. **Concealment.** The real question the players will ask: *can I hide a sword in this?*
-   Twizzlers can absolutely do that, for extra, and will not ask why. A dress with a blade
-   channel; a coat lined for a lute case that isn't a lute case.
-3. **The intel.** Twizzlers is dressing *half the guest list*. They know who's attending, what
-   the dignitaries look like, and what the palace staff wear — **including the servants' livery.**
-   🔑 That last one is the payload: a servant's uniform is the kitchen→understory route made
-   wearable. Sell it, rent it, or have it "accidentally" go out in a delivery.
-
-> 🆕 **DM note:** #3 is the reason to run this scene. Everything else is dress-up. If the party
-> doesn't think to ask, have Twizzlers complain about the palace livery order as a throwaway
-> gripe — *"forty aprons, no notice, and they want them in brown"* — and let them catch it.
-
-#### 🆕 Suggested prices
-
-Given the party's actual wallet (§4), keep these low and let the pressure be *availability*, not
-cost:
-
-| Item | Price |
+| Approach | Result |
 | :--- | :--- |
-| Off-the-rack fête outfit, picked-over stock | **5 gp** each |
-| Properly fitted, actually impressive | **15 gp** each |
-| Concealment tailoring (blade channel, false lining) | **+5 gp** |
-| Servants' livery (if they think to ask) | **10 gp** — or a favor |
+| Wait it out | Works. Costs them one location slot from §3's route |
+| *"We're playing the coronation tonight"* | **True**, and it works — Twizzlers dresses performers first, because performers are advertising |
+| Persuasion / Performance **DC 13** | Drix busks the line. The line *enjoys* it. They go in |
+| Push in rudely | Canopia is relentlessly polite. They will be tutted at by forty bugs and it will be worse than a fight |
 
-**Loose ends:** Does Twizzlers become a contact, or a one-off? Does anyone recognize the party
-later *because* of the outfit (the 8:30 rumor crowd, the jewel-beetle vendor who wasn't
-convinced)?
+---
+
+#### 2 · Inside (read-aloud)
+
+> Inside is a warm, cedar-smelling chaos. Three floors of racks run up the hollow of the pod,
+> garments hanging from sliding poles, and a system of counterweighted baskets hauls bundles
+> between the floors — at least two people are always shouting about the baskets. There is no
+> fitting room. There are curtains, and there are not enough of them.
+>
+> And every garment in the building is made of flower petals. Not petal-*patterned* — petals.
+> Cut, lapped, and stitched along their edges, in colors you have never seen on anything that
+> was alive.
+>
+> Not one of them has wilted.
+
+> 🔑 **DM note — this is the scene's real hook, and it should land quietly.** The palace is built
+> of **ever-living, never-rotting flower petals** (`s07_draft.md §3a`). So is this dress. The
+> party is about to break into a building made of the same material they're wearing.
+>
+> This also finally gives the campaign the thing `Open_Questions.md:10` has been asking for — *"a
+> more legible in-world signal"* that organic matter from the spring zone doesn't decay. A gown
+> that will never wilt, sold cheerfully, by the rack, is that signal. **Don't explain it. Let a
+> player ask why nothing's wilted and let Twizzlers be delighted by the question.**
+
+---
+
+#### 3 · Twizzlers (read-aloud on approach)
+
+> At the center of the ground floor, on a low dais, sits the only bug in the building who isn't
+> moving. She's old, and soft, and built into a case of woven silk and cut leaf that has clearly
+> been added to for a very long time — thread over thread over thread, a garment that is also a
+> house. Two thin arms come out of the front of it and do not stop working.
+>
+> She doesn't look up.
+>
+> "Three of you," she says. "A bard, a dancer, and one who doesn't want to be measured. Come here."
+
+**Twizzlers** — elderly **bagworm moth**. The species choice is doing real work: bagworm
+caterpillars build a protective case out of silk and whatever's to hand, and wear it their whole
+lives. She has been making clothing since before she could talk. **Adult female bagworm moths are
+flightless and often never leave the case at all** — so:
+
+- **She has not left this building in decades.** She dresses all of Canopia for parties she will
+  never attend. Play it matter-of-fact, not tragic; she is not sad about it, which is what makes
+  it land.
+- **She knows everyone**, because she never goes anywhere and so everyone comes to *her*. This
+  is the mechanical justification for §6.
+- **Sizes a customer by ear and scent, without looking, and is never wrong.** Nail this in the
+  first thirty seconds and the players will trust everything else she says.
+- **Talks fast, no small talk, warm underneath.** Fifty years of doing this. She is not rude —
+  she is simply *ahead of you*.
+
+> 🎭 **DM note — play her as Thoralex's sister act.** Both are apolitical craftsbugs whose
+> business has never been better than under the new Queen; neither is remotely a villain. Thoralex
+> repainted over *The Iron Sting* because *"she doesn't have much use for blades."* Twizzlers'
+> version is the opposite and worse: since the Bloom, **her petals don't wilt**, so a garment that
+> used to last one night now lasts forever, and business is *booming.* That's Canopia's defining
+> dissonance in one shop — the calamity has been good for her, and she's a lovely person.
+
+---
+
+#### 4 · The Goods
+
+Stock is **picked over** — it's coronation day and she's been slammed for a week. The pressure in
+this scene is **availability and time**, not money (§4).
+
+| Item | Price | Notes |
+| :--- | :--- | :--- |
+| Off-the-rack, picked-over | **5 gp** | Fits badly. Reads as *"the help, dressed up"* |
+| Fitted properly | **15 gp** | Takes **two hours** — costs a location slot from §3 |
+| Concealment tailoring | **+5 gp** | Blade channel, false lining, a coat cut for a case that isn't a lute case. **She does not ask why** |
+| Servants' livery | **10 gp** or a favor | 🔑 See §6 |
+| Something *she* designs for you | free, if she's charmed | She picks. You don't get a say. It will be better than anything you'd have chosen |
+
+**Mechanical effect at the fête** — 🆕 proposed, keep it simple:
+
+- **Off-the-rack or nothing:** no benefit. They read as staff, which is *sometimes* what they want.
+- **Properly fitted:** **advantage on one Deception or Performance check** at the fête, spent at
+  the player's call. Justification: they're the fourth band, so getting *in* was never the
+  problem — moving between the public rooms as **guests rather than as the help** is.
+- **Concealment tailoring:** they keep a weapon through any casual search. `s08_draft.md §4c`
+  puts ceremonial guards at every main aperture in *"ceremonial posture, not security posture"* —
+  so this rarely gets tested, but when it does it's the whole ballgame.
+
+---
+
+#### 5 · Paying For It
+
+The party has 26 gp and a pearl. **Give them a non-monetary road in.**
+
+> 🔑 **She has never heard the band.** She has never heard *any* band — she doesn't go out. Drix
+> is standing in her shop.
+>
+> **Offer the trade openly:** play for the shop floor, and she'll dress all three of them for
+> free. The assistants stop working. The line comes in off the street. It costs the party an hour
+> and gains them a set of outfits, a genuine friend in the city, and a rehearsal in front of a
+> real crowd on the day they have to perform for a queen.
+
+🆕 This is the scene's best beat and it's free. It also lets Beeatrix sing in front of strangers,
+**sober**, one more time before tonight — worth doing given `s08_draft.md §2b` has already
+committed to running her as an active liability once they're inside.
+
+---
+
+#### 6 · 🔑 The Intel
+
+Twizzlers dresses half the guest list and all of the staff. She'll trade any of this for
+conversation; none of it is secret to her.
+
+**Tier 1 — free, she'll volunteer it while measuring:**
+- Who's attending. What the dignitaries look like. Who's fat, who's vain, who ordered the same
+  thing three years running.
+- The palace ordered **livery** from her — *"forty aprons, no notice, and they want them in
+  brown."* 🔑 **A servant's uniform is the kitchen→understory route made wearable.** She'll sell
+  one, rent one, or let one go out in a delivery bundle and simply not notice.
+
+**Tier 2 — if they get her talking about the *material* (the real prize):**
+
+She has worked petal her entire life. She knows how a petal panel is joined, because she does the
+same joinery every day at a smaller scale — *"attached on the edges"* (`s08_draft.md §1`).
+
+- 🔑 **Petal panels are strong across the face and weak along the seam.** Cutting *across* a panel
+  is slow, loud, and leaves an obvious wound. Cutting *along a seam* opens it like a laced boot —
+  fast, quiet, and it closes again behind you.
+- She can tell them, by looking at the palace from her upstairs window, **which faces are lapped
+  and which are backed with bark or leaf.** She won't know why some are reinforced. She'll just
+  be professionally offended by it — *"you don't back rose with bark. It's vulgar."*
+
+> 🔑 **DM note — why this is the scene worth running.** The bore-through-petals plan is the core
+> heist mechanic (`s07_draft.md §3a`), and until now the party has had no way to get good at it.
+> This makes them good at it, from a source only a tailor could be. **It does not overlap with
+> the Royal Jelly Society** — RJS gives them the *map*, Twizzlers gives them the *technique*.
+> Run both and they're genuinely well-prepared. Run one and they still have a plan.
+>
+> ⚠️ `s08_draft.md §1` rules that bore-able vs. reinforced faces are *"an in-session call,"* not a
+> pre-marked map layer. Nothing here breaks that — she gives them a **method for telling the
+> difference**, which is better than a list, and keeps the call in the DM's hands at the table.
+
+---
+
+#### 7 · The Rack Nobody Collected *(optional — the quiet beat)*
+
+Tucked at the back of the third floor, on a rail by itself, a few dozen finished garments with
+paper tickets pinned to them. Beautiful work. Fully paid.
+
+If anyone asks: *"People forget. People change their minds. It happens."* She says it without any
+weight at all, and goes back to work.
+
+If anyone reads the tickets, the towns are on them. Some of them are **Mimbleburg**. Some are
+**Trontsburry**. *(Both established as lost contact — `World_Codex.md:265–266`.)*
+
+> 🎭 **DM note.** *Horror announces itself in absences.* This is the whole thesis of the campaign
+> in one clothing rail: a thriving shop in a thriving city, and a rack of dresses for bugs who
+> aren't coming. **Do not underline it.** Twizzlers doesn't find it strange. If the party doesn't
+> read the tickets, they walk out having had a lovely time — which is worse, and correct.
+>
+> Cut this entirely if the session is running long or the table's energy is comedic. It costs
+> nothing to skip and it doesn't pay off anything downstream.
+
+---
+
+### Loose ends / decisions surfaced
+
+- **Approve the bagworm moth**, or swap her. *(The alternative I'd floated was a leaf-footed bug —
+  funnier silhouette, none of the never-leaves-the-shop material.)*
+- **Is "Twizzlers" her name or the shop's?** Written above as hers. If you'd rather the shop
+  outgrew a long-dead founder, that's a free extra beat and she needs a different name. [DM CHECK]
+- **Does she become a recurring contact?** She's a natural one — she never moves, she knows
+  everyone, and she'd be glad to see them again. Cheap to keep.
+- **Lock the fitted-outfit benefit** (advantage on one Deception/Performance check) before the
+  table asks what the 15 gp bought them.
+- **Does anyone recognize the party later *because* of the outfit?** The 8:30pm rumor crowd, the
+  jewel-beetle nectar vendor who wasn't convinced — a distinctive petal gown cuts both ways.
+- **Promotion:** if this write-up survives contact with the table, it belongs in
+  `notes/canopia_return_scenes.md` alongside the other three scene chunks.
 
 ---
 
@@ -646,7 +801,7 @@ the table moves slowly:
 | Location | Intel | Item / mechanical | NPC |
 | :--- | :--- | :--- | :--- |
 | Ruby Thorax | Throne room → private collection; *why* it has no balcony | Blade finish decision (A/B/C) | **Thoralex** |
-| Trader Twizzlers 🆕 | Guest list; **servants' livery** | Outfits (cover bonus); concealment tailoring | **Twizzlers** 🆕 |
+| Trader Twizzlers 🆕 | 🔑 **Petal seams — how to bore quietly**; guest list; **servants' livery** | Outfits (advantage on 1 check); concealment tailoring | **Twizzlers**, bagworm moth 🆕 |
 | Vikki's Volatiles | The **laboratory** — named out loud; who supplies the Queen | Reagents for sale; break-in records | **Vikki** |
 | Royal Jelly Society | Construction **map**; lab-equipment link | An "in" at the fête; item carried in; a diversion | **Honoria** 🆕 · **Old Bombus** 🆕 |
 | Queen's Crown | Casino connects to **both ballrooms**; **the support-room understory** | Gambling; a possible staffing contact | Pit boss 🆕 · **Twyla** |
@@ -739,8 +894,10 @@ door. Cut there.
 3. **Decide when the party gets the six-contacts handout** (§1B) — with breakfast from Dale, or
    from Gleam's runner at first dark as the closing beat. *(The pick-three deadline is gone; this
    is now just a staging choice.)*
-4. **Trader Twizzlers is unwritten** (§2B) — approve or replace the proprietor, the prices, and
-   the servants'-livery hook. This is the largest block of new material in this draft.
+4. **Trader Twizzlers is now fully written** (§2B) and runnable as-is — but it's the largest
+   block of new material in this draft, so read it before you run it. Two calls inside it:
+   **approve the bagworm moth**, and **lock the fitted-outfit benefit** (advantage on one
+   Deception/Performance check).
 5. **Decide whether the MMA gym runs at all** (§2F), given the old roster is non-canon. If yes,
    name the retired fighter.
 6. **Approve or replace Honoria Pell-Mell and Old Bombus** (§2D) — and decide what the RJS
