@@ -248,7 +248,7 @@ Also called **the Nest** (Gleam's usage). Seat of the Red Ant Queen, in Canopia.
 
 **The reagent carts.** Goods and materiel stream toward the palace for the fête, including carts of strange spell components — juniper berries, scorpion stingers, glowing goop, other oddments. They do not obviously combine into anything; it reads as someone trying to figure something out. Points at a hidden lab.
 
-**Contacts inside.** **Johnathy** works the palace kitchens (brother of a honeybun vendor on the promenade). Six rebel specialists are already placed in the Nest — see NPC_Registry.yaml; only three can be reached by dead drop before the event.
+**Contacts inside.** **Johnathy** works the palace kitchens (brother of a honeybun vendor on the promenade). Six rebel specialists are already placed in the Nest — see NPC_Registry.yaml. All six are available to the party as needed; the original three-picks-by-dead-drop limit was lifted by DM decision 2026-08-03.
 
 ---
 

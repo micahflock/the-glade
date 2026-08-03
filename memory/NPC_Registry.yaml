@@ -645,7 +645,10 @@ npcs:
       - Fete-outfit stop if the party wants to dress the part for the infiltration.
 
 
-  # ── REBEL HEIST SPECIALISTS (offered by Gleam, Session 6 — party has not picked yet) ────────
+  # ── REBEL HEIST SPECIALISTS (offered by Gleam, Session 6) ───────────────────
+  # ALL SIX ARE AVAILABLE. Per DM decision 2026-08-03 the original 3-of-6
+  # dead-drop pick limit is lifted — the party has access to every specialist
+  # as needed, with no picks owed and no advance commitment required.
 
   - name: Tudd
     species: Leafcutter Major
@@ -659,7 +662,7 @@ npcs:
 
     notes: >
       One of the surviving leafcutter soldiers. Tough. The hammer option.
-      Available as a dead-drop contact before the fete, if picked.
+      Available to the party as a contact — no pick required (see section header).
 
     hooks:
       - Flashback lever — the party can burn a dead drop to retroactively have Tudd plant explosives, breach a wall, or have been waiting at a chokepoint.

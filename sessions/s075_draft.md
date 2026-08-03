@@ -47,9 +47,15 @@ discarded roster.
 That's **26 gp and a gem** against a session whose premise is *four shops*. See §4 for three
 ways to handle it that don't require anyone to say "you can't afford that."
 
-**4. The dead drop is due TONIGHT and is still unanswered.** This is the hard deadline the
-session hangs on, and it has now slipped through two entire sessions
-(`memory/Open_Questions.md:87` — *"NOW URGENT"*). See §1B.
+**4. Vikki's prepped payload is already half-spent.** Her scene was written to be the party's
+*first* contact with the idea of a hidden lab. It isn't anymore — they saw the reagent carts
+themselves at the palace in S7 and already clocked them as *"someone trying to figure something
+out."* Run her as **confirmation plus escalation**, not as a reveal. See §2C.
+
+> ✅ **No longer an issue: the dead drop.** Per DM decision (2026-08-03) the 3-of-6 pick limit
+> is **lifted — all six specialists are available to the party as needed**, with nothing owed to
+> Gleam and no deadline. Campaign memory has been updated to match. See §1B for what this frees
+> up in the session.
 
 ---
 
@@ -105,13 +111,26 @@ them how to book flight travel in S6). Have him look at the three of them, look 
 wearing, and say some version of: *you're going to a queen's coronation dressed like that?*
 That's the whole push, in character, from someone with no reason to be coy.
 
-### 1B. ⚠️ The Dead Drop — The Hard Deadline
+### 1B. ✅ The Six Specialists — Settled, No Deadline
 
-**This is the spine of the session.** Gleam offered six specialists in S6 and needs **three
-picks**; only three can be reached before the event without arousing suspicion. The party has
-never committed. The window closes tonight.
+**DM decision, 2026-08-03: the 3-of-6 pick limit is lifted. The party has access to all six
+specialists as needed.** Nothing is owed to Gleam, there is no dead-drop window, and no advance
+commitment is required — any of the six can be invoked during the fête. Campaign memory
+(`Open_Questions.md`, `campaign_state.yaml`, `NPC_Registry.yaml`, `World_Codex.md`) has been
+updated to match.
 
-The six (handout exists: `handouts/heist_dead_drop_contacts.html` — *"Six Friends Inside"*):
+**What this changes for tonight:** the session no longer has a ticking clock, and it doesn't
+need one. This is a shopping-and-schmoozing day before a heist, and the DMs already gave
+themselves permission to take it slow — *"now I don't care about fucking around"*
+(`s08_draft.md §7`). Run it relaxed. First dark is a *cut point*, not a deadline.
+
+**What it's still worth doing:** hand the party the roster. The handout already exists —
+`handouts/heist_dead_drop_contacts.html`, *"Six Friends Inside."* Giving it to them today means
+they walk into the fête knowing what's available instead of discovering it mid-infiltration,
+and it turns today's intel into something they can immediately act on. 🆕 Suggest Dale passes
+it over with breakfast, or Gleam's runner brings it at first dark as the session's closing beat.
+
+The six:
 
 | Specialist | Species | Specialty |
 | :--- | :--- | :--- |
@@ -122,20 +141,12 @@ The six (handout exists: `handouts/heist_dead_drop_contacts.html` — *"Six Frie
 | **Dax** | Cockroach | First aid for the MMA cage — medical, fighter contact |
 | **Zalle** | Sawfly larva | Pheromone-lounge mixologist — moods, mild status effects |
 
-> **DM note — this is not neutral.** S8 prep has already placed all six in specific rooms, and
+> **DM note — one knock-on worth knowing.** S8 prep places all six in specific rooms, and
 > **Zalle holds the pheromone key to the secret door into the core** (`s08_draft.md §1 Route 3`).
-> If the party never picks Zalle, the storeroom→chambers route becomes much harder to find. That
-> doesn't mean steer them — but know what each pick costs before they choose.
-
-**Mechanically:** how does Gleam need the answer? Written note left at the Dewdrop drop? Told to
-Dale? Handed to the runner at first dark? `Open_Questions.md:87` flags this as unspecified.
-[MORE DETAIL: pick the delivery method before the table asks.]
-
-🆕 **Suggested:** Dale slides them a blank strip of leaf-paper with breakfast and says the drop
-goes out mid-morning, not at first dark — *"if you want three friends in there, I need the names
-before lunch."* This front-loads the decision instead of letting it slide to the end of the
-night again, and it costs them the ability to decide after seeing the shops. If you'd rather they
-choose *informed*, keep the deadline at first dark and let the day's intel shape the picks.
+> Under the old pick-three rule there was a real risk the party never picked her and lost that
+> route. **That risk is now gone** — Zalle is guaranteed available, so the storeroom→chambers
+> route is reliably discoverable by asking a contact they already have. `s08_draft.md §1` had
+> already assumed exactly this, so the two documents now agree.
 
 ---
 
@@ -560,7 +571,7 @@ support rooms: a continuous understory, or isolated pockets? *(S8 has since answ
 
 - **Mixed Mandible Arts exists** and the palace has a **fighting pit** for it (`World_Codex.md:237`).
 - **Dax**, a cockroach, is the rebel medic placed in the palace cage's **under-pit support room**
-  — he's one of the six dead-drop specialists.
+  — he's one of the six rebel specialists, all of whom are available to the party (§1B).
 - Because the fête is the season's event, the Red Ant Queen recruits top fighters — so there are
   **more fighters in Canopia than normal** right now (`s07_draft.md §1e`).
 - The palace pit sits **inside the Casino**, sunken, reached *"behind the bar and down some steps"*
@@ -580,8 +591,9 @@ bullshit instantly, tired of watching kids get chewed up by the Queen's circuit.
   sketch **the part of the pit the crowd never sees**: the under-pit support room, the backstage
   route, and which guards work the cage.
 - 🔑 **He mentions the medic** — a cockroach, good hands, been down there for years. **This puts
-  Dax on the party's radar before they have to commit their dead-drop picks**, which is the
-  single most useful thing this location can do tonight.
+  Dax on the party's radar as a real bug in a real room** rather than a name on a roster card,
+  which is the single most useful thing this location can do tonight. (Dax is guaranteed
+  available now — §1B — so this is corroboration, not recruitment.)
 
 [MORE DETAIL: name him. The old roster's "Old Pell" is available if you like the name and want to
 keep it while discarding the rest of that document — 🆕 but he was never spoken aloud at the
@@ -609,7 +621,7 @@ Queen's Crown and the Dewdrop. The palace is visible from the west.**
 
 | # | Stop | Why here |
 | :-- | :--- | :--- |
-| 1 | **Dewdrop** — breakfast, blueprints, the push, ⚠️ **the dead-drop names** | Deadline set |
+| 1 | **Dewdrop** — breakfast, blueprints, the push out the door, hand over the six-contacts roster | Framing set |
 | 2 | **Royal Jelly Society** | It's literally on the way out; morning is right for it |
 | 3 | **Queen's Crown** | Adjacent to RJS; daytime casino is a good look at a gutted floor |
 | 4 | **The Ruby Thorax** | West side. Daytime hours. The blade decision is the big beat |
@@ -707,8 +719,8 @@ door. Cut there.
 
 **Before you cut, make sure these are settled:**
 
-- [ ] **Three dead-drop names given.** (If not, decide the consequence — do they go in with zero
-      contacts? `s08_draft.md §6a` assumes all six are placed and Zalle holds the core-door key.)
+- [ ] **The party has the six-contacts roster** (`handouts/heist_dead_drop_contacts.html`) and
+      knows all six are available to them. No picks needed — see §1B.
 - [ ] **Tabby's blade decision made** and `party/tabatha_starr.yaml` updated.
 - [ ] **Outfits acquired** (or a deliberate choice not to).
 - [ ] **Blueprint threshold** — did they hit three nodes? Do they get the map handout?
@@ -724,7 +736,9 @@ door. Cut there.
    pair? *(Recommend yes.)*
 2. ⚠️ **Decide the currency question** (§4) — run plain gp tonight, or actually implement Life
    Pitch? And pick which of the three money fixes you're using.
-3. ⚠️ **Confirm the dead-drop delivery method and deadline** (§1B) — before lunch, or first dark?
+3. **Decide when the party gets the six-contacts handout** (§1B) — with breakfast from Dale, or
+   from Gleam's runner at first dark as the closing beat. *(The pick-three deadline is gone; this
+   is now just a staging choice.)*
 4. **Trader Twizzlers is unwritten** (§2B) — approve or replace the proprietor, the prices, and
    the servants'-livery hook. This is the largest block of new material in this draft.
 5. **Decide whether the MMA gym runs at all** (§2F), given the old roster is non-canon. If yes,
