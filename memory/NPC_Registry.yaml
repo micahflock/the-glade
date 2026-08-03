@@ -634,10 +634,9 @@ npcs:
     affiliation: Independent (Canopia)
     status: Alive (presumed)
     location: >
-      Trader Twizzlers, down the street from The Ruby Thorax.
-      [DM CHECK — south side per Session 7 play notes (both DM and player);
-      west side per World_Codex.md. The Ruby Thorax is west, so the two are in
-      tension. Session 7.5 prep recommends south.]
+      Trader Twizzlers — south-side Canopia, down the street from The Ruby Thorax.
+      (Side settled by DM decision 2026-08-03: south, per the Session 7 play notes.
+      World_Codex.md previously said west; corrected.)
     disposition: Not yet met
     first_met: null   # PREP — learned of in Session 7, shop not visited
     last_seen: null

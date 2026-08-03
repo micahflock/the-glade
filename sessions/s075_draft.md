@@ -267,11 +267,9 @@ delivery a vector the party can arrange *tonight*?
 **Purpose:** Outfits that matter mechanically · 🔑 **petal-seam intel that feeds the bore-through
 heist plan** · the servants' livery · one quiet, optional gut-punch
 
-**⚠️ Location conflict.** Play notes say **south side, down the street from the Ruby Thorax**
-(`s07_final.md`, `s07_notes.md` — DM and player notes agree). `World_Codex.md:222` and
-`NPC_Registry.yaml` say **west side**. The Ruby Thorax is west, so "south side" and "down the
-street from the Ruby Thorax" are in tension. **Play said south.** Recommend: south, and correct
-the codex via `/scribe`. [DM CHECK]
+**✅ Location settled: south side.** Play notes had it south (`s07_final.md`, `s07_notes.md` — DM
+and player notes agree); the codex had drifted to west. **DM decision 2026-08-03: south.**
+`World_Codex.md`, `Open_Questions.md`, and `NPC_Registry.yaml` are corrected.
 
 ---
 
@@ -905,17 +903,25 @@ door. Cut there.
 7. **Set the blueprint threshold** (§0) — is there a tangible map handout, and what earns it?
 8. **Vikki:** kill-on-sight defender, or recruitable ally? (§2C)
 9. **Queen's Crown:** does security remember them, and what gets them back in? (§2E)
-10. [DM CHECK] **Trader Twizzlers — south side or west side?** Play said south; the codex says
-    west (§2B).
+10. ~~Trader Twizzlers — south side or west side?~~ **Settled: south** (§2B). Codex corrected.
 
-**Housekeeping this draft does not do:**
+**Housekeeping — done:**
 
-- `memory/campaign_state.yaml` still reads `current_session: 8`, `active_draft: sessions/s08_draft.md`.
-  Inserting 7.5 means that needs updating — but that file is **written by `/session-over` and
-  `/scribe` only**, so it's deliberately untouched here. Run `/scribe` if you want it changed
-  before tonight.
-- The **Queen Bee Casino → Queen's Crown** name fix and the **Twizzlers location** correction both
-  want a `/scribe` pass to land in `World_Codex.md` and `NPC_Registry.yaml`.
+- ✅ **Twizzlers is south side.** `World_Codex.md`, `Open_Questions.md`, and `NPC_Registry.yaml`
+  all corrected.
+- ✅ **The specialist pick limit is lifted** — all six available. Propagated to
+  `Open_Questions.md`, `campaign_state.yaml`, `NPC_Registry.yaml`, `World_Codex.md`.
+- ✅ **Twizzlers has a full registry entry** (was a `species: Unknown` stub).
+
+**Housekeeping still outstanding:**
+
+- `memory/campaign_state.yaml` still reads `current_session: 8`,
+  `active_draft: sessions/s08_draft.md`. Inserting 7.5 means those two fields need updating.
+  The file's `active_threads` were updated for the specialist decision, but the session-tracking
+  block is **owned by `/session-over`** — run that at the end of tonight and it'll land correctly.
+- The casino name is **already correct in the codex** (`World_Codex.md:220` names Queen's Crown as
+  canon). The only place still using "Queen Bee Casino" is the prep file
+  `notes/canopia_return_scenes.md §1d`. Harmless, but `/scribe` would tidy it.
 
 **Deferred creative asks (not generated here):**
 
