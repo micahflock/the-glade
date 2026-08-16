@@ -459,11 +459,11 @@
     },
     {
       "label": "Registry cross-ref",
-      "text": "The three guard types are generic palace forces, not tracked in memory/NPC_Registry.yaml. The Red Ant Queen is referenced throughout World_Codex and the s08 draft but has NO registry entry of her own — worth adding one via /scribe now that she is statted."
+      "text": "The three guard types are generic palace forces and are deliberately not tracked in memory/NPC_Registry.yaml. The Red Ant Queen now has a full registry entry — what the party knows about her, her hooks, and a pointer to creatures/red_ant_queen.yaml. Read it before running her; her voice is still marked [MORE DETAIL] because the coronation read-aloud has not been written."
     },
     {
-      "label": "FLAG — party sheet inconsistency",
-      "text": "The Mantible (the orchid mantis mandible short sword) is listed in BOTH Nancy's and Drix's equipment. Session 6.5 notes say Nancy took the mandible and Tabby took the spines. Drix's copy is probably duplication — worth a /janitor pass, and worth knowing before someone claims it at the table."
+      "label": "The Mantible x2",
+      "text": "Both Nancy and Drix carry a Mantible — two mandibles off the orchid mantis family in Session 6.5, not a sheet error. Each is a 1d8 finesse short sword that can turn invisible 1x per short rest, and Tabby's mantis-spine dagger does the same. That is three invisible blades in the party, all off the same kill."
     }
   ]
 }

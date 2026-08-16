@@ -184,6 +184,57 @@ npcs:
       - Options — stalks the party / realizes they're fighting ants and joins / joins and betrays / joins and stays loyal / harbors a grudge
 
 
+  - name: The Red Ant Queen
+    aka: >
+      Referred to throughout as "the Red Queen" and "the red ant queen"; the
+      fire ant queen of memory/World_Codex.md's alliance timeline is the same
+      person. "The Nest" is Gleam's name for her palace.
+    species: Red ant (fire ant)
+    role: Ruler of Canopia's palace; the aggressor half of the fire ant / leafcutter alliance, and effectively in control of it
+    affiliation: The alliance — red/fire ants. One of the ant queens of the Brood Coven.
+    status: Alive — her coronation fete is the Session 8 setting
+    location: The palace in Canopia ("the Nest") — the Core, and the Throne Room during the coronation
+    disposition: Unknown (not yet met) — structurally hostile; she does not know the party exists
+    first_met: null
+    last_seen: null
+    stat_block: creatures/red_ant_queen.yaml   # CR 13. Not a fight this party can take at level 6 — see the block's tactics and how_she_actually_falls.
+
+    appearance: Huge. The air above her bends visibly — fire ants throw heat shimmer, and hers is legible from across Canopia. Coronation regalia; Thoralex at the Ruby Thorax is finishing her crown.
+    voice: >
+      [MORE DETAIL: unwritten. The DMs deferred the coronation ceremony
+      read-aloud ("we'll write dialogue for it") and it is still outstanding —
+      see sessions/s08_draft.md. Play her theatrical and performing-to-a-room
+      until that exists.]
+    motivation: To be looked at, and to be the one who decides. The alliance, the fete, the coronation and the crown are all staging.
+    personality: >
+      She was always prone to theatrics. Breaking the coven took the theatrics
+      and removed everything holding them up. The Leafcutter Queen's read, and
+      the canonical one: "before, she was prone to theatrics, but now she's,
+      like, insane and obsessed with fire and vanity." She is also not clever —
+      "The Red Queen is not smart enough to figure out how to break the coven.
+      She obviously has all this fire, literal firepower now… but it just seems
+      more like this fell into her hands, not that she was planning this."
+      She has never worked out that this is true of her.
+
+    what_the_party_knows:
+      - "She coerced the leafcutter queen into the alliance and then took control of it (Sporemother Vell, Session 4)."
+      - "Vell described her as subject to moodiness (Session 4)."
+      - "Her palace is visible from Canopia's west side; they scouted its public layout and grand-level security in Session 7."
+      - "Her coronation fete is the night of Session 8, and they are booked to play it as the band's fourth act."
+      - "They have never been in a room with her."
+
+    party_history:
+      - "Not yet met. Session 7: the party scouted the palace approach — guards every 30 ft., the fortified servants' gate and watchtower, and carts of strange reagents (juniper berries, scorpion stingers, glowing goop) heading for a hidden lab."
+
+    hooks:
+      - "Session 8 is her coronation. She is present at the fete throughout and takes the throne at the end of the ceremony."
+      - "Killing her is not a fight. It needs a separate plot — a coalition, poison, or cutting her off from her own colony so A Hive Unto Herself stops carrying her."
+      - "Her vanity is the only lever in her stat block: she stops to be admired, and would rather be admired than win."
+      - "She has a secret exit from her chambers onto the spiral ramp (sessions/s08_draft.md). The Leafcutter Queen has no such thing."
+      - "Thoralex at the Ruby Thorax is making her coronation crown and has seen her private collection — an unspent heist vector."
+      - "What warped her: the Black Queen's time magic rippled down the Brood Coven and every queen went a little crazy and got more powerful. See sessions/s08_draft.md Background A — not yet reconciled into World_Codex."
+
+
   # ── PARTY ANIMALS ───────────────────────────────────────────────────────────
 
   - name: Bessie
