@@ -68,9 +68,9 @@ actions:
       The Firecaller opens its censer and breathes over up to three allied ants
       it can see within 30 ft. Each becomes Kindled for 1 minute: its carapace
       runs hot enough to read by, and any creature that is not a red ant and
-      ends its turn within 5 ft. of it takes 2 fire damage. This damage is per
-      Kindled ant — a creature ending its turn inside a knot of three Kindled
-      guards takes 6.
+      ends its turn within 5 ft. of it takes 2 (1d4) fire damage. This damage is
+      rolled per Kindled ant — a creature ending its turn inside a knot of three
+      Kindled guards rolls 3d4, averaging 7–8.
       Kindled ends early on any ant that drops, and ends on ALL of them the
       instant the Firecaller dies. This is the block's main action and usually
       its whole first turn.
