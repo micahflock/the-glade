@@ -1,0 +1,2660 @@
+<!DOCTYPE html>
+<html lang="en" class="accent-ochre">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="theme-color" content="#1B1308">
+<title>Encounter — The Fête — Ant Guard Response</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400&family=IM+Fell+English+SC&family=IM+Fell+English:ital@0;1&family=Lora:ital,wght@0,400;0,500;0,600;0,700&family=JetBrains+Mono:wght@400;500;600;700&family=Special+Elite&display=swap">
+<style>
+/* ============================================================
+   THE GLADE — Encounter Worksheet (dark-parchment plate)
+   iPad-first landscape DM tool.
+   ============================================================ */
+
+:root {
+  /* ─ Grounds: night plate ─ */
+  --night-0:        #100B05;   /* deepest, page edge */
+  --night-1:        #1B1308;   /* primary ground */
+  --night-2:        #241A0E;   /* card surface */
+  --night-3:        #2F2314;   /* hover / nested card */
+  --night-4:        #3B2C1B;   /* active row */
+
+  /* ─ Inks (warm parchment on night) ─ */
+  --ink:            #EBDCB5;   /* primary */
+  --ink-dim:        #C9B383;   /* secondary */
+  --ink-mute:       #8E7549;   /* tertiary, metadata */
+  --ink-ghost:      #5C4827;   /* near-invisible */
+
+  /* ─ Rules ─ */
+  --rule:           #4A3820;
+  --rule-faint:     #322517;
+  --rule-strong:    #6F5530;
+
+  /* ─ Accent palette (Glade earth tones) ─ */
+  --ochre:          #D69A45;
+  --ochre-deep:     #8C5E1C;
+  --vermilion:      #C44A30;
+  --vermilion-deep: #7A1F12;
+  --moss:           #8A9A4A;
+  --moss-deep:      #44502A;
+  --lapis:          #5A7FA3;
+  --lapis-deep:     #2F4F6F;
+  --cochineal:      #B04050;
+  --cochineal-deep: #5A1A24;
+  --umber:          #A06A3A;
+  --umber-deep:     #4A2E14;
+
+  /* ─ Semantic ─ */
+  --accent:         var(--ochre);
+  --accent-deep:    var(--ochre-deep);
+  --danger:         var(--vermilion);
+  --good:           var(--moss);
+
+  /* ─ Type ─ */
+  --font-display:   "IM Fell English", "EB Garamond", Georgia, serif;
+  --font-label:     "IM Fell English SC", "EB Garamond", Georgia, serif;
+  --font-plate:     "EB Garamond", "Hoefler Text", Georgia, serif;
+  --font-body:      "Lora", "Iowan Old Style", Georgia, serif;
+  --font-mono:      "JetBrains Mono", ui-monospace, "SF Mono", Menlo, monospace;
+  --font-hand:      "Special Elite", "Courier Prime", "Courier New", monospace;
+
+  /* ─ Spacing ─ */
+  --s-1: 4px;  --s-2: 8px;  --s-3: 12px; --s-4: 16px;
+  --s-5: 24px; --s-6: 32px; --s-7: 48px;
+
+  /* ─ Sizing (density tweakable) ─ */
+  --row-pad-y:      6px;
+  --row-pad-x:      10px;
+  --row-gap:        4px;
+  --base-fs:        15px;
+}
+
+.accent-ochre     { --accent: var(--ochre);     --accent-deep: var(--ochre-deep);     }
+.accent-vermilion { --accent: var(--vermilion); --accent-deep: var(--vermilion-deep); }
+.accent-moss      { --accent: var(--moss);      --accent-deep: var(--moss-deep);      }
+.accent-lapis     { --accent: var(--lapis);     --accent-deep: var(--lapis-deep);     }
+.accent-cochineal { --accent: var(--cochineal); --accent-deep: var(--cochineal-deep); }
+.accent-umber     { --accent: var(--umber);     --accent-deep: var(--umber-deep);     }
+
+/* Density */
+.density-roomy   { --row-pad-y: 10px; --row-pad-x: 14px; --row-gap: 8px; }
+.density-compact { --row-pad-y: 4px;  --row-pad-x: 8px;  --row-gap: 3px; }
+
+* { box-sizing: border-box; }
+html, body {
+  margin: 0; padding: 0;
+  background: var(--night-1);
+  color: var(--ink);
+  font-family: var(--font-body);
+  font-size: var(--base-fs);
+  line-height: 1.45;
+  -webkit-text-size-adjust: 100%;
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
+}
+button { font: inherit; cursor: pointer; color: inherit; }
+input { font: inherit; }
+::selection { background: var(--accent); color: var(--night-0); }
+h1, h2, h3 { margin: 0; font-weight: 400; }
+
+/* parchment texture overlay — sparse foxing on the dark plate */
+body::before {
+  content: "";
+  position: fixed; inset: 0; pointer-events: none; z-index: 0;
+  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='400' height='400'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='1.8' numOctaves='2' stitchTiles='stitch'/><feColorMatrix values='0 0 0 0 0.6  0 0 0 0 0.5  0 0 0 0 0.3  0 0 0 0.05 0'/></filter><rect width='400' height='400' filter='url(%23n)'/></svg>");
+  opacity: 0.5;
+  mix-blend-mode: overlay;
+}
+body > * { position: relative; z-index: 1; }
+
+/* ─── Topbar ────────────────────────────────────────────────── */
+.topbar {
+  position: sticky; top: 0; z-index: 50;
+  background: linear-gradient(to bottom, var(--night-0), var(--night-1));
+  border-bottom: 1px solid var(--rule);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 18px;
+  gap: 18px;
+}
+.topbar-title {
+  display: flex; align-items: baseline; gap: 18px; flex-wrap: wrap;
+}
+.topbar-title h1 { white-space: nowrap; }
+.topbar-title .eyebrow {
+  font-family: var(--font-label);
+  font-size: 10px;
+  letter-spacing: 0.22em;
+  color: var(--ink-mute);
+  text-transform: uppercase;
+}
+.topbar-title h1 {
+  font-family: var(--font-display);
+  font-size: 26px;
+  line-height: 1;
+  color: var(--ink);
+  letter-spacing: 0.01em;
+  font-weight: 400;
+}
+.topbar-title h1 em { font-style: italic; color: var(--accent); }
+.round-tag {
+  font-family: var(--font-label);
+  font-size: 11px;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--ink-dim);
+  border: 1px solid var(--rule);
+  padding: 3px 10px;
+  background: var(--night-2);
+  white-space: nowrap;
+}
+.round-tag strong {
+  font-family: var(--font-mono);
+  font-weight: 700;
+  color: var(--accent);
+  margin-left: 4px;
+  font-variant-numeric: tabular-nums;
+}
+.topbar-actions { display: flex; gap: 6px; align-items: center; }
+.topbar-actions button {
+  font-family: var(--font-label);
+  font-size: 11px;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  padding: 8px 14px;
+  background: var(--night-2);
+  color: var(--ink-dim);
+  border: 1px solid var(--rule);
+  min-height: 38px;
+}
+.topbar-actions button:hover { color: var(--ink); border-color: var(--accent); }
+.topbar-actions button:active { background: var(--night-3); }
+.topbar-actions button.primary {
+  background: var(--accent);
+  color: var(--night-0);
+  border-color: var(--accent);
+  font-weight: 700;
+}
+.topbar-actions button.primary:hover { background: var(--accent-deep); color: var(--ink); }
+.topbar-actions button.icon { padding: 8px 12px; }
+.topbar-actions .sep { width: 1px; height: 24px; background: var(--rule); margin: 0 4px; }
+
+/* ─── Main grid (landscape iPad first) ──────────────────────── */
+.app {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(560px, 46%);
+  gap: 18px;
+  padding: 16px 18px;
+  align-items: start;
+}
+
+/* ─── Initiative tracker ────────────────────────────────────── */
+.tracker {
+  background: transparent;
+}
+.section-head {
+  display: flex; align-items: baseline; justify-content: space-between;
+  gap: 12px;
+  margin-bottom: 8px;
+  padding: 0 2px;
+}
+.section-head h2 {
+  font-family: var(--font-label);
+  font-size: 11px;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--ink-dim);
+}
+.section-head .hint {
+  font-family: var(--font-hand);
+  font-size: 11px;
+  color: var(--ink-mute);
+  font-style: italic;
+}
+
+/* Muster bar — dial NPC counts at the table */
+#muster:empty { display: none; }
+#muster {
+  display: flex; flex-wrap: wrap; align-items: center; gap: 6px;
+  margin-bottom: 10px; padding: 8px 10px;
+  border: 1px solid var(--rule); border-radius: 3px;
+  background: var(--night-1, rgba(0,0,0,0.15));
+}
+.muster-label {
+  font-family: var(--font-label);
+  font-size: 10px; letter-spacing: 0.22em; text-transform: uppercase;
+  color: var(--ink-mute); margin-right: 4px;
+}
+.muster-item {
+  display: inline-flex; align-items: center; gap: 0;
+  border: 1px solid var(--rule); border-radius: 3px; overflow: hidden;
+}
+.muster-item .mus-name {
+  font-size: 12px; color: var(--ink-dim);
+  padding: 4px 8px; white-space: nowrap;
+}
+.muster-item .mus-count {
+  font-family: var(--font-label);
+  font-size: 13px; min-width: 22px; text-align: center;
+  padding: 4px 2px; color: var(--ink);
+  border-left: 1px solid var(--rule-faint);
+  border-right: 1px solid var(--rule-faint);
+}
+.muster-item.none .mus-count { color: var(--ink-ghost); }
+.muster-item button {
+  background: none; border: none; cursor: pointer;
+  color: var(--ink-dim); font-size: 15px; line-height: 1;
+  padding: 5px 9px; min-width: 30px;
+}
+.muster-item button:hover { background: var(--rule-faint); color: var(--accent); }
+.muster-item button:disabled { color: var(--ink-ghost); cursor: default; background: none; }
+
+#tracker-rows {
+  display: flex;
+  flex-direction: column;
+  gap: var(--row-gap);
+}
+
+.row {
+  display: grid;
+  grid-template-columns: 48px minmax(220px, auto) minmax(0, 1fr) 96px auto;
+  gap: 10px;
+  align-items: center;
+  padding: var(--row-pad-y) var(--row-pad-x);
+  background: var(--night-2);
+  border: 1px solid var(--rule);
+  border-left: 3px solid var(--rule-strong);
+  position: relative;
+}
+.row > .info { min-width: 0; }
+.row > .row-pills {
+  display: flex; flex-wrap: wrap; gap: 4px;
+  align-self: center;
+  min-width: 0;
+}
+.row > .row-pills .pill {
+  font-family: var(--font-label);
+  font-size: 10px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  background: var(--vermilion-deep);
+  color: var(--ink);
+  border: 1px solid var(--vermilion);
+  padding: 2px 8px;
+  line-height: 1.2;
+}
+.row.npc { border-left-color: var(--accent); }
+.row.pc  { border-left-color: var(--good); }
+.row.active {
+  background: var(--night-4);
+  border-color: var(--accent);
+  border-left-width: 4px;
+  box-shadow: inset 0 0 0 1px var(--accent-deep);
+}
+.row.focused:not(.active) {
+  border-color: var(--ink-dim);
+  background: var(--night-3);
+}
+.row.acted:not(.active) {
+  opacity: 0.55;
+}
+.row.acted:not(.active) .name { color: var(--ink-mute); }
+.row.dead {
+  opacity: 0.4;
+  background: var(--night-1);
+  border-left-color: var(--rule);
+}
+.row.dead .name { text-decoration: line-through; color: var(--ink-mute); }
+
+/* Init pill */
+.row .init {
+  font-family: var(--font-mono);
+  font-weight: 700;
+  font-size: 20px;
+  text-align: center;
+  color: var(--ink);
+  background: var(--night-0);
+  border: 1px solid var(--rule);
+  padding: 6px 0;
+  width: 52px;
+  height: 44px;
+  -webkit-appearance: none;
+  appearance: none;
+  outline: none;
+  font-variant-numeric: tabular-nums;
+}
+.row .init.empty { background: var(--night-1); color: var(--ink-mute); }
+.row .init:focus {
+  background: var(--night-2);
+  border-color: var(--accent);
+  color: var(--accent);
+}
+.row .init::placeholder { color: var(--ink-ghost); opacity: 1; }
+.row.active .init { background: var(--accent); color: var(--night-0); border-color: var(--accent); }
+
+/* Info column */
+.row .info { min-width: 0; cursor: pointer; }
+.row .name {
+  font-family: var(--font-display);
+  font-size: 17px;
+  line-height: 1.15;
+  color: var(--ink);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.row .name .group-tag {
+  font-family: var(--font-label);
+  font-size: 10px;
+  color: var(--ink-mute);
+  margin-left: 6px;
+  letter-spacing: 0.1em;
+}
+.row .meta {
+  display: flex; flex-wrap: wrap; gap: 6px 10px;
+  margin-top: 2px;
+  font-family: var(--font-mono);
+  font-size: 11px;
+  color: var(--ink-dim);
+  font-variant-numeric: tabular-nums;
+  align-items: center;
+}
+.row .meta .ac { color: var(--ink); font-weight: 700; }
+.row .meta .ac::before { content: "AC "; color: var(--ink-mute); font-weight: 400; }
+.row .meta .speed { color: var(--ink-dim); }
+.row .meta .init-mod {
+  background: var(--night-0);
+  border: 1px solid var(--rule);
+  color: var(--good);
+  padding: 0 6px;
+  font-weight: 700;
+}
+.row .meta .init-mod::before { content: "INIT "; color: var(--ink-mute); font-weight: 400; }
+
+/* HP column */
+.hp-col {
+  display: flex; flex-direction: column; gap: 3px; align-items: stretch;
+  min-width: 96px;
+}
+.hp-display {
+  font-family: var(--font-mono);
+  font-size: 16px;
+  font-weight: 700;
+  font-variant-numeric: tabular-nums;
+  color: var(--ink);
+  white-space: nowrap;
+  line-height: 1;
+  text-align: right;
+}
+.hp-display .sep { color: var(--ink-mute); font-weight: 400; }
+.hp-display .max { color: var(--ink-dim); font-weight: 500; }
+.hp-display.low { color: var(--ochre); }
+.hp-display.bloodied { color: var(--vermilion); }
+.hp-display.dead { color: var(--ink-ghost); }
+.hp-bar {
+  width: 100%;
+  height: 4px;
+  background: var(--night-0);
+  border: 1px solid var(--rule);
+  position: relative;
+  overflow: hidden;
+}
+.hp-bar-fill {
+  position: absolute; inset: 0 auto 0 0;
+  background: var(--good);
+  transition: width 0.2s, background 0.2s;
+}
+.hp-bar-fill.low { background: var(--ochre); }
+.hp-bar-fill.bloodied { background: var(--vermilion); }
+
+/* Controls column */
+.row .controls {
+  display: flex; gap: 4px; align-items: center;
+}
+.row .controls input.amt {
+  width: 44px; height: 32px;
+  font-family: var(--font-mono);
+  font-size: 13px;
+  text-align: center;
+  background: var(--night-0);
+  color: var(--ink);
+  border: 1px solid var(--rule);
+  outline: none;
+  -moz-appearance: textfield;
+}
+.row .controls input.amt::-webkit-outer-spin-button,
+.row .controls input.amt::-webkit-inner-spin-button {
+  -webkit-appearance: none; margin: 0;
+}
+.row .controls input.amt:focus { border-color: var(--accent); }
+.row .controls input.amt::placeholder { color: var(--ink-ghost); }
+.row .controls button {
+  min-height: 32px;
+  min-width: 32px;
+  padding: 0 9px;
+  border: 1px solid var(--rule);
+  background: var(--night-0);
+  color: var(--ink-dim);
+  font-family: var(--font-mono);
+  font-size: 14px;
+  font-weight: 700;
+}
+.row .controls button:hover { border-color: var(--accent); color: var(--ink); }
+.row .controls button.dmg { color: var(--vermilion); border-color: var(--vermilion-deep); }
+.row .controls button.dmg:hover { background: var(--vermilion-deep); color: var(--ink); }
+.row .controls button.heal { color: var(--moss); border-color: var(--moss-deep); }
+.row .controls button.heal:hover { background: var(--moss-deep); color: var(--ink); }
+.row .controls button.cond {
+  font-family: var(--font-label);
+  font-size: 10px;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  padding: 0 10px;
+}
+.row .controls button.cond.has { color: var(--vermilion); border-color: var(--vermilion-deep); }
+.row .controls button.cond.open { background: var(--accent); color: var(--night-0); border-color: var(--accent); }
+
+/* Conditions popover */
+.row .cond-panel {
+  grid-column: 1 / -1;
+  margin-top: 8px;
+  padding: 10px;
+  background: var(--night-0);
+  border: 1px solid var(--rule);
+  display: none;
+}
+.row .cond-panel.open { display: block; }
+.row .cond-panel .pills {
+  display: flex; flex-wrap: wrap; gap: 5px;
+}
+.row .cond-panel .pill-tog {
+  font-family: var(--font-label);
+  font-size: 11px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  min-height: 30px;
+  padding: 0 12px;
+  background: var(--night-2);
+  color: var(--ink-dim);
+  border: 1px solid var(--rule);
+}
+.row .cond-panel .pill-tog:hover { color: var(--ink); border-color: var(--ink-dim); }
+.row .cond-panel .pill-tog.on {
+  background: var(--vermilion-deep);
+  color: var(--ink);
+  border-color: var(--vermilion);
+}
+
+/* ─── Active reference panel (sticky right) ─────────────────── */
+.active-ref {
+  position: sticky;
+  top: 74px;
+  max-height: calc(100vh - 90px);
+  display: flex; flex-direction: column;
+  background: var(--night-2);
+  border: 1px solid var(--rule-strong);
+  box-shadow: inset 0 0 0 1px var(--rule-faint);
+  min-height: 480px;
+}
+
+.active-ref .empty {
+  padding: 40px 24px;
+  text-align: center;
+  font-family: var(--font-hand);
+  color: var(--ink-mute);
+  font-style: italic;
+}
+.active-ref .empty strong {
+  display: block;
+  font-family: var(--font-display);
+  font-style: normal;
+  font-size: 20px;
+  color: var(--ink-dim);
+  margin-bottom: 8px;
+  letter-spacing: 0.02em;
+}
+
+/* Header inside active ref */
+.ar-head {
+  padding: 14px 18px 12px;
+  border-bottom: 1.5px solid var(--accent);
+  flex-shrink: 0;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  gap: 8px 24px;
+}
+.ar-head > .ar-head-main {
+  flex: 1 1 240px;
+  min-width: 0;
+}
+.ar-head .ar-eyebrow {
+  flex: 1 1 100%;
+  display: flex; justify-content: space-between; align-items: baseline;
+  font-family: var(--font-label);
+  font-size: 10px;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  margin-bottom: 4px;
+}
+.ar-head .ar-eyebrow .kind { color: var(--accent); }
+.ar-head .ar-eyebrow .status { color: var(--ink-mute); }
+.ar-head .ar-eyebrow .status.pinned { color: var(--ochre); }
+.ar-head .ar-eyebrow .status.current { color: var(--accent); }
+.ar-head h2 {
+  font-family: var(--font-display);
+  font-size: 26px;
+  line-height: 1.05;
+  color: var(--ink);
+  letter-spacing: 0.01em;
+  margin-bottom: 3px;
+}
+.ar-head .ar-recharge-row {
+  flex: 1 1 100%;
+  margin-top: 2px;
+}
+.ar-head .ar-caption {
+  font-family: var(--font-plate);
+  font-style: italic;
+  font-size: 14px;
+  color: var(--ink-dim);
+  line-height: 1.3;
+}
+
+/* Supplementary header info (senses, pp, spell DC, etc — info NOT in the row) */
+.ar-supp {
+  margin: 4px 0 0;
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 4px 12px;
+  font-size: 13px;
+  line-height: 1.4;
+  min-width: 0;
+  flex: 0 1 auto;
+  max-width: 240px;
+}
+.ar-supp dt {
+  font-family: var(--font-label);
+  font-size: 10px;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--ink-mute);
+  padding-top: 2px;
+}
+.ar-supp dd {
+  margin: 0;
+  color: var(--ink);
+  font-family: var(--font-body);
+}
+.ar-supp dd .num {
+  font-family: var(--font-mono);
+  font-weight: 700;
+  color: var(--accent);
+  font-variant-numeric: tabular-nums;
+}
+.ar-supp dd.passive .pp-val {
+  font-family: var(--font-mono);
+  font-weight: 700;
+  color: var(--ink);
+  font-variant-numeric: tabular-nums;
+}
+
+/* Stat strip: AC, HP roundels, speed, init */
+.ar-stat-strip {
+  display: grid;
+  grid-template-columns: auto auto 1fr;
+  gap: 14px;
+  align-items: stretch;
+  margin-top: 10px;
+}
+.ar-roundel {
+  display: flex; flex-direction: column; align-items: center;
+  padding: 6px 14px;
+  background: var(--night-0);
+  border: 1px solid var(--rule-strong);
+  min-width: 64px;
+}
+.ar-roundel .label {
+  font-family: var(--font-label);
+  font-size: 9px;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--ink-mute);
+}
+.ar-roundel .val {
+  font-family: var(--font-mono);
+  font-size: 22px;
+  font-weight: 700;
+  color: var(--ink);
+  line-height: 1.1;
+  font-variant-numeric: tabular-nums;
+}
+.ar-roundel.hp .val { color: var(--good); }
+.ar-roundel.hp .val.low { color: var(--ochre); }
+.ar-roundel.hp .val.bloodied { color: var(--vermilion); }
+.ar-roundel .sub {
+  font-family: var(--font-mono);
+  font-size: 10px;
+  color: var(--ink-mute);
+  font-variant-numeric: tabular-nums;
+  margin-top: 1px;
+}
+.ar-meta-grid {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 2px 10px;
+  font-family: var(--font-mono);
+  font-size: 11px;
+  color: var(--ink-dim);
+  align-content: center;
+}
+.ar-meta-grid dt {
+  font-family: var(--font-label);
+  font-size: 9px;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--ink-mute);
+}
+.ar-meta-grid dd {
+  margin: 0;
+  color: var(--ink);
+}
+
+/* Recharge tracker */
+.ar-recharge {
+  display: flex; flex-wrap: wrap; gap: 6px;
+  margin-top: 10px;
+  padding-top: 10px;
+  border-top: 1px dashed var(--rule);
+}
+.recharge-chip {
+  display: inline-flex; align-items: center; gap: 6px;
+  font-family: var(--font-label);
+  font-size: 10px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  padding: 4px 10px;
+  background: var(--night-0);
+  color: var(--ink);
+  border: 1px solid var(--moss-deep);
+  border-left: 3px solid var(--moss);
+}
+.recharge-chip.spent {
+  border-left-color: var(--vermilion);
+  border-color: var(--vermilion-deep);
+  color: var(--ink-mute);
+  background: transparent;
+}
+.recharge-chip .die {
+  font-family: var(--font-mono);
+  color: var(--ink-dim);
+  font-weight: 700;
+}
+.recharge-chip.spent .die { color: var(--vermilion); }
+.recharge-chip:hover { border-color: var(--accent); }
+
+/* Tabs */
+.ar-tabs {
+  display: flex;
+  border-bottom: 1px solid var(--rule);
+  background: var(--night-0);
+  flex-shrink: 0;
+}
+.ar-tab {
+  flex: 1;
+  font-family: var(--font-label);
+  font-size: 11px;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  padding: 10px 6px;
+  background: transparent;
+  color: var(--ink-mute);
+  border: 0;
+  border-bottom: 2px solid transparent;
+  cursor: pointer;
+}
+.ar-tab:hover { color: var(--ink-dim); }
+.ar-tab.active {
+  color: var(--accent);
+  border-bottom-color: var(--accent);
+}
+.ar-tab .badge {
+  font-family: var(--font-mono);
+  font-size: 9px;
+  color: var(--ink-mute);
+  margin-left: 4px;
+  font-variant-numeric: tabular-nums;
+}
+.ar-tab.active .badge { color: var(--accent); }
+
+/* Tab content (scrolls) */
+.ar-body {
+  flex: 1;
+  overflow-y: auto;
+  padding: 14px 16px 20px;
+}
+.ar-body::-webkit-scrollbar { width: 8px; }
+.ar-body::-webkit-scrollbar-track { background: var(--night-0); }
+.ar-body::-webkit-scrollbar-thumb { background: var(--rule); }
+
+/* Ability score table */
+.ability-table {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  border: 1px solid var(--rule-strong);
+  margin-bottom: 14px;
+}
+.ability-cell {
+  text-align: center;
+  padding: 6px 4px;
+  border-right: 1px solid var(--rule);
+  background: var(--night-0);
+}
+.ability-cell:last-child { border-right: 0; }
+.ability-cell .ab-name {
+  font-family: var(--font-label);
+  font-size: 10px;
+  letter-spacing: 0.14em;
+  color: var(--ink-mute);
+  text-transform: uppercase;
+}
+.ability-cell .ab-mod {
+  font-family: var(--font-mono);
+  font-size: 20px;
+  font-weight: 700;
+  color: var(--ink);
+  line-height: 1.1;
+  margin-top: 2px;
+  font-variant-numeric: tabular-nums;
+}
+.ability-cell .ab-mod.pos { color: var(--good); }
+.ability-cell .ab-mod.neg { color: var(--vermilion); }
+.ability-cell .ab-score {
+  font-family: var(--font-mono);
+  font-size: 10px;
+  color: var(--ink-mute);
+  font-variant-numeric: tabular-nums;
+}
+
+/* Section blocks within tabs */
+.ar-section {
+  margin-bottom: 14px;
+}
+.ar-section:last-child { margin-bottom: 0; }
+.ar-section-head {
+  font-family: var(--font-label);
+  font-size: 10px;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--accent);
+  padding-bottom: 3px;
+  border-bottom: 1px solid var(--rule);
+  margin-bottom: 6px;
+  display: flex; justify-content: space-between; align-items: baseline;
+}
+.ar-section-head .head-meta {
+  font-family: var(--font-mono);
+  font-size: 10px;
+  color: var(--ink-mute);
+  letter-spacing: 0;
+  text-transform: none;
+}
+
+/* Inline key:value pair (saves, skills, senses, etc.) */
+.kv-line {
+  display: grid;
+  grid-template-columns: 90px 1fr;
+  gap: 8px;
+  margin-bottom: 4px;
+  font-size: 13px;
+  line-height: 1.4;
+}
+.kv-line dt {
+  font-family: var(--font-label);
+  font-size: 10px;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--ink-mute);
+  padding-top: 2px;
+}
+.kv-line dd {
+  margin: 0;
+  color: var(--ink);
+  font-family: var(--font-body);
+}
+.kv-line dd .num {
+  font-family: var(--font-mono);
+  font-weight: 700;
+  color: var(--accent);
+  font-variant-numeric: tabular-nums;
+}
+
+/* Action entry */
+.action-entry {
+  margin-bottom: 10px;
+  padding-left: 10px;
+  border-left: 2px solid var(--rule);
+}
+.action-entry:last-child { margin-bottom: 0; }
+.action-entry.recharge { border-left-color: var(--moss); }
+.action-entry.recharge.spent { border-left-color: var(--vermilion); opacity: 0.65; }
+.action-entry .entry-name {
+  font-family: var(--font-display);
+  font-size: 15px;
+  color: var(--ink);
+  font-weight: 400;
+  margin-bottom: 2px;
+}
+.action-entry .entry-name .recharge-tag {
+  font-family: var(--font-label);
+  font-size: 9px;
+  letter-spacing: 0.14em;
+  color: var(--moss);
+  margin-left: 6px;
+  border: 1px solid var(--moss-deep);
+  padding: 1px 5px;
+  background: var(--night-0);
+  vertical-align: middle;
+}
+.action-entry.spent .recharge-tag { color: var(--vermilion); border-color: var(--vermilion-deep); }
+.action-entry .entry-text {
+  font-size: 13px;
+  line-height: 1.5;
+  color: var(--ink);
+  white-space: pre-line;
+}
+.action-entry .entry-text .num {
+  font-family: var(--font-mono);
+  font-weight: 700;
+  font-variant-numeric: tabular-nums;
+  color: var(--accent);
+}
+
+/* Group head for nested action sections (TRAITS, ACTIONS, BONUS, REACTIONS) */
+.action-group {
+  margin-bottom: 14px;
+}
+.action-group:last-child { margin-bottom: 0; }
+.action-group > .ar-section-head { color: var(--ink-dim); }
+
+/* Tactics tab — readable, hierarchical */
+.tactics-entry {
+  margin-bottom: 12px;
+  padding: 12px 14px;
+  background: var(--night-0);
+  border: 1px solid var(--rule);
+  border-left: 3px solid var(--accent);
+}
+.tactics-entry .tac-name {
+  font-family: var(--font-label);
+  font-size: 11px;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--accent);
+  margin-bottom: 6px;
+  padding-bottom: 4px;
+  border-bottom: 1px solid var(--rule);
+}
+.tactics-entry .tac-text {
+  font-family: var(--font-body);
+  font-style: normal;
+  font-size: 14px;
+  line-height: 1.55;
+  color: var(--ink);
+}
+
+/* Notes (PC) */
+.pc-notes, .npc-notes {
+  margin-top: 12px;
+  padding: 10px;
+  background: var(--night-0);
+  border-left: 2px solid var(--ochre);
+  font-family: var(--font-hand);
+  font-size: 13px;
+  line-height: 1.5;
+  color: var(--ink);
+}
+.pc-notes::before, .npc-notes::before {
+  content: "DM";
+  font-family: var(--font-label);
+  font-size: 9px;
+  letter-spacing: 0.18em;
+  color: var(--ochre);
+  margin-right: 8px;
+}
+
+/* Attack rows — table-style hierarchy */
+.attack-card {
+  margin-bottom: 12px;
+  background: var(--night-0);
+  border: 1px solid var(--rule);
+  border-left: 3px solid var(--accent);
+}
+.attack-card.recharge { border-left-color: var(--moss); }
+.attack-card.recharge.spent { border-left-color: var(--vermilion); opacity: 0.7; }
+.attack-card .ac-head {
+  display: flex; justify-content: space-between; align-items: baseline;
+  padding: 8px 12px;
+  border-bottom: 1px solid var(--rule);
+  background: var(--night-1);
+  gap: 10px;
+  flex-wrap: nowrap;
+}
+.attack-card .ac-name {
+  font-family: var(--font-display);
+  font-size: 17px;
+  color: var(--ink);
+  line-height: 1.1;
+  flex: 1 1 auto;
+  min-width: 0;
+}
+.attack-card .ac-meta {
+  display: flex; align-items: center; gap: 8px;
+  flex-shrink: 0;
+  white-space: nowrap;
+}
+.attack-card .ac-type {
+  font-family: var(--font-label);
+  font-size: 9px;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--ink-mute);
+  white-space: nowrap;
+}
+.attack-card .ac-recharge {
+  font-family: var(--font-label);
+  font-size: 9px;
+  letter-spacing: 0.14em;
+  color: var(--moss);
+  border: 1px solid var(--moss-deep);
+  padding: 2px 6px;
+  background: var(--night-0);
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+.attack-card.spent .ac-recharge { color: var(--vermilion); border-color: var(--vermilion-deep); }
+.attack-card .ac-stats {
+  display: grid;
+  grid-template-columns: auto 1fr 1fr;
+  gap: 0;
+  border-bottom: 1px solid var(--rule-faint);
+}
+.attack-card .ac-stat {
+  padding: 6px 12px;
+  border-right: 1px solid var(--rule-faint);
+}
+.attack-card .ac-stat:last-child { border-right: 0; }
+.attack-card .ac-stat .lab {
+  font-family: var(--font-label);
+  font-size: 9px;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--ink-mute);
+  display: block;
+  margin-bottom: 2px;
+}
+.attack-card .ac-stat .val {
+  font-family: var(--font-mono);
+  font-size: 15px;
+  font-weight: 700;
+  color: var(--ink);
+  font-variant-numeric: tabular-nums;
+  white-space: nowrap;
+}
+.attack-card .ac-stat.hit .val { color: var(--accent); }
+.attack-card .ac-stat.tohit .val { color: var(--good); }
+.attack-card .ac-extra {
+  padding: 8px 12px 10px;
+  font-size: 13px;
+  line-height: 1.5;
+  color: var(--ink);
+}
+.attack-card .ac-extra .num {
+  font-family: var(--font-mono);
+  font-weight: 700;
+  color: var(--accent);
+  font-variant-numeric: tabular-nums;
+}
+.attack-card.no-stats .ac-stats { display: none; }
+.attack-card.no-stats .ac-head { border-bottom: 0; }
+
+/* Encounter notes modal */
+.modal-shade {
+  display: none;
+  position: fixed; inset: 0;
+  background: rgba(8, 4, 1, 0.75);
+  z-index: 200;
+  align-items: center; justify-content: center;
+  padding: 32px;
+}
+.modal-shade.open { display: flex; }
+.modal {
+  background: var(--night-2);
+  border: 1px solid var(--accent);
+  box-shadow: 0 12px 48px rgba(0,0,0,0.6), inset 0 0 0 1px var(--rule-faint);
+  max-width: 720px;
+  width: 100%;
+  max-height: 86vh;
+  display: flex; flex-direction: column;
+}
+.modal-head {
+  display: flex; align-items: center; justify-content: space-between;
+  padding: 14px 18px;
+  border-bottom: 1.5px solid var(--accent);
+}
+.modal-head h3 {
+  font-family: var(--font-display);
+  font-size: 22px;
+  color: var(--ink);
+  letter-spacing: 0.01em;
+}
+.modal-head .modal-close {
+  background: transparent;
+  border: 0;
+  color: var(--ink-mute);
+  font-size: 24px;
+  line-height: 1;
+  padding: 0 6px;
+}
+.modal-head .modal-close:hover { color: var(--vermilion); }
+.modal-body {
+  padding: 16px 18px 22px;
+  overflow-y: auto;
+}
+
+/* ─── Full reference (below tracker) ────────────────────────── */
+.full-ref {
+  grid-column: 1 / -1;
+  padding: 0 18px 40px;
+  margin-top: 8px;
+}
+.full-ref details {
+  background: var(--night-2);
+  border: 1px solid var(--rule);
+  margin-bottom: 8px;
+}
+.full-ref summary {
+  list-style: none;
+  cursor: pointer;
+  padding: 10px 16px;
+  background: var(--night-0);
+  border-bottom: 1px solid var(--rule);
+  display: flex; align-items: center; justify-content: space-between;
+  font-family: var(--font-label);
+  font-size: 11px;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--ink-dim);
+}
+.full-ref summary::-webkit-details-marker { display: none; }
+.full-ref summary::after { content: "▼"; font-size: 9px; color: var(--ink-mute); }
+.full-ref details[open] summary::after { content: "▲"; }
+.full-ref details[open] summary { border-bottom-color: var(--accent); color: var(--ink); }
+.full-ref-body { padding: 14px 16px; }
+
+.full-block {
+  margin-bottom: 18px;
+  padding: 12px 14px;
+  background: var(--night-0);
+  border: 1px solid var(--rule);
+}
+.full-block:last-child { margin-bottom: 0; }
+.full-block-title {
+  font-family: var(--font-display);
+  font-size: 18px;
+  color: var(--ink);
+  margin-bottom: 2px;
+}
+.full-block-caption {
+  font-family: var(--font-plate);
+  font-style: italic;
+  font-size: 13px;
+  color: var(--ink-dim);
+  margin-bottom: 8px;
+  padding-bottom: 6px;
+  border-bottom: 1px solid var(--rule);
+}
+
+.notes-entry {
+  margin-bottom: 12px;
+  padding-left: 14px;
+  border-left: 2px solid var(--accent);
+}
+.notes-entry:last-child { margin-bottom: 0; }
+.notes-entry .note-label {
+  font-family: var(--font-label);
+  font-size: 10px;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--accent);
+  margin-bottom: 3px;
+}
+.notes-entry .note-text {
+  font-family: var(--font-body);
+  font-size: 13px;
+  line-height: 1.55;
+  color: var(--ink);
+}
+
+/* ─── Tweaks panel ──────────────────────────────────────────── */
+#tweaks {
+  position: fixed;
+  bottom: 16px; right: 16px;
+  width: 280px;
+  background: var(--night-2);
+  border: 1px solid var(--accent);
+  box-shadow: 0 6px 24px rgba(0,0,0,0.5), inset 0 0 0 1px var(--rule-faint);
+  z-index: 100;
+  display: none;
+}
+#tweaks.open { display: block; }
+#tweaks h3 {
+  font-family: var(--font-label);
+  font-size: 11px;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--accent);
+  padding: 12px 14px;
+  border-bottom: 1px solid var(--accent);
+  display: flex; justify-content: space-between; align-items: center;
+}
+#tweaks h3 button {
+  background: transparent;
+  border: 0;
+  color: var(--ink-mute);
+  font-size: 18px;
+  line-height: 1;
+  padding: 0 4px;
+}
+#tweaks h3 button:hover { color: var(--vermilion); }
+.tweak-section {
+  padding: 10px 14px;
+  border-bottom: 1px solid var(--rule-faint);
+}
+.tweak-section:last-child { border-bottom: 0; }
+.tweak-label {
+  font-family: var(--font-label);
+  font-size: 9px;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--ink-mute);
+  margin-bottom: 6px;
+}
+.tweak-swatches { display: flex; gap: 4px; }
+.tweak-swatch {
+  flex: 1;
+  height: 26px;
+  border: 1px solid var(--rule);
+  cursor: pointer;
+  position: relative;
+}
+.tweak-swatch.on { border: 2px solid var(--ink); }
+.tweak-swatch.on::after {
+  content: "✓"; position: absolute; inset: 0;
+  display: flex; align-items: center; justify-content: center;
+  color: var(--night-0); font-weight: 900; font-size: 12px;
+}
+.tweak-radio { display: flex; gap: 4px; }
+.tweak-radio button {
+  flex: 1;
+  font-family: var(--font-label);
+  font-size: 10px;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  padding: 6px 8px;
+  background: var(--night-0);
+  color: var(--ink-dim);
+  border: 1px solid var(--rule);
+}
+.tweak-radio button.on { background: var(--accent); color: var(--night-0); border-color: var(--accent); }
+.tweak-slider { display: flex; align-items: center; gap: 8px; }
+.tweak-slider input[type="range"] { flex: 1; accent-color: var(--accent); }
+.tweak-slider .val {
+  font-family: var(--font-mono);
+  font-size: 11px;
+  color: var(--ink);
+  width: 34px; text-align: right;
+}
+
+/* ─── Responsive: portrait / narrow ─────────────────────────── */
+@media (max-width: 1100px) {
+  .app {
+    grid-template-columns: 1fr;
+  }
+  .active-ref {
+    position: static;
+    max-height: none;
+    order: -1;
+  }
+  .active-ref .ar-body {
+    max-height: 360px;
+  }
+}
+
+@media (max-width: 720px) {
+  .row {
+    grid-template-columns: 44px minmax(0, 1fr) auto;
+  }
+  .row > .hp-col { display: none; }
+  .row > .row-pills { grid-column: 1 / -1; padding-top: 4px; }
+  .topbar-title h1 { font-size: 20px; }
+  .topbar-actions button { padding: 6px 10px; font-size: 10px; }
+}
+
+/* Print: clean a single page if needed */
+@media print {
+  .topbar-actions, #tweaks, .row .controls, .row .cond-panel { display: none; }
+  .app { display: block; }
+  .active-ref { position: static; max-height: none; }
+}
+</style>
+</head>
+<body class="density-default">
+
+<header class="topbar">
+  <div class="topbar-title">
+    <div>
+      <div class="eyebrow">Combat Encounter</div>
+      <h1 id="encounter-name">The Fête — Ant Guard Response</h1>
+    </div>
+    <div class="round-tag">Round <strong id="round-num">1</strong></div>
+  </div>
+  <div class="topbar-actions">
+    <button id="prev-btn" class="icon" title="Previous turn">◀</button>
+    <button id="next-btn" class="primary" title="Next turn">Next ▶</button>
+    <span class="sep"></span>
+    <button id="notes-btn" title="Encounter notes">✎ Notes</button>
+    <button id="reset-btn" title="Reset encounter">⟲ Reset</button>
+    <button id="tweaks-btn" title="Open tweaks">⚙ Tweaks</button>
+  </div>
+</header>
+
+<noscript id="no-js-warning">
+  <div style="padding:16px;background:#3B2C1B;color:#EBDCB5;border:1px solid #C44A30;margin:12px;font-family:Georgia,serif;">
+    <strong>JavaScript is disabled.</strong> On iPhone/iPad, open this file in Safari (not the Files app's Quick Look preview).
+  </div>
+</noscript>
+<script>(function(){var n=document.getElementById('no-js-warning'); if(n) n.remove();})();</script>
+
+<div id="boot-error" style="display:none;padding:16px;background:#3B2C1B;color:#EBDCB5;border:1px solid #C44A30;margin:12px;font-family:Georgia,serif;"></div>
+
+<main class="app">
+  <section class="tracker">
+    <div class="section-head">
+      <h2>Initiative</h2>
+      <span class="hint">Tap a row to pin its reference. Next/Prev advances turn.</span>
+    </div>
+    <div id="muster"></div>
+    <div id="tracker-rows"></div>
+  </section>
+
+  <aside class="active-ref" id="active-ref"></aside>
+</main>
+
+<div class="modal-shade" id="notes-modal">
+  <div class="modal" role="dialog" aria-labelledby="notes-modal-title">
+    <div class="modal-head">
+      <h3 id="notes-modal-title">Encounter Notes</h3>
+      <button class="modal-close" id="notes-modal-close" title="Close">×</button>
+    </div>
+    <div class="modal-body" id="notes-modal-body"></div>
+  </div>
+</div>
+
+<aside id="tweaks">
+  <h3>Tweaks <button id="tweaks-close" title="Close">×</button></h3>
+  <div class="tweak-section">
+    <div class="tweak-label">Accent</div>
+    <div class="tweak-swatches" id="tw-accent"></div>
+  </div>
+  <div class="tweak-section">
+    <div class="tweak-label">Row Density</div>
+    <div class="tweak-radio" id="tw-density"></div>
+  </div>
+  <div class="tweak-section">
+    <div class="tweak-label">Base Font Size</div>
+    <div class="tweak-slider">
+      <input type="range" id="tw-fs" min="13" max="20" step="1" value="15">
+      <span class="val" id="tw-fs-val">15px</span>
+    </div>
+  </div>
+</aside>
+
+<script>
+/* ============================================================
+ * ENCOUNTER DATA — replaced by the Python build script.
+ * Keep this object shape stable.
+ * ============================================================ */
+var ENCOUNTER = {"name": "The Fête — Ant Guard Response", "slug": "fete_ant_guard_response", "roster": [{"id": "guard", "name": "Red Ant Guard", "ac": 14, "hp_dice": "4d8", "speed": "30 ft., climb 30 ft.", "init_mod": "+1", "start": 2, "notes": "Cleaves. Charge = 2 rds, kills the firer."}, {"id": "bulwark", "name": "Royal Ant Bulwark", "ac": 17, "hp_dice": "10d10+50", "speed": "20 ft., climb 20 ft.", "init_mod": "-1", "start": 0, "notes": "Slow. Pin + Interpose. Resists fire."}, {"id": "firecaller", "name": "Royal Ant Firecaller", "ac": 15, "hp_dice": "12d8+24", "speed": "30 ft., climb 30 ft.", "init_mod": "+2", "start": 0, "notes": "Kill first. Kindled ends when it dies."}], "combatants": [{"id": "tabby", "kind": "pc", "name": "Tabatha Starr (Heather)", "ac": 15, "hp_max": 42, "hp_current": 42, "speed": "30 ft.", "initiative": null, "init_mod": "+6", "notes": "Dread Ambusher rd 1: +10 speed, extra attack, +1d8 on hit. Invisible to darkvision while in darkness."}, {"id": "nancy", "kind": "pc", "name": "Nancy Alfons (Rowyn)", "ac": 16, "hp_max": 37, "hp_current": 37, "speed": "40 ft.", "initiative": null, "init_mod": "+4", "notes": "Bladesong: AC 19, speed 50. Mobile: no OAs from a target she melees."}, {"id": "drix", "kind": "pc", "name": "Jiminy Hendrix (Drix — Katie)", "ac": 15, "hp_max": 39, "hp_current": 39, "speed": "30 ft.", "initiative": null, "init_mod": "+3", "notes": "Save DC 16. Hypnotic Pattern and Counterspell available."}], "npc_blocks": [{"title": "Red Ant Guard — Medium Monstrosity (ant), Lawful Neutral — ORDINARY, not the elite", "stats": "AC 14 (chitin and ceremonial plate) | HP 18 (4d8) | Speed 30 ft., climb 30 ft. | STR 14 (+2) DEX 12 (+1) CON 10 (+0) INT 8 (-1) WIS 12 (+1) CHA 10 (+0)", "defenses": "Skills: Perception +5 | Senses: darkvision 60 ft., tremorsense 30 ft. | Passive Perception 15 | Languages: Ant-cant (chemical) | CR 1/2 (100 XP) | PB +2", "sections": [{"label": "TRAITS", "entries": [{"name": "Overexcited", "text": "This guard is watching everything, all at once, and has been all night. It startles at a dropped tray, at laughter, at movement in the petal panels. It notices an enormous amount and can tell almost none of it apart. While it is standing its post in a public room it makes Wisdom (Perception) checks with disadvantage — passive Perception 10, because every single thing it has flagged so far tonight has been nothing. Back-corridor patrols away from the crowd use the full 15."}, {"name": "Overkill (Cleave)", "text": "When a single attack reduces a Red Ant Guard to 0 hit points, damage in excess of its remaining hit points carries over to one other Red Ant Guard within 5 ft. of it, and can chain onward the same way while excess remains. Overkill damage never carries to or from a Royal Ant Bulwark, a Royal Ant Firecaller, or any non-ant creature. Temporary hit points (see the Firecaller's Royal Cadence) stop the chain — excess is absorbed, not passed."}]}, {"label": "ACTIONS", "entries": [{"name": "Mandible Jab", "text": "Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 6 (1d8+2) piercing damage."}, {"name": "Stoke the Gaster", "text": "The guard plants its legs and pumps its fire gland. Its abdomen swells, glows, and hisses — anyone who can see it knows exactly what is coming, and so does the guard. Until the end of its next turn the guard is Charged, and its speed is 0. If it takes 5 or more damage from a single source while Charged, the charge ruptures: the charge is lost and the guard takes 7 (2d6) fire damage — which is, from the guard's side of it, a reprieve. Round one of the two-round charged attack."}, {"name": "Ember Lance (Charged only)", "text": "The guard vents its charged gaster in a line 30 ft. long and 5 ft. wide. Each creature in the line makes a DC 12 Dexterity saving throw, taking 21 (6d6) fire damage on a failure or half as much on a success. Flammable objects in the line that aren't worn or carried ignite — and the outward-facing palace is built of dried flower petals. The line does not spare allies, and Red Ant Guards do NOT resist fire. A lance fired into a melee cooks the guards standing in it. The royals (Bulwark, Firecaller) resist fire and walk through it. THE GUARD DOES NOT SURVIVE IT. Venting the gland burns it hollow from the inside; the guard drops to 0 hit points and dies as the lance goes out, leaving a husk that goes on burning for a minute and will light whatever it is lying against. Every red ant knows this is what the lance costs. Round two — and the last round — of the two-round charged attack."}]}, {"label": "TACTICS", "entries": [{"name": "How it fights", "text": "On post, two to an aperture, facing outward. In the open they fight in numbers and stand their ground rather than disengaging — they hold the line and make noise while they do it, which is what summons the royal squad. Left to themselves they jab, because Ember Lance kills them and they know it. A guard stokes its gaster under three conditions and no others: a Firecaller orders it (Volunteer), a superior is watching and it has already failed once tonight, or it is going to die anyway and can take someone with it. That makes the lance rare and dreadful rather than routine — and it means the moment a gaster starts to glow, the party is looking at an ant that has just been spent."}]}]}, {"title": "Royal Ant Bulwark — Large Monstrosity (ant), Lawful Neutral — ELITE", "stats": "AC 17 (natural armor) | HP 105 (10d10+50) | Speed 20 ft., climb 20 ft. | STR 18 (+4) DEX 8 (-1) CON 20 (+5) INT 7 (-2) WIS 12 (+1) CHA 10 (+0)", "defenses": "Saves: STR +6, CON +7 | Skills: Athletics +6, Perception +3 | Resist: fire | Senses: darkvision 60 ft., tremorsense 30 ft. | Passive Perception 13 | Languages: Ant-cant (chemical) | CR 3 (700 XP) | PB +2", "sections": [{"label": "TRAITS", "entries": [{"name": "Ponderous", "text": "The Bulwark can't take the Dash action and has disadvantage on Dexterity saving throws. It is slow on purpose — the party can outrun it, and running is frequently the correct answer."}, {"name": "Royal Chitin", "text": "Overkill (Cleave) damage never carries to or from a Bulwark. It also has advantage on saving throws against being moved, knocked prone, or grappled."}, {"name": "Hold the Line", "text": "Difficult terrain doesn't cost the Bulwark extra movement while it is moving to place itself between an intruder and a door, stair, or aperture. Bulwarks are deployed to close routes, not to chase."}]}, {"label": "ACTIONS", "entries": [{"name": "Multiattack", "text": "The Bulwark makes two Mandible Shear attacks, or one Mandible Shear and one Pin."}, {"name": "Mandible Shear", "text": "Melee Weapon Attack: +6 to hit, reach 10 ft., one target. Hit: 13 (2d8+4) slashing damage."}, {"name": "Pin", "text": "Melee Weapon Attack: +6 to hit, reach 10 ft., one Medium or smaller target. Hit: 9 (2d4+4) bludgeoning damage, and the target is Pinned. While Pinned its speed is 0, attack rolls against it have advantage, and it has disadvantage on Dexterity saving throws. It can use its action to escape with a DC 14 Strength (Athletics) or Dexterity (Acrobatics) check. The Bulwark can have only one creature Pinned at a time, and its speed is halved while it holds a pin. The setup this exists for: a Pinned PC cannot move out of an Ember Lance and saves against it with disadvantage."}]}, {"label": "REACTIONS", "entries": [{"name": "Interpose", "text": "When an attack hits another royal ant within 5 ft. of the Bulwark, the Bulwark can make itself the target instead, taking the damage in that ally's place. This is how the squad screens its Firecaller — the party cannot simply focus the caster down while two Bulwarks are standing over it. One reaction per round."}]}, {"label": "TACTICS", "entries": [{"name": "How it fights", "text": "Moves to block the exit the party wants, not toward the party. Pins the most mobile PC — Nancy is the intended target and the pin is the intended counter to her movement — and shears whatever is still in reach. Spends its reaction on Interpose to keep the Firecaller alive. Will not pursue past the door it was told to hold."}]}]}, {"title": "Royal Ant Firecaller — Medium Monstrosity (ant), Lawful Neutral — ELITE, support", "stats": "AC 15 (chitin and censer-regalia) | HP 78 (12d8+24) | Speed 30 ft., climb 30 ft. | STR 10 (+0) DEX 14 (+2) CON 14 (+2) INT 14 (+2) WIS 16 (+3) CHA 14 (+2)", "defenses": "Saves: CON +4, WIS +5 | Skills: Perception +5, Insight +5 | Resist: fire | Senses: darkvision 60 ft., tremorsense 30 ft. | Passive Perception 15 | Languages: Ant-cant (chemical, fluent), Common | CR 3 (700 XP) | PB +2", "sections": [{"label": "TRAITS", "entries": [{"name": "Pheromone Standard", "text": "Spell save DC 13, spell attack +5. Allied ants within 30 ft. of the Firecaller can't be Frightened and have advantage on saving throws against being Charmed. Ordinary guards do not break while it is standing."}, {"name": "Royal Chitin", "text": "Overkill (Cleave) damage never carries to or from a Firecaller."}]}, {"label": "ACTIONS", "entries": [{"name": "Kindle the Host", "text": "The Firecaller opens its censer and breathes over up to three allied ants it can see within 30 ft. Each becomes Kindled for 1 minute: its carapace runs hot enough to read by, and any creature that is not a red ant and ends its turn within 5 ft. of it takes 2 (1d4) fire damage. This damage is rolled per Kindled ant — a creature ending its turn inside a knot of three Kindled guards rolls 3d4, averaging 7–8. Kindled ends early on any ant that drops, and ends on ALL of them the instant the Firecaller dies. This is the block's main action and usually its whole first turn."}, {"name": "Cinder Bolt", "text": "Ranged Spell Attack: +5 to hit, range 60 ft., one target. Hit: 10 (3d6) fire damage. What it does on the turns it has nobody left worth heating. There is no multiattack — this creature is not a nuke."}]}, {"label": "BONUS ACTIONS", "entries": [{"name": "Royal Cadence", "text": "Up to three allied ants within 30 ft. that can smell the Firecaller each gain 5 temporary hit points. Temporary hit points from Royal Cadence stop an Overkill (Cleave) chain — excess damage is absorbed rather than passed on. This is the deliberate counter to the party mowing down Red Ant Guards, and it costs the Firecaller its bonus action every round it wants it."}, {"name": "Volunteer", "text": "The Firecaller lays a claw on one Red Ant Guard within 30 ft. and names it. That guard immediately becomes Charged (as Stoke the Gaster) without spending its own action, and its speed is not reduced; it can use Ember Lance on its own next turn. Ember Lance kills the guard that fires it, and both of them know that. An ordinary guard will not stoke its own gaster in a fight it expects to survive — this is how the lance actually reaches the table, and it is the Firecaller spending a life to do it."}]}, {"label": "TACTICS", "entries": [{"name": "How it fights", "text": "Stays behind the Bulwarks and holds 30 ft. Turn one is Kindle the Host on whichever three guards are closest to the party, plus Volunteer on a guard with a clean lane. Turn two heats three more and starts Royal Cadence once the party begins dropping mooks. Cinder Bolt only when there is nothing left to buff. Does not chase, does not press a losing fight, and will fall back to call the next batch — its job is to make the swarm expensive, not to win the fight itself."}]}]}], "pc_blocks": [{"header": "Tabatha Starr (Heather) — Ranger 6 (Gloomstalker) | Lone Star Tick | AC 15 | HP 42 | Speed 30 | Passive Perception 15", "abilities": "STR 14 (+2) DEX 18 (+4) CON 12 (+1) INT 10 (+0) WIS 14 (+2) CHA 10 (+0)", "saves": "STR +5 (prof), DEX +7 (prof). CON +1, INT +0, WIS +2, CHA +0.", "attacks": "Longbow +9, 1d8+4 piercing (150/600) [Archery]  |  Mantis-spine dagger +7, 1d8+4 slashing (finesse; invisible 1x/short rest)  |  Dagger +7 melee / +9 thrown, 1d4+4 piercing  |  Extra Attack (2 attacks)  |  Sharpshooter: -5 to hit for +10 damage; ignores half and 3/4 cover; no long-range disadvantage.", "spells": "Save DC 13, attack +5. 1st (3/4 left): Hunter's Mark (BA), Disguise Self, Speak with Animals, Jump. 2nd (2/2): Pass without Trace, Rope Trick.", "features": "Dread Ambusher: +WIS to initiative; rd 1 of combat +10 speed and one extra attack that deals +1d8 on a hit. Umbral Sight: darkvision 60 ft. and INVISIBLE to darkvision-users while in darkness — matters if the party douses the glowworm lanterns. Stealth +7."}, {"header": "Nancy Alfons (Rowyn) — Rogue 4 (Arcane Trickster) / Wizard 2 (Bladesinger) | Jumping Spider | AC 16 (19 Bladesong) | HP 37 | Speed 40 (50 Bladesong) | Passive Perception 11", "abilities": "STR 6 (-2) DEX 18 (+4) CON 12 (+1) INT 16 (+3) WIS 12 (+1) CHA 12 (+1)", "saves": "DEX +7 (prof), INT +6 (prof). STR -2, CON +1, WIS +1, CHA +1. NOTE: STR -2 and no STR-save proficiency — escaping a Bulwark's Pin (DC 14) is best attempted with Acrobatics (+4), not Athletics (-2).", "attacks": "Rapier +7, 1d8+4 piercing  |  The Mantible +7, 1d8+4 slashing (finesse; invisible 1x/short rest)  |  Shortbow +7, 1d6+4 piercing (80/320)  |  Sneak Attack 2d6  |  Green-Flame Blade / Sword Burst cantrips.", "spells": "Save DC 14, attack +6. Cantrips: Mage Hand (Legerdemain), Message, Minor Illusion, Green-Flame Blade, Mending, Sword Burst. 1st (4): Shield, Sleep, Tasha's Hideous Laughter, Disguise Self, Detect Magic, Identify, Tenser's Floating Disk. 2nd (2): Misty Step (also 1/long rest free via Fey Touched).", "features": "Bladesong (BA, 1 min, 3/long rest): +3 AC, +10 speed, advantage on Acrobatics, +3 concentration saves, +3 damage once per turn. Mobile: +10 speed; melee a creature and it can't take OAs against you. Cunning Action (BA dash/disengage/hide). Uncanny Dodge. Stealth +7, Sleight of Hand +10, Investigation +9."}, {"header": "Jiminy Hendrix (Drix — Katie) — Bard 6 (College of Lore) | Cricket | AC 15 | HP 39 | Speed 30 | Passive Perception 13", "abilities": "STR 6 (-2) DEX 16 (+3) CON 13 (+1) INT 10 (+0) WIS 10 (+0) CHA 20 (+5)", "saves": "DEX +6 (prof), CHA +8 (prof). STR -2, CON +1, INT +0, WIS +0.", "attacks": "Rapier +6, 1d8+3 piercing  |  Shortsword +6, 1d6+3 piercing  |  Vicious Mockery cantrip (DC 16, 2d4 psychic + disadvantage on its next attack).", "spells": "Save DC 16, attack +8. Cantrips: Vicious Mockery, Prestidigitation, Dancing Lights. 1st (4): Healing Word, Silvery Barbs, Dissonant Whispers, Disguise Self, Unseen Servant. 2nd (3): Hold Person, Locate Animals or Plants. 3rd (3): HYPNOTIC PATTERN, Counterspell, Phantom Steed, Leomund's Tiny Hut.", "features": "Bardic Inspiration d8, 5 uses, short rest (BA, 60 ft.). Cutting Words (reaction: subtract a d8 from an enemy roll). Jack of All Trades. Song of Rest d6. Expertise: Performance +11, Persuasion +11. Deception +11."}], "notes": [{"label": "How to use this sheet", "text": "The Muster bar above the tracker is the point — nothing is pre-staged. Dial in whatever the scene calls for and roll initiative at the table. It opens on a back-corridor patrol of 2 Red Ant Guards; add more, or add royals, as the night escalates. Removing a creature takes the highest-numbered one off. Counts and HP persist until you hit Reset."}, {"label": "Alert ladder — what to muster", "text": "L1 NOTICED (a fight heard, Beeatrix screams, a body found): 4-6 Red Ant Guards, no royals. L2 SQUAD (enough noise, or something specifically suspicious): add 1 Firecaller + 1 to 3 Bulwarks. L3 WILDLY OUT OF HAND (fire, an open running fight in a public room, the coronation disrupted): 8-12 guards plus a second squad. L4 LOCKDOWN: everything clusters on the Red Ant Queen, which is the party's opening to escape."}, {"label": "Encounter math (3 PCs at level 6)", "text": "Thresholds: Easy 900 / Medium 1800 / Hard 2700 / Deadly 4200. Patrol pair = 200 raw, 300 adjusted — trivial, and meant to be. 6 guards = 600 raw, 1200 adjusted. Minimum squad (1 Firecaller + 1 Bulwark) = 1400 raw, 2100 adjusted, just under Hard. Standard (1 + 2) = 2100 raw, 4200 adjusted — exactly Deadly. Maximum (1 + 3) = 2800 raw, 5600 adjusted. Maximum plus 6 guards = 3400 raw, 8500 adjusted — not a fight, that is the run-to-the-kitchens signal."}, {"label": "OVERKILL (cleave) — house rule", "text": "When one attack drops a Red Ant Guard to 0, the excess damage carries to another Red Ant Guard within 5 ft., and chains on while excess remains. Red Ant Guards ONLY — never to or from a Bulwark or a Firecaller (Royal Chitin). Temporary hit points stop the chain, which is exactly what the Firecaller's Royal Cadence is for. Written for single-target attacks, melee or ranged; area spells already hit everyone, so they do not cleave."}, {"label": "The charge, and what it costs", "text": "Stoke the Gaster is a visible tell — abdomen swelling, glowing, hissing — and the guard's speed drops to 0 while it holds. 5+ damage from one source ruptures it (charge lost, 2d6 to itself). Ember Lance then does 6d6 in a 30 ft. line, DC 12 DEX for half, AND KILLS THE GUARD THAT FIRED IT. Left alone, guards will not do this; it takes a Firecaller's Volunteer, a superior watching after they already failed once, or a guard that is dying anyway."}, {"label": "Fire in a petal palace", "text": "Bulwarks and Firecallers RESIST fire. Red Ant Guards DO NOT — an Ember Lance fired into a scrum cooks the guards standing in it, and so does an Emberbloom. The outward-facing rooms are dried flower petals: loose flammables in a lance's line ignite, a spent guard leaves a husk that burns for a minute and lights whatever it is lying against. Fire is the fastest way for either side to lose control of the night."}, {"label": "The scary setup", "text": "Bulwark Pins a PC (speed 0, attacks against them have advantage, disadvantage on DEX saves) -> Firecaller Volunteers a guard -> Ember Lance down the line the PC cannot leave, saving at disadvantage. Against Nancy at 37 HP that chain is close to lethal, and her escape check should be Acrobatics +4, not Athletics -2."}, {"label": "Kindled — track it on the pills", "text": "Kindle the Host heats up to 3 allied ants for 1 minute. Anything that is not a red ant and ends its turn within 5 ft. of a Kindled ant takes 1d4 fire, ROLLED PER KINDLED ANT — a knot of three is 3d4. This is the tax on wading into the pack to cleave, and it lands almost entirely on Nancy. Kindled ends on ALL of them the moment the Firecaller dies. Use the Kindled and Charged condition pills to track who is what."}, {"label": "Terrain", "text": "Back corridors and service passages: lit by glowworm lanterns in jiggly sacks — staff can douse them, and so can the party, which hands Tabby total concealment (Umbral Sight makes her invisible to darkvision in darkness). Guards on post in a public room have passive Perception 10; the same guard on a back-corridor patrol uses its full 15. Rooms hang separately and are joined by open-air walkways and flying buttresses — a fight on a walkway has a long drop into the Overgrowth on both sides."}, {"label": "Registry cross-ref", "text": "None of these three are tracked in memory/NPC_Registry.yaml — they are generic palace forces, not named NPCs. Nothing to reconcile."}, {"label": "FLAG — party sheet inconsistency", "text": "The Mantible (the orchid mantis mandible short sword) is listed in BOTH Nancy's and Drix's equipment. Session 6.5 notes say Nancy took the mandible and Tabby took the spines. Drix's copy is probably duplication — worth a /janitor pass, and worth knowing before someone claims it at the table."}]};
+</script>
+<script>
+/* ============================================================
+ * THE GLADE — Encounter Worksheet App
+ * Vanilla JS, no external deps. Reads ENCOUNTER global.
+ * ============================================================ */
+
+(function () {
+  "use strict";
+
+  // ─── Setup ──────────────────────────────────────────────────────────
+  if (typeof ENCOUNTER === "undefined" || !ENCOUNTER || !ENCOUNTER.combatants) {
+    showBootError("No encounter data found.");
+    return;
+  }
+  const slug = (ENCOUNTER.slug || ENCOUNTER.name || "encounter")
+    .replace(/[^a-z0-9]+/gi, "_").toLowerCase();
+  const STORAGE_KEY = "encounter:" + slug;
+  const TWEAKS_KEY = "encounter-tweaks:" + slug;
+
+  const CONDITIONS = [
+    "Blinded", "Charged", "Charmed", "Concentration", "Deafened", "Frightened",
+    "Grappled", "Incapacitated", "Invisible", "Kindled", "Paralyzed", "Petrified",
+    "Poisoned", "Prone", "Restrained", "Stunned", "Unconscious"
+  ];
+  const ABILITIES = ["STR", "DEX", "CON", "INT", "WIS", "CHA"];
+  const ACCENTS = [
+    { id: "ochre",     color: "#D69A45" },
+    { id: "vermilion", color: "#C44A30" },
+    { id: "moss",      color: "#8A9A4A" },
+    { id: "lapis",     color: "#5A7FA3" },
+    { id: "cochineal", color: "#B04050" },
+    { id: "umber",     color: "#A06A3A" },
+  ];
+
+  function showBootError(msg) {
+    const box = document.getElementById("boot-error");
+    if (box) { box.style.display = "block"; box.textContent = msg; }
+  }
+
+  // ─── State ──────────────────────────────────────────────────────────
+  function combatantId(c, i) {
+    return c.id || (c.name || "c").replace(/[^a-z0-9]+/gi, "_").toLowerCase() + "_" + i;
+  }
+
+  // ─── Muster (roster spawning) ───────────────────────────────────────
+  // Optional ENCOUNTER.roster lets the DM dial counts at the table instead
+  // of baking them into the spec. Each entry:
+  //   { id, name, kind?, ac, hp_dice, speed?, init_mod?, notes?, start? }
+  const ROSTER = Array.isArray(ENCOUNTER.roster) ? ENCOUNTER.roster : [];
+
+  function rollHp(expr) {
+    const m = String(expr == null ? "" : expr).match(/^\s*(\d+)\s*d\s*(\d+)\s*([+-]\s*\d+)?\s*$/i);
+    if (!m) {
+      const flat = parseInt(expr, 10);
+      return Number.isFinite(flat) && flat > 0 ? flat : 1;
+    }
+    const n = parseInt(m[1], 10), die = parseInt(m[2], 10);
+    const bonus = m[3] ? parseInt(m[3].replace(/\s+/g, ""), 10) : 0;
+    let total = 0;
+    for (let i = 0; i < n; i++) total += 1 + Math.floor(Math.random() * die);
+    return Math.max(1, total + bonus);
+  }
+
+  function makeCombatant(entry, n) {
+    const hp = rollHp(entry.hp_dice);
+    return {
+      id: String(entry.id) + "_" + n + "_" + Math.random().toString(36).slice(2, 7),
+      kind: entry.kind || "npc",
+      type_id: String(entry.id),
+      type_n: n,
+      name: entry.name + " " + n,
+      ac: entry.ac,
+      hp_max: hp,
+      hp_current: hp,
+      speed: entry.speed || "",
+      initiative: null,
+      init_mod: entry.init_mod || "",
+      group: null,
+      notes: entry.notes || "",
+      conditions: []
+    };
+  }
+
+  function typeCount(list, entry) {
+    return list.filter(c => c.type_id === String(entry.id)).length;
+  }
+
+  function spawnOne(list, entry) {
+    const used = new Set(list.filter(c => c.type_id === String(entry.id)).map(c => c.type_n));
+    let n = 1;
+    while (used.has(n)) n++;
+    list.push(makeCombatant(entry, n));
+  }
+
+  function despawnOne(entry) {
+    let idx = -1, highest = -Infinity;
+    state.combatants.forEach((c, i) => {
+      if (c.type_id === String(entry.id) && c.type_n > highest) { highest = c.type_n; idx = i; }
+    });
+    if (idx < 0) return;
+    const gone = state.combatants.splice(idx, 1)[0];
+    if (state.activeId === gone.id) state.activeId = null;
+    if (state.focusOverride === gone.id) state.focusOverride = null;
+    if (state.condPanelOpen === gone.id) state.condPanelOpen = null;
+    const ai = state.actedThisRound.indexOf(gone.id);
+    if (ai >= 0) state.actedThisRound.splice(ai, 1);
+  }
+
+  function defaultState() {
+    const combatants = ENCOUNTER.combatants.map((c, i) => ({
+      id: combatantId(c, i),
+      kind: c.kind || "npc",
+      type_id: c.type_id || null,
+      type_n: c.type_n || null,
+      name: c.name,
+      ac: c.ac,
+      hp_max: c.hp_max,
+      hp_current: (c.hp_current == null) ? c.hp_max : c.hp_current,
+      speed: c.speed || "",
+      initiative: (c.initiative === undefined ? null : c.initiative),
+      init_mod: c.init_mod || "",
+      group: c.group || null,
+      notes: c.notes || "",
+      conditions: Array.isArray(c.conditions) ? c.conditions.slice() : []
+    }));
+    ROSTER.forEach(entry => {
+      const start = parseInt(entry.start, 10);
+      for (let i = 0; i < (Number.isFinite(start) ? start : 0); i++) spawnOne(combatants, entry);
+    });
+    return {
+      round: 1,
+      activeId: null,
+      focusOverride: null,
+      activeTab: null,
+      actedThisRound: [],
+      rechargeSpent: {},
+      condPanelOpen: null,
+      combatants: combatants
+    };
+  }
+  function loadState() {
+    try {
+      const raw = localStorage.getItem(STORAGE_KEY);
+      if (!raw) return null;
+      const p = JSON.parse(raw);
+      if (!p || !Array.isArray(p.combatants)) return null;
+      // back-compat patches
+      if (!Array.isArray(p.actedThisRound)) p.actedThisRound = [];
+      if (!p.rechargeSpent) p.rechargeSpent = {};
+      return p;
+    } catch (e) { return null; }
+  }
+  function saveState() {
+    try { localStorage.setItem(STORAGE_KEY, JSON.stringify(state)); } catch (e) {}
+  }
+  let state = loadState() || defaultState();
+
+  // ─── Tweaks state ───────────────────────────────────────────────────
+  function defaultTweaks() {
+    return { accent: "ochre", density: "default", fontSize: 15 };
+  }
+  function loadTweaks() {
+    try { return Object.assign(defaultTweaks(), JSON.parse(localStorage.getItem(TWEAKS_KEY) || "{}")); }
+    catch (e) { return defaultTweaks(); }
+  }
+  function saveTweaks() {
+    try { localStorage.setItem(TWEAKS_KEY, JSON.stringify(tweaks)); } catch (e) {}
+  }
+  let tweaks = loadTweaks();
+
+  // ─── Helpers ────────────────────────────────────────────────────────
+  function esc(s) {
+    return String(s == null ? "" : s).replace(/[&<>"']/g,
+      m => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[m]));
+  }
+  function numClass(text) {
+    // Wrap dice/DCs/distances in highlight spans.
+    // We MUST do this before escape, otherwise the regex chews into
+    // HTML entities like &#39; (apostrophe) and breaks them.
+    const PRE  = "\x01N\x01";
+    const POST = "\x02N\x02";
+    const re = /\b(DC\s*\d+|[+-]?\d+d\d+(?:[+-]\d+)?|\d+\s*\(\d+d\d+(?:[+-]\d+)?\)|[+-]?\d+\s+(?:ft\.|to\s+hit))/g;
+    let s = String(text == null ? "" : text).replace(re, m => PRE + m + POST);
+    s = esc(s);
+    s = s.split(PRE).join('<span class="num">').split(POST).join('</span>');
+    return s;
+  }
+  function sortedCombatants() {
+    const list = state.combatants.slice();
+    const origIndex = new Map(state.combatants.map((c, i) => [c.id, i]));
+    list.sort((a, b) => {
+      const ai = (a.initiative == null) ? -Infinity : a.initiative;
+      const bi = (b.initiative == null) ? -Infinity : b.initiative;
+      if (bi !== ai) return bi - ai;
+      return origIndex.get(a.id) - origIndex.get(b.id);
+    });
+    return list;
+  }
+  function hpClass(hpCur, hpMax) {
+    if (hpCur <= 0) return "dead";
+    if (hpCur <= hpMax * 0.33) return "bloodied";
+    if (hpCur <= hpMax * 0.66) return "low";
+    return "";
+  }
+
+  // ─── Reference matching ─────────────────────────────────────────────
+  function npcBaseName(name) {
+    return String(name || "")
+      .replace(/\s*\[[A-Za-z0-9]+\]\s*$/, "")
+      .replace(/\s+\d+\s*$/, "")
+      .trim();
+  }
+  function pcBaseName(name) {
+    return String(name || "").replace(/\s*\([^)]*\)\s*$/, "").trim();
+  }
+  function blockBaseName(s) {
+    return String(s || "").split(/\s+[—–-]\s+/)[0].split(/\s*\(/)[0].trim();
+  }
+  function findReferenceFor(c) {
+    if (!c) return null;
+    if (c.kind === "pc") {
+      const base = pcBaseName(c.name);
+      return (ENCOUNTER.pc_blocks || []).find(p => {
+        const bn = blockBaseName(p.header || p.name || "");
+        return bn === base || base.startsWith(bn) || bn.startsWith(base);
+      }) || null;
+    }
+    const base = npcBaseName(c.name);
+    return (ENCOUNTER.npc_blocks || []).find(b => {
+      const bn = blockBaseName(b.title || b.name || "");
+      return bn === base || base.startsWith(bn) || bn.startsWith(base);
+    }) || null;
+  }
+
+  // ─── Parsers ────────────────────────────────────────────────────────
+  function parseAbilities(text) {
+    if (!text) return null;
+    const out = {};
+    const re = /(STR|DEX|CON|INT|WIS|CHA)\s+(\d+)\s*\(([+-]?\d+)\)/g;
+    let m, found = false;
+    while ((m = re.exec(text)) !== null) {
+      out[m[1]] = { score: parseInt(m[2], 10), mod: parseInt(m[3], 10) };
+      found = true;
+    }
+    return found ? out : null;
+  }
+  function parseTitleCaption(title) {
+    // "Mama Mantis (Orchid Mantis, Spring) — Large Monstrosity (mantis), Unaligned"
+    // -> { name: "Mama Mantis (Orchid Mantis, Spring)", caption: "Large Monstrosity (mantis), Unaligned" }
+    const s = String(title || "");
+    const m = s.split(/\s+—\s+|\s+–\s+/);
+    if (m.length >= 2) return { name: m[0], caption: m.slice(1).join(" — ") };
+    return { name: s, caption: "" };
+  }
+  function parseStatsLine(text) {
+    if (!text) return {};
+    const result = {};
+    // Drop everything to keep the parts we want
+    const parts = text.split(/\s*\|\s*/);
+    parts.forEach(p => {
+      const t = p.trim();
+      let m;
+      if ((m = t.match(/^AC\s+(\d+)(?:\s*\(([^)]+)\))?/i))) {
+        result.ac = parseInt(m[1], 10);
+        result.ac_note = m[2] || "";
+      } else if ((m = t.match(/^HP\s+([^\s(]+)(?:\s*\(([^)]+)\))?/i))) {
+        result.hp_text = m[1];
+      } else if ((m = t.match(/^Speed\s+(.+)/i))) {
+        result.speed = m[1].trim();
+      } else if (/\b(STR|DEX|CON|INT|WIS|CHA)\s+\d+/.test(t)) {
+        const ab = parseAbilities(t);
+        if (ab) result.abilities = ab;
+      }
+    });
+    return result;
+  }
+  function parseDefenses(text) {
+    if (!text) return {};
+    const out = {};
+    text.split(/\s*\|\s*/).forEach(part => {
+      const t = part.trim();
+      let m;
+      if ((m = t.match(/^Saves?:\s*(.+)/i)))                       out.saves = m[1];
+      else if ((m = t.match(/^Skills?:\s*(.+)/i)))                 out.skills = m[1];
+      else if ((m = t.match(/^Senses?:\s*(.+)/i))) {
+        out.senses = m[1];
+        const pp = m[1].match(/passive\s+Perception\s+(\d+)/i);
+        if (pp) out.passivePerception = parseInt(pp[1], 10);
+      }
+      else if ((m = t.match(/^(?:Damage\s+)?Resistances?:\s*(.+)/i))) out.resistances = m[1];
+      else if ((m = t.match(/^(?:Damage\s+)?Immunit(?:y|ies):\s*(.+)/i))) out.damageImmunities = m[1];
+      else if ((m = t.match(/^Immune\s*\(damage\):\s*(.+)/i)))     out.damageImmunities = m[1];
+      else if ((m = t.match(/^Condition\s+Immunit(?:y|ies):\s*(.+)/i))) out.conditionImmunities = m[1];
+      else if ((m = t.match(/^Immune\s*\(conditions\):\s*(.+)/i))) out.conditionImmunities = m[1];
+      else if ((m = t.match(/^Vulnerab(?:le|ility|ilities):\s*(.+)/i))) out.vulnerabilities = m[1];
+      else if ((m = t.match(/^Languages?:\s*(.+)/i)))              out.languages = m[1];
+      else if (/^(CR|PB)\s/i.test(t)) { /* drop CR/XP/PB per spec */ }
+      else if (t) {
+        out._extras = (out._extras || []).concat(t);
+      }
+    });
+    return out;
+  }
+  function parsePcHeader(text) {
+    // "Tabatha Starr (Heather) — Ranger 6 (Gloomstalker) | Lone Star Tick | AC 15 | HP 42 | Speed 30 | Passive Perception 15 | Init +6"
+    if (!text) return {};
+    const out = {};
+    const parts = text.split(/\s*\|\s*/);
+    const firstSplit = parts[0].split(/\s+—\s+|\s+–\s+/);
+    out.name = (firstSplit[0] || "").trim();
+    out.classLine = (firstSplit.slice(1).join(" — ") || "").trim();
+    parts.slice(1).forEach(p => {
+      const t = p.trim();
+      let m;
+      if ((m = t.match(/^AC\s+(\d+)(?:\s*\(([^)]+)\))?/i))) {
+        out.ac = parseInt(m[1], 10);
+        out.ac_note = m[2] || "";
+      } else if ((m = t.match(/^HP\s+(\d+)/i))) {
+        out.hp = parseInt(m[1], 10);
+      } else if ((m = t.match(/^Speed\s+(.+)/i))) {
+        out.speed = m[1].trim();
+      } else if ((m = t.match(/^Passive\s+Perception\s+(\d+)/i))) {
+        out.passivePerception = parseInt(m[1], 10);
+      } else if ((m = t.match(/^Init\s+([+-]?\d+)/i))) {
+        out.init = m[1];
+      } else if (t && !out.species) {
+        out.species = t;
+      }
+    });
+    return out;
+  }
+  function parseAttacksList(text) {
+    if (!text) return [];
+    // Split on " | " or "  |  " (double-pipe spacing in the source)
+    return text.split(/\s+\|\s+/).map(s => s.trim()).filter(Boolean);
+  }
+  function parseSpellsByLevel(text) {
+    if (!text) return [];
+    // Split on patterns like "1st:", "2nd (4 slots):", "Cantrips:" etc.
+    const re = /(Cantrips|\d+(?:st|nd|rd|th))\s*(?:\(([^)]+)\))?\s*:\s*([^]*?)(?=(?:Cantrips|\d+(?:st|nd|rd|th))\s*(?:\([^)]*\))?\s*:|$)/g;
+    const out = [];
+    let m;
+    while ((m = re.exec(text)) !== null) {
+      out.push({
+        level: m[1],
+        meta: (m[2] || "").trim(),
+        list: m[3].trim().replace(/[,.\s]+$/, "")
+      });
+    }
+    if (!out.length) out.push({ level: "All", meta: "", list: text });
+    return out;
+  }
+  function parseFeaturesList(text) {
+    if (!text) return [];
+    // Heuristic: split on " . " or ". " followed by capitalized word that ends with ':' soon after, or " | "
+    // Easier: split by " | " if present, else split by ". " when followed by uppercase.
+    if (text.indexOf("|") >= 0) return text.split(/\s*\|\s*/).map(s => s.trim()).filter(Boolean);
+    // Otherwise, split by sentence-ish boundary at "Capitalized Feature Name:"
+    // We just look for patterns "Word: " or "Word feat:" / "Word (feat):" preceded by ". "
+    // Fallback: just return the whole thing as one item.
+    const sentences = text.split(/(?<=\.)\s+(?=[A-Z][^.]{0,80}?:)/);
+    return sentences.map(s => s.trim()).filter(Boolean);
+  }
+  function parseRechargeFromName(name) {
+    if (!name) return null;
+    const m = String(name).match(/\(Recharge\s+([\d–\-]+)\)/i);
+    if (!m) return null;
+    return { raw: m[0], rangeText: m[1] };
+  }
+
+  // ─── Recharge index for active combatant ────────────────────────────
+  function collectRechargeActions(block) {
+    if (!block || !Array.isArray(block.sections)) return [];
+    const out = [];
+    block.sections.forEach(s => {
+      (s.entries || []).forEach(e => {
+        const r = parseRechargeFromName(e.name);
+        if (r) out.push({ actionName: e.name.replace(/\s*\(Recharge[^)]+\)\s*$/i, "").trim(), rangeText: r.rangeText, raw: r.raw });
+      });
+    });
+    return out;
+  }
+
+  // ─── Rendering ──────────────────────────────────────────────────────
+  function renderTopbar() {
+    const nm = ENCOUNTER.name || "Encounter";
+    document.getElementById("encounter-name").innerHTML = esc(nm);
+    document.title = "Encounter — " + nm;
+    document.getElementById("round-num").textContent = state.round;
+  }
+
+  function renderTracker() {
+    const root = document.getElementById("tracker-rows");
+    root.innerHTML = "";
+    const list = sortedCombatants();
+
+    list.forEach(c => {
+      const row = document.createElement("div");
+      row.className = "row " + (c.kind || "npc");
+      row.dataset.id = c.id;
+      if (c.id === state.activeId) row.classList.add("active");
+      else if (state.actedThisRound.indexOf(c.id) >= 0) row.classList.add("acted");
+      if (c.id === state.focusOverride && c.id !== state.activeId) row.classList.add("focused");
+      if (c.hp_current <= 0) row.classList.add("dead");
+
+      // Init
+      const init = document.createElement("input");
+      init.type = "text";
+      init.inputMode = "numeric";
+      init.pattern = "-?[0-9]*";
+      init.maxLength = 3;
+      init.className = "init" + (c.initiative == null ? " empty" : "");
+      const initStr = c.initiative == null ? "" : String(c.initiative);
+      init.value = initStr;
+      init.setAttribute("value", initStr); // serialize for screenshot/print
+      init.placeholder = "—";
+      init.setAttribute("aria-label", "Initiative for " + c.name);
+      ["click", "touchstart", "mousedown"].forEach(ev => init.addEventListener(ev, e => e.stopPropagation()));
+      init.addEventListener("focus", () => init.select());
+      init.addEventListener("blur", () => commitInit(c, init));
+      init.addEventListener("keydown", e => { if (e.key === "Enter") { e.preventDefault(); init.blur(); } });
+      row.appendChild(init);
+
+      // Info
+      const info = document.createElement("div");
+      info.className = "info";
+      const groupTag = c.group ? ' <span class="group-tag">GRP ' + esc(c.group) + '</span>' : '';
+      const initMod = c.init_mod ? '<span class="init-mod">' + esc(c.init_mod) + '</span>' : '';
+      info.innerHTML =
+        '<div class="name">' + esc(c.name) + groupTag + '</div>' +
+        '<div class="meta">' +
+          '<span class="ac">' + esc(c.ac) + '</span>' +
+          (c.speed ? '<span class="speed">' + esc(c.speed) + '</span>' : '') +
+          initMod +
+        '</div>';
+      row.appendChild(info);
+
+      // Pills column (separate grid track — fills empty row space to the right of info)
+      const pillsCol = document.createElement("div");
+      pillsCol.className = "row-pills";
+      pillsCol.innerHTML = c.conditions.map(cn => '<span class="pill">' + esc(cn) + '</span>').join('');
+      row.appendChild(pillsCol);
+
+      // HP column
+      const hpc = hpClass(c.hp_current, c.hp_max);
+      const pct = Math.max(0, Math.min(100, (c.hp_current / Math.max(1, c.hp_max)) * 100));
+      const hpCol = document.createElement("div");
+      hpCol.className = "hp-col";
+      hpCol.innerHTML =
+        '<div class="hp-display ' + hpc + '">' +
+          esc(c.hp_current) + '<span class="sep">/</span><span class="max">' + esc(c.hp_max) + '</span>' +
+        '</div>' +
+        '<div class="hp-bar"><div class="hp-bar-fill ' + hpc + '" style="width:' + pct + '%"></div></div>';
+      row.appendChild(hpCol);
+
+      // Controls
+      const ctrl = document.createElement("div");
+      ctrl.className = "controls";
+      ctrl.innerHTML =
+        '<input type="number" class="amt" inputmode="numeric" placeholder="—" min="0">' +
+        '<button class="dmg" title="Apply damage">−</button>' +
+        '<button class="heal" title="Apply healing">+</button>' +
+        '<button class="cond' + (c.conditions.length ? ' has' : '') + (state.condPanelOpen === c.id ? ' open' : '') + '" title="Conditions">' +
+          'Cond' +
+        '</button>';
+      const amt = ctrl.querySelector(".amt");
+      ["click","touchstart","focus"].forEach(ev => amt.addEventListener(ev, e => e.stopPropagation()));
+      ctrl.querySelector(".dmg").addEventListener("click", e => {
+        e.stopPropagation();
+        const n = parseInt(amt.value, 10);
+        if (!Number.isFinite(n) || n < 0) return;
+        c.hp_current = Math.max(0, c.hp_current - n);
+        amt.value = ""; saveState(); renderTracker(); renderActiveRef();
+      });
+      ctrl.querySelector(".heal").addEventListener("click", e => {
+        e.stopPropagation();
+        const n = parseInt(amt.value, 10);
+        if (!Number.isFinite(n) || n < 0) return;
+        c.hp_current = Math.min(c.hp_max, c.hp_current + n);
+        amt.value = ""; saveState(); renderTracker(); renderActiveRef();
+      });
+      const condBtn = ctrl.querySelector(".cond");
+      condBtn.addEventListener("click", e => {
+        e.stopPropagation();
+        state.condPanelOpen = state.condPanelOpen === c.id ? null : c.id;
+        saveState(); renderTracker();
+      });
+      row.appendChild(ctrl);
+
+      // Conditions panel (inline expander)
+      if (state.condPanelOpen === c.id) {
+        const condPanel = document.createElement("div");
+        condPanel.className = "cond-panel open";
+        condPanel.innerHTML = '<div class="pills">' +
+          CONDITIONS.map(cn => {
+            const on = c.conditions.indexOf(cn) >= 0;
+            return '<button class="pill-tog ' + (on ? 'on' : '') + '" data-c="' + esc(cn) + '">' + esc(cn) + '</button>';
+          }).join('') + '</div>';
+        condPanel.addEventListener("click", e => e.stopPropagation());
+        condPanel.querySelectorAll(".pill-tog").forEach(btn => {
+          btn.addEventListener("click", () => {
+            const cn = btn.dataset.c;
+            const idx = c.conditions.indexOf(cn);
+            if (idx >= 0) c.conditions.splice(idx, 1); else c.conditions.push(cn);
+            saveState(); renderTracker(); renderActiveRef();
+          });
+        });
+        row.appendChild(condPanel);
+      }
+
+      root.appendChild(row);
+    });
+    document.getElementById("round-num").textContent = state.round;
+    renderMuster();
+  }
+
+  function renderMuster() {
+    const root = document.getElementById("muster");
+    if (!root) return;
+    if (!ROSTER.length) { root.innerHTML = ""; return; }
+    root.innerHTML = '<span class="muster-label">Muster</span>' + ROSTER.map((e, i) => {
+      const n = typeCount(state.combatants, e);
+      return '<span class="muster-item' + (n ? '' : ' none') + '" data-i="' + i + '">' +
+        '<button class="mus-minus" ' + (n ? '' : 'disabled') +
+          ' aria-label="Remove one ' + esc(e.name) + '" title="Remove one ' + esc(e.name) + '">−</button>' +
+        '<span class="mus-name">' + esc(e.name) + '</span>' +
+        '<span class="mus-count">' + n + '</span>' +
+        '<button class="mus-plus" aria-label="Add one ' + esc(e.name) +
+          '" title="Add one ' + esc(e.name) + ' (rolls HP, initiative left blank)">+</button>' +
+      '</span>';
+    }).join('');
+    root.querySelectorAll(".muster-item").forEach(el => {
+      const entry = ROSTER[parseInt(el.dataset.i, 10)];
+      el.querySelector(".mus-plus").addEventListener("click", ev => {
+        ev.stopPropagation();
+        spawnOne(state.combatants, entry);
+        saveState(); renderTracker(); renderActiveRef();
+      });
+      el.querySelector(".mus-minus").addEventListener("click", ev => {
+        ev.stopPropagation();
+        despawnOne(entry);
+        saveState(); renderTracker(); renderActiveRef();
+      });
+    });
+  }
+
+  function commitInit(c, inputEl) {
+    const t = inputEl.value.trim();
+    let newVal;
+    if (t === "") newVal = null;
+    else {
+      const n = parseInt(t, 10);
+      if (Number.isNaN(n)) { inputEl.value = c.initiative == null ? "" : String(c.initiative); return; }
+      newVal = n;
+    }
+    if (newVal === c.initiative) return;
+    c.initiative = newVal;
+    saveState(); renderTracker();
+  }
+
+  // ─── Active reference panel ─────────────────────────────────────────
+  function renderActiveRef() {
+    const root = document.getElementById("active-ref");
+    const focusedId = state.focusOverride || state.activeId;
+
+    if (!focusedId) {
+      root.innerHTML = '<div class="empty"><strong>No active turn</strong>Press <b>Next ▶</b> to begin combat, or tap any row to pin its reference here.</div>';
+      return;
+    }
+    const c = state.combatants.find(x => x.id === focusedId);
+    if (!c) { root.innerHTML = ""; return; }
+    const block = findReferenceFor(c);
+    if (!block) {
+      root.innerHTML = '<div class="empty"><strong>' + esc(c.name) + '</strong>No reference block matched.</div>';
+      return;
+    }
+
+    if (c.kind === "pc") renderPcRef(root, c, block);
+    else renderNpcRef(root, c, block);
+  }
+
+  // ── NPC active reference
+  function renderNpcRef(root, c, block) {
+    const tc = parseTitleCaption(block.title);
+    const stats = parseStatsLine(block.stats);
+    const defenses = parseDefenses(block.defenses);
+    const abilities = stats.abilities || parseAbilities(block.stats);
+
+    const hpc = hpClass(c.hp_current, c.hp_max);
+    const isPinned = state.focusOverride && state.focusOverride !== state.activeId;
+    const isCurrent = c.id === state.activeId;
+
+    // Section index
+    const sections = block.sections || [];
+    const tacticsSection = sections.find(s => /tactics/i.test(s.label || ""));
+    const actionsSections = sections.filter(s => !/tactics/i.test(s.label || ""));
+    // Count only NON-trait entries for the Actions tab badge (traits live on the Stats tab).
+    const visibleActionCount = actionsSections.reduce((n, s) =>
+      n + (/trait/i.test(s.label || "") ? 0 : (s.entries || []).length), 0);
+
+    // Recharge actions for this NPC
+    const rechargers = collectRechargeActions(block);
+    const spent = state.rechargeSpent[c.id] || {};
+
+    // Available tabs
+    const tabs = [];
+    tabs.push({ id: "stats", label: "Stats" });
+    if (visibleActionCount) tabs.push({ id: "actions", label: "Actions", badge: visibleActionCount });
+    if (tacticsSection) tabs.push({ id: "tactics", label: "Tactics" });
+
+    // Active tab fallback
+    let activeTab = state.activeTab;
+    if (!activeTab || !tabs.find(t => t.id === activeTab)) {
+      activeTab = (isCurrent && visibleActionCount) ? "actions" : "stats";
+    }
+
+    // Header HTML
+    const eyebrow =
+      '<div class="ar-eyebrow">' +
+        '<span class="kind">NPC' + (c.group ? ' · Group ' + esc(c.group) : '') + '</span>' +
+        '<span class="status ' + (isPinned ? 'pinned' : (isCurrent ? 'current' : '')) + '">' +
+          (isPinned ? 'Pinned · tap row to unpin' : (isCurrent ? "Active turn" : '')) +
+        '</span>' +
+      '</div>';
+
+    const headerHtml =
+      '<div class="ar-head">' +
+        eyebrow +
+        '<div class="ar-head-main">' +
+          '<h2>' + esc(c.name) + '</h2>' +
+          (tc.caption ? '<div class="ar-caption">' + esc(tc.caption) + '</div>' : '') +
+        '</div>' +
+        renderStatStrip(c, hpc, stats, defenses) +
+        (rechargers.length ? '<div class="ar-recharge-row">' + renderRechargeStrip(rechargers, spent, c.id) + '</div>' : '') +
+      '</div>';
+
+    // Tabs HTML
+    const tabsHtml = '<div class="ar-tabs">' + tabs.map(t =>
+      '<button class="ar-tab' + (t.id === activeTab ? ' active' : '') + '" data-tab="' + t.id + '">' +
+        esc(t.label) + (t.badge ? '<span class="badge">' + t.badge + '</span>' : '') +
+      '</button>'
+    ).join('') + '</div>';
+
+    // Body content per tab
+    let body = "";
+    if (activeTab === "stats") body = renderNpcStatsTab(c, abilities, defenses, stats, block);
+    else if (activeTab === "actions") body = renderNpcActionsTab(actionsSections, spent);
+    else if (activeTab === "tactics") body = renderNpcTacticsTab(tacticsSection);
+
+    root.innerHTML = headerHtml + tabsHtml + '<div class="ar-body">' + body + '</div>';
+
+    // Wire tab buttons
+    root.querySelectorAll(".ar-tab").forEach(btn => {
+      btn.addEventListener("click", () => {
+        state.activeTab = btn.dataset.tab;
+        saveState();
+        renderActiveRef();
+      });
+    });
+    // Wire recharge chips
+    root.querySelectorAll(".recharge-chip").forEach(chip => {
+      chip.addEventListener("click", () => {
+        const an = chip.dataset.action;
+        const map = state.rechargeSpent[c.id] || (state.rechargeSpent[c.id] = {});
+        map[an] = !map[an];
+        saveState();
+        renderActiveRef();
+      });
+    });
+  }
+  function countActionEntries(sections) {
+    return sections.reduce((n, s) => n + (s.entries || []).length, 0);
+  }
+
+  // ── PC active reference
+  function renderPcRef(root, c, block) {
+    const hdr = parsePcHeader(block.header);
+    const abilities = parseAbilities(block.abilities);
+    const hpc = hpClass(c.hp_current, c.hp_max);
+    const isPinned = state.focusOverride && state.focusOverride !== state.activeId;
+    const isCurrent = c.id === state.activeId;
+
+    const attacksList = parseAttacksList(block.attacks);
+    const spellsLevels = parseSpellsByLevel(block.spells);
+    const featuresList = parseFeaturesList(block.features);
+
+    const tabs = [{ id: "stats", label: "Stats" }];
+    if (attacksList.length) tabs.push({ id: "attacks", label: "Attacks", badge: attacksList.length });
+    if (block.spells) tabs.push({ id: "spells", label: "Spells" });
+    if (block.features) tabs.push({ id: "features", label: "Features" });
+
+    let activeTab = state.activeTab;
+    if (!activeTab || !tabs.find(t => t.id === activeTab)) activeTab = "stats";
+
+    // Build a synthetic "stats" line so renderStatStrip works
+    const fauxStats = { speed: hdr.speed, ac_note: hdr.ac_note };
+    const fauxDefenses = { passivePerception: hdr.passivePerception };
+
+    const headerHtml =
+      '<div class="ar-head">' +
+        '<div class="ar-eyebrow">' +
+          '<span class="kind">PC' + (hdr.species ? ' · ' + esc(hdr.species) : '') + '</span>' +
+          '<span class="status ' + (isPinned ? 'pinned' : (isCurrent ? 'current' : '')) + '">' +
+            (isPinned ? 'Pinned · tap row to unpin' : (isCurrent ? "Active turn" : '')) +
+          '</span>' +
+        '</div>' +
+        '<div class="ar-head-main">' +
+          '<h2>' + esc(hdr.name || c.name) + '</h2>' +
+          (hdr.classLine ? '<div class="ar-caption">' + esc(hdr.classLine) + '</div>' : '') +
+        '</div>' +
+        renderPcStatStrip(c, hpc, hdr, block) +
+      '</div>';
+
+    const tabsHtml = '<div class="ar-tabs">' + tabs.map(t =>
+      '<button class="ar-tab' + (t.id === activeTab ? ' active' : '') + '" data-tab="' + t.id + '">' +
+        esc(t.label) + (t.badge ? '<span class="badge">' + t.badge + '</span>' : '') +
+      '</button>'
+    ).join('') + '</div>';
+
+    let body = "";
+    if (activeTab === "stats") body = renderPcStatsTab(c, abilities, block);
+    else if (activeTab === "attacks") body = renderPcAttacksTab(attacksList);
+    else if (activeTab === "spells") body = renderPcSpellsTab(spellsLevels);
+    else if (activeTab === "features") body = renderPcFeaturesTab(featuresList);
+
+    root.innerHTML = headerHtml + tabsHtml + '<div class="ar-body">' + body + '</div>';
+
+    root.querySelectorAll(".ar-tab").forEach(btn => {
+      btn.addEventListener("click", () => {
+        state.activeTab = btn.dataset.tab;
+        saveState();
+        renderActiveRef();
+      });
+    });
+  }
+
+  // ── Stat strip renderers (header bottom)
+  function renderStatStrip(c, hpc, stats, defenses) {
+    // For NPCs: surface only info NOT shown in the initiative row (senses, passive Perception).
+    // AC / HP / Speed already live on the row.
+    const sensesText = defenses.senses || "";
+    const ppMatch = sensesText.match(/passive\s+Perception\s+(\d+)/i);
+    const pp = ppMatch ? parseInt(ppMatch[1], 10) : (defenses.passivePerception || null);
+    // Strip pp from the senses string for the row to avoid double-display
+    const sensesClean = sensesText.replace(/[,;]?\s*passive\s+Perception\s+\d+\.?/i, "").trim().replace(/,\s*$/, "");
+
+    const acNoteRow = stats.ac_note ? '<dt>AC Type</dt><dd>' + esc(stats.ac_note) + '</dd>' : '';
+    const senseRow = sensesClean ? '<dt>Senses</dt><dd>' + esc(sensesClean) + '</dd>' : '';
+    const ppRow = (pp != null) ? '<dt>Pass. Perc.</dt><dd class="passive"><span class="pp-val">' + pp + '</span></dd>' : '';
+
+    if (!acNoteRow && !senseRow && !ppRow) return "";
+    return '<dl class="ar-supp">' + acNoteRow + senseRow + ppRow + '</dl>';
+  }
+  function renderPcStatStrip(c, hpc, hdr, block) {
+    // For PCs: surface info NOT in the row (passive Perception, save proficiencies, spell DC / attack).
+    // AC / HP / Speed / Init already on the row.
+    const rows = [];
+    if (hdr.passivePerception != null) {
+      rows.push('<dt>Pass. Perc.</dt><dd class="passive"><span class="pp-val">' + hdr.passivePerception + '</span></dd>');
+    }
+    if (block && block.saves) {
+      // Compress "STR +5 (prof), DEX +7 (prof). Others use ability mod." to just the prof list.
+      const profs = (block.saves.match(/([A-Z]{3})\s+([+-]?\d+)\s*\(prof\)/g) || []).join(", ");
+      const display = profs || block.saves;
+      rows.push('<dt>Saves</dt><dd>' + numClass(display) + '</dd>');
+    }
+    // Detect spell DC / attack bonus from spells block, if present
+    if (block && block.spells) {
+      const m = block.spells.match(/(?:save\s*DC|DC)\s*(\d+)/i);
+      const a = block.spells.match(/(?:spell\s*attack|atk)\s*([+-]?\d+)/i);
+      if (m || a) {
+        const parts = [];
+        if (m) parts.push('DC <span class="num">' + esc(m[1]) + '</span>');
+        if (a) parts.push('atk <span class="num">' + esc(a[1]) + '</span>');
+        rows.push('<dt>Spellcasting</dt><dd>' + parts.join(' · ') + '</dd>');
+      }
+    }
+    if (!rows.length) return "";
+    return '<dl class="ar-supp">' + rows.join("") + '</dl>';
+  }
+
+  // ── Recharge strip
+  function renderRechargeStrip(rechargers, spent, cid) {
+    return '<div class="ar-recharge">' + rechargers.map(r => {
+      const isSpent = !!spent[r.actionName];
+      return '<button class="recharge-chip ' + (isSpent ? 'spent' : '') + '" data-action="' + esc(r.actionName) + '">' +
+        esc(r.actionName) + '<span class="die">' + esc(r.rangeText) + '</span>' +
+      '</button>';
+    }).join('') + '</div>';
+  }
+
+  // ── NPC stats tab
+  function renderNpcStatsTab(c, abilities, defenses, stats, block) {
+    let html = "";
+    if (abilities) html += renderAbilityTable(abilities);
+
+    const lines = [];
+    if (defenses.saves)               lines.push(["Saves", defenses.saves]);
+    if (defenses.skills)              lines.push(["Skills", defenses.skills]);
+    // Senses already shown in the header strip — don't repeat here.
+    if (defenses.languages)           lines.push(["Languages", defenses.languages]);
+    if (defenses.vulnerabilities)     lines.push(["Vulnerable", defenses.vulnerabilities]);
+    if (defenses.resistances)         lines.push(["Resists", defenses.resistances]);
+    if (defenses.damageImmunities)    lines.push(["Dmg Immune", defenses.damageImmunities]);
+    if (defenses.conditionImmunities) lines.push(["Cond Immune", defenses.conditionImmunities]);
+    if (defenses._extras)             defenses._extras.forEach(e => lines.push(["Other", e]));
+
+    if (lines.length) {
+      html += '<div class="ar-section">' +
+        '<div class="ar-section-head">Defenses</div>' +
+        '<dl style="margin:0">' +
+        lines.map(([k, v]) => '<div class="kv-line"><dt>' + esc(k) + '</dt><dd>' + numClass(v) + '</dd></div>').join('') +
+        '</dl>' +
+      '</div>';
+    }
+
+    // Add TRAITS section to stats tab (always-on passive abilities)
+    const traits = (block.sections || []).find(s => /trait/i.test(s.label || ""));
+    if (traits && (traits.entries || []).length) {
+      html += '<div class="ar-section"><div class="ar-section-head">Traits</div>';
+      traits.entries.forEach(e => {
+        html += '<div class="action-entry">' +
+          '<div class="entry-name">' + esc(e.name) + '</div>' +
+          '<div class="entry-text">' + numClass(e.text) + '</div>' +
+        '</div>';
+      });
+      html += '</div>';
+    }
+
+    if (c.notes) html += '<div class="npc-notes">' + esc(c.notes) + '</div>';
+    return html;
+  }
+  function renderAbilityTable(abilities) {
+    let html = '<div class="ability-table">';
+    ABILITIES.forEach(ab => {
+      const v = abilities[ab];
+      if (!v) {
+        html += '<div class="ability-cell">' +
+          '<div class="ab-name">' + ab + '</div>' +
+          '<div class="ab-mod">—</div>' +
+        '</div>';
+      } else {
+        const sign = v.mod >= 0 ? "+" : "";
+        const cls = v.mod > 0 ? "pos" : v.mod < 0 ? "neg" : "";
+        html += '<div class="ability-cell">' +
+          '<div class="ab-name">' + ab + '</div>' +
+          '<div class="ab-mod ' + cls + '">' + sign + v.mod + '</div>' +
+          '<div class="ab-score">' + v.score + '</div>' +
+        '</div>';
+      }
+    });
+    return html + '</div>';
+  }
+
+  // ── Parse a single attack entry's text into structured stats
+  // Recognizes patterns like:
+  //   "Melee Weapon Attack: +7 to hit, reach 10 ft., one target. Hit: 13 (2d8+4) slashing. On a crit: ..."
+  //   "Ranged Spell Attack: +5 to hit, range 60 ft. Hit: 9 (2d6+2) fire damage."
+  //   "DC 15 STR save or ... "
+  // Returns { type, toHit, range, target, hit, extra } or null if it doesn't look like an attack.
+  function parseAttackEntry(text) {
+    if (!text) return null;
+    const s = String(text);
+    // Type prefix
+    const typeMatch = s.match(/^(Melee|Ranged)\s+(Weapon|Spell)\s+Attack:/i);
+    const isAttack = !!typeMatch;
+    // To-hit
+    const hitM = s.match(/([+-]\d+)\s+to\s+hit/i);
+    // Reach or range
+    const reachM = s.match(/reach\s+(\d+\s*ft\.?(?:\s*\/\s*\d+\s*ft\.?)?)/i);
+    const rangeM = s.match(/range\s+(\d+\s*(?:\/\s*\d+\s*)?ft\.?)/i);
+    // Hit damage (first occurrence after "Hit:")
+    const hitDmgM = s.match(/Hit:\s+(\d+\s*\([^)]+\)\s+[a-z]+(?:\s+damage)?)/i);
+    // Save-only attacks (DC X SAVE ...) when no to-hit
+    const saveM = !hitM ? s.match(/DC\s+(\d+)\s+([A-Z]{3})\s+save/i) : null;
+
+    if (!isAttack && !hitM && !saveM) return null;
+
+    // Compact type label — drop the verbose suffix
+    let type = "";
+    if (typeMatch) {
+      const which = typeMatch[1].toLowerCase();  // melee | ranged
+      const kind = typeMatch[2].toLowerCase();   // weapon | spell
+      type = (kind === "spell") ? "Spell" : (which === "melee" ? "Melee" : "Ranged");
+    } else if (saveM) {
+      type = "Save";
+    } else {
+      type = "Attack";
+    }
+
+    const out = {
+      type: type,
+      toHit: hitM ? hitM[1] : (saveM ? "DC " + saveM[1] + " " + saveM[2] : ""),
+      range: reachM ? "reach " + reachM[1] : (rangeM ? "range " + rangeM[1] : ""),
+      hit: hitDmgM ? hitDmgM[1].trim() : "",
+      extra: ""
+    };
+    // Extra: everything left over after stripping the standardized bits.
+    let extra = s;
+    if (typeMatch) extra = extra.replace(typeMatch[0], "");
+    if (hitM) extra = extra.replace(/([+-]\d+)\s+to\s+hit,?\s*/i, "");
+    if (reachM) extra = extra.replace(/reach\s+\d+\s*ft\.?(?:\s*\/\s*\d+\s*ft\.?)?,?\s*/i, "");
+    if (rangeM) extra = extra.replace(/range\s+\d+\s*(?:\/\s*\d+\s*)?ft\.?,?\s*/i, "");
+    extra = extra.trimStart();
+    // Strip target phrase: "one creature", "one Medium-or-smaller target", "one target you can see", etc.
+    extra = extra.replace(/^one\s+[^.]*?(?:target|creature|object|enemy)[^.]*\.\s*/i, "");
+    if (hitDmgM) extra = extra.replace(/Hit:\s+\d+\s*\([^)]+\)\s+[a-z]+(?:\s+damage)?\.?\s*/i, "");
+    extra = extra.replace(/^[\s.,:+]+/, "").trim();
+    out.extra = extra;
+    return out;
+  }
+
+  // ── NPC actions tab — table-style attack hierarchy
+  function renderNpcActionsTab(sections, spent) {
+    let html = "";
+    sections.forEach(s => {
+      if (/trait/i.test(s.label || "")) return; // already on stats tab
+      if (!(s.entries && s.entries.length)) return;
+      html += '<div class="action-group"><div class="ar-section-head">' + esc(s.label) + '</div>';
+      s.entries.forEach(e => {
+        const r = parseRechargeFromName(e.name);
+        const cleanName = r ? e.name.replace(/\s*\(Recharge[^)]+\)\s*$/i, "").trim() : e.name;
+        const isSpent = r && !!spent[cleanName];
+        const parsed = parseAttackEntry(e.text);
+
+        if (parsed) {
+          const noStats = !parsed.toHit && !parsed.range && !parsed.hit;
+          html += '<div class="attack-card' +
+            (r ? ' recharge' : '') +
+            (isSpent ? ' spent' : '') +
+            (noStats ? ' no-stats' : '') + '">';
+          html += '<div class="ac-head">' +
+            '<span class="ac-name">' + esc(cleanName) + '</span>' +
+            '<span class="ac-meta">' +
+              '<span class="ac-type">' + esc(parsed.type) + '</span>' +
+              (r ? '<span class="ac-recharge">Rch ' + esc(r.rangeText) + '</span>' : '') +
+            '</span>' +
+          '</div>';
+          if (!noStats) {
+            html += '<div class="ac-stats">';
+            if (parsed.toHit) {
+              const isSave = /^DC/i.test(parsed.toHit);
+              html += '<div class="ac-stat ' + (isSave ? 'save' : 'tohit') + '">' +
+                '<span class="lab">' + (isSave ? 'Save' : 'To Hit') + '</span>' +
+                '<span class="val">' + esc(parsed.toHit) + '</span>' +
+              '</div>';
+            }
+            if (parsed.range) {
+              html += '<div class="ac-stat range">' +
+                '<span class="lab">Range</span>' +
+                '<span class="val">' + esc(parsed.range) + '</span>' +
+              '</div>';
+            }
+            if (parsed.hit) {
+              html += '<div class="ac-stat hit">' +
+                '<span class="lab">On Hit</span>' +
+                '<span class="val">' + numClass(parsed.hit) + '</span>' +
+              '</div>';
+            }
+            html += '</div>';
+          }
+          if (parsed.extra) {
+            html += '<div class="ac-extra">' + numClass(parsed.extra) + '</div>';
+          }
+          html += '</div>';
+        } else {
+          // Non-attack entry (Multiattack, area effect, narrative). Keep the original action-entry look.
+          html += '<div class="action-entry' + (r ? ' recharge' : '') + (isSpent ? ' spent' : '') + '">' +
+            '<div class="entry-name">' + esc(cleanName) +
+              (r ? '<span class="recharge-tag">RECHARGE ' + esc(r.rangeText) + '</span>' : '') +
+            '</div>' +
+            '<div class="entry-text">' + numClass(e.text) + '</div>' +
+          '</div>';
+        }
+      });
+      html += '</div>';
+    });
+    return html;
+  }
+
+  // ── NPC tactics tab
+  function renderNpcTacticsTab(section) {
+    if (!section) return '<div class="empty">No tactics notes.</div>';
+    let html = "";
+    (section.entries || []).forEach(e => {
+      html += '<div class="tactics-entry">' +
+        '<div class="tac-name">' + esc(e.name) + '</div>' +
+        '<div class="tac-text">' + esc(e.text) + '</div>' +
+      '</div>';
+    });
+    return html;
+  }
+
+  // ── PC stats tab
+  function renderPcStatsTab(c, abilities, block) {
+    let html = "";
+    if (abilities) html += renderAbilityTable(abilities);
+    // Saves already shown in the header — don't duplicate. If we want a fuller saves view
+    // (with the "others use ability mod" caveat) it lives in Features/Notes territory.
+    if (c.notes) html += '<div class="pc-notes">' + esc(c.notes) + '</div>';
+    return html;
+  }
+
+  // ── Parse a PC attack line into structured stats.
+  // Formats vary, but the common shape is:
+  //   "Longbow +9, 1d8+4 piercing (150/600) [Archery]"
+  //   "Dagger (melee) +7, 1d4+4 piercing."
+  //   "Eldritch Blast +9, 2× 1d10 force (120 ft.)"
+  // Non-attack rows ("EXTRA ATTACK ...", "Spell save DC 13") return null.
+  function parsePcAttackLine(text) {
+    if (!text) return null;
+    const s = String(text).trim();
+    // Find the to-hit: a "+N" or "-N" near the start (after the name).
+    // The name can include spaces, parentheses ("Dagger (melee)"), hyphens, apostrophes.
+    const hitM = s.match(/^([^+\-,]+?(?:\([^)]*\))?\s*)([+-]\d+)\s*(?:to\s+hit)?[,.\s]/i);
+    if (!hitM) return null;
+    const name = hitM[1].trim();
+    const toHit = hitM[2];
+    let rest = s.slice(hitM[0].length).trim();
+    // Damage: looks like "1d8+4 piercing" or "2d6 fire" — capture "XdY[+Z]( damage type)?"
+    let damage = "";
+    const dmgM = rest.match(/^(\d*d\d+(?:[+-]\d+)?(?:\s*[a-zA-Z]+)?(?:\s+damage)?)/);
+    if (dmgM) {
+      damage = dmgM[1].trim();
+      rest = rest.slice(dmgM[0].length).trim();
+    }
+    // Range/reach: "(150/600)", "(20/60)", or "reach 5 ft."
+    let range = "";
+    const rangeM = rest.match(/^\((\d+(?:\/\d+)?(?:\s*ft\.?)?)\)/);
+    const reachM = !rangeM ? rest.match(/^reach\s+(\d+\s*ft\.?)/i) : null;
+    if (rangeM) {
+      range = rangeM[1].includes("ft") ? rangeM[1] : (rangeM[1] + " ft.");
+      rest = rest.slice(rangeM[0].length).trim();
+    } else if (reachM) {
+      range = "reach " + reachM[1];
+      rest = rest.slice(reachM[0].length).trim();
+    }
+    // Tag: "[Archery]" etc.
+    let tag = "";
+    const tagM = rest.match(/^\[([^\]]+)\]/);
+    if (tagM) {
+      tag = tagM[1].trim();
+      rest = rest.slice(tagM[0].length).trim();
+    }
+    // Leftover punctuation / extra notes
+    let extra = rest.replace(/^[,.\s]+/, "").trim();
+    if (tag && !extra) extra = "";  // tag handled separately
+    return { name, toHit, range, damage, tag, extra };
+  }
+
+  // ── PC attacks tab — attack cards matching the NPC layout
+  function renderPcAttacksTab(attacks) {
+    if (!attacks.length) return '<div class="empty">No attacks listed.</div>';
+    let html = "";
+    attacks.forEach(att => {
+      const p = parsePcAttackLine(att);
+      if (p) {
+        const noStats = !p.toHit && !p.range && !p.damage;
+        html += '<div class="attack-card' + (noStats ? ' no-stats' : '') + '">';
+        html += '<div class="ac-head">' +
+          '<span class="ac-name">' + esc(p.name) + '</span>' +
+          (p.tag ? '<span class="ac-meta"><span class="ac-type">' + esc(p.tag) + '</span></span>' : '') +
+        '</div>';
+        if (!noStats) {
+          html += '<div class="ac-stats">';
+          if (p.toHit) {
+            html += '<div class="ac-stat tohit">' +
+              '<span class="lab">To Hit</span>' +
+              '<span class="val">' + esc(p.toHit) + '</span>' +
+            '</div>';
+          }
+          if (p.range) {
+            html += '<div class="ac-stat range">' +
+              '<span class="lab">Range</span>' +
+              '<span class="val">' + esc(p.range) + '</span>' +
+            '</div>';
+          }
+          if (p.damage) {
+            html += '<div class="ac-stat hit">' +
+              '<span class="lab">Damage</span>' +
+              '<span class="val">' + numClass(p.damage) + '</span>' +
+            '</div>';
+          }
+          html += '</div>';
+        }
+        if (p.extra) html += '<div class="ac-extra">' + numClass(p.extra) + '</div>';
+        html += '</div>';
+      } else {
+        // Non-attack row: render as plain action-entry (EXTRA ATTACK, Spell save DC, etc.)
+        const m = att.match(/^([^:.]+(?:\s\([^)]+\))?)[:.]\s*([^]*)$/);
+        let name = att, rest = "";
+        if (m) { name = m[1].trim(); rest = m[2].trim(); }
+        html += '<div class="action-entry">' +
+          '<div class="entry-name">' + esc(name) + '</div>' +
+          (rest ? '<div class="entry-text">' + numClass(rest) + '</div>' : '') +
+        '</div>';
+      }
+    });
+    return html;
+  }
+
+  // ── PC spells tab
+  function renderPcSpellsTab(levels) {
+    if (!levels.length) return '<div class="empty">No spells.</div>';
+    let html = "";
+    levels.forEach(L => {
+      const meta = L.meta ? ' <span class="head-meta">' + esc(L.meta) + '</span>' : '';
+      html += '<div class="ar-section">' +
+        '<div class="ar-section-head"><span>' + esc(L.level) + '</span>' + meta + '</div>' +
+        '<div style="font-size:13px;line-height:1.55;color:var(--ink)">' + esc(L.list) + '</div>' +
+      '</div>';
+    });
+    return html;
+  }
+
+  // ── PC features tab
+  function renderPcFeaturesTab(features) {
+    if (!features.length) return '<div class="empty">No features listed.</div>';
+    let html = "";
+    features.forEach(f => {
+      // Try to extract "Name: rest" or "Name. rest"
+      let name = f, rest = "";
+      const m = f.match(/^([^:.]+(?:\s\([^)]+\))?)[:.]\s*([^]*)$/);
+      if (m) { name = m[1].trim(); rest = m[2].trim(); }
+      html += '<div class="action-entry">' +
+        '<div class="entry-name">' + esc(name) + '</div>' +
+        (rest ? '<div class="entry-text">' + numClass(rest) + '</div>' : '') +
+      '</div>';
+    });
+    return html;
+  }
+
+  // ─── Encounter notes modal ──────────────────────────────────────────
+  function renderNotesModal() {
+    const body = document.getElementById("notes-modal-body");
+    if (!body) return;
+    const notes = ENCOUNTER.notes || [];
+    if (!notes.length) {
+      body.innerHTML = '<div class="empty" style="padding:24px;text-align:center;color:var(--ink-mute);font-family:var(--font-hand);font-style:italic">No encounter notes.</div>';
+    } else {
+      body.innerHTML = notes.map(n =>
+        '<div class="notes-entry">' +
+          '<div class="note-label">' + esc(n.label || "") + '</div>' +
+          '<div class="note-text">' + esc(n.text || "") + '</div>' +
+        '</div>'
+      ).join("");
+    }
+    const notesBtn = document.getElementById("notes-btn");
+    if (notesBtn) notesBtn.style.display = notes.length ? "" : "none";
+  }
+  function openNotesModal()  { document.getElementById("notes-modal").classList.add("open"); }
+  function closeNotesModal() { document.getElementById("notes-modal").classList.remove("open"); }
+
+  // ─── Turn order ─────────────────────────────────────────────────────
+  function nextTurn() {
+    const list = sortedCombatants().filter(c => c.initiative != null);
+    if (!list.length) return;
+    // mark current as acted before advancing
+    if (state.activeId && state.actedThisRound.indexOf(state.activeId) < 0) {
+      state.actedThisRound.push(state.activeId);
+    }
+    if (!state.activeId) {
+      state.activeId = list[0].id;
+    } else {
+      const idx = list.findIndex(c => c.id === state.activeId);
+      if (idx === -1 || idx === list.length - 1) {
+        // end of round
+        state.activeId = list[0].id;
+        state.round += 1;
+        state.actedThisRound = [];
+      } else {
+        state.activeId = list[idx + 1].id;
+      }
+    }
+    state.focusOverride = null;
+    state.activeTab = null; // reset to default tab on new turn
+    saveState();
+    renderTracker(); renderActiveRef();
+    scrollActiveIntoView();
+  }
+  function prevTurn() {
+    const list = sortedCombatants().filter(c => c.initiative != null);
+    if (!list.length) return;
+    if (!state.activeId) {
+      state.activeId = list[list.length - 1].id;
+    } else {
+      const idx = list.findIndex(c => c.id === state.activeId);
+      // un-mark previous from acted set
+      if (idx > 0) {
+        const prevId = list[idx - 1].id;
+        const ai = state.actedThisRound.indexOf(prevId);
+        if (ai >= 0) state.actedThisRound.splice(ai, 1);
+        state.activeId = prevId;
+      } else {
+        state.activeId = list[list.length - 1].id;
+        state.round = Math.max(1, state.round - 1);
+        state.actedThisRound = list.slice(0, -1).map(c => c.id);
+      }
+    }
+    state.focusOverride = null;
+    state.activeTab = null;
+    saveState();
+    renderTracker(); renderActiveRef();
+    scrollActiveIntoView();
+  }
+  function scrollActiveIntoView() {
+    if (!state.activeId) return;
+    const el = document.querySelector('.row[data-id="' + state.activeId + '"]');
+    if (el && el.scrollIntoView) el.scrollIntoView({ block: "nearest", behavior: "smooth" });
+  }
+
+  function resetEncounter() {
+    if (!confirm("Reset encounter? This clears HP, conditions, round, active turn, and recharge tracking.")) return;
+    state = defaultState();
+    saveState();
+    renderTracker(); renderActiveRef();
+  }
+
+  // ─── Row click handler (pin / unpin ref) ────────────────────────────
+  function handleRowClick(ev) {
+    if (ev.target.closest("input, button, .cond-panel, .hp-bar")) return;
+    const rowEl = ev.target.closest(".row");
+    if (!rowEl) return;
+    const id = rowEl.dataset.id;
+    const c = state.combatants.find(x => x.id === id);
+    if (!c) return;
+    if (state.focusOverride === c.id) {
+      state.focusOverride = null;
+    } else if (c.id === state.activeId) {
+      state.focusOverride = null;
+    } else {
+      state.focusOverride = c.id;
+      state.activeTab = null;
+    }
+    saveState();
+    renderTracker(); renderActiveRef();
+  }
+
+  // ─── Tweaks panel ───────────────────────────────────────────────────
+  function applyTweaks() {
+    // Accent
+    document.documentElement.classList.forEach(cls => {
+      if (cls.startsWith("accent-")) document.documentElement.classList.remove(cls);
+    });
+    document.documentElement.classList.add("accent-" + tweaks.accent);
+    // Density
+    document.body.classList.remove("density-default", "density-compact", "density-roomy");
+    document.body.classList.add("density-" + tweaks.density);
+    // Font size
+    document.documentElement.style.setProperty("--base-fs", tweaks.fontSize + "px");
+  }
+  function setupTweaks() {
+    const accentRoot = document.getElementById("tw-accent");
+    accentRoot.innerHTML = ACCENTS.map(a =>
+      '<button class="tweak-swatch' + (tweaks.accent === a.id ? ' on' : '') + '" data-acc="' + a.id + '" style="background:' + a.color + '" title="' + a.id + '"></button>'
+    ).join('');
+    accentRoot.querySelectorAll(".tweak-swatch").forEach(b => {
+      b.addEventListener("click", () => {
+        tweaks.accent = b.dataset.acc;
+        saveTweaks(); applyTweaks(); setupTweaks();
+      });
+    });
+
+    const densityRoot = document.getElementById("tw-density");
+    const densities = [["compact","Compact"],["default","Default"],["roomy","Roomy"]];
+    densityRoot.innerHTML = densities.map(([k,l]) =>
+      '<button class="' + (tweaks.density === k ? 'on' : '') + '" data-d="' + k + '">' + l + '</button>'
+    ).join('');
+    densityRoot.querySelectorAll("button").forEach(b => {
+      b.addEventListener("click", () => {
+        tweaks.density = b.dataset.d;
+        saveTweaks(); applyTweaks(); setupTweaks();
+      });
+    });
+
+    const fs = document.getElementById("tw-fs");
+    const fsVal = document.getElementById("tw-fs-val");
+    fs.value = tweaks.fontSize;
+    fsVal.textContent = tweaks.fontSize + "px";
+    fs.addEventListener("input", () => {
+      tweaks.fontSize = parseInt(fs.value, 10);
+      fsVal.textContent = tweaks.fontSize + "px";
+      saveTweaks(); applyTweaks();
+    });
+  }
+  function toggleTweaks() {
+    document.getElementById("tweaks").classList.toggle("open");
+  }
+
+  // ─── Wire-up ────────────────────────────────────────────────────────
+  try {
+    applyTweaks();
+    renderTopbar();
+    renderNotesModal();
+    renderTracker();
+    renderActiveRef();
+    setupTweaks();
+
+    document.getElementById("next-btn").addEventListener("click", nextTurn);
+    document.getElementById("prev-btn").addEventListener("click", prevTurn);
+    document.getElementById("reset-btn").addEventListener("click", resetEncounter);
+    document.getElementById("tracker-rows").addEventListener("click", handleRowClick);
+    document.getElementById("tweaks-btn").addEventListener("click", toggleTweaks);
+    document.getElementById("tweaks-close").addEventListener("click", toggleTweaks);
+    document.getElementById("notes-btn").addEventListener("click", openNotesModal);
+    document.getElementById("notes-modal-close").addEventListener("click", closeNotesModal);
+    document.getElementById("notes-modal").addEventListener("click", e => {
+      if (e.target.id === "notes-modal") closeNotesModal();
+    });
+
+    // Keyboard shortcuts: ←/→ for prev/next, space for next, Esc closes modal
+    document.addEventListener("keydown", e => {
+      if (e.key === "Escape") { closeNotesModal(); return; }
+      if (e.target.matches("input, textarea, select")) return;
+      if (e.key === "ArrowRight" || e.key === " ") { e.preventDefault(); nextTurn(); }
+      else if (e.key === "ArrowLeft") { e.preventDefault(); prevTurn(); }
+    });
+  } catch (e) {
+    showBootError("Encounter worksheet failed to load: " + (e && e.message ? e.message : "unknown error"));
+    console.error(e);
+  }
+})();
+
+</script>
+</body>
+</html>
