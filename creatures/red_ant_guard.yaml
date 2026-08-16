@@ -41,12 +41,11 @@ skills:
 traits:
   - name: Parade Posture
     description: >
-      This guard is decoration with a weapon on it. It rolls initiative with
-      disadvantage, and while it is standing its post in a public room it makes
-      Wisdom (Perception) checks with disadvantage — the music, the crowd, and
-      the pheromone overflow cover a great deal (passive Perception 8 on post).
-      A party that opens on a patrol before it acts should expect to drop at
-      least one guard before it moves.
+      This guard is decoration with a weapon on it. While it is standing its
+      post in a public room it makes Wisdom (Perception) checks with
+      disadvantage — the music, the crowd, and the pheromone overflow cover a
+      great deal (passive Perception 8 on post). Back-corridor patrols away
+      from the noise use the full 13.
   - name: Overkill (Cleave)
     description: >
       When a single attack reduces a Red Ant Guard to 0 hit points, damage in
@@ -55,14 +54,6 @@ traits:
       Overkill damage never carries to or from a Royal Ant Bulwark, a Royal Ant
       Firecaller, or any non-ant creature. Temporary hit points (see the
       Firecaller's Royal Cadence) stop the chain — excess is absorbed, not passed.
-  - name: Alarm Musk
-    description: >
-      The first time the guard takes damage, unless that damage reduces it to
-      0 hit points, it sprays alarm pheromone. Every red ant within 60 ft.
-      immediately knows the guard's location and the direction the threat came
-      from, and the fight becomes a noise event on the alert ladder. A patrol
-      dropped to 0 before it can act — or before it takes its first damage —
-      dies quiet.
 
 actions:
   - name: Mandible Jab
