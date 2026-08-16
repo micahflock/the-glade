@@ -3,10 +3,11 @@
 # Generate a D&D 5e combat encounter worksheet as a self-contained
 # interactive .html file, designed for offline use on iPad during a
 # session. Reads NPC stat blocks from creatures/ and PC sheets from
-# party/, rolls initiative and HP, and produces a single HTML file
+# party/, rolls NPC hit points, and produces a single HTML file
 # with:
-#   - An initiative tracker with editable PC initiative, HP +/- controls,
-#     a per-row HP bar gauge, and condition pill toggles
+#   - An initiative tracker with editable initiative on every row, HP +/-
+#     controls, a per-row HP bar gauge, and condition pill toggles
+#   - An optional "Muster" bar for dialling NPC counts up and down mid-fight
 #   - A sticky "active reference" panel pinned above the tracker that
 #     shows the stat block for the current turn (or for a row the DM
 #     has tapped to pin)
@@ -23,7 +24,8 @@ Accepted inputs (any combination):
 1. **NPC stat blocks** — Specify creatures by name from creatures/*.yaml,
    or provide stat blocks directly (text, image, any format).
    Include the count for each type (e.g. "3 leafcutter workers and 1 fire
-   ant commander"). Ask for count if not specified.
+   ant commander"), or say the count should be dialable at the table, which
+   puts that creature in `roster` instead. Ask for count if not specified.
 2. **PC character sheets** — Read from party/*.yaml if available.
    If party/ has no character files, accept photos or text descriptions
    and extract combat essentials. Confirm your reading of handwritten
@@ -71,11 +73,17 @@ PCs:
 
 TERRAIN: [summary of setting/hazards, or "none provided"]
 
-INITIATIVE GROUPING:
-For any NPC type with 4+ copies, ask the DM:
-"[Name] x[count] — roll individually, or group into N initiative groups?"
+ROSTER (dialable at the table) vs. FIXED:
+- [Name] — roster, starts at [N]
+- [Name] — fixed, x[count]
+
+INITIATIVE GROUPING (fixed-count NPCs only):
+For any fixed NPC type with 4+ copies, ask the DM:
+"[Name] x[count] — one row each, or group into N initiative groups?"
 List the confirmed grouping plan here:
 - [Name] x[count]: [individual / N groups of ~X]
+Roster creatures are always one row each — the DM adds and removes them
+during play, so they can't share a pre-assigned group.
 
 FLAGGED:
 - [missing data, ambiguous readings, stat inconsistencies]
@@ -91,7 +99,13 @@ Stop. Wait for DM to confirm, adjust counts/grouping, or provide missing info.
 
 ### Step 1: Roll dice for NPCs
 
-Use scripts/roll_dice.py to pre-roll initiative and HP:
+**Initiative is NOT pre-rolled.** Every combatant — NPC and PC alike — ships
+with `initiative: null` and gets its number entered at the table. Always set
+`init_mod` on NPCs too (e.g. `"+1"`); the row displays it as the reminder of
+what to roll.
+
+Pre-roll HP only. Use scripts/roll_dice.py and take the `hp_rolled` values,
+ignoring the `initiative_rolled` ones:
 
     python3 scripts/roll_dice.py '{"npcs": [
       {"name": "Ant", "hp_dice": "2d8+2", "dex_mod": 1, "count": 12, "groups": 2},
@@ -128,7 +142,8 @@ This is the single input to the HTML build script. The shape:
       "hp_max": 162,
       "hp_current": 162,
       "speed": "30 ft., climb 20 ft.",
-      "initiative": 4,
+      "initiative": null,
+      "init_mod": "+0",
       "group": null,
       "notes": ""
     },
@@ -178,12 +193,34 @@ This is the single input to the HTML build script. The shape:
 
 Field rules:
 
-- **combatants** — one entry per individual (use the rolled output from
-  roll_dice.py: each grouped creature still gets its own row, sharing
-  initiative). NPCs get rolled `initiative` and rolled `hp_current = hp_max`.
-  PCs get `initiative: null` (DM enters at the table) and `init_mod` as a
-  display reminder ("+5"). Use `kind: "npc"` or `kind: "pc"`. Include
+- **combatants** — one entry per individual, for anything whose count is
+  fixed: always the PCs, plus any named/unique NPC. Everything gets
+  `initiative: null` and an `init_mod` display reminder ("+5"); NPCs also get
+  rolled `hp_current = hp_max`. Use `kind: "npc"` or `kind: "pc"`. Include
   `group: "A"` etc. only when the creature shares an initiative group.
+  **Creatures whose count the DM wants to dial at the table belong in
+  `roster`, not here.**
+
+- **roster** (optional) — creature TYPES the DM can add and remove during
+  play, rendered as a "Muster" bar of −/count/+ controls above the tracker.
+  Use this for any creature that spawns in variable numbers; it is the right
+  home for the fête's guards, where the whole design is improvised counts.
+
+  ```json
+  "roster": [
+    {"id": "guard", "name": "Red Ant Guard", "ac": 14, "hp_dice": "4d8",
+     "speed": "30 ft., climb 30 ft.", "init_mod": "+1", "start": 2}
+  ]
+  ```
+
+  `id` is a short slug used to group instances. `name` is the base name — the
+  page appends an instance number ("Red Ant Guard 3"), so it must still match
+  the prefix of an `npc_blocks` title for the reference panel to resolve.
+  `hp_dice` is rolled fresh in the browser for each one added. `start` is how
+  many exist when the sheet is first opened (default 0). Added creatures always
+  get `initiative: null`. Removing takes the highest-numbered instance off, and
+  freed numbers get reused. Counts persist in localStorage with the rest of the
+  state, and Reset returns to the `start` values.
 
 - **npc_blocks** — one block per unique creature TYPE, not per individual.
   `title` is a one-line header. `stats` is the AC/HP/Speed/abilities line.
@@ -260,8 +297,13 @@ Tell the DM the file path. Note that:
 
 - Always confirm inputs in Phase 1 before generating. Errors in encounter
   worksheets surface at the table when it's too late to fix them.
-- For any NPC type with 4+ copies, proactively ask about initiative
+- In Phase 1, ask which creatures go in `roster` (count dialed at the table)
+  and which are fixed. Default anything that spawns in improvised numbers —
+  patrols, responding guards, reinforcements — to `roster`.
+- For any FIXED NPC type with 4+ copies, proactively ask about initiative
   grouping in Phase 1. Don't assume individual or grouped — ask.
+- Never pre-roll initiative. Roll HP only; every row's initiative is entered
+  at the table.
 - NPC reference blocks must be COMPLETE — every trait, action, and ability.
   The DM should never need to look anything else up during combat.
 - PC reference should include everything the DM needs to adjudicate effects

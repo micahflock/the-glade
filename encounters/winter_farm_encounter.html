@@ -217,6 +217,43 @@ body > * { position: relative; z-index: 1; }
   font-style: italic;
 }
 
+/* Muster bar — dial NPC counts at the table */
+#muster:empty { display: none; }
+#muster {
+  display: flex; flex-wrap: wrap; align-items: center; gap: 6px;
+  margin-bottom: 10px; padding: 8px 10px;
+  border: 1px solid var(--rule); border-radius: 3px;
+  background: var(--night-1, rgba(0,0,0,0.15));
+}
+.muster-label {
+  font-family: var(--font-label);
+  font-size: 10px; letter-spacing: 0.22em; text-transform: uppercase;
+  color: var(--ink-mute); margin-right: 4px;
+}
+.muster-item {
+  display: inline-flex; align-items: center; gap: 0;
+  border: 1px solid var(--rule); border-radius: 3px; overflow: hidden;
+}
+.muster-item .mus-name {
+  font-size: 12px; color: var(--ink-dim);
+  padding: 4px 8px; white-space: nowrap;
+}
+.muster-item .mus-count {
+  font-family: var(--font-label);
+  font-size: 13px; min-width: 22px; text-align: center;
+  padding: 4px 2px; color: var(--ink);
+  border-left: 1px solid var(--rule-faint);
+  border-right: 1px solid var(--rule-faint);
+}
+.muster-item.none .mus-count { color: var(--ink-ghost); }
+.muster-item button {
+  background: none; border: none; cursor: pointer;
+  color: var(--ink-dim); font-size: 15px; line-height: 1;
+  padding: 5px 9px; min-width: 30px;
+}
+.muster-item button:hover { background: var(--rule-faint); color: var(--accent); }
+.muster-item button:disabled { color: var(--ink-ghost); cursor: default; background: none; }
+
 #tracker-rows {
   display: flex;
   flex-direction: column;
@@ -1252,6 +1289,7 @@ body > * { position: relative; z-index: 1; }
       <h2>Initiative</h2>
       <span class="hint">Tap a row to pin its reference. Next/Prev advances turn.</span>
     </div>
+    <div id="muster"></div>
     <div id="tracker-rows"></div>
   </section>
 
@@ -1314,8 +1352,8 @@ var ENCOUNTER = {"name": "Winter Farm Encounter", "slug": "winter_farm_encounter
   const TWEAKS_KEY = "encounter-tweaks:" + slug;
 
   const CONDITIONS = [
-    "Blinded", "Charmed", "Concentration", "Deafened", "Frightened",
-    "Grappled", "Incapacitated", "Invisible", "Paralyzed", "Petrified",
+    "Blinded", "Charged", "Charmed", "Concentration", "Deafened", "Frightened",
+    "Grappled", "Incapacitated", "Invisible", "Kindled", "Paralyzed", "Petrified",
     "Poisoned", "Prone", "Restrained", "Stunned", "Unconscious"
   ];
   const ABILITIES = ["STR", "DEX", "CON", "INT", "WIS", "CHA"];
@@ -1337,7 +1375,92 @@ var ENCOUNTER = {"name": "Winter Farm Encounter", "slug": "winter_farm_encounter
   function combatantId(c, i) {
     return c.id || (c.name || "c").replace(/[^a-z0-9]+/gi, "_").toLowerCase() + "_" + i;
   }
+
+  // ─── Muster (roster spawning) ───────────────────────────────────────
+  // Optional ENCOUNTER.roster lets the DM dial counts at the table instead
+  // of baking them into the spec. Each entry:
+  //   { id, name, kind?, ac, hp_dice, speed?, init_mod?, notes?, start? }
+  const ROSTER = Array.isArray(ENCOUNTER.roster) ? ENCOUNTER.roster : [];
+
+  function rollHp(expr) {
+    const m = String(expr == null ? "" : expr).match(/^\s*(\d+)\s*d\s*(\d+)\s*([+-]\s*\d+)?\s*$/i);
+    if (!m) {
+      const flat = parseInt(expr, 10);
+      return Number.isFinite(flat) && flat > 0 ? flat : 1;
+    }
+    const n = parseInt(m[1], 10), die = parseInt(m[2], 10);
+    const bonus = m[3] ? parseInt(m[3].replace(/\s+/g, ""), 10) : 0;
+    let total = 0;
+    for (let i = 0; i < n; i++) total += 1 + Math.floor(Math.random() * die);
+    return Math.max(1, total + bonus);
+  }
+
+  function makeCombatant(entry, n) {
+    const hp = rollHp(entry.hp_dice);
+    return {
+      id: String(entry.id) + "_" + n + "_" + Math.random().toString(36).slice(2, 7),
+      kind: entry.kind || "npc",
+      type_id: String(entry.id),
+      type_n: n,
+      name: entry.name + " " + n,
+      ac: entry.ac,
+      hp_max: hp,
+      hp_current: hp,
+      speed: entry.speed || "",
+      initiative: null,
+      init_mod: entry.init_mod || "",
+      group: null,
+      notes: entry.notes || "",
+      conditions: []
+    };
+  }
+
+  function typeCount(list, entry) {
+    return list.filter(c => c.type_id === String(entry.id)).length;
+  }
+
+  function spawnOne(list, entry) {
+    const used = new Set(list.filter(c => c.type_id === String(entry.id)).map(c => c.type_n));
+    let n = 1;
+    while (used.has(n)) n++;
+    list.push(makeCombatant(entry, n));
+  }
+
+  function despawnOne(entry) {
+    let idx = -1, highest = -Infinity;
+    state.combatants.forEach((c, i) => {
+      if (c.type_id === String(entry.id) && c.type_n > highest) { highest = c.type_n; idx = i; }
+    });
+    if (idx < 0) return;
+    const gone = state.combatants.splice(idx, 1)[0];
+    if (state.activeId === gone.id) state.activeId = null;
+    if (state.focusOverride === gone.id) state.focusOverride = null;
+    if (state.condPanelOpen === gone.id) state.condPanelOpen = null;
+    const ai = state.actedThisRound.indexOf(gone.id);
+    if (ai >= 0) state.actedThisRound.splice(ai, 1);
+  }
+
   function defaultState() {
+    const combatants = ENCOUNTER.combatants.map((c, i) => ({
+      id: combatantId(c, i),
+      kind: c.kind || "npc",
+      type_id: c.type_id || null,
+      type_n: c.type_n || null,
+      name: c.name,
+      ac: c.ac,
+      hp_max: c.hp_max,
+      hp_current: (c.hp_current == null) ? c.hp_max : c.hp_current,
+      speed: c.speed || "",
+      initiative: (c.initiative === undefined ? null : c.initiative),
+      init_mod: c.init_mod || "",
+      group: c.group || null,
+      notes: c.notes || "",
+      conditions: Array.isArray(c.conditions) ? c.conditions.slice() : []
+    }));
+    ROSTER.forEach(entry => {
+      const start = parseInt(entry.start, 10);
+      for (let i = 0; i < (Number.isFinite(start) ? start : 0); i++) spawnOne(combatants, entry);
+    });
     return {
       round: 1,
       activeId: null,
@@ -1346,20 +1469,7 @@ var ENCOUNTER = {"name": "Winter Farm Encounter", "slug": "winter_farm_encounter
       actedThisRound: [],
       rechargeSpent: {},
       condPanelOpen: null,
-      combatants: ENCOUNTER.combatants.map((c, i) => ({
-        id: combatantId(c, i),
-        kind: c.kind || "npc",
-        name: c.name,
-        ac: c.ac,
-        hp_max: c.hp_max,
-        hp_current: (c.hp_current == null) ? c.hp_max : c.hp_current,
-        speed: c.speed || "",
-        initiative: (c.initiative === undefined ? null : c.initiative),
-        init_mod: c.init_mod || "",
-        group: c.group || null,
-        notes: c.notes || "",
-        conditions: Array.isArray(c.conditions) ? c.conditions.slice() : []
-      }))
+      combatants: combatants
     };
   }
   function loadState() {
@@ -1649,7 +1759,7 @@ var ENCOUNTER = {"name": "Winter Farm Encounter", "slug": "winter_farm_encounter
       const info = document.createElement("div");
       info.className = "info";
       const groupTag = c.group ? ' <span class="group-tag">GRP ' + esc(c.group) + '</span>' : '';
-      const initMod = (c.kind === "pc" && c.init_mod) ? '<span class="init-mod">' + esc(c.init_mod) + '</span>' : '';
+      const initMod = c.init_mod ? '<span class="init-mod">' + esc(c.init_mod) + '</span>' : '';
       info.innerHTML =
         '<div class="name">' + esc(c.name) + groupTag + '</div>' +
         '<div class="meta">' +
@@ -1735,6 +1845,37 @@ var ENCOUNTER = {"name": "Winter Farm Encounter", "slug": "winter_farm_encounter
       root.appendChild(row);
     });
     document.getElementById("round-num").textContent = state.round;
+    renderMuster();
+  }
+
+  function renderMuster() {
+    const root = document.getElementById("muster");
+    if (!root) return;
+    if (!ROSTER.length) { root.innerHTML = ""; return; }
+    root.innerHTML = '<span class="muster-label">Muster</span>' + ROSTER.map((e, i) => {
+      const n = typeCount(state.combatants, e);
+      return '<span class="muster-item' + (n ? '' : ' none') + '" data-i="' + i + '">' +
+        '<button class="mus-minus" ' + (n ? '' : 'disabled') +
+          ' aria-label="Remove one ' + esc(e.name) + '" title="Remove one ' + esc(e.name) + '">−</button>' +
+        '<span class="mus-name">' + esc(e.name) + '</span>' +
+        '<span class="mus-count">' + n + '</span>' +
+        '<button class="mus-plus" aria-label="Add one ' + esc(e.name) +
+          '" title="Add one ' + esc(e.name) + ' (rolls HP, initiative left blank)">+</button>' +
+      '</span>';
+    }).join('');
+    root.querySelectorAll(".muster-item").forEach(el => {
+      const entry = ROSTER[parseInt(el.dataset.i, 10)];
+      el.querySelector(".mus-plus").addEventListener("click", ev => {
+        ev.stopPropagation();
+        spawnOne(state.combatants, entry);
+        saveState(); renderTracker(); renderActiveRef();
+      });
+      el.querySelector(".mus-minus").addEventListener("click", ev => {
+        ev.stopPropagation();
+        despawnOne(entry);
+        saveState(); renderTracker(); renderActiveRef();
+      });
+    });
   }
 
   function commitInit(c, inputEl) {

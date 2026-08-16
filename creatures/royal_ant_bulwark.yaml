@@ -32,6 +32,8 @@ defenses:
   saving_throws:
     - STR +6
     - CON +7
+  damage_resistances:
+    - fire
 
 senses:
   - darkvision 60 ft.
