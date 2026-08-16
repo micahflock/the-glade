@@ -7,7 +7,7 @@ creature:
 
 combat:
   ac:
-    value: 13
+    value: 14
     type: chitin and ceremonial plate
   hp:
     value: 18
@@ -31,21 +31,23 @@ ability_scores:
 senses:
   - darkvision 60 ft.
   - tremorsense 30 ft.
-passive_perception: 13   # 8 while standing its post in a public room — see Parade Posture
+passive_perception: 15   # 10 while standing its post in a public room — see Overexcited
 languages:
   - Ant-cant (chemical)
 
 skills:
-  - Perception +3
+  - Perception +5   # doubled proficiency — it never stops scanning
 
 traits:
-  - name: Parade Posture
+  - name: Overexcited
     description: >
-      This guard is decoration with a weapon on it. While it is standing its
-      post in a public room it makes Wisdom (Perception) checks with
-      disadvantage — the music, the crowd, and the pheromone overflow cover a
-      great deal (passive Perception 8 on post). Back-corridor patrols away
-      from the noise use the full 13.
+      This guard is watching everything, all at once, and has been all night.
+      It startles at a dropped tray, at laughter, at movement in the petal
+      panels. It notices an enormous amount and can tell almost none of it
+      apart. While it is standing its post in a public room it makes Wisdom
+      (Perception) checks with disadvantage — passive Perception 10, because
+      every single thing it has flagged so far tonight has been nothing.
+      Back-corridor patrols away from the crowd use the full 15.
   - name: Overkill (Cleave)
     description: >
       When a single attack reduces a Red Ant Guard to 0 hit points, damage in
@@ -79,9 +81,11 @@ actions:
 
 roleplaying:
   personality: >
-    Posted, bored, and profoundly not expecting this. They were picked for how
-    they look flanking an aperture, not for how they fight. They believe the
-    palace is safe because it has always been safe.
+    Wound far too tight. Head snapping at every noise, challenging guests who
+    reach for a canapé too quickly, apologizing, then doing it again. They were
+    picked for how they look flanking an aperture, not for how they fight, and
+    they know it. The palace has always been safe, which is why nobody — least
+    of all them — trusts a word they say about what they just saw.
   motivation: >
     Get through the shift, do not be the one who let something happen during
     the coronation.
