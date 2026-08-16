@@ -72,10 +72,14 @@ actions:
   - name: Pin
     description: >
       Melee Weapon Attack: +6 to hit, reach 10 ft., one Medium or smaller target.
-      Hit: 9 (2d4+4) bludgeoning damage, and the target is grappled
-      (escape DC 14). While grappled this way the target is also restrained.
-      The Bulwark can have only one creature pinned at a time, and its speed is
+      Hit: 9 (2d4+4) bludgeoning damage, and the target is Pinned. While Pinned
+      its speed is 0, attack rolls against it have advantage, and it has
+      disadvantage on Dexterity saving throws. It can use its action to escape
+      with a DC 14 Strength (Athletics) or Dexterity (Acrobatics) check. The
+      Bulwark can have only one creature Pinned at a time, and its speed is
       halved while it holds a pin.
+      The setup this exists for: a Pinned PC cannot move out of an Ember Lance
+      and saves against it with disadvantage.
 
 reactions:
   - name: Interpose

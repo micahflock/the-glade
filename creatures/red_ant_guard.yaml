@@ -65,19 +65,24 @@ actions:
   - name: Stoke the Gaster
     description: >
       The guard plants its legs and pumps its fire gland. Its abdomen swells,
-      glows, and hisses — anyone who can see it knows exactly what is coming.
-      Until the end of its next turn the guard is Charged, and its speed is 0.
-      If it takes 5 or more damage from a single source while Charged, the
-      charge ruptures: the charge is lost and the guard takes 7 (2d6) fire
-      damage. Round one of the two-round charged attack.
+      glows, and hisses — anyone who can see it knows exactly what is coming,
+      and so does the guard. Until the end of its next turn the guard is
+      Charged, and its speed is 0. If it takes 5 or more damage from a single
+      source while Charged, the charge ruptures: the charge is lost and the
+      guard takes 7 (2d6) fire damage — which is, from the guard's side of it,
+      a reprieve. Round one of the two-round charged attack.
   - name: Ember Lance (Charged only)
     description: >
       The guard vents its charged gaster in a line 30 ft. long and 5 ft. wide.
       Each creature in the line makes a DC 12 Dexterity saving throw, taking
-      21 (6d6) fire damage on a failure or half as much on a success. The charge
-      is spent. Flammable objects in the line that aren't worn or carried ignite —
-      and the outward-facing palace is built of dried flower petals.
-      Round two of the two-round charged attack.
+      21 (6d6) fire damage on a failure or half as much on a success. Flammable
+      objects in the line that aren't worn or carried ignite — and the
+      outward-facing palace is built of dried flower petals.
+      THE GUARD DOES NOT SURVIVE IT. Venting the gland burns it hollow from the
+      inside; the guard drops to 0 hit points and dies as the lance goes out,
+      leaving a husk that goes on burning for a minute and will light whatever
+      it is lying against. Every red ant knows this is what the lance costs.
+      Round two — and the last round — of the two-round charged attack.
 
 roleplaying:
   personality: >
@@ -93,8 +98,10 @@ roleplaying:
     On post, two to an aperture, facing outward. In the open they fight in
     numbers and stand their ground rather than disengaging — they hold the line
     and make noise while they do it, which is what summons the royal squad.
-    A guard with a clear lane and nothing in its face will Stoke the Gaster and
-    lance on the following turn; a guard in melee just jabs. Multiple guards
-    charging together is the real threat — three lances converging on one PC is
-    a killing volley, and the tell is deliberately obvious so the party can
-    answer it.
+    Left to themselves they jab, because Ember Lance kills them and they know
+    it. A guard stokes its gaster under three conditions and no others: a
+    Firecaller orders it (Volunteer), a superior is watching and it has already
+    failed once tonight, or it is going to die anyway and can take someone with
+    it. That makes the lance rare and dreadful rather than routine — and it
+    means the moment a gaster starts to glow, the party is looking at an ant
+    that has just been spent.
