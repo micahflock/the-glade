@@ -3,7 +3,7 @@ creature:
   size: Medium
   type: Monstrosity (ant)
   alignment: Lawful Neutral
-  source: original — the Red Ant Queen's elite. The caster half of the royal response squad; never dispatched without at least one Bulwark.
+  source: original — the Red Ant Queen's elite. The support half of the royal response squad; never dispatched without at least one Bulwark.
 
 combat:
   ac:
@@ -19,6 +19,11 @@ combat:
     rating: 3
     xp: 700
     proficiency_bonus: 2
+    note: >
+      Rated on force multiplication, not on its own damage. By its own numbers
+      this block is a CR 1–2 creature; a Firecaller behind six Kindled guards
+      is not. It is never deployed alone, so rate it in the squad it arrives
+      with. See royal_ant_bulwark.yaml and red_ant_guard.yaml.
 
 ability_scores:
   strength:     { score: 10, modifier: 0 }
@@ -50,32 +55,30 @@ skills:
 traits:
   - name: Pheromone Standard
     description: >
-      Spell save DC 13, spell attack +5. While the Firecaller is conscious, every
-      allied ant within 30 ft. of it deals +2 damage on a hit, can't be
-      Frightened, and has advantage on saving throws against being Charmed.
-      This is the reason to kill it first, and the party should be able to feel
-      the difference the round it drops.
+      Spell save DC 13, spell attack +5. Allied ants within 30 ft. of the
+      Firecaller can't be Frightened and have advantage on saving throws
+      against being Charmed. Ordinary guards do not break while it is standing.
   - name: Royal Chitin
     description: >
       Overkill (Cleave) damage never carries to or from a Firecaller.
 
 actions:
-  - name: Multiattack
+  - name: Kindle the Host
     description: >
-      The Firecaller makes two Cinder Bolt attacks.
+      The Firecaller opens its censer and breathes over up to three allied ants
+      it can see within 30 ft. Each becomes Kindled for 1 minute: its carapace
+      runs hot enough to read by, and any creature that is not a red ant and
+      ends its turn within 5 ft. of it takes 2 fire damage. This damage is per
+      Kindled ant — a creature ending its turn inside a knot of three Kindled
+      guards takes 6.
+      Kindled ends early on any ant that drops, and ends on ALL of them the
+      instant the Firecaller dies. This is the block's main action and usually
+      its whole first turn.
   - name: Cinder Bolt
     description: >
       Ranged Spell Attack: +5 to hit, range 60 ft., one target.
-      Hit: 10 (3d6) fire damage.
-  - name: Emberbloom (Recharge 5–6)
-    description: >
-      The Firecaller throws a coal from its censer to a point it can see within
-      60 ft. It blooms into a 20-ft.-radius sphere of petal-fed flame. Each
-      creature in the area makes a DC 13 Dexterity saving throw, taking
-      21 (6d6) fire damage on a failure or half as much on a success. The area
-      becomes lightly obscured by smoke until the end of the Firecaller's next
-      turn. In the outward-facing palace, whatever the bloom touches keeps
-      burning — this is the action most likely to set the fête on fire.
+      Hit: 10 (3d6) fire damage. What it does on the turns it has nobody left
+      worth heating. There is no multiattack — this creature is not a nuke.
 
 bonus_actions:
   - name: Royal Cadence
@@ -83,27 +86,33 @@ bonus_actions:
       Up to three allied ants within 30 ft. that can smell the Firecaller each
       gain 5 temporary hit points. Temporary hit points from Royal Cadence stop
       an Overkill (Cleave) chain — excess damage is absorbed rather than passed
-      on. This is the deliberate counter to the party mowing down Red Ant Guards;
-      it costs the Firecaller its bonus action every round it wants it.
-  - name: Kindle
+      on. This is the deliberate counter to the party mowing down Red Ant
+      Guards, and it costs the Firecaller its bonus action every round it wants it.
+  - name: Volunteer
     description: >
-      One allied Red Ant Guard within 30 ft. immediately becomes Charged (as
-      Stoke the Gaster) without spending its own action, and its speed is not
-      reduced. That guard can use Ember Lance on its own next turn. A Firecaller
-      that survives three rounds behind a screen of ordinary guards turns a
-      nuisance fight into a killing volley.
+      The Firecaller lays a claw on one Red Ant Guard within 30 ft. and names
+      it. That guard immediately becomes Charged (as Stoke the Gaster) without
+      spending its own action, and its speed is not reduced; it can use Ember
+      Lance on its own next turn.
+      Ember Lance kills the guard that fires it, and both of them know that.
+      An ordinary guard will not stoke its own gaster in a fight it expects to
+      survive — this is how the lance actually reaches the table, and it is the
+      Firecaller spending a life to do it.
 
 roleplaying:
   personality: >
-    Composed where the ordinary guards are bored. Speaks — actually speaks,
-    aloud, in Common — which is itself alarming to anyone who has only been
-    handled by post guards all night.
+    Composed where the ordinary guards are frantic. Speaks — actually speaks,
+    aloud, in Common — which is itself alarming to anyone who has spent the
+    night being handled by jumpy post guards. Polite to the guards it is about
+    to spend, and not cruel about it; this is simply what they are for.
   motivation: >
     Contain and account for. A Firecaller wants to know what happened and who
     saw it, and would rather bring back a live intruder than a dead one.
   tactics: >
-    Stays behind the Bulwarks and keeps 30 ft. of distance. Opens with
-    Emberbloom on the largest cluster, then Kindles whichever ordinary guard has
-    a clean lane, then falls back to Cinder Bolts and Royal Cadence once the
-    party starts dropping mooks. Does not chase. Will call for the next batch
-    rather than press a losing fight.
+    Stays behind the Bulwarks and holds 30 ft. Turn one is Kindle the Host on
+    whichever three guards are closest to the party, plus Volunteer on a guard
+    with a clean lane. Turn two heats three more and starts Royal Cadence once
+    the party begins dropping mooks. Cinder Bolt only when there is nothing
+    left to buff. Does not chase, does not press a losing fight, and will fall
+    back to call the next batch — its job is to make the swarm expensive, not
+    to win the fight itself.
