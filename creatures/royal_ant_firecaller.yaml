@@ -1,0 +1,109 @@
+creature:
+  name: Royal Ant Firecaller
+  size: Medium
+  type: Monstrosity (ant)
+  alignment: Lawful Neutral
+  source: original — the Red Ant Queen's elite. The caster half of the royal response squad; never dispatched without at least one Bulwark.
+
+combat:
+  ac:
+    value: 15
+    type: chitin and censer-regalia
+  hp:
+    value: 78
+    hit_dice: 12d8+24
+  speed:
+    - 30 ft.
+    - climb 30 ft.
+  cr:
+    rating: 3
+    xp: 700
+    proficiency_bonus: 2
+
+ability_scores:
+  strength:     { score: 10, modifier: 0 }
+  dexterity:    { score: 14, modifier: 2 }
+  constitution: { score: 14, modifier: 2 }
+  intelligence: { score: 14, modifier: 2 }
+  wisdom:       { score: 16, modifier: 3 }
+  charisma:     { score: 14, modifier: 2 }
+
+defenses:
+  saving_throws:
+    - CON +4
+    - WIS +5
+  damage_resistances:
+    - fire
+
+senses:
+  - darkvision 60 ft.
+  - tremorsense 30 ft.
+passive_perception: 15
+languages:
+  - Ant-cant (chemical, fluent)
+  - Common
+
+skills:
+  - Perception +5
+  - Insight +5
+
+traits:
+  - name: Pheromone Standard
+    description: >
+      Spell save DC 13, spell attack +5. While the Firecaller is conscious, every
+      allied ant within 30 ft. of it deals +2 damage on a hit, can't be
+      Frightened, and has advantage on saving throws against being Charmed.
+      This is the reason to kill it first, and the party should be able to feel
+      the difference the round it drops.
+  - name: Royal Chitin
+    description: >
+      Overkill (Cleave) damage never carries to or from a Firecaller.
+
+actions:
+  - name: Multiattack
+    description: >
+      The Firecaller makes two Cinder Bolt attacks.
+  - name: Cinder Bolt
+    description: >
+      Ranged Spell Attack: +5 to hit, range 60 ft., one target.
+      Hit: 10 (3d6) fire damage.
+  - name: Emberbloom (Recharge 5–6)
+    description: >
+      The Firecaller throws a coal from its censer to a point it can see within
+      60 ft. It blooms into a 20-ft.-radius sphere of petal-fed flame. Each
+      creature in the area makes a DC 13 Dexterity saving throw, taking
+      21 (6d6) fire damage on a failure or half as much on a success. The area
+      becomes lightly obscured by smoke until the end of the Firecaller's next
+      turn. In the outward-facing palace, whatever the bloom touches keeps
+      burning — this is the action most likely to set the fête on fire.
+
+bonus_actions:
+  - name: Royal Cadence
+    description: >
+      Up to three allied ants within 30 ft. that can smell the Firecaller each
+      gain 5 temporary hit points. Temporary hit points from Royal Cadence stop
+      an Overkill (Cleave) chain — excess damage is absorbed rather than passed
+      on. This is the deliberate counter to the party mowing down Red Ant Guards;
+      it costs the Firecaller its bonus action every round it wants it.
+  - name: Kindle
+    description: >
+      One allied Red Ant Guard within 30 ft. immediately becomes Charged (as
+      Stoke the Gaster) without spending its own action, and its speed is not
+      reduced. That guard can use Ember Lance on its own next turn. A Firecaller
+      that survives three rounds behind a screen of ordinary guards turns a
+      nuisance fight into a killing volley.
+
+roleplaying:
+  personality: >
+    Composed where the ordinary guards are bored. Speaks — actually speaks,
+    aloud, in Common — which is itself alarming to anyone who has only been
+    handled by post guards all night.
+  motivation: >
+    Contain and account for. A Firecaller wants to know what happened and who
+    saw it, and would rather bring back a live intruder than a dead one.
+  tactics: >
+    Stays behind the Bulwarks and keeps 30 ft. of distance. Opens with
+    Emberbloom on the largest cluster, then Kindles whichever ordinary guard has
+    a clean lane, then falls back to Cinder Bolts and Royal Cadence once the
+    party starts dropping mooks. Does not chase. Will call for the next batch
+    rather than press a losing fight.

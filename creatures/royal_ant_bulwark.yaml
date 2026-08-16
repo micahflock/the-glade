@@ -1,0 +1,101 @@
+creature:
+  name: Royal Ant Bulwark
+  size: Large
+  type: Monstrosity (ant)
+  alignment: Lawful Neutral
+  source: original — the Red Ant Queen's elite. The "big mandible boys" of the Throne Room, and the muscle of the royal response squad.
+
+combat:
+  ac:
+    value: 17
+    type: natural armor
+  hp:
+    value: 105
+    hit_dice: 10d10+50
+  speed:
+    - 20 ft.
+    - climb 20 ft.
+  cr:
+    rating: 3
+    xp: 700
+    proficiency_bonus: 2
+
+ability_scores:
+  strength:     { score: 18, modifier: 4 }
+  dexterity:    { score: 8,  modifier: -1 }
+  constitution: { score: 20, modifier: 5 }
+  intelligence: { score: 7,  modifier: -2 }
+  wisdom:       { score: 12, modifier: 1 }
+  charisma:     { score: 10, modifier: 0 }
+
+defenses:
+  saving_throws:
+    - STR +6
+    - CON +7
+
+senses:
+  - darkvision 60 ft.
+  - tremorsense 30 ft.
+passive_perception: 13
+languages:
+  - Ant-cant (chemical)
+
+skills:
+  - Athletics +6
+  - Perception +3
+
+traits:
+  - name: Ponderous
+    description: >
+      The Bulwark can't take the Dash action and has disadvantage on Dexterity
+      saving throws. It is slow on purpose — the party can outrun it, and
+      running is frequently the correct answer.
+  - name: Royal Chitin
+    description: >
+      Overkill (Cleave) damage never carries to or from a Bulwark. It also has
+      advantage on saving throws against being moved, knocked prone, or grappled.
+  - name: Hold the Line
+    description: >
+      Difficult terrain doesn't cost the Bulwark extra movement while it is
+      moving to place itself between an intruder and a door, stair, or aperture.
+      Bulwarks are deployed to close routes, not to chase.
+
+actions:
+  - name: Multiattack
+    description: >
+      The Bulwark makes two Mandible Shear attacks, or one Mandible Shear and
+      one Pin.
+  - name: Mandible Shear
+    description: >
+      Melee Weapon Attack: +6 to hit, reach 10 ft., one target.
+      Hit: 13 (2d8+4) slashing damage.
+  - name: Pin
+    description: >
+      Melee Weapon Attack: +6 to hit, reach 10 ft., one Medium or smaller target.
+      Hit: 9 (2d4+4) bludgeoning damage, and the target is grappled
+      (escape DC 14). While grappled this way the target is also restrained.
+      The Bulwark can have only one creature pinned at a time, and its speed is
+      halved while it holds a pin.
+
+reactions:
+  - name: Interpose
+    description: >
+      When an attack hits another royal ant within 5 ft. of the Bulwark, the
+      Bulwark can make itself the target instead, taking the damage in that
+      ally's place. This is how the squad screens its Firecaller — the party
+      cannot simply focus the caster down while two Bulwarks are standing over it.
+      One reaction per round.
+
+roleplaying:
+  personality: >
+    Silent. Enormous. Uninterested in negotiating. Was standing in the same spot
+    an hour ago and will be standing there an hour from now unless something
+    needs closing.
+  motivation: >
+    The Queen's person, the Queen's doors. Nothing else registers.
+  tactics: >
+    Moves to block the exit the party wants, not toward the party. Pins the
+    most mobile PC — Nancy is the intended target and the pin is the intended
+    counter to her movement — and shears whatever is still in reach. Spends its
+    reaction on Interpose to keep the Firecaller alive. Will not pursue past the
+    door it was told to hold.

@@ -1,0 +1,105 @@
+creature:
+  name: Red Ant Guard
+  size: Medium
+  type: Monstrosity (ant)
+  alignment: Lawful Neutral
+  source: original — the Red Ant Queen's ordinary fête/patrol guard (NOT her elite; see royal_ant_bulwark.yaml and royal_ant_firecaller.yaml)
+
+combat:
+  ac:
+    value: 13
+    type: chitin and ceremonial plate
+  hp:
+    value: 18
+    hit_dice: 4d8
+  speed:
+    - 30 ft.
+    - climb 30 ft.
+  cr:
+    rating: "1/2"
+    xp: 100
+    proficiency_bonus: 2
+
+ability_scores:
+  strength:     { score: 14, modifier: 2 }
+  dexterity:    { score: 12, modifier: 1 }
+  constitution: { score: 10, modifier: 0 }
+  intelligence: { score: 8,  modifier: -1 }
+  wisdom:       { score: 12, modifier: 1 }
+  charisma:     { score: 10, modifier: 0 }
+
+senses:
+  - darkvision 60 ft.
+  - tremorsense 30 ft.
+passive_perception: 13   # 8 while standing its post in a public room — see Parade Posture
+languages:
+  - Ant-cant (chemical)
+
+skills:
+  - Perception +3
+
+traits:
+  - name: Parade Posture
+    description: >
+      This guard is decoration with a weapon on it. It rolls initiative with
+      disadvantage, and while it is standing its post in a public room it makes
+      Wisdom (Perception) checks with disadvantage — the music, the crowd, and
+      the pheromone overflow cover a great deal (passive Perception 8 on post).
+      A party that opens on a patrol before it acts should expect to drop at
+      least one guard before it moves.
+  - name: Overkill (Cleave)
+    description: >
+      When a single attack reduces a Red Ant Guard to 0 hit points, damage in
+      excess of its remaining hit points carries over to one other Red Ant Guard
+      within 5 ft. of it, and can chain onward the same way while excess remains.
+      Overkill damage never carries to or from a Royal Ant Bulwark, a Royal Ant
+      Firecaller, or any non-ant creature. Temporary hit points (see the
+      Firecaller's Royal Cadence) stop the chain — excess is absorbed, not passed.
+  - name: Alarm Musk
+    description: >
+      The first time the guard takes damage, unless that damage reduces it to
+      0 hit points, it sprays alarm pheromone. Every red ant within 60 ft.
+      immediately knows the guard's location and the direction the threat came
+      from, and the fight becomes a noise event on the alert ladder. A patrol
+      dropped to 0 before it can act — or before it takes its first damage —
+      dies quiet.
+
+actions:
+  - name: Mandible Jab
+    description: >
+      Melee Weapon Attack: +4 to hit, reach 5 ft., one target.
+      Hit: 6 (1d8+2) piercing damage.
+  - name: Stoke the Gaster
+    description: >
+      The guard plants its legs and pumps its fire gland. Its abdomen swells,
+      glows, and hisses — anyone who can see it knows exactly what is coming.
+      Until the end of its next turn the guard is Charged, and its speed is 0.
+      If it takes 5 or more damage from a single source while Charged, the
+      charge ruptures: the charge is lost and the guard takes 7 (2d6) fire
+      damage. Round one of the two-round charged attack.
+  - name: Ember Lance (Charged only)
+    description: >
+      The guard vents its charged gaster in a line 30 ft. long and 5 ft. wide.
+      Each creature in the line makes a DC 12 Dexterity saving throw, taking
+      21 (6d6) fire damage on a failure or half as much on a success. The charge
+      is spent. Flammable objects in the line that aren't worn or carried ignite —
+      and the outward-facing palace is built of dried flower petals.
+      Round two of the two-round charged attack.
+
+roleplaying:
+  personality: >
+    Posted, bored, and profoundly not expecting this. They were picked for how
+    they look flanking an aperture, not for how they fight. They believe the
+    palace is safe because it has always been safe.
+  motivation: >
+    Get through the shift, do not be the one who let something happen during
+    the coronation.
+  tactics: >
+    On post, two to an aperture, facing outward. In the open they fight in
+    numbers and stand their ground rather than disengaging — they hold the line
+    and make noise while they do it, which is what summons the royal squad.
+    A guard with a clear lane and nothing in its face will Stoke the Gaster and
+    lance on the following turn; a guard in melee just jabs. Multiple guards
+    charging together is the real threat — three lances converging on one PC is
+    a killing volley, and the tell is deliberately obvious so the party can
+    answer it.
