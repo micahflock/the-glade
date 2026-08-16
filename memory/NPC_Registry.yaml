@@ -485,6 +485,7 @@ npcs:
       - "Session 5: Ran the ginger honeycap / 'it's a hot batch' / back-booth handoff cleanly. Did not need to deploy any of the failure-recovery branches."
       - "Session 6: Name confirmed as Dale. Served the party breakfast (greenery cakes, mite meat, BBV beverages) in the empty morning bar. Half-mumbled the wish-someone-would-help-her line about Beeatrix, then went over and patted her back. Told the party they could book or find flight travel to the east."
       - "Session 7: Tending bar during the Beeatrix reunion (thin evening crowd). Got the wish he'd half-mumbled — someone helped her."
+      - "Session 7.5: Had all of the party's favorite foods prepared when they came down on the morning of the fete, and confirmed Beeatrix had come back early the night before. The prepped nudge about their clothes ('you're going to a queen's coronation dressed like that?') never had to fire — they were already going shopping."
 
     hooks:
       - Probably a recurring point of contact in Canopia for as long as the party uses the Dewdrop Inn as a node.
@@ -494,11 +495,11 @@ npcs:
     species: Mining bee
     role: Grieving / hungover singer at the Dewdrop Inn; quest-giver for the mantis hunt; *recruited to front the band at the Red Ant Queen's fete*
     affiliation: None (solitary bee, displaced)
-    status: Alive — recovering; sent home sober ahead of the fete
-    location: Sent home (Canopia) — declined the casino at the party's urging
+    status: Alive — recovering; came back sober the night before the fete and has a gown waiting
+    location: The Dewdrop Inn, Canopia — asleep in the kitchen as of the morning of the fete
     disposition: Allied (grateful; the party's singer)
     first_met: Session 6
-    last_seen: Session 7
+    last_seen: Session 7.5 (offstage — asleep; the party acted on her behalf without waking her)
 
     appearance: Rough-looking. Slumped at the bar, snoring quietly. The singer the party heard wailing the night before about ancestral flower fields and fantastical monsters.
     voice: Inebriated. Squawks. "MY OLE HOME IS HAUNTED BY A MONSTER, WON'T ANYONE *HIC* DO ANYTHING?" Dale says she used to sing the classics.
@@ -516,6 +517,7 @@ npcs:
       - "Session 6: Met properly at breakfast. Pitched the meadow side quest. Nancy invited her to front the band at the Red Ant Queen's fete — Beeatrix used to sing the classics. Recruitment accepted at the table; follow-through TBD."
       - "Session 6.5: The party cleared the monster (orchid mantis family) from her meadow and returned to Canopia. Her reward not yet collected."
       - "Session 7: Reunion at the Dewdrop. Found her on stage singing a guilt-soaked lament about sending the party to die; Drix joined on lute, Nancy answered with an interpretive dance, and the mood turned warm. Overjoyed they survived. Confirmed as the band's singer (she plays a lyre). Gave Drix the last of her late mother's Stick-All Honey as thanks. Busked the promenade with the band and got into it. The party then talked her into going home rather than the casino, to keep her sober before the fete."
+      - "Session 7.5: Offstage the whole session. She DID come back early and sober the night before — Dale confirmed it — and slept it off in the Dewdrop's kitchen. Nancy took her measurements while she slept, and the party had Twizzlers make her a GOWN for the fete in absentia. She never woke up on screen. Note: the prepped beat where she sings sober for the Twizzlers shop floor did NOT happen; she was not there."
 
     reward_given:
       - "Stick-All Honey (heirloom; the last of her mother's) — given to Drix. Sticks one thing to one thing, permanently. Single use."
@@ -609,23 +611,44 @@ npcs:
     affiliation: Independent; currently doing decorative work for the Red Ant Queen
     status: Alive
     location: The Ruby Thorax, west-side Canopia
-    disposition: Unknown (not yet met)
-    first_met: null   # PREP — party only learned of the shop; it was closed/unvisited
-    last_seen: null
+    disposition: Friendly — delighted by the work, happy to help
+    first_met: Session 7.5
+    last_seen: Session 7.5
+
+    appearance: Elderly green stick bug. Tall and elegant; limbs like polished twigs, rings on more of them than you can count.
+    voice: Refined, genuinely passionate, a little wistful. Lifts visibly when the material is interesting.
+    motivation: The craft itself. Apolitical — he goes where the work is, and right now the work is the Queen's.
 
     notes: >
-      [PREP, NOT MET — known-of only.] Refined, apolitical stick-insect jeweler who
-      "goes where the work is," and right now the work is the Queen's. Making the
-      Red Ant Queen's coronation crown. His shop, The Ruby Thorax, was formerly
-      "The Iron Sting" (a bladesmith) — repainted when the new Queen took power
-      ("she doesn't have much use for blades"). In Session 7 the party got directions
-      to the shop (west side, "probably not open") from a cockroach passerby but did
-      not go in. He has, per prep, seen the Queen's private collection — led in through
-      the throne room while fitting the crown.
+      Jeweler, met in Session 7.5 when Nancy pounded on his door with "an interesting
+      weaponry proposition." His shop, The Ruby Thorax, was formerly "The Iron Sting"
+      (a bladesmith) — repainted when the new Queen took power ("she doesn't have much
+      use for blades"). He has mostly been doing decorative work for her since: NOT
+      weapons or armor. He is crafting her coronation crown, which he calls the
+      centerpiece of the night, and he was invited into her chambers for the fitting.
+      He took the party's commission on the spot and finished all of their mantis
+      material — the orchid mandibles into swords, Tabby's mantis spines into daggers.
+
+    info_shared_with_party:
+      - "The crown is the centerpiece of the coronation, and he was invited into the Queen's own chambers to fit it."
+      - "🔑 The route through the Queen's quarters: servants' entrance -> up a ramp -> the great hall -> up stairs to the throne room -> living quarters behind the throne -> up a spiral to the Queen's apartment. Long walk from the kitchen to the apartment."
+      - "The throne room has a window. [DM CHECK — banked S7 canon is a balcony-less throne room; a window is not a balcony, but reconcile before the infiltration.]"
+      - "The living quarters behind the throne are cozy, dim, solemn. Once past the throne it stopped feeling like a palace and started feeling like a fortress."
+      - "🔑 One room has an odd smell and a rumbling, sizzling sound. The laboratory, made findable by sense rather than rumor."
+
+    party_history:
+      - "Session 7: Known-of only. A cockroach passerby pointed Nancy to the shop (west side, 'probably not open'); the party did not go."
+      - "Session 7.5: Met. Showed them the coronation crown in progress, gave up the Queen's-quarters route while reminiscing about the fitting, and did all three PCs' blade work. Let Nancy take a sketch of the crown."
+
+    work_done_for_party:
+      - "Nancy — The Mantible finished as a sword; invisibility KEPT (1x per short rest)."
+      - "Drix — The Mantible finished as a sword; invisibility KEPT (1x per short rest)."
+      - "Tabby — both mantis-spine daggers sharpened; invisibility LOST on both. One master's edge, one balanced edge. [DM CHECK on the exact numbers — s075_draft.md section 2A read them as +4-first/+1-after and +2, never locked.]"
 
     hooks:
-      - "[DEFERRED] The Ruby Thorax scene — finishing Tabby's mantis-spine blades (edge vs. keep-invisible decision) and the throne-room -> private-collection intel — is unspent. Available on a return."
-      - The coronation crown as a possible heist vector (delivery/escort into the throne room).
+      - "🔑 The coronation crown as a heist vector — delivery, escort, or forgery. He is finishing it for tonight, and Nancy has a sketch of it."
+      - "The prepped private-collection/vault reveal never happened — it is still unspent if you want it on a return."
+      - Natural recurring Canopia contact. He liked the party and he liked the material.
 
 
   - name: Twizzlers
@@ -637,9 +660,9 @@ npcs:
       Trader Twizzlers — south-side Canopia, down the street from The Ruby Thorax.
       (Side settled by DM decision 2026-08-03: south, per the Session 7 play notes.
       World_Codex.md previously said west; corrected.)
-    disposition: Not yet met
-    first_met: null   # PREP — learned of in Session 7, shop not visited
-    last_seen: null
+    disposition: Warm — charmed by the party's performance; dressed all four of them
+    first_met: Session 7.5
+    last_seen: Session 7.5
 
     appearance: >
       Elderly and soft, built into a case of woven silk and cut leaf added to over
@@ -667,23 +690,207 @@ npcs:
       the vulgarity of it, without once wondering why anyone would reinforce a wall.
 
     notes: >
-      [PREP, NOT MET — known-of only.] Named to the party on the promenade in
-      Session 7 as the place to get "a beautiful outfit" for the fete; they did not
-      go. Full scene written up in sessions/s075_draft.md section 2B — storefront,
-      goods and prices, the pay-in-a-performance trade, and the intel. Everything
-      about her beyond the shop name and street is prep, not table canon.
+      Met in Session 7.5, on the day of the fete, with a line ~40 bugs deep out the
+      door. The party skipped the queue by pretending to work there and it worked.
+      Found her seated in a cocoon chair on the shop floor, working a garment. SHE
+      asked THEM for a small performance rather than the other way round; they
+      obliged, she liked it, and she made their outfits.
+
+      Settled by play (closes the draft's open question): "Twizzlers" is the
+      proprietor's own name, she is a bagworm moth, she uses she/her. The shop is
+      three storeys tall, narrow, and brightly colored.
 
     party_knowledge: >
-      Only that the shop exists, sells fete outfits, and is down the street from
-      The Ruby Thorax. Learned secondhand from the honeybun vendor on the promenade.
-      They have never met her and do not know her species or name.
+      Met her, performed for her, and were dressed by her. They know her by name and
+      on sight, and they left on very good terms. They do NOT know that she never
+      leaves the building.
+
+    garments_made:
+      - "Nancy — asymmetric purple."
+      - "Tabby — all black and spiky; deliberately the least flashy of the three. HAS SECRET POCKETS (= the concealment tailoring of s075_draft.md section 2B; keeps a weapon through a casual search)."
+      - "Drix — black-to-purple ombre bellbottoms with a capelet."
+      - "Beeatrix — a gown, fitted in absentia from measurements Nancy took at the Dewdrop that morning."
+
+    party_history:
+      - "Session 7: Known-of only. Named on the promenade as the place to get a beautiful outfit for the fete."
+      - "Session 7.5: Met. Dressed all three PCs and Beeatrix in exchange for a performance on her shop floor."
 
     hooks:
-      - "🔑 Petal-seam intel — she works petal daily and knows panels are strong across the face and weak along the seam. Feeds the bore-through-petals heist mechanic (s07_draft.md section 3a) with a *method* rather than a map, which keeps bore-able vs. reinforced faces an in-session call per s08_draft.md section 1."
-      - "🔑 The palace livery order (\"forty aprons, no notice, and they want them in brown\") — a servant's uniform is the kitchen->understory route made wearable."
-      - Will dress the whole party free in exchange for the band playing her shop floor — she has never heard a band. Cheap, warm, and a sober rehearsal for Beeatrix before the fete.
-      - Natural recurring Canopia contact — she never moves and she knows everyone.
-      - "Optional quiet beat: a rack of finished, paid-for garments nobody collected, tickets still pinned. Some are from Mimbleburg and Trontsburry (lost contact). She finds it unremarkable."
+      - "🔑 [UNSPENT — DM CHECK] Petal-seam intel. She works petal daily and knows panels are strong across the face and weak along the seam. Neither the DM nor the player notes record this landing at the table. It is the technique that makes the bore-through-petals heist mechanic work, and it is a cheap return visit if it never came up."
+      - "🔑 [UNSPENT — DM CHECK] The palace livery order (\"forty aprons, no notice, and they want them in brown\") — a servant's uniform is the kitchen->understory route made wearable. Also unrecorded in play."
+      - Natural recurring Canopia contact — she never moves, she knows everyone, and the party is now in her good books.
+      - "Never used: the rack of finished, paid-for garments nobody collected, tickets from Mimbleburg and Trontsburry still pinned. Still available."
+      - "Never used: the never-wilting petal material as the in-world signal that spring-zone organic matter does not decay (Open_Questions.md 'Non-rotting organic material')."
+
+
+  - name: Vikki
+    species: Bombardier beetle
+    role: Alchemy/reagent supplier — proprietor of Vikki's Volatiles
+    affiliation: Independent (Canopia); supplies the Red Ant Queen's castle wagons
+    status: Alive
+    location: Vikki's Volatiles, Canopia — same district as The Ruby Thorax, among the jewelers and candle shops
+    disposition: Neutral-helpful — gruff and grumbling, but forthcoming
+    first_met: Session 7.5
+    last_seen: Session 7.5
+
+    appearance: >
+      Elderly bombardier beetle. Busy, grumbling, always pointing at something. Her
+      shop is an older squat building of cut pebble, out of step with its pretty
+      neighbors, with fresh AND old scorch marks and boarding on the upper storey —
+      recently scorched and incongruent with the rest of the street.
+      [DM CHECK: prep has her down one arm, the stump fairly recent, as the payoff of
+      an upstairs mishap. Neither the DM nor the player notes record the arm. Did it
+      land at the table? It ties the scorch marks and the amplified-reagents thread
+      together, and it is why she throws grenades at burglars.]
+    voice: Gruff, businesslike, no time for browsers — but get her on the right subject and she rants.
+    motivation: Keep the shop stocked and running. The Queen's appetite is eating her inventory.
+
+    notes: >
+      Found by accident in Session 7.5 — the party clocked the scorched stonework on
+      the walk to the Royal Jelly Society and went in to look. Inside: rows and rows
+      of shelving filled with bins filled with all sorts of random stuff, and Vikki
+      bossing around her house-centipede assistant, Ricky.
+
+      She over-delivered. The prep had her naming the word "laboratory" and reserved
+      the Leafcutter-Queen-lab link for the RJS; in play she gave the party BOTH, a
+      scene early, and named the destination outright.
+
+    info_shared_with_party:
+      - "She supplies the wagons of goods going to the castle."
+      - "Her stock has been acting weird lately — big explosions, strange effects. (The Bloom amplifying magic, from a shopkeeper's point of view.)"
+      - "🔑 The material going to the castle is mostly going to the LEAFCUTTER QUEEN'S LAB. This is the party's hardest lead on the lab, and it corroborates Thoralex's odd-smelling, rumbling/sizzling room."
+
+    goods_provided:
+      - "2 exploding peppercorns — 20 ft blast radius. Nancy and Tabby carry one each."
+      - "Smoke-bomb components — powdered butterfly wings, crushed agate, and pine resin; makes smoke when burned."
+      - "Purple salt — turns fire purple."
+
+    hooks:
+      - "Is she recruitable? She has grievances (her hijacked stock, and the arm if it landed) and the party has a reason to come back. Prep left this deliberately undecided."
+      - "[UNSPENT] The 'somebody else is supplying her scorpion stingers' thread — she did not sell the Queen everything in those carts. Never came up in play."
+      - "[UNSPENT] After-hours: order records and crates proving lab-scale volume. She lives above the shop and is armed."
+
+
+  - name: Ricky
+    species: House centipede
+    role: Shop assistant at Vikki's Volatiles
+    affiliation: Employed by Vikki
+    status: Alive
+    location: Vikki's Volatiles, Canopia
+    disposition: Neutral (harried)
+    first_met: Session 7.5
+    last_seen: Session 7.5
+
+    appearance: Every one of his many legs in motion, hairs in a frazzle, skittering between the shelves pulling orders together.
+    notes: >
+      Named at the table in Session 7.5 (the prep left the assistant anonymous). Vikki
+      spends the scene pointing at him and bossing him around.
+
+    hooks:
+      - A soft, low-stakes way back into Vikki's shop if the party wants a second visit without facing Vikki directly.
+
+
+  # ── ROYAL JELLY SOCIETY, CANOPIA BRANCH (Session 7.5) ───────────────────────
+  # NOTE: the RJS scene that ran was NOT sessions/s075_draft.md section 2D. That
+  # draft version was built around Honoria Pell-Mell and Old Bombus, and Old Bombus
+  # was the mechanism that would have handed the party a palace construction map.
+  # Both were replaced before play and are RETIRED, UNPLAYED — do not add them.
+  # Consequence: the party has NO construction map.
+
+  - name: Madame Aprilis Comb-Royale
+    species: Bee
+    role: Branch Hostess, Royal Jelly Society — Canopia branch
+    affiliation: Royal Jelly Society (Canopia branch)
+    status: Alive
+    location: Royal Jelly Society, Canopia branch
+    disposition: Cheerfully useless — warm to the party's faces, immovable on anything that matters
+    first_met: Session 7.5
+    last_seen: Session 7.5
+    # [DM CHECK] Was she named aloud at the table? Heather's player notes only ever
+    # say "branch hostess." The name is from the notes used, not confirmed as spoken.
+
+    appearance: Ornate older bee, rings on three of her six fingers, wings folded so neatly they look ironed. Sits by the fire.
+    voice: Rapt, leaning forward, sincerely interested — in flowers. "Tell me everything. What have you seen? Tell me about the flowers."
+    motivation: Flowers. The branch's collection. A marvelous season.
+
+    personality: >
+      Genuinely kind and entirely unreachable. She hears news of a dying world, performs
+      a small gesture of receiving it, and sets it down gently like a teacup. Not snide,
+      not a villain — that is what makes her unbearable.
+
+    notes: >
+      The tonal payload of the Royal Jelly Society scene, and it landed exactly as
+      intended. She asked what the party had seen while traveling and was concerned
+      almost entirely with flowers; she was seemingly uninterested in the blight of the
+      Bloom elsewhere. Tabby's player notes render the verdict, underlined:
+      "She IS TERRIBLE. Literally the worst."
+
+      She did do one useful thing: she brought the party through to the archive and
+      Mr. Pollendew.
+
+    party_knowledge: >
+      They met her, tried her, and actively dislike her.
+
+    hooks:
+      - "The Canopia branch will not write to Chitinholm, will not warn anyone, and does not believe it needs to. That is fixed and is the point — do not let a Persuasion roll move it."
+      - Available as a return obstacle if the party ever needs something official from the branch.
+
+
+  - name: Buttress
+    species: Bee
+    role: Junior door bee, Royal Jelly Society — Canopia branch
+    affiliation: Royal Jelly Society (Canopia branch)
+    status: Alive
+    location: Royal Jelly Society, Canopia branch
+    disposition: Friendly (sincerely, uselessly)
+    first_met: Session 7.5
+    last_seen: Session 7.5
+    # [DM CHECK] Named aloud at the table? The player notes say only "door bee."
+
+    appearance: Dewy-eyed, soft yellow livery.
+    voice: Painfully sincere, delighted by visitors, apologetic about the fuss.
+
+    notes: >
+      One of the bees who received the party at the door. A door bee outside welcomed
+      them in; two more inside gave them water to wash their hands with, and candy.
+      When the party said they were from Chitinholm, the branch's response was that
+      they had received some letters, but the letters "didn't have anything with them"
+      — meaning flower petals. That line is the whole scene in miniature.
+
+    hooks:
+      - Her kindness is intact and unconnected to anything real. Keep her sweet if she reappears.
+
+
+  - name: Mr. Pollendew
+    species: Bee
+    role: Archivist, Royal Jelly Society — Canopia branch
+    affiliation: Royal Jelly Society (Canopia branch)
+    status: Alive
+    location: The archive, Royal Jelly Society, Canopia branch
+    disposition: Gentle, distractible, helpful
+    first_met: Session 7.5
+    last_seen: Session 7.5
+
+    appearance: Old bee in spectacles, up a ladder, holding folios and looking for somewhere to put them. He has been looking for a while.
+    voice: Trails off mid-sentence. Repeats names like he is trying to hold on to them.
+
+    personality: >
+      Not senile. He is the one bee in the building who can feel the wrongness, and he
+      has handled it by becoming useless. He cannot finish a thought about it.
+
+    notes: >
+      The archive is a large room with a tall ceiling, packed with journals, portfolios,
+      and letter-boxes. The party asked him for information about The Bloom and he
+      pointed them to a missive from Chitinholm. His desk carries a stack of opened mail
+      and half-written responses — the replies to other branches he cannot bring himself
+      to send.
+
+      The party found an old cabinet in the archive holding a dusty jar labeled
+      "Royal Jelly."
+
+    hooks:
+      - "The soft seam in the building. He is the closest thing to a sympathetic bee here, but only in flickers, and he will not be moved to DO anything."
+      - "[DM CHECK] Did the party read the Chitinholm missive, and is it the Dr. T'wigfingers cross-branch packet? Prep has it arriving sealed and dusty; the player notes describe the desk mail as already opened."
 
 
   # ── REBEL HEIST SPECIALISTS (offered by Gleam, Session 6) ───────────────────

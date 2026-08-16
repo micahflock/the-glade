@@ -89,7 +89,13 @@ attacks:
     attack_bonus: +7        # DEX +4 + prof +3, finesse
     damage: 1d8+4
     damage_type: slashing
-    notes: "Invisible finesse short sword (orchid mantis mandible, Session 6.5). Can turn invisible 1x per short rest."
+    notes: >
+      Invisible finesse short sword (orchid mantis mandible, Session 6.5). Can turn
+      invisible 1x per short rest. Session 7.5: properly finished as a sword by
+      Thoralex at The Ruby Thorax — Nancy chose to KEEP the invisibility rather than
+      take an edge bonus, so the mechanics are unchanged.
+      [Player notes recorded this as "invisible once a day for one hour"; DM ruling
+      2026-08-16 keeps it at 1x per short rest, no stated duration.]
 
 spellcasting:
   ability: intelligence       # Both AT and Bladesinger use INT
@@ -182,8 +188,11 @@ equipment:
   - Ahganmin (worn as the gem in Nancy's turban)  # session 2: glowing magic amber, reacts to elevated magical energy. Session 3: Garett built a box housing that makes glow changes easier to observe. Session 4: glowed more strongly inside the Winter Farm — confirmed sensitivity to ambient magic level. Session 5: glowing brighter in the Overgrowth; Nancy fashioned a turban and set the Ahganmin into it as the gem. (Detection box presumably still exists.)
   - Winter Farm fungus sample       # session 4: tore off and ate a piece of corpse-farm fungus (no effect); kept a piece for later study.
   - 1 cig                           # session 5: pickpocketed on the way out of the Queen's Crown casino in Canopia. (2 sap from S5 spent in S6 on Barbra's flight.)
-  - The Mantible                    # session 6.5: orchid mantis mandible — 1d8 finesse short sword; can turn invisible 1x per short rest.
+  - The Mantible                    # session 6.5: orchid mantis mandible — 1d8 finesse short sword; can turn invisible 1x per short rest. Session 7.5: finished as a sword by Thoralex; invisibility KEPT (no edge bonus taken).
   - Tap shoes + little bells         # session 7: percussion kit for the band (Beeatrix on lyre, Drix on lute).
+  - Fete outfit — asymmetric purple  # session 7.5: made by Twizzlers in exchange for a performance on her shop floor.
+  - Sketch of the Red Ant Queen's coronation crown  # session 7.5: taken at The Ruby Thorax while Thoralex was working on it. The crown is the centerpiece of tonight's coronation — a live heist vector (delivery, escort, or forgery).
+  - Exploding peppercorn (x1)       # session 7.5: from Vikki's Volatiles. 20 ft blast radius. Tabby carries the other one.
 
 features_and_traits:
   - name: Mobile
@@ -253,4 +262,7 @@ notes:
   - "Session 6.5: party defeated the orchid mantis family. Nancy took a mandible as his trophy — The Mantible (invisible 1d8 finesse short sword); flew back to Canopia on Barbra. Beeatrix's reward not yet collected."
   - "Session 7 location: Canopia heist-prep day; ends mid-recon at the palace grand level. Fete is tomorrow night."
   - "Session 7 roleplay beats: asked a cockroach passerby for a smithy and got directions to the Ruby Thorax (west side) plus a tip about '2 entrances'; answered Beeatrix's stage lament with an interpretive dance; performs percussion in the band with tap shoes + little bells."
+  - "Session 7.5 location: Canopia, day of the fete. Session ends with the party exiting the Royal Jelly Society in daylight. The fete is TONIGHT."
+  - "Session 7.5 roleplay beats: wrote down Beeatrix's measurements at the Dewdrop so she could be outfitted in absentia (she slept through the entire session in the inn's kitchen); led the bluff into Trader Twizzlers by pretending the party worked there, which worked and reportedly made another bug soil themselves; pounded on the door of The Ruby Thorax and opened Thoralex with 'an interesting weaponry proposition'; asked him to turn the orchid mandibles into swords and Tabby's mantis spines into daggers; took a sketch of the coronation crown."
+  - "Session 7.5 blade decision: KEPT the invisibility on The Mantible rather than take an edge bonus. Drix did the same; Tabby went the other way on both of hers."
   - "Session 6 spell flag [DM CHECK]: player notes say 'Nancy casts Alarm' after long rest. Alarm is not in Nancy's known-spells list. Either (a) ritual cast from Wizard spellbook (Alarm is a Wizard 1st-level ritual), or (b) the player meant the improvised sock-on-doorknob alarm the party rigged. Confirm with Rowyn."

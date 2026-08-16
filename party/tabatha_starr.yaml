@@ -84,11 +84,29 @@ attacks:
     damage_type: piercing
     range: 150/600
 
-  - name: Mantis-spine dagger
-    attack_bonus: +7    # DEX (+4) + prof (+3), finesse
+  - name: Mantis-spine dagger — Master's Edge
+    attack_bonus: +11   # DEX (+4) + prof (+3) + master's edge (+4) on the FIRST attack only; +8 thereafter (+1)
     damage: 1d8+4
     damage_type: slashing
-    notes: "Crafted from orchid mantis spines (Session 6.5). Same effect as The Mantible — can turn invisible 1x per short rest."
+    notes: >
+      Crafted from orchid mantis spines (Session 6.5); honed by Thoralex at The Ruby
+      Thorax (Session 7.5). "Strikes true on the first strike, then becomes a regular
+      dagger." Option A of the s075_draft.md section 2A table: +4 on the first attack,
+      +1 for the life of the blade thereafter.
+      NO LONGER TURNS INVISIBLE — the edge disrupted the property.
+      [DM CHECK: the +4-first/+1-after reading was flagged in the draft as needing a
+      lock and was never locked. Adjust here once ruled.]
+
+  - name: Mantis-spine dagger — Balanced Edge
+    attack_bonus: +9    # DEX (+4) + prof (+3) + balanced edge (+2)
+    damage: 1d8+4
+    damage_type: slashing
+    notes: >
+      The second spine dagger, given a keen durable working edge by Thoralex
+      (Session 7.5). "Extra sharp, and stays sharp after use." Option B of the
+      s075_draft.md section 2A table: +2.
+      NO LONGER TURNS INVISIBLE.
+      [DM CHECK: the +2 reading was never formally locked either.]
 
   - name: Extra Attack
     source: Ranger 5
@@ -136,7 +154,10 @@ equipment:
   - Mess pot                        # session 1: RJS stockroom — preserved per DM
   - Larval grease                   # session 1: RJS stockroom — preserved per DM
   - Party map                       # session 2: working map begun by Tabby and Nancy, incorporating T'wigfingers' data, Lars's northeast heading, and Garett's triangulation parchment. Tabby is keeper. Preserved per DM.
-  - Mantis-spine dagger(s)          # session 6.5: harvested from the orchid mantis kill and crafted into daggers. Same effect as The Mantible — 1d8 finesse; can turn invisible 1x per short rest.
+  - Mantis-spine daggers (x2)       # session 6.5: harvested from the orchid mantis kill and crafted into daggers. Session 7.5: BOTH finished by Thoralex at The Ruby Thorax — one master's edge, one balanced edge. Tabby traded away the invisibility on BOTH; neither blade turns invisible any more. See attacks.
+  - Fete outfit — all black and spiky  # session 7.5: made by Twizzlers. Deliberately the least flashy of the three; Tabby asked for subtle and mobile. HAS SECRET POCKETS = concealment tailoring (keeps a weapon through a casual search).
+  - Exploding peppercorn (x1)       # session 7.5: from Vikki's Volatiles. 20 ft blast radius. Nancy carries the other one.
+  - Smoke-bomb components           # session 7.5: powdered butterfly wings, crushed agate, pine resin. Makes smoke when burned. [DM CHECK: held by Tabby, Nancy, or split? Not specified in play.]
   - Navi-gus                        # session 5: gift from Antshley at the Overgrowth tunnel mouth. Smooth translucent ball of fungus. Twitches/throbs when exposed to leafcutter pheromone trails. Currently keyed to Canopia. Re-keyable. The pheromone trails are constantly being re-cut, so the device is current with whatever the leafcutters have laid down most recently.
 
 features_and_traits:
@@ -213,4 +234,8 @@ notes:
   - "Session 6.5: party defeated the orchid mantis family (Hunter's Mark dropped at end of combat). Tabby took mantis spines as her trophy, to craft into daggers; flew back to Canopia on Barbra."
   - "Session 7 location: Canopia heist-prep day; ends mid-recon at the palace grand level. Fete is tomorrow night."
   - "Session 7 roleplay beats: worked the promenade crowd during busking to harvest overheard palace-layout intel (two ballrooms, fighting pit, banquet hall, balcony-less throne room); spread a rumor that the fete is open to everyone @ 8:30pm (flopped until Drix backed it); failed to convince the jewel-beetle nectar vendor."
-  - "Session 7 blade note: the prepped Ruby Thorax visit (Thoralex finishing/upgrading her mantis-spine daggers — edge vs. keep-invisible) DID NOT happen; the shop was closed/unvisited. Daggers remain as crafted in 6.5 (1d8 finesse; invisible 1x per short rest). Upgrade decision deferred to a return visit."
+  - "Session 7 blade note: the prepped Ruby Thorax visit did not happen that session; the shop was closed/unvisited. RESOLVED in Session 7.5 — see below."
+  - "Session 7.5 location: Canopia, day of the fete. Session ends with the party exiting the Royal Jelly Society in daylight. The fete is TONIGHT."
+  - "Session 7.5 BLADE DECISION (the big one): Tabby took the edge on BOTH mantis-spine daggers and gave up the invisibility on both — one master's edge, one balanced edge. Nancy and Drix went the other way and kept theirs. This is the opposite of what the prep recommended on the eve of a stealth job, and it was a deliberate player call. She has traded stealth for damage."
+  - "Session 7.5 roleplay beats: asked Twizzlers for something subtle and mobile — the least flashy outfit possible — and got all black and spiky WITH SECRET POCKETS, which she was delighted by; carries one of the two exploding peppercorns from Vikki's."
+  - "Session 7.5 player-notes note: Heather's handwritten pages for this session are headed 'Session 9' (her own running count) and dated 8/3/2026. Full transcription at sessions/notes/Heather-session-notes-7-5.md."

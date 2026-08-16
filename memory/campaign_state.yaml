@@ -8,15 +8,15 @@ current_session: 8
 active_draft: sessions/s08_draft.md
 draft_status: refined
 
-last_played_session: 7
-last_played_summary: "Heist Prep in Canopia — the party spent the day gathering intel and setting up advantages ahead of the Red Ant Queen's fete, which they learned is TOMORROW NIGHT. Reunited with Beeatrix at the Dewdrop (Drix joined her stage lament on lute, Nancy answered with an interpretive dance); confirmed her as the band's singer (she plays a lyre) and received the last of her mother's Stick-All Honey (gold reward waived). Busked the promenade (west side) where the palace comes into view, harvesting public-layout intel (two ballrooms, fighting pit, banquet hall, balcony-less throne room) and learning from a honeybun vendor that her brother Johnathy works the palace kitchens and that the servants' quarters run under the ballrooms. Tabby seeded a rumor (reinforced by Drix) that the fete is open to all at 8:30pm. They sent Beeatrix home sober rather than to the casino, then scoped the palace's grand level: guards every 30 ft, a fortified servants' gate with a watchtower, kitchen->quarters walkways, and carts of strange spell components (juniper berries, scorpion stingers, glowing goop) pointing at a hidden lab. Session ended mid-recon, heading back to the Dewdrop to draw blueprints. The prepped Ruby Thorax/Thoralex, Vikki's Volatiles, and Queen Bee Casino scenes did not run. See sessions/final/s07_final.md and sessions/session_log.md."
+last_played_session: 7.5
+last_played_summary: "The Last Day in Canopia — the morning and afternoon of the fete itself, spent visiting the shops the party had only heard about. Woke at the Dewdrop to Dale's spread of their favorite foods and confirmation that Beeatrix had come back early and sober (she slept through the whole session in the inn's kitchen; Nancy took her measurements while she slept). Drix's Invisible Servant line-holding gambit was walked back as a rules correction. At Trader Twizzlers they skipped a ~40-bug queue by pretending to work there, and Twizzlers -- an elderly bagworm moth in a cocoon chair -- asked THEM for a performance, liked it, and dressed all four: asymmetric purple for Nancy, black-to-purple ombre bellbottoms and a capelet for Drix, all-black-and-spiky WITH SECRET POCKETS for Tabby, and a gown for Beeatrix. At the Ruby Thorax, Thoralex showed them the coronation crown he is finishing -- the centerpiece of tonight -- let slip that he was invited into the Queen's chambers to fit it, and gave up a walking route through her quarters (servants' entrance -> ramp -> great hall -> throne room -> living quarters behind the throne -> spiral to the apartment), including that past the throne it feels like a fortress and that ONE ROOM SMELLS ODD AND RUMBLES/SIZZLES. He finished all their mantis material: Nancy and Drix kept invisibility, Tabby traded it away on BOTH daggers for a master's edge and a balanced edge. Nancy took a sketch of the crown. They found Vikki's Volatiles by accident on the walk -- scorched, boarded, open -- where Vikki (bombardier beetle, bossing around Ricky the house centipede) confirmed she supplies the castle wagons, said her stock has been exploding and behaving strangely, and named the destination: the LEAFCUTTER QUEEN'S LAB. They left armed with 2 exploding peppercorns (20 ft blast), smoke-bomb components, and purple salt. Finally the Royal Jelly Society, which landed exactly as intended: hand-washing water and candy, a branch obsessed with framing flowers, a hostess who cared only about flowers and was uninterested in the Bloom's blight ('She IS TERRIBLE. Literally the worst.' -- Heather's notes), and Mr. Pollendew the archivist, who pointed them to a missive from Chitinholm from a desk of half-written replies. In an old cabinet they found a dusty jar: 'Aged Royal Jelly, Bitmore batch, one dose, do not waste.' Session ended as they exited the RJS, in daylight. The Queen's Crown and the MMA gym did not run, and the party never returned to the Dewdrop -- so Gleam's runner, the six-contacts roster handover, the blueprint threshold, and booking a flyer for exfil ALL still need to happen. See sessions/final/s075_final.md and sessions/session_log.md."
 
 
 # ── PARTY STATUS ─────────────────────────────────────────────────────────────
 
 party:
   level: 6
-  location: Canopia, mid-recon at the Red Ant Queen's palace grand/ground level (security scouting), heading back to the Dewdrop Inn to compile their gathered intel into blueprints. The fete is TOMORROW NIGHT.
+  location: Canopia, stepping out of the Royal Jelly Society's Canopia branch in daylight, on the day of the fete. Dressed, armed, and re-bladed. THE FETE IS TONIGHT — pickup at the Dewdrop at first dark. They have not been back to the inn since morning.
   pack_animal: none  # deliberately empty — Bestie is alive but tied up above the Winter Farm with a snack and a blanket
   details: party/  # individual YAML per PC — see party/*.yaml
 
@@ -28,13 +28,25 @@ party:
 
 active_threads:
 
-  - thread: The fete clock — TOMORROW NIGHT
+  - thread: The fete clock — TONIGHT
     priority: high
-    notes: As of Session 7 the fete is TOMORROW NIGHT. Pickup at the Dewdrop at first dark on the night of the event. The specialist question is CLOSED — per DM decision 2026-08-03 the 3-of-6 dead-drop limit is lifted and all six specialists (Tudd, Demicous, Vikko, Diedre, Dax, Zalle) are available to the party as needed. Nothing is owed to Gleam and there is no dead-drop deadline.
+    notes: As of Session 7.5 the fete is TONIGHT. Pickup at the Dewdrop at first dark. The specialist question is CLOSED — per DM decision 2026-08-03 the 3-of-6 dead-drop limit is lifted and all six specialists (Tudd, Demicous, Vikko, Diedre, Dax, Zalle) are available as needed. BUT the party has never been handed the roster — Session 7.5 ended before they got back to the inn, so Gleam's runner has not arrived and no exfiltration flyer has been booked (Barbra is still unbooked; s08_draft.md section 4b wants a standby butterfly). Either open S8 with the Dewdrop beat or run a short bridge.
 
   - thread: Palace intel & blueprints
     priority: high
-    notes: Party gathered public layout (two ballrooms w/ balconies, fighting pit, banquet/great hall, balcony-less throne room), the servants'-quarters understory running under the ballrooms (via Johnathy, the honeybun vendor's kitchen-working brother), and grand-level security (guards every 30 ft, fortified servants' gate w/ watchtower, kitchen->quarters walkways). Heading back to the Dewdrop to compile blueprints. Does the intel become a tangible map reward?
+    notes: >
+      Party has: public layout (two ballrooms w/ balconies, fighting pit, banquet/great hall,
+      balcony-less throne room); the servants'-quarters understory running under the ballrooms
+      (via Johnathy); grand-level security (guards every 30 ft, fortified servants' gate w/
+      watchtower, kitchen->quarters walkways); and NEW from Thoralex in S7.5, a walking route
+      through the Queen's quarters — servants' entrance -> ramp -> great hall -> stairs to the
+      throne room -> living quarters behind the throne -> spiral up to the Queen's apartment,
+      with a long walk from the kitchen, a fortress feel past the throne, and ONE ROOM THAT
+      SMELLS ODD AND RUMBLES/SIZZLES. He also said the throne room HAS A WINDOW — reconcile
+      against the banked "balcony-less throne room" before the infiltration.
+      NO TANGIBLE MAP. The RJS construction-map mechanism (Old Bombus) was written out of the
+      scene before play, and the party never returned to the Dewdrop to compile blueprints.
+      If a map handout is still wanted it needs a new source.
 
   - thread: Vell's mandate — reach the leafcutter queen
     priority: high
@@ -46,11 +58,26 @@ active_threads:
 
   - thread: Beeatrix as band frontwoman
     priority: medium
-    notes: Confirmed in Session 7 as the band's singer (she plays a lyre). The party is actively managing her sobriety — sent her home rather than to the casino this session. Payoff/risk at the fete tomorrow night — asset (cover, distraction) vs. liability (crash-out). Reward now settled (Stick-All Honey to Drix; gold waived).
+    notes: Confirmed in Session 7 as the band's singer (she plays a lyre). She DID come back early and sober the night before the fete and slept it off in the Dewdrop's kitchen — she was offstage for all of Session 7.5. The party had Twizzlers make her a GOWN in absentia from measurements Nancy took while she slept. Two sessions of investment in her now. Payoff/risk tonight — asset (cover, distraction) vs. liability; s08_draft.md section 2b already commits to running her as an active liability inside. Reward settled (Stick-All Honey to Drix; gold waived).
 
-  - thread: The strange reagent shipments — the Queen's lab
+  - thread: The Leafcutter Queen's lab — CONFIRMED
+    priority: high
+    notes: >
+      Upgraded from a breadcrumb to a destination in Session 7.5. Vikki (Vikki's Volatiles)
+      supplies the castle wagons and told the party outright that the material is mostly going
+      to the LEAFCUTTER QUEEN'S LAB — and that her stock has been behaving strangely, with big
+      explosions and weird effects. Independently, Thoralex placed ONE ROOM off the Queen's
+      quarters that smells odd and rumbles/sizzles. The party can now go looking for a room by
+      sense rather than chasing a rumor. Still open: what is actually being built there, and
+      who else is supplying the Queen (Vikki did not sell her everything in those carts).
+
+  - thread: The coronation crown — heist vector
     priority: medium
-    notes: At the palace approach the party saw carts of juniper berries, scorpion stingers, and glowing goop — spell components that "don't do similar things," reading as someone experimenting. Breadcrumb toward the Queen's hidden lab (the intel Vikki's Volatiles was meant to give). What's being built?
+    notes: Thoralex is finishing the Red Ant Queen's crown today; it is the centerpiece of tonight's ceremony; he was invited into her chambers to fit it; and Nancy took a SKETCH of it in Session 7.5. Delivery, escort, forgery, or theft are all live front-door vectors, and the ceremony processes through the throne room. What does the party do with the sketch?
+
+  - thread: Vikki — potential ally
+    priority: medium
+    notes: Met in Session 7.5 and forthcoming without being pressed. She supplies the castle, her stock is being eaten by the Queen's appetite, and her shop keeps catching fire. Prep deliberately left "kill-on-sight defender vs. recruitable ally" undecided and play did not settle it. [DM CHECK] whether her missing arm landed at the table — it appears in neither note set.
 
   - thread: Antshley as escort and potential ally
     priority: medium
@@ -72,13 +99,34 @@ active_threads:
     priority: low
     notes: Tabby (backed by Drix) seeded a rumor on the promenade that the fete is open to everyone at 8:30pm. Did not convince the jewel-beetle nectar vendor. Does an uninvited crowd show up and create cover/chaos at the fete?
 
-  - thread: Ruby Thorax / Thoralex (deferred)
-    priority: low
-    notes: The prepped scene did not run (shop closed/unvisited). Thoralex is making the Red Queen's coronation crown and has seen her private collection (entered via the throne room). Deferred — Tabby's mantis-blade upgrade (edge vs. keep-invisible) and the coronation-crown heist vector are both available on a return.
+  - thread: The mantis blades — the party has split
+    priority: medium
+    notes: >
+      Thoralex finished all of them in Session 7.5 and the party went three ways. Nancy and Drix
+      KEPT the invisibility on their Mantibles (1x per short rest — DM ruling 2026-08-16 rejects
+      the player notes' "1x/day for one hour"). Tabby GAVE IT UP ON BOTH daggers for a master's
+      edge and a balanced edge — she has traded stealth for damage on the eve of a stealth job.
+      The single shared spec from Session 6.5 is dead. [DM CHECK] Tabby's exact numbers were
+      never locked (draft read them as +4-first/+1-after and +2).
 
-  - thread: Royal Jelly Society — Canopia branch (unvisited)
+  - thread: The Aged Royal Jelly — possession unconfirmed
     priority: low
-    notes: Walked past in Session 5, not entered. Available on a return.
+    notes: >
+      Found in Session 7.5 in a cabinet in the RJS archive — a dusty jar labeled
+      "Aged Royal Jelly, Bitmore batch, one dose, do not waste." Effect as written —
+      2d10+10 healing, +10 max HP, and 4 hours of advantage on saves vs. charmed and
+      frightened. The session ended as the party left the building and nothing records
+      the jar leaving with them. It is on NO character sheet.
+      [DM CHECK] Did they take it, and who has it?
+
+  - thread: Royal Jelly Society — Canopia branch (visited)
+    priority: low
+    notes: >
+      Entered in Session 7.5 and the dissonance scene landed. Still unspent from the
+      prep — any construction map (the Old Bombus mechanism was written out before
+      play), an "in" with someone at the fete, and the offer to have a member carry an
+      item in or cause a diversion. The branch will not write to Chitinholm and does
+      not believe it needs to — that is fixed and is the point.
 
   - thread: Bestie — tied up above the Winter Farm
     priority: low
