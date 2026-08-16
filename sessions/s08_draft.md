@@ -2,39 +2,22 @@
 
 **Scope.** This is the fête infiltration itself — the payoff of the Session 7 heist-prep. The DMs intend the fête to *"take several sessions to resolve,"* and they *"don't know what the players will do first, so we need to map everything out now."* So this is a **sandbox**, not a beat sheet.
 
-**How to run from this document.** §1 is the session as a whole — the Canopia morning, the clock, the happy path, the intended solution. §2 is the palace's shared texture and the map. §3 is security: guard economy, the alert ladder, and the three stat blocks. **§4 is the play-time section** — one entry per room, each with its own texture, exits, guard count, NPCs, and levers. §5 is exfil, §6 is the Leafcutter Queen payoff scene, §7 is the fillable NPC table. Everything a room needs during play is in that room's §4 entry; §1–§3 are what you read before the session, not during it.
+**How to run from this document.** §1 is the night as a whole — the clock, the happy path, the intended solution. §2 is the palace's shared texture and the map. §3 is security: guard economy, the alert ladder, and the three stat blocks. **§4 is the play-time section** — one entry per room, each with its own texture, exits, guard count, NPCs, and levers. §5 is exfil, §6 is the Leafcutter Queen payoff scene, §7 is the fillable NPC table. Everything a room needs during play is in that room's §4 entry; §1–§3 are what you read before the session, not during it.
 
 **Parent setting bible.** The palace's overall shape, materials (bore-through-petals vs. bark/leaf faces), and the armored/secure "core" were established in `sessions/s07_draft.md §3a`. This draft refines the room-level connections and does not restate the s07 bible.
 
 **Revision history.**
 
-- *Layout pass* — the room connection map, built off the DMs' request: *"we are beginning a discussion that you should turn into some kind of document or table that is going to relate the various rooms of the Red Ant Queen's palace… sort of what is connected to what."* so they can theater-of-the-mind the heist off "rooms with inputs and outputs."
+- *Layout pass* — the room connection map, built off the DMs' request: *"we are beginning a discussion that you should turn into some kind of document or table that is going to relate the various rooms of the Red Ant Queen's palace… sort of what is connected to what."* The stated reason: it lets them theater-of-the-mind the heist off "rooms with inputs and outputs."
 - *Room-texture pass* — the DMs walked the palace room by room for aesthetics and *"what's going on"* in each — *"we have to know what's going on in the room to be able to describe it to them when they come in,"* and *"this should include aesthetics."* Two-ballroom orientation, the Casino↔Kitchen service link, the Great Hall changeover, the secret pheromone-locked core door.
 - *Checklist pass* — guard economy (infinite spawn, fixed placement), coronation timing and the intended solution path, Beeatrix as an active liability, the six operatives placed into rooms and consolidated into one NPC table, and the campaign's central backstory (Brood Coven + time magic — Background §A). Scheduling removed at DM request.
 - *This pass (reorganization + security)* — everything regrouped **by room** for table use; redundant sections consolidated (the old §5 room-events list and §6b room descriptions were saying the same things twice, and guard placement was a table in one section and a description in another); the **guard roster designed and statted** (§3); three [OPEN] items closed from the DMs' inline notes on the checklist — patrol behavior, Tudd's cover, and the storeroom red herring.
 
 ---
 
-## 1. The Session — Canopia, the Clock, and the Intended Line
+## 1. The Night — Framing, Clock, and the Intended Line
 
-### 1a. Open the session in Canopia — the unvisited locations
-
-**DECIDED: actively push the party here, and open the session with it.** No longer optional. *"I really want the party to spend the morning of the fête going to the places they haven't gone to yet in Canopia that we've written."*
-
-**How to open:** *"At the beginning of next session… remind them: hey, there's a lot of spots that you might want to check out before you go."*
-
-The pitch list the DMs named:
-
-- **New clothes / outfits for the fête** — *"y'all don't have new clothes yet"*; *"plus, we gotta get outfits."*
-- **The weaponsmith** — *"you've got some intel on a weaponsmith."* This is where gear upgrades come from, which is why the Leafcutter Queen's reward doesn't need to be a weapon (§6f): *"they should get kitted up at the weaponsmith."*
-- **Vikki's Volatiles** — *"where they can learn about the lab."*
-- **The Royal Jelly Society** — *"where they can get some intel and another item."*
-
-*"There's quite a bit for them to get through there."*
-
-**Pacing note:** the DMs are explicitly relaxed about spending table time here — *"now I don't care about fucking around."* [SLOP CHECK: their stated reason was that the infiltration will no longer fit the current run of sessions — *"we're definitely not going to do this infiltration in the set of sessions because now there's only two"* — garbled on tape; confirm what changed.]
-
-### 1b. Entry premise & the happy path
+### 1a. Entry premise & the happy path
 
 **Entry premise (carried from S07).** The party is the band's fourth act. They are booked to play; they arrive as guests/performers and can move freely in the public areas before their set.
 
@@ -53,7 +36,7 @@ The pitch list the DMs named:
 - **Attend the Red Ant Queen's coronation.**
 - Party the night, leave whenever.
 
-### 1c. If they miss their set
+### 1b. If they miss their set
 
 Not treated as an instant infiltration flag. The ants assume artist vices: *"they probably went out and got themselves high on pheromones or drunk or something."*
 
@@ -64,9 +47,9 @@ Not treated as an instant infiltration flag. The ants assume artist vices: *"the
 
 [MORE DETAIL: name of the finder / stage-manager NPC sent to fetch a missing act — see §7.]
 
-### 1d. The coronation clock — the one scheduled beat
+### 1c. The coronation clock — the one scheduled beat
 
-Everything else at the fête is player-driven (§1g). This is the exception, and it is the hinge of the night.
+Everything else at the fête is player-driven (§1f). This is the exception, and it is the hinge of the night.
 
 1. **Feast** — Great Hall set with long tables (§4c).
 2. **Changeover** — staff clear the food and move the tables to the back storeroom. Visible, busy, and it signals the coronation is imminent: *"they could use the busyness to sneak back."*
@@ -79,7 +62,7 @@ Everything else at the fête is player-driven (§1g). This is the exception, and
 
 [MORE DETAIL: read-aloud/staging for the coronation ceremony itself — the DMs said *"we'll write dialogue for it,"* still deferred. The Leafcutter Queen's own scene no longer needs scripting — see §6.]
 
-### 1e. The intended solution path (the "right answer")
+### 1d. The intended solution path (the "right answer")
 
 The DMs named the optimal line explicitly. It runs on intel, not on stealth rolls:
 
@@ -91,7 +74,7 @@ The DMs named the optimal line explicitly. It runs on intel, not on stealth roll
 
 **The one hard no.** *"They shouldn't be able to fight their way through the throne room to the back. That shouldn't be a straight fight."* Fighting up the grand stair into a packed throne room including the Red Queen — *"they will die from that."* But starting that fight and then breaking off is fine: *"they can start that fight, run to the kitchens another way and get into the core still, even."*
 
-### 1f. Beeatrix — the liability who follows them around
+### 1e. Beeatrix — the liability who follows them around
 
 - **She does not know they are infiltrating.** *"She doesn't know that they're infiltrating, right? As far as she understands."* — *"No, yeah, for sure, for sure."*
 - **No stat block, but she can die.** *"She doesn't need to, like, have a stat block and be a fighter"* — and yet *"she absolutely can get killed in a fight."* Considered and rejected: the invulnerable-escort model — *"kind of like… Ashley from Resident Evil? Like, she cowers and she can't really get killed?"*
@@ -100,7 +83,7 @@ The DMs named the optimal line explicitly. It runs on intel, not on stealth roll
 - **Tasking her fails, scaled to the task.** *"If they give her a task, I think she should fuck it up"* — *"depending on the task. If it's ghosting in a corner, I think she can manage that."*
 - **The one sanctioned use:** *"they can make a distraction out of her."*
 
-### 1g. Disruption is the party's job, not the schedule's
+### 1f. Disruption is the party's job, not the schedule's
 
 The fête is **a normal party** — *"the players can cause all the disruption they want, otherwise it's just a nice party."* Events are **not predetermined / not a Deathloop-style clockwork** (*"that's a level of effort that goes above and beyond"* — *"we're doing Deathloop minus the loops"*).
 
@@ -146,7 +129,7 @@ The fête is **a normal party** — *"the players can cause all the disruption t
 
 ### 2c. The four routes into the Core
 
-1. **Throne Room → Core** — the passage off the throne room (the queen's own entrance *"behind the throne"*). *"The only obvious way into the core"* — and the one place a straight fight is fatal (§1e).
+1. **Throne Room → Core** — the passage off the throne room (the queen's own entrance *"behind the throne"*). *"The only obvious way into the core"* — and the one place a straight fight is fatal (§1d).
 2. **Kitchen → Core** — the servant route.
 3. **Pheromone Lounge → (central stair down) → Storeroom → Red Ant Queen's Chambers** — *secret indulgence route.* Not well known; the Red Queen has things brought to her this way and doesn't want it known. Drops intruders into her chambers — *"not exactly where they want to be"* — from which they still have to reach the Leafcutter Queen.
    - **The secret door** (storeroom → core): *"well hidden but not invisible"* — *"like the fungus wall, but not fungus wall because it's red ant, not leaf cutter ant."* Not *"super duper complicated."*
@@ -246,7 +229,7 @@ Dispatched at alert level 2. **Minimum 2, maximum 4. Always exactly one Firecall
 | Minimum | 1 Firecaller + 1 Bulwark | 1400 | 2100 (×1.5) | Just under Hard (2700). Winnable, costly. |
 | Standard | 1 Firecaller + 2 Bulwarks | 2100 | 4200 (×2) | **Exactly Deadly.** |
 | Maximum | 1 Firecaller + 3 Bulwarks | 2800 | 5600 (×2) | Well past Deadly. Break contact. |
-| Max + the noise that summoned them | Above + 6 Red Ant Guards | 3400 | 8500 (×2.5) | Not a fight. This is the "run to the kitchens" moment (§1e). |
+| Max + the noise that summoned them | Above + 6 Red Ant Guards | 3400 | 8500 (×2.5) | Not a fight. This is the "run to the kitchens" moment (§1d). |
 
 *(3 PCs at level 6 — thresholds: Easy 900 / Medium 1800 / Hard 2700 / Deadly 4200.)*
 
@@ -302,7 +285,7 @@ Mitigation as it now stands: the back rooms **are lit** by glowworm lanterns (§
 
 **What's going on.** On arrival it's *"set up with big long tables just covered in food,"* the centre dominated by the tables with benches around the edges — *"a place where people come to eat, get away from the music,"* with *"little clutches of people talking excitedly, recovering, drunk."*
 
-**The changeover (the clock, §1d).** Staff clear the food and move the long tables into the back storeroom. It signals the coronation is imminent, and *"they could use the busyness to sneak back."* **The coronation is held here** after the changeover, then processes up the grand stair into the Throne Room.
+**The changeover (the clock, §1c).** Staff clear the food and move the long tables into the back storeroom. It signals the coronation is imminent, and *"they could use the busyness to sneak back."* **The coronation is held here** after the changeover, then processes up the grand stair into the Throne Room.
 
 **Exits.** Land on the giant balcony / seated area; long tables directly ahead; doors left and right to the walkways to each ballroom; at the far end a big aperture with the **guarded grand staircase up to the Throne Room**; a back corner has the hole down to the Kitchen; the **back storeroom** (table storage) off the hall.
 
@@ -324,7 +307,7 @@ Mitigation as it now stands: the back rooms **are lit** by glowworm lanterns (§
 
 **Guards. The elite — Royal Ant Bulwarks.** *"that's maybe where we have some harder stat-blocked guys… some big beefy boys,"* because *"she would want the show of force to be there."* *"Like big mandible boys."*
 
-**Levers — and the hard no.** Two legitimate reasons to be up here: **follow the procession** (*"the queens are gonna go sit on the thrones. They could follow the queen to the throne room and then create a distraction, and get into the entrance behind"*), or **on the way out**. It is *"the only obvious way into the core"* — and fighting up the stair into a packed throne room with the Red Queen in it is the one straight fight that kills them (§1e). Starting it and breaking off is fine.
+**Levers — and the hard no.** Two legitimate reasons to be up here: **follow the procession** (*"the queens are gonna go sit on the thrones. They could follow the queen to the throne room and then create a distraction, and get into the entrance behind"*), or **on the way out**. It is *"the only obvious way into the core"* — and fighting up the stair into a packed throne room with the Red Queen in it is the one straight fight that kills them (§1d). Starting it and breaking off is fine.
 
 ### 4e. Pheromone Lounge — black rose
 
@@ -350,7 +333,7 @@ Mitigation as it now stands: the back rooms **are lit** by glowworm lanterns (§
 
 **NPCs here.** **Dax** (cockroach, operative — pit medic, reached via the behind-the-bar entrance off the servants' hallway); dealer(s); the two pit fighters; 2–3 patrons. See §7.
 
-**Levers.** The one sanctioned use of the pit: *"if they really want to, they could try and create a diversion by being in the fighting pit."* And the canonical opening play — *"a fight could start in the casino"* → guards pull off a nearby room → the party goes down a different path (§1g). The behind-the-bar service tunnels are a second Kitchen route that isn't the ballroom green rooms.
+**Levers.** The one sanctioned use of the pit: *"if they really want to, they could try and create a diversion by being in the fighting pit."* And the canonical opening play — *"a fight could start in the casino"* → guards pull off a nearby room → the party goes down a different path (§1f). The behind-the-bar service tunnels are a second Kitchen route that isn't the ballroom green rooms.
 
 **DM note.** `sessions/notes/s07_mma_roster.md` is *"slop… not something we told the players"* — **disregard it as canon.**
 
@@ -532,8 +515,8 @@ The six operatives are placed (from `handouts/heist_dead_drop_contacts.html`). E
 | **Core** (§4j) | Bodyguards / lab attendants |  |  |
 | Core | **Red Ant Queen** |  | [MORE DETAIL: stat/personality — flagged as very strong. Warped read: *"before she was prone to theatrics, but now she's insane and obsessed with fire and vanity."*] |
 | Core | **Leafcutter Queen** |  | Scene material in §6; ad-libbed, no script needed. |
-| **Travels with the party** | Band singer | **Beeatrix** | Active liability — no stat block, can die, screams and runs. Full behavior in §1f. |
-| Floating | Stage-manager / finder (fetches a missing act, §1c) |  |  |
+| **Travels with the party** | Band singer | **Beeatrix** | Active liability — no stat block, can die, screams and runs. Full behavior in §1e. |
+| Floating | Stage-manager / finder (fetches a missing act, §1b) |  |  |
 | Outside — landing pads | Standby butterfly flyer(s) (exfil, §5b) |  |  |
 
 [SLOP CHECK: operative spellings are taken from `handouts/heist_dead_drop_contacts.html` — **Tudd, Demicous, Vikko, Diedre, Dax, Zalle**. The transcript's phonetics ("Tud"/"Ted", "Demicious", "Vico", "Deidre", "Zale"/"Zara") are read as those six.]
@@ -597,25 +580,6 @@ Not fête content; the DMs parked it here. **Nancy is very hard to pin down** �
 *(Partly addressed this pass: the Royal Ant Bulwark's Pin is written as a direct answer to Nancy's mobility, and the Firecaller's screened position makes "kill the caster" a secondary objective inside a fight the party can also just leave.)*
 
 ---
-
-# DM Pre-Session Checklist
-
-## Closed — do not re-open
-
-1. ~~Confirm the palace connection map~~ — **confirmed** (§2b). Bore-able petal faces are an **in-session call**, not a pre-marked map layer.
-2. ~~Reconcile the guard economy~~ — **guards are infinite and improvised**; what's fixed is placement and response batches (§3).
-3. ~~Write the Leafcutter Queen scene~~ — **ad-libbed**; her state, what she knows, and her culprit line are all in §6, with the lore in Background §A.
-4. ~~Decide the fall-damage ruling~~ — normal fall damage **plus** a potentially fatal landing in the Overgrowth; going off an edge requires a way to slow or guide the fall (§5b).
-5. ~~Pick concrete room events~~ — **scoped down**; the seeded four are enough, and the Throne Room deliberately gets none (§1g, §4d).
-6. ~~Decide the Canopia detour~~ — **yes, and push them into it** at the top of the session (§1a).
-7. ~~Lock the schedule~~ — removed from this document at DM request.
-8. ~~Design the secret pheromone door~~ — **no puzzle**; Zalle mixes the pheromone key and hands it over if asked (§2c Route 3).
-9. ~~Decide the coronation venue~~ — **Great Hall** after the changeover, then the ceremony processes into the **Throne Room** (§1d).
-10. ~~Reconcile the Pheromone Lounge stair~~ — the central stair drops to the **Storeroom directly below**, which connects on to the core and the kitchens (§4e, §4h).
-11. ~~Decide how Tudd plays~~ — **kitchen cover on the inside** (§7). The outside demolition option (*"punch a hole from the outside"*) stays available as a play, not as his posting.
-12. ~~Rule on patrol guard behavior~~ — **stand and fight, making noise** (§3b). Not disengage-and-shout.
-13. ~~Decide the storeroom red herring~~ — **no** (§4h). The strange lab goods do not appear there.
-14. ~~Design the guard corps~~ — **two tiers, three stat blocks** (§3d), with cleave for the ordinary guards (§3c) and a 2–4 royal response squad (§3e).
 
 ## Still to do
 
